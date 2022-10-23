@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <div className="flex">
         <Leftmenu />
-        <div className="max-h-screen overflow-scroll bg-[#0e1922] text-gray-100">
+        <div className="max-h-screen pb-20 overflow-scroll bg-[#0e1922] text-gray-100">
           {children}
         </div>
       </div>

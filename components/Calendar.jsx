@@ -6,6 +6,8 @@ import {
   Inject,
   Resize,
   DragAndDrop,
+  ViewsDirective,
+  ViewDirective,
   ScheduleComponent,
 } from '@syncfusion/ej2-react-schedule';
 import React, { useState } from 'react';
@@ -36,6 +38,11 @@ const Calendar = () => {
             actionComplete={handleSave}
             eventSettings={{ dataSource: scheduleData }}
           >
+            <ViewsDirective>
+              {['Day', 'Week', 'Month', 'Agenda'].map((item) => (
+                <ViewDirective key={item} option={item} />
+              ))}
+            </ViewsDirective>
             <Inject
               services={[
                 Day,
