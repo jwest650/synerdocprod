@@ -14,8 +14,8 @@ const Calendarnav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef(null);
   return (
-    <div className="mb-10 space-y-5 rounded-2xl border-t border-[#152937] py-5 px-2 shadow-2xl">
-      <div className="flex flex-wrap items-center justify-between">
+    <div className="mb-10 mt-8 space-y-5 rounded-2xl border-t border-[#152937] py-5 px-2 shadow-2xl">
+      {/* <div className="flex flex-wrap items-center justify-between">
         <div className="flex items-center gap-5">
           <p className="text-xl">Calendar For:</p>{' '}
           <Menu isOpen={isOpen} onClose={onClose}>
@@ -103,7 +103,7 @@ const Calendarnav = () => {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="flex items-center gap-2 text-sm">
         <p className="text-lg">Preferred Phone Number:</p>
         <span className="text-gray-300">(318)-332-9842</span>
