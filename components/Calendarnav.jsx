@@ -14,7 +14,7 @@ const Calendarnav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef(null);
   return (
-    <div className="mb-10 mt-8 space-y-5 rounded-2xl border-t border-[#152937] py-5 px-2 shadow-2xl">
+    <div className="mb-10 mt-8 space-y-5 rounded-2xl border-t  border-gray-800/50 py-5 px-2 shadow-2xl">
       {/* <div className="flex flex-wrap items-center justify-between">
         <div className="flex items-center gap-5">
           <p className="text-xl">Calendar For:</p>{' '}
