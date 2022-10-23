@@ -4,10 +4,10 @@ import greenplus from '../assets/images/greenplus.png';
 
 const Availability = () => {
   return (
-    <div className="grid grid-cols-2 rounded-md border border-[#142633] py-2 shadow-lg">
+    <div className="grid grid-cols-2  rounded-md border border-[#142633] bg-[#152937] py-2 shadow-lg">
       {/* <h1 className=" ">Available at the following times</h1> */}
       <div className=" px-5">
-        <div className="mb-5 flex items-center justify-evenly gap-2 border-b">
+        <div className="mb-5 flex items-center justify-evenly gap-2 border-b-2 border-[#0e1922] pb-1">
           <span className="w-full py-1 px-2">Day</span>
           <span className="w-full py-1 px-2">From</span>
           <span className="w-full py-1 px-2">To</span>
@@ -132,10 +132,10 @@ const Availability = () => {
           />
         </div>
       </div>
-      <div className="border-l px-5">
+      <div className="border-l-2 border-[#0e1922] px-5">
         <div className="">
-          <p className=" text mb-7 border-b text-center text-lg">
-            Availability:
+          <p className=" text mb-7 border-b-2 border-[#0e1922] pb-2 text-center text-lg">
+            Actions
           </p>
           <div className="mt-2 space-y-6 px-2">
             <span className="flex cursor-pointer items-center gap-2">
