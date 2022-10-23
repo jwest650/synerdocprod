@@ -104,11 +104,15 @@ const Calendarnav = () => {
           </div>
         </div>
       </div> */}
-      <div className="flex items-center gap-2 text-sm">
+      {/* <div className="flex items-center gap-2 text-sm">
         <p className="text-lg">Preferred Phone Number:</p>
         <span className="text-gray-300">(318)-332-9842</span>
-      </div>
+      </div> */}
       <div className="flex flex-wrap items-center gap-5 text-sm">
+        <div className="flex items-center gap-2 text-sm">
+          <p className="text-base">Preferred Phone Number:</p>
+          <span className="text-gray-300">(318)-332-9842</span>
+        </div>
         <div className="flex items-center gap-2">
           <input type="checkbox" />
           <label className="">assigned</label>
