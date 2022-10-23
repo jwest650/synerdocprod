@@ -7,7 +7,7 @@ const Availability = () => {
     <div className="grid grid-cols-2  rounded-md border border-[#142633] bg-[#152937] shadow-lg">
       {/* <h1 className=" ">Available at the following times</h1> */}
       <div className="py-4">
-        <div className="mb-5 flex items-center justify-evenly gap-2 border-b px-5 pb-2">
+        <div className="mb-5 flex items-center justify-evenly gap-2 border-b border-gray-700 px-5 pb-2">
           <span className="w-full py-1 px-2">Day</span>
           <span className="w-full py-1 px-2">From</span>
           <span className="w-full py-1 px-2">To</span>
@@ -132,9 +132,11 @@ const Availability = () => {
           />
         </div>
       </div>
-      <div className="border-l py-5">
+      <div className="border-l border-gray-700 py-5">
         <div className="">
-          <p className="text mb-7 border-b pb-2 text-center text-lg">Actions</p>
+          <p className="text mb-7 border-b border-gray-700 pb-2 text-center text-lg">
+            Actions
+          </p>
           <div className="mt-2 space-y-6 px-7">
             <span className="flex cursor-pointer items-center gap-2">
               <Image
