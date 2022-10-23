@@ -31,7 +31,6 @@ const Calendarnav = () => {
                 </div>
               </MenuButton>
               <MenuList className="bg-[#152937]">
-                {/* <div className="-my-[9px] -mx-[1px] bg-[#152937]"> */}
                 <MenuItem>
                   <span className="text-[#0e1922]">Eobard Thawn</span>
                 </MenuItem>
@@ -59,7 +58,6 @@ const Calendarnav = () => {
                 <MenuItem>
                   <span className="text-[#0e1922]">Wally West</span>
                 </MenuItem>
-                {/* </div> */}
               </MenuList>
             </span>
           </Menu>
