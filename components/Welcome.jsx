@@ -18,7 +18,7 @@ const Welcome = () => {
       <div className="mt-4 flex w-full items-center justify-between px-5 tracking-wide">
         <div>
           <h2 className="text-lg">AMS for SinamCare</h2>
-          <div className="flex mt-5 items-center gap-5">
+          <div className="mt-2 flex items-center gap-5">
             <p className="text-sm text-gray-500">Calendar For:</p>{' '}
             <Menu isOpen={isOpen} onClose={onClose}>
               <span className="rounded-md bg-[#152937] px-2 py-1 text-sm">

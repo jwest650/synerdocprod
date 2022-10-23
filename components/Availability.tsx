@@ -4,15 +4,15 @@ import greenplus from '../assets/images/greenplus.png';
 
 const Availability = () => {
   return (
-    <div className="grid grid-cols-2  rounded-md border border-[#142633] bg-[#152937] py-2 shadow-lg">
+    <div className="grid grid-cols-2  rounded-md border border-[#142633] bg-[#152937] shadow-lg">
       {/* <h1 className=" ">Available at the following times</h1> */}
-      <div className=" px-5">
-        <div className="mb-5 flex items-center justify-evenly gap-2 border-b-2 border-[#0e1922] pb-1">
+      <div className="py-4">
+        <div className="mb-5 flex items-center justify-evenly gap-2 border-b px-5 pb-2">
           <span className="w-full py-1 px-2">Day</span>
           <span className="w-full py-1 px-2">From</span>
           <span className="w-full py-1 px-2">To</span>
         </div>
-        <div className="mb-5 flex items-center justify-evenly gap-3">
+        <div className="mb-5 flex items-center justify-evenly gap-3 px-5">
           <span className="w-full rounded-md bg-[#152937] py-1 px-2">
             Sunday
           </span>
@@ -29,7 +29,7 @@ const Availability = () => {
             value="5pm"
           />
         </div>
-        <div className="mb-5 flex items-center justify-evenly gap-3">
+        <div className="mb-5 flex items-center justify-evenly gap-3 px-5">
           <span className="w-full rounded-md bg-[#152937] py-1 px-2">
             Monday
           </span>
@@ -46,7 +46,7 @@ const Availability = () => {
             value="5pm"
           />
         </div>
-        <div className="mb-5 flex items-center justify-evenly gap-3">
+        <div className="mb-5 flex items-center justify-evenly gap-3 px-5">
           <span className="w-full rounded-md bg-[#152937] py-1 px-2">
             Tuesday
           </span>
@@ -63,7 +63,7 @@ const Availability = () => {
             value="5pm"
           />
         </div>
-        <div className="mb-5 flex items-center justify-evenly gap-3">
+        <div className="mb-5 flex items-center justify-evenly gap-3 px-5">
           <span className="w-full rounded-md bg-[#152937] py-1 px-2">
             Wednesday
           </span>
@@ -80,7 +80,7 @@ const Availability = () => {
             value="5pm"
           />
         </div>
-        <div className="mb-5 flex items-center justify-evenly gap-3">
+        <div className="mb-5 flex items-center justify-evenly gap-3 px-5">
           <span className="w-full rounded-md bg-[#152937] py-1 px-2">
             Thursday
           </span>
@@ -97,7 +97,7 @@ const Availability = () => {
             value="5pm"
           />
         </div>
-        <div className="mb-5 flex items-center justify-evenly gap-3">
+        <div className="mb-5 flex items-center justify-evenly gap-3 px-5">
           <span className="w-full rounded-md bg-[#152937] py-1 px-2">
             Friday
           </span>
@@ -114,7 +114,7 @@ const Availability = () => {
             value="5pm"
           />
         </div>
-        <div className="mb-5 flex items-center justify-evenly gap-3">
+        <div className="mb-5 flex items-center justify-evenly gap-3 px-5">
           <span className="w-full rounded-md bg-[#152937] py-1 px-2">
             Saturday
           </span>
@@ -132,12 +132,10 @@ const Availability = () => {
           />
         </div>
       </div>
-      <div className="border-l-2 border-[#0e1922] px-5">
+      <div className="border-l py-5">
         <div className="">
-          <p className=" text mb-7 border-b-2 border-[#0e1922] pb-2 text-center text-lg">
-            Actions
-          </p>
-          <div className="mt-2 space-y-6 px-2">
+          <p className="text mb-7 border-b pb-2 text-center text-lg">Actions</p>
+          <div className="mt-2 space-y-6 px-7">
             <span className="flex cursor-pointer items-center gap-2">
               <Image
                 src={greenplus.src}
