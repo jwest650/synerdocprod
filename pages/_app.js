@@ -2,6 +2,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { GeneralProvider } from '../context/GeneralContext';
 import '../styles/globals.css';
 import { registerLicense } from '@syncfusion/ej2-base';
+import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
   registerLicense(
@@ -10,7 +11,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
       <GeneralProvider>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </GeneralProvider>
     </ChakraProvider>
   );

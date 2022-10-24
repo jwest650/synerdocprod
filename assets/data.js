@@ -198,6 +198,10 @@ export const menuOptions = [
     name: 'Dashboard',
     options: [
       {
+        title: 'Home',
+        icon: 'FiHome',
+      },
+      {
         title: 'Charts',
         icon: 'AiOutlineLineChart',
       },
@@ -211,7 +215,7 @@ export const menuOptions = [
       },
       {
         title: 'Metrics',
-        icon: 'HiOutlinePresentationChartBar',
+        icon: 'TbPresentationAnalytics',
       },
       {
         title: 'Agency Cost',
@@ -236,7 +240,7 @@ export const menuOptions = [
       },
       {
         title: 'Facilities',
-        icon: 'HiOutlineBuildingOffice2',
+        icon: 'BsBuilding',
       },
       {
         title: 'Organization Payers',

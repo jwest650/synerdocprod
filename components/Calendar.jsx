@@ -27,7 +27,7 @@ const Calendar = () => {
     // console.log(args);
   };
   return (
-    <div className="rounded-3xl px-3 pt-7">
+    <div className="w-full rounded-3xl px-3 pt-7">
       <Calendarnav />
       <ContentOptions />
       <div className="mt-[18px] flex flex-col gap-3 lg:grid lg:grid-cols-4">

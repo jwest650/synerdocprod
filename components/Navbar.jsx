@@ -4,17 +4,20 @@ import { FiBell, FiSettings } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
 import { useContext } from 'react';
 import GeneralContext from '../context/GeneralContext';
+import Link from 'next/link';
 
 const Navbar = () => {
   const { setMenuIsClicked } = useContext(GeneralContext);
   return (
     <div className="sticky top-0 z-[1000] flex w-full items-center justify-between bg-[#152937] py-3 px-5 text-gray-100 shadow">
       <div className="flex items-center gap-6">
-        <h1 className="text-2xl font-semibold md:ml-8">
-          Syner<span className="font-normal">doc</span>{' '}
-        </h1>
+        <Link href="/">
+          <h1 className="text-2xl font-semibold md:ml-8">
+            Syner<span className="font-normal">doc</span>{' '}
+          </h1>
+        </Link>
         <i
-          className="p-2 cursor-pointer"
+          className="cursor-pointer p-2"
           onClick={() => setMenuIsClicked((current) => (current = !current))}
         >
           <BsGrid className="ml-3 text-xl text-gray-200" />
