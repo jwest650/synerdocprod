@@ -257,58 +257,73 @@ export const menuOptions = [
     options: [
       {
         title: 'Add Referral/Patient',
+        url: 'add-referral',
+        component: 'AddRefferal',
         icon: 'BsDot',
       },
       {
         title: 'Transition Patients',
+        url: 'transition-patients',
         icon: 'BsDot',
       },
       {
         title: 'Incomplete Referrals',
+        url: 'incomplete-referrals',
         icon: 'BsDot',
       },
       {
         title: 'Patient Encounters',
+        url: 'patient-encounters',
         icon: 'BsDot',
       },
       {
         title: 'Disaster Plans',
+        url: 'disaster-planning',
         icon: 'BsDot',
       },
       {
         title: 'Patient Schedules',
+        url: 'patient-schedules',
         icon: 'BsDot',
       },
       {
         title: 'Schedules Detail Listing',
+        url: 'schedules-detail-listing',
         icon: 'BsDot',
       },
       {
         title: 'Associate Load Balance',
+        url: 'associate-load-balance',
         icon: 'BsDot',
       },
       {
         title: 'Verifications',
+        url: 'verifications',
         icon: 'BsDot',
       },
       {
         title: 'Verified Services',
+        url: 'verified-services',
         icon: 'BsDot',
       },
       {
         title: 'Scheduling Notifications',
+        url: 'scheduling-notifications',
         icon: 'BsDot',
       },
       {
         title: 'Approve F2F Document',
+        url: 'approve-f2f-document',
         icon: 'BsDot',
       },
       {
         title: 'View/Print Orders',
+        url: 'view-print-orders',
         icon: 'BsDot',
       },
       {
         title: 'Move Service Note',
+        url: 'move-service-note',
         icon: 'BsDot',
       },
     ],
