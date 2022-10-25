@@ -1,10 +1,10 @@
 const Calendarnav = () => {
   return (
-    <div className="mb-10 mt-8 space-y-5 rounded-2xl border-t  border-gray-800/50 py-5 px-2 shadow-2xl">
-      <div className="flex flex-wrap items-center gap-5 text-sm">
+    <div className="dae mb-10 mt-8 space-y-5 rounded bg-secondary-light-bg py-5 px-2 shadow dark:border-t dark:border-gray-800/50 dark:bg-main-dark-bg dark:shadow-2xl">
+      <div className="flex flex-wrap items-center gap-5 text-sm text-secondary-text-light dark:text-secondary-text-dark">
         <div className="flex items-center gap-2 text-sm">
           <p className="text-base">Preferred Phone Number:</p>
-          <span className="text-gray-300">(318)-332-9842</span>
+          <span className="font-semibold">(318)-332-9842</span>
         </div>
         <div className="flex items-center gap-2">
           <input type="checkbox" />
