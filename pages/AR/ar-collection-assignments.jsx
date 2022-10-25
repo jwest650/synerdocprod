@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { ar } from "../../../assets/ardata";
-import greenplus from "../../../assets/images/greenplus.png";
+import { ar } from "../../assets/ardata";
+import greenplus from "../../assets/images/greenplus.png";
+import { RiDeleteBin5Line } from "react-icons/ri";
+import { RiEdit2Line } from "react-icons/ri";
 const ARCollectionAssignments = () => {
     return (
-        <div className="relative">
+        <div className="ar p-5">
             <div className="space-y-5">
                 <section className="flex items-center space-x-5">
                     <h1 className="text-2xl font-bold capitalize">
@@ -25,7 +27,7 @@ const ARCollectionAssignments = () => {
                 </section>
                 <hr />
                 <section>
-                    <table className="w-full border capitalize">
+                    <table className="  w-full border-collapse capitalize">
                         <thead>
                             <th>agency</th>
                             <th>payer category</th>
@@ -34,6 +36,7 @@ const ARCollectionAssignments = () => {
                             <th>patient</th>
                             <th>admit date</th>
                             <th>associate</th>
+                            <th>actions</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -56,10 +59,15 @@ const ARCollectionAssignments = () => {
                                     <td>{value.team}</td>
                                     <td>{value.admitDate}</td>
                                     <td>{value.associate}</td>
+                                    <td>
+                                        <RiDeleteBin5Line className="inline-block" />
+
+                                        <RiEdit2Line className="inline-block" />
+                                    </td>
                                 </tr>
                             ))}
                             <tr>
-                                <td colspan="7">displaying page 1 of 1</td>
+                                <td colSpan="8">displaying page 1 of 1</td>
                             </tr>
                         </tbody>
                     </table>

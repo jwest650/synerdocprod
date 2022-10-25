@@ -63,3 +63,14 @@ export const ar = [
         associate: "joseph ,destiny",
     },
 ];
+
+export const summary = [
+    {
+        agency: "louisiana",
+        beginingBalance: "$489.00",
+        rAmount: "$0.00",
+        payment: "$0.00",
+        ending: "$489.00",
+        dso: "$0.00",
+    },
+];

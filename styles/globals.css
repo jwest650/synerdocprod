@@ -201,3 +201,10 @@
     table-layout: fixed;
     width: 100%;
 }
+
+.ar td,
+th,
+tr {
+    padding: 2px;
+    border: 1px solid white;
+}
