@@ -1,8 +1,9 @@
 import React from "react";
+import { invoice } from "../../assets/ardata";
 
 const invoices = () => {
     return (
-        <div className="space-y-2 p-5 capitalize">
+        <div className="ar space-y-2 p-5 capitalize">
             <section className="flex items-center justify-between">
                 <h1 className="text-2xl capitalize">invoices</h1>
 
@@ -107,7 +108,7 @@ const invoices = () => {
                         className="w-full pl-2"
                     />
                 </div>
-                <div className="w-[210px]">
+                <div className="w-[220px]">
                     <input
                         type="text"
                         placeholder="Enter Payer name"
@@ -124,10 +125,52 @@ const invoices = () => {
                 <button className="border px-2">Search</button>
             </section>
             <hr />
+            <div className="space-x-4">
+                <a href="">adjust balance to zero</a>
+                <label htmlFor="">Update:</label>
+                <select name="" id="" className="text-black">
+                    <option value="">select an adjustment reason</option>
+                </select>
+            </div>
             {/* table */}
             <section>
-                <table>
-                    <thead></thead>
+                <table className="w-full">
+                    <thead>
+                        <th>
+                            <input type="checkbox" name="" id="" />
+                        </th>
+                        <th>patient name</th>
+                        <th>invoice</th>
+                        <th>current payer</th>
+                        <th>invoice data</th>
+                        <th>invoice range</th>
+                        <th>payer resp</th>
+                        <th>patient resp</th>
+                        <th>total adj</th>
+                        <th>total payment</th>
+                        <th>balance</th>
+                        <th>status</th>
+                    </thead>
+                    <tbody>
+                        {invoice.map((value, i) => (
+                            <tr key={i}>
+                                <td>
+                                    <input type="checkbox" name="" id="" />
+                                </td>
+                                <td>{value.patientname}</td>
+                                <td>{value.invoice}</td>
+                                <td>{value.currentpayer}</td>
+                                <td>{value.invoicedata}</td>
+                                <td>{value.invoicerange}</td>
+                                <td>{value.payerresp}</td>
+                                <td>{value.patientresp}</td>
+                                <td>{value.totaladj}</td>
+                                <td>{value.totalpayment}</td>
+                                <td>{value.balance}</td>
+                                <td>{value.status}</td>
+                            </tr>
+                        ))}
+                    </tbody>
                 </table>
             </section>
         </div>
