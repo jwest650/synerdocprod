@@ -16,6 +16,7 @@ import {
   ModalBody,
   ModalCloseButton,
   Button,
+  Input,
 } from '@chakra-ui/react'
 
 const AddReferral = () => {
@@ -30,7 +31,7 @@ const AddReferral = () => {
         <div className='underline'>
           <p className='py-5'>Add a new referral into the system</p>
         </div>
-        <div className=' flex w-[500px] justify-between items-center'>
+        <div className=' flex w-[70%] justify-between items-center'>
           <div className='flex items-center justify-between'>
             <label htmlFor="#" className='mr-5'>Agency: </label>
             <Select  size='xs' >
@@ -58,7 +59,7 @@ const AddReferral = () => {
             <option value='option2' className='text-gray-800'>Option 2</option>
             <option value='option3' className='text-gray-800'>Option 3</option>
           </Select>
-          <a href='/' className='text-[#FF6D00] underline' onClick={onOpen}>select referral source</a>
+          <a href='#' className='text-[#FF6D00] underline' onClick={onOpen}>find referral source</a>
         </div>
 
         <div className='flex'>
@@ -98,7 +99,7 @@ const AddReferral = () => {
 
         <div className='flex mt-5'>
           <label htmlFor="#">Mode of Delivery:</label>
-          <Select  size='xs' maxWidth={500} marginRight={5} marginLeft={5} >
+          <Select  size='xs' maxWidth={'70%'} marginRight={5} marginLeft={5} >
             <option value='option1' className='text-gray-800'>Option 1</option>
             <option value='option2' className='text-gray-800'>Option 2</option>
             <option value='option3' className='text-gray-800'>Option 3</option>
@@ -107,7 +108,7 @@ const AddReferral = () => {
 
         <div className='flex my-5'>
           <label htmlFor="#">Sales Rep:</label>
-          <Select  size='xs' maxWidth={500} marginRight={5} marginLeft={5} >
+          <Select  size='xs' maxWidth={'70%'} marginRight={5} marginLeft={5} >
             <option value='option1' className='text-gray-800'>Option 1</option>
             <option value='option2' className='text-gray-800'>Option 2</option>
             <option value='option3' className='text-gray-800'>Option 3</option>
@@ -116,22 +117,69 @@ const AddReferral = () => {
       </section>
 
       {/* Search Modal */}
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} >
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent maxWidth={700}>
           <ModalHeader>Modal Title</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <h1 className="text-xl5">Find Referral Source</h1>
-            <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt aperiam ipsum, beatae repellat molestiae sapiente tempora suscipit quaerat rem id illum ea accusantium labore sequi dolorem fugit. Quasi, voluptas.</p>
+            <p className="text-sm">Find referral source/add referral source if not found.</p>
+
+            <div className='flex justify-between'>
+              <label htmlFor="#">First/Last: </label>
+              <div className='flex'>
+                  <Input placeholder='small size' size='sm' />
+                  <Input placeholder='small size' size='sm' />
+              </div>
+            </div>
+            <div>
+              <label htmlFor="#">Facility Name/Referral Company</label>
+              <div>
+                  <Input placeholder='small size' size='sm' />
+              </div>
+            </div>
+
+            <Button colorScheme='teal' size='sm' marginTop={5} alignItems='left' className='left'>
+              Button
+            </Button>
           </ModalBody>
 
           <ModalFooter>
             <Button colorScheme='blue' mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button variant='ghost'>Secondary Action</Button>
           </ModalFooter>
+
+          <TableContainer>
+            <Table variant='striped' colorScheme='[#0e1922]'>
+              <Thead backgroundColor={'#29507C'} color={"#fff"} >
+                <Tr>
+                  <Th color={'#selecto'}>Select</Th>
+                  <Th color={'#selecto'}>Name</Th>
+                  <Th color={'#selecto'}>Type</Th>
+                  <Th color={'#selecto'}>Preferred number</Th>
+                  <Th color={'#selecto'}>Referral <Address></Address></Th>
+                </Tr>
+              </Thead>
+              <Tbody>
+                <Tr>
+                  <Td >0</Td>
+                  <Td>0</Td>
+                  <Td>0</Td>
+                  <Td>0</Td>
+                  <Td>0</Td>
+                </Tr>
+                <Tr>
+                  <Td > 0</Td>
+                  <Td>0</Td>
+                  <Td>0</Td>
+                  <Td>0</Td>
+                  <Td>0</Td>
+                </Tr>
+              </Tbody>
+            </Table>
+          </TableContainer>
         </ModalContent>
       </Modal>
     </div>
