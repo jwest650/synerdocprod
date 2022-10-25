@@ -8,9 +8,9 @@ import GeneralContext from '../context/GeneralContext';
 const ContentOptions = () => {
   const { sectionClicked, setSectionClicked } = useContext(GeneralContext);
   return (
-    <div className="flex items-center justify-between pr-1 text-[16px] text-gray-400">
+    <div className="flex items-center justify-between pr-1 text-[16px] text-secondary-text-light dark:text-main-text-dark">
       <div className="flex items-center gap-5">
-        <Link href="#calender">
+        <Link href="/">
           <h3
             onClick={() =>
               setSectionClicked((current) => (current = 'calendar'))
@@ -22,7 +22,7 @@ const ContentOptions = () => {
             Calendar
           </h3>
         </Link>
-        <Link href="#availability">
+        <Link href="/Dashboard/home/availability">
           <h3
             onClick={() =>
               setSectionClicked((current) => (current = 'availability'))

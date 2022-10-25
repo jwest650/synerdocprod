@@ -5,76 +5,140 @@ import {
   MenuList,
   useDisclosure,
 } from '@chakra-ui/react';
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import { BsDot } from 'react-icons/bs';
 import { CiExport } from 'react-icons/ci';
 import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
+import GeneralContext from '../context/GeneralContext';
 
 const Welcome = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { darkTheme } = useContext(GeneralContext);
   const btnRef = useRef(null);
   return (
-    <div className="mt-4 flex w-full items-center justify-between px-5 tracking-wide">
+    <div className="mx-3 mt-4 flex items-center justify-between rounded p-3 tracking-wide shadow dark:rounded-none dark:shadow-none">
       <div>
-        <h2 className="text-lg">AMS for SinamCare</h2>
-        <div className="mt-2 flex items-center gap-5">
-          <p className="text-sm text-gray-500">Calendar For:</p>{' '}
+        <h2 className="text-lg text-main-text-light dark:text-main-text-dark">
+          AMS for SinamCare
+        </h2>
+        <div className="mt-2 flex items-center gap-5 rounded pl-2 shadow">
+          <p className="text-sm text-secondary-text-light dark:text-secondary-text-dark">
+            Calendar For:
+          </p>{' '}
           <Menu isOpen={isOpen} onClose={onClose}>
-            <span className="rounded-md bg-[#152937] px-2 py-1 text-sm">
+            <div className="w-fit rounded-md bg-secondary-light-bg px-2 shadow dark:bg-main-dark-bg">
               <MenuButton ref={btnRef} onClick={onOpen}>
-                <div className="flex items-center gap-3  text-sm font-medium">
+                <div className="flex items-center gap-3 text-sm font-medium text-secondary-text-light dark:text-main-text-dark ">
                   <span>Peggy Opong</span>
                   {isOpen ? (
-                    <FiChevronDown className="text-[16px]  text-gray-500" />
+                    <FiChevronDown className="text-[16px] text-secondary-text-light  dark:text-secondary-text-dark" />
                   ) : (
-                    <FiChevronRight className="text-[16px] text-gray-500" />
+                    <FiChevronRight className="text-[16px] text-secondary-text-light dark:text-secondary-text-dark" />
                   )}
                 </div>
               </MenuButton>
-              <MenuList className="bg-[#152937]">
-                <MenuItem>
-                  <span className="text-[#0e1922]">Eobard Thawn</span>
+              <MenuList
+                __css={{
+                  backgroundColor: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  borderRadius: '0.5rem',
+                  width: '190px',
+                  color: '#000',
+                }}
+                className="h-56 overflow-x-hidden overflow-y-scroll"
+              >
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Eobard Thawn
                 </MenuItem>
-                <MenuItem>
-                  <span className="text-[#0e1922]">Iris West</span>
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Iris West
                 </MenuItem>
-                <MenuItem>
-                  <span className="text-[#0e1922]">Barry Alen</span>
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Barry Alen
                 </MenuItem>
-                <MenuItem>
-                  <span className="text-[#0e1922]">Joe West</span>
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Joe West
                 </MenuItem>
-                <MenuItem>
-                  <span className="text-[#0e1922]">Kateline Frost</span>
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Kateline Frost
                 </MenuItem>
-                <MenuItem>
-                  <span className="text-[#0e1922]">Cisco Raymond</span>
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Cisco Raymond
                 </MenuItem>
-                <MenuItem>
-                  <span className="text-[#0e1922]">Ralph Dipney</span>
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Ralph Dipney
                 </MenuItem>
-                <MenuItem>
-                  <span className="text-[#0e1922]">Christian Krammer</span>
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Christian Krammer
                 </MenuItem>
-                <MenuItem>
-                  <span className="text-[#0e1922]">Wally West</span>
+                <MenuItem
+                  _hover={{
+                    backgroundColor: ` ${darkTheme ? '#f1f1f1' : '#152937'}`,
+                    color: ` ${darkTheme ? '#152937' : '#f1f1f1'}`,
+                  }}
+                >
+                  Wally West
                 </MenuItem>
               </MenuList>
-            </span>
+            </div>
           </Menu>
         </div>
-        {/* <p className="mt-2 text-sm text-gray-500">
-            Welcome to your dashboard
-          </p> */}
       </div>
       <div className="mr-7 flex items-center gap-14">
         <div>
-          <h3 className="text-gray-400">Associates</h3>
-          <p>120</p>
+          <h3 className="text-secondary-text-light dark:text-secondary-text-dark">
+            Associates
+          </h3>
+          <p className="font-semibold text-main-text-light dark:text-main-text-dark">
+            120
+          </p>
         </div>
         <div>
-          <h3 className="text-gray-400">Patients</h3>
-          <p>1000</p>
+          <h3 className="text-secondary-text-light dark:text-secondary-text-dark">
+            Patients
+          </h3>
+          <p className="font-semibold text-main-text-light dark:text-main-text-dark">
+            1000
+          </p>
         </div>
         <div>
           <span className="flex items-center  text-green-500">

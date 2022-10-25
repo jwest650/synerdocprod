@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Calendar from '../components/Calendar';
-import Layout from '../components/Layout';
-import Welcome from '../components/Welcome';
+import HomepageLayout from '../components/HomepageLayout';
 
 export default function Home() {
   return (
@@ -14,10 +13,10 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Layout> */}
-      <Welcome />
-      <Calendar />
-      {/* </Layout> */}
+
+      <HomepageLayout>
+        <Calendar />
+      </HomepageLayout>
     </div>
   );
 }
