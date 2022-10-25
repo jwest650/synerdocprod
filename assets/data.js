@@ -259,7 +259,7 @@ export const menuOptions = [
       },
       {
         title: 'Referral Sources',
-        url: 'referral-sources',
+        url: 'Referral-sources',
         icon: 'AiOutlineInfoCircle',
       },
     ],
@@ -341,7 +341,7 @@ export const menuOptions = [
     ],
   },
   {
-    name: 'A/R',
+    name: 'AR',
     options: [
       {
         title: 'A/R Collection Assignments',
