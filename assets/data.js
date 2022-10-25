@@ -360,7 +360,6 @@ export const menuOptions = [
       },
       {
         title: 'A/R Aging As Of Report',
-
         url: 'ar-aging-as-of-report',
         icon: 'BsDot',
       },
@@ -434,12 +433,10 @@ export const menuOptions = [
       {
         title: 'Oasis File Build',
         url: 'oasis-file-build',
-
         icon: 'BsDot',
       },
       {
         title: 'Oasis Validation Post',
-
         url: 'oasis-validation-post',
         icon: 'BsDot',
       },
