@@ -26,7 +26,7 @@ const ARTransactionSummary = () => {
                 </div>
             </section>
 
-            <section className="mx-auto flex w-[90%] items-center space-x-60 ">
+            <section className="flex w-full items-end space-x-[200px] pl-14 ">
                 <aside className="space-y-2 capitalize ">
                     <div className="space-x-2">
                         <label htmlFor="">revnue date from:</label>
@@ -78,11 +78,12 @@ const ARTransactionSummary = () => {
                         </select>
                     </div>
                 </aside>
+                <div className="ml-auto mr-10 w-fit rounded border py-1 px-3">
+                    {" "}
+                    <button>Search</button>
+                </div>
             </section>
-            <div className="ml-auto mr-10 w-fit rounded border p-1 px-2">
-                {" "}
-                <button>Search</button>
-            </div>
+
             <hr />
             <section>
                 <table className="w-full">

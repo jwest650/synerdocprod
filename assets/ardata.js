@@ -74,3 +74,29 @@ export const summary = [
         dso: "$0.00",
     },
 ];
+export const agency = [
+    {
+        acc: "louisiana",
+        paymentCode: "dnt",
+        paymentDesc: "donations",
+        balance: "$10,000.00",
+    },
+    {
+        acc: "louisiana",
+        paymentCode: "dnt",
+        paymentDesc: "donations",
+        balance: "$10,000.00",
+    },
+    {
+        acc: "louisiana",
+        paymentCode: "dnt",
+        paymentDesc: "donations",
+        balance: "$10,000.00",
+    },
+    {
+        acc: "louisiana",
+        paymentCode: "dnt",
+        paymentDesc: "donations",
+        balance: "$10,000.00",
+    },
+];
