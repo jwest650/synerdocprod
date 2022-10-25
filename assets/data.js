@@ -253,12 +253,11 @@ export const menuOptions = [
     ],
   },
   {
-    name: ' Patients',
+    name: 'Patients',
     options: [
       {
         title: 'Add Referral/Patient',
         url: 'add-referral',
-        component: 'AddRefferal',
         icon: 'BsDot',
       },
       {
