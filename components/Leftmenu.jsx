@@ -41,12 +41,16 @@ const Leftmenu = () => {
               <ul className="ml-5 space-y-4 text-gray-300">
                 {menu.options.map((option, index) => (
                   <Link
-                    // href={`/${menu.name}/${option.title}`}
                     href={`${
                       option.title === 'Home'
                         ? '/'
-                        : `/menuoptions/${option.title}`
+                        : `/${menu.name}/${option.title}/${option.title}`
                     }`}
+                    // href={`${
+                    //   option.title === 'Home'
+                    //     ? '/'
+                    //     : `/menuoptions/${option.title}`
+                    // }`}
                     key={index}
                   >
                     <li
@@ -126,12 +130,16 @@ const Leftmenu = () => {
               <ul className="ml-5 space-y-4 text-gray-300">
                 {menu.options.map((option, index) => (
                   <Link
-                    // href={`/${menu.name}/${option.title}`}
                     href={`${
                       option.title === 'Home'
                         ? '/'
-                        : `/menuoptions/${option.title}`
+                        : `/${menu.name}/${option.title}/${option.title}`
                     }`}
+                    // href={`${
+                    //     option.title === 'Home'
+                    //       ? '/'
+                    //       : `/menuoptions/${option.title}`
+                    //   }`}
                     key={index}
                   >
                     <li
