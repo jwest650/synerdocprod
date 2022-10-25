@@ -275,7 +275,7 @@ export const menuOptions = [
   },
 
   {
-    name: ' Patients',
+    name: 'Patients',
     options: [
       {
         title: 'Add Referral/Patient',
@@ -350,7 +350,7 @@ export const menuOptions = [
     ],
   },
   {
-    name: 'A/R',
+    name: 'AR',
     options: [
       {
         title: 'A/R Collection Assignments',
