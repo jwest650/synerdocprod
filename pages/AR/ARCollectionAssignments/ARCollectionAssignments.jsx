@@ -2,12 +2,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { ar } from "../../../assets/ardata";
 import greenplus from "../../../assets/images/greenplus.png";
-import ARforms from "../../../components/AR/ARforms";
 const ARCollectionAssignments = () => {
-    const [show, setshow] = useState(false);
     return (
         <div className="relative">
-            {show && <ARforms show={show} setshow={setshow} />}
             <div className="space-y-5">
                 <section className="flex items-center space-x-5">
                     <h1 className="text-2xl font-bold capitalize">
