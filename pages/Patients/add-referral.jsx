@@ -82,7 +82,7 @@ const AddReferral = () => {
               Option 3
             </option>
           </Select>
-          <Link onClick={onOpen} className='text-[#FF6D00] underline cursor-pointer' >find referral source</Link>
+          <label onClick={onOpen} className='text-[#FF6D00] underline cursor-pointer' >find referral source</label>
         </div>
 
         <div className='flex'>
@@ -316,7 +316,7 @@ const AddReferral = () => {
             </Button>
 
             <div>
-              <Link onClick={onOpen} className='text-[#FF6D00] underline cursor-pointer' >add referral source</Link>
+              <label onClick={onOpen} className='text-[#FF6D00] underline cursor-pointer' >add referral source</label>
             </div>
           </div>
         </ModalContent>
