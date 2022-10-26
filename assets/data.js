@@ -1,11 +1,26 @@
 import { AiOutlineInfoCircle, AiOutlineLineChart } from 'react-icons/ai';
-import { BsBuilding, BsCalendar4Event, BsDot } from 'react-icons/bs';
+import {
+  BsBuilding,
+  BsCalendar4Event,
+  BsDot,
+  BsFillJournalBookmarkFill,
+} from 'react-icons/bs';
 import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
 import { BiChalkboard } from 'react-icons/bi';
+import { GiWhiteBook } from 'react-icons/gi';
 import { CiStethoscope } from 'react-icons/ci';
-import { MdAttachMoney, MdOutlinePayments } from 'react-icons/md';
-import { SlCalculator } from 'react-icons/sl';
+import { RiHealthBookLine, RiToolsFill } from 'react-icons/ri';
+import {
+  MdAttachMoney,
+  MdLibraryBooks,
+  MdOutlineMedicalServices,
+  MdOutlinePayments,
+} from 'react-icons/md';
+import { SlCalculator, SlNotebook } from 'react-icons/sl';
 import { FiHome } from 'react-icons/fi';
+import { VscNote, VscServerProcess } from 'react-icons/vsc';
+import { IoIosPeople } from 'react-icons/io';
+import { FaBookMedical, FaHome, FaHospitalUser } from 'react-icons/fa';
 
 export const scheduleData = [
   {
@@ -205,6 +220,7 @@ export const scheduleData = [
 export const menuOptions = [
   {
     name: 'Dashboard',
+    icon: <FaHome />,
     options: [
       {
         title: 'Home',
@@ -245,6 +261,7 @@ export const menuOptions = [
   },
   {
     name: 'Resources',
+    icon: <MdOutlineMedicalServices />,
     options: [
       {
         title: 'Associates',
@@ -276,6 +293,7 @@ export const menuOptions = [
 
   {
     name: 'Patients',
+    icon: <IoIosPeople />,
     options: [
       {
         title: 'Add Referral/Patient',
@@ -351,6 +369,7 @@ export const menuOptions = [
   },
   {
     name: 'AR',
+    icon: <MdLibraryBooks />,
     options: [
       {
         title: 'A/R Collection Assignments',
@@ -422,6 +441,7 @@ export const menuOptions = [
   },
   {
     name: 'Processes',
+    icon: <VscServerProcess />,
     options: [
       {
         title: 'View  Physician Documents',
@@ -503,87 +523,153 @@ export const menuOptions = [
   },
   {
     name: 'Reports',
+    icon: <GiWhiteBook />,
     options: [
       {
-        title: 'View  Physician Documents',
-        url: 'view-physcian-documents',
+        title: 'Automated Reports',
+        url: 'automated-reports',
         icon: <BsDot />,
       },
       {
-        title: 'Physician Document',
-        url: 'physician-document',
+        title: 'Ad Hoc Reports',
+        url: 'ad-hoc-reports',
         icon: <BsDot />,
       },
       {
-        title: 'Associate Time Entry',
-        url: 'associate-time-entry',
+        title: 'Active Diabetes Patients Report',
+        url: 'active-diabetes-patients-report',
         icon: <BsDot />,
       },
       {
-        title: 'Oasis File Build',
-        url: 'oasis-file-build',
+        title: 'Associate Compliance',
+        url: 'associate-compliance',
         icon: <BsDot />,
       },
       {
-        title: 'Oasis Validation Post',
-
-        url: 'oasis-validation-post',
+        title: 'Associate Pay Rates Report',
+        url: 'associate-pay-rates-report',
         icon: <BsDot />,
       },
       {
-        title: 'Clinical Update Review',
-        url: 'clinical-update-review',
+        title: 'Associate Productivity',
+        url: 'associate-productivity',
         icon: <BsDot />,
       },
       {
-        title: 'Directions / Map',
-        url: 'directions',
+        title: 'Authorization Reports',
+        url: 'authorization-reports',
         icon: <BsDot />,
       },
       {
-        title: 'Home Health Patient Survey',
-        url: 'home-health-patient-survey',
+        title: 'Bereavement',
+        url: 'bereavement',
         icon: <BsDot />,
       },
       {
-        title: 'Hostpice Item Set file Build',
-        url: 'hospice-item-set-file-build',
+        title: 'Care Plans Without Bereavement',
+        url: 'care-plans-without-bereavement',
         icon: <BsDot />,
       },
       {
-        title: 'Hostpice Patient Survey',
-        url: 'hospice-patient-survey',
+        title: 'Diagnosis Code Report',
+        url: 'diagnosis-code-report',
         icon: <BsDot />,
       },
       {
-        title: 'IDT Review',
-        url: 'idt-review',
+        title: 'DME Report',
+        url: 'dme-report',
         icon: <BsDot />,
       },
       {
-        title: 'Orders To Sign',
-        url: 'orders-to-sign',
+        title: 'EVV Report',
+        url: 'EVV Report',
         icon: <BsDot />,
       },
       {
-        title: 'Pharmacy Import',
-        url: 'pharmacy-import',
+        title: 'Face To Face Due Report',
+        url: 'face-to-face-due-report',
         icon: <BsDot />,
       },
       {
-        title: 'QA Review',
-        url: 'qa-review',
+        title: 'Form Data - Reports',
+        title: 'form-data-reports',
         icon: <BsDot />,
       },
       {
-        title: 'RCD Document Gathering',
-        url: 'rcd-document-gathering',
+        title: 'Forms',
+        url: 'forms',
+        icon: <BsDot />,
+      },
+      {
+        title: 'HIS Transmission Report',
+        url: 'his-transmission-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Home Health QAPI Reports',
+        url: 'home-health-qapi-reports',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Medication Administration Report',
+        url: 'medication-administration-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Note/Forms Report',
+        url: 'note-forms-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Oasis Report',
+        url: 'oasis-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Orders Report',
+        url: 'orders-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Patient Measures',
+        url: 'patient-measures',
+        icon: <BsDot />,
+      },
+      {
+        title: 'PDGM Report',
+        url: 'pdgm-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'QAPI - Pain Report',
+        url: 'qapi-pain-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'QAPI Reports For Hospice',
+        url: 'qapi-reports-for-hospice',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Service Note Report',
+        url: 'service-note-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Service Notes CoSign Report',
+        url: 'service-notes-cosign-report',
+        icon: <BsDot />,
+      },
+      {
+        title: 'Statistical Reports',
+        url: 'statistical-reports',
         icon: <BsDot />,
       },
     ],
   },
   {
     name: 'Settings',
+    icon: <RiToolsFill />,
     options: [
       {
         title: 'Lookup Tables',

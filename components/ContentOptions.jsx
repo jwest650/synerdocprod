@@ -4,19 +4,19 @@ import { GoMail } from 'react-icons/go';
 import { IoSaveOutline } from 'react-icons/io5';
 import React, { useContext } from 'react';
 import GeneralContext from '../context/GeneralContext';
+import { useRouter } from 'next/router';
 
 const ContentOptions = () => {
-  const { sectionClicked, setSectionClicked } = useContext(GeneralContext);
+  const router = useRouter();
+  const currentPath = router.asPath.split('/')[3];
+  // const { sectionClicked, setSectionClicked } = useContext(GeneralContext);
   return (
     <div className="flex items-center justify-between pr-1 text-[16px] text-secondary-text-light dark:text-main-text-dark">
       <div className="flex items-center gap-5">
         <Link href="/">
           <h3
-            onClick={() =>
-              setSectionClicked((current) => (current = 'calendar'))
-            }
             className={`cursor-pointer border-b ${
-              sectionClicked === 'calendar' && ' border-cyan-500 text-cyan-500'
+              currentPath !== 'availability' && ' border-cyan-500 text-cyan-500'
             }`}
           >
             Calendar
@@ -24,12 +24,8 @@ const ContentOptions = () => {
         </Link>
         <Link href="/Dashboard/home/availability">
           <h3
-            onClick={() =>
-              setSectionClicked((current) => (current = 'availability'))
-            }
             className={`cursor-pointer border-b ${
-              sectionClicked === 'availability' &&
-              ' border-cyan-500 text-cyan-500'
+              currentPath === 'availability' && ' border-cyan-500 text-cyan-500'
             }`}
           >
             Availability
