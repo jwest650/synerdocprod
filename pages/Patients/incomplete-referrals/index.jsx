@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { ar } from '../../assets/ardata';
-import greenplus from '../../assets/images/greenplus.png';
+import { ar } from '../../../assets/ardata';
+import greenplus from '../../../assets/images/greenplus.png';
 import { RiDeleteBin5Line } from 'react-icons/ri';
 import { RiEdit2Line } from 'react-icons/ri';
 import {
@@ -15,8 +15,11 @@ import {
   Input,
   Button,
 } from '@chakra-ui/react';
+import EditReferral from './components/EditReferral';
 
 const IncompleteReferrals = () => {
+  const [openAddReferral, setOpenAddReferral] = useState(false);
+
   return (
     <div className='ar p-5 text-gray-600'>
       <div className='space-y-5'>
@@ -29,7 +32,7 @@ const IncompleteReferrals = () => {
               className='flex cursor-pointer items-center space-x-2'
               onClick={() => setshow(!show)}
             >
-              <h1 className='cursor-pointer rounded bg-gray-800 px-6 py-1 text-sm capitalize text-[#fff] dark:bg-white dark:text-gray-800'>
+              <h1 className='dark:text-[#E77654px-6 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'>
                 + Create Referral Patient
               </h1>
             </div>
@@ -49,7 +52,7 @@ const IncompleteReferrals = () => {
         <hr />
         <section>
           <TableContainer>
-            <Table variant='striped' colorScheme='[#432366]' size='sm'>
+            <Table variant='striped' colorScheme='gray' size='sm'>
               <Thead backgroundColor={'#432366'} color={'#fff'}>
                 <Tr>
                   <Th color={'#selecto'}>Created</Th>
@@ -68,7 +71,7 @@ const IncompleteReferrals = () => {
                   <Td>Home Health</Td>
                   <Td>Amess Alicia</Td>
                   <Td></Td>
-                  <Td>James Gordon</Td>
+                  <Td onClick={() => setOpenAddReferral(true)}>James Gordon</Td>
                   <Td>
                     <Image
                       src={greenplus.src}
@@ -83,6 +86,11 @@ const IncompleteReferrals = () => {
           </TableContainer>
         </section>
       </div>
+
+      <EditReferral
+        open={openAddReferral}
+        setOpenAddReferral={setOpenAddReferral}
+      />
     </div>
   );
 };

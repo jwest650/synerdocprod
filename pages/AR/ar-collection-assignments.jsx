@@ -1,33 +1,34 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { ar } from "../../assets/ardata";
-import greenplus from "../../assets/images/greenplus.png";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { RiEdit2Line } from "react-icons/ri";
+import { BsPlus } from "react-icons/bs";
+import { Select, useDisclosure } from "@chakra-ui/react";
+import CreateCollectorModal from "../../components/ar/CreateCollectorModal";
+
 const ARCollectionAssignments = () => {
+    const { isOpen, onOpen, onClose } = useDisclosure();
     return (
-        <div className="ar p-5">
+        <div className="ar background bodytext h-full p-5">
+            <CreateCollectorModal isOpen={isOpen} onClose={onClose} />
             <div className="space-y-5">
                 <section className="flex items-center space-x-5">
-                    <h1 className="text-2xl font-bold capitalize">
+                    <h1 className="head text-2xl font-bold capitalize">
                         collector assignments
                     </h1>
                     <div
-                        className="flex cursor-pointer items-center space-x-2"
-                        onClick={() => setshow(!show)}
+                        className="create-bg flex cursor-pointer items-center space-x-1"
+                        onClick={onOpen}
                     >
-                        <Image
-                            src={greenplus.src}
-                            alt="greenplus"
-                            width="20px"
-                            height="20px"
-                        />
+                        <BsPlus className="text-2xl" />
                         <h1 className="capitalize">assign collector</h1>
                     </div>
                 </section>
                 <hr />
+                {/* table */}
                 <section>
-                    <table className="  w-full border-collapse capitalize">
+                    <table className="w-full border-collapse capitalize">
                         <thead>
                             <th>agency</th>
                             <th>payer category</th>
@@ -41,13 +42,20 @@ const ARCollectionAssignments = () => {
                         <tbody>
                             <tr>
                                 <td>
-                                    <select
-                                        name=""
-                                        id=""
-                                        className="w-full text-black"
+                                    <Select
+                                        placeholder="Select option"
+                                        size="sm"
                                     >
-                                        <option value="all">All</option>
-                                    </select>
+                                        <option value="option1">
+                                            Option 1
+                                        </option>
+                                        <option value="option2">
+                                            Option 2
+                                        </option>
+                                        <option value="option3">
+                                            Option 3
+                                        </option>
+                                    </Select>
                                 </td>
                             </tr>
                             {ar.map((value, i) => (
