@@ -1,4 +1,4 @@
-import { FiBell, FiSettings } from 'react-icons/fi';
+import { FiBell } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
 import Link from 'next/link';
 import Settings from './Settings';

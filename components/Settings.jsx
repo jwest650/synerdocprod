@@ -1,5 +1,4 @@
 import {
-  Button,
   Popover,
   PopoverArrow,
   PopoverBody,
@@ -9,7 +8,7 @@ import {
   PopoverTrigger,
   Switch,
 } from '@chakra-ui/react';
-import React, { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { FiSettings } from 'react-icons/fi';
 import GeneralContext from '../context/GeneralContext';
 
@@ -24,7 +23,7 @@ const Settings = () => {
         </i>
       </PopoverTrigger>
       <PopoverContent>
-        <div className="dark:text-black">
+        <div className="text-black">
           <PopoverArrow />
           <PopoverCloseButton />
           <PopoverHeader>Settings</PopoverHeader>
@@ -34,7 +33,7 @@ const Settings = () => {
                 onClick={() => setDarkTheme((current) => (current = !current))}
                 className="flex items-center justify-between gap-2 p-2"
               >
-                Dark Theme
+                <span>Dark Theme</span>
                 <Switch isChecked={darkTheme} />
               </li>
             </ul>

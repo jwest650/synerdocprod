@@ -4,8 +4,10 @@ import { hasCookie, getCookie, setCookie } from 'cookies-next';
 const GeneralContext = createContext({});
 
 export const GeneralProvider = ({ children }) => {
+  console.log('cont');
   const [menuIsClicked, setMenuIsClicked] = useState(false);
   const [sectionClicked, setSectionClicked] = useState('calendar');
+
   const [darkTheme, setDarkTheme] = useState(() =>
     hasCookie('theme') ? JSON.parse(getCookie('theme')) : false
   );

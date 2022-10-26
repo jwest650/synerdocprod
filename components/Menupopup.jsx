@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { SiVercel } from 'react-icons/si';
 
 const Menupopup = ({ menu, index }) => {
@@ -8,7 +8,7 @@ const Menupopup = ({ menu, index }) => {
   const currentPath = router.asPath.split('/')[1];
   const [isHovered, setIsHovered] = useState(false);
 
-  // useEffect(() => {}, [isHovered]);
+  // alert(currentPath);
 
   return (
     <>
@@ -19,13 +19,11 @@ const Menupopup = ({ menu, index }) => {
       >
         <span className="mb-1 scale-125">{menu.icon}</span>
         <span
-          className={`border-b-2 hover:border-b-[#C8C4C3] ${
+          className={`border-b-2 border-[#32164A] hover:border-b-[#C8C4C3] ${
             currentPath
-              ? currentPath === menu.name && 'border-b-[#C8C4C3]'
-              : menu.name === 'Dashboard'
-              ? 'border-b-[#C8C4C3]'
-              : 'border-b-[#32164A]'
-          } `}
+              ? menu.name === currentPath && 'border-[#C8C4C3]'
+              : menu.name === 'Dashboard' && 'border-[#C8C4C3]'
+          }  `}
         >
           {menu.name}
         </span>
