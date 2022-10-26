@@ -220,6 +220,10 @@
         @apply dark:text-white;
     }
 }
+.ar {
+    width: 100vw;
+    height: 100vh;
+}
 .ar td,
 th,
 tr {

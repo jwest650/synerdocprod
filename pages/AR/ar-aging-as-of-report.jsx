@@ -3,7 +3,7 @@ import React from "react";
 
 const ArAgingAsOfReport = () => {
     return (
-        <div className="background bodytext  space-y-5 p-5">
+        <div className="background bodytext  ar space-y-5 p-5">
             <section className="flex items-center justify-between  capitalize">
                 <h1 className="head text-2xl">Ar Aging As Of Report</h1>
                 <div className="flex space-x-2">
