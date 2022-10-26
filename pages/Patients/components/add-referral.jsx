@@ -20,7 +20,7 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 
-const TransitionPatients = () => {
+const AddReferral = () => {
   const [openFindReferral, setOpenFindReferral] = useState(false);
   const [openAddReferral, setOpenAddReferral] = useState(false);
 
@@ -422,4 +422,4 @@ const TransitionPatients = () => {
   );
 };
 
-export default TransitionPatients;
+export default AddReferral;
