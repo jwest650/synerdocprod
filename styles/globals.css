@@ -44,7 +44,6 @@
 }
 
 .bezier-nav1 {
-  /* transition: all 2s ease-in-out; */
   animation: bezz1 2s forwards ease-in-out;
 }
 
