@@ -27,7 +27,7 @@ const TransitionPatients = () => {
   return (
     <div className='p-10 text-gray-600'>
       <div>
-        <h1 className='text-2xl'>Create Referral</h1>
+        <h1 className='text-2xl'>Transition Patients</h1>
       </div>
       <section>
         <div>
@@ -83,12 +83,13 @@ const TransitionPatients = () => {
               Option 3
             </option>
           </Select>
-          <label
+
+          <button
             onClick={() => setOpenFindReferral(true)}
-            className='cursor-pointer text-[#FF6D00] underline'
+            className='dark:text-[#E77654px-6 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'
           >
             find referral source
-          </label>
+          </button>
         </div>
 
         <div className='flex py-5'>
@@ -99,7 +100,7 @@ const TransitionPatients = () => {
         <div className='flex '>
           <h1 className='mr-5'>Referral History: </h1>
           <TableContainer>
-            <Table variant='striped' colorScheme='[#0e1922]' size={'sm'}>
+            <Table variant='striped' colorScheme='gray' size={'sm'}>
               <Thead backgroundColor={'#29507C'} color={'#fff'}>
                 <Tr>
                   <Th color={'#fff'} isNumeric></Th>
@@ -204,7 +205,7 @@ const TransitionPatients = () => {
             </div>
 
             <TableContainer>
-              <Table variant='striped' colorScheme='[#0e1922]' size='sm'>
+              <Table variant='striped' colorScheme='gray' size='sm'>
                 <Thead backgroundColor={'#29507C'} color={'#fff'}>
                   <Tr>
                     <Th color={'#selecto'}>Select</Th>
@@ -232,25 +233,26 @@ const TransitionPatients = () => {
                 </Tbody>
               </Table>
             </TableContainer>
-          </ModalBody>
+            <div className='ml-auto'>
+              <div className='flex justify-end py-3'>
+                <Button colorScheme='gray' size={'sm'} mr={3}>
+                  Save
+                </Button>
+                <Button colorScheme='gray' size={'sm'}>
+                  Cancel
+                </Button>
+              </div>
 
-          <div className='ml-auto p-5'>
-            <Button colorScheme='gray' size={'sm'} mr={3}>
-              Save
-            </Button>
-            <Button colorScheme='gray' size={'sm'} mr={3}>
-              Cancel
-            </Button>
-
-            <div>
-              <label
-                onClick={() => setOpenAddReferral(true)}
-                className='cursor-pointer text-[#FF6D00] underline'
-              >
-                add referral source
-              </label>
+              <div className='flex justify-end'>
+                <button
+                  onClick={() => setOpenAddReferral(true)}
+                  className='dark:text-[#E77654px-6 my-2 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'
+                >
+                  add referral source
+                </button>
+              </div>
             </div>
-          </div>
+          </ModalBody>
         </ModalContent>
       </Modal>
 
