@@ -23,7 +23,7 @@ const AddReferral = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div className="p-10">
+    <div className="p-10 text-black dark:text-white">
       <div className="underline">
         <h1>Create Referral</h1>
       </div>

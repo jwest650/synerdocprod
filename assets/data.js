@@ -268,7 +268,7 @@ export const menuOptions = [
       },
       {
         title: 'Referral Sources',
-        url: 'Referral-sources',
+        url: 'referral-sources',
         icon: <AiOutlineInfoCircle />,
       },
     ],

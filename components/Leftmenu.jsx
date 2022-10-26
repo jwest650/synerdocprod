@@ -37,7 +37,7 @@ const Leftmenu = () => {
                     href={`${
                       option.title === 'Home'
                         ? '/'
-                        : `/${menu.name}/${option.url}/${option.url}`
+                        : `/${menu.name}/${option.url}`
                     }`}
                     key={index}
                   >
@@ -93,7 +93,7 @@ const Leftmenu = () => {
                     href={`${
                       option.title === 'Home'
                         ? '/'
-                        : `/${menu.name}/${option.url}/${option.url}`
+                        : `/${menu.name}/${option.url}`
                     }`}
                     key={index}
                   >
