@@ -16,10 +16,6 @@ import GeneralContext from '../context/GeneralContext';
 const Settings = () => {
   const { darkTheme, setDarkTheme } = useContext(GeneralContext);
 
-  useEffect(() => {
-    console.log(darkTheme);
-  }, [darkTheme]);
-
   return (
     <Popover placement="bottom-end">
       <PopoverTrigger>
@@ -36,13 +32,11 @@ const Settings = () => {
             <ul>
               <li
                 onClick={() => setDarkTheme((current) => (current = !current))}
-                className="flex items-center gap-2 p-2"
+                className="flex items-center justify-between gap-2 p-2"
               >
                 Dark Theme
                 <Switch isChecked={darkTheme} />
               </li>
-              <li></li>
-              <li></li>
             </ul>
           </PopoverBody>
         </div>
