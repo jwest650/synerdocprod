@@ -18,17 +18,18 @@ import {
   Button,
   Input,
 } from '@chakra-ui/react'
+import Link from 'next/link'
 
 const AddReferral = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <div className='p-10'>
-      <div className="underline">
-        <h1>Create Referral</h1>
+    <div className='p-10 text-gray-600'>
+      <div>
+        <h1 className='text-2xl'>Create Referral</h1>
       </div>
       <section>
-        <div className='underline'>
+        <div >
           <p className='py-5'>Add a new referral into the system</p>
         </div>
         <div className=' flex w-[70%] justify-between items-center'>
@@ -59,18 +60,18 @@ const AddReferral = () => {
             <option value='option2' className='text-gray-800'>Option 2</option>
             <option value='option3' className='text-gray-800'>Option 3</option>
           </Select>
-          <a href='#' className='text-[#FF6D00] underline' onClick={onOpen}>find referral source</a>
+          <label onClick={onOpen} className='text-[#FF6D00] underline cursor-pointer' >find referral source</label>
         </div>
 
         <div className='flex'>
           <h1 className='mr-5'>Referral Phone: </h1>
-          <p className='text-gray-100'>w: (3434)-343445</p>
+          <p className='text-gray-500'>w: (3434)-343445</p>
         </div>
 
         <div className='flex '>
           <h1 className='mr-5'>Referral History:  </h1>
           <TableContainer>
-            <Table variant='striped' colorScheme='[#0e1922]'>
+            <Table variant='striped' colorScheme='[#0e1922]' size={'sm'}>
               <Thead backgroundColor={'#29507C'} color={"#fff"} >
                 <Tr>
                   <Th color={'#fff'} isNumeric></Th>
@@ -117,7 +118,7 @@ const AddReferral = () => {
       </section>
 
       {/* Search Modal */}
-      <Modal isOpen={isOpen} onClose={onClose} >
+      <Modal isOpen={isOpen} onClose={onClose} className='p-5' >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
           <ModalHeader>Modal Title</ModalHeader>
@@ -133,33 +134,29 @@ const AddReferral = () => {
                   <Input placeholder='small size' size='sm' />
               </div>
             </div>
-            <div>
+            <div className='flex justify-between'>
               <label htmlFor="#">Facility Name/Referral Company</label>
               <div>
                   <Input placeholder='small size' size='sm' />
               </div>
             </div>
 
-            <Button colorScheme='teal' size='sm' marginTop={5} alignItems='left' className='left'>
-              Button
-            </Button>
-          </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}>
-              Close
-            </Button>
-          </ModalFooter>
+            <div className='ml-auto'>
+              <Button colorScheme='blue' my={3} onClick={onClose}>
+                Search
+              </Button>
+            </div>
+          
 
           <TableContainer>
-            <Table variant='striped' colorScheme='[#0e1922]'>
+            <Table variant='striped' colorScheme='[#0e1922]' size='sm'>
               <Thead backgroundColor={'#29507C'} color={"#fff"} >
                 <Tr>
                   <Th color={'#selecto'}>Select</Th>
                   <Th color={'#selecto'}>Name</Th>
                   <Th color={'#selecto'}>Type</Th>
                   <Th color={'#selecto'}>Preferred number</Th>
-                  <Th color={'#selecto'}>Referral <Address></Address></Th>
+                  <Th color={'#selecto'}>Referral Address</Th>
                 </Tr>
               </Thead>
               <Tbody>
@@ -180,6 +177,108 @@ const AddReferral = () => {
               </Tbody>
             </Table>
           </TableContainer>
+          </ModalBody>
+
+          <div className='ml-auto p-5'>
+            <Button colorScheme='blue' mr={3} onClick={onClose}>
+              Save
+            </Button>
+            <Button colorScheme='blue' mr={3} onClick={onClose}>
+              Cancel
+            </Button>
+
+            <div>
+              <label onClick={onOpen} className='text-[#FF6D00] underline cursor-pointer' >add referral source</label>
+            </div>
+          </div>
+        </ModalContent>
+      </Modal>
+
+      {/* Add Modal */}
+      <Modal isOpen={isOpen} onClose={onClose} className='p-5' >
+        <ModalOverlay />
+        <ModalContent maxWidth={700}>
+          <div>
+          <ModalHeader>
+            Add Referral
+            <p className="text-sm text-gray-600">add referal details</p>
+          </ModalHeader>
+
+          </div>
+          <ModalCloseButton />
+          <ModalBody>
+
+            <div className='flex my-2'>
+              <label htmlFor="#" className='w-[20%]'>First: </label>
+              <div className='w-[70%]'>
+                <Select  size='xs' >
+                  <option value='option1' className='text-gray-800'>Option 1</option>
+                  <option value='option2' className='text-gray-800'>Option 2</option>
+                  <option value='option3' className='text-gray-800'>Option 3</option>
+                </Select>
+                  {/* <Input placeholder='small size' size='sm' /> */}
+              </div>
+            </div>
+            <div className='flex my-2 '>
+              <label htmlFor="#" className='w-[20%]'>Company: </label>
+              <div className='w-[70%]'>
+                  <Input placeholder='small size' size='sm' />
+              </div>
+            </div>
+            <div className='flex my-2 '>
+              <label htmlFor="#" className='w-[20%]'>Company: </label>
+              <div className='w-[70%]'>
+                  <Input placeholder='small size' size='sm' />
+              </div>
+            </div>
+            <div className='flex my-2 '>
+              <label htmlFor="#" className='w-[20%]'>Start: </label>
+              <div className='w-[70%]'>
+                  <Input
+                    placeholder="Select Date and Time"
+                    size="sm"
+                    type="date"
+                  />
+              </div>
+            </div>
+            <div className='flex my-2 '>
+              <label htmlFor="#" className='w-[20%]'>End Date: </label>
+              <div className='w-[70%]'>
+                  <Input
+                    placeholder="Select Date and Time"
+                    size="sm"
+                    type="date"
+                  />
+              </div>
+            </div>
+            <div className='flex my-2 '>
+              <label htmlFor="#" className='w-[20%]'>Company: </label>
+              <div className='w-[70%]'>
+                  <Input placeholder='small size' size='sm' />
+              </div>
+            </div>
+            <div className='flex my-2 '>
+              <label htmlFor="#" className='w-[20%]'>Company: </label>
+              <div className='w-[70%]'>
+                  <Input placeholder='small size' size='sm' />
+              </div>
+            </div>
+
+            
+          </ModalBody>
+
+          <div className='ml-auto p-5'>
+            <Button colorScheme='blue' mr={3} onClick={onClose}>
+              Save
+            </Button>
+            <Button colorScheme='blue' mr={3} onClick={onClose}>
+              Cancel
+            </Button>
+
+            <div>
+              <label onClick={onOpen} className='text-[#FF6D00] underline cursor-pointer' >add referral source</label>
+            </div>
+          </div>
         </ModalContent>
       </Modal>
     </div>
