@@ -33,7 +33,7 @@ const AddReferral = () => {
         <div>
           <p className='py-5'>Add a new referral into the system</p>
         </div>
-        <div className=' flex w-[500px] items-center justify-between'>
+        <div className=' flex  items-center justify-between'>
           <div className='flex items-center justify-between'>
             <label htmlFor='#' className='mr-5'>
               Agency:{' '}
@@ -72,7 +72,7 @@ const AddReferral = () => {
       <section className='mt-5'>
         <div className='flex'>
           <label htmlFor='#'>Referral Source:</label>
-          <Select size='xs' maxWidth={500} marginRight={5} marginLeft={5}>
+          <Select size='xs' marginRight={5} marginLeft={5}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -134,7 +134,7 @@ const AddReferral = () => {
 
         <div className='mt-5 flex'>
           <label htmlFor='#'>Mode of Delivery:</label>
-          <Select size='xs' maxWidth={500} marginRight={5} marginLeft={5}>
+          <Select size='xs' marginRight={5} marginLeft={5}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -149,7 +149,7 @@ const AddReferral = () => {
 
         <div className='my-5 flex'>
           <label htmlFor='#'>Sales Rep:</label>
-          <Select size='xs' maxWidth={500} marginRight={5} marginLeft={5}>
+          <Select size='xs' marginRight={5} marginLeft={5}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
