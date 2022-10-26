@@ -1,136 +1,160 @@
+import { Input, Select } from "@chakra-ui/react";
 import React from "react";
 import { invoice } from "../../assets/ardata";
-
+import { FcCalendar } from "react-icons/fc";
 const invoices = () => {
     return (
-        <div className="ar space-y-2 p-5 capitalize">
+        <div className="ar background bodytext space-y-2 p-5 capitalize">
             <section className="flex items-center justify-between">
-                <h1 className="text-2xl capitalize">invoices</h1>
+                <h1 className="head text-2xl capitalize">invoices</h1>
 
                 <aside className="flex items-center space-x-40">
-                    <div className="space-x-2">
+                    <div className="space-x-1">
                         <label htmlFor="">show my responsiilty only:</label>
                         <input type="checkbox" name="" id="" />
                     </div>
-                    <div className="space-x-2">
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">pdf</option>
-                        </select>
+                    <div className="flex space-x-1">
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                         <button className="border px-3">Export</button>
                     </div>
                 </aside>
             </section>
             <section className="flex items-center justify-between">
                 <aside className="space-y-2">
-                    <div className="space-x-2">
+                    <div className="flex space-x-1">
                         <label htmlFor="">invoice type:</label>
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">open invoice balances</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
-                    <div className="space-x-2">
+                    <div className="flex space-x-1">
                         <label htmlFor="">agency:</label>
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">all</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
-                    <div className="space-x-2">
+                    <div className="space-x-1">
                         <label htmlFor="">balance amt.from:</label>
-                        <input type="text" className="w-20" />
+                        <Input w={100} type="text" size="sm" />
                         <label htmlFor="">to:</label>
-                        <input type="text" className="w-20" />
+                        <Input w={100} type="text" size="sm" />
                     </div>
-                    <div className="space-x-2">
+                    <div className="flex space-x-1">
                         <label htmlFor="">note type:</label>
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">all</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
                 </aside>
                 <aside className="space-y-2">
-                    <div className="space-x-2">
+                    <div className="flex space-x-1">
                         <label htmlFor="">age by:</label>
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">organization standard</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
-                    <div className="space-x-2">
+                    <div className="flex space-x-1">
                         <label htmlFor="">agency type:</label>
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">all</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
-                    <div className="space-x-2">
+                    <div className="space-x-1">
                         <label htmlFor="">to date from:</label>
-                        <input type="text" className="w-20" />
+                        <Input w={100} type="text" size="sm" />{" "}
                         <label htmlFor="">to:</label>
-                        <input type="text" className="w-20" />
+                        <Input w={100} type="text" size="sm" />{" "}
                     </div>
-                    <div className="space-x-2">
+                    <div className="space-x-1">
                         <label htmlFor="">note from:</label>
-                        <input type="text" className="w-20" />
+                        <Input w={100} type="text" size="sm" />
                         <label htmlFor="">to:</label>
-                        <input type="text" className="w-20" />
+                        <Input w={100} type="text" size="sm" />
                     </div>
                 </aside>
                 <aside className="space-y-2">
-                    <div className="space-x-2">
+                    <div className="flex space-x-1">
                         <label htmlFor="">reporting group:</label>
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">all</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
-                    <div className="space-x-2">
+                    <div className="flex space-x-1">
                         <label htmlFor="">payer category:</label>
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">all</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
-                    <div className="space-x-2">
+                    <div className="space-x-1">
                         <label htmlFor="">inv dates from:</label>
-                        <input type="text" className="w-20" />
+                        <Input w={100} type="text" size="sm" />
                         <label htmlFor="">to:</label>
-                        <input type="text" className="w-20" />
+                        <Input w={100} type="text" size="sm" />
                     </div>
-                    <div className="space-x-2">
+                    <div className="flex space-x-1">
                         <label htmlFor="">note to pull:</label>
-                        <select name="" id="" className="w-[200px] text-black">
-                            <option value="">latest note applied</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
                 </aside>
             </section>
-            <section className="ml-auto flex w-fit items-center space-x-2">
-                <div className="w-[210px]">
-                    <input
+            <section className="ml-auto flex w-fit items-center space-x-1">
+                <div>
+                    <Input
+                        w={200}
                         type="text"
-                        placeholder="Enter Patient first or last name"
-                        className="w-full pl-2"
+                        size="sm"
+                        placeholder="Enter patient first or lastname"
                     />
                 </div>
-                <div className="w-[220px]">
-                    <input
+                <div>
+                    <Input
+                        w={200}
                         type="text"
-                        placeholder="Enter Payer name"
-                        className="w-full pl-2"
+                        size="sm"
+                        placeholder="Enter payer name"
                     />
                 </div>
-                <div className="w-[210px]">
-                    <input
+                <div>
+                    <Input
+                        w={200}
                         type="text"
-                        placeholder="Enter invioce #"
-                        className="w-full pl-2"
+                        size="sm"
+                        placeholder="Enter invoice"
                     />
                 </div>
-                <button className="border px-2">Search</button>
+                <button className="border p-1 px-3">Search</button>
             </section>
             <hr />
-            <div className="space-x-4">
-                <a href="">adjust balance to zero</a>
+            <div className="flex space-x-4">
+                <p className=" text-orange-500">adjust balance to 0</p>
                 <label htmlFor="">Update:</label>
-                <select name="" id="" className="text-black">
-                    <option value="">select an adjustment reason</option>
-                </select>
+                <Select placeholder="Select option" size="sm" w={200}>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </Select>
             </div>
             {/* table */}
             <section>
