@@ -3,7 +3,7 @@ import { Input, Select } from "@chakra-ui/react";
 
 const InvoiceServiceSummary = () => {
     return (
-        <div className="ar background bodytext p-5 capitalize">
+        <div className="ar  bodytext p-5 capitalize">
             <section className="space-y-5 ">
                 <header className="flex items-center justify-between">
                     <h1 className="head text-2xl font-bold">

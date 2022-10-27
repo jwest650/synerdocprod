@@ -1,10 +1,10 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
-import { invoice } from "../../assets/ardata";
+import { invoice } from "../../../assets/ardata";
 
 const InvoiceDetailReport = () => {
     return (
-        <div className="ar background bodytext space-y-2 p-5 capitalize">
+        <div className="ar  bodytext space-y-2 p-5 capitalize">
             <section>
                 <h1 className="head text-2xl capitalize">
                     Invoice Detail Report

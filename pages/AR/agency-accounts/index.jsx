@@ -1,10 +1,10 @@
 import { Select } from "@chakra-ui/react";
 import React from "react";
-import { agency } from "../../assets/ardata";
+import { agency } from "../../../assets/ardata";
 
 const AgencyAccounts = () => {
     return (
-        <div className="ar bodytext background h-full space-y-5 p-5">
+        <div className="ar bodytext  h-full space-y-5 p-5">
             <section className="space-y-5">
                 <h1 className="head text-2xl capitalize">agency accounts</h1>
                 <aside className="flex items-center space-x-40">
