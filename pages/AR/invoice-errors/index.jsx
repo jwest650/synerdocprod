@@ -10,20 +10,20 @@ const InvoiceErrors = () => {
                 <hr />
                 <aside className="mt-2 space-y-2">
                     <div className="flex justify-end space-x-2">
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
-                        <button className="border p-1 px-3">Export</button>
+                        <button className="border  px-3">Export</button>
                     </div>
                     <div className="flex justify-between">
                         <div className="flex space-x-2">
                             <label htmlFor="">Agency:</label>
                             <Select
                                 placeholder="Select option"
-                                w={200}
-                                size="sm"
+                                w={120}
+                                size="xs"
                             >
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -61,7 +61,7 @@ const InvoiceErrors = () => {
                         <tr>
                             <td></td>
                             <td>
-                                <Select placeholder="Select option" size="sm">
+                                <Select placeholder="Select option" size="xs">
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
@@ -69,7 +69,7 @@ const InvoiceErrors = () => {
                             </td>
                             <td></td>
                             <td>
-                                <Select placeholder="Select option" size="sm">
+                                <Select placeholder="Select option" size="xs">
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
@@ -80,7 +80,7 @@ const InvoiceErrors = () => {
                             <td></td>
                             <td>
                                 {" "}
-                                <Select placeholder="Select option" size="sm">
+                                <Select placeholder="Select option" size="xs">
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>

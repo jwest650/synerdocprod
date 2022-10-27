@@ -9,12 +9,12 @@ const CapSupportData = () => {
                 <header>
                     <h1 className="head text-2xl">CapSupportData</h1>
                     <div className="flex justify-end  space-x-1">
-                        <Select placeholder="Select option" size="sm" w={200}>
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
-                        <button className="border p-1 px-3">Export</button>
+                        <button className="border  px-3">Export</button>
                     </div>
                 </header>
                 <article className="flex justify-between">
@@ -23,8 +23,8 @@ const CapSupportData = () => {
                             <label htmlFor="">agency:</label>
                             <Select
                                 placeholder="Select option"
-                                size="sm"
-                                w={200}
+                                size="xs"
+                                w={120}
                             >
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -35,8 +35,8 @@ const CapSupportData = () => {
                             <label htmlFor="">reporting groups:</label>
                             <Select
                                 placeholder="Select option"
-                                size="sm"
-                                w={200}
+                                size="xs"
+                                w={120}
                             >
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -47,13 +47,13 @@ const CapSupportData = () => {
                     <aside>
                         <div className="flex items-center space-x-2">
                             <label htmlFor=""> *dates range:</label>
-                            <Input w={100} type="text" size="sm" />
+                            <Input w={120} type="text" size="xs" />
                             <label htmlFor="">to:</label>
-                            <Input w={100} type="text" size="sm" />
+                            <Input w={120} type="text" size="xs" />
                         </div>
                     </aside>
                     <div className="self-end">
-                        <button className="border p-1 px-3">Search</button>
+                        <button className="border  px-3">Search</button>
                     </div>
                 </article>
             </section>

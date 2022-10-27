@@ -15,14 +15,14 @@ const ARTransactionSummary = () => {
                             unapplied reciept to date:
                         </label>
                         <Input
-                            size="sm"
-                            w={20}
+                            size="xs"
+                            w={120}
                             placeholder={"$10.00"}
                             _placeholder={{ opacity: 1, color: "orange.500" }}
                         />
                     </div>
                     <div className="space-x-2">
-                        <Select placeholder="Select option" size="sm">
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -36,16 +36,16 @@ const ARTransactionSummary = () => {
                     <div className="space-x-2">
                         <label htmlFor="">revenue date from:</label>
                         <Input
-                            w={140}
+                            w={120}
                             type="date"
-                            size="sm"
+                            size="xs"
                             placeholder="default placeholder"
                         />
                         <label htmlFor="">to:</label>
                         <Input
-                            w={140}
+                            w={120}
                             type="date"
-                            size="sm"
+                            size="xs"
                             placeholder="default placeholder"
                         />
                     </div>
@@ -54,9 +54,9 @@ const ARTransactionSummary = () => {
                             extend remit payment through date:
                         </label>
                         <Input
-                            w={140}
+                            w={120}
                             type="date"
-                            size="sm"
+                            size="xs"
                             placeholder="default placeholder"
                         />
                     </div>
@@ -64,7 +64,7 @@ const ARTransactionSummary = () => {
                 <aside className="space-y-2 capitalize">
                     <div className="flex space-x-2">
                         <label htmlFor="">agency:</label>
-                        <Select placeholder="Select option" size="sm">
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -72,7 +72,7 @@ const ARTransactionSummary = () => {
                     </div>
                     <div className="flex space-x-2">
                         <label htmlFor="">report by:</label>
-                        <Select placeholder="Select option" size="sm">
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>

@@ -10,9 +10,9 @@ const EraPayments = () => {
                 <aside>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">recieve dates from:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                         <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                     </div>
                     <div className="flex justify-end space-x-2">
                         <label>show only era with claims to post:</label>
@@ -20,9 +20,9 @@ const EraPayments = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">remit dates from:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                         <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                     </div>
                     <div className="flex justify-end space-x-2">
                         <div className="flex w-[210px] items-center">
@@ -32,7 +32,7 @@ const EraPayments = () => {
                                 placeholder="Enter invioce #"
                             />
                         </div>
-                        <button className="border p-1 px-3">Search</button>
+                        <button className="border  px-3">Search</button>
                     </div>
                 </aside>
                 <hr />

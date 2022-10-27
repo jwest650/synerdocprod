@@ -212,7 +212,7 @@
         @apply bg-white;
     }
     .create-bg {
-        @apply rounded bg-[#e9714e] p-1 px-3 text-white shadow-md;
+        @apply rounded bg-[#EA580C] p-2 px-2 text-white shadow-md;
     }
     .darkmode {
         @apply dark:text-white;
@@ -230,7 +230,7 @@ tr {
     border: 1px solid #a0a0a0;
 }
 .ar th {
-    background-color: #305e92;
+    background-color:#32164A;
     color: white;
 }
 .ar table tr:nth-child(even) {

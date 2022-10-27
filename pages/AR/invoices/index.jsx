@@ -14,12 +14,12 @@ const invoices = () => {
                         <input type="checkbox" name="" id="" />
                     </div>
                     <div className="flex items-center space-x-2">
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
-                        <button className="border p-1 px-3">Export</button>
+                        <button className="border  px-3">Export</button>
                     </div>
                 </aside>
             </section>
@@ -27,7 +27,7 @@ const invoices = () => {
                 <aside className="space-y-2">
                     <div className="flex space-x-2">
                         <label htmlFor="">invoice type:</label>
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -35,7 +35,7 @@ const invoices = () => {
                     </div>
                     <div className="flex flex items-center space-x-2">
                         <label htmlFor="">agency:</label>
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -43,14 +43,14 @@ const invoices = () => {
                     </div>
                     <div className="space-x-2">
                         <label htmlFor="">balance amt.from:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
 
                         <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">note type:</label>
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -60,7 +60,7 @@ const invoices = () => {
                 <aside className="space-y-2">
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">age by:</label>
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -68,7 +68,7 @@ const invoices = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">agency type:</label>
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -76,21 +76,21 @@ const invoices = () => {
                     </div>
                     <div className="space-x-2">
                         <label htmlFor="">to date from:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                         <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                     </div>
                     <div className="space-x-2">
                         <label htmlFor="">note from:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                         <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                     </div>
                 </aside>
                 <aside className="space-y-2">
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">reporting group:</label>
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -98,7 +98,7 @@ const invoices = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">payer category:</label>
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -106,13 +106,13 @@ const invoices = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">inv dates from:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                         <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">note to pull:</label>
-                        <Select placeholder="Select option" w={200} size="sm">
+                        <Select placeholder="Select option" w={120} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -148,7 +148,7 @@ const invoices = () => {
             <div className="flex items-center space-x-4">
                 <p>adjust balance to zero</p>
                 <label htmlFor="">Update:</label>
-                <Select placeholder="Select option" w={200} size="sm">
+                <Select placeholder="Select option" w={120} size="xs">
                     <option value="option1">Option 1</option>
                     <option value="option2">Option 2</option>
                     <option value="option3">Option 3</option>

@@ -11,7 +11,7 @@ const AgencyAccounts = () => {
                     <div className="flex space-x-2">
                         <label htmlFor="">Agency:</label>
 
-                        <Select placeholder="Select option" size="sm">
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -19,7 +19,7 @@ const AgencyAccounts = () => {
                     </div>
                     <div className="flex space-x-2">
                         <label htmlFor="">Payment Type:</label>
-                        <Select placeholder="Select option" size="sm">
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>

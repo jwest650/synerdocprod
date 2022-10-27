@@ -11,7 +11,7 @@ const InvoiceDetailReport = () => {
                 </h1>
                 <hr />
                 <div className="ml-auto mt-2 flex w-52 space-x-2">
-                    <Select placeholder="Select option" size="sm">
+                    <Select placeholder="Select option" size="xs" w={120}>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -20,7 +20,7 @@ const InvoiceDetailReport = () => {
                 </div>
                 <div className="flex space-x-2">
                     <label htmlFor="">Agency:</label>
-                    <Select placeholder="Select option" size="sm" w={200}>
+                    <Select placeholder="Select option" size="xs" w={120}>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -29,7 +29,7 @@ const InvoiceDetailReport = () => {
                 <section className="mt-2 flex items-center justify-between space-x-2">
                     <div className="flex space-x-2">
                         <label htmlFor="">payer:</label>
-                        <Select placeholder="Select option" size="sm" w={250}>
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -37,9 +37,9 @@ const InvoiceDetailReport = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">invoice from dates from:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                         <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="sm" />
+                        <Input w={120} type="text" size="xs" />
                         <div className="space-x-1">
                             <Input
                                 w={200}

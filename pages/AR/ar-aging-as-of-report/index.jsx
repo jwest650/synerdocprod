@@ -9,14 +9,14 @@ const ArAgingAsOfReport = () => {
                 <div className="flex space-x-2">
                     <label htmlFor="">ar as of date:</label>
                     <Input
-                        w={140}
+                        w={120}
                         type="date"
-                        size="sm"
+                        size="xs"
                         placeholder="default placeholder"
                     />
                 </div>
                 <div className="flex space-x-2">
-                    <Select placeholder="Select option" size="sm">
+                    <Select placeholder="Select option" w={120} size="xs">
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -27,7 +27,7 @@ const ArAgingAsOfReport = () => {
             <section className="flex items-center justify-between capitalize">
                 <div className="flex space-x-2">
                     <label htmlFor="">agency:</label>
-                    <Select placeholder="Select option" size="sm">
+                    <Select placeholder="Select option" w={120} size="xs">
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -35,7 +35,7 @@ const ArAgingAsOfReport = () => {
                 </div>
                 <div className="flex space-x-2">
                     <label htmlFor="">agency type:</label>
-                    <Select placeholder="Select option" size="sm">
+                    <Select placeholder="Select option" w={120} size="xs">
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -43,7 +43,7 @@ const ArAgingAsOfReport = () => {
                 </div>
                 <div className="flex space-x-2">
                     <label htmlFor="">age by:</label>
-                    <Select placeholder="Select option" size="sm">
+                    <Select placeholder="Select option" w={120} size="xs">
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>

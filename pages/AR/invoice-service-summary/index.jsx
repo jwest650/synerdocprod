@@ -10,7 +10,7 @@ const InvoiceServiceSummary = () => {
                         Invoice Service Summary
                     </h1>
                     <div className=" flex w-52   space-x-1">
-                        <Select placeholder="Select option" size="sm">
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -23,7 +23,7 @@ const InvoiceServiceSummary = () => {
                 <section className="flex items-center justify-around">
                     <div className="flex space-x-1">
                         <label htmlFor="">*agency:</label>
-                        <Select placeholder="Select option" size="sm">
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -31,13 +31,13 @@ const InvoiceServiceSummary = () => {
                     </div>
                     <div className="space-x-1">
                         <label htmlFor="">*date range:</label>
-                        <Input w={150} type="date" size="sm" />
+                        <Input w={120} type="date" size="xs" />
                         <label htmlFor="">to:</label>
-                        <Input w={150} type="date" size="sm" />
+                        <Input w={120} type="date" size="xs" />
                     </div>
                     <div>
                         {" "}
-                        <button className="border p-1 px-3">Search</button>
+                        <button className="border  px-3">Search</button>
                     </div>
                 </section>
             </section>
