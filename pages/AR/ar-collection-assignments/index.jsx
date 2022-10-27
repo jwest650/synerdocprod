@@ -1,16 +1,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { ar } from "../../assets/ardata";
+import { ar } from "../../../assets/ardata";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { RiEdit2Line } from "react-icons/ri";
 import { BsPlus } from "react-icons/bs";
 import { Select, useDisclosure } from "@chakra-ui/react";
-import CreateCollectorModal from "../../components/ar/CreateCollectorModal";
+import CreateCollectorModal from "../../../components/ar/CreateCollectorModal";
 
 const ARCollectionAssignments = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     return (
-        <div className="ar background bodytext h-full p-5">
+        <div className="ar  bodytext h-full p-5">
             <CreateCollectorModal isOpen={isOpen} onClose={onClose} />
             <div className="space-y-5">
                 <section className="flex items-center space-x-5">

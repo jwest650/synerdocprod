@@ -1,10 +1,10 @@
 import { Button, Input, Select } from "@chakra-ui/react";
 import React from "react";
-import { summary } from "../../assets/ardata";
+import { summary } from "../../../assets/ardata";
 
 const ARTransactionSummary = () => {
     return (
-        <div className="ar background bodytext h-full space-y-4 p-5">
+        <div className="ar  bodytext h-full space-y-4 p-5">
             <section className="flex items-center justify-between capitalize">
                 <h1 className="head text-2xl font-bold">
                     A/R TransactionSummary
