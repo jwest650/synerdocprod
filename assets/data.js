@@ -1,26 +1,21 @@
 import { AiOutlineInfoCircle, AiOutlineLineChart } from 'react-icons/ai';
-import {
-  BsBuilding,
-  BsCalendar4Event,
-  BsDot,
-  BsFillJournalBookmarkFill,
-} from 'react-icons/bs';
+import { BsBuilding, BsCalendar4Event, BsDot } from 'react-icons/bs';
 import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
 import { BiChalkboard } from 'react-icons/bi';
 import { GiWhiteBook } from 'react-icons/gi';
 import { CiStethoscope } from 'react-icons/ci';
-import { RiHealthBookLine, RiToolsFill } from 'react-icons/ri';
+import { RiToolsFill } from 'react-icons/ri';
 import {
   MdAttachMoney,
   MdLibraryBooks,
   MdOutlineMedicalServices,
   MdOutlinePayments,
 } from 'react-icons/md';
-import { SlCalculator, SlNotebook } from 'react-icons/sl';
+import { SlCalculator } from 'react-icons/sl';
 import { FiHome } from 'react-icons/fi';
-import { VscNote, VscServerProcess } from 'react-icons/vsc';
+import { VscServerProcess } from 'react-icons/vsc';
 import { IoIosPeople } from 'react-icons/io';
-import { FaBookMedical, FaHome, FaHospitalUser } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 
 export const scheduleData = [
   {
@@ -582,7 +577,7 @@ export const menuOptions = [
       },
       {
         title: 'EVV Report',
-        url: 'EVV Report',
+        url: 'evv-report',
         icon: <BsDot />,
       },
       {

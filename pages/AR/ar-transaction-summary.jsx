@@ -1,27 +1,32 @@
+import { Button, Input, Select } from "@chakra-ui/react";
 import React from "react";
 import { summary } from "../../assets/ardata";
 
 const ARTransactionSummary = () => {
     return (
-        <div className="ar space-y-4 p-5">
+        <div className="ar background bodytext h-full space-y-4 p-5">
             <section className="flex items-center justify-between capitalize">
-                <h1>A/R TransactionSummary</h1>
+                <h1 className="head text-2xl font-bold">
+                    A/R TransactionSummary
+                </h1>
                 <div className="flex items-center space-x-3">
                     <div className="">
                         <label htmlFor="" className="w-fit">
                             unapplied reciept to date:
                         </label>
-                        <input
-                            type="text"
-                            placeholder="$10.00"
-                            className="w-20 bg-transparent pl-2"
+                        <Input
+                            size="sm"
+                            w={20}
+                            placeholder={"$10.00"}
+                            _placeholder={{ opacity: 1, color: "orange.500" }}
                         />
                     </div>
                     <div className="space-x-2">
-                        <select name="" id="" className="rounded text-black">
-                            <option value="pdf">PDF Summary</option>
-                        </select>
-                        <button className="rounded border  px-2">Export</button>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
                 </div>
             </section>
@@ -29,58 +34,55 @@ const ARTransactionSummary = () => {
             <section className="flex w-full items-end space-x-[200px] pl-14 ">
                 <aside className="space-y-2 capitalize ">
                     <div className="space-x-2">
-                        <label htmlFor="">revnue date from:</label>
-                        <input
+                        <label htmlFor="">revenue date from:</label>
+                        <Input
+                            w={140}
                             type="date"
-                            name=""
-                            id=""
-                            className=" bg-gray-200 text-black"
+                            size="sm"
+                            placeholder="default placeholder"
                         />
                         <label htmlFor="">to:</label>
-                        <input
+                        <Input
+                            w={140}
                             type="date"
-                            name=""
-                            id=""
-                            className=" bg-gray-200 text-black"
+                            size="sm"
+                            placeholder="default placeholder"
                         />
                     </div>
-                    <div className="space-x-2">
+                    <div className="flex space-x-2">
                         <label htmlFor="">
                             extend remit payment through date:
                         </label>
-                        <input
+                        <Input
+                            w={140}
                             type="date"
-                            name=""
-                            id=""
-                            className=" bg-gray-200 text-black"
+                            size="sm"
+                            placeholder="default placeholder"
                         />
                     </div>
                 </aside>
                 <aside className="space-y-2 capitalize">
-                    <div className="space-x-2">
+                    <div className="flex space-x-2">
                         <label htmlFor="">agency:</label>
-                        <select
-                            name=""
-                            id=""
-                            className="w-[200px] bg-gray-200 text-black"
-                        >
-                            <option value="all">all</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
-                    <div className="space-x-2">
+                    <div className="flex space-x-2">
                         <label htmlFor="">report by:</label>
-                        <select
-                            name=""
-                            id=""
-                            className="w-[200px] bg-gray-200 text-black"
-                        >
-                            <option value="payer">payer category</option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
                 </aside>
-                <div className="ml-auto mr-10 w-fit rounded border py-1 px-3">
-                    {" "}
-                    <button>Search</button>
+                <div className="ml-auto  ">
+                    <Button variant="outline" size="sm">
+                        Search
+                    </Button>
                 </div>
             </section>
 

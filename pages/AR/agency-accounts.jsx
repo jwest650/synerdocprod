@@ -1,26 +1,33 @@
+import { Select } from "@chakra-ui/react";
 import React from "react";
 import { agency } from "../../assets/ardata";
 
 const AgencyAccounts = () => {
     return (
-        <div className="ar space-y-5 p-5">
+        <div className="ar bodytext background h-full space-y-5 p-5">
             <section className="space-y-5">
-                <h1 className="text-2xl capitalize">agency accounts</h1>
+                <h1 className="head text-2xl capitalize">agency accounts</h1>
                 <aside className="flex items-center space-x-40">
-                    <div>
+                    <div className="flex space-x-2">
                         <label htmlFor="">Agency:</label>
-                        <select name="" id="" className="w-[300px]  text-black">
-                            <option value="">select an agency</option>
-                        </select>
+
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
-                    <div>
+                    <div className="flex space-x-2">
                         <label htmlFor="">Payment Type:</label>
-                        <select name="" id="" className="w-[300px] text-black">
-                            <option value=""> payment type </option>
-                        </select>
+                        <Select placeholder="Select option" size="sm">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </Select>
                     </div>
                 </aside>
             </section>
+            {/* table */}
             <section className="capitalize">
                 <table className="w-full">
                     <thead>
