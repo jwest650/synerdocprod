@@ -11,6 +11,8 @@ import CustomPopover from './CustomPopover';
 import { BiPlus } from 'react-icons/bi';
 import { BsChevronExpand } from 'react-icons/bs';
 import TableAction from './TableAction';
+import { RiBook2Fill } from 'react-icons/ri';
+import CreateAssociate from '../dashboard/CreateAssociate';
 
 const Associates = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -23,10 +25,7 @@ const Associates = () => {
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
           <h2 className="text-xl font-semibold tracking-wider">Associates</h2>
-          <span className="flex cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white">
-            <BiPlus />
-            <span className="text-sm">Create Associates</span>
-          </span>
+          <CreateAssociate />
         </div>
         <div className="flex items-center gap-3">
           <Menu isOpen={isOpen} onClose={onClose}>
@@ -92,7 +91,11 @@ const Associates = () => {
           </tr>
           {associateTableData.map((associate, i) => (
             <tr key={i} className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}>
-              <td className="max-h-[20px] min-w-[50px] border py-1 px-2 font-medium"></td>
+              <td className="max-h-[20px] min-w-[50px] border py-1 px-2 font-medium">
+                <span className="cursor-pointer">
+                  <RiBook2Fill />
+                </span>
+              </td>
               <td className="max-h-[20px] min-w-[230px] border py-1 px-2 font-medium">
                 {associate.name}
               </td>
