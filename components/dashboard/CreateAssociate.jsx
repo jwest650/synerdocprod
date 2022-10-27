@@ -29,43 +29,27 @@ const CreateAssociate = () => {
           {/* <div className="absolute top-[-14px] right-0 bg-red-300"> */}
           {/* <ModalCloseButton /> */}
           {/* </div> */}
-          <div className="rounded border-[5px] border-t-[20px] border-[#6b3e9280] ">
-            <h1>Add Associate</h1>
-            <div className="flex w-full items-center justify-between">
-              <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                suscipit doloribus sunt nemo, alias distinctio odio unde
-                reiciendis, nostrum, porro sint eos quia minus aliquid eum fugit
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                suscipit doloribus sunt nemo, alias distinctio odio unde
-                reiciendis, nostrum, porro sint eos quia minus aliquid eum fugit
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                suscipit doloribus sunt nemo, alias distinctio odio unde
-                reiciendis, nostrum, porro sint eos quia minus aliquid eum fugit
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                suscipit doloribus sunt nemo, alias distinctio odio unde
-                reiciendis, nostrum, porro sint eos quia minus aliquid eum fugit
-                repellendus rerum vero.
+          <div className="laborder-[5px] rounded border-t-[20px] border-[#6b3e9280] p-4 ">
+            {/* <ModalBody> */}
+            <form action="">
+              <h1>Add Associate</h1>
+              <div className="flex h-full w-full items-center justify-between">
+                <div className="w-full">
+                  <h2 className="border-b-2 font-semibold">Personal</h2>
+                  <ul>
+                    <li className="">
+                      <span>1</span>
+                      div
+                    </li>
+                  </ul>
+                </div>
+                <div className="ml-4 w-full border-l-2 pl-4">
+                  <h2 className="border-b-2 font-semibold">Employment</h2>
+                </div>
               </div>
-              <div className="border-l-2 pl-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
-                obcaecati libero labore similique aut pariatur at dolores dolor
-                exercitationem? Debitis et dignissimos quod, molestiae facere
-                harum assumenda obcaecati. Necessitatibus, quidem. obcaecati
-                libero labore similique aut pariatur at dolores dolor
-                exercitationem? Debitis et dignissimos quod, molestiae facere
-                harum assumenda obcaecati. Necessitatibus, quidem. obcaecati
-                libero labore similique aut pariatur at dolores dolor
-                exercitationem? Debitis et dignissimos quod, molestiae facere
-                harum assumenda obcaecati. Necessitatibus, quidem. obcaecati
-                libero labore similique aut pariatur at dolores dolor
-                exercitationem? Debitis et dignissimos quod, molestiae facere
-                harum assumenda obcaecati. Necessitatibus, quidem.
-              </div>
-            </div>
+            </form>
+            {/* </ModalBody> */}
           </div>
-          {/* <ModalBody>
-                </ModalBody> */}
 
           {/* <ModalFooter>
             <Button colorScheme="blue" mr={3} onClick={onClose}>
