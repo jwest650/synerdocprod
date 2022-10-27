@@ -28,7 +28,9 @@ const AddReferral = () => {
   return (
     <div className='w-full bg-[#F6F8FC] p-10 text-gray-900'>
       <section className=' mx-auto w-[80%]  '>
-        <h1 className='text-2xl'>Create Referral</h1>
+        <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+          Create Referral
+        </h1>
         <hr />
 
         <div className='py-4'>

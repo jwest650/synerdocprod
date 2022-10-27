@@ -15,7 +15,9 @@ const PatientsEncounters = () => {
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
         <div>
-          <h1 className='text-2xl'>Patient Encounters</h1>
+          <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+            Patient Encounters
+          </h1>
         </div>
 
         <div>
