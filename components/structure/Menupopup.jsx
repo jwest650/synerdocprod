@@ -33,7 +33,7 @@ const Menupopup = ({ menu, index }) => {
             <span className="absolute top-9 left-2 text-gray-300">
               <SiVercel />
             </span>
-            <ul className="absolute top-12 h-52 w-64 overflow-scroll rounded bg-gray-300 pt-3 text-[#32164A]   shadow transition-all duration-[2000ms] ease-in-out">
+            <ul className="absolute top-12 h-52 w-64 overflow-y-scroll rounded bg-gray-300 pt-3 text-[#32164A]   shadow transition-all duration-[2000ms] ease-in-out">
               {menu.options.map((option, i) => (
                 <Link
                   href={`${

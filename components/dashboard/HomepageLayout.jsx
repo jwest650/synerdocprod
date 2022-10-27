@@ -12,10 +12,10 @@ const HomepageLayout = ({ children }) => {
       <div className="w-full rounded-3xl px-3 pt-7">
         <Calendarnav />
         <ContentOptions />
-        <div className="mt-[18px] flex flex-col gap-3 lg:grid lg:grid-cols-4">
+        <div className="mt-[18px]  flex flex-col gap-3 lg:grid lg:grid-cols-4">
           <div className="mb-16 lg:col-span-3">
             {children}
-            <div className="mt-3 grid w-full grid-cols-2 gap-3">
+            <div className="mt-3 grid  gap-3 md:grid-cols-2">
               <Card title="Schedule" addOption={null} />
               <Card title="Patients" addOption="Add Referral/Patient" />
               <Card title="Invoices" addOption={null} />

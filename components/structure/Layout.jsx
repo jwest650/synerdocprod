@@ -1,7 +1,6 @@
 import { useContext } from 'react';
-import GeneralContext from '../context/GeneralContext';
+import GeneralContext from '../../context/GeneralContext';
 import Header from './Header';
-import Leftmenu from './Leftmenu';
 import Navbar from './Navbar';
 
 const Layout = ({ children }) => {
@@ -11,7 +10,7 @@ const Layout = ({ children }) => {
     <div className={` ${darkTheme && 'dark'}`}>
       <Navbar />
       <Header />
-      <div className='flex bg-[#f6f8fc] pb-20 text-main-text-light dark:bg-main-dark-bg'>
+      <div className="max-w-screen flex overflow-auto bg-[#f6f8fc] pb-20 text-main-text-light dark:bg-main-dark-bg">
         {/* <Leftmenu /> */}
         {/* <div className="max-h-screen w-full overflow-scroll bg-main-light-bg pb-20 text-main-text-dark dark:bg-main-dark-bg"> */}
         {/* bg-[#0e1922] */}

@@ -1,8 +1,8 @@
 import React from 'react';
-import Availability from '../../../components/Availability';
-import HomepageLayout from '../../../components/HomepageLayout';
+import Availability from '../../../components/dashboard/Availability';
+import HomepageLayout from '../../../components/dashboard/HomepageLayout';
 
-const availability = () => {
+const AvailabilityPage = () => {
   return (
     <HomepageLayout>
       <Availability />
@@ -10,4 +10,4 @@ const availability = () => {
   );
 };
 
-export default availability;
+export default AvailabilityPage;

@@ -18,9 +18,11 @@ const SchedulesDetailListing = () => {
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
         <div className='flex items-center'>
-          <h1 className='text-2xl'>Schedules Detail Listing</h1>
+          <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+            Schedules
+          </h1>
 
-          <button className='cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff] dark:text-[#E77654]'>
+          <button className='ml-3 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff] dark:text-[#E77654]'>
             Add Pay Only
           </button>
         </div>

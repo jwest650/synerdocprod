@@ -9,14 +9,15 @@ import { useContext, useRef } from 'react';
 import { BsDot } from 'react-icons/bs';
 import { CiExport } from 'react-icons/ci';
 import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
-import GeneralContext from '../context/GeneralContext';
+import GeneralContext from '../../context/GeneralContext';
 
 const Welcome = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { darkTheme } = useContext(GeneralContext);
   const btnRef = useRef(null);
   return (
-    <div className="mx-3 mt-4 flex items-center justify-between rounded p-3 tracking-wide shadow dark:rounded-none dark:shadow-none">
+    // <div className="w-full">
+    <div className="mx-3 mt-4 flex w-full items-center justify-between overflow-x-auto rounded p-3 tracking-wide shadow dark:rounded-none dark:shadow-none">
       <div>
         <h2 className="text-lg text-main-text-light dark:text-main-text-dark">
           AMS for SinamCare
@@ -151,6 +152,7 @@ const Welcome = () => {
         </button>
       </div>
     </div>
+    // </div>
   );
 };
 
