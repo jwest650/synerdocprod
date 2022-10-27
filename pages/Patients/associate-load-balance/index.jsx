@@ -15,7 +15,7 @@ import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const AssociateLoadBalance = () => {
   return (
-    <div className='space-y-4 p-5 text-gray-800 dark:text-white'>
+    <div className='w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section>
         <div className='flex justify-between'>
           <div className='flex'>

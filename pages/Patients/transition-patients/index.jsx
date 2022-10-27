@@ -25,7 +25,7 @@ const TransitionPatients = () => {
   const [openAddReferral, setOpenAddReferral] = useState(false);
 
   return (
-    <div className='p-10 text-gray-600'>
+    <div className='w-full bg-[#F6F8FC] p-10 text-gray-600'>
       <div>
         <h1 className='text-2xl'>Transition Patients</h1>
       </div>

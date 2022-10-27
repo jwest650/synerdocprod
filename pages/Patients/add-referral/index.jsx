@@ -25,7 +25,7 @@ const AddReferral = () => {
   const [openAddReferral, setOpenAddReferral] = useState(false);
 
   return (
-    <div className='p-10 text-gray-600'>
+    <div className='w-full bg-[#F6F8FC] p-10 text-gray-900'>
       <div>
         <h1 className='text-2xl'>Create Referral</h1>
       </div>
@@ -33,7 +33,7 @@ const AddReferral = () => {
         <div>
           <p className='py-5'>Add a new referral into the system</p>
         </div>
-        <div className=' flex  items-center justify-between'>
+        <div className=' flex w-[500px] items-center justify-between'>
           <div className='flex items-center justify-between'>
             <label htmlFor='#' className='mr-5'>
               Agency:{' '}
@@ -72,7 +72,7 @@ const AddReferral = () => {
       <section className='mt-5'>
         <div className='flex'>
           <label htmlFor='#'>Referral Source:</label>
-          <Select size='xs' marginRight={5} marginLeft={5}>
+          <Select size='xs' maxWidth={500} marginRight={5} marginLeft={5}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -83,6 +83,7 @@ const AddReferral = () => {
               Option 3
             </option>
           </Select>
+
           <button
             onClick={() => setOpenFindReferral(true)}
             className='dark:text-[#E77654px-6 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'
@@ -134,7 +135,7 @@ const AddReferral = () => {
 
         <div className='mt-5 flex'>
           <label htmlFor='#'>Mode of Delivery:</label>
-          <Select size='xs' marginRight={5} marginLeft={5}>
+          <Select size='xs' maxWidth={500} marginRight={5} marginLeft={5}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -149,7 +150,7 @@ const AddReferral = () => {
 
         <div className='my-5 flex'>
           <label htmlFor='#'>Sales Rep:</label>
-          <Select size='xs' marginRight={5} marginLeft={5}>
+          <Select size='xs' maxWidth={500} marginRight={5} marginLeft={5}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -232,24 +233,23 @@ const AddReferral = () => {
                 </Tbody>
               </Table>
             </TableContainer>
-            <div className='flex  justify-end py-5'>
-              <div>
-                <div className='flex justify-end'>
-                  <Button colorScheme='gray' size={'sm'}>
-                    Save
-                  </Button>
-                  <Button colorScheme='gray' ml={3} size={'sm'}>
-                    Cancel
-                  </Button>
-                </div>
-                <div>
-                  <button
-                    onClick={() => setOpenAddReferral(true)}
-                    className='dark:text-[#E77654px-6 mt-3 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm text-[#fff]'
-                  >
-                    add referral source
-                  </button>
-                </div>
+            <div className='ml-auto'>
+              <div className='flex justify-end py-3'>
+                <Button colorScheme='gray' size={'sm'} mr={3}>
+                  Save
+                </Button>
+                <Button colorScheme='gray' size={'sm'}>
+                  Cancel
+                </Button>
+              </div>
+
+              <div className='flex justify-end'>
+                <button
+                  onClick={() => setOpenAddReferral(true)}
+                  className='dark:text-[#E77654px-6 my-2 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'
+                >
+                  add referral source
+                </button>
               </div>
             </div>
           </ModalBody>

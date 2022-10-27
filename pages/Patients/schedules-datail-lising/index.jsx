@@ -15,7 +15,7 @@ import {
 
 const SchedulesDetailListing = () => {
   return (
-    <div className='ar space-y-4 p-5 text-gray-800 dark:text-white'>
+    <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
         <div className='flex items-center'>
           <h1 className='text-2xl'>Schedules Detail Listing</h1>

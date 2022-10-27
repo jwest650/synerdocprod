@@ -21,20 +21,17 @@ const IncompleteReferrals = () => {
   const [openAddReferral, setOpenAddReferral] = useState(false);
 
   return (
-    <div className='ar p-5 text-gray-600'>
+    <div className='ar w-full bg-[#F6F8FC] p-5 text-gray-600'>
       <div className='space-y-5'>
         <section className='flex items-center justify-between space-x-5'>
           <div className='flex items-center space-x-5'>
             <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
               Incomplete Referrals
             </h1>
-            <div
-              className='flex cursor-pointer items-center space-x-2'
-              onClick={() => setshow(!show)}
-            >
-              <h1 className='dark:text-[#E77654px-6 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'>
+            <div className='flex cursor-pointer items-center space-x-2'>
+              <button className='dark:text-[#E77654px-6 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'>
                 + Create Referral Patient
-              </h1>
+              </button>
             </div>
           </div>
 
@@ -65,6 +62,38 @@ const IncompleteReferrals = () => {
                 </Tr>
               </Thead>
               <Tbody>
+                <Tr className='dark:text-white'>
+                  <Td>23/4/2022 8:43 AM</Td>
+                  <Td>Tampa Home Health</Td>
+                  <Td>Home Health</Td>
+                  <Td>Amess Alicia</Td>
+                  <Td></Td>
+                  <Td onClick={() => setOpenAddReferral(true)}>James Gordon</Td>
+                  <Td>
+                    <Image
+                      src={greenplus.src}
+                      alt='greenplus'
+                      width='14px'
+                      height='14px'
+                    />
+                  </Td>
+                </Tr>
+                <Tr className='dark:text-white'>
+                  <Td>23/4/2022 8:43 AM</Td>
+                  <Td>Tampa Home Health</Td>
+                  <Td>Home Health</Td>
+                  <Td>Amess Alicia</Td>
+                  <Td></Td>
+                  <Td onClick={() => setOpenAddReferral(true)}>James Gordon</Td>
+                  <Td>
+                    <Image
+                      src={greenplus.src}
+                      alt='greenplus'
+                      width='14px'
+                      height='14px'
+                    />
+                  </Td>
+                </Tr>
                 <Tr className='dark:text-white'>
                   <Td>23/4/2022 8:43 AM</Td>
                   <Td>Tampa Home Health</Td>
