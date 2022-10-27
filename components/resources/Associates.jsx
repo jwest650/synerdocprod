@@ -105,7 +105,11 @@ const Associates = () => {
               <td className="max-h-[20px] min-w-[120px] border py-1 px-2 font-medium">
                 {associate.hireDate}
               </td>
-              <td className="max-h-[20px] min-w-[100px] border py-1 px-2 font-medium">
+              <td
+                className={`max-h-[20px] min-w-[100px] border py-1 px-2 font-medium ${
+                  associate.status === 'Active' && 'text-green-600'
+                }`}
+              >
                 {associate.status}
               </td>
               <td className="max-h-[20px] min-w-[120px]  cursor-pointer border py-1 px-2 font-medium">

@@ -15,7 +15,7 @@ const CustomPopover = () => {
     <Menu isOpen={isOpen} onClose={onClose}>
       <div className="w-full border-b border-l border-[#32164A] bg-[#eeeeee] dark:bg-main-dark-bg">
         <MenuButton ref={btnRef} onClick={onOpen}>
-          <div className="flex w-full  items-center justify-between gap-1 px-1 text-sm font-medium text-secondary-text-light dark:text-main-text-dark ">
+          <div className="flex w-full  items-center justify-between gap-1 px-2 text-sm font-medium text-secondary-text-light dark:text-main-text-dark ">
             <span>{selectedOption}</span>
             <BsChevronExpand className="text-[16px] text-secondary-text-light  dark:text-secondary-text-dark" />
           </div>
