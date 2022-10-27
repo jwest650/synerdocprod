@@ -699,3 +699,41 @@ export const menuOptions = [
     ],
   },
 ];
+
+export const associateTableData = [
+  {
+    name: 'Peggy Opong',
+    classification: 'Administrative',
+    discipline: 'Registered Nurse',
+    hireDate: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    name: 'Destiny Dinam',
+    classification: 'Administrative',
+    discipline: 'Registered Nurse',
+    hireDate: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    name: 'Joshua Nartey',
+    classification: 'Field Staff - Full time',
+    discipline: 'Nurse Practitioner',
+    hireDate: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    name: 'Nicholas Dazie',
+    classification: 'Field Staff - Full time',
+    discipline: 'Medical Director',
+    hireDate: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    name: 'Jay West',
+    classification: 'FieldStaff - Part Time',
+    discipline: 'Certified Occupational Therapy Assistant',
+    hireDate: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+];

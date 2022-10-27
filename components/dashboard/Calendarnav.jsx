@@ -1,6 +1,6 @@
 const Calendarnav = () => {
   return (
-    <div className="dae mb-10 mt-8 space-y-5 rounded bg-secondary-light-bg py-5 px-2 shadow dark:border-t dark:border-gray-800/50 dark:bg-main-dark-bg dark:shadow-2xl">
+    <div className="mb-10 mt-8 w-full space-y-5 overflow-x-auto rounded bg-secondary-light-bg py-5 px-2 shadow dark:border-t dark:border-gray-800/50 dark:bg-main-dark-bg dark:shadow-2xl">
       <div className="flex flex-wrap items-center gap-5 text-sm text-secondary-text-light dark:text-secondary-text-dark">
         <div className="flex items-center gap-2 text-sm">
           <p className="text-base">Preferred Phone Number:</p>

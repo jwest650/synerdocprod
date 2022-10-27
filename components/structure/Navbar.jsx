@@ -2,8 +2,12 @@ import { FiBell } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
 import Link from 'next/link';
 import Settings from './Settings';
-import { menuOptions } from '../assets/data';
+import { menuOptions } from '../../assets/data';
 import Menupopup from './Menupopup';
+import MenuDrawer from './MenuDrawer';
+// import { BsGrid } from 'react-icons/bs';
+// import { useState } from 'react';
+// import MenuDrawer from './MenuDrawer';
 
 const Navbar = () => {
   return (
@@ -22,7 +26,9 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <ul className="flex items-center gap-7 text-lg">
+
+      <MenuDrawer />
+      <ul className="hidden items-center gap-7 text-lg md:flex">
         <li className="cursor-pointer">
           <Settings />
         </li>

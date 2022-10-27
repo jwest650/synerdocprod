@@ -1,7 +1,7 @@
 import React from 'react';
 
-const index = () => {
-  return <div>index</div>;
+const ChartsPage = () => {
+  return <div>ChartsPage</div>;
 };
 
-export default index;
+export default ChartsPage;

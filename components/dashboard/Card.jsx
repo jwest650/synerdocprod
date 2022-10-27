@@ -9,8 +9,8 @@ import Image from 'next/image';
 import React, { useContext, useRef } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
-import greenplus from '../assets/images/greenplus.png';
-import GeneralContext from '../context/GeneralContext';
+import greenplus from '../../assets/images/greenplus.png';
+import GeneralContext from '../../context/GeneralContext';
 
 const Card = ({ addOption, title }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();

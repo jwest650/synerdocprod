@@ -11,8 +11,8 @@ import {
   ScheduleComponent,
 } from '@syncfusion/ej2-react-schedule';
 import React, { useState, useContext } from 'react';
-import { scheduleData } from '../assets/data';
-import GeneralContext from '../context/GeneralContext';
+import { scheduleData } from '../../assets/data';
+import GeneralContext from '../../context/GeneralContext';
 import Availability from './Availability';
 import Calendarnav from './Calendarnav';
 import Card from './Card';

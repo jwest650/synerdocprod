@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import greenplus from '../assets/images/greenplus.png';
+import greenplus from '../../assets/images/greenplus.png';
 
 const Availability = () => {
   return (

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
-@import url("https://cdn.syncfusion.com/ej2/tailwind-dark.css");
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://cdn.syncfusion.com/ej2/tailwind-dark.css');
 
 @tailwind base;
 @tailwind components;
@@ -8,236 +8,251 @@
 /* CUSTOM STYLES */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Jost", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
 }
 
 ::-webkit-scrollbar {
-    display: none;
-    width: 0px;
-    height: 0px;
+  width: 4px;
+  height: 4px;
 }
-/* ::-webkit-scrollbar-thumb {
-  background-color: #02080c;
+::-webkit-scrollbar-thumb {
+  background-color: #32164a;
   border-radius: 40px;
 }
 ::-webkit-scrollbar-track {
-  background-color: transparent;
-} */
+  @apply bg-gray-300;
+}
 
 .bezier-nav2 {
-    animation: bezz2 0.8s forwards ease-in-out;
+  animation: bezz2 0.8s forwards ease-in-out;
 }
 
 @keyframes bezz2 {
-    0% {
-        width: 70px;
-    }
-    99% {
-        width: 250px;
-    }
-    100% {
-        width: 250px;
-    }
+  0% {
+    width: 70px;
+  }
+  99% {
+    width: 250px;
+  }
+  100% {
+    width: 250px;
+  }
 }
 
 .bezier-nav1 {
-    animation: bezz1 2s forwards ease-in-out;
+  animation: bezz1 2s forwards ease-in-out;
 }
 
 @keyframes bezz1 {
-    0% {
-        width: 250px;
-    }
-    50% {
-        width: 150px;
-    }
-    100% {
-        width: 70px;
-    }
+  0% {
+    width: 250px;
+  }
+  50% {
+    width: 150px;
+  }
+  100% {
+    width: 70px;
+  }
 }
 
 /* SHEDULER */
 
 .schedule {
-    @apply rounded border-[#152937] shadow-md;
+  @apply rounded border-[#152937] shadow-md;
 }
 
 .e-schedule .e-schedule-toolbar .e-toolbar-items {
-    @apply bg-[#152937];
+  @apply bg-[#152937];
 }
 .e-toolbar .e-hor-nav {
-    background: #152937;
-    border: solid #4b5563;
-    border-width: 0 0 0 1px;
+  background: #152937;
+  border: solid #4b5563;
+  border-width: 0 0 0 1px;
 }
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active,
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active:not(.e-expended-nav) {
-    background: #152937;
-    border: 1;
-    box-shadow: none;
-    border-left: 0 #4b5563 #374151;
+  background: #152937;
+  border: 1;
+  box-shadow: none;
+  border-left: 0 #4b5563 #374151;
 }
 
 .e-toolbar .e-toolbar-pop {
-    @apply rounded border bg-[#152937];
+  @apply rounded border bg-[#152937];
 }
 .e-toolbar .e-tbar-btn {
-    background: #0e1922;
-    box-shadow: none;
-    color: #fff;
+  background: #0e1922;
+  box-shadow: none;
+  color: #fff;
 }
 .e-schedule .e-month-view .e-date-header-wrap table td,
 .e-schedule .e-month-agenda-view .e-date-header-wrap table td {
-    background-color: #0e1922;
-    border-color: #4b5563;
-    border-style: solid;
-    border-width: 0 0 1px 1px;
-    color: #d1d5db;
-    text-align: left;
-    font-size: 12px;
-    text-align: center;
-    text-transform: uppercase;
+  background-color: #0e1922;
+  border-color: #4b5563;
+  border-style: solid;
+  border-width: 0 0 1px 1px;
+  color: #d1d5db;
+  text-align: left;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .e-schedule .e-month-view .e-work-days,
 .e-schedule .e-month-agenda-view .e-work-days {
-    background-color: #0e1922;
+  background-color: #0e1922;
 }
 
 .e-schedule .e-month-view .e-work-cells,
 .e-schedule .e-month-agenda-view .e-work-cells {
-    background-color: #152937;
-    border-color: #4b5563;
-    border-style: solid;
-    border-width: 0 0 1px 1px;
-    color: #fff;
-    padding: 0;
+  background-color: #152937;
+  border-color: #4b5563;
+  border-style: solid;
+  border-width: 0 0 1px 1px;
+  color: #fff;
+  padding: 0;
 }
 
 .e-schedule .e-vertical-view .e-date-header-wrap table tbody td {
-    background-color: #0e1922;
-    border-color: #4b5563;
-    border-style: solid;
-    border-width: 0 0 1px 1px;
-    color: #d1d5db;
-    text-align: left;
+  background-color: #0e1922;
+  border-color: #4b5563;
+  border-style: solid;
+  border-width: 0 0 1px 1px;
+  color: #d1d5db;
+  text-align: left;
 }
 .e-schedule .e-vertical-view .e-work-cells {
-    background-color: #152937;
-    border-color: #4b5563;
-    border-style: solid;
-    border-width: 0 0 1px 1px;
-    padding: 0;
+  background-color: #152937;
+  border-color: #4b5563;
+  border-style: solid;
+  border-width: 0 0 1px 1px;
+  padding: 0;
 }
 
 .e-schedule .e-vertical-view .e-time-cells-wrap table td {
-    border-color: #4b5563;
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-    color: #9ca3af;
-    background-color: #0e1922;
+  border-color: #4b5563;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  color: #9ca3af;
+  background-color: #0e1922;
 }
 
 .e-schedule .e-vertical-view .e-left-indent-wrap table tbody td {
-    background-color: #0e1922;
-    border-color: #4b5563;
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-    color: #d1d5db;
+  background-color: #0e1922;
+  border-color: #4b5563;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  color: #d1d5db;
 }
 .e-calendar .e-content.e-year table,
 .e-calendar .e-content.e-decade table,
 .e-bigger.e-small .e-calendar .e-content.e-year table,
 .e-bigger.e-small .e-calendar .e-content.e-decade table {
-    border-spacing: 0;
-    padding: 0 8px 8px 8px;
-    background-color: #0e1922;
+  border-spacing: 0;
+  padding: 0 8px 8px 8px;
+  background-color: #0e1922;
 }
 .e-calendar .e-header,
 .e-bigger.e-small .e-calendar .e-header {
-    border-bottom: 0;
-    background-color: #0e1922;
+  border-bottom: 0;
+  background-color: #0e1922;
 }
 .e-calendar .e-footer-container,
 .e-bigger.e-small .e-calendar .e-footer-container {
-    background-color: #0e1922;
-    border-top: none;
-    cursor: default;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding: 8px 8px;
-    text-align: center;
-    width: 100%;
+  background-color: #0e1922;
+  border-top: none;
+  cursor: default;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 8px 8px;
+  text-align: center;
+  width: 100%;
 }
 
 .e-schedule .e-schedule-table {
-    border: 0 none;
-    background-color: #0e1922;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin: 0;
-    table-layout: fixed;
-    width: 100%;
+  border: 0 none;
+  background-color: #0e1922;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0;
+  table-layout: fixed;
+  width: 100%;
 }
 .e-schedule .e-agenda-view {
-    background-color: #0e1922;
+  background-color: #0e1922;
 }
 .e-calendar .e-content table,
 .e-bigger.e-small .e-calendar .e-content table {
-    border-collapse: separate;
-    border-spacing: 0;
-    border-width: 0;
-    background-color: #0e1922;
-    float: left;
-    margin: 0;
-    outline: 0;
-    padding: 0 8px 8px 8px;
-    table-layout: fixed;
-    width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 0;
+  background-color: #0e1922;
+  float: left;
+  margin: 0;
+  outline: 0;
+  padding: 0 8px 8px 8px;
+  table-layout: fixed;
+  width: 100%;
 }
 /* ar */
 @layer utilities {
-    .head {
-        @apply text-[#424242];
-    }
-    .bodytext {
-        @apply text-[#575757];
-    }
-    .background {
-        @apply bg-white;
-    }
-    .create-bg {
-        @apply rounded bg-[#e9714e] p-1 px-3 text-white shadow-md;
-    }
-    .darkmode {
-        @apply dark:text-white;
-    }
+  .head {
+    @apply text-[#424242];
+  }
+  .bodytext {
+    @apply text-[#575757];
+  }
+  .background {
+    @apply bg-white;
+  }
+  .create-bg {
+    @apply rounded bg-[#e9714e] p-1 px-3 text-white shadow-md;
+  }
+  .darkmode {
+    @apply dark:text-white;
+  }
 }
 .ar {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 .ar td,
 th,
 tr {
-    font-size: 14px;
-    padding: 2px;
-    border: 1px solid #a0a0a0;
+  font-size: 14px;
+  padding: 2px;
+  border: 1px solid #a0a0a0;
 }
 .ar th {
-    background-color: #305e92;
-    color: white;
+  background-color: #305e92;
+  color: white;
 }
 .ar table tr:nth-child(even) {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 .ar hr {
-    border-color: black;
+  border-color: black;
+}
+
+.table-action-anim {
+  animation: table-icon-anim 0.3s forwards ease-in-out;
+}
+
+@keyframes table-icon-anim {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }

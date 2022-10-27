@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { useContext } from 'react';
 import { FiSettings } from 'react-icons/fi';
-import GeneralContext from '../context/GeneralContext';
+import GeneralContext from '../../context/GeneralContext';
 
 const Settings = () => {
   const { darkTheme, setDarkTheme } = useContext(GeneralContext);

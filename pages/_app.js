@@ -2,7 +2,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { GeneralProvider } from '../context/GeneralContext';
 import '../styles/globals.css';
 import { registerLicense } from '@syncfusion/ej2-base';
-import Layout from '../components/Layout';
+import Layout from '../components/structure/Layout';
 
 function MyApp({ Component, pageProps }) {
   registerLicense(

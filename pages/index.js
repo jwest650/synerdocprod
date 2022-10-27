@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Calendar from '../components/Calendar';
-import HomepageLayout from '../components/HomepageLayout';
+import Calendar from '../components/dashboard/Calendar';
+import HomepageLayout from '../components/dashboard/HomepageLayout';
 
 export default function Home() {
   return (
