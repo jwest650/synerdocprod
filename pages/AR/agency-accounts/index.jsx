@@ -4,7 +4,7 @@ import { agency } from "../../../assets/ardata";
 
 const AgencyAccounts = () => {
     return (
-        <div className="ar bodytext  h-full space-y-5 p-5">
+        <div className="ar bodytext  space-y-5 p-5">
             <section className="space-y-5">
                 <h1 className="head text-2xl capitalize">agency accounts</h1>
                 <aside className="flex items-center space-x-40">
@@ -31,10 +31,12 @@ const AgencyAccounts = () => {
             <section className="capitalize">
                 <table className="w-full">
                     <thead>
-                        <th>agency account</th>
-                        <th>payment type code</th>
-                        <th>payment type description</th>
-                        <th>balance</th>
+                        <tr>
+                            <th>agency account</th>
+                            <th>payment type code</th>
+                            <th>payment type description</th>
+                            <th>balance</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {agency.map((value, i) => (

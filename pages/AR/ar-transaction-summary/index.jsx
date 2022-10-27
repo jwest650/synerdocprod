@@ -90,12 +90,14 @@ const ARTransactionSummary = () => {
             <section>
                 <table className="w-full">
                     <thead className="capitalize">
-                        <th>agency</th>
-                        <th>begining balance</th>
-                        <th>revenue amount</th>
-                        <th>payment amount</th>
-                        <th>ending balance</th>
-                        <th>dso</th>
+                        <tr>
+                            <th>agency</th>
+                            <th>begining balance</th>
+                            <th>revenue amount</th>
+                            <th>payment amount</th>
+                            <th>ending balance</th>
+                            <th>dso</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {summary.map((value, i) => (

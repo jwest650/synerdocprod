@@ -1,6 +1,6 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
-import { invoice } from "../../../assets/ardata";
+import { invoiceDetail } from "../../../assets/ardata";
 
 const InvoiceDetailReport = () => {
     return (
@@ -56,32 +56,38 @@ const InvoiceDetailReport = () => {
             <section>
                 <table className="w-full">
                     <thead>
-                        <th>patient name</th>
-                        <th>invoice</th>
-                        <th>current payer</th>
-                        <th>invoice data</th>
-                        <th>invoice range</th>
-                        <th>payer resp</th>
-                        <th>patient resp</th>
-                        <th>total adj</th>
-                        <th>total payment</th>
-                        <th>balance</th>
-                        <th>status</th>
+                        <tr>
+                            <th>patient name</th>
+                            <th>payer</th>
+                            <th>invoice</th>
+                            <th>service date</th>
+                            <th>service description</th>
+                            <th>units</th>
+                            <th>total charges</th>
+                            <th>total adjusted</th>
+                            <th>total expected</th>
+                            <th>payments</th>
+                            <th>payment source</th>
+                            <th>last remit date</th>
+                            <th>balance</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        {invoice.map((value, i) => (
+                        {invoiceDetail.map((value, i) => (
                             <tr key={i}>
-                                <td>{value.patientname}</td>
+                                <td>{value.name}</td>
+                                <td>{value.payer}</td>
                                 <td>{value.invoice}</td>
-                                <td>{value.currentpayer}</td>
-                                <td>{value.invoicedata}</td>
-                                <td>{value.invoicerange}</td>
-                                <td>{value.payerresp}</td>
-                                <td>{value.patientresp}</td>
-                                <td>{value.totaladj}</td>
-                                <td>{value.totalpayment}</td>
+                                <td>{value.service}</td>
+                                <td>{value.desc}</td>
+                                <td>{value.unit}</td>
+                                <td>{value.charge}</td>
+                                <td>{value.adj}</td>
+                                <td>{value.exp}</td>
+                                <td>{value.pay}</td>
+                                <td>{value.source}</td>
+                                <td>{value.remit}</td>
                                 <td>{value.balance}</td>
-                                <td>{value.status}</td>
                             </tr>
                         ))}
                     </tbody>

@@ -4,7 +4,7 @@ import { invoice } from "../../../assets/ardata";
 
 const invoices = () => {
     return (
-        <div className="ar space-y-2 p-5 capitalize">
+        <div className="ar bodytext space-y-2 p-5 capitalize">
             <section className="flex items-center justify-between">
                 <h1 className="head text-2xl capitalize">invoices</h1>
 
@@ -158,20 +158,22 @@ const invoices = () => {
             <section>
                 <table className="w-full">
                     <thead>
-                        <th>
-                            <input type="checkbox" name="" id="" />
-                        </th>
-                        <th>patient name</th>
-                        <th>invoice</th>
-                        <th>current payer</th>
-                        <th>invoice data</th>
-                        <th>invoice range</th>
-                        <th>payer resp</th>
-                        <th>patient resp</th>
-                        <th>total adj</th>
-                        <th>total payment</th>
-                        <th>balance</th>
-                        <th>status</th>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th>patient name</th>
+                            <th>invoice</th>
+                            <th>current payer</th>
+                            <th>invoice data</th>
+                            <th>invoice range</th>
+                            <th>payer resp</th>
+                            <th>patient resp</th>
+                            <th>total adj</th>
+                            <th>total payment</th>
+                            <th>balance</th>
+                            <th>status</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {invoice.map((value, i) => (

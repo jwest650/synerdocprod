@@ -30,14 +30,16 @@ const ARCollectionAssignments = () => {
                 <section>
                     <table className="w-full border-collapse capitalize">
                         <thead>
-                            <th>agency</th>
-                            <th>payer category</th>
-                            <th>payer</th>
-                            <th>team</th>
-                            <th>patient</th>
-                            <th>admit date</th>
-                            <th>associate</th>
-                            <th>actions</th>
+                            <tr>
+                                <th>agency</th>
+                                <th>payer category</th>
+                                <th>payer</th>
+                                <th>team</th>
+                                <th>patient</th>
+                                <th>admit date</th>
+                                <th>associate</th>
+                                <th>actions</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
