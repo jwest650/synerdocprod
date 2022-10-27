@@ -1,4 +1,25 @@
-import React from 'react';
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  TableContainer,
+  Select,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Button,
+  Input,
+  Checkbox,
+} from '@chakra-ui/react';
+import { useState } from 'react';
 
 const AddReferralSourceContact = () => {
   return (
