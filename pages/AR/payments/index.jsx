@@ -11,9 +11,9 @@ const Payments = () => {
                 <header className="flex items-center space-x-3">
                     <h1 className="head text-2xl">Payments</h1>
                     <div className="create-bg flex cursor-pointer items-center space-x-1">
-                        <BsPlus className="text-2xl" />
-                        <Link href="/AR/add-payments" className="capitalize">
-                            add payment
+                        <BsPlus />
+                        <Link href="/AR/add-payments">
+                            <p className="text-xs capitalize">add payment</p>
                         </Link>
                     </div>
                 </header>
@@ -21,40 +21,40 @@ const Payments = () => {
                     <aside className="space-y-4">
                         <div className="flex items-center space-x-2">
                             <label htmlFor="">deposit dates from:</label>
-                            <Input w={100} type="text" size="sm" />
+                            <Input w={100} type="text" size="xs" />
                             <label htmlFor="">to:</label>
-                            <Input w={100} type="text" size="sm" />
+                            <Input w={100} type="text" size="xs" />
                         </div>
                         <div className="flex items-center space-x-2">
                             <label htmlFor="">entry dates from:</label>
-                            <Input w={100} type="text" size="sm" />
+                            <Input w={100} type="text" size="xs" />
                             <label htmlFor="">to:</label>
-                            <Input w={100} type="text" size="sm" />
+                            <Input w={100} type="text" size="xs" />
                         </div>{" "}
                         <div className="flex items-center space-x-2">
                             <label htmlFor="">remit dates from:</label>
-                            <Input w={100} type="text" size="sm" />
+                            <Input w={100} type="text" size="xs" />
                             <label htmlFor="">to:</label>
-                            <Input w={100} type="text" size="sm" />
+                            <Input w={100} type="text" size="xs" />
                         </div>
                     </aside>
                     <aside className="space-y-4">
                         <div className="flex justify-end space-x-2">
-                            <div className="flex w-[210px] items-center">
-                                <Select placeholder="Select option" size="sm">
+                            <div className="flex  items-center">
+                                <Select placeholder="Select option" size="xs">
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
                                 </Select>
                             </div>
-                            <button className="border p-1 px-3">Search</button>
+                            <button className="border  px-3">Search</button>
                         </div>
                         <div className="flex justify-end  space-x-1">
                             <label htmlFor="">payment status:</label>
                             <Select
                                 placeholder="Select option"
-                                size="sm"
-                                w={200}
+                                size="xs"
+                                w={120}
                             >
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -76,7 +76,7 @@ const Payments = () => {
                                     placeholder="Enter payment source"
                                 />
                             </div>
-                            <button className="border p-1 px-3">Search</button>
+                            <button className="border  px-3">Search</button>
                         </div>
                     </aside>
                 </article>

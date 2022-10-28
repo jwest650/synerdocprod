@@ -11,21 +11,21 @@ const AddPayments = () => {
                     <div className="my-5 flex  items-center ">
                         <label htmlFor="">*payment source:</label>
 
-                        <Select placeholder="Select option" size="sm" w={200}>
+                        <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
                         <p className="ml-10">add payment source</p>
                     </div>
-                    <section className="flex">
+                    <section className="flex space-x-10">
                         <aside className="space-y-2">
                             <div className="flex   space-x-1">
                                 <label htmlFor="">*payment method:</label>
                                 <Select
                                     placeholder="Select option"
-                                    size="sm"
-                                    w={200}
+                                    size="xs"
+                                    w={120}
                                 >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
@@ -34,26 +34,26 @@ const AddPayments = () => {
                             </div>
                             <div className="flex   space-x-1">
                                 <label htmlFor="">*payment amount:</label>
-                                <Input w={100} type="text" size="sm" />
+                                <Input w={120} type="text" size="xs" />
                             </div>
                             <div className="flex   space-x-1">
                                 <label htmlFor="">*remit date:</label>
-                                <Input w={100} type="text" size="sm" />
+                                <Input w={120} type="text" size="xs" />
                             </div>
                             <div className="flex   space-x-1">
                                 <label htmlFor="">*deposit date:</label>
-                                <Input w={100} type="date" size="sm" />
+                                <Input w={120} type="date" size="xs" />
                             </div>
                             <div className="flex   space-x-1">
                                 <label htmlFor="">reference number:</label>
-                                <Input w={200} type="date" size="sm" />
+                                <Input w={120} type="date" size="xs" />
                             </div>
                             <div className="flex   space-x-1">
                                 <label htmlFor="">apply payments to:</label>
                                 <Select
                                     placeholder="Select option"
-                                    size="sm"
-                                    w={220}
+                                    size="xs"
+                                    w={120}
                                 >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
@@ -66,8 +66,8 @@ const AddPayments = () => {
                                 <label htmlFor="">Note type:</label>
                                 <Select
                                     placeholder="Select option"
-                                    size="sm"
-                                    w={220}
+                                    size="xs"
+                                    w={120}
                                 >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
@@ -85,22 +85,20 @@ const AddPayments = () => {
                                     name=""
                                     id=""
                                     cols="30"
-                                    rows="7"
+                                    rows="6"
                                 ></textarea>
                             </div>
                         </aside>
                     </section>
                 </article>
                 <div className=" my-5 flex justify-end space-x-3">
-                    <button className="border p-1 px-3 capitalize">
+                    <button className="border  px-3 capitalize">
                         save / enter more
                     </button>
-                    <button className="border p-1 px-3 capitalize">
+                    <button className="border  px-3 capitalize">
                         save / close
                     </button>
-                    <button className="border p-1 px-3 capitalize">
-                        cancel
-                    </button>
+                    <button className="border  px-3 capitalize">cancel</button>
                 </div>
             </section>
         </div>
