@@ -113,7 +113,7 @@ const Associates = () => {
                 </option>
               </Select>
             </td>
-            <td className=" w-full border-gray-400">
+            <td className=" w-full border border-gray-400">
               <Select
                 css={{ backgroundColor: '#d4c3e480', border: 'none' }}
                 className="shadow outline-none"
@@ -130,7 +130,7 @@ const Associates = () => {
                 </option>
               </Select>
             </td>
-            <td className=" w-full border-gray-400">
+            <td className=" w-full border border-gray-400">
               <Select
                 css={{ backgroundColor: '#d4c3e480', border: 'none' }}
                 className="shadow outline-none"
@@ -148,7 +148,7 @@ const Associates = () => {
               </Select>
             </td>
             <td></td>
-            <td className=" w-full border-gray-400">
+            <td className=" w-full border border-gray-400">
               <Select
                 css={{ backgroundColor: '#d4c3e480', border: 'none' }}
                 className="shadow outline-none"

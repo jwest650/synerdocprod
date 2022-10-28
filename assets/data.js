@@ -334,6 +334,33 @@ export const menuOptions = [
         title: 'Verifications',
         url: 'verifications',
         icon: <BsDot />,
+        subOptions: [
+          {
+            title: 'Verify Services',
+            url: 'verify-services',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Adjust Verified Services',
+            url: 'adjust-verified-services',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Automated Service Verification Errors',
+            url: 'automated-service-verification-errors',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Automated Verification Process',
+            url: 'automated-verification-process',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Verify Service in Mass',
+            url: 'verifiy-service-in-mass',
+            icon: <BsDot />,
+          },
+        ],
       },
       {
         title: 'Verified Services',
