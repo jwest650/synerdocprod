@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Input } from '@chakra-ui/react';
-import Editreferral from './components/Editreferral';
+import EditReferral from './components/EditReferral';
 
 const IncompleteReferrals = () => {
   let data = [1, 1, 1, 1];
@@ -85,7 +85,7 @@ const IncompleteReferrals = () => {
         </section>
       </div>
 
-      <Editreferral
+      <EditReferral
         open={openAddReferral}
         setOpenAddReferral={setOpenAddReferral}
       />
