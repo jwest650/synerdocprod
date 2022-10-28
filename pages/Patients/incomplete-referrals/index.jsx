@@ -26,11 +26,7 @@ const IncompleteReferrals = () => {
               <div>
                 <Input placeholder='small size' size='xs' width={300} />
               </div>
-              <button
-                className='ml-3 rounded border px-2 text-sm'
-                size={'xs'}
-                ml={'3'}
-              >
+              <button className='ml-3 rounded border px-2 text-sm'>
                 Search
               </button>
             </div>
@@ -39,7 +35,7 @@ const IncompleteReferrals = () => {
         <hr />
         <section>
           <div>
-            <table className='mt-10 min-w-full overflow-auto'>
+            <table className='mt-3 min-w-full overflow-auto'>
               <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
                 <tr>
                   <th className=' border-gray-100  pl-2 text-left'>Created</th>

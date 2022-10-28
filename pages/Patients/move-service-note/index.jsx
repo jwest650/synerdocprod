@@ -24,7 +24,7 @@ const MoveServiceNote = () => {
       </h1>
       <hr />
 
-      <div className='flex py-5'>
+      <div className='flex py-3'>
         <div className='w-[150px]'>
           <h1 className='mr-5'>* Patient: </h1>
         </div>
@@ -42,7 +42,7 @@ const MoveServiceNote = () => {
           </Select>
         </div>
       </div>
-      <div className='flex py-5'>
+      <div className='flex py-3'>
         <div className='w-[150px]'>
           <h1 className='mr-5'>* Service: </h1>
         </div>
@@ -60,7 +60,7 @@ const MoveServiceNote = () => {
           </Select>
         </div>
       </div>
-      <div className='flex py-5'>
+      <div className='flex py-3'>
         <div className='w-[150px]'>
           <h1 className='mr-5'>* Move Patient To: </h1>
         </div>

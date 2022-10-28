@@ -48,9 +48,7 @@ const AddReferral = () => {
             </Select>
           </div>
           <div className='my-2 flex'>
-            <label htmlFor='#' mr-3>
-              Agency Type:{' '}
-            </label>
+            <label htmlFor='#'>Agency Type: </label>
             <div>
               <Select size='xs'>
                 <option value='option1' className='text-gray-800'>

@@ -83,9 +83,7 @@ const PatientsEncounters = () => {
             <div>
               <Input placeholder='xsall size' size='xs' width={300} />
             </div>
-            <button className='ml-3 rounded border px-2 ' ml={'3'}>
-              Search
-            </button>
+            <button className='ml-3 rounded border px-2 '>Search</button>
           </div>
         </div>
       </section>

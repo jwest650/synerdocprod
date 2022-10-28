@@ -32,9 +32,7 @@ const DisasterPlan = () => {
               />
               <Input placeholder='small size' size='xs' type={'text'} ml={3} />
             </div>
-            <button className='ml-3 rounded border px-2 ' ml={'3'}>
-              Search
-            </button>
+            <button className='ml-3 rounded border px-2 '>Search</button>
           </div>
         </div>
       </section>
