@@ -1,9 +1,4 @@
-import Image from 'next/image';
 import React, { useState } from 'react';
-import { ar } from '../../../assets/ardata';
-import greenplus from '../../../assets/images/greenplus.png';
-import { RiDeleteBin5Line } from 'react-icons/ri';
-import { RiEdit2Line } from 'react-icons/ri';
 import { Input } from '@chakra-ui/react';
 import Editreferral from './components/Editreferral';
 
