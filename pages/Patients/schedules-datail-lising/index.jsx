@@ -2,18 +2,13 @@ import {
   Button,
   Checkbox,
   Input,
-  Radio,
   Select,
   Table,
   TableContainer,
-  Tbody,
-  Td,
-  Th,
-  Thead,
-  Tr,
 } from '@chakra-ui/react';
 
 const SchedulesDetailListing = () => {
+  let data = [1, 1, 1, 1];
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
@@ -29,27 +24,25 @@ const SchedulesDetailListing = () => {
 
         <div className='flex items-center'>
           <div className='flex items-center space-x-3'>
-            <div className='space-x-2'>
-              <select name='' id='' className='rounded text-black'>
+            <div className='flex items-center space-x-2'>
+              <Select name='' id='' className='rounded text-black' size='xs'>
                 <option value='pdf'>PDF Summary</option>
                 <option value='spreadsheet'>Spreadsheet Summary</option>
-              </select>
-              <button className='rounded border  px-2'>Export</button>
+              </Select>
+              <button className='ml-2 rounded  border px-2'>Export</button>
             </div>
           </div>
           <div className='flex'>
             <div className='flex '>
               <Input
                 placeholder='small size'
-                size='sm'
+                size='xs'
                 ml={'3'}
                 type={'text'}
               />
-              <Input placeholder='small size' size='sm' type={'text'} ml={3} />
+              <Input placeholder='small size' size='xs' type={'text'} ml={3} />
             </div>
-            <Button colorScheme='gray' size={'sm'} ml={'3'}>
-              Search
-            </Button>
+            <button className='ml-2 rounded  border px-2'>Search</button>
           </div>
         </div>
       </section>
@@ -78,25 +71,27 @@ const SchedulesDetailListing = () => {
       </section>
 
       <section>
-        <TableContainer>
-          <Table variant='striped' colorScheme='gray' size='sm'>
-            <Thead backgroundColor={'#432366'} color={'#fff'}>
-              <Tr>
-                <Th color={'#selecto'}>Patient</Th>
-                <Th color={'#selecto'}>Associates</Th>
-                <Th color={'#selecto'}>Service</Th>
-                <Th color={'#selecto'}>Service Date </Th>
-                <Th color={'#selecto'}>Time In</Th>
-                <Th color={'#selecto'}>Time Out</Th>
-                <Th color={'#selecto'}>Agency</Th>
-                <Th color={'#selecto'}>Status</Th>
-                <Th color={'#selecto'}>Auth</Th>
-                <Th color={'#selecto'}></Th>
-              </Tr>
-            </Thead>
-            <Tbody>
-              <Tr className='dark:text-white'>
-                <Td>
+        <div>
+          <table className=' min-w-full overflow-auto'>
+            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+              <tr>
+                <th className=' border-gray-100  pl-2 text-left'>Patient</th>
+                <th className=' border-gray-100  pl-2 text-left'>Associates</th>
+                <th className=' border-gray-100  pl-2 text-left'>Service</th>
+                <th className=' border-gray-100  pl-2 text-left'>
+                  Service Date{' '}
+                </th>
+                <th className=' border-gray-100  pl-2 text-left'>Time In</th>
+                <th className=' border-gray-100  pl-2 text-left'>Time Out</th>
+                <th className=' border-gray-100  pl-2 text-left'>Agency</th>
+                <th className=' border-gray-100  pl-2 text-left'>Status</th>
+                <th className=' border-gray-100  pl-2 text-left'>Auth</th>
+                <th className=' border-gray-100  pl-2 text-left'></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className='bg-[#6b3e9280]'>
+                <td>
                   <Select size='xs'>
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -108,8 +103,8 @@ const SchedulesDetailListing = () => {
                       All 3
                     </option>
                   </Select>
-                </Td>
-                <Td>
+                </td>
+                <td>
                   <Select size='xs'>
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -121,8 +116,8 @@ const SchedulesDetailListing = () => {
                       All 3
                     </option>
                   </Select>
-                </Td>
-                <Td>
+                </td>
+                <td>
                   <Select size='xs'>
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -134,11 +129,11 @@ const SchedulesDetailListing = () => {
                       All 3
                     </option>
                   </Select>
-                </Td>
-                <Td></Td>
-                <Td></Td>
-                <Td></Td>
-                <Td>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
                   <Select size='xs'>
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -150,8 +145,8 @@ const SchedulesDetailListing = () => {
                       All 3
                     </option>
                   </Select>
-                </Td>
-                <Td>
+                </td>
+                <td>
                   <Select size='xs'>
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -163,49 +158,33 @@ const SchedulesDetailListing = () => {
                       All 3
                     </option>
                   </Select>
-                </Td>
-                <Td></Td>
-                <Td></Td>
-              </Tr>
-              <Tr className='dark:text-white'>
-                <Td>James Gordon</Td>
-                <Td>1.High priority requires</Td>
-                <Td>Tampa Home Health</Td>
-                <Td>10/8/19</Td>
-                <Td></Td>
-                <Td></Td>
-                <Td>Home Health</Td>
-                <Td>Active</Td>
-                <Td></Td>
-                <Td>+</Td>
-              </Tr>
-              <Tr className='dark:text-white'>
-                <Td>James Gordon</Td>
-                <Td>1.High priority requires</Td>
-                <Td>Tampa Home Health</Td>
-                <Td>10/8/19</Td>
-                <Td></Td>
-                <Td></Td>
-                <Td>Home Health</Td>
-                <Td>Active</Td>
-                <Td></Td>
-                <Td>+</Td>
-              </Tr>
-              <Tr className='dark:text-white'>
-                <Td>James Gordon</Td>
-                <Td>1.High priority requires</Td>
-                <Td>Tampa Home Health</Td>
-                <Td>10/8/19</Td>
-                <Td></Td>
-                <Td></Td>
-                <Td>Home Health</Td>
-                <Td>Active</Td>
-                <Td></Td>
-                <Td>+</Td>
-              </Tr>
-            </Tbody>
-          </Table>
-        </TableContainer>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              {data.map((data, i) => (
+                <tr
+                  key={i}
+                  className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
+                >
+                  <td className='border border-gray-400'>James Gordon</td>
+                  <td className='border border-gray-400'>
+                    1.High priority requires
+                  </td>
+                  <td className='border border-gray-400'>Tampa Home Health</td>
+                  <td className='border border-gray-400'>10/8/19</td>
+                  <td className='border border-gray-400'></td>
+                  <td className='border border-gray-400'></td>
+                  <td className='border border-gray-400'>Home Health</td>
+                  <td className='border border-gray-400'>Active</td>
+                  <td className='border border-gray-400'></td>
+                  <td className='border border-gray-400'>+</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
   );

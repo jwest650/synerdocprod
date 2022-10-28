@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import {
   Table,
-  Thead,
+  thead,
   Tbody,
-  Tr,
-  Th,
-  Td,
+  tr,
+  th,
+  td,
   TableContainer,
   Input,
   Button,
@@ -15,8 +15,10 @@ import {
 import { BsFillCalendarDateFill } from 'react-icons/bs';
 
 const MoveServiceNote = () => {
+  let data = [1, 1, 1, 1];
+
   return (
-    <div className='ar w-full bg-[#F6F8FC] p-5 text-gray-600'>
+    <div className='w-full'>
       <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
         Move Service Note
       </h1>
@@ -81,60 +83,50 @@ const MoveServiceNote = () => {
       </div>
 
       <section>
-        <TableContainer>
-          <Table variant='striped' colorScheme='gray' size='sm'>
-            <Thead backgroundColor={'#432366'} color={'#fff'}>
-              <Tr>
-                <Th color={'#selecto'}></Th>
-                <Th color={'#selecto'}>Associate Name</Th>
-                <Th color={'#selecto'}>Service</Th>
-                <Th color={'#selecto'}>Service Date</Th>
-                <Th color={'#selecto'}>Time In</Th>
-                <Th color={'#selecto'}>Time Out</Th>
-              </Tr>
-            </Thead>
-            <Tbody>
-              <Tr>
-                <Td></Td>
-                <Td></Td>
-                <Td></Td>
-                <Td></Td>
-                <Td></Td>
-                <Td></Td>
-              </Tr>
-              <Tr className='dark:text-white'>
-                <Td>
-                  <Checkbox defaultChecked></Checkbox>
-                </Td>
-                <Td>Amess Alicia</Td>
-                <Td>Wound care</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-              </Tr>
-              <Tr className='dark:text-white'>
-                <Td>
-                  <Checkbox></Checkbox>
-                </Td>
-                <Td>Amess Alicia</Td>
-                <Td>Wound care</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-              </Tr>
-              <Tr className='dark:text-white'>
-                <Td>
-                  <Checkbox></Checkbox>
-                </Td>
-                <Td>Amess Alicia</Td>
-                <Td>Wound care</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-                <Td>23/4/2022 8:43 AM</Td>
-              </Tr>
-            </Tbody>
-          </Table>
-        </TableContainer>
+        <div>
+          <table className=' min-w-full overflow-auto'>
+            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+              <tr>
+                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-gray-100  pl-2 text-left'>
+                  Associate Name
+                </th>
+                <th className=' border-gray-100  pl-2 text-left'>Service</th>
+                <th className=' border-gray-100  pl-2 text-left'>
+                  Service Date
+                </th>
+                <th className=' border-gray-100  pl-2 text-left'>Time In</th>
+                <th className=' border-gray-100  pl-2 text-left'>Time Out</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr className='dark:text-white'></tr>
+              {data.map((data, i) => (
+                <tr
+                  key={i}
+                  className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
+                >
+                  <td className='border border-gray-400'>
+                    <Checkbox defaultChecked></Checkbox>
+                  </td>
+                  <td className='border border-gray-400'>Amess Alicia</td>
+                  <td className='border border-gray-400'>Wound care</td>
+                  <td className='border border-gray-400'>23/4/2022 8:43 AM</td>
+                  <td className='border border-gray-400'>23/4/2022 8:43 AM</td>
+                  <td className='border border-gray-400'>23/4/2022 8:43 AM</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         <div className='flex justify-end py-5'>
           <button className='rounded border  px-2'>Move</button>

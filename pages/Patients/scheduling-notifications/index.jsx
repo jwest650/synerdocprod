@@ -1,22 +1,12 @@
 import React, { useState } from 'react';
 import { ar } from '../../../assets/ardata';
-import {
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
-  Input,
-  Button,
-  Checkbox,
-} from '@chakra-ui/react';
+import { Input, Checkbox } from '@chakra-ui/react';
 import { BsFillCalendarDateFill } from 'react-icons/bs';
 
 const SchedulingNotifications = () => {
+  let data = [1, 1, 1, 1];
   return (
-    <div className='ar w-full bg-[#F6F8FC] p-5 text-gray-600'>
+    <div className='w-full '>
       <div className='space-y-5'>
         <section className='flex items-center justify-between space-x-5'>
           <div className='flex items-center space-x-5'>
@@ -36,72 +26,70 @@ const SchedulingNotifications = () => {
         </section>
         <hr />
         <section>
-          <TableContainer>
-            <Table variant='striped' colorScheme='gray' size='sm'>
-              <Thead backgroundColor={'#432366'} color={'#fff'}>
-                <Tr>
-                  <Th color={'#selecto'}>
+          <div>
+            <table className=' min-w-full overflow-auto'>
+              <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                <tr>
+                  <th color={'#selecto'}>
                     <Checkbox></Checkbox>
-                  </Th>
-                  <Th color={'#selecto'}>Dates</Th>
-                  <Th color={'#selecto'}>Agency</Th>
-                  <Th color={'#selecto'}>Patient Name</Th>
-                  <Th color={'#selecto'}>Change Reason</Th>
-                  <Th color={'#selecto'}>Change Date</Th>
-                  <Th color={'#selecto'}>Associate Name</Th>
-                  <Th color={'#selecto'}>Associate Phone</Th>
-                  <Th color={'#selecto'}>Associate Email/Mobile</Th>
-                </Tr>
-              </Thead>
-              <Tbody>
-                <Tr className='dark:text-white'>
-                  <Td>
-                    <Checkbox></Checkbox>
-                  </Td>
-                  <Td>
-                    <BsFillCalendarDateFill />
-                  </Td>
-                  <Td>Tampa Home Health</Td>
-                  <Td>Amess Alicia</Td>
-                  <Td>new reason</Td>
-                  <Td>23/4/2022 8:43 AM</Td>
-                  <Td onClick={() => setOpenAddReferral(true)}>James Gordon</Td>
-                  <Td>233-445-565-666</Td>
-                  <Td>destiny@synerdoc.com</Td>
-                </Tr>
-                <Tr className='dark:text-white'>
-                  <Td>
-                    <Checkbox></Checkbox>
-                  </Td>
-                  <Td>
-                    <BsFillCalendarDateFill />
-                  </Td>
-                  <Td>Tampa Home Health</Td>
-                  <Td>Amess Alicia</Td>
-                  <Td>new reason</Td>
-                  <Td>23/4/2022 8:43 AM</Td>
-                  <Td onClick={() => setOpenAddReferral(true)}>James Gordon</Td>
-                  <Td>233-445-565-666</Td>
-                  <Td>destiny@synerdoc.com</Td>
-                </Tr>
-                <Tr className='dark:text-white'>
-                  <Td>
-                    <Checkbox defaultChecked></Checkbox>
-                  </Td>
-                  <Td>
-                    <BsFillCalendarDateFill />
-                  </Td>
-                  <Td>Tampa Home Health</Td>
-                  <Td>Amess Alicia</Td>
-                  <Td>new reason</Td>
-                  <Td>23/4/2022 8:43 AM</Td>
-                  <Td onClick={() => setOpenAddReferral(true)}>James Gordon</Td>
-                  <Td>233-445-565-666</Td>
-                  <Td>destiny@synerdoc.com</Td>
-                </Tr>
-              </Tbody>
-            </Table>
-          </TableContainer>
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>Dates</th>
+                  <th className=' border-gray-100  pl-2 text-left'>Agency</th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    Patient Name
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    Change Reason
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    Change Date
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    Associate Name
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    Associate Phone
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    Associate Email/Mobile
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((data, i) => (
+                  <tr
+                    key={i}
+                    className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
+                  >
+                    <td className='border border-gray-400'>
+                      <Checkbox></Checkbox>
+                    </td>
+                    <td className='border border-gray-400'>
+                      <BsFillCalendarDateFill />
+                    </td>
+                    <td className='border border-gray-400'>
+                      Tampa Home Health
+                    </td>
+                    <td className='border border-gray-400'>Amess Alicia</td>
+                    <td className='border border-gray-400'>new reason</td>
+                    <td className='border border-gray-400'>
+                      23/4/2022 8:43 AM
+                    </td>
+                    <td
+                      className='border border-gray-400'
+                      onClick={() => setOpenAddReferral(true)}
+                    >
+                      James Gordon
+                    </td>
+                    <td className='border border-gray-400'>233-445-565-666</td>
+                    <td className='border border-gray-400'>
+                      destiny@synerdoc.com
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
           <div className='flex justify-end p-5'>
             <button className='rounded border  px-2'>Save</button>

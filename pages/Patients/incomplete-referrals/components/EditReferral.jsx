@@ -1,24 +1,14 @@
 import {
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
   Select,
-  useDisclosure,
   Modal,
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   Button,
   Input,
 } from '@chakra-ui/react';
-import { useState } from 'react';
 
 const EditReferral = ({ open, setOpenAddReferral }) => {
   return (

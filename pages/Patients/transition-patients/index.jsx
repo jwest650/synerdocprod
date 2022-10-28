@@ -1,18 +1,9 @@
 import {
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
   Select,
-  useDisclosure,
   Modal,
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   Button,
@@ -22,6 +13,7 @@ import {
 import { useState } from 'react';
 
 const TransitionPatients = () => {
+  let data = [1, 1, 1, 1];
   const [openFindReferral, setOpenFindReferral] = useState(false);
   const [openAddReferral, setOpenAddReferral] = useState(false);
 
@@ -80,9 +72,7 @@ const TransitionPatients = () => {
         {/* Referral Source */}
         <section className='mx-auto mt-5 w-[80%]'>
           <div className=' py-4'>
-            <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
-              Referral Source
-            </h1>
+            <h1 className='text-2xl'>Referral Source</h1>
           </div>
           <hr />
           <div className='flex py-3'>
@@ -124,38 +114,38 @@ const TransitionPatients = () => {
             <div className='w-[150px]'>
               <h1 className=''>Referral History: </h1>
             </div>
-            <TableContainer>
-              <Table variant='striped' colorScheme='gray' size={'sm'}>
-                <Thead backgroundColor={'#29507C'} color={'#fff'}>
-                  <Tr>
-                    <Th color={'#fff'} isNumeric></Th>
-                    <Th color={'#fff'} isNumeric>
+            <div>
+              <table className='mt-10 min-w-full overflow-auto'>
+                <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                  <tr>
+                    <th className=' border-gray-100  pl-2 text-left'></th>
+                    <th className=' border-gray-100  pl-2 text-left'>
                       30 days
-                    </Th>
-                    <Th color={'#fff'} isNumeric>
+                    </th>
+                    <th className=' border-gray-100  pl-2 text-left'>
                       60 days
-                    </Th>
-                    <Th color={'#fff'} isNumeric>
+                    </th>
+                    <th className=' border-gray-100  pl-2 text-left'>
                       90 days
-                    </Th>
-                  </Tr>
-                </Thead>
-                <Tbody>
-                  <Tr>
-                    <Td>Admits</Td>
-                    <Td isNumeric>0</Td>
-                    <Td isNumeric>0</Td>
-                    <Td isNumeric>0</Td>
-                  </Tr>
-                  <Tr>
-                    <Td>Non Admits</Td>
-                    <Td isNumeric>0</Td>
-                    <Td isNumeric>0</Td>
-                    <Td isNumeric>0</Td>
-                  </Tr>
-                </Tbody>
-              </Table>
-            </TableContainer>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className='border'>
+                    <td className='border border-gray-400'>Admits</td>
+                    <td className='border border-gray-400'>0</td>
+                    <td className='border border-gray-400'>0</td>
+                    <td className='border border-gray-400'>0</td>
+                  </tr>
+                  <tr className='border bg-[#eee]'>
+                    <td className='border border-gray-400'>Non Admits</td>
+                    <td className='border border-gray-400'>0</td>
+                    <td className='border border-gray-400'>0</td>
+                    <td className='border border-gray-400'>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div className='mt-5 flex'>
@@ -296,9 +286,7 @@ const TransitionPatients = () => {
       {/* Initial Referral Information */}
       <section>
         <div className=' mx-auto w-[80%] py-3 '>
-          <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
-            Initial Referral Information
-          </h1>
+          <h1 className='py-3 text-2xl'>Initial Referral Information</h1>
           <hr />
           <div className='flex py-3'>
             <div className='w-[150px]'>
@@ -415,39 +403,39 @@ const TransitionPatients = () => {
               </Button>
             </div>
 
-            <TableContainer>
-              <Table variant='striped' colorScheme='gray' size='sm'>
-                <Thead backgroundColor={'#29507C'} color={'#fff'}>
-                  <Tr>
-                    <Th color={'#selecto'}>Select</Th>
-                    <Th color={'#selecto'}>Name</Th>
-                    <Th color={'#selecto'}>Type</Th>
-                    <Th color={'#selecto'}>Preferred number</Th>
-                    <Th color={'#selecto'}>Referral Address</Th>
-                  </Tr>
-                </Thead>
-                <Tbody>
-                  <Tr>
-                    <Td>
-                      <Checkbox defaultChecked></Checkbox>
-                    </Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                  </Tr>
-                  <Tr>
-                    <Td>
-                      <Checkbox></Checkbox>
-                    </Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                  </Tr>
-                </Tbody>
-              </Table>
-            </TableContainer>
+            <div>
+              <table className='mt-10 min-w-full overflow-auto'>
+                <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                  <tr>
+                    <th className=' border-gray-100  pl-2 text-left'>Select</th>
+                    <th className=' border-gray-100  pl-2 text-left'>Name</th>
+                    <th className=' border-gray-100  pl-2 text-left'>Type</th>
+                    <th className=' border-gray-100  pl-2 text-left'>
+                      Preferred number
+                    </th>
+                    <th className=' border-gray-100  pl-2 text-left'>
+                      Referral Address
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.map((data, i) => (
+                    <tr
+                      key={i}
+                      className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
+                    >
+                      <td className='border border-gray-400'>
+                        <Checkbox defaultChecked></Checkbox>
+                      </td>
+                      <td className='border border-gray-400'>John Mason</td>
+                      <td className='border border-gray-400'>Others</td>
+                      <td className='border border-gray-400'>054344455</td>
+                      <td className='border border-gray-400'>CL, Miami</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
             <div className='ml-auto'>
               <div className='flex justify-end py-3'>
                 <Button colorScheme='gray' size={'sm'} mr={3}>

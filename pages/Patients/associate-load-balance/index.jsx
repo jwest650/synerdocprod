@@ -1,45 +1,36 @@
-import {
-  Button,
-  Checkbox,
-  Select,
-  Table,
-  TableContainer,
-  Tbody,
-  Td,
-  Th,
-  Thead,
-  Tr,
-} from '@chakra-ui/react';
+import { Button, Checkbox, Select } from '@chakra-ui/react';
 import React from 'react';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const AssociateLoadBalance = () => {
+  let data = [1, 1, 1, 1];
+
   return (
     <div className='w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section>
         <div className='flex justify-between'>
           <div className='flex'>
             <label htmlFor='#'>Choose Discipline:</label>
-            <div className='flex '>
-              <Select size={'sm'} name='' id='' className='rounded text-black'>
+            <div className='flex items-center'>
+              <Select size={'xs'} name='' id='' className='rounded text-black'>
                 <option value='pdf'>discipline one</option>
                 <option value='pdf'>discipline two</option>
               </Select>
             </div>
           </div>
-          <div className='flex'>
+          <div className='flex items-center'>
             <label htmlFor='#'>Agency:</label>
             <div className='flex '>
-              <Select size={'sm'} name='' id='' className='rounded text-black'>
+              <Select size={'xs'} name='' id='' className='rounded text-black'>
                 <option value='pdf'>Agency one</option>
                 <option value='pdf'>Agency two</option>
               </Select>
             </div>
           </div>
-          <div className='flex'>
+          <div className='flex items-center'>
             <label htmlFor='#'>Ranking:</label>
             <div className='flex '>
-              <Select size={'sm'} name='' id='' className='rounded text-black'>
+              <Select size={'xs'} name='' id='' className='rounded text-black'>
                 <option value='pdf'>discipline one</option>
                 <option value='pdf'>discipline two</option>
               </Select>
@@ -52,7 +43,7 @@ const AssociateLoadBalance = () => {
           <div className='ml-6 flex items-center'>
             <label htmlFor='#'>Patient Team:</label>
             <div className='flex'>
-              <Select size={'sm'} name='' id='' className='rounded text-black'>
+              <Select size={'xs'} name='' id='' className='rounded text-black'>
                 <option value='pdf'>discipline one</option>
                 <option value='pdf'>discipline two</option>
               </Select>
@@ -90,44 +81,43 @@ const AssociateLoadBalance = () => {
               </Button>
             </div>
           </div>
-          <TableContainer className='w-[95%] pr-3'>
-            <Table variant='striped' colorScheme='gray' size='sm'>
-              <Thead backgroundColor={'#432366'} color={'#fff'}>
-                <Tr>
-                  <Th color={'#selecto'}>James Gordon</Th>
-                  <Th color={'#selecto'}>James Gordon</Th>
-                  <Th color={'#selecto'}>James Gordon</Th>
-                  <Th color={'#selecto'}>James Gordon </Th>
-                  <Th color={'#selecto'}>James Gordon</Th>
-                </Tr>
-              </Thead>
-              <Tbody>
-                <Tr className='dark:text-white'>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                </Tr>
-
-                <Tr className='dark:text-white'>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                </Tr>
-
-                <Tr className='dark:text-white'>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                  <Td>23/12/05</Td>
-                </Tr>
-              </Tbody>
-            </Table>
-          </TableContainer>
+          <div className='pr-3'>
+            <table className='min-w-full overflow-auto'>
+              <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                <tr>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    James Gordon
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    James Gordon
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    James Gordon
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    James Gordon{' '}
+                  </th>
+                  <th className=' border-gray-100  pl-2 text-left'>
+                    James Gordon
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((data, i) => (
+                  <tr
+                    key={i}
+                    className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
+                  >
+                    <td className='border border-gray-400'>23/12/05</td>
+                    <td className='border border-gray-400'>23/12/05</td>
+                    <td className='border border-gray-400'>23/12/05</td>
+                    <td className='border border-gray-400'>23/12/05</td>
+                    <td className='border border-gray-400'>23/12/05</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </div>
