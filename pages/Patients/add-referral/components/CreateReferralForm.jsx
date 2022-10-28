@@ -113,7 +113,7 @@ const CreateReferralForm = () => {
               <h1 className=''>Referral History: </h1>
             </div>
             <div>
-              <table className='mt-10 min-w-full overflow-auto'>
+              <table className=' min-w-full overflow-auto'>
                 <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
                   <tr>
                     <th className=' border-gray-100  pl-2 text-left'></th>
@@ -356,6 +356,76 @@ const CreateReferralForm = () => {
                   Option 3
                 </option>
               </Select>
+            </div>
+          </div>
+          <div className='flex py-5'>
+            <div className='w-[150px]'>
+              <h1 className='mr-5'>Descipline: </h1>
+            </div>
+            <div>
+              <table className=' min-w-full overflow-auto'>
+                <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                  <tr>
+                    <th className=' border-gray-100  pl-2 text-left'></th>
+                    <th className=' border-gray-100  pl-2 text-left'>
+                      Descipline
+                    </th>
+                    <th className=' border-gray-100  pl-2 text-left'>
+                      Active Associates
+                    </th>
+                    <th className=' border-gray-100  pl-2 text-left'>
+                      Associates In Zip Code
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className='border'>
+                    <td className='border border-gray-400'>
+                      <Checkbox defaultChecked></Checkbox>
+                    </td>
+                    <td className='border border-gray-400'>Skilled Nurse</td>
+                    <td className='border border-gray-400'>9</td>
+                    <td className='border border-gray-400'>0</td>
+                  </tr>
+                  <tr className='border'>
+                    <td className='border border-gray-400'>
+                      <Checkbox></Checkbox>
+                    </td>
+                    <td className='border border-gray-400'>Skilled Nurse</td>
+                    <td className='border border-gray-400'>9</td>
+                    <td className='border border-gray-400'>0</td>
+                  </tr>
+                  <tr className='border'>
+                    <td className='border border-gray-400'>
+                      <Checkbox defaultChecked></Checkbox>
+                    </td>
+                    <td className='border border-gray-400'>Skilled Nurse</td>
+                    <td className='border border-gray-400'>9</td>
+                    <td className='border border-gray-400'>0</td>
+                  </tr>
+                  <tr className='border'>
+                    <td className='border border-gray-400'>
+                      <Checkbox></Checkbox>
+                    </td>
+                    <td className='border border-gray-400'>Skilled Nurse</td>
+                    <td className='border border-gray-400'>9</td>
+                    <td className='border border-gray-400'>0</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div className='mt-3'>
+                <Checkbox>Decline Referral</Checkbox>
+                <br />
+                <Checkbox defaultChecked>Continue Referral</Checkbox>
+                <br />
+                <button
+                  className='my-3 rounded border-2 px-2'
+                  // onClick={() => step < 4 && setStep(step + 1)}
+                >
+                  save and continue
+                </button>
+              </div>
             </div>
           </div>
         </div>
