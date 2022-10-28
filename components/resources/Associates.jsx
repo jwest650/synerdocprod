@@ -3,6 +3,7 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
+  Select,
   useDisclosure,
 } from '@chakra-ui/react';
 import { useRef } from 'react';
@@ -28,7 +29,25 @@ const Associates = () => {
           <CreateAssociate />
         </div>
         <div className="flex items-center gap-3">
-          <Menu isOpen={isOpen} onClose={onClose}>
+          <Select
+            css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+            className="shadow outline-none"
+            size="xs"
+          >
+            <option value="option1" className="text-gray-800">
+              Associate List XLS
+            </option>
+            <option value="option2" className="text-gray-800">
+              Associate List PDF
+            </option>
+            <option value="option3" className="text-gray-800">
+              Associate Caseload XLS
+            </option>
+            <option value="option3" className="text-gray-800">
+              Associate Caseload PDF
+            </option>
+          </Select>
+          {/* <Menu isOpen={isOpen} onClose={onClose}>
             <MenuButton ref={btnRef} onClick={onOpen}>
               <div className="flex items-center gap-2 rounded bg-gray-300 px-2 py-1 text-sm font-medium text-[#0e1922]">
                 <span>Associate List XLS</span>
@@ -44,7 +63,7 @@ const Associates = () => {
                 <span className="text-[#0e1922]">PDF</span>
               </MenuItem>
             </MenuList>
-          </Menu>
+          </Menu> */}
           <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
             Export
           </button>
@@ -62,60 +81,119 @@ const Associates = () => {
       <table className="mt-10 min-w-full overflow-auto">
         <thead className="border-b bg-[#32164A] text-[18px] tracking-wider text-white">
           <tr>
-            <th className=" border pl-2 text-left"></th>
-            <th className=" border pl-2 text-left">Name</th>
-            <th className=" border pl-2 text-left">Classification</th>
-            <th className=" border pl-2 text-left">Discipline</th>
-            <th className=" border pl-2 text-left">Hire Date</th>
-            <th className=" border pl-2 text-left">Status</th>
-            <th className=" border pl-2 text-left">Action</th>
+            <th className=" border-gray-100  pl-2 text-left"></th>
+            <th className=" border-gray-100 pl-2 text-left">Name</th>
+            <th className=" border-gray-100 pl-2 text-left">Classification</th>
+            <th className=" border-gray-100 pl-2 text-left">Discipline</th>
+            <th className=" border-gray-100 pl-2 text-left">Hire Date</th>
+            <th className=" border-gray-100 pl-2 text-left">Status</th>
+            <th className=" border-gray-100 pl-2 text-left">Action</th>
           </tr>
         </thead>
         <tbody>
           <tr className="w-full bg-[#6b3e9280]">
             <td></td>
-            <td className="w-full">
-              <CustomPopover />
+            <td className=" w-full border border-gray-400">
+              <Select
+                css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                className="shadow outline-none"
+                size="xs"
+              >
+                <option value="option1" className="text-gray-800">
+                  All
+                </option>
+                <option value="option2" className="text-gray-800">
+                  Florida Branch
+                </option>
+                <option value="option3" className="text-gray-800">
+                  California Branch
+                </option>
+                <option value="option3" className="text-gray-800">
+                  New York Branch
+                </option>
+              </Select>
             </td>
-            <td className="w-full">
-              <CustomPopover />
+            <td className=" w-full border-gray-400">
+              <Select
+                css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                className="shadow outline-none"
+                size="xs"
+              >
+                <option value="option1" className="text-gray-800">
+                  All
+                </option>
+                <option value="option2" className="text-gray-800">
+                  Aministrative
+                </option>
+                <option value="option3" className="text-gray-800">
+                  Field Staff - Full Time
+                </option>
+              </Select>
             </td>
-            <td className="w-full">
-              <CustomPopover />
+            <td className=" w-full border-gray-400">
+              <Select
+                css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                className="shadow outline-none"
+                size="xs"
+              >
+                <option value="option1" className="text-gray-800">
+                  All{' '}
+                </option>
+                <option value="option2" className="text-gray-800">
+                  Registered Nurse{' '}
+                </option>
+                <option value="option3" className="text-gray-800">
+                  Nurse Practitioner
+                </option>
+              </Select>
             </td>
             <td></td>
-            <td className="w-full">
-              <CustomPopover />
+            <td className=" w-full border-gray-400">
+              <Select
+                css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                className="shadow outline-none"
+                size="xs"
+              >
+                <option value="option1" className="text-gray-800">
+                  All{' '}
+                </option>
+                <option value="option2" className="text-gray-800">
+                  Active
+                </option>
+                <option value="option3" className="text-gray-800">
+                  Inactive
+                </option>
+              </Select>
             </td>
             <td></td>
           </tr>
           {associateTableData.map((associate, i) => (
             <tr key={i} className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}>
-              <td className="max-h-[20px] min-w-[50px] border py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[50px] border border-gray-400 py-1 px-2 font-medium">
                 <span className="cursor-pointer">
                   <RiBook2Fill />
                 </span>
               </td>
-              <td className="max-h-[20px] min-w-[230px] border py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[230px] border border-gray-400 py-1 px-2 font-medium">
                 {associate.name}
               </td>
-              <td className="max-h-[20px] min-w-[270px] border py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[270px] border border-gray-400 py-1 px-2 font-medium">
                 {associate.classification}
               </td>
-              <td className="max-h-[20px] min-w-[330px] border py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[330px] border border-gray-400 py-1 px-2 font-medium">
                 {associate.discipline}
               </td>
-              <td className="max-h-[20px] min-w-[120px] border py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[120px] border border-gray-400 py-1 px-2 font-medium">
                 {associate.hireDate}
               </td>
               <td
-                className={`max-h-[20px] min-w-[100px] border py-1 px-2 font-medium ${
+                className={`max-h-[20px] min-w-[100px] border border-gray-400 py-1 px-2 font-medium ${
                   associate.status === 'Active' && 'text-green-600'
                 }`}
               >
                 {associate.status}
               </td>
-              <td className="max-h-[20px] min-w-[120px]  cursor-pointer border py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium">
                 <TableAction />
               </td>
             </tr>
