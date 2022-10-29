@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import Physicians from "../../../components/resources/Physicians";
 
 const PhysiciansPage = () => {
-  return <div>physicians</div>;
+    return (
+        <div className="w-full">
+            <Physicians />
+        </div>
+    );
 };
 
 export default PhysiciansPage;

@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import Payers from "../../../components/resources/Payers";
 
 const OrganizationPayersPage = () => {
-  return <div>organization-payers</div>;
+    return (
+        <div className="w-full">
+            <Payers />
+        </div>
+    );
 };
 
 export default OrganizationPayersPage;

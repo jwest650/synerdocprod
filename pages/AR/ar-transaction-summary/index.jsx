@@ -21,7 +21,7 @@ const ARTransactionSummary = () => {
                             _placeholder={{ opacity: 1, color: "orange.500" }}
                         />
                     </div>
-                    <div className="space-x-2">
+                    <div>
                         <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
@@ -91,12 +91,24 @@ const ARTransactionSummary = () => {
                 <table className="w-full">
                     <thead className="capitalize">
                         <tr>
-                            <th>agency</th>
-                            <th>begining balance</th>
-                            <th>revenue amount</th>
-                            <th>payment amount</th>
-                            <th>ending balance</th>
-                            <th>dso</th>
+                            <th className=" border-gray-100  pl-2 text-left">
+                                agency
+                            </th>
+                            <th className=" border-gray-100  pl-2 text-left">
+                                begining balance
+                            </th>
+                            <th className=" border-gray-100  pl-2 text-left">
+                                revenue amount
+                            </th>
+                            <th className=" border-gray-100  pl-2 text-left">
+                                payment amount
+                            </th>
+                            <th className=" border-gray-100  pl-2 text-left">
+                                ending balance
+                            </th>
+                            <th className=" border-gray-100  pl-2 text-left">
+                                dso
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
