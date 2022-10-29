@@ -21,7 +21,7 @@ const AddReferral = () => {
   const [openFindReferral, setOpenFindReferral] = useState(false);
   const [openAddReferral, setOpenAddReferral] = useState(false);
 
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(1);
 
   return (
     <div className='w-full'>
