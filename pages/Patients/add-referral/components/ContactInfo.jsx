@@ -138,7 +138,7 @@ const ContactInfo = () => {
             <div className='w-[100%] px-3'>
               <div>
                 <p>Home: 233-4545-6564</p>
-                <p>Desc: Neighbor's phone</p>
+                <p>Desc: Neighbors phone</p>
               </div>
             </div>
           </div>
