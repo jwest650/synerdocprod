@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import Facilites from "../../../components/resources/Facilites";
 
 const FacilitiesPage = () => {
-  return <div>FacilitiesPage</div>;
+    return (
+        <div className="w-full">
+            <Facilites />
+        </div>
+    );
 };
 
 export default FacilitiesPage;

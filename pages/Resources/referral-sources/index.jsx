@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import ReferralSources from "../../../components/resources/ReferralSources";
 
-const ReferralSources = () => {
-  return <div>referral-sources</div>;
+const ReferralSourcesPage = () => {
+    return (
+        <div className="w-full">
+            <ReferralSources />
+        </div>
+    );
 };
 
-export default ReferralSources;
+export default ReferralSourcesPage;
