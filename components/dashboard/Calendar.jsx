@@ -13,11 +13,6 @@ import {
 import React, { useState, useContext } from 'react';
 import { scheduleData } from '../../assets/data';
 import GeneralContext from '../../context/GeneralContext';
-import Availability from './Availability';
-import Calendarnav from './Calendarnav';
-import Card from './Card';
-import ContentOptions from './ContentOptions';
-import Infoleft from './Infoleft';
 
 const Calendar = () => {
   const { sectionClicked } = useContext(GeneralContext);

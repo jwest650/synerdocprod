@@ -18,9 +18,6 @@ import CreateAssociate from '../dashboard/CreateAssociate';
 const Associates = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef(null);
-  // console.log(associateTableData[0].hireDate);
-  // console.log(new Date().toLocaleDateString());
-
   return (
     <section className="mx-10 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">

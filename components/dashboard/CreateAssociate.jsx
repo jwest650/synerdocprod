@@ -1,5 +1,4 @@
 import {
-  Button,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -14,6 +13,11 @@ import { BiPlus } from 'react-icons/bi';
 
 const CreateAssociate = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const handleForm = (e) => {
+    e.preventDefault();
+    onClose();
+  };
   return (
     <>
       <span
@@ -32,7 +36,7 @@ const CreateAssociate = () => {
           {/* </div> */}
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 ">
             {/* <ModalBody> */}
-            <form action="" onSubmit={() => e.preventDefault()}>
+            <form action="" onSubmit={handleForm}>
               <h1 className="text-xl font-semibold">Add Associate</h1>
               <div className="mt-5 grid h-full w-full grid-cols-6 text-sm">
                 <div className="col-span-3 w-full">
@@ -338,7 +342,10 @@ const CreateAssociate = () => {
                 >
                   Save
                 </button>
-                <button className="rounded bg-gray-500 px-4 py-1 text-white shadow">
+                <button
+                  onClick={onClose}
+                  className="rounded bg-gray-500 px-4 py-1 text-white shadow"
+                >
                   Cancel
                 </button>
               </div>
