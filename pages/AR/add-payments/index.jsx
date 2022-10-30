@@ -1,55 +1,114 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
-import { FcCheckmark } from "react-icons/fc";
+import { FcCheckmark, FcSearch } from "react-icons/fc";
+
 const AddPayments = () => {
     return (
         <div className="ar bodytext p-5 capitalize">
-            <section className="">
-                <h1 className="head text-2xl ">Add Payments</h1>
-                <hr />
-                <article className="">
-                    <div className="my-5 flex  items-center ">
-                        <label htmlFor="">*payment source:</label>
-
-                        <Select placeholder="Select option" size="xs" w={120}>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                        </Select>
-                        <p className="ml-10">add payment source</p>
-                    </div>
-                    <section className="flex space-x-10">
-                        <aside className="space-y-2">
-                            <div className="flex   space-x-1">
-                                <label htmlFor="">*payment method:</label>
-                                <Select
-                                    placeholder="Select option"
-                                    size="xs"
-                                    w={120}
-                                >
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                </Select>
+            <main className="">
+                <header>
+                    <h1 className="head text-2xl ">Add Payments</h1>
+                    <hr />
+                </header>
+                <div className="mt-5 flex space-x-10">
+                    <article className="flex space-x-5">
+                        <section className="space-y-3">
+                            <div>
+                                <label htmlFor="">
+                                    {" "}
+                                    <span className="text-orange-500">
+                                        *
+                                    </span>{" "}
+                                    payment source:
+                                </label>
                             </div>
-                            <div className="flex   space-x-1">
-                                <label htmlFor="">*payment amount:</label>
-                                <Input w={120} type="text" size="xs" />
+                            <div>
+                                {" "}
+                                <label htmlFor="">
+                                    {" "}
+                                    <span className="text-orange-500">
+                                        *
+                                    </span>{" "}
+                                    payment method:
+                                </label>
                             </div>
-                            <div className="flex   space-x-1">
-                                <label htmlFor="">*remit date:</label>
-                                <Input w={120} type="text" size="xs" />
+                            <div>
+                                <label htmlFor="">
+                                    {" "}
+                                    <span className="text-orange-500">
+                                        *
+                                    </span>{" "}
+                                    payment amount:
+                                </label>
                             </div>
-                            <div className="flex   space-x-1">
-                                <label htmlFor="">*deposit date:</label>
-                                <Input w={120} type="date" size="xs" />
+                            <div>
+                                <label htmlFor="">
+                                    {" "}
+                                    <span className="text-orange-500">
+                                        *
+                                    </span>{" "}
+                                    remit date:
+                                </label>
                             </div>
-                            <div className="flex   space-x-1">
+                            <div>
+                                <label htmlFor="">
+                                    {" "}
+                                    <span className="text-orange-500">
+                                        *
+                                    </span>{" "}
+                                    deposit date:
+                                </label>
+                            </div>
+                            <div>
                                 <label htmlFor="">reference number:</label>
+                            </div>
+                            <div>
+                                <label htmlFor="">apply payments to:</label>
+                            </div>
+                            <div className="flex items-center space-x-2 pt-10">
+                                <FcSearch />
+                                <p className=" cursor-pointer text-sm font-bold text-orange-500 underline">
+                                    attach document
+                                </p>
+                            </div>
+                        </section>
+                        <section className="space-y-3">
+                            <div>
+                                <Select
+                                    placeholder="Select option"
+                                    size="xs"
+                                    w={120}
+                                >
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </Select>
+                            </div>
+
+                            <div>
+                                <Select
+                                    placeholder="Select option"
+                                    size="xs"
+                                    w={120}
+                                >
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </Select>
+                            </div>
+                            <div>
+                                <Input w={120} type="text" size="xs" />
+                            </div>
+                            <div>
+                                <Input w={120} type="text" size="xs" />
+                            </div>
+                            <div>
                                 <Input w={120} type="date" size="xs" />
                             </div>
-                            <div className="flex   space-x-1">
-                                <label htmlFor="">apply payments to:</label>
+                            <div>
+                                <Input w={120} type="date" size="xs" />
+                            </div>
+                            <div>
                                 <Select
                                     placeholder="Select option"
                                     size="xs"
@@ -60,37 +119,43 @@ const AddPayments = () => {
                                     <option value="option3">Option 3</option>
                                 </Select>
                             </div>
-                        </aside>
-                        <aside className="space-y-2">
-                            <div className="flex   space-x-1">
-                                <label htmlFor="">Note type:</label>
-                                <Select
-                                    placeholder="Select option"
-                                    size="xs"
-                                    w={120}
-                                >
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                </Select>
+                        </section>
+                    </article>
+                    <article className="space-y-2">
+                        <div className="flex items-center space-x-2">
+                            <FcSearch />
+                            <p className=" cursor-pointer text-sm font-bold text-orange-500 underline">
+                                add payment source
+                            </p>
+                        </div>
+                        <div className="flex space-x-5">
+                            <label htmlFor="">Note type:</label>
+                            <Select
+                                placeholder="Select option"
+                                size="xs"
+                                w={120}
+                            >
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </Select>
+                        </div>
+                        <div className="flex space-x-5">
+                            <div>
+                                <label htmlFor="">Note:</label>
+                                <p>abc</p>
+                                <FcCheckmark className="text-xl font-bold" />
                             </div>
-                            <div className="flex space-x-2">
-                                <div>
-                                    <label htmlFor="">Note:</label>
-                                    <p>abc</p>
-                                    <FcCheckmark className="text-xl font-bold" />
-                                </div>
-                                <textarea
-                                    className="border bg-transparent"
-                                    name=""
-                                    id=""
-                                    cols="30"
-                                    rows="6"
-                                ></textarea>
-                            </div>
-                        </aside>
-                    </section>
-                </article>
+                            <textarea
+                                className="border bg-transparent"
+                                name=""
+                                id=""
+                                cols="30"
+                                rows="6"
+                            ></textarea>
+                        </div>
+                    </article>
+                </div>
                 <div className=" my-5 flex justify-end space-x-3">
                     <button className="border  px-3 capitalize">
                         save / enter more
@@ -100,7 +165,7 @@ const AddPayments = () => {
                     </button>
                     <button className="border  px-3 capitalize">cancel</button>
                 </div>
-            </section>
+            </main>
         </div>
     );
 };

@@ -6,6 +6,7 @@ import { RiEdit2Line } from "react-icons/ri";
 import { BsPlus } from "react-icons/bs";
 import { Select, useDisclosure } from "@chakra-ui/react";
 import CreateCollectorModal from "../../../components/ar/CreateCollectorModal";
+import Actions from "../../../components/ar/Actions";
 
 const ARCollectionAssignments = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -70,9 +71,14 @@ const ARCollectionAssignments = () => {
                                     <td>{value.admitDate}</td>
                                     <td>{value.associate}</td>
                                     <td>
-                                        <RiDeleteBin5Line className="inline-block" />
-
-                                        <RiEdit2Line className="inline-block" />
+                                        <Actions
+                                            icon1={
+                                                <RiDeleteBin5Line />
+                                            }
+                                            icon2={
+                                                <RiEdit2Line  />
+                                            }
+                                        />
                                     </td>
                                 </tr>
                             ))}
