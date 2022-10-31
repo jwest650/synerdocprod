@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 
-const AddAddressPhoneModal = () => {
+const AddAddressPhoneModal = ({ openReAdmit, setOpenReAdmit }) => {
   return (
     <div>
       <div>
