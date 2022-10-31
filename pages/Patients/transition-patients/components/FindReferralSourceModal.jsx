@@ -1,36 +1,48 @@
 import {
-  Checkbox,
+  Select,
   Modal,
-  ModalBody,
-  ModalCloseButton,
+  ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalOverlay,
+  ModalBody,
+  ModalCloseButton,
+  Button,
   Input,
+  Checkbox,
 } from '@chakra-ui/react';
-import React from 'react';
+import { useState } from 'react';
+import AddReferralSourceModal from './AddReferralSourceModal';
 
-const AddServiceFacilityModal = ({
-  openAddServiceFacility,
-  setOpenAddServiceFacility,
-}) => {
+const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
   let data = [1, 1, 1, 1, 1];
+  const [openAddReferral, setOpenAddReferral] = useState(false);
 
   return (
     <div>
       <Modal
-        isOpen={openAddServiceFacility}
-        onClose={() => setOpenAddServiceFacility(false)}
+        isOpen={openFindReferral}
+        onClose={() => setOpenFindReferral(false)}
         className='p-5'
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
           <ModalHeader>
-            <h1>Service Modal</h1>
-            <p>add information and save</p>
+            Find Referral Source
+            <p className='text-sm text-gray-600'>
+              Find referral source/add referral source if not found.
+            </p>
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
+            <div className='flex justify-between'>
+              <label htmlFor='#' className='w-[40%]'>
+                First/Last:{' '}
+              </label>
+              <div className='flex w-[60%]'>
+                <Input placeholder='small size' size='sm' mr={'3'} />
+                <Input placeholder='small size' size='sm' />
+              </div>
+            </div>
             <div className='my-2 flex '>
               <label htmlFor='#' className='w-[40%]'>
                 Facility Name/Referral Company:{' '}
@@ -41,9 +53,9 @@ const AddServiceFacilityModal = ({
             </div>
 
             <div className='flex justify-end'>
-              <button className='my-2 cursor-pointer rounded border py-1 px-5 text-sm capitalize '>
+              <Button colorScheme='gray' size={'sm'} my={3}>
                 Search
-              </button>
+              </Button>
             </div>
 
             <div>
@@ -81,31 +93,34 @@ const AddServiceFacilityModal = ({
             </div>
             <div className='ml-auto'>
               <div className='flex justify-end py-3'>
-                <button
-                  className='my-2 cursor-pointer rounded  border py-1 px-5 text-sm capitalize'
-                  mr={3}
-                >
+                <Button colorScheme='gray' size={'sm'} mr={3}>
                   Save
-                </button>
-                <button className='my-2 ml-3 cursor-pointer  rounded border py-1 px-5 text-sm capitalize'>
+                </Button>
+                <Button colorScheme='gray' size={'sm'}>
                   Cancel
-                </button>
+                </Button>
               </div>
 
               <div className='flex justify-end'>
                 <button
-                  // onClick={() => setOpenAddReferral(true)}
+                  onClick={() => setOpenAddReferral(true)}
                   className='dark:text-[#E77654px-6 my-2 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'
                 >
-                  add facility source
+                  add referral source
                 </button>
               </div>
             </div>
           </ModalBody>
         </ModalContent>
       </Modal>
+
+      {/* Add Modal */}
+      <AddReferralSourceModal
+        openAddReferral={openAddReferral}
+        setOpenAddReferral={setOpenAddReferral}
+      />
     </div>
   );
 };
 
-export default AddServiceFacilityModal;
+export default FindReferralSourceModal;
