@@ -11,6 +11,7 @@ import {
   tr,
 } from '@chakra-ui/react';
 import { BsSearch } from 'react-icons/bs';
+import { RiBook2Fill } from 'react-icons/ri';
 
 const PatientsEncounters = () => {
   let data = [1, 1, 1, 1];
@@ -98,6 +99,7 @@ const PatientsEncounters = () => {
           <table className=' min-w-full overflow-auto'>
             <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
               <tr>
+                <th className=' border-gray-100  pl-2 text-left'></th>
                 <th className=' border-gray-100  pl-2 text-left'>
                   Patient Name
                 </th>
@@ -122,8 +124,13 @@ const PatientsEncounters = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
+                  <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <RiBook2Fill />
+                  </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    James Gordon
+                    <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                      James Gordon
+                    </p>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     23/4/2022 8:43 AM

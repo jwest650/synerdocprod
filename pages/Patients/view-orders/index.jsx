@@ -150,7 +150,9 @@ const ViewOrders = () => {
                       <Checkbox></Checkbox>
                     </td>
                     <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Amess Alicia
+                      <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                        Amess Alicia
+                      </p>
                     </td>
                     <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       Accra

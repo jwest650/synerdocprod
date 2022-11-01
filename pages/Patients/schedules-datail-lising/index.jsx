@@ -9,12 +9,11 @@ import {
 import { BsSearch } from 'react-icons/bs';
 import AddPayerModal from './AddPayerModal';
 import TableAction from './TableAction';
-import {useState} from 'react'
+import { useState } from 'react';
 
 const SchedulesDetailListing = () => {
   let data = [1, 1, 1, 1];
   const [openAddPayer, setOpenAddPayer] = useState(false);
-
 
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
@@ -24,7 +23,10 @@ const SchedulesDetailListing = () => {
             Schedules
           </h1>
 
-          <button className='ml-3 cursor-pointer rounded bg-orange-600 py-1 px-5 text-sm capitalize text-[#fff] dark:text-[#E77654]' onClick={()=> setOpenAddPayer(true)}>
+          <button
+            className='ml-3 cursor-pointer rounded bg-orange-600 py-1 px-5 text-sm capitalize text-[#fff] dark:text-[#E77654]'
+            onClick={() => setOpenAddPayer(true)}
+          >
             Add Pay Only
           </button>
         </div>
@@ -217,7 +219,9 @@ const SchedulesDetailListing = () => {
                     Home Health
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Active
+                    <p className=' cursor-pointer text-sm font-bold text-green-700 '>
+                      Assigned
+                    </p>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
                   <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
@@ -230,7 +234,10 @@ const SchedulesDetailListing = () => {
         </div>
       </section>
       {/* Modal */}
-      <AddPayerModal openAddPayer={openAddPayer} setOpenAddPayer={setOpenAddPayer} />
+      <AddPayerModal
+        openAddPayer={openAddPayer}
+        setOpenAddPayer={setOpenAddPayer}
+      />
     </div>
   );
 };

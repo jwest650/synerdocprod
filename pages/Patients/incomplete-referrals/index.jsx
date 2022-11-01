@@ -84,7 +84,9 @@ const IncompleteReferrals = () => {
                       className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'
                       onClick={() => setOpenAddReferral(true)}
                     >
-                      James Gordon
+                      <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                        James Gordon
+                      </p>
                     </td>
                     <td className=' max-h-[20px] max-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       <BsSearch />

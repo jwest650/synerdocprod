@@ -186,7 +186,9 @@ const PatientSchedules = () => {
                     <RiBook2Fill />
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    James Gordon
+                    <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                      James Gordon
+                    </p>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     1.High priority requires
@@ -202,7 +204,9 @@ const PatientSchedules = () => {
                     10/8/19
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Active
+                    <p className=' cursor-pointer text-sm font-bold text-green-700 '>
+                      Active
+                    </p>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     Winn

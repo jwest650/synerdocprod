@@ -215,7 +215,9 @@ const VerifiedServices = () => {
                     Home Health
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Active
+                    <p className=' cursor-pointer text-sm font-bold text-green-700'>
+                      Verified
+                    </p>
                   </td>
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     <BsSearch />
