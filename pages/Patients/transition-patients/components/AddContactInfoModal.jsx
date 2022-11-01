@@ -12,7 +12,7 @@ import {
 import React from 'react';
 import { FiTrash2 } from 'react-icons/fi';
 
-const AddContactInfoModa = ({ openAddContactInfo, setOpenAddContactInfo }) => {
+const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
   let data = [1, 1];
 
   return (
@@ -35,7 +35,10 @@ const AddContactInfoModa = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                 <div className='flex-1 border-r-2 p-2'>
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
-                      <label htmlFor='#'>Address Type:</label>
+                      <label htmlFor='#'>
+                        <span className='font-bold text-orange-500'>*</span>
+                        Address Type:
+                      </label>
                     </div>
                     <div>
                       <Select size='xs' marginRight={5}>
@@ -54,7 +57,10 @@ const AddContactInfoModa = ({ openAddContactInfo, setOpenAddContactInfo }) => {
 
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
-                      <label htmlFor='#'>Address 1:</label>
+                      <label htmlFor='#'>
+                        <span className='font-bold text-orange-500'>*</span>
+                        Address 1:
+                      </label>
                     </div>
                     <div>
                       <Input size={'xs'} />
@@ -72,7 +78,10 @@ const AddContactInfoModa = ({ openAddContactInfo, setOpenAddContactInfo }) => {
 
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
-                      <label htmlFor='#'>City/State/Zip:</label>
+                      <label htmlFor='#'>
+                        <span className='font-bold text-orange-500'>*</span>
+                        City/State/Zip:
+                      </label>
                     </div>
                     <div className='flex'>
                       <Input size={'xs'} />
@@ -125,7 +134,9 @@ const AddContactInfoModa = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </div>
                   </div>
                   <div className='my-3 flex items-end justify-end'>
-                    <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>add contact</button>
+                    <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                      add contact
+                    </button>
                   </div>
                 </div>
 
@@ -170,7 +181,9 @@ const AddContactInfoModa = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   </table>
                   <div className='my-3 flex items-end justify-end'>
                     <div>
-                      <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>Save</button>
+                      <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                        Save
+                      </button>
                       <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
                         Continue
                       </button>
@@ -189,4 +202,4 @@ const AddContactInfoModa = ({ openAddContactInfo, setOpenAddContactInfo }) => {
   );
 };
 
-export default AddContactInfoModa;
+export default AddContactInfoModal;

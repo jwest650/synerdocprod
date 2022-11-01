@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import AddAddressPhoneModal from './AddAddressPhoneModal';
 import AddAncillaryPhoneModal from './AddAncillaryPhoneModal';
-import AddContactInfoModa from './AddContactInfoModal';
+import AddContactInfoModal from './AddContactInfoModal';
 import AddPatientContactModal from './AddPatientContactModal';
 import AddServiceFacilityModal from './AddServiceFacilityModal';
 
@@ -174,7 +174,7 @@ const ContactInfoForm = () => {
       </div>
 
       {/* Modals */}
-      <AddContactInfoModa
+      <AddContactInfoModal
         openAddContactInfo={openAddContactInfo}
         setOpenAddContactInfo={setOpenAddContactInfo}
       />

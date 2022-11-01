@@ -7,7 +7,7 @@ import SetupPatientForm from './components/SetupPatientForm';
 const AddReferral = () => {
   let data = [1, 1, 1, 1];
 
-  const [step, setStep] = useState(4);
+  const [step, setStep] = useState(1);
 
   return (
     <div className='w-full'>

@@ -54,9 +54,9 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
               </div>
 
               <div className='flex justify-end'>
-                <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                <Button colorScheme='gray' size={'sm'} my={3}>
                   Search
-                </button>
+                </Button>
               </div>
 
               <div>
@@ -99,7 +99,7 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
                   <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
                     Save
                   </button>
-                  <button className='rounded bg-[#32164A] px-4 ml-3 py-1 text-white shadow'>
+                  <button className='rounded ml-3 bg-[#32164A] px-4 py-1 text-white shadow'>
                     Cancel
                   </button>
                 </div>

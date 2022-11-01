@@ -39,7 +39,11 @@ const AddReferralSourceContactModal = ({
               <section>
                 <div className='flex py-3'>
                   <div className='w-[150px]'>
-                    <label htmlFor='#'>*First/Middle/*Last:</label>
+                    <label htmlFor='#'>
+                      <span className='font-bold text-orange-500'>*</span>
+                      First/Middle/
+                      <span className='font-bold text-orange-500'>*</span>Last:
+                    </label>
                   </div>
 
                   <div className='flex items-center'>
@@ -111,18 +115,21 @@ const AddReferralSourceContactModal = ({
                 </div>
                 <div className='flex py-2'>
                   <div className='w-[150px]'>
-                    <h1 className='mr-5'>Start Date: </h1>
+                    <h1 className='mr-5'>
+                      <span className='font-bold text-orange-500'>*</span>Start
+                      Date:{' '}
+                    </h1>
                   </div>
                   <Input size={'xs'} type='date' />
                 </div>
               </section>
               <div className='flex justify-end py-3'>
-                <Button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
                   Save
-                </Button>
-                <Button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                </button>
+                <button className='ml-2 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
                   Cancel
-                </Button>
+                </button>
               </div>
             </ModalBody>
           </div>

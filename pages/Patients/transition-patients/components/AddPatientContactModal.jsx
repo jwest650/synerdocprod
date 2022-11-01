@@ -35,7 +35,11 @@ const AddPatientContactModal = ({
               <section>
                 <div className='my-2 flex'>
                   <div className='w-[150px]'>
-                    <label htmlFor='#'>Relationship:</label>
+                    <label htmlFor='#'>
+                      {' '}
+                      <span className='font-bold text-orange-500'>*</span>
+                      Relationship:
+                    </label>
                   </div>
                   <div>
                     <Select size='xs' marginRight={5}>
@@ -70,7 +74,10 @@ const AddPatientContactModal = ({
 
                 <div className='my-2 flex'>
                   <div className='w-[150px]'>
-                    <label htmlFor='#'>First Name:</label>
+                    <label htmlFor='#'>
+                      <span className='font-bold text-orange-500'>*</span>First
+                      Name:
+                    </label>
                   </div>
                   <div>
                     <Input size='xs' />
@@ -79,7 +86,10 @@ const AddPatientContactModal = ({
 
                 <div className='my-2 flex'>
                   <div className='w-[150px]'>
-                    <label htmlFor='#'>Last Name:</label>
+                    <label htmlFor='#'>
+                      <span className='font-bold text-orange-500'>*</span>Last
+                      Name:
+                    </label>
                   </div>
                   <div>
                     <Input size='xs' />
@@ -137,8 +147,12 @@ const AddPatientContactModal = ({
                 </div>
               </section>
               <div className='flex justify-end py-3'>
-                <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>Continue</button>
-                <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>Cancel</button>
+                <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                  Continue
+                </button>
+                <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                  Cancel
+                </button>
               </div>
             </ModalBody>
           </div>

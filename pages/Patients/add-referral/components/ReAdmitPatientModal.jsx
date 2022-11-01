@@ -31,7 +31,7 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
             </ModalHeader>
             {/* <ModalCloseButton /> */}
             <ModalBody>
-              <div>
+              <div className='flex flex-col'>
                 <Checkbox>Include Medications (all)</Checkbox>
                 <Checkbox>Include Medications (active only)</Checkbox>
                 <Checkbox>Include Advance Directives</Checkbox>
@@ -42,7 +42,9 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
                 <Checkbox>Include Vaccines</Checkbox>
                 <Checkbox>Include Allergies</Checkbox>
                 <div className='my-3 flex justify-end'>
-                  <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>Continue</button>
+                  <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                    Continue
+                  </button>
                 </div>
               </div>
             </ModalBody>

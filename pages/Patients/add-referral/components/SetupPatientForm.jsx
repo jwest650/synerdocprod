@@ -154,7 +154,9 @@ const SetupPatientForm = () => {
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
                 <td className='border border-gray-400'>
-                  <Checkbox></Checkbox>
+                  <Checkbox
+                    onChange={(e) => setOpenReAdmit(e.target.checked)}
+                  ></Checkbox>
                 </td>
                 <td className='border border-gray-400'>Nick, Jones</td>
                 <td className='border border-gray-400'>23/12/05</td>
@@ -184,7 +186,12 @@ const SetupPatientForm = () => {
 
         <div className='flex py-5'>
           <div className='w-[150px]'>
-            <h1 className='mr-5'>*Last/*First/Middle: </h1>
+            <h1 className='mr-5'>
+              <span className='font-bold text-orange-500'>*</span>Last/
+              <span className='font-bold text-orange-500'>
+                *
+              </span>First/Middle:{' '}
+            </h1>
           </div>
           <div className='flex'>
             <Input size={'xs'} type='text' />

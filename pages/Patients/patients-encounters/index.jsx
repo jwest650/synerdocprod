@@ -10,6 +10,7 @@ import {
   thead,
   tr,
 } from '@chakra-ui/react';
+import { BiPlus } from 'react-icons/bi';
 import { BsSearch } from 'react-icons/bs';
 import { RiBook2Fill } from 'react-icons/ri';
 
@@ -19,10 +20,21 @@ const PatientsEncounters = () => {
   return (
     <div className='w-full'>
       <section className='flex items-center justify-between capitalize'>
-        <div>
+        <div className='flex items-center'>
           <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
             Patient Encounters
           </h1>
+          <button
+            className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'
+            // onClick={() => setOpenAddReferral(true)}
+          >
+            <BiPlus />
+            <span className='ml-1'>Add Referal/Patient</span>
+          </button>
+
+          <p className=' ml-2 cursor-pointer text-sm font-bold text-blue-700 underline'>
+            Homecare University
+          </p>
         </div>
 
         <div>

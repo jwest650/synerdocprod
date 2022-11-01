@@ -24,7 +24,7 @@ const CreateReferralForm = () => {
         <div className=' flex  items-center justify-between'>
           <div className='flex items-center justify-between'>
             <label htmlFor='#' className='mr-3'>
-              Agency:{' '}
+              <span className='font-bold text-orange-500'>*</span>Agency:{' '}
             </label>
             <Select size='xs'>
               <option value='option1' className='text-gray-800'>
@@ -39,7 +39,9 @@ const CreateReferralForm = () => {
             </Select>
           </div>
           <div className='my-2 flex'>
-            <label htmlFor='#'>Agency Type: </label>
+            <label htmlFor='#'>
+              <span className='font-bold text-orange-500'>*</span>Agency Type:{' '}
+            </label>
             <div>
               <Select size='xs'>
                 <option value='option1' className='text-gray-800'>
@@ -65,7 +67,10 @@ const CreateReferralForm = () => {
           <hr />
           <div className='flex py-3'>
             <div className='w-[150px]'>
-              <label htmlFor='#'>Referral Source:</label>
+              <label htmlFor='#'>
+                <span className='font-bold text-orange-500'>*</span>Referral
+                Source:
+              </label>
             </div>
             <div>
               <Select size='xs' marginRight={5}>
@@ -278,7 +283,8 @@ const CreateReferralForm = () => {
           <div className='flex py-3'>
             <div className='w-[150px]'>
               <label htmlFor='#' className='mr-3'>
-                Payer Category:
+                <span className='font-bold text-orange-500'>*</span> Payer
+                Category:
               </label>
             </div>
             <div>
@@ -349,7 +355,9 @@ const CreateReferralForm = () => {
           </div>
           <div className='flex py-5'>
             <div className='w-[150px]'>
-              <h1 className='mr-5'>Descipline: </h1>
+              <h1 className='mr-5'>
+                <span className='font-bold text-orange-500'>*</span>Descipline:{' '}
+              </h1>
             </div>
             <div>
               <table className=' min-w-full overflow-auto'>
@@ -370,7 +378,7 @@ const CreateReferralForm = () => {
                 <tbody>
                   <tr className='border'>
                     <td className='border border-gray-400'>
-                      <Checkbox defaultChecked></Checkbox>
+                      <Checkbox></Checkbox>
                     </td>
                     <td className='border border-gray-400'>Skilled Nurse</td>
                     <td className='border border-gray-400'>9</td>

@@ -35,7 +35,10 @@ const AddAncillaryPhoneModal = ({
                 <section>
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
-                      <label htmlFor='#'>Phone Type:</label>
+                      <label htmlFor='#'>
+                        <span className='font-bold text-orange-500'>*</span>
+                        Phone Type:
+                      </label>
                     </div>
                     <div>
                       <Select size='xs' marginRight={5}>
@@ -54,7 +57,10 @@ const AddAncillaryPhoneModal = ({
 
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
-                      <label htmlFor='#'>Phone :</label>
+                      <label htmlFor='#'>
+                        <span className='font-bold text-orange-500'>*</span>
+                        Phone :
+                      </label>
                     </div>
                     <div className='flex'>
                       <Input size={'xs'} value='2334' />
@@ -82,8 +88,12 @@ const AddAncillaryPhoneModal = ({
                   </div>
                 </section>
                 <div className='my-3 mx-auto w-52'>
-                  <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>Save</button>
-                  <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>Cancel</button>
+                  <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                    Save
+                  </button>
+                  <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                    Cancel
+                  </button>
                 </div>
               </ModalBody>
             </div>

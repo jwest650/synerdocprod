@@ -12,14 +12,16 @@ import {
 import React from 'react';
 import { FiTrash2 } from 'react-icons/fi';
 
-const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
+const AddFacilitySourceModal = ({
+  openFacilitySource,
+  setOpenFacilitySource,
+}) => {
   let data = [1, 1];
-
   return (
     <div>
       <Modal
-        isOpen={openAddContactInfo}
-        onClose={() => setOpenAddContactInfo(false)}
+        isOpen={openFacilitySource}
+        onClose={() => setOpenFacilitySource(false)}
         className='p-5'
       >
         <ModalOverlay />
@@ -104,9 +106,12 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </div>
                   </div>
 
-                  <div className='my-5 flex'>
+                  <div className='my-5 mt-10 flex'>
                     <div className='w-[150px]'>
-                      <label htmlFor='#'>Phone :</label>
+                      <label htmlFor='#'>
+                        <span className='font-bold text-orange-500'>*</span>
+                        Place of Service :
+                      </label>
                     </div>
                     <div>
                       <Select size='xs' marginRight={5}>
@@ -123,24 +128,65 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </div>
                   </div>
 
-                  <div className='my-5 flex'>
+                  <div className='my-5  flex'>
                     <div className='w-[150px]'>
-                      <label htmlFor='#'>Phone Type:</label>
+                      <label htmlFor='#'>
+                        <span className='font-bold text-orange-500'>*</span>
+                        Start Date:
+                      </label>
                     </div>
                     <div className='flex'>
-                      <Input size={'xs'} value='2334' />
-                      <Input size={'xs'} value='2334' className='ml-3' />
-                      <Input size={'xs'} value='2334' className='ml-3' />
+                      <Input size={'xs'} value='2334' type={'date'} />
                     </div>
                   </div>
-                  <div className='my-3 flex items-end justify-end'>
-                    <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
-                      add contact
-                    </button>
+                  <div className='my-5 flex'>
+                    <div className='w-[150px]'>
+                      <label htmlFor='#'>End Date:</label>
+                    </div>
+                    <div className='flex'>
+                      <Input size={'xs'} value='2334' type={'date'} />
+                    </div>
                   </div>
                 </div>
 
                 <div className='flex w-[100%] flex-1 flex-col justify-between p-2'>
+                  <div>
+                    <div className='my-5 flex'>
+                      <div className='w-[150px]'>
+                        <label htmlFor='#'>Phone Type:</label>
+                      </div>
+                      <div>
+                        <Select size='xs' marginRight={5}>
+                          <option value='option1' className='text-gray-800'>
+                            select
+                          </option>
+                          <option value='option2' className='text-gray-800'>
+                            Option 2
+                          </option>
+                          <option value='option3' className='text-gray-800'>
+                            Option 3
+                          </option>
+                        </Select>
+                      </div>
+                    </div>
+
+                    <div className='my-5 flex'>
+                      <div className='w-[150px]'>
+                        <label htmlFor='#'>Phone:</label>
+                      </div>
+                      <div className='flex'>
+                        <Input size={'xs'} value='2334' />
+                        <Input size={'xs'} value='2334' className='ml-3' />
+                        <Input size={'xs'} value='2334' className='ml-3' />
+                      </div>
+                    </div>
+                    <div className='my-3 flex items-end justify-end'>
+                      <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                        add contact
+                      </button>
+                    </div>
+                  </div>
+
                   <table className=' min-w-full overflow-auto'>
                     <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
                       <tr>
@@ -202,4 +248,4 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
   );
 };
 
-export default AddContactInfoModal;
+export default AddFacilitySourceModal;

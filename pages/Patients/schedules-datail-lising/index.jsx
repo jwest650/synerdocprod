@@ -10,6 +10,7 @@ import { BsSearch } from 'react-icons/bs';
 import AddPayerModal from './AddPayerModal';
 import TableAction from './TableAction';
 import { useState } from 'react';
+import { BiPlus } from 'react-icons/bi';
 
 const SchedulesDetailListing = () => {
   let data = [1, 1, 1, 1];
@@ -22,12 +23,12 @@ const SchedulesDetailListing = () => {
           <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
             Schedules
           </h1>
-
           <button
-            className='ml-3 cursor-pointer rounded bg-orange-600 py-1 px-5 text-sm capitalize text-[#fff] dark:text-[#E77654]'
-            onClick={() => setOpenAddPayer(true)}
+            className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'
+            onClick={() => setOpenAddReferral(true)}
           >
-            Add Pay Only
+            <BiPlus />
+            <span className='ml-1'>Add Pay Only</span>
           </button>
         </div>
 

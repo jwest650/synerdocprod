@@ -8,13 +8,16 @@ import {
   ModalOverlay,
   Input,
 } from '@chakra-ui/react';
-import React from 'react';
+import { useState } from 'react';
+import AddFacilitySourceModal from './AddFacilitySourceModal';
 
 const AddServiceFacilityModal = ({
   openAddServiceFacility,
   setOpenAddServiceFacility,
 }) => {
   let data = [1, 1, 1, 1, 1];
+
+  const [openFacilitySource, setOpenFacilitySource] = useState(false);
 
   return (
     <div>
@@ -42,7 +45,7 @@ const AddServiceFacilityModal = ({
               </div>
 
               <div className='flex justify-end'>
-                <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow my-2'>
+                <button className='my-2 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
                   Search
                 </button>
               </div>
@@ -85,19 +88,19 @@ const AddServiceFacilityModal = ({
               <div className='ml-auto'>
                 <div className='flex justify-end py-3'>
                   <button
-                  className='rounded bg-[#32164A] px-4 py-1 text-white shadow'
+                    className='rounded bg-[#32164A] px-4 py-1 text-white shadow'
                     mr={3}
                   >
                     Save
                   </button>
-                  <button className='rounded bg-[#32164A] px-4 py-1 my-2 ml-3 text-white shadow'>
+                  <button className='my-2 ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
                     Cancel
                   </button>
                 </div>
 
                 <div className='flex justify-end'>
                   <button
-                    // onClick={() => setOpenAddReferral(true)}
+                    onClick={() => setOpenFacilitySource(true)}
                     className='rounded bg-[#32164A] px-4 py-1 text-white shadow'
                   >
                     add facility source
@@ -108,6 +111,11 @@ const AddServiceFacilityModal = ({
           </div>
         </ModalContent>
       </Modal>
+
+      <AddFacilitySourceModal
+        openFacilitySource={openFacilitySource}
+        setOpenFacilitySource={setOpenFacilitySource}
+      />
     </div>
   );
 };

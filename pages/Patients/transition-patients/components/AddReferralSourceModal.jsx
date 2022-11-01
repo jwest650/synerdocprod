@@ -32,7 +32,8 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
             <ModalBody>
               <div className='my-2 flex'>
                 <label htmlFor='#' className='w-[20%]'>
-                  Referral Type:{' '}
+                  <span className='font-bold text-orange-500'>*</span>Referral
+                  Type:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Select size='xs'>
@@ -50,7 +51,8 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  First Name:{' '}
+                  <span className='font-bold text-orange-500'>*</span>First
+                  Name:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
@@ -66,7 +68,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  Last Name:{' '}
+                  <span className='font-bold text-orange-500'>*</span>Last Name:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
@@ -74,7 +76,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  Email:{' '}
+                  <span className='font-bold text-orange-500'>*</span>Email:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input placeholder='small size' type={'email'} size='sm' />
@@ -100,7 +102,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  Start:{' '}
+                  <span className='font-bold text-orange-500'>*</span>Start:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input
@@ -172,7 +174,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
                 Save
               </button>
-              <button className='rounded ml-3 bg-[#32164A] px-4 py-1 text-white shadow'>
+              <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
                 Cancel
               </button>
             </div>
