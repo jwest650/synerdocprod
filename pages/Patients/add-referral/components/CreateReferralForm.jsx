@@ -84,7 +84,7 @@ const CreateReferralForm = () => {
             <div className='ml-3'>
               <button
                 onClick={() => setOpenFindReferral(true)}
-                className='dark:text-[#E77654px-6 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'
+                className='dark:text-[#E77654px-6 cursor-pointer rounded bg-orange-600  py-1 px-5 text-sm capitalize text-[#fff]'
               >
                 find referral source
               </button>
@@ -197,7 +197,7 @@ const CreateReferralForm = () => {
             <div className='ml-3'>
               <button
                 onClick={() => setOpenAddReferralContact(true)}
-                className='dark:text-[#E77654px-6 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'
+                className='dark:text-[#E77654px-6 cursor-pointer rounded bg-orange-600  py-1 px-5 text-sm capitalize text-[#fff]'
               >
                 add referral source contact
               </button>

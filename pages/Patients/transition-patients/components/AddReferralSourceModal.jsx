@@ -10,52 +10,8 @@ import {
   Input,
   Checkbox,
 } from '@chakra-ui/react';
-import { useState } from 'react';
-import FacilityForm from './referralforms/FacilityForm';
-import GovernmentReferralForm from './referralforms/GovernmentReferralForm';
-import HMOPPOForm from './referralforms/HMOPPOForm';
-import IndividualReferralForm from './referralforms/IndividualReferralForm';
-import InsuranceCompanyForm from './referralforms/InsuranceCompanyForm';
-import PhysicianForm from './referralforms/PhysicianForm';
-import SelfReferralForm from './referralforms/SelfReferralForm';
-import TrustOfficerForm from './referralforms/TrustOfficerForm';
 
 const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
-  const [referralType, setReferralType] = useState('physician');
-  let options = [
-    { name: 'Physician', value: 'physician' },
-    { name: 'Facility', value: 'facility' },
-    { name: 'Self Referral', value: 'self-referral' },
-    { name: 'HMO/PPO', value: 'hmoppo' },
-    { name: 'Individual Referral', value: 'individual-referral' },
-    { name: 'Insurance Company', value: 'insurance-company' },
-    { name: 'Trust Officer', value: 'trust-officer' },
-    { name: 'Government Referral', value: 'government-referral' },
-  ];
-
-  const DisplayForms = () => {
-    switch (referralType) {
-      case 'physician':
-        return <PhysicianForm />;
-      case 'facility':
-        return <FacilityForm />;
-      case 'self-referral':
-        return <SelfReferralForm />;
-      case 'hmoppo':
-        return <HMOPPOForm />;
-      case 'individual-referral':
-        return <IndividualReferralForm />;
-      case 'insurance-company':
-        return <InsuranceCompanyForm />;
-      case 'trust-officer':
-        return <TrustOfficerForm />;
-      case 'government-referral':
-        return <GovernmentReferralForm />;
-
-      default:
-        break;
-    }
-  };
   return (
     <div>
       <Modal
@@ -65,43 +21,161 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div>
-            <ModalHeader>
-              Add Referral
-              <p className='text-sm text-gray-600'>add referal details</p>
-            </ModalHeader>
-          </div>
-          <ModalCloseButton />
-          <ModalBody>
-            <div className='my-2 flex'>
-              <label htmlFor='#' className='w-[20%]'>
-                Referral Type:{' '}
-              </label>
-              <div className='w-[70%]'>
-                <Select
-                  size='xs'
-                  onChange={(e) => setReferralType(e.target.value)}
-                >
-                  {options.map((option, i) => (
-                    <option key={i} value={option.value}>
-                      {option.name}
-                    </option>
-                  ))}
-                </Select>
-              </div>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+            <div>
+              <ModalHeader>
+                Add Referral
+                <p className='text-sm text-gray-600'>add referal details</p>
+              </ModalHeader>
             </div>
+            {/* <ModalCloseButton /> */}
+            <ModalBody>
+              <div className='my-2 flex'>
+                <label htmlFor='#' className='w-[20%]'>
+                  Referral Type:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Select size='xs'>
+                    <option value='option1' className='text-gray-800'>
+                      Option 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      Option 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      Option 3
+                    </option>
+                  </Select>
+                </div>
+              </div>
+              <div className='my-2 flex '>
+                <label htmlFor='#' className='w-[20%]'>
+                  First Name:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Input placeholder='small size' size='sm' />
+                </div>
+              </div>
+              <div className='my-2 flex '>
+                <label htmlFor='#' className='w-[20%]'>
+                  Middle initial:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Input placeholder='small size' size='sm' />
+                </div>
+              </div>
+              <div className='my-2 flex '>
+                <label htmlFor='#' className='w-[20%]'>
+                  Last Name:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Input placeholder='small size' size='sm' />
+                </div>
+              </div>
+              <div className='my-2 flex '>
+                <label htmlFor='#' className='w-[20%]'>
+                  Email:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Input placeholder='small size' type={'email'} size='sm' />
+                </div>
+              </div>
+              <div className='my-2 flex'>
+                <label htmlFor='#' className='w-[20%]'>
+                  Sales Rep:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Select size='xs'>
+                    <option value='option1' className='text-gray-800'>
+                      Option 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      Option 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      Option 3
+                    </option>
+                  </Select>
+                </div>
+              </div>
+              <div className='my-2 flex '>
+                <label htmlFor='#' className='w-[20%]'>
+                  Start:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Input
+                    placeholder='Select Date and Time'
+                    size='sm'
+                    type='date'
+                  />
+                </div>
+              </div>
+              <div className='my-2 flex '>
+                <label htmlFor='#' className='w-[20%]'>
+                  End Date:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Input
+                    placeholder='Select Date and Time'
+                    size='sm'
+                    type='date'
+                  />
+                </div>
+              </div>
+              <div className='my-2 flex '>
+                <label htmlFor='#' className='w-[20%]'>
+                  Physician Group:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Input placeholder='small size' size='sm' />
+                </div>
+              </div>
+              <div className='my-2 flex'>
+                <label htmlFor='#' className='w-[20%]'>
+                  Specialty:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Select size='xs'>
+                    <option value='option1' className='text-gray-800'>
+                      Option 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      Option 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      Option 3
+                    </option>
+                  </Select>
+                </div>
+              </div>
+              <div className='my-2 flex'>
+                <label htmlFor='#' className='w-[20%]'>
+                  Title:{' '}
+                </label>
+                <div className='w-[70%]'>
+                  <Select size='xs'>
+                    <option value='option1' className='text-gray-800'>
+                      Option 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      Option 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      Option 3
+                    </option>
+                  </Select>
+                </div>
+              </div>
+            </ModalBody>
 
-            {/* Forms */}
-            {<DisplayForms />}
-          </ModalBody>
-
-          <div className='mx-auto p-5'>
-            <Button colorScheme='gray' size={'sm'} mr={'3'}>
-              Save
-            </Button>
-            <Button colorScheme='gray' size={'sm'}>
-              Cancel
-            </Button>
+            <div className='mx-auto p-5'>
+              <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                Save
+              </button>
+              <button className='rounded ml-3 bg-[#32164A] px-4 py-1 text-white shadow'>
+                Cancel
+              </button>
+            </div>
           </div>
         </ModalContent>
       </Modal>

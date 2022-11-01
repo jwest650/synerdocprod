@@ -1,4 +1,6 @@
 import { Button, Input, Select } from '@chakra-ui/react';
+import { BsSearch, BsUnlock } from 'react-icons/bs';
+import { RiBook2Fill } from 'react-icons/ri';
 
 const PatientSchedules = () => {
   let data = [1, 1, 1, 1];
@@ -28,7 +30,9 @@ const PatientSchedules = () => {
             <div className='flex '>
               <Input placeholder='small size' size='xs' type={'text'} ml={3} />
             </div>
-            <button className='ml-3 rounded border px-2 text-sm'>Search</button>
+            <button className='text-medium ml-3 rounded border bg-orange-600 px-2  text-white'>
+              Search
+            </button>
           </div>
         </div>
       </section>
@@ -65,7 +69,11 @@ const PatientSchedules = () => {
                 <td></td>
                 <td></td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -78,7 +86,11 @@ const PatientSchedules = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -92,7 +104,11 @@ const PatientSchedules = () => {
                 </td>
                 <td></td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -105,7 +121,11 @@ const PatientSchedules = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -118,7 +138,11 @@ const PatientSchedules = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -131,7 +155,11 @@ const PatientSchedules = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -144,7 +172,9 @@ const PatientSchedules = () => {
                   </Select>
                 </td>
 
-                <td></td>
+                <td className='px-2'>
+                  <BsUnlock />
+                </td>
               </tr>
 
               {data.map((data, i) => (
@@ -152,18 +182,34 @@ const PatientSchedules = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>
+                  <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <RiBook2Fill />
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    James Gordon
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     1.High priority requires
                   </td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>Tampa Home Health</td>
-                  <td className='border border-gray-400'>Home Health</td>
-                  <td className='border border-gray-400'>10/8/19</td>
-                  <td className='border border-gray-400'>Active</td>
-                  <td className='border border-gray-400'>Winn</td>
-                  <td className='border border-gray-400'>+</td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Tampa Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    10/8/19
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Active
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Winn
+                  </td>
+                  <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <BsSearch />
+                  </td>
                 </tr>
               ))}
             </tbody>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BiUndo } from 'react-icons/bi';
 import { BsSearch } from 'react-icons/bs';
 import { FiSettings, FiTrash2 } from 'react-icons/fi';
 
@@ -21,7 +22,7 @@ const TableAction = () => {
 
       {showOthers && (
         <span className='table-action-anim'>
-          <FiTrash2 />
+          <BiUndo />
         </span>
       )}
     </span>

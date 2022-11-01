@@ -24,27 +24,29 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <ModalHeader>
-            <h1>Re-Admit Patient</h1>
-            <p>Additional information to copy along</p>
-          </ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <div>
-              <Checkbox>Include Medications (all)</Checkbox>
-              <Checkbox>Include Medications (active only)</Checkbox>
-              <Checkbox>Include Advance Directives</Checkbox>
-              <Checkbox>Include Disaster Plan</Checkbox>
-              <Checkbox>Include DME</Checkbox>
-              <Checkbox>Include Vendor</Checkbox>
-              <Checkbox>Include Vital</Checkbox>
-              <Checkbox>Include Vaccines</Checkbox>
-              <Checkbox>Include Allergies</Checkbox>
-              <div className='my-3 flex justify-end'>
-                <button className='rounded border px-3'>Continue</button>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+            <ModalHeader>
+              <h1>Re-Admit Patient</h1>
+              <p>Additional information to copy along</p>
+            </ModalHeader>
+            {/* <ModalCloseButton /> */}
+            <ModalBody>
+              <div>
+                <Checkbox>Include Medications (all)</Checkbox>
+                <Checkbox>Include Medications (active only)</Checkbox>
+                <Checkbox>Include Advance Directives</Checkbox>
+                <Checkbox>Include Disaster Plan</Checkbox>
+                <Checkbox>Include DME</Checkbox>
+                <Checkbox>Include Vendor</Checkbox>
+                <Checkbox>Include Vital</Checkbox>
+                <Checkbox>Include Vaccines</Checkbox>
+                <Checkbox>Include Allergies</Checkbox>
+                <div className='my-3 flex justify-end'>
+                  <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>Continue</button>
+                </div>
               </div>
-            </div>
-          </ModalBody>
+            </ModalBody>
+          </div>
         </ModalContent>
       </Modal>
     </div>

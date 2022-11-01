@@ -20,7 +20,9 @@ const SchedulingNotifications = () => {
               <div>
                 <Input placeholder='small size' size='xs' />
               </div>
-              <button className='ml-2 rounded  border px-2'>Search</button>
+              <button className='ml-2 rounded  border bg-orange-600 px-2 font-medium text-white'>
+                Search
+              </button>
             </div>
           </div>
         </section>
@@ -61,28 +63,34 @@ const SchedulingNotifications = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       <BsFillCalendarDateFill />
                     </td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       Tampa Home Health
                     </td>
-                    <td className='border border-gray-400'>Amess Alicia</td>
-                    <td className='border border-gray-400'>new reason</td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      Amess Alicia
+                    </td>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      new reason
+                    </td>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       23/4/2022 8:43 AM
                     </td>
                     <td
-                      className='border border-gray-400'
+                      className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'
                       onClick={() => setOpenAddReferral(true)}
                     >
                       James Gordon
                     </td>
-                    <td className='border border-gray-400'>233-445-565-666</td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      233-445-565-666
+                    </td>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       destiny@synerdoc.com
                     </td>
                   </tr>
@@ -92,8 +100,12 @@ const SchedulingNotifications = () => {
           </div>
 
           <div className='flex justify-end p-5'>
-            <button className='rounded border  px-2'>Save</button>
-            <button className='ml-3 rounded  border px-2'>Cancel</button>
+            <button className='rounded border  bg-orange-600 px-2 font-medium text-white'>
+              Save
+            </button>
+            <button className='ml-3 rounded  border bg-orange-600 px-2 font-medium text-white'>
+              Cancel
+            </button>
           </div>
         </section>
       </div>

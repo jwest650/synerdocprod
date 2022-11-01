@@ -119,7 +119,9 @@ const SetupPatientForm = () => {
             <Input size={'xs'} type='type' />
           </div>
         </div>
-        <button className='rounded border px-3'>Search</button>
+        <button className='rounded border bg-orange-600 px-3 font-medium text-white'>
+          Search
+        </button>
 
         <h1 className='py-5 text-xl text-black dark:text-white'>
           Re-Admit Patient
@@ -168,7 +170,9 @@ const SetupPatientForm = () => {
           </tbody>
         </table>
         <div className='my-3 flex justify-end'>
-          <button className='rounded border px-3'>Continue</button>
+          <button className='rounded border bg-orange-600 px-3 font-medium text-white'>
+            Continue
+          </button>
         </div>
       </section>
 
@@ -263,7 +267,9 @@ const SetupPatientForm = () => {
           </div>
         </div>
         <div className='my-3 flex justify-end'>
-          <button className='rounded border px-3'>Continue</button>
+          <button className='rounded border bg-orange-600 px-3 font-medium text-white'>
+            Continue
+          </button>
         </div>
       </section>
 

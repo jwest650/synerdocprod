@@ -13,31 +13,31 @@ const AddReferral = () => {
     <div className='w-full'>
       {/* Step Indicator */}
       <div className='relative mx-auto w-[60%]'>
-        <ul className='bg-orage before:content[] flex  items-center justify-between py-2  text-center before:absolute before:top-[0] before:block before:h-[10px] before:w-[100%] before:bg-gray-700'>
+        <ul className='bg-orage before:content[] flex  items-center justify-between py-2  text-center before:absolute before:top-[0] before:block before:h-[10px] before:w-[100%] before:bg-[#32164a]'>
           <li
             className={`bg-gray before:content[] w-[25%] text-center text-2xl before:absolute before:top-[0] before:block before:h-[10px] before:w-[25%] before:border-r-2 ${
-              step === 1 ? 'before:bg-orange-600' : 'before:bg-gray-700'
+              step === 1 ? 'before:bg-orange-600' : 'before:bg-[#32164a]'
             }`}
           >
             Create Referral
           </li>
           <li
             className={`bg-gray before:content[] w-[25%] text-center text-2xl before:absolute before:top-[0] before:block before:h-[10px] before:w-[25%] before:border-r-2 ${
-              step === 2 ? 'before:bg-orange-600' : 'before:bg-gray-700'
+              step === 2 ? 'before:bg-orange-600' : 'before:bg-[#32164a]'
             }`}
           >
             Set Up Patients
           </li>
           <li
             className={`bg-gray before:content[] w-[25%] text-center text-2xl before:absolute before:top-[0] before:block before:h-[10px] before:w-[25%] before:border-r-2 ${
-              step === 3 ? 'before:bg-orange-600' : 'before:bg-gray-700'
+              step === 3 ? 'before:bg-orange-600' : 'before:bg-[#32164a]'
             }`}
           >
             Contact Info
           </li>
           <li
             className={`bg-gray before:content[] w-[25%] text-center text-2xl before:absolute before:top-[0] before:block before:h-[10px] before:w-[25%] ${
-              step === 4 ? 'before:bg-orange-600' : 'before:bg-gray-700'
+              step === 4 ? 'before:bg-orange-600' : 'before:bg-[#32164a]'
             }`}
           >
             Finish Referral
@@ -52,13 +52,13 @@ const AddReferral = () => {
 
         <ul className='flex justify-end'>
           <button
-            className='rounded border bg-gray-800 px-9 py-2 text-white'
+            className='rounded border bg-[#32164a] px-9 py-2 text-white'
             onClick={() => step > 1 && setStep(step - 1)}
           >
             back
           </button>
           <button
-            className='ml-3 rounded border bg-gray-800 px-9 py-2 text-white'
+            className='ml-3 rounded border bg-[#32164a] px-9 py-2 text-white'
             onClick={() => step < 4 && setStep(step + 1)}
           >
             next

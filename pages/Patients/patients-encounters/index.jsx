@@ -10,6 +10,7 @@ import {
   thead,
   tr,
 } from '@chakra-ui/react';
+import { BsSearch } from 'react-icons/bs';
 
 const PatientsEncounters = () => {
   let data = [1, 1, 1, 1];
@@ -45,7 +46,9 @@ const PatientsEncounters = () => {
               <option value='pdf'>PDF Summary</option>
               <option value='spreadsheet'>Spreadsheet Summary</option>
             </Select>
-            <button className='rounded border  px-2'>Export</button>
+            <button className='text-medium rounded  border bg-orange-600 px-2 text-white'>
+              Export
+            </button>
           </div>
         </div>
       </section>
@@ -83,7 +86,9 @@ const PatientsEncounters = () => {
             <div>
               <Input placeholder='xsall size' size='xs' width={300} />
             </div>
-            <button className='ml-3 rounded border px-2 '>Search</button>
+            <button className='text-medium ml-3 rounded border  bg-orange-600 px-2 text-white'>
+              Search
+            </button>
           </div>
         </div>
       </section>
@@ -117,14 +122,28 @@ const PatientsEncounters = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>23/4/2022 8:43 AM</td>
-                  <td className='border border-gray-400'>Tampa Home Health</td>
-                  <td className='border border-gray-400'>Home Health</td>
-                  <td className='border border-gray-400'>Amess Alicia</td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>+</td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    James Gordon
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    23/4/2022 8:43 AM
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Tampa Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Amess Alicia
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    James Gordon
+                  </td>
+                  <td className=' max-h-[20px] min-w-[30px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <BsSearch />
+                  </td>
                 </tr>
               ))}
             </tbody>

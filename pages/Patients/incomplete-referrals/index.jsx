@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Input } from '@chakra-ui/react';
 import EditReferral from './components/EditReferral';
+import { BsSearch } from 'react-icons/bs';
+import { BiPlus } from 'react-icons/bi';
 
 const IncompleteReferrals = () => {
   let data = [1, 1, 1, 1];
@@ -15,8 +17,12 @@ const IncompleteReferrals = () => {
               Incomplete Referrals
             </h1>
             <div className='flex cursor-pointer items-center space-x-2'>
-              <button className='dark:text-[#E77654px-6 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff]'>
-                + Create Referral Patient
+              <button
+                className='dark:text-[#E77654px-6 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'
+                onClick={() => setOpenAddReferral(true)}
+              >
+                <BiPlus />
+                <span className='ml-1'>Create Referral Patient</span>
               </button>
             </div>
           </div>
@@ -26,7 +32,7 @@ const IncompleteReferrals = () => {
               <div>
                 <Input placeholder='small size' size='xs' width={300} />
               </div>
-              <button className='ml-3 rounded border px-2 text-sm'>
+              <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
                 Search
               </button>
             </div>
@@ -61,22 +67,28 @@ const IncompleteReferrals = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       23/4/2022 8:43 AM
                     </td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       Tampa Home Health
                     </td>
-                    <td className='border border-gray-400'>Home Health</td>
-                    <td className='border border-gray-400'>Amess Alicia</td>
-                    <td className='border border-gray-400'></td>
+                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      Home Health
+                    </td>
+                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      Amess Alicia
+                    </td>
+                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
                     <td
-                      className='border border-gray-400'
+                      className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'
                       onClick={() => setOpenAddReferral(true)}
                     >
                       James Gordon
                     </td>
-                    <td className='border border-gray-400'></td>
+                    <td className=' max-h-[20px] max-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      <BsSearch />
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -86,7 +98,7 @@ const IncompleteReferrals = () => {
       </div>
 
       <EditReferral
-        open={openAddReferral}
+        openAddReferral={openAddReferral}
         setOpenAddReferral={setOpenAddReferral}
       />
     </div>

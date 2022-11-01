@@ -76,7 +76,7 @@ const ContactInfoForm = () => {
               onClick={() => setOpenPatientContact(true)}
               className='ml-3 rounded border bg-orange-600 px-3 text-xs text-white'
             >
-              Add Contact Info
+              Add Patient Contact
             </button>
           </div>
           <div className='flex border-t-4'>
@@ -168,7 +168,9 @@ const ContactInfoForm = () => {
         </div>
       </div>
       <div className='flex justify-end py-3'>
-        <button className='rounded border px-3'>Continue</button>
+        <button className='rounded border bg-orange-600 px-3 font-medium text-white'>
+          Continue
+        </button>
       </div>
 
       {/* Modals */}
