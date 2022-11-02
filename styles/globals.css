@@ -80,6 +80,10 @@
   color: #111827;
 }
 
+.e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
+  border-right: 1px solid #becad3;
+}
+
 /* .schedule {
   @apply rounded border-[#becad3] shadow-md;
 }
