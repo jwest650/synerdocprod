@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     <div className={` mx-auto  ${darkTheme && 'dark'}`}>
       <Navbar />
       <Header />
-      <div className="bg-[#f6f8fc]">
+      <div className="min-h-screen bg-[#f6f8fc]">
         <div className="mx-auto flex max-w-7xl overflow-auto  pb-20 text-main-text-light dark:bg-main-dark-bg">
           {/* <Leftmenu /> */}
           {/* <div className="max-h-screen w-full overflow-scroll bg-main-light-bg pb-20 text-main-text-dark dark:bg-main-dark-bg"> */}

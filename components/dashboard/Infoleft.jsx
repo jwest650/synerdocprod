@@ -4,7 +4,7 @@ import { BsCheck2, BsDot, BsGrid } from 'react-icons/bs';
 const Infoleft = () => {
   return (
     <div className="space-y-5">
-      <div className="rounded-md bg-[#1e5ee9] p-5 shadow-md">
+      {/* <div className="rounded-md bg-[#1e5ee9] p-5 shadow-md">
         <h2 className="mb-7 flex items-center gap-2 text-lg">
           <BsGrid className="cursor-pointer text-xl text-gray-200" />
           Activity Stream
@@ -61,7 +61,7 @@ const Infoleft = () => {
           </li>
         </ul>
         <p className="cursor-pointer text-end text-[#1fe2e2]">[view all]</p>
-      </div>
+      </div> */}
       <div className="rounded-md bg-[#1e5ee9] p-5 shadow-md">
         <h2 className="text-lg">Annoucements</h2>
         {/* <p>{scheduleData[0].StartTime.split('T')[0]}</p> */}

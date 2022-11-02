@@ -1,10 +1,6 @@
 import {
   Modal,
-  ModalBody,
-  ModalCloseButton,
   ModalContent,
-  ModalFooter,
-  ModalHeader,
   ModalOverlay,
   Select,
   useDisclosure,
@@ -38,11 +34,11 @@ const CreateAssociate = () => {
             {/* <ModalBody> */}
             <form action="" onSubmit={handleForm}>
               <h1 className="text-xl font-semibold">Add Associate</h1>
-              <div className="mt-5 grid h-full w-full grid-cols-6 text-sm">
-                <div className="col-span-3 w-full">
+              <div className="mt-5 flex h-full w-full flex-col items-center justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
+                <div className="w-full md:col-span-3">
                   <h2 className="border-b-2 font-semibold">Personal</h2>
                   <div className="mt-5 grid grid-cols-12">
-                    <div className="col-span-5 mx-auto space-y-[14px]">
+                    <div className="col-span-5 mx-5 space-y-[14px] md:mx-auto">
                       <div className="flex items-center justify-end">
                         <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#32164A] text-white">
                           1
@@ -201,10 +197,10 @@ const CreateAssociate = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-span-3 ml-4 w-full border-l-2 pl-4">
+                <div className="ml-4 w-full pl-4 md:col-span-3 md:border-l-2">
                   <h2 className="border-b-2 font-semibold">Employment</h2>
                   <div className="mt-5 mr-5 grid grid-cols-12">
-                    <div className="col-span-5 mx-auto space-y-[14px]">
+                    <div className="col-span-5 mx-5 space-y-[14px] md:mx-auto">
                       <div className="flex items-center justify-end">
                         <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#32164A] text-white">
                           9
