@@ -10,6 +10,9 @@ import {
   thead,
   tr,
 } from '@chakra-ui/react';
+import { BiPlus } from 'react-icons/bi';
+import { BsSearch } from 'react-icons/bs';
+import { RiBook2Fill } from 'react-icons/ri';
 
 const PatientsEncounters = () => {
   let data = [1, 1, 1, 1];
@@ -17,10 +20,21 @@ const PatientsEncounters = () => {
   return (
     <div className='w-full'>
       <section className='flex items-center justify-between capitalize'>
-        <div>
+        <div className='flex items-center'>
           <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
             Patient Encounters
           </h1>
+          <button
+            className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'
+            // onClick={() => setOpenAddReferral(true)}
+          >
+            <BiPlus />
+            <span className='ml-1'>Add Referal/Patient</span>
+          </button>
+
+          <p className=' ml-2 cursor-pointer text-sm font-bold text-blue-700 underline'>
+            Homecare University
+          </p>
         </div>
 
         <div>
@@ -45,7 +59,9 @@ const PatientsEncounters = () => {
               <option value='pdf'>PDF Summary</option>
               <option value='spreadsheet'>Spreadsheet Summary</option>
             </Select>
-            <button className='rounded border  px-2'>Export</button>
+            <button className='text-medium rounded  border bg-orange-600 px-2 text-white'>
+              Export
+            </button>
           </div>
         </div>
       </section>
@@ -83,7 +99,9 @@ const PatientsEncounters = () => {
             <div>
               <Input placeholder='xsall size' size='xs' width={300} />
             </div>
-            <button className='ml-3 rounded border px-2 '>Search</button>
+            <button className='text-medium ml-3 rounded border  bg-orange-600 px-2 text-white'>
+              Search
+            </button>
           </div>
         </div>
       </section>
@@ -93,6 +111,7 @@ const PatientsEncounters = () => {
           <table className=' min-w-full overflow-auto'>
             <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
               <tr>
+                <th className=' border-gray-100  pl-2 text-left'></th>
                 <th className=' border-gray-100  pl-2 text-left'>
                   Patient Name
                 </th>
@@ -117,14 +136,33 @@ const PatientsEncounters = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>23/4/2022 8:43 AM</td>
-                  <td className='border border-gray-400'>Tampa Home Health</td>
-                  <td className='border border-gray-400'>Home Health</td>
-                  <td className='border border-gray-400'>Amess Alicia</td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>+</td>
+                  <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <RiBook2Fill />
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                      James Gordon
+                    </p>
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    23/4/2022 8:43 AM
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Tampa Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Amess Alicia
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    James Gordon
+                  </td>
+                  <td className=' max-h-[20px] min-w-[30px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <BsSearch />
+                  </td>
                 </tr>
               ))}
             </tbody>

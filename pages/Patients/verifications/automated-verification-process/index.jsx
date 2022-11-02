@@ -9,7 +9,9 @@ const AutomatedVerificationProcess = () => {
             Auto Verify Service
           </h1>
           <hr />
-          <button className='my-3 rounded border px-2'>Verify</button>
+          <button className='my-3 rounded border bg-orange-600 px-2 font-medium text-white'>
+            Verify
+          </button>
         </div>
       </section>
     </div>

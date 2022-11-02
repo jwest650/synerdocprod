@@ -1,4 +1,6 @@
 import { Input, Select } from '@chakra-ui/react';
+import { BsSearch } from 'react-icons/bs';
+import { RiBook2Fill } from 'react-icons/ri';
 
 const DisasterPlan = () => {
   let data = [1, 1, 1, 1];
@@ -19,7 +21,9 @@ const DisasterPlan = () => {
                 <option value='pdf'>PDF Summary</option>
                 <option value='spreadsheet'>Spreadsheet Summary</option>
               </Select>
-              <button className='rounded border  px-2'>Export</button>
+              <button className='text-medium rounded  border bg-orange-600 px-2 text-white'>
+                Export
+              </button>
             </div>
           </div>
           <div className='flex'>
@@ -32,7 +36,9 @@ const DisasterPlan = () => {
               />
               <Input placeholder='small size' size='xs' type={'text'} ml={3} />
             </div>
-            <button className='ml-3 rounded border px-2 '>Search</button>
+            <button className='text-medium ml-3 rounded border  bg-orange-600 px-2 text-white'>
+              Search
+            </button>
           </div>
         </div>
       </section>
@@ -66,7 +72,11 @@ const DisasterPlan = () => {
               <tr className='bg-[#6b3e9280]'>
                 <td></td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -81,7 +91,11 @@ const DisasterPlan = () => {
                 <td></td>
                 <td></td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -94,7 +108,11 @@ const DisasterPlan = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -108,7 +126,11 @@ const DisasterPlan = () => {
                 </td>
                 <td></td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -121,7 +143,11 @@ const DisasterPlan = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -140,18 +166,39 @@ const DisasterPlan = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>
+                  <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    {' '}
+                    <span className='cursor-pointer'>
+                      <RiBook2Fill />
+                    </span>
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                      James Gordon
+                    </p>
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     1.High priority requires
                   </td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>Tampa Home Health</td>
-                  <td className='border border-gray-400'>Home Health</td>
-                  <td className='border border-gray-400'>10/8/19</td>
-                  <td className='border border-gray-400'>Active</td>
-                  <td className='border border-gray-400'>Winn</td>
-                  <td className='border border-gray-400'>+</td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Tampa Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[30px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    10/8/19
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Active
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Winn
+                  </td>
+                  <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <BsSearch />
+                  </td>
                 </tr>
               ))}
             </tbody>

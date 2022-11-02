@@ -30,7 +30,7 @@ const AutomatedServiceVerificationErrors = () => {
               <div>
                 <Input placeholder='small size' size='xs' width={300} />
               </div>
-              <button className='ml-3 rounded border px-2 text-sm'>
+              <button className='ml-3 rounded border bg-orange-600 px-2 text-sm font-medium text-white'>
                 Search
               </button>
             </div>
@@ -66,7 +66,11 @@ const AutomatedServiceVerificationErrors = () => {
             <tbody>
               <tr className='bg-[#6b3e9280]'>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -79,7 +83,11 @@ const AutomatedServiceVerificationErrors = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -92,7 +100,11 @@ const AutomatedServiceVerificationErrors = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -106,7 +118,11 @@ const AutomatedServiceVerificationErrors = () => {
                 </td>
                 <td></td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -127,14 +143,28 @@ const AutomatedServiceVerificationErrors = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className='border border-gray-400'>Nick Jones</td>
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>Routine</td>
-                  <td className='border border-gray-400'>23344</td>
-                  <td className='border border-gray-400'>Home Health</td>
-                  <td className='border border-gray-400'>Tampa Home Health</td>
-                  <td className='border border-gray-400'>15/12/2022</td>
-                  <td className='border border-gray-400'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Nick Jones
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    James Gordon
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Routine
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    23344
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Tampa Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    15/12/2022
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
                 </tr>
               ))}
             </tbody>

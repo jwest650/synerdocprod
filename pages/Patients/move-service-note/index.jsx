@@ -26,7 +26,9 @@ const MoveServiceNote = () => {
 
       <div className='flex py-3'>
         <div className='w-[150px]'>
-          <h1 className='mr-5'>* Patient: </h1>
+          <h1 className='mr-5'>
+            <span className='font-bold text-orange-500'>*</span> Patient:{' '}
+          </h1>
         </div>
         <div>
           <Select size='xs' minWidth={400}>
@@ -44,7 +46,9 @@ const MoveServiceNote = () => {
       </div>
       <div className='flex py-3'>
         <div className='w-[150px]'>
-          <h1 className='mr-5'>* Service: </h1>
+          <h1 className='mr-5'>
+            <span className='font-bold text-orange-500'>*</span> Service:{' '}
+          </h1>
         </div>
         <div>
           <Select size='xs' minWidth={400}>
@@ -62,7 +66,10 @@ const MoveServiceNote = () => {
       </div>
       <div className='flex py-3'>
         <div className='w-[150px]'>
-          <h1 className='mr-5'>* Move Patient To: </h1>
+          <h1 className='mr-5'>
+            <span className='font-bold text-orange-500'>*</span> Move Patient
+            To:{' '}
+          </h1>
         </div>
         <div>
           <Select size='xs' minWidth={400}>
@@ -114,14 +121,24 @@ const MoveServiceNote = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className='border border-gray-400'>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     <Checkbox defaultChecked></Checkbox>
                   </td>
-                  <td className='border border-gray-400'>Amess Alicia</td>
-                  <td className='border border-gray-400'>Wound care</td>
-                  <td className='border border-gray-400'>23/4/2022 8:43 AM</td>
-                  <td className='border border-gray-400'>23/4/2022 8:43 AM</td>
-                  <td className='border border-gray-400'>23/4/2022 8:43 AM</td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Amess Alicia
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Wound care
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    23/4/2022 8:43 AM
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    23/4/2022 8:43 AM
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    23/4/2022 8:43 AM
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -129,7 +146,9 @@ const MoveServiceNote = () => {
         </div>
 
         <div className='flex justify-end py-5'>
-          <button className='rounded border  px-2'>Move</button>
+          <button className='rounded border  bg-orange-600 px-2 font-medium text-white '>
+            Move
+          </button>
         </div>
       </section>
     </div>

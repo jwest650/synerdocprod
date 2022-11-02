@@ -22,7 +22,7 @@ const InvoiceServiceSummary = () => {
                 {/* main */}
                 <section className="flex items-center justify-around">
                     <div className="flex space-x-1">
-                        <label htmlFor="">*agency:</label>
+                        <label htmlFor=""> <span className="text-orange-500">*</span> agency:</label>
                         <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
@@ -30,7 +30,7 @@ const InvoiceServiceSummary = () => {
                         </Select>
                     </div>
                     <div className="space-x-1">
-                        <label htmlFor="">*date range:</label>
+                        <label htmlFor=""> <span className="text-orange-500">*</span> date range:</label>
                         <Input w={120} type="date" size="xs" />
                         <label htmlFor="">to:</label>
                         <Input w={120} type="date" size="xs" />

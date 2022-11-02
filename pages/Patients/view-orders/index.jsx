@@ -11,7 +11,9 @@ const ViewOrders = () => {
             <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
               Orders
             </h1>
-            <button className='mx-3 ml-2  rounded border px-2'>Send</button>
+            <button className='mx-3 ml-2  rounded border bg-orange-600 px-2 font-medium text-white'>
+              Send
+            </button>
             <Checkbox>Consolidate Physician Intern orders</Checkbox>
           </div>
 
@@ -20,7 +22,9 @@ const ViewOrders = () => {
               <div>
                 <Input placeholder='small size' size='xs' />
               </div>
-              <button className='ml-2 rounded  border px-2'>Search</button>
+              <button className='ml-2 rounded  border bg-orange-600 px-2 font-medium text-white'>
+                Search
+              </button>
             </div>
           </div>
         </section>
@@ -58,7 +62,11 @@ const ViewOrders = () => {
                   <td></td>
                   <td></td>
                   <td>
-                    <Select size='xs'>
+                    <Select
+                      size='xs'
+                      css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                      className='shadow outline-none'
+                    >
                       <option value='option1' className='text-gray-800'>
                         All
                       </option>
@@ -71,7 +79,11 @@ const ViewOrders = () => {
                     </Select>
                   </td>
                   <td>
-                    <Select size='xs'>
+                    <Select
+                      size='xs'
+                      css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                      className='shadow outline-none'
+                    >
                       <option value='option1' className='text-gray-800'>
                         All
                       </option>
@@ -87,7 +99,11 @@ const ViewOrders = () => {
                   <td></td>
                   <td></td>
                   <td>
-                    <Select size='xs'>
+                    <Select
+                      size='xs'
+                      css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                      className='shadow outline-none'
+                    >
                       <option value='option1' className='text-gray-800'>
                         All
                       </option>
@@ -101,7 +117,11 @@ const ViewOrders = () => {
                   </td>
                   <td></td>
                   <td>
-                    <Select size='xs'>
+                    <Select
+                      size='xs'
+                      css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                      className='shadow outline-none'
+                    >
                       <option value='option1' className='text-gray-800'>
                         All
                       </option>
@@ -120,30 +140,42 @@ const ViewOrders = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className='border border-gray-400'>Amess Alicia</td>
-                    <td className='border border-gray-400'>Accra</td>
-                    <td className='border border-gray-400'>Wound care</td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                        Amess Alicia
+                      </p>
+                    </td>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      Accra
+                    </td>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      Wound care
+                    </td>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       23/4/2022 8:43 AM
                     </td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       23/4/2022 8:43 AM
                     </td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       Printed and Mailed
                     </td>
-                    <td className='border border-gray-400'>Dickson Janet</td>
-                    <td className='border border-gray-400'>Dickson Janet</td>
-                    <td className='border border-gray-400'>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      Dickson Janet
+                    </td>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      Dickson Janet
+                    </td>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       23/4/2022 8:43 AM
                     </td>
                   </tr>

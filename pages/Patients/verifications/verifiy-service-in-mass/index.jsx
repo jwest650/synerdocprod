@@ -1,5 +1,7 @@
 import { Checkbox, Input, Select } from '@chakra-ui/react';
 import React from 'react';
+import { BiNotepad } from 'react-icons/bi';
+import { GrEdit } from 'react-icons/gr';
 
 const VerifyServiceInMass = () => {
   let data = [1, 1, 1, 1];
@@ -10,8 +12,10 @@ const VerifyServiceInMass = () => {
         <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
           Verify Service in mass
         </h1>
-        <button className='ml-3 rounded border px-3'>Verify All Checked</button>
-        <button className='ml-3 rounded border px-3'>
+        <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
+          Verify All Checked
+        </button>
+        <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
           View All Unverified Service
         </button>
       </div>
@@ -68,7 +72,9 @@ const VerifyServiceInMass = () => {
             </div>
           </div>
           <div>
-            <button className='ml-3 rounded border px-3'>Search</button>
+            <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
+              Search
+            </button>
           </div>
         </div>
       </div>
@@ -133,11 +139,13 @@ const VerifyServiceInMass = () => {
                 key={i}
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Checkbox defaultChecked></Checkbox>
                 </td>
-                <td className='border border-gray-400'></td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <GrEdit />
+                </td>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <div className='flex space-x-2'>
                     <Select className='rounded text-black' size='xs'>
                       <option value='pdf'></option>
@@ -146,9 +154,13 @@ const VerifyServiceInMass = () => {
                     </Select>
                   </div>
                 </td>
-                <td className='border border-gray-400'></td>
-                <td className='border border-gray-400'>Nick Jones</td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <BiNotepad />
+                </td>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  Nick Jones
+                </td>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <div className='flex space-x-2'>
                     <Select
                       name=''
@@ -162,16 +174,16 @@ const VerifyServiceInMass = () => {
                     </Select>
                   </div>
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='date' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <div className='flex space-x-2'>
                     <Select
                       name=''
@@ -185,35 +197,35 @@ const VerifyServiceInMass = () => {
                     </Select>
                   </div>
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Checkbox defaultChecked></Checkbox>
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Checkbox defaultChecked></Checkbox>
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <Input size='xs' type='text' />
                 </td>
 
-                <td className='border border-gray-400'>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                   <div className='flex space-x-2'>
                     <Select
                       name=''

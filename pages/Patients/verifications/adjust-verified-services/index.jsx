@@ -1,4 +1,5 @@
 import { Input, Select } from '@chakra-ui/react';
+import TableAction from './TableAction';
 
 const AdjustVerifiedService = () => {
   let data = [1, 1, 1, 1];
@@ -68,7 +69,9 @@ const AdjustVerifiedService = () => {
           </div>
 
           <div>
-            <button className='rounded border px-3'>Search</button>
+            <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
+              Search
+            </button>
           </div>
         </div>
       </section>
@@ -100,7 +103,11 @@ const AdjustVerifiedService = () => {
             <tbody>
               <tr className='bg-[#6b3e9280]'>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -113,7 +120,11 @@ const AdjustVerifiedService = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -130,7 +141,11 @@ const AdjustVerifiedService = () => {
                 <td></td>
                 <td></td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -143,7 +158,11 @@ const AdjustVerifiedService = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -155,22 +174,36 @@ const AdjustVerifiedService = () => {
                     </option>
                   </Select>
                 </td>
-                <td className='border border-gray-400'></td>
+                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
               </tr>
               {data.map((data, i) => (
                 <tr
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className='border border-gray-400'>Nick Jones</td>
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>Routine</td>
-                  <td className='border border-gray-400'>15/12/2022</td>
-                  <td className='border border-gray-400'>Home Health</td>
-                  <td className='border border-gray-400'>Tampa Home Health</td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>action</td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Nick Jones
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    James Gordon
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Routine
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    15/12/2022
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Tampa Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <TableAction />
+                  </td>
                 </tr>
               ))}
             </tbody>

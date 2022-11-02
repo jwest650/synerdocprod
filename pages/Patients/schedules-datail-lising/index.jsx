@@ -6,9 +6,16 @@ import {
   Table,
   TableContainer,
 } from '@chakra-ui/react';
+import { BsSearch } from 'react-icons/bs';
+import AddPayerModal from './AddPayerModal';
+import TableAction from './TableAction';
+import { useState } from 'react';
+import { BiPlus } from 'react-icons/bi';
 
 const SchedulesDetailListing = () => {
   let data = [1, 1, 1, 1];
+  const [openAddPayer, setOpenAddPayer] = useState(false);
+
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
@@ -16,9 +23,12 @@ const SchedulesDetailListing = () => {
           <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
             Schedules
           </h1>
-
-          <button className='ml-3 cursor-pointer rounded bg-[#E77654] py-1 px-5 text-sm capitalize text-[#fff] dark:text-[#E77654]'>
-            Add Pay Only
+          <button
+            className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'
+            onClick={() => setOpenAddReferral(true)}
+          >
+            <BiPlus />
+            <span className='ml-1'>Add Pay Only</span>
           </button>
         </div>
 
@@ -29,7 +39,9 @@ const SchedulesDetailListing = () => {
                 <option value='pdf'>PDF Summary</option>
                 <option value='spreadsheet'>Spreadsheet Summary</option>
               </Select>
-              <button className='ml-2 rounded  border px-2'>Export</button>
+              <button className='ml-2 rounded  border bg-orange-600 px-2 text-white'>
+                Export
+              </button>
             </div>
           </div>
           <div className='flex'>
@@ -42,7 +54,9 @@ const SchedulesDetailListing = () => {
               />
               <Input placeholder='small size' size='xs' type={'text'} ml={3} />
             </div>
-            <button className='ml-2 rounded  border px-2'>Search</button>
+            <button className='ml-2 rounded  border bg-orange-600 px-2 text-white'>
+              Search
+            </button>
           </div>
         </div>
       </section>
@@ -92,7 +106,11 @@ const SchedulesDetailListing = () => {
             <tbody>
               <tr className='bg-[#6b3e9280]'>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -105,7 +123,11 @@ const SchedulesDetailListing = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -118,7 +140,11 @@ const SchedulesDetailListing = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -134,7 +160,11 @@ const SchedulesDetailListing = () => {
                 <td></td>
                 <td></td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -147,7 +177,11 @@ const SchedulesDetailListing = () => {
                   </Select>
                 </td>
                 <td>
-                  <Select size='xs'>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
                     <option value='option1' className='text-gray-800'>
                       All 1
                     </option>
@@ -168,24 +202,43 @@ const SchedulesDetailListing = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className='border border-gray-400'>James Gordon</td>
-                  <td className='border border-gray-400'>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    James Gordon
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     1.High priority requires
                   </td>
-                  <td className='border border-gray-400'>Tampa Home Health</td>
-                  <td className='border border-gray-400'>10/8/19</td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>Home Health</td>
-                  <td className='border border-gray-400'>Active</td>
-                  <td className='border border-gray-400'></td>
-                  <td className='border border-gray-400'>+</td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Tampa Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    10/8/19
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Home Health
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <p className=' cursor-pointer text-sm font-bold text-green-700 '>
+                      Assigned
+                    </p>
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <TableAction />
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       </section>
+      {/* Modal */}
+      <AddPayerModal
+        openAddPayer={openAddPayer}
+        setOpenAddPayer={setOpenAddPayer}
+      />
     </div>
   );
 };

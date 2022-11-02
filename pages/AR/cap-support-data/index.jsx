@@ -46,7 +46,11 @@ const CapSupportData = () => {
                     </aside>
                     <aside>
                         <div className="flex items-center space-x-2">
-                            <label htmlFor=""> *dates range:</label>
+                            <label htmlFor="">
+                                {" "}
+                                <span className="text-orange-500">*</span> dates
+                                range:
+                            </label>
                             <Input w={120} type="text" size="xs" />
                             <label htmlFor="">to:</label>
                             <Input w={120} type="text" size="xs" />

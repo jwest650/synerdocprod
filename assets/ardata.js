@@ -286,3 +286,17 @@ export const era = [
         amountto: "$210,000.00",
     },
 ];
+
+export const collectorData = {
+    agency: ["Louisiana"],
+    level: [
+        "All Payer Categories",
+        "Single Payer Category",
+        "Payer",
+        "Patient Encounter",
+        "Team",
+    ],
+    asign: ["Bailey Derbie"],
+    payerCate: ["Medicare", "Insurance"],
+    payer: ["Aetna"],
+};

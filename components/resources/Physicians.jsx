@@ -1,9 +1,12 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
+import { AiOutlineEdit } from "react-icons/ai";
 import { BsPlus } from "react-icons/bs";
+import { MdDelete } from "react-icons/md";
 import { RiBook2Fill } from "react-icons/ri";
 import { physiciansData } from "../../assets/data";
 import CreatePhysicians from "../dashboard/CreatePhysicians";
+import Actions from "./../ar/Actions";
 
 const Physicians = () => {
     return (
@@ -109,7 +112,12 @@ const Physicians = () => {
                                 <td className="border  border-gray-400">
                                     {value.active}
                                 </td>
-                                <td></td>
+                                <td>
+                                    <Actions
+                                        icon2={<AiOutlineEdit />}
+                                        icon1={<MdDelete />}
+                                    />
+                                </td>
                             </tr>
                         ))}
                         <tr>
