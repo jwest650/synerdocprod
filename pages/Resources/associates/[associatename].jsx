@@ -2,9 +2,8 @@ import { useRouter } from 'next/router';
 
 const AssociateName = () => {
   const router = useRouter();
-  console.log(router);
-  // clg
-  return <div>Associate Name</div>;
+
+  return <div>{router.query?.associatename} </div>;
 };
 
 export default AssociateName;

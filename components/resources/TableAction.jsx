@@ -6,7 +6,7 @@ const TableAction = () => {
   const [showOthers, setShowOthers] = useState(false);
 
   return (
-    <span className="flex h-full w-full items-center  justify-center text-lg">
+    <span className="flex h-full w-full items-center justify-center  text-lg text-[#32164A]">
       {showOthers && (
         <span
           onMouseOver={() => setShowOthers((current) => (current = true))}
@@ -28,7 +28,7 @@ const TableAction = () => {
         <span
           onMouseOver={() => setShowOthers((current) => (current = true))}
           onMouseLeave={() => setShowOthers((current) => (current = false))}
-          className="table-action-anim px-1"
+          className="table-action-anim px-1 text-red-700"
         >
           <FiTrash2 />
         </span>

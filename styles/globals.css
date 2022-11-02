@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-@import url('https://cdn.syncfusion.com/ej2/tailwind-dark.css');
+@import url('https://cdn.syncfusion.com/ej2/tailwind.css');
 
 @tailwind base;
 @tailwind components;
@@ -59,33 +59,44 @@
 
 /* SHEDULER */
 
-.schedule {
-  @apply rounded border-[#6b3e9280] shadow-md;
+.e-schedule .e-month-view .e-appointment {
+  background: #9ca3af;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+  color: #000;
+  cursor: default;
+  display: flex;
+  height: 26px;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* .schedule {
+  @apply rounded border-[#becad3] shadow-md;
 }
 
 .e-schedule .e-schedule-toolbar .e-toolbar-items {
-  @apply bg-[#32164A];
+  @apply bg-[#becad3];
 }
 .e-toolbar .e-hor-nav {
-  background: #6b3e9280;
-  border: solid #4b5563;
+  background: #becad3;
+  border: solid #becad3;
   border-width: 0 0 0 1px;
 }
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active,
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active:not(.e-expended-nav) {
-  background: #6b3e9280;
+  background: #becad3;
   border: 1;
   box-shadow: none;
-  border-left: 0 #4b5563 #374151;
+  border-left: 0 #4b5563 #becad3;
 }
 
 .e-toolbar .e-toolbar-pop {
-  @apply rounded border bg-[#6b3e9280];
+  @apply rounded border bg-[#becad3];
 }
 .e-toolbar .e-tbar-btn {
-  background: #6b3e9280;
+  background: #becad3;
   box-shadow: none;
-  color: #fff;
 }
 .e-schedule .e-month-view .e-date-header-wrap table td,
 .e-schedule .e-month-agenda-view .e-date-header-wrap table td {
@@ -199,7 +210,7 @@
   padding: 0 8px 8px 8px;
   table-layout: fixed;
   width: 100%;
-}
+} */
 /* ar */
 @layer utilities {
   .head {
