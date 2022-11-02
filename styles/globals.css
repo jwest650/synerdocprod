@@ -70,6 +70,15 @@
   overflow: hidden;
   position: absolute;
 }
+.e-schedule .e-schedule-toolbar .e-toolbar-items {
+  background: #e7eaec;
+}
+
+.e-toolbar .e-tbar-btn {
+  background: #e7eaec;
+  box-shadow: none;
+  color: #111827;
+}
 
 /* .schedule {
   @apply rounded border-[#becad3] shadow-md;
