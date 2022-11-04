@@ -76,7 +76,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span>Email:{' '}
+                  Email:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input placeholder='small size' type={'email'} size='sm' />

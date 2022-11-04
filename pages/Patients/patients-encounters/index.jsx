@@ -1,21 +1,16 @@
-import {
-  Button,
-  Input,
-  Select,
-  Table,
-  TableContainer,
-  Tbody,
-  td,
-  th,
-  thead,
-  tr,
-} from '@chakra-ui/react';
+import { Input, Select, Tooltip } from '@chakra-ui/react';
+import Link from 'next/link';
+import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import { BsSearch } from 'react-icons/bs';
 import { RiBook2Fill } from 'react-icons/ri';
+import Encounter from './components/Encounter';
+import SearchIcon from '../../../assets/images/search.png';
+import Image from 'next/image';
+import { FcUnlock } from 'react-icons/fc';
 
 const PatientsEncounters = () => {
   let data = [1, 1, 1, 1];
+  const [openEncounter, setOpenEncounter] = useState(false);
 
   return (
     <div className='w-full'>
@@ -24,13 +19,12 @@ const PatientsEncounters = () => {
           <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
             Patient Encounters
           </h1>
-          <button
-            className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'
-            // onClick={() => setOpenAddReferral(true)}
-          >
-            <BiPlus />
-            <span className='ml-1'>Add Referal/Patient</span>
-          </button>
+          <Link href={'/Patients/add-referral'}>
+            <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'>
+              <BiPlus />
+              <span className='ml-1'>Add Referal/Patient</span>
+            </button>
+          </Link>
 
           <p className=' ml-2 cursor-pointer text-sm font-bold text-blue-700 underline'>
             Homecare University
@@ -123,7 +117,10 @@ const PatientsEncounters = () => {
                   Agency Type
                 </th>
                 <th className=' border-gray-100  pl-2 text-left'>Team</th>
+                <th className=' border-gray-100  pl-2 text-left'>Admit Date</th>
+                <th className=' border-gray-100  pl-2 text-left'>Non Admit</th>
                 <th className=' border-gray-100  pl-2 text-left'>Status</th>
+                <th className=' border-gray-100  pl-2 text-left'>Payer Name</th>
                 <th className=' border-gray-100  pl-2 text-left'>
                   Payer Category
                 </th>
@@ -131,18 +128,141 @@ const PatientsEncounters = () => {
               </tr>
             </thead>
             <tbody>
+              <tr className='bg-[#6b3e9280]'>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
+                    <option value='option1' className='text-gray-800'>
+                      All 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      All 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      All 3
+                    </option>
+                  </Select>
+                </td>
+                <td>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
+                    <option value='option1' className='text-gray-800'>
+                      All 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      All 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      All 3
+                    </option>
+                  </Select>
+                </td>
+                <td>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
+                    <option value='option1' className='text-gray-800'>
+                      All 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      All 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      All 3
+                    </option>
+                  </Select>
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
+                    <option value='option1' className='text-gray-800'>
+                      All 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      All 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      All 3
+                    </option>
+                  </Select>
+                </td>
+                <td>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
+                    <option value='option1' className='text-gray-800'>
+                      All 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      All 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      All 3
+                    </option>
+                  </Select>
+                </td>
+                <td>
+                  <Select
+                    size='xs'
+                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    className='shadow outline-none'
+                  >
+                    <option value='option1' className='text-gray-800'>
+                      All 1
+                    </option>
+                    <option value='option2' className='text-gray-800'>
+                      All 2
+                    </option>
+                    <option value='option3' className='text-gray-800'>
+                      All 3
+                    </option>
+                  </Select>
+                </td>
+                <td>
+                  <FcUnlock className='mx-auto h-[20px] w-[20px]' />
+                </td>
+              </tr>
+
               {data.map((data, i) => (
                 <tr
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <RiBook2Fill />
+                    <Tooltip
+                      label='Encounter activities'
+                      aria-label='A tooltip'
+                      placement='right'
+                    >
+                      <span>
+                        <RiBook2Fill />
+                      </span>
+                    </Tooltip>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
-                      James Gordon
-                    </p>
+                    <Link href={'/Patients/patients-encounters/1'}>
+                      <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                        James Gordon
+                      </p>
+                    </Link>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     23/4/2022 8:43 AM
@@ -151,17 +271,42 @@ const PatientsEncounters = () => {
                     Tampa Home Health
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Home Health
+                    <Tooltip
+                      label='Homecare Health Center'
+                      aria-label='A tooltip'
+                      placement='top'
+                    >
+                      Home Health...
+                    </Tooltip>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     Amess Alicia
                   </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    23/4/2022 8:43 AM
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    23/4/2022 8:43 AM
+                  </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    pending
+                  </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     James Gordon
                   </td>
+                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    Medicare
+                  </td>
                   <td className=' max-h-[20px] min-w-[30px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <BsSearch />
+                    <Link href={'/Patients/patients-encounters/1'}>
+                      {/* <BsSearch /> */}
+                      <Image
+                        src={SearchIcon}
+                        alt='icon'
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
                   </td>
                 </tr>
               ))}
@@ -169,6 +314,12 @@ const PatientsEncounters = () => {
           </table>
         </div>
       </section>
+
+      {/* Encounter Modal */}
+      <Encounter
+        openEncounter={openEncounter}
+        setOpenEncounter={setOpenEncounter}
+      />
     </div>
   );
 };

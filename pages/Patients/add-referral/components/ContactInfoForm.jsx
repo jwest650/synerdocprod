@@ -40,20 +40,12 @@ const ContactInfoForm = () => {
           </div>
           <div className='flex border-t-4'>
             <div className='w-[100px] border-r-2'>
-              <Link
-                href='#'
-                color='orange'
-                className='underlined bg-orange-600 text-orange-600'
-              >
-                Edit
+              <Link href='#' color='orange'>
+                <p className=' text-orange-600 underline'>Edit</p>
               </Link>
               <br />
-              <Link
-                href='#'
-                color='orange'
-                className='underlined bg-orange-600 text-orange-600'
-              >
-                Delete
+              <Link href='#' color='orange'>
+                <p className=' text-orange-600 underline'>Delete</p>
               </Link>
             </div>
             <div className=' flex w-[100%] justify-between px-3'>
@@ -81,20 +73,12 @@ const ContactInfoForm = () => {
           </div>
           <div className='flex border-t-4'>
             <div className='w-[100px] border-r-2'>
-              <Link
-                href='#'
-                color='orange'
-                className='underlined bg-orange-600 text-orange-600'
-              >
-                Edit
+              <Link href='#' color='orange'>
+                <p className=' text-orange-600 underline'>Edit</p>
               </Link>
               <br />
-              <Link
-                href='#'
-                color='orange'
-                className='underlined bg-orange-600 text-orange-600'
-              >
-                Delete
+              <Link href='#' color='orange'>
+                <p className=' text-orange-600 underline'>Delete</p>
               </Link>
             </div>
             <div className='w-[100%]'>
@@ -142,20 +126,12 @@ const ContactInfoForm = () => {
           </div>
           <div className='flex border-t-4'>
             <div className='w-[100px] border-r-2'>
-              <Link
-                href='#'
-                color='orange'
-                className='underlined bg-orange-600 text-orange-600'
-              >
-                Edit
+              <Link href='#' color='orange'>
+                <p className=' text-orange-600 underline'>Edit</p>
               </Link>
               <br />
-              <Link
-                href='#'
-                color='orange'
-                className='underlined bg-orange-600 text-orange-600'
-              >
-                Delete
+              <Link href='#' color='orange'>
+                <p className=' text-orange-600 underline'>Delete</p>
               </Link>
             </div>
             <div className='w-[100%] px-3'>
