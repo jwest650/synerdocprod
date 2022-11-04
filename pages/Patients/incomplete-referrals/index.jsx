@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Input } from '@chakra-ui/react';
 import EditReferral from './components/EditReferral';
-import { BsSearch } from 'react-icons/bs';
 import { BiPlus } from 'react-icons/bi';
+import Link from 'next/link';
+import Image from 'next/image';
+import SearchIcon from '../../../assets/images/search.png';
 
 const IncompleteReferrals = () => {
   let data = [1, 1, 1, 1];
@@ -17,13 +19,12 @@ const IncompleteReferrals = () => {
               Incomplete Referrals
             </h1>
             <div className='flex cursor-pointer items-center space-x-2'>
-              <button
-                className='dark:text-[#E77654px-6 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'
-                onClick={() => setOpenAddReferral(true)}
-              >
-                <BiPlus />
-                <span className='ml-1'>Create Referral Patient</span>
-              </button>
+              <Link href={'/Patients/add-referral'}>
+                <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'>
+                  <BiPlus />
+                  <span className='ml-1'>Add Referal/Patient</span>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -89,7 +90,14 @@ const IncompleteReferrals = () => {
                       </p>
                     </td>
                     <td className=' max-h-[20px] max-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      <BsSearch />
+                      <Link href={'/Patients/add-referral'}>
+                        <Image
+                          src={SearchIcon}
+                          alt='icon'
+                          width={20}
+                          height={20}
+                        />
+                      </Link>
                     </td>
                   </tr>
                 ))}

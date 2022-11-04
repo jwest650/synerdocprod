@@ -3,14 +3,12 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import { RiBook2Fill } from 'react-icons/ri';
-import Encounter from './components/Encounter';
 import SearchIcon from '../../../assets/images/search.png';
 import Image from 'next/image';
 import { FcUnlock } from 'react-icons/fc';
 
 const PatientsEncounters = () => {
   let data = [1, 1, 1, 1];
-  const [openEncounter, setOpenEncounter] = useState(false);
 
   return (
     <div className='w-full'>
@@ -299,7 +297,6 @@ const PatientsEncounters = () => {
                   </td>
                   <td className=' max-h-[20px] min-w-[30px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     <Link href={'/Patients/patients-encounters/1'}>
-                      {/* <BsSearch /> */}
                       <Image
                         src={SearchIcon}
                         alt='icon'
@@ -314,12 +311,6 @@ const PatientsEncounters = () => {
           </table>
         </div>
       </section>
-
-      {/* Encounter Modal */}
-      <Encounter
-        openEncounter={openEncounter}
-        setOpenEncounter={setOpenEncounter}
-      />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
           <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
             <div>
               <ModalHeader>
-                Add Referral
+                Edit Referral
                 <p className='text-sm text-gray-600'>add referal details</p>
               </ModalHeader>
             </div>
