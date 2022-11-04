@@ -14,6 +14,7 @@ import { BsChevronExpand } from 'react-icons/bs';
 import TableAction from './TableAction';
 import { RiBook2Fill } from 'react-icons/ri';
 import CreateAssociate from '../dashboard/CreateAssociate';
+import Link from 'next/link';
 
 const Associates = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -93,7 +94,7 @@ const Associates = () => {
             <td className=" w-full border border-gray-400">
               <Select
                 css={{ backgroundColor: '#d4c3e480', border: 'none' }}
-                className="shadow outline-none"
+                className="cursor-pointer shadow outline-none"
                 size="xs"
               >
                 <option value="option1" className="text-gray-800">
@@ -113,7 +114,7 @@ const Associates = () => {
             <td className=" w-full border border-gray-400">
               <Select
                 css={{ backgroundColor: '#d4c3e480', border: 'none' }}
-                className="shadow outline-none"
+                className="cursor-pointer shadow outline-none"
                 size="xs"
               >
                 <option value="option1" className="text-gray-800">
@@ -130,7 +131,7 @@ const Associates = () => {
             <td className=" w-full border border-gray-400">
               <Select
                 css={{ backgroundColor: '#d4c3e480', border: 'none' }}
-                className="shadow outline-none"
+                className="cursor-pointer shadow outline-none"
                 size="xs"
               >
                 <option value="option1" className="text-gray-800">
@@ -148,7 +149,7 @@ const Associates = () => {
             <td className=" w-full border border-gray-400">
               <Select
                 css={{ backgroundColor: '#d4c3e480', border: 'none' }}
-                className="shadow outline-none"
+                className="cursor-pointer shadow outline-none"
                 size="xs"
               >
                 <option value="option1" className="text-gray-800">
@@ -171,16 +172,18 @@ const Associates = () => {
                   <RiBook2Fill />
                 </span>
               </td>
-              <td className=" max-h-[20px] min-w-[230px] border border-gray-400 py-1 px-2 font-medium">
-                {associate.name}
+              <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
+                <Link href={`/Resources/associates/${associate.name}`}>
+                  <a>{associate.name}</a>
+                </Link>
               </td>
-              <td className=" max-h-[20px] min-w-[270px] border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
                 {associate.classification}
               </td>
-              <td className=" max-h-[20px] min-w-[330px] border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[330px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
                 {associate.discipline}
               </td>
-              <td className=" max-h-[20px] min-w-[120px] border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[120px] border-gray-400 py-1 px-2 font-medium">
                 {associate.hireDate}
               </td>
               <td

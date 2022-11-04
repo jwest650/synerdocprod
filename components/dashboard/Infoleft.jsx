@@ -4,7 +4,7 @@ import { BsCheck2, BsDot, BsGrid } from 'react-icons/bs';
 const Infoleft = () => {
   return (
     <div className="space-y-5">
-      <div className="rounded-md bg-[#1e5ee9] p-5 shadow-md">
+      {/* <div className="rounded-md bg-[#1e5ee9] p-5 shadow-md">
         <h2 className="mb-7 flex items-center gap-2 text-lg">
           <BsGrid className="cursor-pointer text-xl text-gray-200" />
           Activity Stream
@@ -61,44 +61,44 @@ const Infoleft = () => {
           </li>
         </ul>
         <p className="cursor-pointer text-end text-[#1fe2e2]">[view all]</p>
-      </div>
-      <div className="rounded-md bg-[#1e5ee9] p-5 shadow-md">
+      </div> */}
+      <div className="rounded-md bg-[#edf2fb] p-5 shadow-md">
         <h2 className="text-lg">Annoucements</h2>
         {/* <p>{scheduleData[0].StartTime.split('T')[0]}</p> */}
-        <p className="text-xs font-semibold text-gray-300">
+        <p className="text-xs font-semibold text-gray-400">
           10/19/2022 11:00AM
         </p>
-        <p className="mt-3 text-sm text-gray-100">
+        <p className="mt-3 text-sm text-gray-800">
           <span className="font-medium">ATTENTION:</span> We would like to
           encourage you to sign up for our...{' '}
-          <span className="font-medium text-[#1fe2e2]">[read more]</span>
+          <span className="font-medium text-orange-600">[read more]</span>
         </p>
       </div>
-      <div className="rounded-md bg-[#1e5ee9] p-5 shadow-md">
-        <h2 className="text-lg text-[#1fe2e2] underline">
+      <div className="rounded-md bg-[#edf2fb] p-5 shadow-md">
+        <h2 className="text-lg text-orange-600 underline">
           Reports and Options
         </h2>
       </div>
-      <div className="rounded-md bg-[#1e5ee9] p-5">
+      <div className="rounded-md bg-[#edf2fb] p-5">
         <h2 className="mb-3 text-lg">Other Actions</h2>
         <ul className="px-5">
-          <li className="flex cursor-pointer items-center text-sm text-[#1fe2e2] underline">
+          <li className="flex cursor-pointer items-center text-sm text-orange-600 underline">
             <BsDot className="text-3xl text-black" />
             <span>Add Referral Source </span>
           </li>
-          <li className="flex cursor-pointer items-center text-sm text-[#1fe2e2] underline">
+          <li className="flex cursor-pointer items-center text-sm text-orange-600 underline">
             <BsDot className="text-3xl text-black" />
             Directions and Mapping
           </li>
-          <li className="flex cursor-pointer items-center text-sm text-[#1fe2e2] underline">
+          <li className="flex cursor-pointer items-center text-sm text-orange-600 underline">
             <BsDot className="text-3xl text-black" />
             Attach Uploaded Service Notes
           </li>
-          <li className="flex cursor-pointer items-center text-sm text-[#1fe2e2] underline">
+          <li className="flex cursor-pointer items-center text-sm text-orange-600 underline">
             <BsDot className="text-3xl text-black" />
             Add Pay Only
           </li>
-          <li className="flex cursor-pointer items-center text-sm text-[#1fe2e2] underline">
+          <li className="flex cursor-pointer items-center text-sm text-orange-600 underline">
             <BsDot className="text-3xl text-black" />
             Educational Documents
           </li>
