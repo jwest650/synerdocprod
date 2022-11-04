@@ -11,7 +11,7 @@ import ReferralTab from './ReferralTab';
 import ServiceNotesTab from './ServiceNotesTab';
 import PhysFacTab from './PhysFacTab';
 
-export default {
+export {
   ProfileTab,
   ClinicalTab,
   ContactsTab,

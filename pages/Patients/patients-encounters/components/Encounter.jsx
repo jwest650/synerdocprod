@@ -6,7 +6,7 @@ import {
   ModalOverlay,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import Components from './tabs';
+import * as Components from './tabs';
 
 const renderTab = (tab) => {
   switch (tab) {

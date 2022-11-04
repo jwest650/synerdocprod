@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Components from './components/tabs';
+import * as Components from './components/tabs';
 
 const renderTab = (tab) => {
   switch (tab) {
