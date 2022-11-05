@@ -32,7 +32,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
         setlevel(e.target.value);
         setoption({ single: false, payer: false });
     };
-
+    console.log(level);
     return (
         <>
             <Modal isOpen={isOpen} onClose={onClose} size={"xl"}>
