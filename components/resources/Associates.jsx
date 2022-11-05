@@ -174,7 +174,7 @@ const Associates = () => {
                 </span>
               </td>
               <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
-                <Link href={`/Resources/associates/${associate.name}`}>
+                <Link href={`/Resources/associates/${associate.url}`}>
                   <a>{associate.name}</a>
                 </Link>
               </td>
@@ -188,7 +188,7 @@ const Associates = () => {
                 {associate.hireDate}
               </td>
               <td
-                className={`max-h-[20px] min-w-[100px] border border-gray-400 py-1 px-2 font-medium ${
+                className={`max-h-[20px] min-w-[100px] border border-gray-400 py-1 px-2 font-semibold  ${
                   associate.status === 'Active' && 'text-green-600'
                 }`}
               >

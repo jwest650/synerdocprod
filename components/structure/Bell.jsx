@@ -9,14 +9,14 @@ const Bell = ({ hide, setHide }) => {
       {hide ? (
         <span
           onClick={() => setHide(false)}
-          className="absolute flex items-center justify-center text-xl text-white"
+          className="absolute flex items-center justify-center text-lg text-white"
         >
           <BsArrowDown />
         </span>
       ) : (
         <span
           onClick={() => setHide(true)}
-          className="absolute flex items-center justify-center text-xl text-white"
+          className="absolute flex items-center justify-center text-lg text-white"
         >
           <BsArrowUp />
         </span>
