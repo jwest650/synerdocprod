@@ -5,7 +5,7 @@ import ProfilePage from '../../../../components/resources/AssociateMenuProfile';
 
 const AssociateName = () => {
   const router = useRouter();
-  const associateUrl = router.query?.associatename;
+  const associateUrl = router.asPath.split('/')[3];
 
   return (
     <div className="w-full">

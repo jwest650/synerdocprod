@@ -7,7 +7,7 @@ import EachAssociatePageDetails from '../../../../../components/resources/EachAs
 const MenuPage = () => {
   const router = useRouter();
   const menuTitle = router.query?.associatemenu;
-  const associateUrl = router.query?.associatename;
+  const associateUrl = router.asPath.split('/')[3];
 
   return (
     <div className="w-full">

@@ -4,8 +4,10 @@ import { associateMenu } from '../../assets/data';
 
 const EachAssociatePageDetails = ({ children }) => {
   const router = useRouter();
-  const currentAssociate = router.query?.associateurl;
+  const currentAssociate = router.asPath.split('/')[3];
   const currentMenu = router.query?.associatemenu;
+  // console.log(currentAssociate);
+  // console.log(router);
   return (
     <div className="mx-5 -mt-12 flex w-full flex-col items-center rounded border-x border-b  pt-5 pb-12 text-sm">
       <ul className="flex w-full flex-wrap items-end justify-start">
@@ -15,17 +17,19 @@ const EachAssociatePageDetails = ({ children }) => {
             key={index}
           >
             <li
-              className={`-mx-[1px] flex skew-x-[12deg] cursor-pointer items-center gap-1 rounded-t-lg border-2 py-[1px] px-4 text-center italic ${
+              className={`-mx-[1px] flex skew-x-[12deg] cursor-pointer items-center gap-1 rounded-t-lg border-2 border-gray-300 py-[1px] px-4 text-center italic ${
                 currentMenu === menu.menu &&
                 'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 not-italic '
-              }  ${index === 0 && 'skew-x-[1deg] not-italic'} `}
+              }    ${
+                currentMenu === undefined &&
+                menu.menu === 'Profile' &&
+                'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 not-italic '
+              }    ${index === 0 && 'skew-x-[1deg] not-italic'}   `}
             >
               <span
                 className={`${
-                  currentMenu === menu.menu && '-skew-x-[0deg]'
-                }   ${
-                  index === 0 && '-skew-x-[0deg] '
-                } -skew-x-[12deg] not-italic`}
+                  currentMenu === menu.menu && '-skew-x-[2deg]'
+                }   ${index === 0 && '-skew-x-[4deg] '} -skew-x-[12deg]`}
               >
                 {menu.icon}
               </span>
@@ -35,7 +39,7 @@ const EachAssociatePageDetails = ({ children }) => {
         ))}
         <li className="flex-auto border" />
       </ul>
-      <div className="-mt-[0px] h-96 w-full  border-x  bg-white     ">
+      <div className="-mt-[1px] h-96 w-full  border-x  bg-white     ">
         {children}
       </div>
     </div>

@@ -768,7 +768,7 @@ export const menuOptions = [
 export const associateTableData = [
   {
     name: 'Peggy Opong',
-    url: 'peggyoppong',
+    url: 'peggyopong',
     classification: 'Administrative',
     discipline: 'Registered Nurse',
     hireDate: new Date().toLocaleDateString(),
