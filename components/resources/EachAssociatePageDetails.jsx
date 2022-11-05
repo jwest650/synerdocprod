@@ -17,15 +17,15 @@ const EachAssociatePageDetails = ({ children }) => {
             <li
               className={`-mx-[1px] flex skew-x-[12deg] cursor-pointer items-center gap-1 rounded-t-lg border-2 py-[1px] px-4 text-center italic ${
                 currentMenu === menu.menu &&
-                'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 italic '
+                'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 not-italic '
               }  ${index === 0 && 'skew-x-[1deg] not-italic'} `}
             >
               <span
                 className={`${
-                  currentMenu === menu.menu && '-skew-x-[12deg]'
+                  currentMenu === menu.menu && '-skew-x-[0deg]'
                 }   ${
-                  index === 0 && 'skew-x-[1deg] not-italic'
-                } -skew-x-[15deg] not-italic`}
+                  index === 0 && '-skew-x-[0deg] '
+                } -skew-x-[12deg] not-italic`}
               >
                 {menu.icon}
               </span>

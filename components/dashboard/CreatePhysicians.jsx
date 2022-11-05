@@ -29,7 +29,7 @@ const CreatePhysicians = () => {
                 className="flex cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white"
             >
                 <BiPlus />
-                <span className="text-sm">Create Associates</span>
+                <span className="text-sm">Create Physicians</span>
             </span>
             <Modal isOpen={isOpen} size={"3xl"} onClose={onClose}>
                 <ModalOverlay />
@@ -57,7 +57,7 @@ const CreatePhysicians = () => {
                                         <label htmlFor="">
                                             <span className="text-orange-500">
                                                 *
-                                            </span>{" "}
+                                            </span>
                                             first name:
                                         </label>
 
@@ -71,10 +71,14 @@ const CreatePhysicians = () => {
                                     <div className=" space-x-2">
                                         <label htmlFor="">middle:</label>{" "}
                                         <Input
+                                            n
+                                            put
                                             w={200}
                                             type="text"
                                             size="sm"
-                                            placeholder="Enter first or lastname"
+                                            placeho
+                                            l
+                                            der="Enter first or lastname"
                                         />
                                     </div>
                                     <div className="space-x-2">
@@ -82,7 +86,7 @@ const CreatePhysicians = () => {
                                             <span className="text-orange-500">
                                                 *
                                             </span>{" "}
-                                            lastname:
+                                            lastname :
                                         </label>
                                         <Input
                                             w={200}
@@ -93,6 +97,7 @@ const CreatePhysicians = () => {
                                     </div>
                                     <div className="flex items-center space-x-2">
                                         <label htmlFor="">title:</label>
+
                                         <Select
                                             placeholder="Select option"
                                             size="xs"

@@ -1,35 +1,46 @@
 import { useState } from 'react';
-import * as Components from './components/tabs';
+import ContactsTab from './components/tabs/ContactsTab';
+import ProfileTab from './components/tabs/ProfileTab';
+import NotesTab from './components/tabs/NotesTab';
+import ReferralTab from './components/tabs/ReferralTab';
+import PhysFacTab from './components/tabs/PhysFacTab';
+import DocsTab from './components/tabs/DocsTab';
+import ClinicalTab from './components/tabs/ClinicalTab';
+import MedsTab from './components/tabs/MedsTab';
+import OrdersTab from './components/tabs/OrdersTab';
+import PayersTab from './components/tabs/PayersTab';
+import ServiceNotesTab from './components/tabs/ServiceNotesTab';
+import EvvTab from './components/tabs/EvvTab';
 
 const renderTab = (tab) => {
   switch (tab) {
     case 'profile-tab':
-      return <Components.ProfileTab />;
+      return <ProfileTab />;
     case 'contacts-tab':
-      return <Components.ContactsTab />;
+      return <ContactsTab />;
     case 'notes-tab':
-      return <Components.NotesTab />;
+      return <NotesTab />;
     case 'referral-tab':
-      return <Components.ReferralTab />;
+      return <ReferralTab />;
     case 'phys-fac-tab':
-      return <Components.PhysFacTab />;
+      return <PhysFacTab />;
     case 'docs-tab':
-      return <Components.DocsTab />;
+      return <DocsTab />;
     case 'clinical-tab':
-      return <Components.MedsTab />;
+      return <ClinicalTab />;
     case 'meds-tab':
-      return <Components.MedsTab />;
+      return <MedsTab />;
     case 'orders-tab':
-      return <Components.OrdersTab />;
+      return <OrdersTab />;
     case 'payers-tab':
-      return <Components.PayersTab />;
+      return <PayersTab />;
     case 'service-notes-tab':
-      return <Components.ServiceNotesTab />;
+      return <ServiceNotesTab />;
     case 'evv-tab':
-      return <Components.EvvTab />;
+      return <EvvTab />;
 
     default:
-      break;
+      return <ProfileTab />;
   }
 };
 
@@ -42,7 +53,7 @@ const Enconter = () => {
     { name: 'Referral', path: 'referral-tab' },
     { name: 'Phys/Fac', path: 'phys-fac-tab' },
     { name: 'Docs', path: 'docs-tab' },
-    { name: 'Clinical', tabs: 'clinical-tab' },
+    { name: 'Clinical', path: 'clinical-tab' },
     { name: 'Meds', path: 'meds-tab' },
     { name: 'Orders', path: 'orders-tab' },
     { name: 'Payers', path: 'payers-tab' },
@@ -185,7 +196,7 @@ const Enconter = () => {
               ))}
             </ul>
 
-            {/* Render Tabs Components */}
+            {/* Render Tabs  */}
             {renderTab(activeTab)}
           </section>
         </div>
