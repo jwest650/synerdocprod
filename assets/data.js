@@ -34,16 +34,16 @@ import {
   // IoFolderOpenOutline,
 } from 'react-icons/io';
 import { FaHome, FaRegNewspaper } from 'react-icons/fa';
-import ProfilePage from '../components/resources/profile';
-import ContactPage from '../components/resources/contact';
-import WebsitePage from '../components/resources/website';
-import Notes from '../components/resources/Notes';
-import Availability from '../components/resources/Availability';
-import Compliance from '../components/resources/Compliance';
-import Payroll from '../components/resources/Payroll';
-import PayRates from '../components/resources/PayRates';
-import Docs from '../components/resources/Docs';
-import Evv from '../components/resources/Evv';
+import ProfilePage from '../components/resources/AssociateMenuProfile';
+import ContactPage from '../components/resources/AssociateMenuContact';
+import WebsitePage from '../components/resources/AssociateMenuWebsite';
+import Notes from '../components/resources/AssociateMenuNotes';
+import Availability from '../components/resources/AssociateMenuAvailability';
+import Compliance from '../components/resources/AssociateMenuCompliance';
+import Payroll from '../components/resources/AssociateMenuPayroll';
+import PayRates from '../components/resources/AssociateMenuPayRates';
+import Docs from '../components/resources/AssociateMenuDocs';
+import Evv from '../components/resources/AssociateMenuEvv';
 
 export const scheduleData = [
   {
