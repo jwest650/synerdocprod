@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
+import { FcSearch } from 'react-icons/fc';
 import { FiSettings, FiTrash2 } from 'react-icons/fi';
 
 const TableAction = () => {
@@ -11,9 +12,10 @@ const TableAction = () => {
         <span
           onMouseOver={() => setShowOthers((current) => (current = true))}
           onMouseLeave={() => setShowOthers((current) => (current = false))}
-          className="table-action-anim h px-1"
+          className="table-action-anim px-1 text-xl "
         >
-          <BsSearch />
+          {/* <BsSearch /> */}
+          <FcSearch />
         </span>
       )}
       <span
