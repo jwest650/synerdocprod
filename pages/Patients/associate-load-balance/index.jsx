@@ -1,6 +1,7 @@
 import { Button, Checkbox, Select } from '@chakra-ui/react';
 import React from 'react';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import Calender from './components/Calendar';
 
 const AssociateLoadBalance = () => {
   let data = [1, 1, 1, 1];
@@ -62,7 +63,8 @@ const AssociateLoadBalance = () => {
 
       <section className=' h-96 border-2'>
         <div className=' border-3'>
-          <div className='flex justify-between bg-gray-200 p-1'>
+          <Calender />
+          {/* <div className='flex justify-between bg-gray-200 p-1'>
             <div className='flex items-center'>
               <Button mr={1} size='sm'>
                 <BsChevronLeft />
@@ -117,7 +119,7 @@ const AssociateLoadBalance = () => {
                 ))}
               </tbody>
             </table>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

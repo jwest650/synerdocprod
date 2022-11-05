@@ -23,14 +23,15 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
           <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
             <div>
               <ModalHeader>
-                Add Referral
+                Edit Referral
                 <p className='text-sm text-gray-600'>add referal details</p>
               </ModalHeader>
             </div>
             <ModalBody>
               <div className='my-2 flex'>
                 <label htmlFor='#' className='w-[20%]'>
-                  Referral Type:{' '}
+                  <span className='font-bold text-orange-500'>*</span> Referral
+                  Type:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Select size='xs'>
@@ -48,7 +49,8 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  First Name:{' '}
+                  <span className='font-bold text-orange-500'>*</span> First
+                  Name:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
@@ -64,7 +66,8 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  Last Name:{' '}
+                  <span className='font-bold text-orange-500'>*</span> Last
+                  Name:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
@@ -98,7 +101,7 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  Start:{' '}
+                  <span className='font-bold text-orange-500'>*</span> Start:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input
