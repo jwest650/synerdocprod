@@ -15,6 +15,7 @@ import TableAction from './TableAction';
 import { RiBook2Fill } from 'react-icons/ri';
 import CreateAssociate from '../dashboard/CreateAssociate';
 import Link from 'next/link';
+import MoreAssociateInfo from './MoreAssociateInfo';
 
 const Associates = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -169,7 +170,7 @@ const Associates = () => {
             <tr key={i} className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}>
               <td className=" max-h-[20px] min-w-[50px] border border-gray-400 py-1 px-2 font-medium">
                 <span className="cursor-pointer">
-                  <RiBook2Fill />
+                  <MoreAssociateInfo />
                 </span>
               </td>
               <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
