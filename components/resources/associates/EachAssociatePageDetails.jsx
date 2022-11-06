@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { associateMenu } from '../../assets/data';
+import { associateMenu } from '../../../assets/data';
 
 const EachAssociatePageDetails = ({ children }) => {
   const router = useRouter();
   const currentAssociate = router.asPath.split('/')[3];
   const currentMenu = router.query?.associatemenu;
-  // console.log(currentAssociate);
-  // console.log(router);
+
   return (
     <div className="mx-5 -mt-12 flex w-full flex-col items-center rounded border-x border-b  pt-5 pb-12 text-sm">
       <ul className="flex w-full flex-wrap items-end justify-start">
@@ -23,13 +22,13 @@ const EachAssociatePageDetails = ({ children }) => {
               }    ${
                 currentMenu === undefined &&
                 menu.menu === 'Profile' &&
-                'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 not-italic '
-              }    ${index === 0 && 'skew-x-[1deg] not-italic'}   `}
+                'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1.5 not-italic '
+              }    ${index === 0 && ' skew-x-[1deg] border-r-0 not-italic'}   `}
             >
               <span
                 className={`${
-                  currentMenu === menu.menu && '-skew-x-[2deg]'
-                }   ${index === 0 && '-skew-x-[4deg] '} -skew-x-[12deg]`}
+                  currentMenu === menu.menu && 'skew-x-[-0deg]'
+                }   ${index === 0 && 'skew-x-[-0deg] '} -skew-x-[12deg]`}
               >
                 {menu.icon}
               </span>
@@ -37,9 +36,9 @@ const EachAssociatePageDetails = ({ children }) => {
             </li>
           </Link>
         ))}
-        <li className="flex-auto border" />
+        <li className="flex-auto border border-gray-300" />
       </ul>
-      <div className="-mt-[1px] h-96 w-full  border-x  bg-white     ">
+      <div className="-mt-[1px] h-96 w-full  border-x  bg-white">
         {children}
       </div>
     </div>

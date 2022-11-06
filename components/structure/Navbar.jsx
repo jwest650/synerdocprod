@@ -11,7 +11,7 @@ import MenuDrawer from './MenuDrawer';
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-[1000] bg-[#32164A]">
+    <div className="sticky top-0 z-[1000] bg-[#0141CF]">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-gray-500/20 py-2 px-5 text-white  ">
         <div className="flex items-center gap-6">
           <Link href="/">

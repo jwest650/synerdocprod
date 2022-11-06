@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router';
-import React from 'react';
 import { associateMenu } from '../../../../../assets/data';
-import EachAssociateHeader from '../../../../../components/resources/EachAssociateHeader';
-import EachAssociatePageDetails from '../../../../../components/resources/EachAssociatePageDetails';
+import EachAssociateHeader from '../../../../../components/resources/associates/EachAssociateHeader';
+import EachAssociatePageDetails from '../../../../../components/resources/associates/EachAssociatePageDetails';
 
 const MenuPage = () => {
   const router = useRouter();

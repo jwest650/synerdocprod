@@ -15,10 +15,10 @@ const MoreAssociateInfo = () => {
       </div>
       {showInfo && (
         <div className="absolute z-10 ml-5">
-          <span className=" absolute -top-[8px] left-1 text-[#6b3e9250]">
+          <span className=" absolute -top-[8px] left-1 text-[#c6d8ffe1]">
             <SiVercel />
           </span>
-          <div className="relative w-72  rounded border-[4px] border-t-[10px] border-[#6b3e9280] bg-white">
+          <div className="relative w-72  rounded border-[4px] border-t-[10px] border-[#c6d8ffe1] bg-white">
             <div className="grid grid-cols-6 text-xs">
               <span className="col-span-3 px-1">
                 222 Bert Kouns Loop, Shreveport, LA 71115

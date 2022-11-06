@@ -7,7 +7,6 @@ import {
   BsBuilding,
   BsCalendar4Event,
   BsCalendarCheck,
-  BsCheckCircle,
   BsCurrencyDollar,
   BsDot,
   BsFolder2Open,
@@ -21,29 +20,24 @@ import { RiProfileLine, RiToolsFill } from 'react-icons/ri';
 import {
   MdAttachMoney,
   MdLibraryBooks,
-  MdOutlineEventAvailable,
   MdOutlineMedicalServices,
   MdOutlinePayments,
 } from 'react-icons/md';
 import { SlCalculator, SlCheck } from 'react-icons/sl';
 import { FiHome } from 'react-icons/fi';
 import { VscNote, VscServerProcess } from 'react-icons/vsc';
-import {
-  IoIosPeople,
-  // IoDocumentTextOutline,
-  // IoFolderOpenOutline,
-} from 'react-icons/io';
+import { IoIosPeople } from 'react-icons/io';
 import { FaHome, FaRegNewspaper } from 'react-icons/fa';
-import ProfilePage from '../components/resources/AssociateMenuProfile';
-import ContactPage from '../components/resources/AssociateMenuContact';
-import WebsitePage from '../components/resources/AssociateMenuWebsite';
-import Notes from '../components/resources/AssociateMenuNotes';
-import Availability from '../components/resources/AssociateMenuAvailability';
-import Compliance from '../components/resources/AssociateMenuCompliance';
-import Payroll from '../components/resources/AssociateMenuPayroll';
-import PayRates from '../components/resources/AssociateMenuPayRates';
-import Docs from '../components/resources/AssociateMenuDocs';
-import Evv from '../components/resources/AssociateMenuEvv';
+import AssociateMenuProfile from '../components/resources/associates/AssociateMenuProfile';
+import AssociateMenuContact from '../components/resources/associates/AssociateMenuContact';
+import AssociateMenuWebsite from '../components/resources/associates/AssociateMenuWebsite';
+import AssociateMenuNotes from '../components/resources/associates/AssociateMenuNotes';
+import AssociateMenuAvailability from '../components/resources/associates/AssociateMenuAvailability';
+import AssociateMenuCompliance from '../components/resources/associates/AssociateMenuCompliance';
+import AssociateMenuPayroll from '../components/resources/associates/AssociateMenuPayroll';
+import AssociateMenuPayRates from '../components/resources/associates/AssociateMenuPayRates';
+import AssociateMenuDocs from '../components/resources/associates/AssociateMenuDocs';
+import AssociateMenuEvv from '../components/resources/associates/AssociateMenuEvv';
 
 export const scheduleData = [
   {
@@ -812,51 +806,51 @@ export const associateMenu = [
   {
     menu: 'Profile',
     icon: <RiProfileLine />,
-    component: <ProfilePage />,
+    component: <AssociateMenuProfile />,
   },
   {
     menu: 'Contacts',
     icon: <AiOutlineContacts />,
-    component: <ContactPage />,
+    component: <AssociateMenuContact />,
   },
   {
     menu: 'Website',
     icon: <BsGlobe />,
-    component: <WebsitePage />,
+    component: <AssociateMenuWebsite />,
   },
   {
     menu: 'Notes',
     icon: <FaRegNewspaper />,
-    component: <Notes />,
+    component: <AssociateMenuNotes />,
   },
   {
     menu: 'Availability',
     icon: <BsCalendarCheck />,
-    component: <Availability />,
+    component: <AssociateMenuAvailability />,
   },
   {
     menu: 'Compliance',
     icon: <SlCheck />,
-    component: <Compliance />,
+    component: <AssociateMenuCompliance />,
   },
   {
     menu: 'Payroll',
     icon: <VscNote />,
-    component: <Payroll />,
+    component: <AssociateMenuPayroll />,
   },
   {
     menu: 'Pay Rates',
     icon: <BsCurrencyDollar />,
-    component: <PayRates />,
+    component: <AssociateMenuPayRates />,
   },
   {
     menu: 'Docs',
     icon: <BsFolder2Open />,
-    component: <Docs />,
+    component: <AssociateMenuDocs />,
   },
   {
     menu: 'EVV',
     icon: '',
-    component: <Evv />,
+    component: <AssociateMenuEvv />,
   },
 ];

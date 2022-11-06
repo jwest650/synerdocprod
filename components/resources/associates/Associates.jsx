@@ -1,25 +1,11 @@
-import {
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Select,
-  useDisclosure,
-} from '@chakra-ui/react';
-import { useRef } from 'react';
-import { associateTableData } from '../../assets/data';
-import CustomPopover from './CustomPopover';
-import { BiPlus } from 'react-icons/bi';
-import { BsChevronExpand } from 'react-icons/bs';
-import TableAction from './TableAction';
-import { RiBook2Fill } from 'react-icons/ri';
-import CreateAssociate from '../dashboard/CreateAssociate';
+import { Select } from '@chakra-ui/react';
+import { associateTableData } from '../../../assets/data';
+import TableAction from '../TableAction';
+import CreateAssociate from '../../dashboard/CreateAssociate';
 import Link from 'next/link';
 import MoreAssociateInfo from './MoreAssociateInfo';
 
 const Associates = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef(null);
   return (
     <section className="mx-10 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
@@ -29,7 +15,7 @@ const Associates = () => {
         </div>
         <div className="flex items-center gap-3">
           <Select
-            css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+            css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
             className="shadow outline-none"
             size="xs"
           >
@@ -46,23 +32,6 @@ const Associates = () => {
               Associate Caseload PDF
             </option>
           </Select>
-          {/* <Menu isOpen={isOpen} onClose={onClose}>
-            <MenuButton ref={btnRef} onClick={onOpen}>
-              <div className="flex items-center gap-2 rounded bg-gray-300 px-2 py-1 text-sm font-medium text-[#0e1922]">
-                <span>Associate List XLS</span>
-
-                <BsChevronExpand className="text-[16px]" />
-              </div>
-            </MenuButton>
-            <MenuList className="max-h-40 overflow-x-hidden overflow-y-scroll bg-[#152937]">
-              <MenuItem>
-                <span className="text-[#0e1922]">CSV</span>
-              </MenuItem>
-              <MenuItem>
-                <span className="text-[#0e1922]">PDF</span>
-              </MenuItem>
-            </MenuList>
-          </Menu> */}
           <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
             Export
           </button>
@@ -78,7 +47,7 @@ const Associates = () => {
       </div>
 
       <table className="mt-10 min-w-full overflow-auto">
-        <thead className="border-b bg-[#32164A] text-[18px] tracking-wider text-white">
+        <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
           <tr>
             <th className=" border-gray-100  pl-2 text-left"></th>
             <th className=" border-gray-100 pl-2 text-left">Name</th>
@@ -90,11 +59,11 @@ const Associates = () => {
           </tr>
         </thead>
         <tbody>
-          <tr className="w-full bg-[#6b3e9280]">
+          <tr className="w-full bg-[#c6d8ffe1]">
             <td></td>
             <td className=" w-full border border-gray-400">
               <Select
-                css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                 className="cursor-pointer shadow outline-none"
                 size="xs"
               >
@@ -114,7 +83,7 @@ const Associates = () => {
             </td>
             <td className=" w-full border border-gray-400">
               <Select
-                css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                 className="cursor-pointer shadow outline-none"
                 size="xs"
               >
@@ -131,7 +100,7 @@ const Associates = () => {
             </td>
             <td className=" w-full border border-gray-400">
               <Select
-                css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                 className="cursor-pointer shadow outline-none"
                 size="xs"
               >
@@ -149,7 +118,7 @@ const Associates = () => {
             <td></td>
             <td className=" w-full border border-gray-400">
               <Select
-                css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                 className="cursor-pointer shadow outline-none"
                 size="xs"
               >

@@ -10,8 +10,6 @@ const Menupopup = ({ menu, index }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [showSubOptionsMenu, setShowSubOptionsMenu] = useState(false);
 
-  // alert(currentPath);
-
   return (
     <>
       <div
@@ -21,10 +19,10 @@ const Menupopup = ({ menu, index }) => {
       >
         <span className="mb-1 scale-125">{menu.icon}</span>
         <span
-          className={`border-b-2 border-[#32164A] hover:border-b-[#C8C4C3] ${
+          className={`border-b-2 border-[#0141CF] hover:border-b-[#C8C4C3] ${
             currentPath
-              ? menu.name === currentPath && 'border-[#C8C4C3]'
-              : menu.name === 'Dashboard' && 'border-[#C8C4C3]'
+              ? menu.name === currentPath && 'border-gray-200'
+              : menu.name === 'Dashboard' && 'border-gray-200'
           }  `}
         >
           {menu.name}
@@ -37,7 +35,7 @@ const Menupopup = ({ menu, index }) => {
             </span>
             <div className="absolute top-12 h-52 w-[32rem]">
               <div className="relative h-full">
-                <ul className=" h-full w-64 overflow-y-scroll rounded bg-gray-300 pt-3 text-[#32164A]   shadow transition-all duration-[2000ms] ease-in-out">
+                <ul className=" h-full w-64 overflow-y-scroll rounded bg-[#f6f8fc] pt-3 text-[#070b16] shadow transition-all duration-[2000ms] ease-in-out">
                   {menu.options.map((option, i) => (
                     <Link
                       href={`${
@@ -48,7 +46,7 @@ const Menupopup = ({ menu, index }) => {
                       key={i}
                     >
                       <li
-                        className={`flex items-center  gap-2 overflow-hidden py-2 font-medium hover:bg-gray-100 ${
+                        className={`flex items-center  gap-2 overflow-hidden py-2 font-medium hover:bg-blue-100/80 ${
                           index === menu.options.length - 1
                             ? 'border-none'
                             : 'border-b'

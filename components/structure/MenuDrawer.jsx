@@ -112,7 +112,7 @@ const MenuDrawer = () => {
                 </li>
                 <li className="relative flex h-8 w-8 items-center justify-center rounded bg-blue-300 text-[12px]">
                   S
-                  <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-violet-600 p-2 text-center text-[10px] font-bold">
+                  <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-blue-500 p-2 text-center text-[10px] font-bold">
                     2
                   </span>
                 </li>

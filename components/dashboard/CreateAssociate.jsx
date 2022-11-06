@@ -30,7 +30,7 @@ const CreateAssociate = () => {
           {/* <div className="absolute top-[-14px] right-0 bg-red-300"> */}
           {/* <ModalCloseButton /> */}
           {/* </div> */}
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 ">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             {/* <ModalBody> */}
             <form action="" onSubmit={handleForm}>
               <h1 className="text-xl font-semibold">Add Associate</h1>
@@ -40,7 +40,7 @@ const CreateAssociate = () => {
                   <div className="mt-5 grid grid-cols-12">
                     <div className="col-span-5 mx-5 space-y-[14px] md:mx-auto">
                       <div className="flex items-center justify-end">
-                        <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
                           1
                         </div>
 
@@ -50,43 +50,43 @@ const CreateAssociate = () => {
                         </label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           2
                         </div>
                         <label htmlFor="">SSN:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           3
                         </div>
                         <label htmlFor="">Birth Date:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           4
                         </div>
                         <label htmlFor="">Gender:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           5
                         </div>
                         <label htmlFor="">Race:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           6
                         </div>
                         <label htmlFor="">Email:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           7
                         </div>
                         <label htmlFor="">Mobile Email:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           8
                         </div>
                         <label htmlFor="">Scheduling Rank:</label>
@@ -97,44 +97,44 @@ const CreateAssociate = () => {
                         <input
                           type="text"
                           placeholder="First"
-                          className="w-24 rounded bg-[#d4c3e480] px-2 shadow outline-none"
+                          className="w-24 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
                         />
                         <input
                           type="text"
                           placeholder="Middle"
-                          className="w-16 rounded bg-[#d4c3e480] px-2 shadow outline-none"
+                          className="w-16 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
                         />
                         <input
                           type="text"
                           placeholder="Last"
-                          className="w-24 rounded bg-[#d4c3e480] px-2 shadow outline-none"
+                          className="w-24 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
                         />
                       </div>
                       <div className="flex gap-2">
                         <input
                           type="text"
-                          className="w-14 rounded bg-[#d4c3e480] outline-none"
+                          className="w-14 rounded bg-[#c6d8ffe1] outline-none"
                         />
                         -
                         <input
                           type="text"
-                          className="w-14 rounded bg-[#d4c3e480] outline-none"
+                          className="w-14 rounded bg-[#c6d8ffe1] outline-none"
                         />
                         -
                         <input
                           type="text"
-                          className="w-14 rounded bg-[#d4c3e480] outline-none"
+                          className="w-14 rounded bg-[#c6d8ffe1] outline-none"
                         />
                       </div>
                       <div>
                         <input
                           type="text"
                           placeholder="11/27/1960"
-                          className="w-28 rounded bg-[#d4c3e480] px-2 text-center shadow outline-none"
+                          className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                         />
                       </div>
                       <Select
-                        css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                        css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                         className="shadow outline-none"
                         size="xs"
                       >
@@ -149,7 +149,7 @@ const CreateAssociate = () => {
                         </option>
                       </Select>
                       <Select
-                        css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                        css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                         className="shadow outline-none"
                         size="xs"
                       >
@@ -176,17 +176,17 @@ const CreateAssociate = () => {
                         <input
                           type="text"
                           placeholder="example@gmail.com"
-                          className="w-full rounded bg-[#d4c3e480] px-2 text-center shadow outline-none"
+                          className="w-full rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                         />
                       </div>
                       <div>
                         <input
                           type="text"
-                          className="mt-1 w-full rounded bg-[#d4c3e480] px-2 text-center shadow outline-none"
+                          className="mt-1 w-full rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                         />
                       </div>
                       <Select
-                        css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                        css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                         className="shadow outline-none"
                         size="xs"
                       >
@@ -202,7 +202,7 @@ const CreateAssociate = () => {
                   <div className="mt-5 mr-5 grid grid-cols-12">
                     <div className="col-span-5 mx-5 space-y-[14px] md:mx-auto">
                       <div className="flex items-center justify-end">
-                        <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
                           9
                         </div>
 
@@ -211,13 +211,13 @@ const CreateAssociate = () => {
                         </label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           10
                         </div>
                         <label htmlFor="">Discipline:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           11
                         </div>
                         <label className="flex  pl-1">
@@ -225,7 +225,7 @@ const CreateAssociate = () => {
                         </label>{' '}
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           12
                         </div>
                         <label className="flex  pl-1">
@@ -233,13 +233,13 @@ const CreateAssociate = () => {
                         </label>{' '}
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           13
                         </div>
                         <label htmlFor="">Supervisor:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           14
                         </div>
                         <label className="flex  pl-1">
@@ -247,13 +247,13 @@ const CreateAssociate = () => {
                         </label>{' '}
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           15
                         </div>
                         <label htmlFor="">Associate Number:</label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
-                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#32164A] text-white">
+                        <div className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#0141CF] text-white">
                           16
                         </div>
                         <label htmlFor="">Associate NPI:</label>
@@ -261,7 +261,7 @@ const CreateAssociate = () => {
                     </div>
                     <div className="col-span-7 space-y-3">
                       <Select
-                        css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                        css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                         className="shadow outline-none"
                         size="xs"
                       >
@@ -273,7 +273,7 @@ const CreateAssociate = () => {
                         </option>
                       </Select>
                       <Select
-                        css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                        css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                         className="shadow outline-none"
                         size="xs"
                       >
@@ -285,18 +285,18 @@ const CreateAssociate = () => {
                         <input
                           type="text"
                           placeholder="11/27/2021"
-                          className="w-28 rounded bg-[#d4c3e480] px-2 text-center shadow outline-none"
+                          className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                         />
                       </div>
                       <div>
                         <input
                           type="text"
                           placeholder="11/28/2021"
-                          className="w-28 rounded bg-[#d4c3e480] px-2 text-center shadow outline-none"
+                          className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                         />
                       </div>
                       <Select
-                        css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                        css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                         className="shadow outline-none"
                         size="xs"
                       >
@@ -305,7 +305,7 @@ const CreateAssociate = () => {
                         </option>
                       </Select>
                       <Select
-                        css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                        css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                         className="shadow outline-none"
                         size="xs"
                       >
@@ -317,14 +317,14 @@ const CreateAssociate = () => {
                         <input
                           type="text"
                           placeholder="12345678"
-                          className=" rounded bg-[#d4c3e480] px-2 text-center shadow outline-none"
+                          className=" rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                         />
                       </div>
                       <div>
                         <input
                           type="text"
                           placeholder="9977423432"
-                          className=" rounded bg-[#d4c3e480] px-2 text-center shadow outline-none"
+                          className=" rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                         />
                       </div>
                     </div>
@@ -334,7 +334,7 @@ const CreateAssociate = () => {
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
-                  className="rounded bg-[#32164A] px-4 py-1 text-white shadow"
+                  className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
                 >
                   Save
                 </button>

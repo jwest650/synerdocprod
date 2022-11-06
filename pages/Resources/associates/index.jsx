@@ -1,5 +1,5 @@
 import React from 'react';
-import Associates from '../../../components/resources/Associates';
+import Associates from '../../../components/resources/associates/Associates';
 
 const AssociatesPage = () => {
   return (
