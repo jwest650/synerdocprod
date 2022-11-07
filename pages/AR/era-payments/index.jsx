@@ -6,7 +6,7 @@ const EraPayments = () => {
     return (
         <div className="ar bodytext space-y-5 p-5 capitalize">
             <section className="space-y-3">
-                <h1 className="head text-2xl ">Era Payments</h1>
+                <h1 className="head  ">Era Payments</h1>
                 <aside>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">recieve dates from:</label>
@@ -32,7 +32,7 @@ const EraPayments = () => {
                                 placeholder="Enter invioce #"
                             />
                         </div>
-                        <button className="border  px-3">Search</button>
+                        <button className="btn">Search</button>
                     </div>
                 </aside>
                 <hr />

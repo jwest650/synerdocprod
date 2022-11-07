@@ -157,13 +157,11 @@ const AddPayments = () => {
                     </article>
                 </div>
                 <div className=" my-5 flex justify-end space-x-3">
-                    <button className="border  px-3 capitalize">
+                    <button className="btn capitalize">
                         save / enter more
                     </button>
-                    <button className="border  px-3 capitalize">
-                        save / close
-                    </button>
-                    <button className="border  px-3 capitalize">cancel</button>
+                    <button className="btn capitalize">save / close</button>
+                    <button className="btn capitalize">cancel</button>
                 </div>
             </main>
         </div>

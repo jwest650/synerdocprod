@@ -6,7 +6,7 @@ const InvoiceServiceSummary = () => {
         <div className="ar  bodytext p-5 capitalize">
             <section className="space-y-5 ">
                 <header className="flex items-center justify-between">
-                    <h1 className="head text-2xl font-bold">
+                    <h1 className="head">
                         Invoice Service Summary
                     </h1>
                     <div className=" flex w-52   space-x-1">
@@ -15,7 +15,7 @@ const InvoiceServiceSummary = () => {
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
-                        <button className="border px-3">Export</button>
+                        <button className="btn">Export</button>
                     </div>
                 </header>
 
@@ -37,7 +37,7 @@ const InvoiceServiceSummary = () => {
                     </div>
                     <div>
                         {" "}
-                        <button className="border  px-3">Search</button>
+                        <button className="btn">Search</button>
                     </div>
                 </section>
             </section>

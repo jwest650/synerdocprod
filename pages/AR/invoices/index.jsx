@@ -6,7 +6,7 @@ const Invoices = () => {
     return (
         <div className="ar bodytext space-y-2 p-5 capitalize">
             <section className="flex items-center justify-between">
-                <h1 className="head text-2xl capitalize">invoices</h1>
+                <h1 className="head ">invoices</h1>
 
                 <aside className="flex items-center space-x-40">
                     <div className="space-x-2">
@@ -19,7 +19,7 @@ const Invoices = () => {
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
-                        <button className="border  px-3">Export</button>
+                        <button className="btn">Export</button>
                     </div>
                 </aside>
             </section>
@@ -142,7 +142,7 @@ const Invoices = () => {
                         placeholder="Enter invioce #"
                     />
                 </div>
-                <button className="border p-1 px-3">Search</button>
+                <button className="btn">Search</button>
             </section>
             <hr />
             <div className="flex items-center space-x-4">

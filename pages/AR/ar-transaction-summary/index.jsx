@@ -6,7 +6,7 @@ const ARTransactionSummary = () => {
     return (
         <div className="ar  bodytext h-full space-y-4 p-5">
             <section className="flex items-center justify-between capitalize">
-                <h1 className="head text-2xl font-bold">
+                <h1 className="head">
                     A/R TransactionSummary
                 </h1>
                 <div className="flex items-center space-x-3">
@@ -79,10 +79,8 @@ const ARTransactionSummary = () => {
                         </Select>
                     </div>
                 </aside>
-                <div className="ml-auto  ">
-                    <Button variant="outline" size="sm">
-                        Search
-                    </Button>
+                <div className="ml-auto">
+                    <button className="btn">Search</button>
                 </div>
             </section>
 

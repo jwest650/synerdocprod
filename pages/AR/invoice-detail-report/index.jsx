@@ -6,7 +6,7 @@ const InvoiceDetailReport = () => {
     return (
         <div className="ar  bodytext space-y-2 p-5 capitalize">
             <section>
-                <h1 className="head text-2xl capitalize">
+                <h1 className="head">
                     Invoice Detail Report
                 </h1>
                 <hr />
@@ -16,7 +16,7 @@ const InvoiceDetailReport = () => {
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
                     </Select>
-                    <button className="border px-3">Export</button>
+                    <button className="btn">Export</button>
                 </div>
                 <div className="flex space-x-2">
                     <label htmlFor="">Agency:</label>
@@ -47,7 +47,7 @@ const InvoiceDetailReport = () => {
                                 size="sm"
                                 placeholder="Enter first or last name"
                             />
-                            <button className="border p-1 px-3">Search</button>
+                            <button className="btn">Search</button>
                         </div>
                     </div>
                 </section>

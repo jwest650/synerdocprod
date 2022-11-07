@@ -5,7 +5,7 @@ const ArAgingAsOfReport = () => {
     return (
         <div className="bodytext  ar space-y-5 p-5">
             <section className="flex items-center justify-between  capitalize">
-                <h1 className="head text-2xl">Ar Aging As Of Report</h1>
+                <h1 className="head">Ar Aging As Of Report</h1>
                 <div className="flex space-x-2">
                     <label htmlFor="">ar as of date:</label>
                     <Input
@@ -21,7 +21,7 @@ const ArAgingAsOfReport = () => {
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
                     </Select>
-                    <button className="border  px-2">Export</button>
+                    <button className="btn">Export</button>
                 </div>
             </section>
             <section className="flex items-center justify-between capitalize">

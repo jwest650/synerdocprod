@@ -6,7 +6,7 @@ const InvoiceErrors = () => {
     return (
         <div className="ar bodytext space-y-4 p-5 capitalize">
             <section>
-                <h1 className="head text-2xl capitalize">Invoice Errors</h1>
+                <h1 className="head">Invoice Errors</h1>
                 <hr />
                 <aside className="mt-2 space-y-2">
                     <div className="flex justify-end space-x-2">
@@ -15,7 +15,7 @@ const InvoiceErrors = () => {
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
-                        <button className="border  px-3">Export</button>
+                        <button className="btn">Export</button>
                     </div>
                     <div className="flex justify-between">
                         <div className="flex space-x-2">
@@ -37,7 +37,7 @@ const InvoiceErrors = () => {
                                 size="sm"
                                 placeholder="First or last name"
                             />
-                            <button className="border p-1 px-3">Search</button>
+                            <button className="btn">Search</button>
                         </div>
                     </div>
                 </aside>

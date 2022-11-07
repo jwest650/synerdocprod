@@ -1,6 +1,5 @@
 import React from "react";
 import { BsPlus } from "react-icons/bs";
-import { useDisclosure } from "@chakra-ui/react";
 
 const ContactsTab = () => {
     return (
@@ -8,8 +7,10 @@ const ContactsTab = () => {
             <article className="grid grid-cols-2 ">
                 <section className="space-y-2">
                     <div className="flex items-center space-x-4">
-                        <h1>address / phone info</h1>
-                        <button className="flex items-center capitalize text-orange-500 underline">
+                        <h1 className="text-xl font-bold capitalize">
+                            address / phone info
+                        </h1>
+                        <button className="flex items-center capitalize text-orange-500 underline ">
                             <BsPlus className="text-xl text-green-500" />
                             add contact info
                         </button>
@@ -28,14 +29,14 @@ const ContactsTab = () => {
                         </aside>
                         <aside className="grid w-full grid-cols-2 border-l capitalize">
                             <div>
-                                <h1>home address</h1>
+                                <h1 className="font-bold">home address</h1>
                                 <div>
                                     <p>22222 hwy 1 bypass</p>
                                     <p>nichito la 7174</p>
                                 </div>
                             </div>
                             <div>
-                                <h1>phone</h1>
+                                <h1 className="font-bold">phone</h1>
                                 <div>
                                     <p>home:(318):399494</p>
                                 </div>
@@ -45,7 +46,9 @@ const ContactsTab = () => {
                 </section>
                 <section className="space-y-2 border-l pl-3">
                     <div className="flex items-center space-x-4">
-                        <h1>patient contacts</h1>
+                        <h1 className="text-xl font-bold capitalize">
+                            patient contacts
+                        </h1>
                         <button className="flex items-center capitalize text-orange-500 underline">
                             <BsPlus className="text-xl text-green-500" />
                             add patient contact
@@ -61,18 +64,18 @@ const ContactsTab = () => {
                             <br />
                             <button className="text-orange-500">[Edit]</button>
                         </aside>
-                        <aside className="border-l capitalize">
+                        <aside className="w-full border-l capitalize">
                             <section>
-                                <div className="flex items-center justify-between">
-                                    <h1>james, jessel</h1>
+                                <div className="grid grid-cols-2">
+                                    <h1 className="font-bold">james, jessel</h1>
 
-                                    <p>brother</p>
+                                    <h1 className="font-bold">brother</h1>
                                 </div>
                                 <p>primary caregiver</p>
                             </section>
-                            <section className="flex items-center justify-between">
+                            <section className="grid grid-cols-2">
                                 <div>
-                                    <h1>home address</h1>
+                                    <h1 className="font-bold">home address</h1>
                                     <div>
                                         <p>22222 hwy 1 bypass</p>
                                         <p>nichito la 7174</p>
@@ -80,8 +83,12 @@ const ContactsTab = () => {
                                 </div>
                                 <div>
                                     {" "}
-                                    <h1>phone</h1>
+                                    <h1 className="font-bold">phone</h1>
+                                    <p>mobile:(318):399494</p>
                                 </div>
+                            </section>
+                            <section>
+                                <h1 className="font-bold">Email</h1>
                             </section>
                         </aside>
                     </div>

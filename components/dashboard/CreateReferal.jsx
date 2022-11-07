@@ -49,7 +49,12 @@ const CreateReferal = () => {
                             </header>
                             <section className="ml-12 space-y-3">
                                 <div className="flex space-x-2">
-                                    <label htmlFor="">*referral type:</label>{" "}
+                                    <label htmlFor="">
+                                        <span className="text-orange-500">
+                                            *
+                                        </span>{" "}
+                                        referral type:
+                                    </label>{" "}
                                     <Select
                                         placeholder="Select option"
                                         size="xs"
@@ -67,7 +72,12 @@ const CreateReferal = () => {
                                     </Select>
                                 </div>
                                 <div className="flex items-center space-x-2">
-                                    <label htmlFor="">*facilite name:</label>
+                                    <label htmlFor="">
+                                        <span className="text-orange-500">
+                                            *
+                                        </span>{" "}
+                                        facilite name:
+                                    </label>
 
                                     <Input
                                         w={200}
@@ -78,7 +88,12 @@ const CreateReferal = () => {
                                 </div>
 
                                 <div className="flex space-x-2">
-                                    <label htmlFor="">*facilite type:</label>
+                                    <label htmlFor="">
+                                        <span className="text-orange-500">
+                                            *
+                                        </span>{" "}
+                                        facilite type:
+                                    </label>
                                     <Select
                                         placeholder="Select option"
                                         size="xs"
@@ -105,7 +120,12 @@ const CreateReferal = () => {
                                     />
                                 </div>
                                 <div className="flex space-x-2">
-                                    <label htmlFor="">*sales rep:</label>
+                                    <label htmlFor="">
+                                        <span className="text-orange-500">
+                                            *
+                                        </span>{" "}
+                                        sales rep:
+                                    </label>
                                     <Select
                                         placeholder="Select option"
                                         size="xs"
@@ -123,7 +143,12 @@ const CreateReferal = () => {
                                     </Select>
                                 </div>
                                 <div className="space-x-2">
-                                    <label htmlFor="">*start date:</label>
+                                    <label htmlFor="">
+                                        <span className="text-orange-500">
+                                            *
+                                        </span>{" "}
+                                        start date:
+                                    </label>
                                     <Input
                                         w={150}
                                         type="date"

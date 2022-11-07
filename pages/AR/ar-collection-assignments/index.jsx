@@ -15,16 +15,16 @@ const ARCollectionAssignments = () => {
             <CreateCollectorModal isOpen={isOpen} onClose={onClose} />
             <div className="space-y-5">
                 <section className="flex items-center space-x-5">
-                    <h1 className="head text-2xl font-bold capitalize">
+                    <h1 className="head">
                         collector assignments
                     </h1>
-                    <div
-                        className="create-bg flex cursor-pointer items-center space-x-1"
+                    <button
+                        className="btn flex  items-center space-x-1"
                         onClick={onOpen}
                     >
                         <BsPlus />
                         <h1 className="text-sm capitalize">assign collector</h1>
-                    </div>
+                    </button>
                 </section>
                 <hr />
                 {/* table */}
@@ -72,12 +72,8 @@ const ARCollectionAssignments = () => {
                                     <td>{value.associate}</td>
                                     <td>
                                         <Actions
-                                            icon1={
-                                                <RiDeleteBin5Line />
-                                            }
-                                            icon2={
-                                                <RiEdit2Line  />
-                                            }
+                                            icon1={<RiDeleteBin5Line />}
+                                            icon2={<RiEdit2Line />}
                                         />
                                     </td>
                                 </tr>

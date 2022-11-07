@@ -9,7 +9,7 @@ const Payments = () => {
         <div className="ar bodytext space-y-3 p-5 capitalize">
             <section className="space-y-5">
                 <header className="flex items-center space-x-3">
-                    <h1 className="head text-2xl">Payments</h1>
+                    <h1 className="head ">Payments</h1>
                     <div className="create-bg flex cursor-pointer items-center space-x-1">
                         <BsPlus />
                         <Link href="/AR/add-payments">
@@ -47,7 +47,7 @@ const Payments = () => {
                                     <option value="option3">Option 3</option>
                                 </Select>
                             </div>
-                            <button className="border  px-3">Search</button>
+                            <button className="btn">Search</button>
                         </div>
                         <div className="flex justify-end  space-x-1">
                             <label htmlFor="">payment status:</label>
@@ -76,7 +76,7 @@ const Payments = () => {
                                     placeholder="Enter payment source"
                                 />
                             </div>
-                            <button className="border  px-3">Search</button>
+                            <button className="btn">Search</button>
                         </div>
                     </aside>
                 </article>
