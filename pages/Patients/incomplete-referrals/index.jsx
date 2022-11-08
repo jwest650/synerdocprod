@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Input } from '@chakra-ui/react';
-import EditReferral from './components/EditReferral';
-import { BiPlus } from 'react-icons/bi';
-import Link from 'next/link';
-import Image from 'next/image';
-import SearchIcon from '../../../assets/images/search.png';
+import React, { useState } from 'react'
+import { Input } from '@chakra-ui/react'
+import EditReferral from './components/EditReferral'
+import { BiPlus } from 'react-icons/bi'
+import Link from 'next/link'
+import Image from 'next/image'
+import SearchIcon from '../../../assets/images/search.png'
 
 const IncompleteReferrals = () => {
-  let data = [1, 1, 1, 1];
-  const [openAddReferral, setOpenAddReferral] = useState(false);
+  let data = [1, 1, 1, 1]
+  const [openAddReferral, setOpenAddReferral] = useState(false)
 
   return (
     <div className='w-full'>
@@ -20,7 +20,7 @@ const IncompleteReferrals = () => {
             </h1>
             <div className='flex cursor-pointer items-center space-x-2'>
               <Link href={'/Patients/add-referral'}>
-                <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'>
+                <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-secondary-color py-1 px-3 text-sm capitalize text-[#fff]'>
                   <BiPlus />
                   <span className='ml-1'>Add Referal/Patient</span>
                 </button>
@@ -33,7 +33,7 @@ const IncompleteReferrals = () => {
               <div>
                 <Input placeholder='small size' size='xs' width={300} />
               </div>
-              <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
+              <button className='ml-3 rounded border bg-secondary-color px-3 font-medium text-white'>
                 Search
               </button>
             </div>
@@ -43,7 +43,7 @@ const IncompleteReferrals = () => {
         <section>
           <div>
             <table className='mt-3 min-w-full overflow-auto'>
-              <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+              <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                 <tr>
                   <th className=' border-gray-100  pl-2 text-left'>Created</th>
                   <th className=' border-gray-100  pl-2 text-left'>Agency</th>
@@ -83,11 +83,13 @@ const IncompleteReferrals = () => {
                     <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
                     <td
                       className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'
-                      onClick={() => setOpenAddReferral(true)}
+                      // onClick={() => setOpenAddReferral(true)}
                     >
-                      <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
-                        James Gordon
-                      </p>
+                      <Link href={'/Patients/add-referral'}>
+                        <p className=' cursor-pointer text-sm font-bold text-secondary-color underline'>
+                          James Gordon
+                        </p>
+                      </Link>
                     </td>
                     <td className=' max-h-[20px] max-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       <Link href={'/Patients/add-referral'}>
@@ -112,7 +114,7 @@ const IncompleteReferrals = () => {
         setOpenAddReferral={setOpenAddReferral}
       />
     </div>
-  );
-};
+  )
+}
 
-export default IncompleteReferrals;
+export default IncompleteReferrals

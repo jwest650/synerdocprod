@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const AutomatedVerificationProcess = () => {
   return (
@@ -9,13 +9,13 @@ const AutomatedVerificationProcess = () => {
             Auto Verify Service
           </h1>
           <hr />
-          <button className='my-3 rounded border bg-orange-600 px-2 font-medium text-white'>
+          <button className='my-3 rounded border bg-secondary-color px-2 font-medium text-white'>
             Verify
           </button>
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default AutomatedVerificationProcess;
+export default AutomatedVerificationProcess

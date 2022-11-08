@@ -8,7 +8,7 @@ import {
   ModalCloseButton,
   Button,
   Input,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 
 const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
   return (
@@ -20,7 +20,7 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <div>
               <ModalHeader>
                 Edit Referral
@@ -30,8 +30,8 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
             <ModalBody>
               <div className='my-2 flex'>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span> Referral
-                  Type:{' '}
+                  <span className='font-bold text-secondary-color'>*</span>{' '}
+                  Referral Type:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Select size='xs'>
@@ -49,8 +49,8 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span> First
-                  Name:{' '}
+                  <span className='font-bold text-secondary-color'>*</span>{' '}
+                  First Name:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
@@ -66,7 +66,7 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span> Last
+                  <span className='font-bold text-secondary-color'>*</span> Last
                   Name:{' '}
                 </label>
                 <div className='w-[70%]'>
@@ -101,7 +101,8 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span> Start:{' '}
+                  <span className='font-bold text-secondary-color'>*</span>{' '}
+                  Start:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input
@@ -181,7 +182,7 @@ const EditReferral = ({ openAddReferral, setOpenAddReferral }) => {
         </ModalContent>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default EditReferral;
+export default EditReferral

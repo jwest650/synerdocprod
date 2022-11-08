@@ -9,7 +9,7 @@ import {
   Button,
   Input,
   Checkbox,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 
 const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
   return (
@@ -21,7 +21,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <div>
               <ModalHeader>
                 Add Referral
@@ -32,8 +32,8 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
             <ModalBody>
               <div className='my-2 flex'>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span>Referral
-                  Type:{' '}
+                  <span className='font-bold text-secondary-color'>*</span>
+                  Referral Type:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Select size='xs'>
@@ -51,7 +51,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span>First
+                  <span className='font-bold text-secondary-color'>*</span>First
                   Name:{' '}
                 </label>
                 <div className='w-[70%]'>
@@ -68,7 +68,8 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span>Last Name:{' '}
+                  <span className='font-bold text-secondary-color'>*</span>Last
+                  Name:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
@@ -102,7 +103,8 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               </div>
               <div className='my-2 flex '>
                 <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-orange-500'>*</span>Start:{' '}
+                  <span className='font-bold text-secondary-color'>*</span>
+                  Start:{' '}
                 </label>
                 <div className='w-[70%]'>
                   <Input
@@ -171,10 +173,10 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
             </ModalBody>
 
             <div className='mx-auto p-5'>
-              <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+              <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                 Save
               </button>
-              <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+              <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                 Cancel
               </button>
             </div>
@@ -182,7 +184,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
         </ModalContent>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default AddReferralSourceModal;
+export default AddReferralSourceModal

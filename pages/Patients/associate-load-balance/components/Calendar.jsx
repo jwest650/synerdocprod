@@ -9,6 +9,7 @@ import {
   ViewsDirective,
   ViewDirective,
   ScheduleComponent,
+  TimelineViews,
 } from '@syncfusion/ej2-react-schedule';
 import React, { useState, useContext } from 'react';
 import { scheduleData } from '../../../../assets/data';
@@ -27,7 +28,7 @@ const Calendar = () => {
       height='650px'
       ref={(schedule) => setScheduleObj(schedule)}
       selectedDate={new Date(2021, 0, 10)}
-      currentView='Week'
+      currentView='Day'
       actionComplete={handleSave}
       eventSettings={{ dataSource: scheduleData }}
     >
@@ -44,7 +45,7 @@ const Calendar = () => {
           Agenda,
           Resize,
           DragAndDrop,
-          // TimelineViews,
+          TimelineViews,
           // TimelineMonth,
           // TimelineYear,
         ]}

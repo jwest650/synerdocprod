@@ -1,8 +1,8 @@
-import { Input, Select } from '@chakra-ui/react';
-import React from 'react';
+import { Input, Select } from '@chakra-ui/react'
+import React from 'react'
 
 const AutomatedServiceVerificationErrors = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
 
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
@@ -30,7 +30,7 @@ const AutomatedServiceVerificationErrors = () => {
               <div>
                 <Input placeholder='small size' size='xs' width={300} />
               </div>
-              <button className='ml-3 rounded border bg-orange-600 px-2 text-sm font-medium text-white'>
+              <button className='ml-3 rounded border bg-secondary-color px-2 text-sm font-medium text-white'>
                 Search
               </button>
             </div>
@@ -41,7 +41,7 @@ const AutomatedServiceVerificationErrors = () => {
       <section>
         <div>
           <table className='min-w-full overflow-auto'>
-            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
               <tr>
                 <th className=' border-gray-100  pl-2 text-left'>
                   Patient Name
@@ -64,11 +64,11 @@ const AutomatedServiceVerificationErrors = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-[#6b3e9280]'>
+              <tr className='bg-light-blue'>
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -85,7 +85,7 @@ const AutomatedServiceVerificationErrors = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -102,7 +102,7 @@ const AutomatedServiceVerificationErrors = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -120,7 +120,7 @@ const AutomatedServiceVerificationErrors = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -172,7 +172,7 @@ const AutomatedServiceVerificationErrors = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default AutomatedServiceVerificationErrors;
+export default AutomatedServiceVerificationErrors

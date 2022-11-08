@@ -11,8 +11,8 @@ import {
   Button,
   Input,
   Checkbox,
-} from '@chakra-ui/react';
-import { useState } from 'react';
+} from '@chakra-ui/react'
+import { useState } from 'react'
 
 const AddReferralSourceContactModal = ({
   openAddReferralContact,
@@ -27,7 +27,7 @@ const AddReferralSourceContactModal = ({
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               Find Referral Source
               <p className='text-sm text-gray-600'>
@@ -40,9 +40,10 @@ const AddReferralSourceContactModal = ({
                 <div className='flex py-3'>
                   <div className='w-[150px]'>
                     <label htmlFor='#'>
-                      <span className='font-bold text-orange-500'>*</span>
+                      <span className='font-bold text-secondary-color'>*</span>
                       First/Middle/
-                      <span className='font-bold text-orange-500'>*</span>Last:
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Last:
                     </label>
                   </div>
 
@@ -116,18 +117,18 @@ const AddReferralSourceContactModal = ({
                 <div className='flex py-2'>
                   <div className='w-[150px]'>
                     <h1 className='mr-5'>
-                      <span className='font-bold text-orange-500'>*</span>Start
-                      Date:{' '}
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Start Date:{' '}
                     </h1>
                   </div>
                   <Input size={'xs'} type='date' />
                 </div>
               </section>
               <div className='flex justify-end py-3'>
-                <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                   Save
                 </button>
-                <button className='ml-2 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                <button className='ml-2 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                   Cancel
                 </button>
               </div>
@@ -136,7 +137,7 @@ const AddReferralSourceContactModal = ({
         </ModalContent>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default AddReferralSourceContactModal;
+export default AddReferralSourceContactModal

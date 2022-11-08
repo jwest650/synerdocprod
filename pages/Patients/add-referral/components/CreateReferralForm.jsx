@@ -1,12 +1,12 @@
-import { Select, Input, Checkbox } from '@chakra-ui/react';
-import { useState } from 'react';
-import AddReferralSourceContactModal from './AddReferralSourceContactModal';
-import FindReferralSourceModal from './FindReferralSourceModal';
+import { Select, Input, Checkbox } from '@chakra-ui/react'
+import { useState } from 'react'
+import AddReferralSourceContactModal from './AddReferralSourceContactModal'
+import FindReferralSourceModal from './FindReferralSourceModal'
 
 const CreateReferralForm = () => {
-  let data = [1, 1, 1, 1];
-  const [openFindReferral, setOpenFindReferral] = useState(false);
-  const [openAddReferralContact, setOpenAddReferralContact] = useState(false);
+  let data = [1, 1, 1, 1]
+  const [openFindReferral, setOpenFindReferral] = useState(false)
+  const [openAddReferralContact, setOpenAddReferralContact] = useState(false)
 
   return (
     <div>
@@ -24,7 +24,7 @@ const CreateReferralForm = () => {
         <div className=' flex  items-center justify-between'>
           <div className='flex items-center justify-between'>
             <label htmlFor='#' className='mr-3'>
-              <span className='font-bold text-orange-500'>*</span>Agency:{' '}
+              <span className='font-bold text-secondary-color'>*</span>Agency:{' '}
             </label>
             <Select size='xs'>
               <option value='option1' className='text-gray-800'>
@@ -40,7 +40,8 @@ const CreateReferralForm = () => {
           </div>
           <div className='my-2 flex'>
             <label htmlFor='#'>
-              <span className='font-bold text-orange-500'>*</span>Agency Type:{' '}
+              <span className='font-bold text-secondary-color'>*</span>Agency
+              Type:{' '}
             </label>
             <div>
               <Select size='xs'>
@@ -68,8 +69,8 @@ const CreateReferralForm = () => {
           <div className='flex py-3'>
             <div className='w-[150px]'>
               <label htmlFor='#'>
-                <span className='font-bold text-orange-500'>*</span>Referral
-                Source:
+                <span className='font-bold text-secondary-color'>*</span>
+                Referral Source:
               </label>
             </div>
             <div>
@@ -89,7 +90,7 @@ const CreateReferralForm = () => {
             <div className='ml-3'>
               <button
                 onClick={() => setOpenFindReferral(true)}
-                className='dark:text-[#E77654px-6 cursor-pointer rounded bg-orange-600  py-1 px-5 text-sm capitalize text-[#fff]'
+                className='dark:text-[#E77654px-6 cursor-pointer rounded bg-secondary-color  py-1 px-5 text-sm capitalize text-[#fff]'
               >
                 find referral source
               </button>
@@ -109,7 +110,7 @@ const CreateReferralForm = () => {
             </div>
             <div>
               <table className=' min-w-full overflow-auto'>
-                <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                   <tr>
                     <th className=' border-gray-100  pl-2 text-left'></th>
                     <th className=' border-gray-100  pl-2 text-left'>
@@ -202,7 +203,7 @@ const CreateReferralForm = () => {
             <div className='ml-3'>
               <button
                 onClick={() => setOpenAddReferralContact(true)}
-                className='dark:text-[#E77654px-6 cursor-pointer rounded bg-orange-600  py-1 px-5 text-sm capitalize text-[#fff]'
+                className='dark:text-[#E77654px-6 cursor-pointer rounded bg-secondary-color  py-1 px-5 text-sm capitalize text-[#fff]'
               >
                 add referral source contact
               </button>
@@ -283,7 +284,7 @@ const CreateReferralForm = () => {
           <div className='flex py-3'>
             <div className='w-[150px]'>
               <label htmlFor='#' className='mr-3'>
-                <span className='font-bold text-orange-500'>*</span> Payer
+                <span className='font-bold text-secondary-color'>*</span> Payer
                 Category:
               </label>
             </div>
@@ -356,12 +357,13 @@ const CreateReferralForm = () => {
           <div className='flex py-5'>
             <div className='w-[150px]'>
               <h1 className='mr-5'>
-                <span className='font-bold text-orange-500'>*</span>Descipline:{' '}
+                <span className='font-bold text-secondary-color'>*</span>
+                Descipline:{' '}
               </h1>
             </div>
             <div>
               <table className=' min-w-full overflow-auto'>
-                <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                   <tr>
                     <th className=' border-gray-100  pl-2 text-left'></th>
                     <th className=' border-gray-100  pl-2 text-left'>
@@ -438,7 +440,7 @@ const CreateReferralForm = () => {
         setOpenAddReferralContact={setOpenAddReferralContact}
       />
     </div>
-  );
-};
+  )
+}
 
-export default CreateReferralForm;
+export default CreateReferralForm

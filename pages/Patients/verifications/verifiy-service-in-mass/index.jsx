@@ -1,10 +1,10 @@
-import { Checkbox, Input, Select } from '@chakra-ui/react';
-import React from 'react';
-import { BiNotepad } from 'react-icons/bi';
-import { GrEdit } from 'react-icons/gr';
+import { Checkbox, Input, Select } from '@chakra-ui/react'
+import React from 'react'
+import { BiNotepad } from 'react-icons/bi'
+import { GrEdit } from 'react-icons/gr'
 
 const VerifyServiceInMass = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
 
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
@@ -12,10 +12,10 @@ const VerifyServiceInMass = () => {
         <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
           Verify Service in mass
         </h1>
-        <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
+        <button className='ml-3 rounded border bg-secondary-color px-3 font-medium text-white'>
           Verify All Checked
         </button>
-        <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
+        <button className='ml-3 rounded border bg-secondary-color px-3 font-medium text-white'>
           View All Unverified Service
         </button>
       </div>
@@ -72,7 +72,7 @@ const VerifyServiceInMass = () => {
             </div>
           </div>
           <div>
-            <button className='ml-3 rounded border bg-orange-600 px-3 font-medium text-white'>
+            <button className='ml-3 rounded border bg-secondary-color px-3 font-medium text-white'>
               Search
             </button>
           </div>
@@ -105,7 +105,7 @@ const VerifyServiceInMass = () => {
 
       <section>
         <table className='min-w-full overflow-auto'>
-          <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+          <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
             <tr>
               <th className=' border-gray-100  pl-2 text-left'></th>
               <th className=' border-gray-100  pl-2 text-left'></th>
@@ -245,7 +245,7 @@ const VerifyServiceInMass = () => {
         </table>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default VerifyServiceInMass;
+export default VerifyServiceInMass

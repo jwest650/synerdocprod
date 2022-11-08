@@ -11,8 +11,8 @@ import {
   Button,
   Input,
   Checkbox,
-} from '@chakra-ui/react';
-import { useState } from 'react';
+} from '@chakra-ui/react'
+import { useState } from 'react'
 
 const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
   return (
@@ -24,7 +24,7 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               <h1>Re-Admit Patient</h1>
               <p>Additional information to copy along</p>
@@ -42,7 +42,7 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
                 <Checkbox>Include Vaccines</Checkbox>
                 <Checkbox>Include Allergies</Checkbox>
                 <div className='my-3 flex justify-end'>
-                  <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                  <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                     Continue
                   </button>
                 </div>
@@ -52,7 +52,7 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
         </ModalContent>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default ReAdmitPatientModal;
+export default ReAdmitPatientModal

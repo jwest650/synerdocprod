@@ -9,13 +9,13 @@ import {
   Button,
   Input,
   Checkbox,
-} from '@chakra-ui/react';
-import { useState } from 'react';
-import AddReferralSourceModal from './AddReferralSourceModal';
+} from '@chakra-ui/react'
+import { useState } from 'react'
+import AddReferralSourceModal from './AddReferralSourceModal'
 
 const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
-  let data = [1, 1, 1, 1, 1];
-  const [openAddReferral, setOpenAddReferral] = useState(false);
+  let data = [1, 1, 1, 1, 1]
+  const [openAddReferral, setOpenAddReferral] = useState(false)
 
   return (
     <div>
@@ -26,7 +26,7 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               Find Referral Source
               <p className='text-sm text-gray-600'>
@@ -61,7 +61,7 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
 
               <div>
                 <table className='mt-10 min-w-full overflow-auto'>
-                  <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                  <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                     <tr>
                       <th className=' border-gray-100  pl-2 text-left'>
                         Select
@@ -96,10 +96,10 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
               </div>
               <div className='ml-auto'>
                 <div className='flex justify-end py-3'>
-                  <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                  <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                     Save
                   </button>
-                  <button className='rounded ml-3 bg-[#32164A] px-4 py-1 text-white shadow'>
+                  <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                     Cancel
                   </button>
                 </div>
@@ -107,7 +107,7 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
                 <div className='flex justify-end'>
                   <button
                     onClick={() => setOpenAddReferral(true)}
-                    className='rounded bg-[#32164A] px-4 py-1 text-white shadow'
+                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
                   >
                     add referral source
                   </button>
@@ -124,7 +124,7 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
         setOpenAddReferral={setOpenAddReferral}
       />
     </div>
-  );
-};
+  )
+}
 
-export default FindReferralSourceModal;
+export default FindReferralSourceModal

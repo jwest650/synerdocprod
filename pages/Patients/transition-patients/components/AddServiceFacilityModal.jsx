@@ -7,17 +7,17 @@ import {
   ModalHeader,
   ModalOverlay,
   Input,
-} from '@chakra-ui/react';
-import { useState } from 'react';
-import AddFacilitySourceModal from './AddFacilitySourceModal';
+} from '@chakra-ui/react'
+import { useState } from 'react'
+import AddFacilitySourceModal from './AddFacilitySourceModal'
 
 const AddServiceFacilityModal = ({
   openAddServiceFacility,
   setOpenAddServiceFacility,
 }) => {
-  let data = [1, 1, 1, 1, 1];
+  let data = [1, 1, 1, 1, 1]
 
-  const [openFacilitySource, setOpenFacilitySource] = useState(false);
+  const [openFacilitySource, setOpenFacilitySource] = useState(false)
 
   return (
     <div>
@@ -28,7 +28,7 @@ const AddServiceFacilityModal = ({
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               <h1>Service Modal</h1>
               <p>add information and save</p>
@@ -45,14 +45,14 @@ const AddServiceFacilityModal = ({
               </div>
 
               <div className='flex justify-end'>
-                <button className='my-2 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                <button className='my-2 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                   Search
                 </button>
               </div>
 
               <div>
                 <table className='mt-10 min-w-full overflow-auto'>
-                  <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                  <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                     <tr>
                       <th className=' border-gray-100  pl-2 text-left'>
                         Select
@@ -88,12 +88,12 @@ const AddServiceFacilityModal = ({
               <div className='ml-auto'>
                 <div className='flex justify-end py-3'>
                   <button
-                    className='rounded bg-[#32164A] px-4 py-1 text-white shadow'
+                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
                     mr={3}
                   >
                     Save
                   </button>
-                  <button className='my-2 ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                  <button className='my-2 ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                     Cancel
                   </button>
                 </div>
@@ -101,7 +101,7 @@ const AddServiceFacilityModal = ({
                 <div className='flex justify-end'>
                   <button
                     onClick={() => setOpenFacilitySource(true)}
-                    className='rounded bg-[#32164A] px-4 py-1 text-white shadow'
+                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
                   >
                     add facility source
                   </button>
@@ -117,7 +117,7 @@ const AddServiceFacilityModal = ({
         setOpenFacilitySource={setOpenFacilitySource}
       />
     </div>
-  );
-};
+  )
+}
 
-export default AddServiceFacilityModal;
+export default AddServiceFacilityModal

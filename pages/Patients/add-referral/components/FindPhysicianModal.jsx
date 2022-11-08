@@ -7,11 +7,11 @@ import {
   ModalContent,
   ModalHeader,
   ModalOverlay,
-} from '@chakra-ui/react';
-import React from 'react';
+} from '@chakra-ui/react'
+import React from 'react'
 
 const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
   return (
     <div>
       <Modal
@@ -21,7 +21,7 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
                 Find Physician
@@ -43,12 +43,14 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                     </div>
                   </div>
                   <div className='my-2 flex justify-end'>
-                    <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>Searh</button>
+                    <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      Searh
+                    </button>
                   </div>
                 </div>
 
                 <table className=' min-w-full overflow-auto'>
-                  <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                  <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                     <tr>
                       <th className=' border-gray-100  pl-2 text-left'>
                         Select
@@ -83,12 +85,14 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                 <div className='my-3 flex justify-end'>
                   <div>
                     <div>
-                      <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>Save</button>
-                      <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                      <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                        Save
+                      </button>
+                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                         Cancel
                       </button>
                     </div>
-                    <button className='rounded bg-[#32164A] my-2 px-4 py-1 text-white shadow'>
+                    <button className='my-2 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                       add physician
                     </button>
                   </div>
@@ -99,7 +103,7 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
         </ModalContent>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default FindPhysicianModal;
+export default FindPhysicianModal

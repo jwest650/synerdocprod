@@ -8,12 +8,12 @@ import {
   ModalHeader,
   ModalOverlay,
   Select,
-} from '@chakra-ui/react';
-import React from 'react';
-import { FiTrash2 } from 'react-icons/fi';
+} from '@chakra-ui/react'
+import React from 'react'
+import { FiTrash2 } from 'react-icons/fi'
 
 const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
-  let data = [1, 1];
+  let data = [1, 1]
 
   return (
     <div>
@@ -24,7 +24,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               <h1>Add Address/Phone Info</h1>
               <p className='text-sm'>add information and save</p>
@@ -36,7 +36,9 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
                       <label htmlFor='#'>
-                        <span className='font-bold text-orange-500'>*</span>
+                        <span className='font-bold text-secondary-color'>
+                          *
+                        </span>
                         Address Type:
                       </label>
                     </div>
@@ -58,7 +60,9 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
                       <label htmlFor='#'>
-                        <span className='font-bold text-orange-500'>*</span>
+                        <span className='font-bold text-secondary-color'>
+                          *
+                        </span>
                         Address 1:
                       </label>
                     </div>
@@ -79,7 +83,9 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
                       <label htmlFor='#'>
-                        <span className='font-bold text-orange-500'>*</span>
+                        <span className='font-bold text-secondary-color'>
+                          *
+                        </span>
                         City/State/Zip:
                       </label>
                     </div>
@@ -134,7 +140,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </div>
                   </div>
                   <div className='my-3 flex items-end justify-end'>
-                    <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                    <button className='rounded bg-primary-color px-4 py-1 text-white shadow'>
                       add contact
                     </button>
                   </div>
@@ -142,7 +148,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
 
                 <div className='flex w-[100%] flex-1 flex-col justify-between p-2'>
                   <table className=' min-w-full overflow-auto'>
-                    <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+                    <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                       <tr>
                         <th className=' border-gray-100  pl-2 text-left'>
                           Preffered
@@ -181,13 +187,13 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   </table>
                   <div className='my-3 flex items-end justify-end'>
                     <div>
-                      <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                      <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                         Save
                       </button>
-                      <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                         Continue
                       </button>
-                      <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                         Cancel
                       </button>
                     </div>
@@ -199,7 +205,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
         </ModalContent>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default AddContactInfoModal;
+export default AddContactInfoModal

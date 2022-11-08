@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import {
   Table,
   thead,
@@ -11,11 +11,11 @@ import {
   Button,
   Checkbox,
   Select,
-} from '@chakra-ui/react';
-import { BsFillCalendarDateFill } from 'react-icons/bs';
+} from '@chakra-ui/react'
+import { BsFillCalendarDateFill } from 'react-icons/bs'
 
 const MoveServiceNote = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
 
   return (
     <div className='w-full'>
@@ -27,7 +27,7 @@ const MoveServiceNote = () => {
       <div className='flex py-3'>
         <div className='w-[150px]'>
           <h1 className='mr-5'>
-            <span className='font-bold text-orange-500'>*</span> Patient:{' '}
+            <span className='font-bold text-secondary-color'>*</span> Patient:{' '}
           </h1>
         </div>
         <div>
@@ -47,7 +47,7 @@ const MoveServiceNote = () => {
       <div className='flex py-3'>
         <div className='w-[150px]'>
           <h1 className='mr-5'>
-            <span className='font-bold text-orange-500'>*</span> Service:{' '}
+            <span className='font-bold text-secondary-color'>*</span> Service:{' '}
           </h1>
         </div>
         <div>
@@ -67,8 +67,8 @@ const MoveServiceNote = () => {
       <div className='flex py-3'>
         <div className='w-[150px]'>
           <h1 className='mr-5'>
-            <span className='font-bold text-orange-500'>*</span> Move Patient
-            To:{' '}
+            <span className='font-bold text-secondary-color'>*</span> Move
+            Patient To:{' '}
           </h1>
         </div>
         <div>
@@ -92,7 +92,7 @@ const MoveServiceNote = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
               <tr>
                 <th className=' border-gray-100  pl-2 text-left'></th>
                 <th className=' border-gray-100  pl-2 text-left'>
@@ -146,13 +146,13 @@ const MoveServiceNote = () => {
         </div>
 
         <div className='flex justify-end py-5'>
-          <button className='rounded border  bg-orange-600 px-2 font-medium text-white '>
+          <button className='rounded border  bg-secondary-color px-2 font-medium text-white '>
             Move
           </button>
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default MoveServiceNote;
+export default MoveServiceNote

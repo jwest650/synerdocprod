@@ -18,8 +18,12 @@ module.exports = {
         'secondary-text-light': '#0e1922',
         'main-text-dark': '#ffffff',
         'secondary-text-dark': '#9ca3af',
+        'primary-color': '#0141CF',
+        'primary-light-color': '#3374ff83',
+        'light-blue': '#C7D9FF',
+        'secondary-color': '#EA580C',
       },
     },
   },
   plugins: [],
-};
+}

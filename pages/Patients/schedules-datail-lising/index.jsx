@@ -5,16 +5,16 @@ import {
   Select,
   Table,
   TableContainer,
-} from '@chakra-ui/react';
-import { BsSearch } from 'react-icons/bs';
-import AddPayerModal from './AddPayerModal';
-import TableAction from './TableAction';
-import { useState } from 'react';
-import { BiPlus } from 'react-icons/bi';
+} from '@chakra-ui/react'
+import { BsSearch } from 'react-icons/bs'
+import AddPayerModal from './AddPayerModal'
+import TableAction from './TableAction'
+import { useState } from 'react'
+import { BiPlus } from 'react-icons/bi'
 
 const SchedulesDetailListing = () => {
-  let data = [1, 1, 1, 1];
-  const [openAddPayer, setOpenAddPayer] = useState(false);
+  let data = [1, 1, 1, 1]
+  const [openAddPayer, setOpenAddPayer] = useState(false)
 
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
@@ -24,7 +24,7 @@ const SchedulesDetailListing = () => {
             Schedules
           </h1>
           <button
-            className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'
+            className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-secondary-color py-1 px-3 text-sm capitalize text-[#fff]'
             onClick={() => setOpenAddReferral(true)}
           >
             <BiPlus />
@@ -39,7 +39,7 @@ const SchedulesDetailListing = () => {
                 <option value='pdf'>PDF Summary</option>
                 <option value='spreadsheet'>Spreadsheet Summary</option>
               </Select>
-              <button className='ml-2 rounded  border bg-orange-600 px-2 text-white'>
+              <button className='ml-2 rounded  border bg-secondary-color px-2 text-white'>
                 Export
               </button>
             </div>
@@ -54,7 +54,7 @@ const SchedulesDetailListing = () => {
               />
               <Input placeholder='small size' size='xs' type={'text'} ml={3} />
             </div>
-            <button className='ml-2 rounded  border bg-orange-600 px-2 text-white'>
+            <button className='ml-2 rounded  border bg-secondary-color px-2 text-white'>
               Search
             </button>
           </div>
@@ -104,11 +104,11 @@ const SchedulesDetailListing = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-[#6b3e9280]'>
+              <tr className='bg-light-blue'>
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -125,7 +125,7 @@ const SchedulesDetailListing = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -142,7 +142,7 @@ const SchedulesDetailListing = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -162,7 +162,7 @@ const SchedulesDetailListing = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -179,7 +179,7 @@ const SchedulesDetailListing = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -240,7 +240,7 @@ const SchedulesDetailListing = () => {
         setOpenAddPayer={setOpenAddPayer}
       />
     </div>
-  );
-};
+  )
+}
 
-export default SchedulesDetailListing;
+export default SchedulesDetailListing

@@ -1,8 +1,11 @@
-import { Button, Checkbox, Input, Select } from '@chakra-ui/react';
-import { BsSearch } from 'react-icons/bs';
+import { Button, Checkbox, Input, Select } from '@chakra-ui/react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { BsSearch } from 'react-icons/bs'
+import SearchIcon from '../../../assets/images/search.png'
 
 const VerifiedServices = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
@@ -18,7 +21,7 @@ const VerifiedServices = () => {
               <option value='pdf'>PDF Summary</option>
               <option value='spreadsheet'>Spreadsheet Summary</option>
             </Select>
-            <button className='rounded border  bg-orange-600 px-2 font-medium text-white'>
+            <button className='rounded border  bg-secondary-color px-2 font-medium text-white'>
               Export
             </button>
           </div>
@@ -84,7 +87,7 @@ const VerifiedServices = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
               <tr>
                 <th className=' border-gray-100  pl-2 text-left'>Patient</th>
                 <th className=' border-gray-100  pl-2 text-left'>Associates</th>
@@ -100,11 +103,11 @@ const VerifiedServices = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-[#6b3e9280]'>
+              <tr className='bg-light-blue'>
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -121,7 +124,7 @@ const VerifiedServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -138,7 +141,7 @@ const VerifiedServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -158,7 +161,7 @@ const VerifiedServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -175,7 +178,7 @@ const VerifiedServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -220,7 +223,14 @@ const VerifiedServices = () => {
                     </p>
                   </td>
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <BsSearch />
+                    <Link href={'#'}>
+                      <Image
+                        src={SearchIcon}
+                        alt='icon'
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
                   </td>
                 </tr>
               ))}
@@ -229,7 +239,7 @@ const VerifiedServices = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default VerifiedServices;
+export default VerifiedServices

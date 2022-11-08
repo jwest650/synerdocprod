@@ -9,8 +9,8 @@ import {
   Input,
   Textarea,
   Select,
-} from '@chakra-ui/react';
-import React from 'react';
+} from '@chakra-ui/react'
+import React from 'react'
 
 const AddPatientContactModal = ({
   openPatientContact,
@@ -25,7 +25,7 @@ const AddPatientContactModal = ({
       >
         <ModalOverlay />
         <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               <h1>Add Patient Contact info</h1>
               <p>add information and save</p>
@@ -37,7 +37,7 @@ const AddPatientContactModal = ({
                   <div className='w-[150px]'>
                     <label htmlFor='#'>
                       {' '}
-                      <span className='font-bold text-orange-500'>*</span>
+                      <span className='font-bold text-secondary-color'>*</span>
                       Relationship:
                     </label>
                   </div>
@@ -75,8 +75,8 @@ const AddPatientContactModal = ({
                 <div className='my-2 flex'>
                   <div className='w-[150px]'>
                     <label htmlFor='#'>
-                      <span className='font-bold text-orange-500'>*</span>First
-                      Name:
+                      <span className='font-bold text-secondary-color'>*</span>
+                      First Name:
                     </label>
                   </div>
                   <div>
@@ -87,8 +87,8 @@ const AddPatientContactModal = ({
                 <div className='my-2 flex'>
                   <div className='w-[150px]'>
                     <label htmlFor='#'>
-                      <span className='font-bold text-orange-500'>*</span>Last
-                      Name:
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Last Name:
                     </label>
                   </div>
                   <div>
@@ -147,10 +147,10 @@ const AddPatientContactModal = ({
                 </div>
               </section>
               <div className='flex justify-end py-3'>
-                <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                   Continue
                 </button>
-                <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                   Cancel
                 </button>
               </div>
@@ -159,7 +159,7 @@ const AddPatientContactModal = ({
         </ModalContent>
       </Modal>
     </div>
-  );
-};
+  )
+}
 
-export default AddPatientContactModal;
+export default AddPatientContactModal

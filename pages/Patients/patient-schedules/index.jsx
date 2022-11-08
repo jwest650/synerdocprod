@@ -1,9 +1,12 @@
-import { Button, Input, Select } from '@chakra-ui/react';
-import { BsSearch, BsUnlock } from 'react-icons/bs';
-import { RiBook2Fill } from 'react-icons/ri';
+import { Button, Input, Select } from '@chakra-ui/react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { FcUnlock } from 'react-icons/fc'
+import { RiBook2Fill } from 'react-icons/ri'
+import SearchIcon from '../../../assets/images/search.png'
 
 const PatientSchedules = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
 
   return (
     <div className='w-full '>
@@ -30,7 +33,7 @@ const PatientSchedules = () => {
             <div className='flex '>
               <Input placeholder='small size' size='xs' type={'text'} ml={3} />
             </div>
-            <button className='text-medium ml-3 rounded border bg-orange-600 px-2  text-white'>
+            <button className='text-medium ml-3 rounded border bg-secondary-color px-2  text-white'>
               Search
             </button>
           </div>
@@ -40,7 +43,7 @@ const PatientSchedules = () => {
       <section>
         <div>
           <table className='mt-2 min-w-full overflow-auto'>
-            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
               <tr>
                 <th className=' border-gray-100  pl-2 text-left'></th>
                 <th className=' border-gray-100  pl-2 text-left'>
@@ -65,13 +68,13 @@ const PatientSchedules = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-[#6b3e9280]'>
+              <tr className='bg-light-blue'>
                 <td></td>
                 <td></td>
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -88,7 +91,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -106,7 +109,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -123,7 +126,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -140,7 +143,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -157,7 +160,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -173,7 +176,7 @@ const PatientSchedules = () => {
                 </td>
 
                 <td className='px-2'>
-                  <BsUnlock />
+                  <FcUnlock className='mx-auto h-[20px] w-[20px]' />
                 </td>
               </tr>
 
@@ -186,7 +189,7 @@ const PatientSchedules = () => {
                     <RiBook2Fill />
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                    <p className=' cursor-pointer text-sm font-bold text-secondary-color underline'>
                       James Gordon
                     </p>
                   </td>
@@ -212,7 +215,14 @@ const PatientSchedules = () => {
                     Winn
                   </td>
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <BsSearch />
+                    <Link href={'#'}>
+                      <Image
+                        src={SearchIcon}
+                        alt='icon'
+                        width={20}
+                        height={20}
+                      />
+                    </Link>
                   </td>
                 </tr>
               ))}
@@ -221,7 +231,7 @@ const PatientSchedules = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default PatientSchedules;
+export default PatientSchedules
