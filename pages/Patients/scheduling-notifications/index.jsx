@@ -63,11 +63,15 @@ const SchedulingNotifications = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      <Checkbox></Checkbox>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium '>
+                      <div className='flex justify-center'>
+                        <Checkbox></Checkbox>
+                      </div>
                     </td>
-                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      <BsFillCalendarDateFill />
+                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium '>
+                      <div className='flex justify-center'>
+                        <BsFillCalendarDateFill />
+                      </div>
                     </td>
                     <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       Tampa Home Health

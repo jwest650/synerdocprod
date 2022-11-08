@@ -143,6 +143,9 @@ const MoveServiceNote = () => {
               ))}
             </tbody>
           </table>
+          <p className='flex items-center bg-gray-200 p-1 text-sm'>
+            show page 1 of 1, rows 1 to 3 of 3
+          </p>
         </div>
 
         <div className='flex justify-end py-5'>

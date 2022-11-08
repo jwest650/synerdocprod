@@ -22,10 +22,10 @@ const CreateReferralForm = () => {
         </div>
         <hr />
         <div className=' flex  items-center justify-between'>
-          <div className='flex items-center justify-between'>
-            <label htmlFor='#' className='mr-3'>
-              <span className='font-bold text-secondary-color'>*</span>Agency:{' '}
-            </label>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              <span className='font-bold text-secondary-color'>*</span>Agency:
+            </p>
             <Select size='xs'>
               <option value='option1' className='text-gray-800'>
                 Option 1
@@ -38,24 +38,23 @@ const CreateReferralForm = () => {
               </option>
             </Select>
           </div>
+
           <div className='my-2 flex'>
-            <label htmlFor='#'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
               <span className='font-bold text-secondary-color'>*</span>Agency
               Type:{' '}
-            </label>
-            <div>
-              <Select size='xs'>
-                <option value='option1' className='text-gray-800'>
-                  Option 1
-                </option>
-                <option value='option2' className='text-gray-800'>
-                  Option 2
-                </option>
-                <option value='option3' className='text-gray-800'>
-                  Option 3
-                </option>
-              </Select>
-            </div>
+            </p>
+            <Select size='xs'>
+              <option value='option1' className='text-gray-800'>
+                Option 1
+              </option>
+              <option value='option2' className='text-gray-800'>
+                Option 2
+              </option>
+              <option value='option3' className='text-gray-800'>
+                Option 3
+              </option>
+            </Select>
           </div>
         </div>
       </section>
@@ -66,13 +65,11 @@ const CreateReferralForm = () => {
             <h1 className='text-2xl'>Referral Source</h1>
           </div>
           <hr />
-          <div className='flex py-3'>
-            <div className='w-[150px]'>
-              <label htmlFor='#'>
-                <span className='font-bold text-secondary-color'>*</span>
-                Referral Source:
-              </label>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              <span className='font-bold text-secondary-color'>*</span>
+              Referral Source:{' '}
+            </p>
             <div>
               <Select size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
@@ -86,7 +83,6 @@ const CreateReferralForm = () => {
                 </option>
               </Select>
             </div>
-
             <div className='ml-3'>
               <button
                 onClick={() => setOpenFindReferral(true)}
@@ -96,18 +92,16 @@ const CreateReferralForm = () => {
               </button>
             </div>
           </div>
-
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Referral Phone: </h1>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Referral Phone:
+            </p>
             <p className='text-gray-500'>w: (3434)-343445</p>
           </div>
-
-          <div className='flex '>
-            <div className='w-[150px]'>
-              <h1 className=''>Referral History: </h1>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Referral History:
+            </p>
             <div>
               <table className=' min-w-full overflow-auto'>
                 <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
@@ -142,10 +136,10 @@ const CreateReferralForm = () => {
             </div>
           </div>
 
-          <div className='mt-5 flex'>
-            <div className='w-[150px]'>
-              <label htmlFor='#'>Mode of Delivery:</label>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Mode of Delivery:
+            </p>
             <div>
               <Select size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
@@ -160,11 +154,10 @@ const CreateReferralForm = () => {
               </Select>
             </div>
           </div>
-
-          <div className='my-5 flex'>
-            <div className='w-[150px]'>
-              <label htmlFor='#'>Sales Rep:</label>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Sales Rep:
+            </p>
             <div>
               <Select size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
@@ -182,10 +175,10 @@ const CreateReferralForm = () => {
         </section>
         {/* Referral Source Contact */}
         <section className='mt-10 '>
-          <div className='flex py-3'>
-            <div className='w-[150px]'>
-              <label htmlFor='#'>Referral Source Contact:</label>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Referral Source Contact:
+            </p>
             <div>
               <Select size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
@@ -210,10 +203,8 @@ const CreateReferralForm = () => {
             </div>
           </div>
 
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Phone 1: </h1>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>Phone 1:</p>
             <div className='flex'>
               <div>
                 <Select size='xs'>
@@ -234,10 +225,8 @@ const CreateReferralForm = () => {
               </div>
             </div>
           </div>
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Phone 2: </h1>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>Phone 2:</p>
             <div className='flex'>
               <div>
                 <Select size='xs'>
@@ -258,18 +247,17 @@ const CreateReferralForm = () => {
               </div>
             </div>
           </div>
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Email: </h1>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>Email:</p>
             <div>
               <Input size={'xs'} />
             </div>
           </div>
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Information: </h1>
-            </div>
+
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Information:
+            </p>
             <div>
               <Input size={'xs'} />
             </div>
@@ -281,15 +269,13 @@ const CreateReferralForm = () => {
         <div className=' py-3 '>
           <h1 className='py-3 text-2xl'>Initial Referral Information</h1>
           <hr />
-          <div className='flex py-3'>
-            <div className='w-[150px]'>
-              <label htmlFor='#' className='mr-3'>
-                <span className='font-bold text-secondary-color'>*</span> Payer
-                Category:
-              </label>
-            </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              <span className='font-bold text-secondary-color'>*</span>
+              Payer Category:
+            </p>
             <div>
-              <Select size='xs'>
+              <Select size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -302,28 +288,31 @@ const CreateReferralForm = () => {
               </Select>
             </div>
           </div>
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Referral Date: </h1>
-            </div>
+
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Referral Date:
+            </p>
             <div>
               <Input size={'xs'} type='date' />
             </div>
           </div>
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Requested start of care: </h1>
-            </div>
+
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Requested start of care:
+            </p>
             <div>
               <Input size={'xs'} type='date' />
             </div>
           </div>
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Admission Source: </h1>
-            </div>
+
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Admission Source:
+            </p>
             <div>
-              <Select size='xs'>
+              <Select size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -336,12 +325,13 @@ const CreateReferralForm = () => {
               </Select>
             </div>
           </div>
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Admission Type: </h1>
-            </div>
+
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Admission Type:
+            </p>
             <div>
-              <Select size='xs'>
+              <Select size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -354,13 +344,13 @@ const CreateReferralForm = () => {
               </Select>
             </div>
           </div>
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>
-                <span className='font-bold text-secondary-color'>*</span>
-                Descipline:{' '}
-              </h1>
-            </div>
+
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              <span className='font-bold text-secondary-color'>*</span>
+              Descipline:
+            </p>
+
             <div>
               <table className=' min-w-full overflow-auto'>
                 <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>

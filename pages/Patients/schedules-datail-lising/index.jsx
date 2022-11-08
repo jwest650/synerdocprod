@@ -11,6 +11,7 @@ import AddPayerModal from './AddPayerModal'
 import TableAction from './TableAction'
 import { useState } from 'react'
 import { BiPlus } from 'react-icons/bi'
+import { FcUnlock } from 'react-icons/fc'
 
 const SchedulesDetailListing = () => {
   let data = [1, 1, 1, 1]
@@ -44,14 +45,26 @@ const SchedulesDetailListing = () => {
               </button>
             </div>
           </div>
-          <div className='flex'>
-            <div className='flex '>
+          <div className='ml-3 flex items-center space-x-3'>
+            <div className='flex items-center space-x-2'>
+              <p>From:</p>
               <Input
                 placeholder='small size'
                 size='xs'
                 ml={'3'}
-                type={'text'}
+                type={'date'}
               />
+              <p>To:</p>
+              <Input
+                placeholder='small size'
+                size='xs'
+                ml={'3'}
+                type={'date'}
+              />
+            </div>
+          </div>
+          <div className='flex'>
+            <div className='flex '>
               <Input placeholder='small size' size='xs' type={'text'} ml={3} />
             </div>
             <button className='ml-2 rounded  border bg-secondary-color px-2 text-white'>
@@ -194,7 +207,11 @@ const SchedulesDetailListing = () => {
                   </Select>
                 </td>
                 <td></td>
-                <td></td>
+                <td>
+                  <div className='flex items-center justify-center text-2xl'>
+                    <FcUnlock />
+                  </div>
+                </td>
               </tr>
 
               {data.map((data, i) => (

@@ -1,10 +1,11 @@
-import { Button, Checkbox, Select } from '@chakra-ui/react';
-import React from 'react';
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-import Calender from './components/Calendar';
+import { Button, Checkbox, Select } from '@chakra-ui/react'
+import React from 'react'
+import { AiOutlineClockCircle } from 'react-icons/ai'
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
+import Calender from './components/Calendar'
 
 const AssociateLoadBalance = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
 
   return (
     <div className='w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
@@ -64,66 +65,14 @@ const AssociateLoadBalance = () => {
       <section className=' h-96 border-2'>
         <div className=' border-3'>
           <Calender />
-          {/* <div className='flex justify-between bg-gray-200 p-1'>
-            <div className='flex items-center'>
-              <Button mr={1} size='sm'>
-                <BsChevronLeft />
-              </Button>
-              <Button mr={1} size='sm'>
-                <BsChevronRight />
-              </Button>
-              <Button size='sm'>today</Button>
-              <p className='ml-6'>23/12/05 - 23/12/05</p>
-            </div>
-
-            <div>
-              <Button size='sm'>Day</Button>
-              <Button size='sm' ml={1}>
-                Timeline
-              </Button>
-            </div>
-          </div>
-          <div className='pr-3'>
-            <table className='min-w-full overflow-auto'>
-              <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
-                <tr>
-                  <th className=' border-gray-100  pl-2 text-left'>
-                    James Gordon
-                  </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
-                    James Gordon
-                  </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
-                    James Gordon
-                  </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
-                    James Gordon{' '}
-                  </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
-                    James Gordon
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((data, i) => (
-                  <tr
-                    key={i}
-                    className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
-                  >
-                    <td className='border border-gray-400'>23/12/05</td>
-                    <td className='border border-gray-400'>23/12/05</td>
-                    <td className='border border-gray-400'>23/12/05</td>
-                    <td className='border border-gray-400'>23/12/05</td>
-                    <td className='border border-gray-400'>23/12/05</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div> */}
+          <p className='flex items-center bg-gray-200 p-2'>
+            <AiOutlineClockCircle />
+            show business hours
+          </p>
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default AssociateLoadBalance;
+export default AssociateLoadBalance
