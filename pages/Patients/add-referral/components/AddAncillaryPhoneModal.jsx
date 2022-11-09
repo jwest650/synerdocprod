@@ -8,8 +8,8 @@ import {
   ModalOverlay,
   Select,
   Textarea,
-} from '@chakra-ui/react';
-import React from 'react';
+} from '@chakra-ui/react'
+import React from 'react'
 
 const AddAncillaryPhoneModal = ({
   openAddAncillaryPhone,
@@ -25,7 +25,7 @@ const AddAncillaryPhoneModal = ({
         >
           <ModalOverlay />
           <ModalContent maxWidth={700}>
-            <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+            <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
               <ModalHeader>
                 <h1>Add Ancillary Phone Info</h1>
                 <p>add information and save</p>
@@ -36,7 +36,9 @@ const AddAncillaryPhoneModal = ({
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
                       <label htmlFor='#'>
-                        <span className='font-bold text-orange-500'>*</span>
+                        <span className='font-bold text-secondary-color'>
+                          *
+                        </span>
                         Phone Type:
                       </label>
                     </div>
@@ -58,7 +60,9 @@ const AddAncillaryPhoneModal = ({
                   <div className='my-5 flex'>
                     <div className='w-[150px]'>
                       <label htmlFor='#'>
-                        <span className='font-bold text-orange-500'>*</span>
+                        <span className='font-bold text-secondary-color'>
+                          *
+                        </span>
                         Phone :
                       </label>
                     </div>
@@ -88,10 +92,10 @@ const AddAncillaryPhoneModal = ({
                   </div>
                 </section>
                 <div className='my-3 mx-auto w-52'>
-                  <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                  <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                     Save
                   </button>
-                  <button className='ml-3 rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                  <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
                     Cancel
                   </button>
                 </div>
@@ -101,7 +105,7 @@ const AddAncillaryPhoneModal = ({
         </Modal>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AddAncillaryPhoneModal;
+export default AddAncillaryPhoneModal

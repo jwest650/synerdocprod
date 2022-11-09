@@ -1,9 +1,9 @@
-import { Input, Select } from '@chakra-ui/react';
-import { useState } from 'react';
-import FindPhysicianModal from './FindPhysicianModal';
+import { Input, Select } from '@chakra-ui/react'
+import { useState } from 'react'
+import FindPhysicianModal from './FindPhysicianModal'
 
 const FinishReferralForm = () => {
-  const [openFindPhysician, setOpenFindPhysician] = useState(false);
+  const [openFindPhysician, setOpenFindPhysician] = useState(false)
 
   return (
     <div>
@@ -28,7 +28,7 @@ const FinishReferralForm = () => {
               </div>
               <button
                 onClick={() => setOpenFindPhysician(true)}
-                className='ml-3 rounded border bg-orange-600 px-3  text-white'
+                className='ml-3 rounded border bg-secondary-color px-3  text-white'
               >
                 Find Physician
               </button>
@@ -70,7 +70,7 @@ const FinishReferralForm = () => {
         setOpenFindPhysician={setOpenFindPhysician}
       />
     </div>
-  );
-};
+  )
+}
 
-export default FinishReferralForm;
+export default FinishReferralForm

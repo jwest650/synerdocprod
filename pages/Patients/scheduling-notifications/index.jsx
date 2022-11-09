@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { ar } from '../../../assets/ardata';
-import { Input, Checkbox } from '@chakra-ui/react';
-import { BsFillCalendarDateFill } from 'react-icons/bs';
+import React, { useState } from 'react'
+import { ar } from '../../../assets/ardata'
+import { Input, Checkbox } from '@chakra-ui/react'
+import { BsFillCalendarDateFill } from 'react-icons/bs'
 
 const SchedulingNotifications = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
   return (
     <div className='w-full '>
       <div className='space-y-5'>
@@ -20,7 +20,7 @@ const SchedulingNotifications = () => {
               <div>
                 <Input placeholder='small size' size='xs' />
               </div>
-              <button className='ml-2 rounded  border bg-orange-600 px-2 font-medium text-white'>
+              <button className='ml-2 rounded  border bg-secondary-color px-2 font-medium text-white'>
                 Search
               </button>
             </div>
@@ -30,7 +30,7 @@ const SchedulingNotifications = () => {
         <section>
           <div>
             <table className=' min-w-full overflow-auto'>
-              <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+              <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                 <tr>
                   <th color={'#selecto'}>
                     <Checkbox></Checkbox>
@@ -63,11 +63,15 @@ const SchedulingNotifications = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      <Checkbox></Checkbox>
+                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium '>
+                      <div className='flex justify-center'>
+                        <Checkbox></Checkbox>
+                      </div>
                     </td>
-                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      <BsFillCalendarDateFill />
+                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium '>
+                      <div className='flex justify-center'>
+                        <BsFillCalendarDateFill />
+                      </div>
                     </td>
                     <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                       Tampa Home Health
@@ -100,17 +104,17 @@ const SchedulingNotifications = () => {
           </div>
 
           <div className='flex justify-end p-5'>
-            <button className='rounded border  bg-orange-600 px-2 font-medium text-white'>
+            <button className='rounded border  bg-secondary-color px-2 font-medium text-white'>
               Save
             </button>
-            <button className='ml-3 rounded  border bg-orange-600 px-2 font-medium text-white'>
+            <button className='ml-3 rounded  border bg-secondary-color px-2 font-medium text-white'>
               Cancel
             </button>
           </div>
         </section>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SchedulingNotifications;
+export default SchedulingNotifications

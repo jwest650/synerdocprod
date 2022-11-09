@@ -6,8 +6,8 @@ import {
   ModalHeader,
   ModalOverlay,
   Select,
-} from '@chakra-ui/react';
-import React from 'react';
+} from '@chakra-ui/react'
+import React from 'react'
 
 const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
   return (
@@ -20,7 +20,7 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
         >
           <ModalOverlay />
           <ModalContent maxWidth={700}>
-            <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+            <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
               <header className=' capitalize'>
                 <h1 className='text-2xl font-bold'>add Payer</h1>
               </header>
@@ -96,7 +96,7 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
               <div className='mt-8 flex justify-end space-x-3'>
                 <button
                   type='submit'
-                  className='rounded bg-[#32164A] px-4 py-1 text-white shadow'
+                  className='rounded bg-secondary-color px-4 py-1 text-white shadow'
                 >
                   Save
                 </button>
@@ -109,7 +109,7 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
         </Modal>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AddPayerModal;
+export default AddPayerModal

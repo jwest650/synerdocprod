@@ -23,11 +23,11 @@ const Calendar = () => {
   };
   return (
     <ScheduleComponent
-      cssClass="schedule"
-      height="650px"
+      cssClass='schedule'
+      height='650px'
       ref={(schedule) => setScheduleObj(schedule)}
       selectedDate={new Date(2021, 0, 10)}
-      currentView="Month"
+      currentView='Month'
       actionComplete={handleSave}
       eventSettings={{ dataSource: scheduleData }}
     >

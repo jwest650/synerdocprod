@@ -1,14 +1,14 @@
-import { Input, Select, Tooltip } from '@chakra-ui/react';
-import Link from 'next/link';
-import { useState } from 'react';
-import { BiPlus } from 'react-icons/bi';
-import { RiBook2Fill } from 'react-icons/ri';
-import SearchIcon from '../../../assets/images/search.png';
-import Image from 'next/image';
-import { FcUnlock } from 'react-icons/fc';
+import { Input, Select, Tooltip } from '@chakra-ui/react'
+import Link from 'next/link'
+import { useState } from 'react'
+import { BiPlus } from 'react-icons/bi'
+import { RiBook2Fill } from 'react-icons/ri'
+import SearchIcon from '../../../assets/images/search.png'
+import Image from 'next/image'
+import { FcUnlock } from 'react-icons/fc'
 
 const PatientsEncounters = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
 
   return (
     <div className='w-full'>
@@ -101,7 +101,7 @@ const PatientsEncounters = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
               <tr>
                 <th className=' border-gray-100  pl-2 text-left'></th>
                 <th className=' border-gray-100  pl-2 text-left'>
@@ -126,14 +126,14 @@ const PatientsEncounters = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-[#6b3e9280]'>
+              <tr className='bg-light-blue'>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -150,7 +150,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -167,7 +167,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -186,7 +186,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -203,7 +203,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -220,7 +220,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -312,7 +312,7 @@ const PatientsEncounters = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default PatientsEncounters;
+export default PatientsEncounters

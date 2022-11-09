@@ -1,11 +1,11 @@
-import { Checkbox, Input, Select } from '@chakra-ui/react';
-import { data } from 'autoprefixer';
-import React, { useState } from 'react';
-import ReAdmitPatientModal from './ReAdmitPatientModal';
+import { Checkbox, Input, Select } from '@chakra-ui/react'
+import { data } from 'autoprefixer'
+import React, { useState } from 'react'
+import ReAdmitPatientModal from './ReAdmitPatientModal'
 
 const SetupPatientForm = () => {
-  let data = [1, 1, 1, 1];
-  const [openReAdmit, setOpenReAdmit] = useState(false);
+  let data = [1, 1, 1, 1]
+  const [openReAdmit, setOpenReAdmit] = useState(false)
   return (
     <div>
       <section>
@@ -119,7 +119,7 @@ const SetupPatientForm = () => {
             <Input size={'xs'} type='type' />
           </div>
         </div>
-        <button className='rounded border bg-orange-600 px-3 font-medium text-white'>
+        <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
           Search
         </button>
 
@@ -128,7 +128,7 @@ const SetupPatientForm = () => {
         </h1>
         <hr />
         <table className=' min-w-full overflow-auto'>
-          <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+          <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
             <tr>
               <th className=' border-gray-100  pl-2 text-left'>Select</th>
               <th className=' border-gray-100  pl-2 text-left'>Name</th>
@@ -172,7 +172,7 @@ const SetupPatientForm = () => {
           </tbody>
         </table>
         <div className='my-3 flex justify-end'>
-          <button className='rounded border bg-orange-600 px-3 font-medium text-white'>
+          <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
             Continue
           </button>
         </div>
@@ -187,10 +187,9 @@ const SetupPatientForm = () => {
         <div className='flex py-5'>
           <div className='w-[150px]'>
             <h1 className='mr-5'>
-              <span className='font-bold text-orange-500'>*</span>Last/
-              <span className='font-bold text-orange-500'>
-                *
-              </span>First/Middle:{' '}
+              <span className='font-bold text-secondary-color'>*</span>Last/
+              <span className='font-bold text-secondary-color'>*</span>
+              First/Middle:{' '}
             </h1>
           </div>
           <div className='flex'>
@@ -274,7 +273,7 @@ const SetupPatientForm = () => {
           </div>
         </div>
         <div className='my-3 flex justify-end'>
-          <button className='rounded border bg-orange-600 px-3 font-medium text-white'>
+          <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
             Continue
           </button>
         </div>
@@ -286,7 +285,7 @@ const SetupPatientForm = () => {
         setOpenReAdmit={setOpenReAdmit}
       />
     </div>
-  );
-};
+  )
+}
 
-export default SetupPatientForm;
+export default SetupPatientForm

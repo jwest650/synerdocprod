@@ -1,8 +1,8 @@
-import { Input, Select } from '@chakra-ui/react';
-import TableAction from './TableAction';
+import { Input, Select } from '@chakra-ui/react'
+import TableAction from './TableAction'
 
 const AdjustVerifiedService = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
 
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
@@ -101,11 +101,11 @@ const AdjustVerifiedService = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-[#6b3e9280]'>
+              <tr className='bg-light-blue'>
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -122,7 +122,7 @@ const AdjustVerifiedService = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -143,7 +143,7 @@ const AdjustVerifiedService = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -160,7 +160,7 @@ const AdjustVerifiedService = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -211,7 +211,7 @@ const AdjustVerifiedService = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default AdjustVerifiedService;
+export default AdjustVerifiedService

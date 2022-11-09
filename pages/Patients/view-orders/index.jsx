@@ -1,8 +1,8 @@
-import { Input, Checkbox, Select } from '@chakra-ui/react';
-import { BsFillCalendarDateFill } from 'react-icons/bs';
+import { Input, Checkbox, Select } from '@chakra-ui/react'
+import { BsFillCalendarDateFill } from 'react-icons/bs'
 
 const ViewOrders = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
   return (
     <div className='w-full '>
       <div className='space-y-5'>
@@ -11,7 +11,7 @@ const ViewOrders = () => {
             <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
               Orders
             </h1>
-            <button className='mx-3 ml-2  rounded border bg-orange-600 px-2 font-medium text-white'>
+            <button className='mx-3 ml-2  rounded border bg-secondary-color px-2 font-medium text-white'>
               Send
             </button>
             <Checkbox>Consolidate Physician Intern orders</Checkbox>
@@ -22,7 +22,7 @@ const ViewOrders = () => {
               <div>
                 <Input placeholder='small size' size='xs' />
               </div>
-              <button className='ml-2 rounded  border bg-orange-600 px-2 font-medium text-white'>
+              <button className='ml-2 rounded  border bg-secondary-color px-2 font-medium text-white'>
                 Search
               </button>
             </div>
@@ -32,7 +32,7 @@ const ViewOrders = () => {
         <section>
           <div>
             <table className=' min-w-full overflow-auto'>
-              <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+              <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
                 <tr>
                   <th className=' border-gray-100  pl-2 text-left'>Print</th>
                   <th className=' border-gray-100  pl-2 text-left'>Fax</th>
@@ -57,14 +57,14 @@ const ViewOrders = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className='bg-[#6b3e9280]'>
+                <tr className='bg-light-blue'>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td>
                     <Select
                       size='xs'
-                      css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                      css={{ border: 'none' }}
                       className='shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
@@ -81,7 +81,7 @@ const ViewOrders = () => {
                   <td>
                     <Select
                       size='xs'
-                      css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                      css={{ border: 'none' }}
                       className='shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
@@ -101,7 +101,7 @@ const ViewOrders = () => {
                   <td>
                     <Select
                       size='xs'
-                      css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                      css={{ border: 'none' }}
                       className='shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
@@ -119,7 +119,7 @@ const ViewOrders = () => {
                   <td>
                     <Select
                       size='xs'
-                      css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                      css={{ border: 'none' }}
                       className='shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
@@ -150,7 +150,7 @@ const ViewOrders = () => {
                       <Checkbox></Checkbox>
                     </td>
                     <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                      <p className=' cursor-pointer text-sm font-bold text-secondary-color underline'>
                         Amess Alicia
                       </p>
                     </td>
@@ -191,7 +191,7 @@ const ViewOrders = () => {
         </section>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ViewOrders;
+export default ViewOrders

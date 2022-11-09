@@ -1,8 +1,8 @@
-import { Input, Select } from '@chakra-ui/react';
-import TableAction from './TableAction';
+import { Input, Select } from '@chakra-ui/react'
+import TableAction from './TableAction'
 
 const VerifyServices = () => {
-  let data = [1, 1, 1, 1];
+  let data = [1, 1, 1, 1]
 
   return (
     <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
@@ -79,7 +79,7 @@ const VerifyServices = () => {
           </div>
 
           <div>
-            <button className='rounded border bg-orange-600 px-3 font-medium text-white'>
+            <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
               Search
             </button>
           </div>
@@ -89,7 +89,7 @@ const VerifyServices = () => {
       <section>
         <div>
           <table className='min-w-full overflow-auto'>
-            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
               <tr>
                 <th className=' border-gray-100  pl-2 text-left'>
                   Patient Name
@@ -111,11 +111,11 @@ const VerifyServices = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-[#6b3e9280]'>
+              <tr className='bg-light-blue'>
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -132,7 +132,7 @@ const VerifyServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -153,7 +153,7 @@ const VerifyServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -170,7 +170,7 @@ const VerifyServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ backgroundColor: '#d4c3e480', border: 'none' }}
+                    css={{ border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -221,7 +221,7 @@ const VerifyServices = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default VerifyServices;
+export default VerifyServices
