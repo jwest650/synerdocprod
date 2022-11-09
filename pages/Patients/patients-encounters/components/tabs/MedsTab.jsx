@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const MedsTab = () => {
-  return <div>MedsTab</div>;
+    return <div></div>;
 };
 
 export default MedsTab;

@@ -3,7 +3,7 @@ import { BsPlus } from "react-icons/bs";
 
 const ClinicalTab = () => {
     return (
-        <div className=" border">
+        <div className="text-sm">
             <article className="grid grid-cols-2">
                 <section className="space-y-2 p-2">
                     <h1 className="text-xl font-bold capitalize">
@@ -50,7 +50,7 @@ const ClinicalTab = () => {
                         <p>no clinical team added</p>
                     </div>
                 </section>
-                <section className="border-l p-2">
+                <section className="border-l-2 p-2">
                     <h1 className="text-xl font-bold capitalize">
                         disciplines
                     </h1>

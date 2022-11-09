@@ -3,10 +3,10 @@ import { BsPlus } from "react-icons/bs";
 
 const ContactsTab = () => {
     return (
-        <div className="capitalize">
+        <div className="text-sm capitalize">
             <article className="grid grid-cols-2 ">
                 <section className="space-y-2">
-                    <div className="flex items-center space-x-4">
+                    <header className="flex items-center space-x-4">
                         <h1 className="text-xl font-bold capitalize">
                             address / phone info
                         </h1>
@@ -18,8 +18,8 @@ const ContactsTab = () => {
                             <BsPlus className="text-xl text-green-500" />
                             add service facility
                         </button>
-                    </div>
-                    <div className="flex space-x-5 border-t">
+                    </header>
+                    <div className="mx-2 flex space-x-5 border-t-2 ">
                         <aside>
                             <button className="text-orange-500">[Edit]</button>
                             <br />
@@ -27,7 +27,7 @@ const ContactsTab = () => {
                                 [Delete]
                             </button>
                         </aside>
-                        <aside className="grid w-full grid-cols-2 border-l capitalize">
+                        <aside className="grid w-full grid-cols-2 border-l-2 p-1 capitalize">
                             <div>
                                 <h1 className="font-bold">home address</h1>
                                 <div>
@@ -44,7 +44,7 @@ const ContactsTab = () => {
                         </aside>
                     </div>
                 </section>
-                <section className="space-y-2 border-l pl-3">
+                <section className="space-y-2 border-l-2 pl-3">
                     <div className="flex items-center space-x-4">
                         <h1 className="text-xl font-bold capitalize">
                             patient contacts
@@ -54,7 +54,7 @@ const ContactsTab = () => {
                             add patient contact
                         </button>
                     </div>
-                    <div className="flex space-x-5 border-t">
+                    <div className="flex space-x-5 border-t-2">
                         <aside>
                             <button className="text-orange-500">[Edit]</button>
                             <br />
@@ -64,7 +64,7 @@ const ContactsTab = () => {
                             <br />
                             <button className="text-orange-500">[Edit]</button>
                         </aside>
-                        <aside className="w-full border-l capitalize">
+                        <aside className="w-full border-l-2 p-1 capitalize">
                             <section>
                                 <div className="grid grid-cols-2">
                                     <h1 className="font-bold">james, jessel</h1>
@@ -89,6 +89,7 @@ const ContactsTab = () => {
                             </section>
                             <section>
                                 <h1 className="font-bold">Email</h1>
+                                <p>please add email</p>
                             </section>
                         </aside>
                     </div>

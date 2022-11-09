@@ -5,15 +5,15 @@ import { GoNote } from "react-icons/go";
 
 const NotesTab = () => {
     return (
-        <div>
-            <section className="flex items-center justify-between py-2">
+        <div className="text-sm">
+            <section className="flex items-center justify-between py-[1px]">
                 <h1 className="text-xl font-bold">Notes</h1>
                 <button className="flex items-center capitalize text-orange-500 underline ">
                     <BsPlus className="text-xl text-green-500" />
                     add note
                 </button>
-                <aside className="flex items-center space-x-2">
-                    <div className="flex items-center space-x-2">
+                <aside className="flex items-center space-x-[1px]">
+                    <div className="flex items-center space-x-[1px]">
                         <label htmlFor="">Type:</label>
                         <Select size={"xs"}>
                             <option value="">All</option>
@@ -26,7 +26,7 @@ const NotesTab = () => {
                         <Input size={"xs"} type={"text"} />
                     </div>
                 </aside>
-                <aside className="flex items-center space-x-2">
+                <aside className="flex items-center space-x-[2px]">
                     <input type={"checkbox"} />
                     <label htmlFor="">show inactive</label>
                     <div className="flex items-center space-x-3">
@@ -35,15 +35,17 @@ const NotesTab = () => {
                             type={"text"}
                             placeholder="Search by keyword"
                         />
-                        <button className="border px-3">Search</button>
+                        <button className=" rounded bg-secondary-color px-3 text-white">
+                            Search
+                        </button>
                     </div>
                 </aside>
             </section>
             {/* table */}
             <section>
-                <table className="w-full capitalize">
+                <table className="w-full text-left capitalize">
                     <thead>
-                        <tr>
+                        <tr className="bg-primary-color text-white">
                             <th className="w-10"></th>
                             <th className="w-52">date</th>
                             <th className="w-52">type</th>
@@ -54,20 +56,24 @@ const NotesTab = () => {
                     <tbody>
                         {obj.map((value, i) => (
                             <tr key={i}>
-                                <td className="border border-[#a0a0a0] ">
+                                <td className="border border-[#a0a0a0] px-[2px] ">
                                     {" "}
-                                    <GoNote className="text-xl " />
+                                    <GoNote className="mx-auto text-xl " />
                                 </td>
-                                <td className="border border-[#a0a0a0] text-orange-500 ">
+                                <td className="border border-[#a0a0a0] px-[2px]  text-orange-500">
                                     {value.date}
+                                    <p className="text-black">by internal</p>
                                 </td>
-                                <td className="border border-[#a0a0a0] text-orange-500">
+                                <td className="border border-[#a0a0a0] px-[2px]">
                                     {value.type}
                                 </td>
-                                <td className="border border-[#a0a0a0] text-orange-500">
+                                <td className="border border-[#a0a0a0] px-[2px]">
                                     {value.note}
+                                    <p className="text-orange-500">
+                                        release notes.pdf
+                                    </p>
                                 </td>
-                                <td className="border border-[#a0a0a0]"></td>
+                                <td className="border border-[#a0a0a0] px-[2px]"></td>
                             </tr>
                         ))}
                         <tr>
