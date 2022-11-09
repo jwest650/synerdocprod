@@ -3,7 +3,7 @@ import { associateMenu } from '../../../../../assets/data';
 import EachAssociateHeader from '../../../../../components/resources/associates/EachAssociateHeader';
 import EachAssociatePageDetails from '../../../../../components/resources/associates/EachAssociatePageDetails';
 
-const MenuPage = () => {
+const AssociateMenuPage = () => {
   const router = useRouter();
   const menuTitle = router.query?.associatemenu;
   const associateUrl = router.asPath.split('/')[3];
@@ -14,7 +14,7 @@ const MenuPage = () => {
       <EachAssociatePageDetails>
         {associateMenu.map((menu, index) => (
           <div key={index}>
-            {menu.menu === menuTitle && <>{menu.component} </>}
+            {menu.url === menuTitle && <>{menu.component} </>}
           </div>
         ))}
       </EachAssociatePageDetails>
@@ -22,4 +22,4 @@ const MenuPage = () => {
   );
 };
 
-export default MenuPage;
+export default AssociateMenuPage;

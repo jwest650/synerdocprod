@@ -30,7 +30,7 @@ const Menupopup = ({ menu, index }) => {
 
         {isHovered && (
           <>
-            <span className="absolute top-9 left-2 text-gray-300">
+            <span className="absolute top-9 left-2 text-[#f6f8fc] ">
               <SiVercel />
             </span>
             <div className="absolute top-12 h-52 w-[32rem]">

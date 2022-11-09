@@ -2,7 +2,7 @@ import { Input, Select } from '@chakra-ui/react';
 import React from 'react';
 import { RiBook2Fill } from 'react-icons/ri';
 import { physiciansData } from '../../../assets/data';
-import CreatePayer from '../../dashboard/CreatePayer';
+import CreatePayer from './CreatePayer';
 
 const Payers = () => {
   return (
