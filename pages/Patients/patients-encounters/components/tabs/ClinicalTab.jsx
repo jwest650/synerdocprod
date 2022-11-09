@@ -12,7 +12,7 @@ const ClinicalTab = () => {
                     <div className="flex space-x-3">
                         <span className="text-orange-500">[Edit]</span>
                         <table className=" border-[#a0a0a0] capitalize">
-                            <tr className="bg-[#32164a] text-white">
+                            <tr className="bg-[#0141CF] text-white">
                                 <th className="border-[#a0a0a0]">
                                     case manager
                                 </th>
