@@ -1,5 +1,5 @@
 import { Input, Select } from '@chakra-ui/react';
-import { physicianTableData } from '../../../assets/data';
+import { physicianOrder, physicianTableData } from '../../../assets/data';
 import Link from 'next/link';
 // import MorePhysicianInfo from './MorePhysicianInfo';
 import PhysicianOrderTableAction from './PhysicianOrderTableAction';
@@ -58,39 +58,27 @@ const PhysicianOrders = () => {
           </tr>
         </thead>
         <tbody>
-          {physicianTableData.map((physician, i) => (
+          {physicianOrder.map((order, i) => (
             <tr key={i} className={`border  even:bg-[#eeeeee] `}>
-              {/* <td className=" max-h-[20px] min-w-[50px] border border-gray-400 py-1 px-2 font-medium">
-                <span className="cursor-pointer">
-                  <MorePhysicianInfo />
-                </span>
-              </td> */}
-              <td className=" max-h-[20px] min-w-[260px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
-                <Link
-                  href={`/Resources/physicians/${physician.url}/contactsinfo`}
-                >
-                  {physician.name}
-                </Link>
+              <td className=" max-h-[20px] min-w-[260px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 decoration-orange-600">
+                {order.orderType}
               </td>
               <td className=" max-h-[20px] min-w-[300px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
-                {physician.email}
+                {order.orderTitle}
               </td>
               <td className=" max-h-[20px] min-w-[100px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
-                {physician.preferredNumber}
+                {order.date}
               </td>
 
               <td
                 className={`max-h-[20px] min-w-[70px] border border-gray-400 py-1 px-2 font-semibold  ${
-                  physician.status === 'Active' && 'text-green-600'
+                  order.status === 'Active' && 'text-green-600'
                 }`}
               >
-                {physician.status}
+                {order.status}
               </td>
               <td className=" max-h-[20px] min-w-[120px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
-                <PhysicianOrderTableAction
-                  physicianUrl={physician.url}
-                  physicianName={physician.name}
-                />
+                <PhysicianOrderTableAction />
               </td>
             </tr>
           ))}

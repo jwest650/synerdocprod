@@ -4,7 +4,7 @@ import { FiSettings, FiTrash2 } from 'react-icons/fi';
 import { BsEye } from 'react-icons/bs';
 import ViewOrder from './ViewOrder';
 
-const PhysicianOrderTableAction = ({ physicianName, physicianUrl }) => {
+const PhysicianOrderTableAction = () => {
   const [showOthers, setShowOthers] = useState(false);
 
   return (

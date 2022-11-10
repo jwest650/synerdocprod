@@ -1007,6 +1007,33 @@ export const doctorPatients = [
   },
 ];
 
+export const physicianOrder = [
+  {
+    orderType: 'ordertype1',
+    orderTitle: 'title1',
+    date: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    orderType: 'ordertype2',
+    orderTitle: 'title2',
+    date: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    orderType: 'ordertype3',
+    orderTitle: 'title3',
+    date: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    orderType: 'ordertype4',
+    orderTitle: 'title4',
+    date: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+];
+
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status
