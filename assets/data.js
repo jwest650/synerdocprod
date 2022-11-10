@@ -13,7 +13,7 @@ import {
   BsGlobe,
 } from 'react-icons/bs';
 import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
-import { BiChalkboard } from 'react-icons/bi';
+import { BiChalkboard, BiGitPullRequest } from 'react-icons/bi';
 import { GiWhiteBook } from 'react-icons/gi';
 import { CiStethoscope } from 'react-icons/ci';
 import { RiProfileLine, RiToolsFill } from 'react-icons/ri';
@@ -43,6 +43,7 @@ import PhysicianNotes from '../components/resources/physicians/PhysicianNotes';
 import PhysicianCredentials from '../components/resources/physicians/PhysicianCredentials';
 import PhysicianDocuments from '../components/resources/physicians/PhysicianDocuments';
 import PhysicianWebsite from '../components/resources/physicians/PhysicianWebsite';
+import PhysicianOrders from '../components/resources/physicians/PhysicianOrders';
 
 export const scheduleData = [
   {
@@ -940,6 +941,12 @@ export const physicianMenu = [
     component: <PhysicianDocuments />,
   },
   {
+    menu: 'My Orders',
+    url: 'myorders',
+    icon: <BiGitPullRequest />,
+    component: <PhysicianOrders />,
+  },
+  {
     menu: 'Website',
     url: 'website',
     icon: <BsGlobe />,
@@ -999,3 +1006,13 @@ export const doctorPatients = [
     where: 'Referral Source',
   },
 ];
+
+// createorder, search order
+// ordertype, ordertitle, date, status
+// ordertype, date, status
+// view order, delete order
+
+// createorder modal
+// ordertype
+// form based on ordertype
+//

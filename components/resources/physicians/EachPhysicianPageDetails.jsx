@@ -8,7 +8,7 @@ const EachPhysicianPageDetails = ({ children }) => {
   const currentMenu = router.query?.physicianmenu;
 
   return (
-    <div className="mx-5 -mt-12 flex w-full flex-col items-center rounded border-x border-b  pt-5 pb-12 text-sm">
+    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5 pb-12 text-sm">
       <ul className="flex w-full flex-wrap items-end justify-start">
         {physicianMenu.map((menu, index) => (
           <Link
