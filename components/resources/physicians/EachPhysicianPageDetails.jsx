@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { associateMenu } from '../../../assets/data';
+import { physicianMenu } from '../../../assets/data';
 
-const EachAssociatePageDetails = ({ children }) => {
+const EachPhysicianPageDetails = ({ children }) => {
   const router = useRouter();
-  const currentAssociate = router.asPath.split('/')[3];
-  const currentMenu = router.query?.associatemenu;
+  const currentPhysician = router.asPath.split('/')[3];
+  const currentMenu = router.query?.physicianmenu;
 
   return (
-    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b  pt-5 pb-12 text-sm">
+    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5 pb-12 text-sm">
       <ul className="flex w-full flex-wrap items-end justify-start">
-        {associateMenu.map((menu, index) => (
+        {physicianMenu.map((menu, index) => (
           <Link
-            href={`/Resources/associates/${currentAssociate}/${menu.url}`}
+            href={`/Resources/physicians/${currentPhysician}/${menu.url}`}
             key={index}
           >
             <li
@@ -21,7 +21,7 @@ const EachAssociatePageDetails = ({ children }) => {
                 'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 not-italic '
               }    ${
                 currentMenu === undefined &&
-                menu.url === 'profile' &&
+                menu.url === 'contactinfo' &&
                 'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1.5 not-italic '
               }    ${index === 0 && ' skew-x-[1deg] border-r-0 not-italic'}   `}
             >
@@ -45,4 +45,4 @@ const EachAssociatePageDetails = ({ children }) => {
   );
 };
 
-export default EachAssociatePageDetails;
+export default EachPhysicianPageDetails;

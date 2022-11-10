@@ -1,7 +1,7 @@
 import { Select } from '@chakra-ui/react';
 import { associateTableData } from '../../../assets/data';
 import TableAction from '../TableAction';
-import CreateAssociate from '../../dashboard/CreateAssociate';
+import CreateAssociate from './CreateAssociate';
 import Link from 'next/link';
 import MoreAssociateInfo from './MoreAssociateInfo';
 
@@ -143,8 +143,8 @@ const Associates = () => {
                 </span>
               </td>
               <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
-                <Link href={`/Resources/associates/${associate.url}`}>
-                  <a>{associate.name}</a>
+                <Link href={`/Resources/associates/${associate.url}/profile`}>
+                  {associate.name}
                 </Link>
               </td>
               <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">

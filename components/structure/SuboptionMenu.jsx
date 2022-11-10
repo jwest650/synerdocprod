@@ -8,7 +8,7 @@ const SuboptionMenu = ({ subOptions, urlPath }) => {
       <span className="absolute top-14 right-60 -rotate-90 text-gray-300">
         <SiVercel />
       </span>
-      <ul className="absolute top-11 -right-11 h-52 overflow-y-scroll rounded bg-gray-300 pt-3 text-[#32164A]   shadow transition-all duration-[2000ms] ease-in-out">
+      <ul className="absolute top-11 -right-11 h-52 overflow-y-scroll rounded bg-[#f6f8fc] pt-3 text-[#070b16] shadow transition-all duration-[2000ms] ease-in-out">
         {subOptions.map((subOption, i) => (
           <Link href={`${urlPath}/${subOption.url}`} key={i}>
             <li

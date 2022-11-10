@@ -1,13 +1,13 @@
 import React from 'react';
 import { FcInfo } from 'react-icons/fc';
 
-const EachAssociateHeader = ({ associateUrl }) => {
+const EachPhysicianHeader = ({ physicianUrl }) => {
   return (
     <div className="flex w-full flex-col items-center rounded border px-5 pt-5 pb-12 text-sm shadow">
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center gap-8">
           <h2 className="text-lg font-semibold tracking-wide">
-            {associateUrl}
+            {physicianUrl}
           </h2>
           <span className="flex cursor-pointer items-center gap-1 text-orange-600 underline">
             [Edit]
@@ -15,11 +15,8 @@ const EachAssociateHeader = ({ associateUrl }) => {
           </span>
         </div>
         <div className="space-x-5">
-          <span className="cursor-pointer text-xs font-semibold tracking-wide text-blue-800 underline">
-            WIKI Help
-          </span>
           <span className="text-base font-extrabold text-green-800">
-            ASSOCIATE
+            Physician
           </span>
         </div>
       </div>
@@ -53,4 +50,4 @@ const EachAssociateHeader = ({ associateUrl }) => {
   );
 };
 
-export default EachAssociateHeader;
+export default EachPhysicianHeader;

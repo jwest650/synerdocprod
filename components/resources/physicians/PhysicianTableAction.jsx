@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import { useState } from 'react';
-import { FcSearch } from 'react-icons/fc';
 import { FiSettings, FiTrash2 } from 'react-icons/fi';
+import DoctorHistory from './DoctorHistory';
 
-const TableAction = () => {
+const PhysicianTableAction = ({ physicianName, physicianUrl }) => {
   const [showOthers, setShowOthers] = useState(false);
 
   return (
@@ -13,7 +14,7 @@ const TableAction = () => {
           onMouseLeave={() => setShowOthers((current) => (current = false))}
           className="table-action-anim px-1 text-xl "
         >
-          <FcSearch />
+          <DoctorHistory physicianName={physicianName} />
         </span>
       )}
       <span
@@ -21,7 +22,9 @@ const TableAction = () => {
         onMouseOver={() => setShowOthers((current) => (current = true))}
         onMouseLeave={() => setShowOthers((current) => (current = false))}
       >
-        <FiSettings />
+        <Link href={`/Resources/physicians/${physicianUrl}/contactsinfo`}>
+          <FiSettings />
+        </Link>
       </span>
 
       {showOthers && (
@@ -37,4 +40,4 @@ const TableAction = () => {
   );
 };
 
-export default TableAction;
+export default PhysicianTableAction;

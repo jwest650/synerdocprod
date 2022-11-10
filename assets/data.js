@@ -13,7 +13,7 @@ import {
   BsGlobe,
 } from 'react-icons/bs';
 import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
-import { BiChalkboard } from 'react-icons/bi';
+import { BiChalkboard, BiGitPullRequest } from 'react-icons/bi';
 import { GiWhiteBook } from 'react-icons/gi';
 import { CiStethoscope } from 'react-icons/ci';
 import { RiProfileLine, RiToolsFill } from 'react-icons/ri';
@@ -38,6 +38,12 @@ import AssociateMenuPayroll from '../components/resources/associates/AssociateMe
 import AssociateMenuPayRates from '../components/resources/associates/AssociateMenuPayRates';
 import AssociateMenuDocs from '../components/resources/associates/AssociateMenuDocs';
 import AssociateMenuEvv from '../components/resources/associates/AssociateMenuEvv';
+import PhysicianContactsInfo from '../components/resources/physicians/PhysicianContactsInfo';
+import PhysicianNotes from '../components/resources/physicians/PhysicianNotes';
+import PhysicianCredentials from '../components/resources/physicians/PhysicianCredentials';
+import PhysicianDocuments from '../components/resources/physicians/PhysicianDocuments';
+import PhysicianWebsite from '../components/resources/physicians/PhysicianWebsite';
+import PhysicianOrders from '../components/resources/physicians/PhysicianOrders';
 
 export const scheduleData = [
   {
@@ -802,55 +808,238 @@ export const associateTableData = [
   },
 ];
 
+export const physicianTableData = [
+  {
+    name: 'Peggy Opong',
+    url: 'peggyopong',
+    email: 'peggyopng@gmail.com',
+    preferredNumber: '',
+    title: 'MD',
+    status: 'Active',
+  },
+  {
+    name: 'Destiny Dinam',
+    url: 'destinydinam',
+    email: 'destinydinam@gmail.com',
+    preferredNumber: '',
+    title: 'MD',
+    status: 'Active',
+  },
+  {
+    name: 'Joshua Nartey',
+    url: 'joshuanartey',
+    email: 'joshuanartey@gmail.com',
+    preferredNumber: '',
+    title: 'MD',
+    status: 'Active',
+  },
+  {
+    name: 'Nicholas Dazie',
+    url: 'nicholasdazie',
+    email: '',
+    preferredNumber: '',
+    title: 'MD',
+    status: 'Active',
+  },
+  {
+    name: 'Jay West',
+    url: 'jaywest',
+    email: 'jaywest@gmail.com',
+    preferredNumber: '',
+    title: 'MD',
+    status: 'Active',
+  },
+];
+
 export const associateMenu = [
   {
     menu: 'Profile',
+    url: 'profile',
     icon: <RiProfileLine />,
     component: <AssociateMenuProfile />,
   },
   {
     menu: 'Contacts',
+    url: 'contacts',
     icon: <AiOutlineContacts />,
     component: <AssociateMenuContact />,
   },
   {
     menu: 'Website',
+    url: 'website',
     icon: <BsGlobe />,
     component: <AssociateMenuWebsite />,
   },
   {
     menu: 'Notes',
+    url: 'notes',
     icon: <FaRegNewspaper />,
     component: <AssociateMenuNotes />,
   },
   {
     menu: 'Availability',
+    url: 'availability',
     icon: <BsCalendarCheck />,
     component: <AssociateMenuAvailability />,
   },
   {
     menu: 'Compliance',
+    url: 'compliance',
     icon: <SlCheck />,
     component: <AssociateMenuCompliance />,
   },
   {
     menu: 'Payroll',
+    url: 'payroll',
     icon: <VscNote />,
     component: <AssociateMenuPayroll />,
   },
   {
     menu: 'Pay Rates',
+    url: 'payrates',
     icon: <BsCurrencyDollar />,
     component: <AssociateMenuPayRates />,
   },
   {
     menu: 'Docs',
+    url: 'docs',
     icon: <BsFolder2Open />,
     component: <AssociateMenuDocs />,
   },
   {
     menu: 'EVV',
+    url: 'evv',
     icon: '',
     component: <AssociateMenuEvv />,
   },
 ];
+
+export const physicianMenu = [
+  {
+    menu: 'Contacts Info',
+    url: 'contactsinfo',
+    icon: <AiOutlineContacts />,
+    component: <PhysicianContactsInfo />,
+  },
+  {
+    menu: 'Notes',
+    url: 'notes',
+    icon: <FaRegNewspaper />,
+    component: <PhysicianNotes />,
+  },
+
+  {
+    menu: 'Credentials',
+    url: 'credentials',
+    icon: <SlCheck />,
+    component: <PhysicianCredentials />,
+  },
+  {
+    menu: 'Documents',
+    url: 'documents',
+    icon: <BsFolder2Open />,
+    component: <PhysicianDocuments />,
+  },
+  {
+    menu: 'My Orders',
+    url: 'myorders',
+    icon: <BiGitPullRequest />,
+    component: <PhysicianOrders />,
+  },
+  {
+    menu: 'Website',
+    url: 'website',
+    icon: <BsGlobe />,
+    component: <PhysicianWebsite />,
+  },
+];
+
+export const doctorPatients = [
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Encounter Doctor',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Referral Information',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Referral Source',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Certifications',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Interim orders',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Referral Information',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Encounter Doctor',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Interim orders',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Certifications',
+  },
+  {
+    name: 'John Doe',
+    socDate: new Date().toLocaleDateString(),
+    where: 'Referral Source',
+  },
+];
+
+export const physicianOrder = [
+  {
+    orderType: 'ordertype1',
+    orderTitle: 'title1',
+    date: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    orderType: 'ordertype2',
+    orderTitle: 'title2',
+    date: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    orderType: 'ordertype3',
+    orderTitle: 'title3',
+    date: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+  {
+    orderType: 'ordertype4',
+    orderTitle: 'title4',
+    date: new Date().toLocaleDateString(),
+    status: 'Active',
+  },
+];
+
+// createorder, search order
+// ordertype, ordertitle, date, status
+// ordertype, date, status
+// view order, delete order
+
+// createorder modal
+// ordertype
+// form based on ordertype
+//

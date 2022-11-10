@@ -38,7 +38,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
             <Modal isOpen={isOpen} onClose={onClose} size={"xl"}>
                 <ModalOverlay />
                 <ModalContent>
-                    <div className="w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4  ">
+                    <div className="w-full rounded border-[2px] border-t-[20px] border-[#0141CF] p-4  ">
                         <ModalHeader>Add Collector Assignment</ModalHeader>
                         <ModalBody
                             className="flex justify-center space-x-5  "
@@ -102,11 +102,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                 )}
                             </div>
                             <div className=" space-y-3 ">
-                                <Select
-                                    placeholder="Select Agency"
-                                    size="xs"
-                                    bg={"#d4c3e480"}
-                                >
+                                <Select placeholder="Select Agency" size="xs">
                                     {collectorData.agency.map((value, i) => (
                                         <option value={value} key={i}>
                                             {value}
@@ -116,7 +112,6 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                 <Select
                                     placeholder="Select Level"
                                     size="xs"
-                                    bg={"#d4c3e480"}
                                     onChange={HandleLevelChange}
                                 >
                                     {collectorData.level.map((value, i) => (
@@ -129,7 +124,6 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     <Select
                                         placeholder="Select Associate Category"
                                         size="xs"
-                                        bg={"#d4c3e480"}
                                     >
                                         {collectorData.asign.map((value, i) => (
                                             <option value={value} key={i}>
@@ -142,7 +136,6 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     <Select
                                         placeholder="Select Payer Category"
                                         size="xs"
-                                        bg={"#d4c3e480"}
                                     >
                                         {collectorData.payerCate.map(
                                             (value, i) => (
@@ -158,7 +151,6 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     <Select
                                         placeholder="Select Payer "
                                         size="xs"
-                                        bg={"#d4c3e480"}
                                     >
                                         {collectorData.payer.map((value, i) => (
                                             <option value={value} key={i}>
@@ -173,10 +165,10 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                         <ModalFooter className="space-x-2 ">
                             {option.single || option.payer ? (
                                 <>
-                                    <button className="rounded bg-[#32164A]  px-3 text-white">
+                                    <button className="btn rounded  px-3 text-white">
                                         Save/Add More
                                     </button>
-                                    <button className="rounded bg-[#32164A]  px-3 text-white">
+                                    <button className="btn rounded  px-3 text-white">
                                         Save/Close
                                     </button>
                                     <button
@@ -207,7 +199,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                         Cancel
                                     </button>
                                     <button
-                                        className="rounded bg-[#32164A]  px-3 text-white"
+                                        className="rounded bg-[#0141CF]  px-3 text-white"
                                         onClick={handleCategory}
                                     >
                                         Continue

@@ -1,8 +1,10 @@
+import Link from 'next/link';
 import { useState } from 'react';
-import { FcSearch } from 'react-icons/fc';
 import { FiSettings, FiTrash2 } from 'react-icons/fi';
+import { BsEye } from 'react-icons/bs';
+import ViewOrder from './ViewOrder';
 
-const TableAction = () => {
+const PhysicianOrderTableAction = () => {
   const [showOthers, setShowOthers] = useState(false);
 
   return (
@@ -11,9 +13,9 @@ const TableAction = () => {
         <span
           onMouseOver={() => setShowOthers((current) => (current = true))}
           onMouseLeave={() => setShowOthers((current) => (current = false))}
-          className="table-action-anim px-1 text-xl "
+          className="table-action-anim px-1 text-xl text-green-600 "
         >
-          <FcSearch />
+          <ViewOrder />
         </span>
       )}
       <span
@@ -37,4 +39,4 @@ const TableAction = () => {
   );
 };
 
-export default TableAction;
+export default PhysicianOrderTableAction;

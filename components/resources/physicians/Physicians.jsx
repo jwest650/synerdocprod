@@ -1,109 +1,170 @@
-import { Input, Select } from '@chakra-ui/react';
-import React from 'react';
-import { AiOutlineEdit } from 'react-icons/ai';
-import { BsPlus } from 'react-icons/bs';
-import { MdDelete } from 'react-icons/md';
-import { RiBook2Fill } from 'react-icons/ri';
-import { physiciansData } from '../../../assets/data';
-import CreatePhysicians from '../../dashboard/CreatePhysicians';
-import Actions from '../../ar/Actions';
+import { Select } from '@chakra-ui/react';
+import { physicianTableData } from '../../../assets/data';
+import Link from 'next/link';
+import CreatePhysicians from './CreatePhysicians';
+import MorePhysicianInfo from './MorePhysicianInfo';
+import PhysicianTableAction from './PhysicianTableAction';
 
 const Physicians = () => {
   return (
-    <div>
-      <section className="flex items-center justify-between">
-        <div className="flex  space-x-2">
-          <h1 className="text-xl font-bold ">Physicians</h1>
+    <section className="mx-10 mt-10">
+      <div className="flex items-center justify-between border-b border-gray-600 pb-2">
+        <div className="flex items-center gap-8">
+          <h2 className="text-xl font-semibold tracking-wider">Physicians</h2>
           <CreatePhysicians />
         </div>
-        <div className="flex items-center justify-between space-x-2">
-          <div>
-            <Select placeholder="Select option" size="xs" w={120}>
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-            </Select>
-          </div>
-          <button className="border p-1 px-3 text-sm">Export</button>
-        </div>
-        <div className="space-x-2">
-          <Input
-            w={200}
+        <div className="flex items-center gap-3">
+          <Select
+            css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+            className="shadow outline-none"
+            size="xs"
+          >
+            <option value="option1" className="text-gray-800">
+              PDF - Patients active or discharged in last 30 days{' '}
+            </option>
+            <option value="option2" className="text-gray-800">
+              PDF - Patient with outstanding orders{' '}
+            </option>
+            <option value="option3" className="text-gray-800">
+              XLS - Patients active or discharged in last 30 days{' '}
+            </option>
+            <option value="option3" className="text-gray-800">
+              XLS - Patients with outstanding orders{' '}
+            </option>
+            <option value="option3" className="text-gray-800">
+              XLS - Patients with outstanding orders{' '}
+            </option>
+          </Select>
+          <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
+            Export
+          </button>
+          <input
+            placeholder="Enter first or last name"
+            className="rounded px-3 py-1 text-black outline-none"
             type="text"
-            size="sm"
-            placeholder="Enter first or lastname"
           />
-          <button className="border p-1 px-3">Search</button>
+          <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
+            Search
+          </button>
         </div>
-      </section>
+      </div>
 
-      {/* table */}
-      <section>
-        <table className="mt-10 min-w-full overflow-auto capitalize">
-          <thead className="border-b bg-[#32164A] text-[18px] tracking-wider text-white">
-            <tr>
-              <th className=" border-gray-100  pl-2 text-left"></th>
-              <th className=" border-gray-100 pl-2 text-left">Patient Name</th>
-              <th className=" border-gray-100 pl-2 text-left">Email</th>
-              <th className=" border-gray-100 pl-2 text-left">
-                Preferred Number
-              </th>
-              <th className=" border-gray-100 pl-2 text-left">Title</th>
-              <th className=" border-gray-100 pl-2 text-left">Status</th>
-              <th className=" border-gray-100 pl-2 text-left">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border  border-gray-400"></td>
-              <td className="border  border-gray-400"></td>
-              <td className="border  border-gray-400"></td>
-              <td className="border  border-gray-400"></td>
-              <td className="border  border-gray-400">
-                <Select placeholder="Select option" size="xs">
-                  <option value="option1">Option 1</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
-                </Select>
-              </td>
-              <td className="border  border-gray-400">
-                <Select placeholder="Select option" size="xs">
-                  <option value="option1">Option 1</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
-                </Select>
-              </td>
-              <td className="border  border-gray-400"></td>
-            </tr>
-            {physiciansData.map((value, i) => (
-              <tr
-                key={i}
-                className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
+      <table className="mt-10 min-w-full overflow-auto">
+        <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
+          <tr>
+            <th className=" border-gray-100  pl-2 text-left"></th>
+            <th className=" border-gray-100 pl-2 text-left">Physician Name</th>
+            <th className=" border-gray-100 pl-2 text-left">Email</th>
+            <th className=" border-gray-100 pl-2 text-left">
+              Preferred Numbers
+            </th>
+            <th className=" border-gray-100 pl-2 text-left">Title</th>
+            <th className=" border-gray-100 pl-2 text-left">Status</th>
+            <th className=" border-gray-100 pl-2 text-left">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="w-full bg-[#c6d8ffe1]">
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td className=" w-full border border-gray-400">
+              <Select
+                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+                className="cursor-pointer shadow outline-none"
+                size="xs"
               >
-                <td className="border  border-gray-400">
-                  <span className="cursor-pointer">
-                    <RiBook2Fill />
-                  </span>
-                </td>
-                <td className="border  border-gray-400">{value.name}</td>
-                <td className="border  border-gray-400">{value.email}</td>
-                <td className="border  border-gray-400">{value.numbers}</td>
-                <td className="border  border-gray-400">{value.title}</td>
-                <td className="border  border-gray-400">{value.active}</td>
-                <td>
-                  <Actions icon2={<AiOutlineEdit />} icon1={<MdDelete />} />
-                </td>
-              </tr>
-            ))}
-            <tr>
-              <td colSpan={8} className="pl-2">
-                displaying page 1 of 1
+                <option value="option1" className="text-gray-800">
+                  All
+                </option>
+                <option value="option1" className="text-gray-800">
+                  MD
+                </option>
+                <option value="option3" className="text-gray-800">
+                  PA
+                </option>
+              </Select>
+            </td>
+            <td className=" w-full border border-gray-400">
+              <Select
+                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+                className="cursor-pointer shadow outline-none"
+                size="xs"
+              >
+                <option value="option1" className="text-gray-800">
+                  All{' '}
+                </option>
+                <option value="option2" className="text-gray-800">
+                  Active
+                </option>
+                <option value="option3" className="text-gray-800">
+                  Inactive
+                </option>
+              </Select>
+            </td>
+            <td></td>
+          </tr>
+          {physicianTableData.map((physician, i) => (
+            <tr key={i} className={`border  even:bg-[#eeeeee] `}>
+              <td className=" max-h-[20px] min-w-[50px] border border-gray-400 py-1 px-2 font-medium">
+                <span className="cursor-pointer">
+                  <MorePhysicianInfo />
+                </span>
+              </td>
+              <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
+                <Link
+                  href={`/Resources/physicians/${physician.url}/contactsinfo`}
+                >
+                  {physician.name}
+                </Link>
+              </td>
+              <td className=" max-h-[20px] min-w-[330px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+                {physician.email}
+              </td>
+              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+                {physician.preferredNumber}
+              </td>
+              <td className=" max-h-[20px] min-w-[120px] border-gray-400 py-1 px-2 font-medium">
+                {physician.title}
+              </td>
+              <td
+                className={`max-h-[20px] min-w-[100px] border border-gray-400 py-1 px-2 font-semibold  ${
+                  physician.status === 'Active' && 'text-green-600'
+                }`}
+              >
+                {physician.status}
+              </td>
+              <td className=" max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium">
+                <PhysicianTableAction
+                  physicianUrl={physician.url}
+                  physicianName={physician.name}
+                />
               </td>
             </tr>
-          </tbody>
-        </table>
-      </section>
-    </div>
+          ))}
+        </tbody>
+      </table>
+      <div className="flex w-fit items-center gap-2 border-x border-b border-gray-400 bg-[#eee] px-5">
+        <p>Displaying page 1 of 1, rows 1 to 4 of 4, | Rows per page </p>
+        <div>
+          <Select
+            css={{
+              backgroundColor: 'lightgray',
+              border: 'none',
+              marginBottom: '4px',
+            }}
+            className="cursor-pointer shadow outline-none"
+            size="xs"
+          >
+            <option value="option1" className="text-gray-800">
+              250
+            </option>
+          </Select>
+        </div>
+      </div>
+    </section>
   );
 };
 

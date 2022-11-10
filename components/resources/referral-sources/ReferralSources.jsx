@@ -2,7 +2,7 @@ import { Input, Select } from '@chakra-ui/react';
 import React from 'react';
 import { RiBook2Fill } from 'react-icons/ri';
 import { physiciansData } from '../../../assets/data';
-import CreateReferal from '../../dashboard/CreateReferal';
+import CreateReferal from './CreateReferal';
 
 const ReferralSources = () => {
   return (
