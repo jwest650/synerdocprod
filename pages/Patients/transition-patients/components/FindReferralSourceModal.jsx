@@ -25,7 +25,7 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={700}>
+        <ModalContent maxWidth={900}>
           <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               Find Referral Source
@@ -36,7 +36,10 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
             {/* <ModalCloseButton /> */}
             <ModalBody>
               <div className='flex justify-between'>
-                <label htmlFor='#' className='w-[40%]'>
+                <label
+                  htmlFor='#'
+                  className='mr-2 w-[40%] text-right font-semibold'
+                >
                   First/Last:{' '}
                 </label>
                 <div className='flex w-[60%]'>
@@ -45,7 +48,10 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
                 </div>
               </div>
               <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[40%]'>
+                <label
+                  htmlFor='#'
+                  className='mr-2 w-[40%] text-right font-semibold'
+                >
                   Facility Name/Referral Company:{' '}
                 </label>
                 <div className='w-[60%]'>
@@ -54,9 +60,9 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
               </div>
 
               <div className='flex justify-end'>
-                <Button colorScheme='gray' size={'sm'} my={3}>
+                <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                   Search
-                </Button>
+                </button>
               </div>
 
               <div>

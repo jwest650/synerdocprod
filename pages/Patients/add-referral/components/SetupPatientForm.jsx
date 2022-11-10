@@ -19,10 +19,10 @@ const SetupPatientForm = () => {
         <hr />
 
         <div>
-          <div className='flex items-center '>
-            <label htmlFor='#' className='mr-3'>
-              Presentation to be done:{' '}
-            </label>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Presentation to be done:
+            </p>
             <div>
               <Select size='xs'>
                 <option value='option1' className='text-gray-800'>
@@ -37,20 +37,20 @@ const SetupPatientForm = () => {
               </Select>
             </div>
           </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Additional Information:
+            </p>
 
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Additional Information: </h1>
-            </div>
             <div>
               <Input size={'xs'} />
             </div>
           </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Place of Admission:
+            </p>
 
-          <div className='flex items-center '>
-            <label htmlFor='#' className='mr-3'>
-              Place of Admission:{' '}
-            </label>
             <div>
               <Select size='xs'>
                 <option value='option1' className='text-gray-800'>
@@ -65,11 +65,11 @@ const SetupPatientForm = () => {
               </Select>
             </div>
           </div>
+          <div className='my-2 flex'>
+            <p className='mr-3 w-[200px] text-right font-semibold'>
+              Admission Date:
+            </p>
 
-          <div className='flex py-5'>
-            <div className='w-[150px]'>
-              <h1 className='mr-5'>Admission Date: </h1>
-            </div>
             <div>
               <Input size={'xs'} type='date' />
             </div>
@@ -83,48 +83,50 @@ const SetupPatientForm = () => {
         </h1>
         <hr />
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Last/First: </h1>
-          </div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>Last/First:</p>
+
           <div className='flex'>
             <Input size={'xs'} type='text' />
             <Input size={'xs'} className='ml-3' type='text' />
           </div>
         </div>
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Birth Date: </h1>
-          </div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>Birth Date:</p>
+
           <div>
             <Input size={'xs'} type='date' />
           </div>
         </div>
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Medical Record N0: </h1>
-          </div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>
+            Medical Record No:
+          </p>
+
           <div>
             <Input size={'xs'} type='type' />
           </div>
         </div>
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Patient Identifier No: </h1>
-          </div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>
+            Patient Identifier No:
+          </p>
+
           <div>
             <Input size={'xs'} type='type' />
           </div>
         </div>
-        <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
-          Search
-        </button>
+        <div className='flex w-[200px] justify-end'>
+          <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
+            Search
+          </button>
+        </div>
 
-        <h1 className='py-5 text-xl text-black dark:text-white'>
-          Re-Admit Patient
+        <h1 className='py-2 text-xl text-black dark:text-white'>
+          Re-Admit Existing Patient
         </h1>
         <hr />
         <table className=' min-w-full overflow-auto'>
@@ -184,14 +186,13 @@ const SetupPatientForm = () => {
         </h1>
         <hr />
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>
-              <span className='font-bold text-secondary-color'>*</span>Last/
-              <span className='font-bold text-secondary-color'>*</span>
-              First/Middle:{' '}
-            </h1>
-          </div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>
+            <span className='font-bold text-secondary-color'>*</span>Last/
+            <span className='font-bold text-secondary-color'>*</span>
+            First/Middle:
+          </p>
+
           <div className='flex'>
             <Input size={'xs'} type='text' />
             <Input size={'xs'} className='ml-3' type='text' />
@@ -199,19 +200,17 @@ const SetupPatientForm = () => {
           </div>
         </div>
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Birth Date: </h1>
-          </div>
-          <div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>Birth Date:</p>
+
+          <div className='flex'>
             <Input size={'xs'} type='date' />
           </div>
         </div>
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Gender: </h1>
-          </div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>Gender:</p>
+
           <div>
             <Select size='xs'>
               <option value='option1' className='text-gray-800'>
@@ -227,10 +226,9 @@ const SetupPatientForm = () => {
           </div>
         </div>
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Race: </h1>
-          </div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>Race:</p>
+
           <div>
             <Select size='xs'>
               <option value='option1' className='text-gray-800'>
@@ -245,10 +243,12 @@ const SetupPatientForm = () => {
             </Select>
           </div>
         </div>
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Marital Status: </h1>
-          </div>
+
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>
+            Marital Status:
+          </p>
+
           <div>
             <Select size='xs'>
               <option value='option1' className='text-gray-800'>
@@ -264,14 +264,14 @@ const SetupPatientForm = () => {
           </div>
         </div>
 
-        <div className='flex py-5'>
-          <div className='w-[150px]'>
-            <h1 className='mr-5'>Email: </h1>
-          </div>
+        <div className='my-2 flex'>
+          <p className='mr-3 w-[200px] text-right font-semibold'>Email:</p>
+
           <div>
             <Input size={'xs'} type='text' />
           </div>
         </div>
+
         <div className='my-3 flex justify-end'>
           <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
             Continue

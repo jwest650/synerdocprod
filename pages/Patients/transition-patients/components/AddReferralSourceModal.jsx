@@ -20,7 +20,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={700}>
+        <ModalContent maxWidth={900}>
           <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <div>
               <ModalHeader>
@@ -31,10 +31,11 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
             {/* <ModalCloseButton /> */}
             <ModalBody>
               <div className='my-2 flex'>
-                <label htmlFor='#' className='w-[20%]'>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
                   <span className='font-bold text-secondary-color'>*</span>
-                  Referral Type:{' '}
-                </label>
+                  Referral Type:
+                </p>
+
                 <div className='w-[70%]'>
                   <Select size='xs'>
                     <option value='option1' className='text-gray-800'>
@@ -49,44 +50,51 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
                   </Select>
                 </div>
               </div>
-              <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[20%]'>
-                  <span className='font-bold text-secondary-color'>*</span>First
-                  Name:{' '}
-                </label>
+
+              <div className='my-2 flex'>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
+                  <span className='font-bold text-secondary-color'>*</span>
+                  First Name:
+                </p>
+
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
                 </div>
               </div>
-              <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[20%]'>
-                  Middle initial:{' '}
-                </label>
+
+              <div className='my-2 flex'>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
+                  Middle initial:
+                </p>
+
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
                 </div>
               </div>
-              <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[20%]'>
+
+              <div className='my-2 flex'>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
                   <span className='font-bold text-secondary-color'>*</span>Last
-                  Name:{' '}
-                </label>
+                  Name:
+                </p>
+
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
                 </div>
               </div>
-              <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[20%]'>
-                  Email:{' '}
-                </label>
+              <div className='my-2 flex'>
+                <p className='mr-3 w-[20%] text-right font-semibold'>Email:</p>
+
                 <div className='w-[70%]'>
                   <Input placeholder='small size' type={'email'} size='sm' />
                 </div>
               </div>
+
               <div className='my-2 flex'>
-                <label htmlFor='#' className='w-[20%]'>
-                  Sales Rep:{' '}
-                </label>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
+                  Sales Rep:
+                </p>
+
                 <div className='w-[70%]'>
                   <Select size='xs'>
                     <option value='option1' className='text-gray-800'>
@@ -101,11 +109,13 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
                   </Select>
                 </div>
               </div>
-              <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[20%]'>
+
+              <div className='my-2 flex'>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
                   <span className='font-bold text-secondary-color'>*</span>
-                  Start:{' '}
-                </label>
+                  Start:
+                </p>
+
                 <div className='w-[70%]'>
                   <Input
                     placeholder='Select Date and Time'
@@ -114,10 +124,12 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
                   />
                 </div>
               </div>
-              <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[20%]'>
-                  End Date:{' '}
-                </label>
+
+              <div className='my-2 flex'>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
+                  End Date:
+                </p>
+
                 <div className='w-[70%]'>
                   <Input
                     placeholder='Select Date and Time'
@@ -126,36 +138,29 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
                   />
                 </div>
               </div>
-              <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[20%]'>
-                  Physician Group:{' '}
-                </label>
+
+              <div className='my-2 flex'>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
+                  Physician Group:
+                </p>
+
                 <div className='w-[70%]'>
                   <Input placeholder='small size' size='sm' />
                 </div>
               </div>
               <div className='my-2 flex'>
-                <label htmlFor='#' className='w-[20%]'>
-                  Specialty:{' '}
-                </label>
+                <p className='mr-3 w-[20%] text-right font-semibold'>
+                  Specialty:
+                </p>
+
                 <div className='w-[70%]'>
-                  <Select size='xs'>
-                    <option value='option1' className='text-gray-800'>
-                      Option 1
-                    </option>
-                    <option value='option2' className='text-gray-800'>
-                      Option 2
-                    </option>
-                    <option value='option3' className='text-gray-800'>
-                      Option 3
-                    </option>
-                  </Select>
+                  <Input placeholder='small size' size='sm' />
                 </div>
               </div>
+
               <div className='my-2 flex'>
-                <label htmlFor='#' className='w-[20%]'>
-                  Title:{' '}
-                </label>
+                <p className='mr-3 w-[20%] text-right font-semibold'>Title:</p>
+
                 <div className='w-[70%]'>
                   <Select size='xs'>
                     <option value='option1' className='text-gray-800'>

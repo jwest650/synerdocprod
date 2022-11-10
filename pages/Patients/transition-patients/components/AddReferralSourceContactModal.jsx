@@ -26,10 +26,10 @@ const AddReferralSourceContactModal = ({
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={700}>
+        <ModalContent maxWidth={900}>
           <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
-              Find Referral Source
+              Add Referral Source Contact
               <p className='text-sm text-gray-600'>
                 Find referral source/add referral source if not found.
               </p>
@@ -37,14 +37,14 @@ const AddReferralSourceContactModal = ({
             {/* <ModalCloseButton /> */}
             <ModalBody>
               <section>
-                <div className='flex py-3'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>
+                <div className='my-2 flex'>
+                  <div className='mr-3 w-[25%] text-right font-semibold'>
+                    <p>
                       <span className='font-bold text-secondary-color'>*</span>
                       First/Middle/
                       <span className='font-bold text-secondary-color'>*</span>
                       Last:
-                    </label>
+                    </p>
                   </div>
 
                   <div className='flex items-center'>
@@ -53,11 +53,11 @@ const AddReferralSourceContactModal = ({
                     <Input size={'xs'} className='ml-3' />
                   </div>
                 </div>
+                <div className='my-2 flex'>
+                  <div className='mr-3 w-[25%] text-right font-semibold'>
+                    <p>Phone 1:</p>
+                  </div>
 
-                <div className='flex py-2'>
-                  <div className='w-[150px]'>
-                    <h1 className='mr-5'>Phone 1: </h1>
-                  </div>
                   <div className='flex'>
                     <div>
                       <Select size='xs'>
@@ -78,10 +78,12 @@ const AddReferralSourceContactModal = ({
                     </div>
                   </div>
                 </div>
-                <div className='flex py-2'>
-                  <div className='w-[150px]'>
-                    <h1 className='mr-5'>Phone 2: </h1>
+
+                <div className='my-2 flex'>
+                  <div className='mr-3 w-[25%] text-right font-semibold'>
+                    <p>Phone 2:</p>
                   </div>
+
                   <div className='flex'>
                     <div>
                       <Select size='xs'>
@@ -102,26 +104,36 @@ const AddReferralSourceContactModal = ({
                     </div>
                   </div>
                 </div>
-                <div className='flex py-2'>
-                  <div className='w-[150px]'>
-                    <h1 className='mr-5'>Information: </h1>
+
+                <div className='my-2 flex'>
+                  <div className='mr-3 w-[25%] text-right font-semibold'>
+                    <p>Information:</p>
                   </div>
-                  <Input size={'xs'} />
-                </div>
-                <div className='flex py-2'>
-                  <div className='w-[150px]'>
-                    <h1 className='mr-5'>Email: </h1>
+
+                  <div className='w-[70%]'>
+                    <Input size={'xs'} />
                   </div>
-                  <Input size={'xs'} />
                 </div>
-                <div className='flex py-2'>
-                  <div className='w-[150px]'>
-                    <h1 className='mr-5'>
+                <div className='my-2 flex'>
+                  <div className='mr-3 w-[25%] text-right font-semibold'>
+                    <p>Email:</p>
+                  </div>
+
+                  <div className='w-[70%]'>
+                    <Input size={'xs'} />
+                  </div>
+                </div>
+                <div className='my-2 flex'>
+                  <div className='mr-3 w-[25%] text-right font-semibold'>
+                    <p>
                       <span className='font-bold text-secondary-color'>*</span>
-                      Start Date:{' '}
-                    </h1>
+                      Start Date:
+                    </p>
                   </div>
-                  <Input size={'xs'} type='date' />
+
+                  <div className='w-[70%]'>
+                    <Input size={'xs'} />
+                  </div>
                 </div>
               </section>
               <div className='flex justify-end py-3'>

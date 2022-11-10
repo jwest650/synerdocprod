@@ -24,23 +24,23 @@ const AddPatientContactModal = ({
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={700}>
+        <ModalContent maxWidth={900}>
           <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
-            <ModalHeader>
-              <h1>Add Patient Contact info</h1>
-              <p>add information and save</p>
-            </ModalHeader>
             {/* <ModalCloseButton /> */}
             <ModalBody>
+              <div className='mb-3'>
+                <h1 className=' text-2xl font-bold'>
+                  Add Patient Contact info
+                </h1>
+                <p>add information and save</p>
+              </div>
               <section>
                 <div className='my-2 flex'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>
-                      {' '}
-                      <span className='font-bold text-secondary-color'>*</span>
-                      Relationship:
-                    </label>
-                  </div>
+                  <p className='mr-3 w-[200px] text-right font-semibold'>
+                    <span className='font-bold text-secondary-color'>*</span>
+                    Relationship:
+                  </p>
+
                   <div>
                     <Select size='xs' marginRight={5}>
                       <option value='option1' className='text-gray-800'>
@@ -55,11 +55,11 @@ const AddPatientContactModal = ({
                     </Select>
                   </div>
                 </div>
-
                 <div className='my-2 flex'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>Contact Type:</label>
-                  </div>
+                  <p className='mr-3 w-[200px] text-right font-semibold'>
+                    Contact Type:
+                  </p>
+
                   <div className='flex flex-col'>
                     <Checkbox defaultChecked>Primary Caregiver</Checkbox>
                     <Checkbox>Caregiver</Checkbox>
@@ -71,44 +71,43 @@ const AddPatientContactModal = ({
                     <Checkbox defaultChecked>Family Portal</Checkbox>
                   </div>
                 </div>
-
                 <div className='my-2 flex'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>
-                      <span className='font-bold text-secondary-color'>*</span>
-                      First Name:
-                    </label>
-                  </div>
+                  <p className='mr-3 w-[200px] text-right font-semibold'>
+                    <span className='font-bold text-secondary-color'>*</span>
+                    First Name:
+                  </p>
+
                   <div>
                     <Input size='xs' />
                   </div>
                 </div>
 
                 <div className='my-2 flex'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>
-                      <span className='font-bold text-secondary-color'>*</span>
-                      Last Name:
-                    </label>
-                  </div>
+                  <p className='mr-3 w-[200px] text-right font-semibold'>
+                    <span className='font-bold text-secondary-color'>*</span>
+                    Last Name:
+                  </p>
+
                   <div>
                     <Input size='xs' />
                   </div>
                 </div>
 
                 <div className='my-2 flex'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>Date of Birth:</label>
-                  </div>
+                  <p className='mr-3 w-[200px] text-right font-semibold'>
+                    <span className='font-bold text-secondary-color'>*</span>
+                    Date of Birth:
+                  </p>
+
                   <div>
                     <Input size='xs' type='date' />
                   </div>
                 </div>
-
                 <div className='my-2 flex'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>Sequence:</label>
-                  </div>
+                  <p className='mr-3 w-[200px] text-right font-semibold'>
+                    Sequence:
+                  </p>
+
                   <div>
                     <Select size='xs' marginRight={5}>
                       <option value='option1' className='text-gray-800'>
@@ -123,20 +122,20 @@ const AddPatientContactModal = ({
                     </Select>
                   </div>
                 </div>
-
                 <div className='my-2 flex'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>Email:</label>
-                  </div>
+                  <p className='mr-3 w-[200px] text-right font-semibold'>
+                    Email:
+                  </p>
+
                   <div>
-                    <Input size='xs' type='date' />
+                    <Input size='xs' type='text' />
                   </div>
                 </div>
-
                 <div className='my-2 flex'>
-                  <div className='w-[150px]'>
-                    <label htmlFor='#'>Misc information:</label>
-                  </div>
+                  <p className='mr-3 w-[200px] text-right font-semibold'>
+                    Misc information:
+                  </p>
+
                   <div>
                     <Textarea
                       placeholder='Here is a sample placeholder'

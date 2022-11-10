@@ -4,7 +4,7 @@ import CreateReferralForm from './components/CreateReferralForm'
 import FinishReferralForm from './components/FinishReferralForm'
 import SetupPatientForm from './components/SetupPatientForm'
 
-const TransitionPatients = () => {
+const AddReferral = () => {
   let data = [1, 1, 1, 1]
 
   const [step, setStep] = useState(1)
@@ -61,13 +61,13 @@ const TransitionPatients = () => {
 
         <ul className='flex justify-end'>
           <button
-            className='rounded border bg-primary-color px-9 py-2 text-white'
+            className='rounded border bg-secondary-color px-9 py-2 text-white'
             onClick={() => step > 1 && setStep(step - 1)}
           >
             back
           </button>
           <button
-            className='ml-3 rounded border bg-primary-color px-9 py-2 text-white'
+            className='ml-3 rounded border bg-secondary-color px-9 py-2 text-white'
             onClick={() => step < 4 && setStep(step + 1)}
           >
             next
@@ -78,4 +78,4 @@ const TransitionPatients = () => {
   )
 }
 
-export default TransitionPatients
+export default AddReferral

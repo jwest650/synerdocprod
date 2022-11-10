@@ -25,8 +25,8 @@ const AddFacilitySourceModal = ({
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={700}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-[#6b3e9280] p-4 pb-10 '>
+        <ModalContent maxWidth={900}>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               <h1>Add Address/Phone Info</h1>
               <p className='text-sm'>add information and save</p>
@@ -35,17 +35,14 @@ const AddFacilitySourceModal = ({
             <ModalBody>
               <section className='justify-betweeen flex'>
                 <div className='flex-1 border-r-2 p-2'>
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>
-                        <span className='font-bold text-secondary-color'>
-                          *
-                        </span>
-                        Address Type:
-                      </label>
-                    </div>
-                    <div>
-                      <Select size='xs' marginRight={5}>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Address Type:
+                    </p>
+
+                    <div className='flex w-[70%]'>
+                      <Select size='xs'>
                         <option value='option1' className='text-gray-800'>
                           Option 1
                         </option>
@@ -58,40 +55,34 @@ const AddFacilitySourceModal = ({
                       </Select>
                     </div>
                   </div>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Address 1:
+                    </p>
 
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>
-                        <span className='font-bold text-secondary-color'>
-                          *
-                        </span>
-                        Address 1:
-                      </label>
-                    </div>
-                    <div>
+                    <div className='flex w-[70%]'>
                       <Input size={'xs'} />
                     </div>
                   </div>
 
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>Address 2:</label>
-                    </div>
-                    <div>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      Address 2:
+                    </p>
+
+                    <div className='flex w-[70%]'>
                       <Input size={'xs'} />
                     </div>
                   </div>
 
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>
-                        <span className='font-bold text-secondary-color'>
-                          *
-                        </span>
-                        City/State/Zip:
-                      </label>
-                    </div>
-                    <div className='flex'>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      <span className='font-bold text-secondary-color'>*</span>
+                      City/State/Zip:
+                    </p>
+
+                    <div className='flex w-[70%]'>
                       <Input size={'xs'} />
 
                       <div className='ml-1 flex-1'>
@@ -112,16 +103,13 @@ const AddFacilitySourceModal = ({
                     </div>
                   </div>
 
-                  <div className='my-5 mt-10 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>
-                        <span className='font-bold text-secondary-color'>
-                          *
-                        </span>
-                        Place of Service :
-                      </label>
-                    </div>
-                    <div>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Place of Service :
+                    </p>
+
+                    <div className='flex w-[70%]'>
                       <Select size='xs' marginRight={5}>
                         <option value='option1' className='text-gray-800'>
                           select
@@ -136,24 +124,23 @@ const AddFacilitySourceModal = ({
                     </div>
                   </div>
 
-                  <div className='my-5  flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>
-                        <span className='font-bold text-secondary-color'>
-                          *
-                        </span>
-                        Start Date:
-                      </label>
-                    </div>
-                    <div className='flex'>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Start Date:
+                    </p>
+
+                    <div className='flex w-[70%]'>
                       <Input size={'xs'} value='2334' type={'date'} />
                     </div>
                   </div>
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>End Date:</label>
-                    </div>
-                    <div className='flex'>
+
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      End Date:
+                    </p>
+
+                    <div className='flex w-[70%]'>
                       <Input size={'xs'} value='2334' type={'date'} />
                     </div>
                   </div>
@@ -161,12 +148,13 @@ const AddFacilitySourceModal = ({
 
                 <div className='flex w-[100%] flex-1 flex-col justify-between p-2'>
                   <div>
-                    <div className='my-5 flex'>
-                      <div className='w-[150px]'>
-                        <label htmlFor='#'>Phone Type:</label>
-                      </div>
-                      <div>
-                        <Select size='xs' marginRight={5}>
+                    <div className='my-2 flex'>
+                      <p className='mr-3 w-[150px] text-right font-semibold'>
+                        Phone Type:
+                      </p>
+
+                      <div className='flex w-[70%]'>
+                        <Select size='xs'>
                           <option value='option1' className='text-gray-800'>
                             select
                           </option>
@@ -180,18 +168,20 @@ const AddFacilitySourceModal = ({
                       </div>
                     </div>
 
-                    <div className='my-5 flex'>
-                      <div className='w-[150px]'>
-                        <label htmlFor='#'>Phone:</label>
-                      </div>
-                      <div className='flex'>
+                    <div className='my-2 flex'>
+                      <p className='mr-3 w-[150px] text-right font-semibold'>
+                        Phone :
+                      </p>
+
+                      <div className='flex w-[70%]'>
                         <Input size={'xs'} value='2334' />
                         <Input size={'xs'} value='2334' className='ml-3' />
                         <Input size={'xs'} value='2334' className='ml-3' />
                       </div>
                     </div>
+
                     <div className='my-3 flex items-end justify-end'>
-                      <button className='rounded bg-[#32164A] px-4 py-1 text-white shadow'>
+                      <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                         add contact
                       </button>
                     </div>

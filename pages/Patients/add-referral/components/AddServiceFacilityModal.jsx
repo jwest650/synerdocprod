@@ -27,18 +27,19 @@ const AddServiceFacilityModal = ({
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={700}>
+        <ModalContent maxWidth={900}>
           <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
-            <ModalHeader>
-              <h1>Service Modal</h1>
-              <p>add information and save</p>
-            </ModalHeader>
-            {/* <ModalCloseButton /> */}
             <ModalBody>
-              <div className='my-2 flex '>
-                <label htmlFor='#' className='w-[40%]'>
-                  Facility Name/Referral Company:{' '}
-                </label>
+              <div className='mb-3'>
+                <h1 className=' text-2xl font-bold'>Add Service Facility</h1>
+                <p>add information and save</p>
+              </div>
+
+              <div className='my-2 flex'>
+                <p className='mr-3 w-[40%] text-right font-semibold'>
+                  Facility Name/Referral Company:
+                </p>
+
                 <div className='w-[60%]'>
                   <Input placeholder='small size' size='sm' />
                 </div>
@@ -86,7 +87,7 @@ const AddServiceFacilityModal = ({
                 </table>
               </div>
               <div className='ml-auto'>
-                <div className='flex justify-end py-3'>
+                <div className='flex items-center justify-end py-3'>
                   <button
                     className='rounded bg-secondary-color px-4 py-1 text-white shadow'
                     mr={3}

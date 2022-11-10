@@ -20,7 +20,7 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={700}>
+        <ModalContent maxWidth={900}>
           <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
             <ModalHeader>
               <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
@@ -34,9 +34,9 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
               <section>
                 <div>
                   <div className='flex py-2'>
-                    <div className='w-[150px]'>
-                      <h1 className='mr-5'>Last/First: </h1>
-                    </div>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      Last/First:
+                    </p>
                     <div className='flex w-[100%]'>
                       <Input size={'xs'} type='text' />
                       <Input size={'xs'} className='ml-3' type='text' />

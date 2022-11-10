@@ -24,24 +24,24 @@ const AddAncillaryPhoneModal = ({
           className='p-5'
         >
           <ModalOverlay />
-          <ModalContent maxWidth={700}>
+          <ModalContent maxWidth={900}>
             <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
-              <ModalHeader>
-                <h1>Add Ancillary Phone Info</h1>
-                <p>add information and save</p>
-              </ModalHeader>
               {/* <ModalCloseButton /> */}
               <ModalBody>
+                <div className='mb-3'>
+                  <h1 className=' text-2xl font-bold'>
+                    Add Ancillary Phone Info
+                  </h1>
+                  <p>add information and save</p>
+                </div>
+
                 <section>
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>
-                        <span className='font-bold text-secondary-color'>
-                          *
-                        </span>
-                        Phone Type:
-                      </label>
-                    </div>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Phone Type:
+                    </p>
+
                     <div>
                       <Select size='xs' marginRight={5}>
                         <option value='option1' className='text-gray-800'>
@@ -57,15 +57,12 @@ const AddAncillaryPhoneModal = ({
                     </div>
                   </div>
 
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>
-                        <span className='font-bold text-secondary-color'>
-                          *
-                        </span>
-                        Phone :
-                      </label>
-                    </div>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      <span className='font-bold text-secondary-color'>*</span>
+                      Phone:
+                    </p>
+
                     <div className='flex'>
                       <Input size={'xs'} value='2334' />
                       <Input size={'xs'} value='2334' className='ml-3' />
@@ -73,19 +70,20 @@ const AddAncillaryPhoneModal = ({
                     </div>
                   </div>
 
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>Extension:</label>
-                    </div>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      Extension:
+                    </p>
+
                     <div className='flex'>
                       <Input size={'xs'} value='2334' />
                     </div>
                   </div>
+                  <div className='my-2 flex'>
+                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                      Description:
+                    </p>
 
-                  <div className='my-5 flex'>
-                    <div className='w-[150px]'>
-                      <label htmlFor='#'>Description:</label>
-                    </div>
                     <div className='flex'>
                       <Textarea />
                     </div>
