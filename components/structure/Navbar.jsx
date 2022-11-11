@@ -49,7 +49,7 @@ const Navbar = () => {
           </li>
           <li
             // className="cursor-pointer"
-            className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded bg-[#3374ff83] text-[12px]"
+            className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded bg-blue-300 text-[13px] font-semibold"
           >
             FAX
             {/* 
