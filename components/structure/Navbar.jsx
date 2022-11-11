@@ -5,17 +5,14 @@ import Settings from './Settings';
 import { menuOptions } from '../../assets/data';
 import Menupopup from './Menupopup';
 import MenuDrawer from './MenuDrawer';
-// import { BsGrid } from 'react-icons/bs';
-// import { useState } from 'react';
-// import MenuDrawer from './MenuDrawer';
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0  z-[1000] border-b bg-[#0141CF]">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-gray-500/20 py-2 px-5 text-white  ">
+    <div className="sticky top-0 z-[1000] bg-[#0141CF]">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-[#3374ff83] py-2 px-5 text-white md:px-5 lg:px-3 ">
         <div className="flex items-center gap-6">
           <Link href="/">
-            <h1 className="cursor-pointer text-2xl font-semibold md:ml-8">
+            <h1 className="cursor-pointer text-2xl font-semibold">
               Syner<span className="font-normal">doc</span>{' '}
             </h1>
           </Link>
@@ -50,9 +47,13 @@ const Navbar = () => {
               2
             </span>
           </li>
-          <li className="cursor-pointer">
+          <li
+            // className="cursor-pointer"
+            className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded bg-[#3374ff83] text-[12px]"
+          >
             FAX
-            {/* S
+            {/* 
+             S
              */}
           </li>
         </ul>

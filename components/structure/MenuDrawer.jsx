@@ -28,7 +28,7 @@ const MenuDrawer = () => {
   return (
     <>
       <Button ref={btnRef} __css={{}} onClick={onOpen}>
-        <div className="ml-[40px] cursor-pointer lg:hidden">
+        <div className="ml-[95px] cursor-pointer lg:hidden">
           <BsGrid className="scale-150" />
         </div>
       </Button>
