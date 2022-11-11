@@ -7,7 +7,7 @@ import MoreAssociateInfo from './MoreAssociateInfo';
 
 const Associates = () => {
   return (
-    <section className="mx-10 mt-10">
+    <section className="mx-5 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
           <h2 className="text-xl font-semibold tracking-wider">Associates</h2>
@@ -45,7 +45,6 @@ const Associates = () => {
           </button>
         </div>
       </div>
-
       <table className="mt-10 min-w-full overflow-auto">
         <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
           <tr>

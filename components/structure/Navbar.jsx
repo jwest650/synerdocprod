@@ -11,7 +11,7 @@ import MenuDrawer from './MenuDrawer';
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-[1000] bg-[#0141CF]">
+    <div className="sticky top-0  z-[1000] border-b bg-[#0141CF]">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-gray-500/20 py-2 px-5 text-white  ">
         <div className="flex items-center gap-6">
           <Link href="/">
@@ -33,21 +33,27 @@ const Navbar = () => {
           <li className="cursor-pointer">
             <Settings />
           </li>
-          <li>
+
+          <li className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded text-[12px]">
             <i>
-              <FiBell />
+              <FiBell className="text-xl" />
             </i>
+            <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-orange-600 p-2 text-center text-[10px] font-bold">
+              6
+            </span>
           </li>
-          <li>
+          <li className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded text-[12px]">
             <i>
               <GoMail className="text-xl" />
             </i>
-          </li>
-          <li className="relative flex h-8 w-8 items-center justify-center rounded bg-blue-300 text-[12px]">
-            S
-            <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-violet-600 p-2 text-center text-[10px] font-bold">
+            <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-orange-600 p-2 text-center text-[10px] font-bold">
               2
             </span>
+          </li>
+          <li className="cursor-pointer">
+            FAX
+            {/* S
+             */}
           </li>
         </ul>
       </div>
