@@ -100,7 +100,7 @@ const SchedulesDetailListing = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-[#32164A] text-[18px] tracking-wider text-white'>
+            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
               <tr>
                 <th className=' border-gray-100  pl-2 text-left'>Patient</th>
                 <th className=' border-gray-100  pl-2 text-left'>Associates</th>
