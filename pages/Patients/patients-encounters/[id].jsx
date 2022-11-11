@@ -12,6 +12,14 @@ import PayersTab from './components/tabs/PayersTab'
 import ServiceNotesTab from './components/tabs/ServiceNotesTab'
 import EvvTab from './components/tabs/EvvTab'
 import EncounterHeader from './components/EncounterHeader'
+import { ImProfile, ImPaste } from 'react-icons/im'
+import { RiContactsBookFill } from 'react-icons/ri'
+import { GiNotebook } from 'react-icons/gi'
+import { MdLocalHospital } from 'react-icons/md'
+import { GrStorage } from 'react-icons/gr'
+import { CgCopy } from 'react-icons/cg'
+import { FaBriefcaseMedical } from 'react-icons/fa'
+import { BsFolder2Open } from 'react-icons/bs'
 
 const renderTab = (tab) => {
   switch (tab) {
@@ -48,18 +56,18 @@ const renderTab = (tab) => {
 const Enconter = () => {
   const [activeTab, setActiveTab] = useState('profile-tab')
   let tabs = [
-    { name: 'Profile', path: 'profile-tab' },
-    { name: 'Contacts', path: 'contacts-tab' },
-    { name: 'Notes', path: 'notes-tab' },
-    { name: 'Referral', path: 'referral-tab' },
-    { name: 'Phys/Fac', path: 'phys-fac-tab' },
-    { name: 'Docs', path: 'docs-tab' },
-    { name: 'Clinical', path: 'clinical-tab' },
-    { name: 'Meds', path: 'meds-tab' },
-    { name: 'Orders', path: 'orders-tab' },
-    { name: 'Payers', path: 'payers-tab' },
-    { name: 'Service Notes', path: 'service-notes-tab' },
-    { name: 'EVV', path: 'evv-tab' },
+    { name: 'Profile', path: 'profile-tab', icon: <ImProfile /> },
+    { name: 'Contacts', path: 'contacts-tab', icon: <RiContactsBookFill /> },
+    { name: 'Notes', path: 'notes-tab', icon: <GiNotebook /> },
+    { name: 'Referral', path: 'referral-tab', icon: <GiNotebook /> },
+    { name: 'Phys/Fac', path: 'phys-fac-tab', icon: <MdLocalHospital /> },
+    { name: 'Docs', path: 'docs-tab', icon: <BsFolder2Open /> },
+    { name: 'Clinical', path: 'clinical-tab', icon: <FaBriefcaseMedical /> },
+    { name: 'Meds', path: 'meds-tab', icon: <GrStorage /> },
+    { name: 'Orders', path: 'orders-tab', icon: <ImPaste /> },
+    { name: 'Payers', path: 'payers-tab', icon: <GrStorage /> },
+    { name: 'Service Notes', path: 'service-notes-tab', icon: <CgCopy /> },
+    { name: 'EVV', path: 'evv-tab', icon: <CgCopy /> },
   ]
 
   return (
@@ -90,7 +98,7 @@ const Enconter = () => {
                         activeTab === tab.path && 'skew-x-[-0deg]'
                       }   ${index === 0 && 'skew-x-[-0deg] '} -skew-x-[12deg]`}
                     >
-                      {/* {menu.icon} */}
+                      {tab.icon}
                     </span>
                     <span>{tab.name}</span>
                   </li>
