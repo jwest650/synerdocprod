@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Calendar from '../components/dashboard/Calendar';
-import HomepageLayout from '../components/dashboard/HomepageLayout';
+// import Calendar from '../components/dashboard/Calendar';
+// import HomepageLayout from '../components/dashboard/HomepageLayout';
+import Associates from '../components/resources/associates/Associates';
 
 export default function Home() {
   return (
@@ -14,9 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HomepageLayout>
+      <Associates />
+
+      {/* <HomepageLayout>
         <Calendar />
-      </HomepageLayout>
+      </HomepageLayout> */}
     </div>
   );
 }
