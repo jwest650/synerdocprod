@@ -21,7 +21,7 @@ const CreatePhysicians = () => {
         className="flex cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white"
       >
         <BiPlus />
-        <span className="text-sm">Create Associates</span>
+        <span className="text-sm">Create Physicians</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />

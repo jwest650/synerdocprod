@@ -44,6 +44,9 @@ import PhysicianCredentials from '../components/resources/physicians/PhysicianCr
 import PhysicianDocuments from '../components/resources/physicians/PhysicianDocuments';
 import PhysicianWebsite from '../components/resources/physicians/PhysicianWebsite';
 import PhysicianOrders from '../components/resources/physicians/PhysicianOrders';
+import FacilityContactsInfo from '../components/resources/facilities/FacilityContactsInfo';
+import FacilityNotes from '../components/resources/facilities/FacilityNotes';
+import FacilityCredentials from '../components/resources/facilities/FacilityCredentials';
 
 export const scheduleData = [
   {
@@ -851,6 +854,41 @@ export const physicianTableData = [
   },
 ];
 
+export const facilitiesTableData = [
+  {
+    name: 'Miami Regional Medical Center',
+    url: 'miamiregionalmedicalcenter',
+    facilityType: 'DME/Supply Company',
+    email: 'miamirmc@gmail.com',
+    preferredNumber: 'W:(900) 585-7664',
+    status: 'Active',
+  },
+  {
+    name: 'New York Regional Medical Center',
+    url: 'newyorkregionalmedicalcenter',
+    facilityType: 'Hospital',
+    email: 'nyrmc@gmail.com',
+    preferredNumber: 'W:(900) 873-0958',
+    status: 'Active',
+  },
+  {
+    name: 'Atlanta Regional Medical Center',
+    url: 'atlantaregionalmedicalcenter',
+    facilityType: 'Clinic',
+    email: 'atrmc@gmail.com',
+    preferredNumber: 'W:(900) 454-5354',
+    status: 'Active',
+  },
+  {
+    name: 'Maryland Regional Medical Center',
+    url: 'marylandregionalmedicalcenter',
+    facilityType: 'Hospital',
+    email: 'mlrmc@gmail.com',
+    preferredNumber: 'W:(900) 452-4535',
+    status: 'Active',
+  },
+];
+
 export const associateMenu = [
   {
     menu: 'Profile',
@@ -951,6 +989,28 @@ export const physicianMenu = [
     url: 'website',
     icon: <BsGlobe />,
     component: <PhysicianWebsite />,
+  },
+];
+
+export const facilityMenu = [
+  {
+    menu: 'Contacts Info',
+    url: 'contactsinfo',
+    icon: <AiOutlineContacts />,
+    component: <FacilityContactsInfo />,
+  },
+  {
+    menu: 'Notes',
+    url: 'notes',
+    icon: <FaRegNewspaper />,
+    component: <FacilityNotes />,
+  },
+
+  {
+    menu: 'Credentials',
+    url: 'credentials',
+    icon: <SlCheck />,
+    component: <FacilityCredentials />,
   },
 ];
 

@@ -40,7 +40,7 @@ const Physicians = () => {
           </button>
           <input
             placeholder="Enter first or last name"
-            className="rounded px-3 py-1 text-black outline-none"
+            className="rounded px-3 py-[2px] text-black outline-none"
             type="text"
           />
           <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
@@ -52,15 +52,15 @@ const Physicians = () => {
       <table className="mt-10 min-w-full overflow-auto">
         <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
           <tr>
-            <th className=" border-gray-100  pl-2 text-left"></th>
-            <th className=" border-gray-100 pl-2 text-left">Physician Name</th>
-            <th className=" border-gray-100 pl-2 text-left">Email</th>
-            <th className=" border-gray-100 pl-2 text-left">
+            <th className=" border-gray-400  pl-2 text-left"></th>
+            <th className=" border-gray-400 pl-2 text-left">Physician Name</th>
+            <th className=" border-gray-400 pl-2 text-left">Email</th>
+            <th className=" border-gray-400 pl-2 text-left">
               Preferred Numbers
             </th>
-            <th className=" border-gray-100 pl-2 text-left">Title</th>
-            <th className=" border-gray-100 pl-2 text-left">Status</th>
-            <th className=" border-gray-100 pl-2 text-left">Action</th>
+            <th className=" border-gray-400 pl-2 text-left">Title</th>
+            <th className=" border-gray-400 pl-2 text-left">Status</th>
+            <th className=" border-gray-400 pl-2 text-left">Action</th>
           </tr>
         </thead>
         <tbody>
