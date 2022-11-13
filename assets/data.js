@@ -30,7 +30,7 @@ import { FiHome, FiSettings } from 'react-icons/fi';
 import { VscNote, VscServerProcess } from 'react-icons/vsc';
 import { IoIosPeople } from 'react-icons/io';
 import { FaHome, FaRegNewspaper } from 'react-icons/fa';
-import AssociateMenuProfile from '../components/resources/associates/AssociateMenuProfile';
+import AssociateMenuProfile from '../components/resources/associates/AssociateMenuProfile/index';
 import AssociateMenuContact from '../components/resources/associates/AssociateMenuContact';
 import AssociateMenuWebsite from '../components/resources/associates/AssociateMenuWebsite';
 import AssociateMenuNotes from '../components/resources/associates/AssociateMenuNotes';

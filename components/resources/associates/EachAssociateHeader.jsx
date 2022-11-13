@@ -1,5 +1,6 @@
 import React from 'react';
 import { FcInfo } from 'react-icons/fc';
+import EditPoppver from './EditPopover';
 
 const EachAssociateHeader = ({ associateUrl }) => {
   return (
@@ -9,9 +10,8 @@ const EachAssociateHeader = ({ associateUrl }) => {
           <h2 className="text-lg font-semibold tracking-wide">
             {associateUrl}
           </h2>
-          <span className="flex cursor-pointer items-center gap-1 text-orange-600 underline">
-            [Edit]
-            <FcInfo className="rotate-180" />
+          <span className="flex w-fit cursor-pointer items-center gap-1 text-orange-600 underline">
+            <EditPoppver />
           </span>
         </div>
         <div className="space-x-5">
