@@ -11,7 +11,7 @@ const Facilities = () => {
     <section className="mx-10 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
-          <h2 className="text-xl font-semibold tracking-wider">Physicians</h2>
+          <h2 className="text-xl font-semibold tracking-wider">Facilities</h2>
           <CreateFacilities />
         </div>
         <div>
