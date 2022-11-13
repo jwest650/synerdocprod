@@ -11,20 +11,22 @@ import {
   BsDot,
   BsFolder2Open,
   BsGlobe,
+  BsListStars,
 } from 'react-icons/bs';
 import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
-import { BiChalkboard, BiGitPullRequest } from 'react-icons/bi';
+import { BiChalkboard, BiDollar, BiGitPullRequest } from 'react-icons/bi';
 import { GiWhiteBook } from 'react-icons/gi';
 import { CiStethoscope } from 'react-icons/ci';
-import { RiProfileLine, RiToolsFill } from 'react-icons/ri';
+import { RiBillLine, RiProfileLine, RiToolsFill } from 'react-icons/ri';
 import {
   MdAttachMoney,
   MdLibraryBooks,
+  MdNotes,
   MdOutlineMedicalServices,
   MdOutlinePayments,
 } from 'react-icons/md';
 import { SlCalculator, SlCheck } from 'react-icons/sl';
-import { FiHome } from 'react-icons/fi';
+import { FiHome, FiSettings } from 'react-icons/fi';
 import { VscNote, VscServerProcess } from 'react-icons/vsc';
 import { IoIosPeople } from 'react-icons/io';
 import { FaHome, FaRegNewspaper } from 'react-icons/fa';
@@ -47,6 +49,17 @@ import PhysicianOrders from '../components/resources/physicians/PhysicianOrders'
 import FacilityContactsInfo from '../components/resources/facilities/FacilityContactsInfo';
 import FacilityNotes from '../components/resources/facilities/FacilityNotes';
 import FacilityCredentials from '../components/resources/facilities/FacilityCredentials';
+import OrganizationPayersContactInfo from '../components/resources/organization-payers/OrganizationPayersContactInfo';
+import OrganizationPayersNotes from '../components/resources/organization-payers/OrganizationPayersNotes';
+import OrganizationPayersSettings from '../components/resources/organization-payers/OrganizationPayersSettings';
+import OrganizationPayersRequirements from '../components/resources/organization-payers/OrganizationPayersRequirements';
+import OrganizationPayersBillRates from '../components/resources/organization-payers/OrganizationPayersBillRates';
+import OrganizationPayersRules from '../components/resources/organization-payers/OrganizationPayersRules';
+import OrganizationPayersEncounters from '../components/resources/organization-payers/OrganizationPayersEncounters';
+import OrganizationPayersDocuments from '../components/resources/organization-payers/OrganizationPayersDocuments';
+import ReferralSourcesContactInfo from '../components/resources/referral-sources/ReferralSourcesContactInfo';
+import ReferralSourcesNotes from '../components/resources/referral-sources/ReferralSourcesNotes';
+import ReferralSourcesCredentials from '../components/resources/referral-sources/ReferralSourcesCredentials';
 
 export const scheduleData = [
   {
@@ -854,6 +867,33 @@ export const physicianTableData = [
   },
 ];
 
+export const referralSourcesTableData = [
+  {
+    name: 'Aames Alan',
+    url: 'aamesalen',
+    referralSourceType: 'Physician',
+    email: 'aamesalen@gmail.com',
+    preferredNumber: '',
+    status: 'Active',
+  },
+  {
+    name: 'Andrews James',
+    url: 'andrewsjames',
+    referralSourceType: 'Physician',
+    email: 'andrewsjames@gmail.com',
+    preferredNumber: '',
+    status: 'Active',
+  },
+  {
+    name: 'Apria',
+    url: 'apria',
+    referralSourceType: 'Facility',
+    email: '',
+    preferredNumber: '',
+    status: 'Active',
+  },
+];
+
 export const facilitiesTableData = [
   {
     name: 'Miami Regional Medical Center',
@@ -885,6 +925,45 @@ export const facilitiesTableData = [
     facilityType: 'Hospital',
     email: 'mlrmc@gmail.com',
     preferredNumber: 'W:(900) 452-4535',
+    status: 'Active',
+  },
+];
+
+export const organizationPayersTableData = [
+  {
+    name: 'Atena',
+    url: 'atena',
+    payerCategory: 'Insurance',
+    claimFilingType: 'Commercial Insurance',
+    agencyType: '',
+    invoiceType: 'Generic',
+    cycle: 'Weekly',
+    orgStartDate: new Date().toLocaleDateString(),
+    orgEndDate: '',
+    status: 'Active',
+  },
+  {
+    name: 'Amerihealth Caritas',
+    url: 'amerihealthcaritas',
+    payerCategory: 'Insurance',
+    claimFilingType: 'Commercial Insurance',
+    agencyType: '',
+    invoiceType: 'UB04',
+    cycle: 'Monthly',
+    orgStartDate: new Date().toLocaleDateString(),
+    orgEndDate: '',
+    status: 'Active',
+  },
+  {
+    name: 'BCBS LA',
+    url: 'bcbsla',
+    payerCategory: 'Insurance',
+    claimFilingType: 'Commercial Insurance',
+    agencyType: '',
+    invoiceType: 'Generic',
+    cycle: 'Monthly',
+    orgStartDate: new Date().toLocaleDateString(),
+    orgEndDate: '',
     status: 'Active',
   },
 ];
@@ -952,6 +1031,57 @@ export const associateMenu = [
   },
 ];
 
+export const organizationPayersMenu = [
+  {
+    menu: 'Contact Info',
+    url: 'contactinfo',
+    icon: <AiOutlineContacts />,
+    component: <OrganizationPayersContactInfo />,
+  },
+  {
+    menu: 'Notes',
+    url: 'notes',
+    icon: <FaRegNewspaper />,
+    component: <OrganizationPayersNotes />,
+  },
+  {
+    menu: 'Settings',
+    url: 'settings',
+    icon: <FiSettings />,
+    component: <OrganizationPayersSettings />,
+  },
+  {
+    menu: 'Requirements',
+    url: 'requirements',
+    icon: <BsListStars />,
+    component: <OrganizationPayersRequirements />,
+  },
+  {
+    menu: 'Bill Rates',
+    url: 'billrates',
+    icon: <BiDollar />,
+    component: <OrganizationPayersBillRates />,
+  },
+  {
+    menu: 'Rules',
+    url: 'rules',
+    icon: <MdNotes />,
+    component: <OrganizationPayersRules />,
+  },
+  {
+    menu: 'Encounters',
+    url: 'encounters',
+    icon: <VscNote />,
+    component: <OrganizationPayersEncounters />,
+  },
+  {
+    menu: 'Documents',
+    url: 'documents',
+    icon: <BsFolder2Open />,
+    component: <OrganizationPayersDocuments />,
+  },
+];
+
 export const physicianMenu = [
   {
     menu: 'Contacts Info',
@@ -1011,6 +1141,28 @@ export const facilityMenu = [
     url: 'credentials',
     icon: <SlCheck />,
     component: <FacilityCredentials />,
+  },
+];
+
+export const referralSourcesMenu = [
+  {
+    menu: 'Contact Info',
+    url: 'contactinfo',
+    icon: <AiOutlineContacts />,
+    component: <ReferralSourcesContactInfo />,
+  },
+  {
+    menu: 'Notes',
+    url: 'notes',
+    icon: <FaRegNewspaper />,
+    component: <ReferralSourcesNotes />,
+  },
+
+  {
+    menu: 'Credentials',
+    url: 'credentials',
+    icon: <SlCheck />,
+    component: <ReferralSourcesCredentials />,
   },
 ];
 

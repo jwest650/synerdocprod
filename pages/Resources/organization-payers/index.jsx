@@ -1,10 +1,9 @@
-import React from 'react';
-import Payers from '../../../components/resources/organization-payers/Payers';
+import OrganizationPayers from '../../../components/resources/organization-payers/OrganizationPayers';
 
 const OrganizationPayersPage = () => {
   return (
     <div className="w-full">
-      <Payers />
+      <OrganizationPayers />{' '}
     </div>
   );
 };
