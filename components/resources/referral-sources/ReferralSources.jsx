@@ -45,17 +45,25 @@ const ReferralSources = () => {
       <table className="mt-10 min-w-full overflow-auto">
         <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
           <tr>
-            <th className=" border-gray-400  pl-2 text-left"></th>
-            <th className=" border-gray-400 pl-2 text-left">Name</th>
-            <th className=" border-gray-400 pl-2 text-left">
+            <th className=" border-gray-400 border-t-[#0141CF] border-l-[#0141CF] pl-2 text-left"></th>
+            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
+              Name
+            </th>
+            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
               Referral source Type
             </th>
-            <th className=" border-gray-400 pl-2 text-left">Email </th>
-            <th className=" border-gray-400 pl-2 text-left">
+            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
+              Email{' '}
+            </th>
+            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
               Preferred Numbers
             </th>
-            <th className=" border-gray-400 pl-2 text-left">Status</th>
-            <th className=" border-gray-400 pl-2 text-left">Action</th>
+            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
+              Status
+            </th>
+            <th className=" border-gray-400 border-t-[#0141CF] border-r-[#0141CF] pl-2 text-left">
+              Action
+            </th>
           </tr>
         </thead>
         <tbody>
