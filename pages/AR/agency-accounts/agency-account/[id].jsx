@@ -36,7 +36,7 @@ const AgencyAccount = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr className="bg-[#c6d8ffe1]">
                             <td></td>
                             <td></td>
                             <td>
@@ -100,6 +100,14 @@ const AgencyAccount = () => {
                                     ml={5}
                                     className="text-right"
                                 />
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr className=" border-b-none text-right">
+                            <td colSpan={7} className="space-x-2">
+                                <button className="btn">Apply</button>
+                                <button className="btn">Clear All</button>
+                                <button className="btn">Cancel</button>
                             </td>
                             <td></td>
                         </tr>
