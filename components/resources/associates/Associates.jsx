@@ -48,7 +48,7 @@ const Associates = () => {
       <table className="mt-10 min-w-full overflow-auto">
         <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
           <tr>
-            <th className=" border-gray-400  pl-2 text-left"></th>
+            <th className=" border-gray-400 pl-2 text-left"></th>
             <th className=" border-gray-400 pl-2 text-left">Name</th>
             <th className=" border-gray-400 pl-2 text-left">Classification</th>
             <th className=" border-gray-400 pl-2 text-left">Discipline</th>

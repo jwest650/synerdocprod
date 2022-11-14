@@ -14,6 +14,12 @@ module.exports = {
         'secondary-dark-bg': '#152937',
       },
       colors: {
+        'primary-blue': '#0141CF',
+        'secondary-blue': '#c6d8ffe1',
+        'texiary-blue': '#f6f8fc',
+        'primary-gray': '#9ca3af',
+        'primary-orange': '#ea580c',
+
         'main-text-light': '#000000',
         'secondary-text-light': '#0e1922',
         'main-text-dark': '#ffffff',
@@ -26,4 +32,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
