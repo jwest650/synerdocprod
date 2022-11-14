@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Jost&display=swap"); */
 @import url("https://cdn.syncfusion.com/ej2/tailwind.css");
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Jost", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -238,35 +238,40 @@
     .btn {
         @apply rounded bg-[#EA580C] py-[2px] px-3 font-medium text-white;
     }
+    .create-btn {
+        @apply rounded bg-[#EA580C] py-2 px-3 font-medium text-white;
+    }
     .darkmode {
         @apply dark:text-white;
     }
 }
-.ar {
-    width: 100%;
-    height: 100%;
-}
-.ar table {
-    text-align: left;
-}
-.ar td,
-th,
-tr {
-    font-size: 14px;
-    padding: 2px 5px;
-    border: 1px solid #a0a0a0;
-}
+@layer base {
+    .ar {
+        width: 100%;
+        height: 100%;
+    }
+    .ar td,
+    .ar th {
+        font-size: 14px;
+        padding: 2px 5px;
+        border: 1px solid #a0a0a0;
+    }
+    .ar td:first-child {
+        border-left: 0;
+    }
 
-.ar th {
-    background-color: #0141cf;
-    color: white;
-}
-.ar table tr:nth-child(even) {
-    background-color: #eeeeee;
-}
+    .ar th {
+        background-color: #0141cf;
+        color: white;
+        text-align: left;
+    }
+    .ar tr {
+        @apply even:bg-gray-100;
+    }
 
-.ar hr {
-    border-color: black;
+    .ar hr {
+        border-color: black;
+    }
 }
 
 .table-action-anim {

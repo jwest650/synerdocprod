@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { CiSettings } from "react-icons/ci";
+import { FcSettings } from "react-icons/fc";
 
 const Actions = ({ icon1, icon2 }) => {
     const [show, setshow] = useState(false);
@@ -10,7 +10,7 @@ const Actions = ({ icon1, icon2 }) => {
             onMouseLeave={() => setshow(false)}
         >
             {show && <span className="table-action-anim"> {icon1}</span>}
-            <CiSettings onMouseEnter={() => setshow(true)} />
+            <FcSettings onMouseEnter={() => setshow(true)} />
             {show && <span className="table-action-anim"> {icon2}</span>}
         </div>
     );
