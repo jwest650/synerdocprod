@@ -52,25 +52,35 @@ const Physicians = () => {
       <table className="mt-10 min-w-full overflow-auto">
         <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
           <tr>
-            <th className=" border-gray-400  pl-2 text-left"></th>
-            <th className=" border-gray-400 pl-2 text-left">Physician Name</th>
-            <th className=" border-gray-400 pl-2 text-left">Email</th>
-            <th className=" border-gray-400 pl-2 text-left">
+            <th className=" border-primary-gray border-t-primary-blue border-l-primary-blue  pl-2 text-left"></th>
+            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+              Physician Name
+            </th>
+            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+              Email
+            </th>
+            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
               Preferred Numbers
             </th>
-            <th className=" border-gray-400 pl-2 text-left">Title</th>
-            <th className=" border-gray-400 pl-2 text-left">Status</th>
-            <th className=" border-gray-400 pl-2 text-left">Action</th>
+            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+              Title
+            </th>
+            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+              Status
+            </th>
+            <th className=" border-primary-gray border-t-primary-blue  border-r-primary-blue pl-2 text-left">
+              Action
+            </th>
           </tr>
         </thead>
         <tbody>
-          <tr className="w-full bg-[#c6d8ffe1]">
+          <tr className="w-full bg-secondary-blue">
             <td></td>
             <td></td>
             <td></td>
 
             <td></td>
-            <td className=" w-full border border-gray-400">
+            <td className=" w-full border border-primary-gray">
               <Select
                 css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                 className="cursor-pointer shadow outline-none"
@@ -87,7 +97,7 @@ const Physicians = () => {
                 </option>
               </Select>
             </td>
-            <td className=" w-full border border-gray-400">
+            <td className=" w-full border border-primary-gray">
               <Select
                 css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                 className="cursor-pointer shadow outline-none"
@@ -108,35 +118,35 @@ const Physicians = () => {
           </tr>
           {physicianTableData.map((physician, i) => (
             <tr key={i} className={`border  even:bg-[#eeeeee] `}>
-              <td className=" max-h-[20px] min-w-[50px] border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[50px] border border-primary-gray py-1 px-2 font-medium">
                 <span className="cursor-pointer">
                   <MorePhysicianInfo />
                 </span>
               </td>
-              <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
+              <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-primary-gray py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
                 <Link
                   href={`/Resources/physicians/${physician.url}/contactsinfo`}
                 >
                   {physician.name}
                 </Link>
               </td>
-              <td className=" max-h-[20px] min-w-[330px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[330px] cursor-pointer border border-primary-gray py-1 px-2 font-medium">
                 {physician.email}
               </td>
-              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-primary-gray py-1 px-2 font-medium">
                 {physician.preferredNumber}
               </td>
-              <td className=" max-h-[20px] min-w-[120px] border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[120px] border-primary-gray py-1 px-2 font-medium">
                 {physician.title}
               </td>
               <td
-                className={`max-h-[20px] min-w-[100px] border border-gray-400 py-1 px-2 font-semibold  ${
+                className={`max-h-[20px] min-w-[100px] border border-primary-gray py-1 px-2 font-semibold  ${
                   physician.status === 'Active' && 'text-green-600'
                 }`}
               >
                 {physician.status}
               </td>
-              <td className=" max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[120px] cursor-pointer border  border-primary-gray py-1 px-2 font-medium">
                 <PhysicianTableAction
                   physicianUrl={physician.url}
                   physicianName={physician.name}
@@ -146,7 +156,7 @@ const Physicians = () => {
           ))}
         </tbody>
       </table>
-      <div className="flex w-fit items-center gap-2 border-x border-b border-gray-400 bg-[#eee] px-5">
+      <div className="flex w-fit items-center gap-2 border-x border-b border-primary-gray bg-[#eee] px-5">
         <p>Displaying page 1 of 1, rows 1 to 4 of 4, | Rows per page </p>
         <div>
           <Select

@@ -31,7 +31,7 @@ import { VscNote, VscServerProcess } from 'react-icons/vsc';
 import { IoIosPeople } from 'react-icons/io';
 import { FaHome, FaRegNewspaper } from 'react-icons/fa';
 import AssociateMenuProfile from '../components/resources/associates/AssociateMenuProfile/index';
-import AssociateMenuContact from '../components/resources/associates/AssociateMenuContact';
+import AssociateMenuContact from '../components/resources/associates/AssociateMenuContact/index';
 import AssociateMenuWebsite from '../components/resources/associates/AssociateMenuWebsite';
 import AssociateMenuNotes from '../components/resources/associates/AssociateMenuNotes';
 import AssociateMenuAvailability from '../components/resources/associates/AssociateMenuAvailability';
