@@ -27,31 +27,31 @@ const Facilities = () => {
       </div>
 
       <table className="mt-10 min-w-full overflow-auto">
-        <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
+        <thead className="border-b bg-[#0141CF] text-[15px] tracking-wider text-white">
           <tr>
-            <th className=" border-primary-gray border-t-primary-blue  border-l-primary-blue pl-2 text-left"></th>
-            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue  border-l-primary-blue pl-2 text-left"></th>
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
               Name
             </th>
-            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
               Facility Type
             </th>
-            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
               Email
             </th>
-            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
               Preferred Numbers
             </th>
-            <th className=" border-primary-gray border-t-primary-blue  pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
               Status
             </th>
-            <th className=" border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left">
               Action
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr className="w-full bg-secondary-blue">
+          <tr className="w-full border border-primary-gray bg-secondary-blue">
             <td></td>
             <td></td>
             <td></td>
@@ -77,7 +77,7 @@ const Facilities = () => {
             <td></td>
           </tr>
           {facilitiesTableData.map((facility, i) => (
-            <tr key={i} className={`border  even:bg-[#eeeeee] `}>
+            <tr key={i} className={`border text-[15px]  even:bg-[#eeeeee]`}>
               <td className=" max-h-[20px] min-w-[50px] border border-primary-gray py-1 px-2 font-medium">
                 <span className="cursor-pointer">
                   <MoreFacilitiesInfo />

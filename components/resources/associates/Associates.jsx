@@ -46,33 +46,33 @@ const Associates = () => {
         </div>
       </div>
       <table className="mt-10 min-w-full overflow-auto">
-        <thead className="border-b bg-primary-blue text-[18px] tracking-wider text-white">
+        <thead className="border-b bg-primary-blue text-[15px] tracking-wider text-white">
           <tr>
-            <th className=" border-primary-gray border-t-primary-blue border-l-primary-blue pl-2 text-left"></th>
-            <th className=" border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className="border border-primary-gray border-t-primary-blue border-l-primary-blue pl-2 text-left"></th>
+            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
               Name
             </th>
-            <th className=" border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
               Classification
             </th>
-            <th className=" border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
               Discipline
             </th>
-            <th className=" border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
               Hire Date
             </th>
-            <th className=" border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
               Status
             </th>
-            <th className=" border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left">
               Action
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr className="w-full bg-secondary-blue">
+          <tr className="w-full border border-primary-gray bg-secondary-blue">
             <td></td>
-            <td className=" w-full border border-primary-gray">
+            <td className="w-full border border-primary-gray">
               <Select
                 css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                 className="cursor-pointer shadow outline-none"
@@ -147,7 +147,7 @@ const Associates = () => {
             <td></td>
           </tr>
           {associateTableData.map((associate, i) => (
-            <tr key={i} className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}>
+            <tr key={i} className={`border text-[15px]  even:bg-[#eeeeee]`}>
               <td className=" max-h-[20px] min-w-[50px] border border-primary-gray py-1 px-2 font-medium">
                 <span className="cursor-pointer">
                   <MoreAssociateInfo />
@@ -164,7 +164,7 @@ const Associates = () => {
               <td className=" max-h-[20px] min-w-[330px] cursor-pointer border border-primary-gray py-1 px-2 font-medium">
                 {associate.discipline}
               </td>
-              <td className=" max-h-[20px] min-w-[120px] border-primary-gray py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[120px] border border-primary-gray py-1 px-2 font-medium">
                 {associate.hireDate}
               </td>
               <td

@@ -8,7 +8,7 @@ import {
 import { BiPlus } from 'react-icons/bi';
 import { FiTrash2 } from 'react-icons/fi';
 
-const AssociateCreateReferralSource = () => {
+const AssociateCreateEmergencyContact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -22,7 +22,7 @@ const AssociateCreateReferralSource = () => {
         className="flex cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white"
       >
         <BiPlus />
-        <span className="text-sm">Create Referral Source</span>
+        <span className="text-sm">Create Emergency Contact</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
@@ -31,14 +31,10 @@ const AssociateCreateReferralSource = () => {
             {/* <ModalBody> */}
             <form action="" onSubmit={handleForm}>
               <h1 className="text-xl font-semibold">
-                Add Associate/Phone Info
+                Add Emergency Contact Info
               </h1>
-              <p>
-                Select an address type and enter address details. Then add
-                relevant phone numbers. Finally, hit &quot;Save&quot;
-              </p>
               <div className="mt-16 flex flex-col items-center lg:flex-row lg:items-start">
-                <div className="mr-3 w-[65%] border-primary-gray lg:border-r">
+                <div className="mr-3 w-full border-primary-gray  lg:border-r">
                   <div className="flex items-start">
                     <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white">
                       1
@@ -48,6 +44,96 @@ const AssociateCreateReferralSource = () => {
                         <div className="my-2 flex">
                           <p className="w-[150px] text-right font-semibold">
                             <span className="text-primary-orange">*</span>
+                            Relationship:
+                          </p>
+                          <div className="ml-3">
+                            <Select
+                              css={{
+                                backgroundColor: '#c6d8ffe1',
+                                border: 'none',
+                              }}
+                              className="shadow outline-none"
+                              size="xs"
+                            >
+                              <option value="option1" className="text-gray-800">
+                                Daughter{' '}
+                              </option>
+                              <option value="option1" className="text-gray-800">
+                                Sister{' '}
+                              </option>
+                              <option value="option1" className="text-gray-800">
+                                Father{' '}
+                              </option>
+                              <option value="option1" className="text-gray-800">
+                                Brother{' '}
+                              </option>
+                              <option value="option1" className="text-gray-800">
+                                Uncle{' '}
+                              </option>
+                              <option value="option1" className="text-gray-800">
+                                Aunty{' '}
+                              </option>
+                              <option value="option1" className="text-gray-800">
+                                Nephew{' '}
+                              </option>
+                              <option value="option1" className="text-gray-800">
+                                Niece{' '}
+                              </option>
+                              <option value="option1" className="text-gray-800">
+                                Other{' '}
+                              </option>
+                            </Select>
+                          </div>
+                        </div>
+
+                        <div className="my-2 flex">
+                          <p className="ml-6 w-[150px] text-right font-semibold">
+                            <span className="text-primary-orange">*</span>
+                            First Name:
+                          </p>{' '}
+                          <div className="ml-4 w-28 pt-0.5">
+                            <input
+                              type="text"
+                              placeholder="222 Hwy 48"
+                              className="mx-2 w-48 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none md:mx-0"
+                            />
+                          </div>
+                        </div>
+                        <div className="my-2 flex">
+                          <p className="ml-6 w-[150px] text-right font-semibold">
+                            <span className="text-primary-orange">*</span>
+                            Last Name:
+                          </p>{' '}
+                          <div className="ml-4 w-28 pt-0.5">
+                            <input
+                              type="text"
+                              placeholder="222 Hwy 48"
+                              className="mx-2 w-48 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none md:mx-0"
+                            />
+                          </div>
+                        </div>
+                        <div className="my-2 flex">
+                          <p className="ml-6 w-[150px] text-right font-semibold">
+                            Priority:
+                          </p>{' '}
+                          <div className="ml-4 w-28 pt-0.5">
+                            <input
+                              type="text"
+                              className="mx-2 w-24 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none md:mx-0"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-14 flex items-start">
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white">
+                      2
+                    </span>
+                    <div>
+                      <div className="flex w-[100%] flex-col items-center justify-center px-3">
+                        <div className="my-2 flex">
+                          <p className="w-[150px] text-right font-semibold">
                             Address Type:
                           </p>
                           <div className="ml-3">
@@ -68,16 +154,14 @@ const AssociateCreateReferralSource = () => {
                             </Select>
                           </div>
                         </div>
-
                         <div className="my-2 flex">
                           <p className="ml-6 w-[150px] text-right font-semibold">
-                            <span className="text-primary-orange">*</span>
                             Address1:
                           </p>{' '}
                           <div className="ml-4 w-28 pt-0.5">
                             <input
                               type="text"
-                              placeholder="222 Hwy 48"
+                              placeholder="123 Muse Street"
                               className="mx-2 w-48 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none md:mx-0"
                             />
                           </div>
@@ -89,6 +173,7 @@ const AssociateCreateReferralSource = () => {
                           <div className="ml-4 w-28 pt-0.5">
                             <input
                               type="text"
+                              placeholder=""
                               className="mx-2 w-48 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none md:mx-0"
                             />
                           </div>
@@ -126,19 +211,21 @@ const AssociateCreateReferralSource = () => {
                               placeholder="71070"
                               className="w-16 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                             />{' '}
-                            <input
-                              type="text"
-                              placeholder=""
-                              className="w-16 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
-                            />{' '}
                           </div>
                         </div>
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="ml-[151px] mt-2 w-20 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                        />{' '}
                       </div>
                     </div>
                   </div>
-                  <div className="mt-14 flex items-start">
+                </div>
+                <div className="mt-14 w-full space-y-14 lg:mt-0">
+                  <div className="flex items-start">
                     <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white">
-                      2
+                      3
                     </span>
                     <div>
                       <div className="flex w-[100%] flex-col items-center justify-center px-3">
@@ -187,58 +274,59 @@ const AssociateCreateReferralSource = () => {
                               className="w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
                             />
                             ext.
-                            <input
-                              type="text"
-                              placeholder=""
-                              className="w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
-                            />
                           </div>
                         </div>
-                        <div className="ml-24 mt-4 rounded bg-primary-orange px-3 py-1 text-white shadow-md">
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="ml-40 w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                        />
+                        <div className="ml-24 mt-7 rounded bg-primary-orange px-3 py-1 text-white shadow-md">
                           Add Phone
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="mt-12 flex gap-5 lg:mt-1 lg:block">
-                  <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white lg:mt-0">
-                    3
-                  </span>
-                  <table className=" mx-auto mt-5 w-fit overflow-auto px-3 shadow-md">
-                    <thead className="border-b bg-primary-blue text-[15px] tracking-wider text-white">
-                      <tr>
-                        <th className="border border-primary-gray border-t-primary-blue border-l-primary-blue px-4 text-left">
-                          Preferred{' '}
-                        </th>
-                        <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
-                          Phone Type
-                        </th>
-                        <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
-                          Phone
-                        </th>
 
-                        <th className="border border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="w-full bg-[#e6ebf85d]">
-                        <td className="w-10 border border-gray-400 py-2 px-4">
-                          <input type="checkbox" />
-                        </td>
-                        <td className="w-10 border border-gray-400 px-2">
-                          Mobile
-                        </td>
-                        <td className="w-64 border border-gray-400 px-4">
-                          (318) 576-9999{' '}
-                        </td>
+                  <div>
+                    <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white lg:mt-0">
+                      4
+                    </span>
+                    <table className=" mx-auto mt-5 w-fit overflow-auto px-3 shadow-md">
+                      <thead className="border-b bg-primary-blue text-[15px] tracking-wider text-white">
+                        <tr>
+                          <th className="border border-primary-gray border-t-primary-blue border-l-primary-blue px-4 text-left">
+                            Preferred{' '}
+                          </th>
+                          <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
+                            Phone Type
+                          </th>
+                          <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
+                            Phone
+                          </th>
 
-                        <td className="border border-gray-400 px-4">
-                          <FiTrash2 className="scale-125 text-primary-orange" />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          <th className="border border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="w-full bg-[#e6ebf85d]">
+                          <td className="w-10 border border-gray-400 py-2 px-4">
+                            <input type="checkbox" />
+                          </td>
+                          <td className="w-60 border border-gray-400 px-2">
+                            Mobile
+                          </td>
+                          <td className="w-64 border border-gray-400 px-4">
+                            (318) 576-9999{' '}
+                          </td>
+
+                          <td className="border border-gray-400 px-4">
+                            <FiTrash2 className="scale-125 text-primary-orange" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
 
@@ -265,4 +353,4 @@ const AssociateCreateReferralSource = () => {
   );
 };
 
-export default AssociateCreateReferralSource;
+export default AssociateCreateEmergencyContact;
