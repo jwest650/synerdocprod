@@ -47,10 +47,9 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                             <div className="space-y-3 capitalize">
                                 <div>
                                     <label htmlFor="">
-                                        {" "}
                                         <span className="text-orange-500">
                                             *
-                                        </span>
+                                        </span>{" "}
                                         Agency:
                                     </label>
                                 </div>
@@ -60,7 +59,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                         {" "}
                                         <span className="text-orange-500">
                                             *
-                                        </span>
+                                        </span>{" "}
                                         Level:
                                     </label>
                                 </div>
@@ -71,7 +70,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                             {" "}
                                             <span className="text-orange-500">
                                                 *
-                                            </span>
+                                            </span>{" "}
                                             assign to:
                                         </label>
                                     </div>
@@ -80,22 +79,19 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     <div>
                                         {" "}
                                         <label htmlFor="">
-                                            {" "}
                                             <span className="text-orange-500">
                                                 *
-                                            </span>
+                                            </span>{" "}
                                             payer category:
                                         </label>
                                     </div>
                                 )}
                                 {option.payer && (
                                     <div>
-                                        {" "}
                                         <label htmlFor="">
-                                            {" "}
                                             <span className="text-orange-500">
                                                 *
-                                            </span>
+                                            </span>{" "}
                                             payer :
                                         </label>
                                     </div>
@@ -165,10 +161,10 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                         <ModalFooter className="space-x-2 ">
                             {option.single || option.payer ? (
                                 <>
-                                    <button className="btn rounded  px-3 text-white">
+                                    <button className="btn rounded  text-white">
                                         Save/Add More
                                     </button>
-                                    <button className="btn rounded  px-3 text-white">
+                                    <button className="btn rounded  text-white">
                                         Save/Close
                                     </button>
                                     <button
