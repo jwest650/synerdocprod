@@ -11,7 +11,7 @@ const CreateReferralForm = () => {
   return (
     <div>
       <section>
-        <h1 className="verdana18 font-bold capitalize text-black dark:text-white">
+        <h1 className="verdana18 mt-3 font-bold capitalize text-black dark:text-white">
           Create Referral
         </h1>
         <hr />
