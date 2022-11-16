@@ -10,12 +10,16 @@ const Associates = () => {
     <section className="mx-5 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
-          <h2 className="text-xl font-semibold tracking-wider">Associates</h2>
+          <h2 className="verdana18 font-semibold tracking-wider">Associates</h2>
           <CreateAssociate />
         </div>
-        <div className="flex items-center gap-3">
+        <div className="verdana12 flex items-center gap-3">
           <Select
-            css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+            css={{
+              backgroundColor: '#c6d8ffe1',
+              border: 'none',
+              height: '22px',
+            }}
             className="shadow outline-none"
             size="xs"
           >
@@ -32,7 +36,7 @@ const Associates = () => {
               Associate Caseload PDF
             </option>
           </Select>
-          <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
+          <button className="rounded bg-orange-600 px-2 py-[2px] font-medium text-white">
             Export
           </button>
           <input
@@ -40,7 +44,7 @@ const Associates = () => {
             className="verdana12 rounded border border-secondary-blue px-3 py-[2px] text-black outline-none"
             type="text"
           />
-          <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
+          <button className="rounded bg-orange-600 px-2 py-[2px] font-medium text-white">
             Search
           </button>
         </div>
