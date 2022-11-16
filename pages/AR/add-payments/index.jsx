@@ -1,8 +1,10 @@
 import { Input, Select } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import React from "react";
 import { FcCheckmark, FcSearch } from "react-icons/fc";
 
 const AddPayments = () => {
+    const router = useRouter();
     return (
         <div className="ar bodytext p-5 capitalize">
             <main className="">
@@ -157,7 +159,10 @@ const AddPayments = () => {
                     </article>
                 </div>
                 <div className=" my-5 flex justify-end space-x-3">
-                    <button className="btn capitalize">
+                    <button
+                        className="btn capitalize"
+                        onClick={() => router.push("payments/apply-payment")}
+                    >
                         save / enter more
                     </button>
                     <button className="btn capitalize">save / close</button>

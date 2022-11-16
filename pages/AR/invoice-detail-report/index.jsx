@@ -1,14 +1,14 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
+import { FcCalendar } from "react-icons/fc";
+
 import { invoiceDetail } from "../../../assets/ardata";
 
 const InvoiceDetailReport = () => {
     return (
         <div className="ar  bodytext space-y-2 p-5 capitalize">
             <section>
-                <h1 className="head">
-                    Invoice Detail Report
-                </h1>
+                <h1 className="head">Invoice Detail Report</h1>
                 <hr />
                 <div className="ml-auto mt-2 flex w-52 space-x-2">
                     <Select placeholder="Select option" size="xs" w={120}>
@@ -38,8 +38,11 @@ const InvoiceDetailReport = () => {
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">invoice from dates from:</label>
                         <Input w={120} type="text" size="xs" />
+                        <FcCalendar className="text-xl" />
                         <label htmlFor="">to:</label>
                         <Input w={120} type="text" size="xs" />
+                        <FcCalendar className="text-xl" />
+
                         <div className="space-x-1">
                             <Input
                                 w={200}

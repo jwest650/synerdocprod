@@ -1,8 +1,20 @@
 import { Input } from "@chakra-ui/react";
 import React from "react";
+import { useState } from "react";
+import { FcCalendar } from "react-icons/fc";
 import { era } from "../../../assets/ardata";
 
 const EraPayments = () => {
+    const [data, setdata] = useState([...era]);
+    const setRows = (e) => {
+        let value = parseInt(e.target.value);
+        if (!value) {
+            setdata(era);
+        } else {
+            setdata(era.slice(0, value));
+        }
+        console.log(value);
+    };
     return (
         <div className="ar bodytext space-y-5 p-5 capitalize">
             <section className="space-y-3">
@@ -11,8 +23,11 @@ const EraPayments = () => {
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">recieve dates from:</label>
                         <Input w={120} type="text" size="xs" />
+                        <FcCalendar className="text-xl" />
+
                         <label htmlFor="">to:</label>
                         <Input w={120} type="text" size="xs" />
+                        <FcCalendar className="text-xl" />
                     </div>
                     <div className="flex justify-end space-x-2">
                         <label>show only era with claims to post:</label>
@@ -21,8 +36,11 @@ const EraPayments = () => {
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">remit dates from:</label>
                         <Input w={120} type="text" size="xs" />
+                        <FcCalendar className="text-xl" />
+
                         <label htmlFor="">to:</label>
                         <Input w={120} type="text" size="xs" />
+                        <FcCalendar className="text-xl" />
                     </div>
                     <div className="flex justify-end space-x-2">
                         <div className="flex w-[210px] items-center">
@@ -60,7 +78,7 @@ const EraPayments = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {era.map((value, i) => (
+                        {data.map((value, i) => (
                             <tr key={i}>
                                 <td>{value.remit}</td>
                                 <td>{value.deposit}</td>
@@ -68,9 +86,13 @@ const EraPayments = () => {
                                 <td>{value.check}</td>
                                 <td>{value.payment}</td>
                                 <td>{value.payee}</td>
-                                <td>{value.claims}</td>
+                                <td className="text-orange-500">
+                                    {value.claims}
+                                </td>
                                 <td>{value.matched}</td>
-                                <td>{value.unmatched}</td>
+                                <td className="text-orange-500">
+                                    {value.unmatched}
+                                </td>
                                 <td>{value.adjustment}</td>
                                 <td>{value.matched}</td>
                                 <td>{value.unmatched}</td>
@@ -78,21 +100,32 @@ const EraPayments = () => {
                                 <td>{value.amountto}</td>
                             </tr>
                         ))}
-                        <tr classname="bg-[#15528B]">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>10</td>
-                            <td>5</td>
-                            <td>0</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>$3000,000.00</td>
-                            <td>$3000,000.00</td>
+                        <tr className="text-white">
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color">10</td>
+                            <td className="bg-primary-color">5</td>
+                            <td className="bg-primary-color">0</td>
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color"></td>
+                            <td className="bg-primary-color">$3000,000.00</td>
+                            <td className="bg-primary-color">$3000,000.00</td>
+                        </tr>
+                        <tr className="bg-[#eeeeee]">
+                            <td colSpan="14">
+                                displaying page 1 of 1 | rows per page:
+                                <input
+                                    type="number"
+                                    className="ml-1 w-10 border text-center text-[black]"
+                                    placeholder={`${era.length}`}
+                                    onChange={setRows}
+                                />
+                            </td>
                         </tr>
                     </tbody>
                 </table>

@@ -1,5 +1,6 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
+import { FcCalendar } from "react-icons/fc";
 
 const ArAgingAsOfReport = () => {
     return (
@@ -14,6 +15,7 @@ const ArAgingAsOfReport = () => {
                         size="xs"
                         placeholder="default placeholder"
                     />
+                    <FcCalendar className="text-xl" />
                 </div>
                 <div className="flex space-x-2">
                     <Select placeholder="Select option" w={120} size="xs">
