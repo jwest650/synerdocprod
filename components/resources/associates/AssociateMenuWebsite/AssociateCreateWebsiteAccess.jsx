@@ -6,7 +6,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
-import { FiTrash2 } from 'react-icons/fi';
+import { FcCalendar } from 'react-icons/fc';
 
 const AssociateCreateWebsiteAccess = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -50,9 +50,12 @@ const AssociateCreateWebsiteAccess = () => {
                 </li>
               </p>
 
-              <div className="mt-14 w-full space-y-3">
+              <div className="verdana14 mx-2 mt-14 w-full space-y-5">
                 <div className="flex w-full items-center gap-4 ">
-                  <label className="flex w-[40%] justify-end ">
+                  <label className="flex w-[40%] items-center justify-end font-semibold ">
+                    <span className="mr-1 flex h-[21px] min-h-[21px] w-[21px] min-w-[21px] items-center justify-center rounded-full bg-primary-blue font-normal text-white  ">
+                      1
+                    </span>
                     <span className="text-primary-orange">*</span>User Name:
                   </label>
                   <div className="w-[60%]">
@@ -64,11 +67,19 @@ const AssociateCreateWebsiteAccess = () => {
                   </div>
                 </div>
                 <div className="flex w-full items-center gap-4 ">
-                  <label className="flex w-[40%] justify-end ">Email:</label>
+                  <label className="flex w-[40%] items-center justify-end font-semibold ">
+                    <span className="mr-1 flex h-[21px] min-h-[21px] w-[21px] min-w-[21px] items-center justify-center rounded-full bg-primary-blue font-normal text-white  ">
+                      2
+                    </span>
+                    Email:
+                  </label>
                   <div className="w-[60%]">currntassociate@gmail.com</div>
                 </div>
                 <div className="flex w-full items-start gap-4 ">
-                  <label className="flex w-[40%] justify-end ">
+                  <label className="flex w-[40%] items-center justify-end font-semibold ">
+                    <span className="mr-1 flex h-[21px] min-h-[21px] w-[21px] min-w-[21px] items-center justify-center rounded-full bg-primary-blue font-normal text-white  ">
+                      3
+                    </span>
                     Password:{' '}
                   </label>
                   <div className="w-[60%]">
@@ -88,6 +99,41 @@ const AssociateCreateWebsiteAccess = () => {
                       Password must be at least 6 characters, contain at least 1
                       number
                     </p>
+                  </div>
+                </div>
+                <div className="flex w-full items-center gap-4 ">
+                  <label className="flex w-[40%] items-center justify-end font-semibold ">
+                    <span className="mr-1 flex h-[21px] min-h-[21px] w-[21px] min-w-[21px] items-center justify-center rounded-full bg-primary-blue font-normal text-white  ">
+                      4
+                    </span>
+                    <span className="text-primary-orange">*</span>Start Date:
+                  </label>
+                  <div className="flex w-[60%] items-center gap-1">
+                    <input
+                      type="date"
+                      placeholder=""
+                      className="w-60 rounded bg-secondary-blue px-2 text-center shadow outline-none"
+                    />
+                    {/* <FcCalendar className="text-2xl" /> */}
+                  </div>
+                </div>
+                <div className="flex w-full items-start gap-4 pt-2 ">
+                  <label className="flex w-[40%] items-center justify-end font-semibold ">
+                    <span className="mr-1 flex h-[21px] min-h-[21px] w-[21px] min-w-[21px] items-center justify-center rounded-full bg-primary-blue font-normal text-white  ">
+                      5
+                    </span>
+                    End Date:
+                  </label>
+                  <div className="w-[60%]">
+                    <input
+                      type="date"
+                      placeholder=""
+                      className="w-60 rounded bg-secondary-blue px-2 text-center shadow outline-none"
+                    />
+                    <p className="verdana11 mt-1 w-full text-primary-gray">
+                      leave blank if no end date
+                    </p>
+                    {/* <FcCalendar className="text-3xl" /> */}
                   </div>
                 </div>
               </div>

@@ -24,7 +24,10 @@
   /* font-family: 'Jost', sans-serif; */
   /* color: #9ca3af; */
 }
-
+.arial12 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
 .verdana9 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 9px;

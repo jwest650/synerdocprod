@@ -4,6 +4,7 @@ import TableAction from '../TableAction';
 import CreateAssociate from './CreateAssociate';
 import Link from 'next/link';
 import MoreAssociateInfo from './MoreAssociateInfo';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 const Associates = () => {
   return (
@@ -50,7 +51,7 @@ const Associates = () => {
         </div>
       </div>
       <table className="mt-10 min-w-full overflow-auto">
-        <thead className="border-b bg-primary-blue text-[15px] tracking-wider text-white">
+        <thead className="verdana12 border-b bg-primary-blue tracking-wider text-white">
           <tr>
             <th className="border border-primary-gray border-t-primary-blue border-l-primary-blue pl-2 text-left"></th>
             <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
@@ -78,7 +79,14 @@ const Associates = () => {
             <td></td>
             <td className="w-full border border-primary-gray">
               <Select
-                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+                icon={<MdKeyboardArrowDown className="text-primary-orange" />}
+                iconColor="rgb(234 88 12)"
+                css={{
+                  backgroundColor: '#c6d8ffe1',
+                  border: 'none',
+                  fontSize: '12px',
+                  fontFamily: 'Arial',
+                }}
                 className="cursor-pointer shadow outline-none"
                 size="xs"
               >
@@ -98,7 +106,13 @@ const Associates = () => {
             </td>
             <td className=" w-full border border-primary-gray">
               <Select
-                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+                icon={<MdKeyboardArrowDown className="text-primary-orange" />}
+                iconColor="rgb(234 88 12)"
+                css={{
+                  backgroundColor: '#c6d8ffe1',
+                  border: 'none',
+                  fontSize: '12px',
+                }}
                 className="cursor-pointer shadow outline-none"
                 size="xs"
               >
@@ -115,7 +129,13 @@ const Associates = () => {
             </td>
             <td className=" w-full border border-primary-gray">
               <Select
-                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+                icon={<MdKeyboardArrowDown className="text-primary-orange" />}
+                iconColor="rgb(234 88 12)"
+                css={{
+                  backgroundColor: '#c6d8ffe1',
+                  border: 'none',
+                  fontSize: '12px',
+                }}
                 className="cursor-pointer shadow outline-none"
                 size="xs"
               >
@@ -133,7 +153,13 @@ const Associates = () => {
             <td></td>
             <td className=" w-full border border-primary-gray">
               <Select
-                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+                icon={<MdKeyboardArrowDown className="text-primary-orange" />}
+                iconColor="rgb(234 88 12)"
+                css={{
+                  backgroundColor: '#c6d8ffe1',
+                  border: 'none',
+                  fontSize: '12px',
+                }}
                 className="cursor-pointer shadow outline-none"
                 size="xs"
               >

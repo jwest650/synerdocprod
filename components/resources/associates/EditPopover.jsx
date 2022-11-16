@@ -11,7 +11,7 @@ const EditPopover = () => {
       <div
         onMouseOver={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="relative flex cursor-pointer items-center gap-2 py-3"
+        className="verdana11 relative flex cursor-pointer items-center gap-2 py-3"
       >
         {' '}
         [Edit]

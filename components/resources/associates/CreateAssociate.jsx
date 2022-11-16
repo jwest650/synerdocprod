@@ -18,7 +18,7 @@ const CreateAssociate = () => {
     <>
       <span
         onClick={onOpen}
-        className="flex cursor-pointer items-center gap-1 rounded bg-[#f5e750] py-[3px] px-2 text-black"
+        className="flex cursor-pointer items-center gap-1 rounded bg-primary-orange py-[3px] px-2 text-white"
       >
         <BiPlus />
         <span className="verdana12">Create Associates</span>
