@@ -8,8 +8,8 @@ import MenuDrawer from './MenuDrawer';
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-[1000] bg-[#0141CF]">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-[#3374ff83] py-2 px-5 text-white md:px-5 lg:px-3 ">
+    <div className="sticky top-0 z-[1000] bg-[#0141CF] px-4">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-[#3374ff83] py-2 text-white">
         <div className="flex items-center gap-6">
           <Link href="/">
             <h1 className="cursor-pointer text-2xl font-semibold">

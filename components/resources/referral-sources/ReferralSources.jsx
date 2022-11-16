@@ -43,31 +43,31 @@ const ReferralSources = () => {
       </div>
 
       <table className="mt-10 min-w-full overflow-auto">
-        <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
+        <thead className="border-b bg-[#0141CF] text-[15px] tracking-wider text-white">
           <tr>
-            <th className=" border-gray-400 border-t-[#0141CF] border-l-[#0141CF] pl-2 text-left"></th>
-            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
+            <th className=" border border-gray-400 border-t-[#0141CF] border-l-[#0141CF] pl-2 text-left"></th>
+            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
               Name
             </th>
-            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
+            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
               Referral source Type
             </th>
-            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
+            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
               Email{' '}
             </th>
-            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
+            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
               Preferred Numbers
             </th>
-            <th className=" border-gray-400 border-t-[#0141CF] pl-2 text-left">
+            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
               Status
             </th>
-            <th className=" border-gray-400 border-t-[#0141CF] border-r-[#0141CF] pl-2 text-left">
+            <th className=" border border-gray-400 border-t-[#0141CF] border-r-[#0141CF] pl-2 text-left">
               Action
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr className="w-full bg-[#c6d8ffe1]">
+          <tr className="w-full border border-primary-gray bg-[#c6d8ffe1]">
             <td></td>
             <td></td>
             <td className=" w-full border border-gray-400">
@@ -109,7 +109,7 @@ const ReferralSources = () => {
             <td></td>
           </tr>
           {referralSourcesTableData.map((referralSource, i) => (
-            <tr key={i} className={`border  even:bg-[#eeeeee] `}>
+            <tr key={i} className={`border text-[15px]  even:bg-[#eeeeee]`}>
               <td className=" max-h-[20px] min-w-[50px] border border-gray-400 py-1 px-2 font-medium">
                 <span className="cursor-pointer">
                   <MoreReferralSourcesInfo />
@@ -128,7 +128,7 @@ const ReferralSources = () => {
               <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
                 {referralSource.email}
               </td>
-              <td className=" max-h-[20px] min-w-[220px] border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[220px] border border-gray-400 py-1 px-2 font-medium">
                 {referralSource.preferredNumber}
               </td>
               <td
