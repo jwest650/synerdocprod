@@ -1,7 +1,7 @@
 import React from "react";
 import { ImBook } from "react-icons/im";
 import { TbFileExport } from "react-icons/tb";
-import { VscGoToFile } from "react-icons/vsc";
+import { VscError, VscGoToFile } from "react-icons/vsc";
 import { BsFileEarmarkPlus } from "react-icons/bs";
 import { FaUserGraduate } from "react-icons/fa";
 import { CgNotes } from "react-icons/cg";
@@ -14,6 +14,7 @@ import ArTransaction from "./tabs/ArTransaction";
 import Notes from "./tabs/Notes";
 import Payer from "./tabs/Payer";
 import Pdgm from "./tabs/Pdgm";
+import Errors from "./tabs/Errors";
 
 const InvoiceDetail = () => {
     const [active, setactive] = useState("services");
@@ -35,9 +36,14 @@ const InvoiceDetail = () => {
             name: "payer codes",
             icon: <HiOutlineQrcode />,
         },
+
         {
             name: "pdgm",
             icon: <BiErrorCircle />,
+        },
+        {
+            name: "errors",
+            icon: <VscError />,
         },
     ];
     return (
@@ -48,22 +54,28 @@ const InvoiceDetail = () => {
                     <h1 className="text-xl font-bold">carter, melinda</h1>
                 </div>
                 <div className="flex space-x-4">
-                    <div className="flex items-center">
-                        <VscGoToFile className=" inline text-xl" />
-                        <label htmlFor="">rebill</label>
+                    <div className="flex items-baseline space-x-1 ">
+                        <VscGoToFile className=" inline " />
+                        <label className="text-orange-500 underline">
+                            rebill
+                        </label>
                     </div>
-                    <div className="flex items-center">
-                        <TbFileExport className="inline text-xl" />
+                    <div className="flex items-baseline space-x-1 ">
+                        <TbFileExport className="inline " />
 
-                        <label htmlFor="">move to</label>
+                        <label className="text-orange-500 underline" htmlFor="">
+                            move to
+                        </label>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-baseline space-x-1 ">
                         {" "}
-                        <BsFileEarmarkPlus className=" inline text-xl" />
-                        <label htmlFor="">gross adj</label>
+                        <BsFileEarmarkPlus className=" inline " />
+                        <label className="text-orange-500 underline" htmlFor="">
+                            gross adj
+                        </label>
                     </div>
                 </div>
-                <h1 className="text-xl text-green-500">invoice</h1>
+                <h1 className="text-xl font-bold text-green-500">invoice</h1>
             </section>
             <section className="flex items-center justify-between">
                 <aside className="flex space-x-3">
@@ -129,7 +141,6 @@ const InvoiceDetail = () => {
                         </li>
                     ))}
                 </ul>
-                <hr />
 
                 <section className="border-2 border-t-0">
                     {renderTab(active)}
@@ -153,6 +164,8 @@ function renderTab(tab) {
             return <Payer />;
         case "pdgm":
             return <Pdgm />;
+        case "errors":
+            return <Errors />;
         default:
             return <Services />;
     }

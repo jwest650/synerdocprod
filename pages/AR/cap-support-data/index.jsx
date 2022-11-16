@@ -1,13 +1,13 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
 import { capData, invoice } from "../../../assets/ardata";
-
+import { FcCalendar } from "react-icons/fc";
 const CapSupportData = () => {
     return (
         <div className="ar bodytext space-y-4 p-5 capitalize">
             <section className="space-y-2">
                 <header>
-                    <h1 className="head ">CapSupportData</h1>
+                    <h1 className="head ">Cap Support Data</h1>
                     <div className="flex justify-end  space-x-1">
                         <Select placeholder="Select option" size="xs" w={120}>
                             <option value="option1">Option 1</option>
@@ -52,8 +52,11 @@ const CapSupportData = () => {
                                 range:
                             </label>
                             <Input w={120} type="text" size="xs" />
+                            <FcCalendar className="text-xl" />
+
                             <label htmlFor="">to:</label>
                             <Input w={120} type="text" size="xs" />
+                            <FcCalendar className="text-xl" />
                         </div>
                     </aside>
                     <div className="self-end">
