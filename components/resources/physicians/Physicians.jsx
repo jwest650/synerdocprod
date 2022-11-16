@@ -10,40 +10,46 @@ const Physicians = () => {
     <section className="mx-10 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
-          <h2 className="text-xl font-semibold tracking-wider">Physicians</h2>
+          <h2 className="text-[18px] font-bold tracking-wider">Physicians</h2>
           <CreatePhysicians />
         </div>
         <div className="flex items-center gap-3">
           <Select
-            css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
-            className="shadow outline-none"
+            css={{
+              backgroundColor: '#c6d8ffe1',
+              border: 'none',
+              fontSize: '11px',
+              // height: '18px',
+              // marginBottom: '4px',
+            }}
+            className="verdana11 shadow outline-none"
             size="xs"
           >
-            <option value="option1" className="text-gray-800">
+            <option value="option1" className="verdana11 text-gray-800">
               PDF - Patients active or discharged in last 30 days{' '}
             </option>
-            <option value="option2" className="text-gray-800">
+            <option value="option2" className="verdana11 text-gray-800">
               PDF - Patient with outstanding orders{' '}
             </option>
-            <option value="option3" className="text-gray-800">
+            <option value="option3" className="verdana11 text-gray-800">
               XLS - Patients active or discharged in last 30 days{' '}
             </option>
-            <option value="option3" className="text-gray-800">
+            <option value="option3" className="verdana11 text-gray-800">
               XLS - Patients with outstanding orders{' '}
             </option>
-            <option value="option3" className="text-gray-800">
+            <option value="option3" className="verdana11 text-gray-800">
               XLS - Patients with outstanding orders{' '}
             </option>
           </Select>
-          <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
+          <button className="verdana11 rounded bg-orange-600 px-2 py-[4px] font-medium text-white">
             Export
           </button>
           <input
             placeholder="Enter first or last name"
-            className="rounded px-3 py-[2px] text-black outline-none"
+            className="verdana11 rounded px-3 py-[3px] text-black outline-none"
             type="text"
           />
-          <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
+          <button className="verdana11 rounded bg-orange-600 px-2 py-[4px] font-medium text-white">
             Search
           </button>
         </div>

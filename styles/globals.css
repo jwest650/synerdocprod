@@ -19,9 +19,35 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Neue Montreal';
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: 'Neue Montreal'; */
   /* font-family: 'Jost', sans-serif; */
   /* color: #9ca3af; */
+}
+
+.verdana11 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+}
+.verdana12 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+.verdana13 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
+.verdana14 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+.verdana16 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+.verdana18 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
 }
 
 ::-webkit-scrollbar {
