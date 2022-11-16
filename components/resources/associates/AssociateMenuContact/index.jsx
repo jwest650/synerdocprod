@@ -13,10 +13,6 @@ const AssociateMenuContact = () => {
             <div className="mb-5 flex  items-center gap-3">
               <h2 className="text-lg font-semibold">Address/ Phone Info </h2>
               <AssociateCreateReferralSource />
-              {/* <span className="flex w-fit cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white">
-                <BiPlus className="scale-125" />
-                <span className="text-sm">Create Referral Source</span>
-              </span> */}
             </div>
             <p>No addresses have been added for this associate</p>
           </div>

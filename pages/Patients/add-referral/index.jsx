@@ -22,7 +22,7 @@ const AddReferral = () => {
                 }  py-2`}
               />
               <div
-                className={` -ml-[13px] w-full -skew-x-[60deg] py-2 ${
+                className={` -ml-[13px] w-full -skew-x-[30deg] py-2 ${
                   step === 1 ? 'bg-primary-orange' : 'bg-secondary-blue'
                 }`}
               />
@@ -31,7 +31,7 @@ const AddReferral = () => {
           </li>
           <li className={`  w-48`}>
             <div
-              className={`   -skew-x-[60deg] py-2   ${
+              className={`   -skew-x-[30deg] py-2   ${
                 step === 2 ? 'bg-primary-orange' : 'bg-secondary-blue'
               }`}
             />
@@ -39,7 +39,7 @@ const AddReferral = () => {
           </li>
           <li className={`  w-48`}>
             <div
-              className={`   -skew-x-[60deg]  py-2   ${
+              className={`   -skew-x-[30deg]  py-2   ${
                 step === 3 ? 'bg-primary-orange' : 'bg-secondary-blue'
               }`}
             />
@@ -48,7 +48,7 @@ const AddReferral = () => {
           <li className={`  w-48`}>
             <div className="flex w-full items-center">
               <div
-                className={` -mr-[13px] w-full -skew-x-[60deg] ${
+                className={` -mr-[13px] w-full -skew-x-[30deg] ${
                   step === 4 ? 'bg-primary-orange' : 'bg-secondary-blue'
                 } py-2`}
               />

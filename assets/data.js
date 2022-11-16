@@ -32,7 +32,7 @@ import { IoIosPeople } from 'react-icons/io';
 import { FaHome, FaRegNewspaper } from 'react-icons/fa';
 import AssociateMenuProfile from '../components/resources/associates/AssociateMenuProfile/index';
 import AssociateMenuContact from '../components/resources/associates/AssociateMenuContact/index';
-import AssociateMenuWebsite from '../components/resources/associates/AssociateMenuWebsite';
+import AssociateMenuWebsite from '../components/resources/associates/AssociateMenuWebsite/index';
 import AssociateMenuNotes from '../components/resources/associates/AssociateMenuNotes';
 import AssociateMenuAvailability from '../components/resources/associates/AssociateMenuAvailability';
 import AssociateMenuCompliance from '../components/resources/associates/AssociateMenuCompliance';

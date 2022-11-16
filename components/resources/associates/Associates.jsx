@@ -37,7 +37,7 @@ const Associates = () => {
           </button>
           <input
             placeholder="Enter first or last name"
-            className="rounded px-3 py-1 text-black outline-none"
+            className="verdana12 rounded border border-secondary-blue px-3 py-[2px] text-black outline-none"
             type="text"
           />
           <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
