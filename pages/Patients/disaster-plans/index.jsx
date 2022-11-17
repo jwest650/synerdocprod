@@ -1,9 +1,11 @@
-import { Input, Select } from '@chakra-ui/react'
+import { Input, Select, Tooltip } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsSearch } from 'react-icons/bs'
 import { RiBook2Fill } from 'react-icons/ri'
 import SearchIcon from '../../../assets/images/search.png'
+import CustomToolTipLabel from './components/CustomToolTipLabel'
+import MoreInfo from './components/MoreInfo'
 
 const DisasterPlan = () => {
   let data = [1, 1, 1, 1]
@@ -170,10 +172,21 @@ const DisasterPlan = () => {
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    {' '}
-                    <span className='cursor-pointer'>
-                      <RiBook2Fill />
-                    </span>
+                    <Tooltip
+                      label={
+                        <CustomToolTipLabel>
+                          <MoreInfo />
+                        </CustomToolTipLabel>
+                      }
+                      aria-label='A tooltip'
+                      placement='right'
+                      bg='#c6d8ffe1'
+                      color='black'
+                    >
+                      <span>
+                        <RiBook2Fill />
+                      </span>
+                    </Tooltip>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     <Link href={'/Patients/disaster-plans/1'}>

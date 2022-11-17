@@ -1,11 +1,12 @@
 import { Input, Select, Tooltip } from '@chakra-ui/react'
 import Link from 'next/link'
-import { useState } from 'react'
 import { BiPlus } from 'react-icons/bi'
 import { RiBook2Fill } from 'react-icons/ri'
 import SearchIcon from '../../../assets/images/search.png'
 import Image from 'next/image'
 import { FcUnlock } from 'react-icons/fc'
+import CustomToolTipLabel from './components/CustomToolTipLabel'
+import MoreInfo from './components/MoreInfo'
 
 const PatientsEncounters = () => {
   let data = [1, 1, 1, 1]
@@ -246,9 +247,15 @@ const PatientsEncounters = () => {
                 >
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     <Tooltip
-                      label='Encounter activities'
+                      label={
+                        <CustomToolTipLabel>
+                          <MoreInfo />
+                        </CustomToolTipLabel>
+                      }
                       aria-label='A tooltip'
                       placement='right'
+                      bg='#c6d8ffe1'
+                      color='black'
                     >
                       <span>
                         <RiBook2Fill />
@@ -270,9 +277,13 @@ const PatientsEncounters = () => {
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     <Tooltip
-                      label='Homecare Health Center'
+                      label={
+                        <CustomToolTipLabel text='Homecare Health Center' />
+                      }
                       aria-label='A tooltip'
                       placement='top'
+                      bg='#c6d8ffe1'
+                      color='black'
                     >
                       Home Health...
                     </Tooltip>
