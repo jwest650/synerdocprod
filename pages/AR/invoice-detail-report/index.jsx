@@ -36,13 +36,18 @@ const InvoiceDetailReport = () => {
                         </Select>
                     </div>
                     <div className="flex items-center space-x-2">
-                        <label htmlFor="">invoice from dates from:</label>
-                        <Input w={120} type="text" size="xs" />
-                        <FcCalendar className="text-xl" />
-                        <label htmlFor="">to:</label>
-                        <Input w={120} type="text" size="xs" />
-                        <FcCalendar className="text-xl" />
-
+                        <label htmlFor="inv-from">
+                            invoice from dates from:
+                        </label>
+                        <Input w={120} type="text" size="xs" id="inv-from" />
+                        <label htmlFor="inv-from">
+                            <FcCalendar className="text-xl" />
+                        </label>
+                        <label htmlFor="inv-to">to:</label>
+                        <Input w={120} type="text" size="xs" id="inv-to" />
+                        <label htmlFor="inv-to">
+                            <FcCalendar className="text-xl" />
+                        </label>
                         <div className="space-x-1">
                             <Input
                                 w={200}

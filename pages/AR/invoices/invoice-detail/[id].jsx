@@ -51,7 +51,7 @@ const InvoiceDetail = () => {
             <section className="flex w-full items-center justify-between">
                 <div className="flex items-center">
                     <ImBook className=" mr-2 inline text-xl" />
-                    <h1 className="text-xl font-bold">carter, melinda</h1>
+                    <h1 className="head ">carter, melinda</h1>
                 </div>
                 <div className="flex space-x-4">
                     <div className="flex items-baseline space-x-1 ">
@@ -75,7 +75,7 @@ const InvoiceDetail = () => {
                         </label>
                     </div>
                 </div>
-                <h1 className="text-xl font-bold text-green-500">invoice</h1>
+                <h1 className="head text-green-500">invoice</h1>
             </section>
             <section className="flex items-center justify-between">
                 <aside className="flex space-x-3">

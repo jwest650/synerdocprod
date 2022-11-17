@@ -37,18 +37,19 @@ const ARTransactionSummary = () => {
                 <aside className="space-y-2 capitalize ">
                     <div className="flex items-end space-x-2">
                         <div className="flex items-center">
-                            <label htmlFor="" className="pr-2">
+                            <label htmlFor="revenue" className="pr-2">
                                 revenue date from:
                             </label>
                             <Input
+                                id="revenue"
                                 w={130}
                                 type="date"
                                 size="xs"
                                 placeholder="11/04/2022"
                             />
-                            <button>
+                            <label htmlFor="revenue">
                                 <FcCalendar className="text-xl" />
-                            </button>
+                            </label>
                         </div>
 
                         <div className="flex items-center">
@@ -56,29 +57,31 @@ const ARTransactionSummary = () => {
                                 to:
                             </label>
                             <Input
+                                id="revenue-to"
                                 w={130}
                                 type="date"
                                 size="xs"
                                 placeholder="default placeholder"
                             />
-                            <button>
+                            <label htmlFor="revenue-to">
                                 <FcCalendar className="text-xl" />
-                            </button>
+                            </label>
                         </div>
                     </div>
-                    <div className="flex ">
+                    <div className="flex items-center ">
                         <label htmlFor="" className="pr-2">
                             extend remit payment through date:
                         </label>
                         <Input
+                            id="extend"
                             w={130}
                             type="date"
                             size="xs"
                             placeholder="default placeholder"
                         />
-                        <button>
+                        <label htmlFor="extend">
                             <FcCalendar className="text-xl" />
-                        </button>
+                        </label>
                     </div>
                 </aside>
                 <aside className="space-y-2 capitalize">

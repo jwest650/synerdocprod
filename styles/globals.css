@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-@import url('https://cdn.syncfusion.com/ej2/tailwind.css');
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://cdn.syncfusion.com/ej2/tailwind.css");
 /* xfonts.pro */
 /* lato */
 /* new montreal */
 
 @font-face {
-  src: url(../assets/fonts/NeueMontreal-Regular.ttf);
-  font-family: 'Neue Montreal';
+    src: url(../assets/fonts/NeueMontreal-Regular.ttf);
+    font-family: "Neue Montreal";
 }
 
 @tailwind base;
@@ -16,121 +16,121 @@
 /* CUSTOM STYLES */
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* font-family: 'Neue Montreal'; */
-  /* font-family: 'Jost', sans-serif; */
-  /* color: #9ca3af; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: 'Neue Montreal'; */
+    /* font-family: 'Jost', sans-serif; */
+    /* color: #9ca3af; */
 }
 
 .verdana9 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9px;
 }
 .verdana10 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
 }
 .verdana11 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
 }
 .verdana12 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
 }
 .verdana13 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
 }
 .verdana14 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 .verdana15 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
 }
 .verdana16 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 .verdana18 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+    width: 4px;
+    height: 4px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #90b3ffe1;
-  border-radius: 40px;
+    background-color: #90b3ffe1;
+    border-radius: 40px;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-gray-300;
+    @apply bg-gray-300;
 }
 
 .bezier-nav2 {
-  animation: bezz2 0.8s forwards ease-in-out;
+    animation: bezz2 0.8s forwards ease-in-out;
 }
 
 @keyframes bezz2 {
-  0% {
-    width: 70px;
-  }
-  99% {
-    width: 250px;
-  }
-  100% {
-    width: 250px;
-  }
+    0% {
+        width: 70px;
+    }
+    99% {
+        width: 250px;
+    }
+    100% {
+        width: 250px;
+    }
 }
 
 .bezier-nav1 {
-  animation: bezz1 2s forwards ease-in-out;
+    animation: bezz1 2s forwards ease-in-out;
 }
 
 @keyframes bezz1 {
-  0% {
-    width: 250px;
-  }
-  50% {
-    width: 150px;
-  }
-  100% {
-    width: 70px;
-  }
+    0% {
+        width: 250px;
+    }
+    50% {
+        width: 150px;
+    }
+    100% {
+        width: 70px;
+    }
 }
 
 /* SHEDULER */
 
 .e-schedule .e-month-view .e-appointment {
-  background: #dfe2e7;
-  border: 1px solid #e5e7eb;
-  border-radius: 2px;
-  color: #000;
-  cursor: default;
-  display: flex;
-  height: 26px;
-  overflow: hidden;
-  position: absolute;
+    background: #dfe2e7;
+    border: 1px solid #e5e7eb;
+    border-radius: 2px;
+    color: #000;
+    cursor: default;
+    display: flex;
+    height: 26px;
+    overflow: hidden;
+    position: absolute;
 }
 .e-schedule .e-schedule-toolbar .e-toolbar-items {
-  background: #e7eaec;
+    background: #e7eaec;
 }
 
 .e-toolbar .e-tbar-btn {
-  background: #e7eaec;
-  box-shadow: none;
-  color: #111827;
+    background: #e7eaec;
+    box-shadow: none;
+    color: #111827;
 }
 
 .e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
-  border-right: 1px solid #becad3;
+    border-right: 1px solid #becad3;
 }
 
 /* .schedule {
@@ -274,67 +274,69 @@
   width: 100%;
 } */
 /* ar */
-@layer utilities {
-  .head {
-    @apply text-xl font-bold capitalize;
-  }
-  .bodytext {
-    @apply text-[black];
-  }
-  .background {
-    @apply bg-white;
-  }
-  .btn {
-    @apply rounded bg-[#EA580C] py-[2px] px-3 font-medium text-white;
-  }
-  .create-btn {
-    @apply rounded bg-[#EA580C] py-2 px-3 font-medium text-white;
-  }
-  .darkmode {
-    @apply dark:text-white;
-  }
-}
 @layer base {
-  .ar {
-    width: 100%;
-    height: 100%;
-  }
-  .ar td,
-  .ar th {
-    font-size: 14px;
-    padding: 2px 5px;
-    border: 1px solid #a0a0a0;
-  }
-  .ar td:first-child {
-    border-left: 0;
-  }
+    .ar {
+        width: 100%;
+        height: 100%;
+    }
+    .ar td,
+    .ar th {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        padding: 2px 5px;
+        border: 1px solid #a0a0a0;
+    }
+    .ar td:first-child {
+        border-left: 0;
+    }
 
-  .ar th {
-    background-color: #0141cf;
-    color: white;
-    text-align: left;
-  }
-  .ar tr {
-    @apply even:bg-gray-100;
-  }
+    .ar th {
+        @apply bg-primary-color;
+        color: white;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ar tr {
+        @apply even:bg-gray-100;
+    }
 
-  .ar hr {
-    border-color: black;
-  }
+    .ar hr {
+        border-color: black;
+    }
+}
+@layer utilities {
+    .head {
+        @apply text-lg font-bold capitalize;
+    }
+    .bodytext {
+        @apply text-[black];
+    }
+    .background {
+        @apply bg-white;
+    }
+    .btn {
+        @apply rounded bg-[#EA580C] py-[2px] px-3 font-medium text-white;
+    }
+    .create-btn {
+        @apply rounded bg-[#EA580C] py-1 px-3 font-medium text-white;
+    }
+    .darkmode {
+        @apply dark:text-white;
+    }
 }
 
 .table-action-anim {
-  animation: table-icon-anim 0.3s forwards ease-in-out;
+    animation: table-icon-anim 0.3s forwards ease-in-out;
 }
 
 @keyframes table-icon-anim {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
 }

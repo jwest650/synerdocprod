@@ -14,7 +14,7 @@ const Errors = () => {
                     </p>
                 </header>
             </section>
-            <h1 className="text-xl font-bold">invoice errors</h1>
+            <h1 className="head">invoice errors</h1>
 
             <section>
                 <table className=" w-full">
