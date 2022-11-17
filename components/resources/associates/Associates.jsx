@@ -37,17 +37,13 @@ const Associates = () => {
               Associate Caseload PDF
             </option>
           </Select>
-          <button className="rounded bg-orange-600 px-2 py-[2px] font-medium text-white">
-            Export
-          </button>
+          <button className="btn-primary">Export</button>
           <input
             placeholder="Enter first or last name"
             className="verdana12 rounded border border-secondary-blue px-3 py-[2px] text-black outline-none"
             type="text"
           />
-          <button className="rounded bg-orange-600 px-2 py-[2px] font-medium text-white">
-            Search
-          </button>
+          <button className="btn-primary">Search</button>
         </div>
       </div>
       <table className="mt-10 min-w-full overflow-auto">

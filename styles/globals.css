@@ -28,6 +28,7 @@
 body {
   font-size: 13px;
 }
+
 .arial12 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -67,6 +68,13 @@ body {
 .verdana18 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
+}
+
+.btn-primary {
+  @apply verdana12 rounded bg-orange-600 px-2 py-[2px] font-medium text-white;
+}
+.btn-secondary {
+  @apply verdana14 rounded bg-orange-600 px-2.5 py-[4px] font-medium text-white;
 }
 
 ::-webkit-scrollbar {
