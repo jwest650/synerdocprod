@@ -4,7 +4,7 @@ import TableAction from '../TableAction';
 import CreateAssociate from './CreateAssociate';
 import Link from 'next/link';
 import MoreAssociateInfo from './MoreAssociateInfo';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { MdKeyboardArrowDown, MdOutlineArrowDropDown } from 'react-icons/md';
 
 const Associates = () => {
   return (
@@ -53,23 +53,23 @@ const Associates = () => {
       <table className="mt-10 min-w-full overflow-auto">
         <thead className="verdana12 border-b bg-primary-blue tracking-wider text-white">
           <tr>
-            <th className="border border-primary-gray border-t-primary-blue border-l-primary-blue pl-2 text-left"></th>
-            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue border-l-primary-blue py-[3px] pl-2 text-left"></th>
+            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
               Name
             </th>
-            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
               Classification
             </th>
-            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
               Discipline
             </th>
-            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
               Hire Date
             </th>
-            <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
               Status
             </th>
-            <th className=" border border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue border-r-primary-blue py-[3px] pl-2 text-left">
               Action
             </th>
           </tr>
@@ -79,10 +79,11 @@ const Associates = () => {
             <td></td>
             <td className="w-full border border-primary-gray">
               <Select
-                icon={<MdKeyboardArrowDown className="text-primary-orange" />}
-                iconColor="rgb(234 88 12)"
+                icon={<MdOutlineArrowDropDown />}
+                iconColor="gray"
+                width="90px"
                 css={{
-                  backgroundColor: '#c6d8ffe1',
+                  backgroundColor: 'c6d8ffe1',
                   border: 'none',
                   fontSize: '12px',
                   fontFamily: 'Arial',
@@ -106,8 +107,9 @@ const Associates = () => {
             </td>
             <td className=" w-full border border-primary-gray">
               <Select
-                icon={<MdKeyboardArrowDown className="text-primary-orange" />}
-                iconColor="rgb(234 88 12)"
+                icon={<MdOutlineArrowDropDown />}
+                iconColor="gray"
+                width="90px"
                 css={{
                   backgroundColor: '#c6d8ffe1',
                   border: 'none',
@@ -129,8 +131,9 @@ const Associates = () => {
             </td>
             <td className=" w-full border border-primary-gray">
               <Select
-                icon={<MdKeyboardArrowDown className="text-primary-orange" />}
-                iconColor="rgb(234 88 12)"
+                icon={<MdOutlineArrowDropDown />}
+                iconColor="gray"
+                width="90px"
                 css={{
                   backgroundColor: '#c6d8ffe1',
                   border: 'none',
@@ -153,8 +156,9 @@ const Associates = () => {
             <td></td>
             <td className=" w-full border border-primary-gray">
               <Select
-                icon={<MdKeyboardArrowDown className="text-primary-orange" />}
-                iconColor="rgb(234 88 12)"
+                icon={<MdOutlineArrowDropDown />}
+                iconColor="gray"
+                width="90px"
                 css={{
                   backgroundColor: '#c6d8ffe1',
                   border: 'none',
@@ -172,18 +176,27 @@ const Associates = () => {
                 <option value="option3" className="text-gray-800">
                   Inactive
                 </option>
+                <option value="option3" className="text-gray-800">
+                  Pending
+                </option>
+                <option value="option3" className="text-gray-800">
+                  Suspended
+                </option>
+                <option value="option3" className="text-gray-800">
+                  Terminated
+                </option>
               </Select>
             </td>
             <td></td>
           </tr>
           {associateTableData.map((associate, i) => (
-            <tr key={i} className={`verdana12 border  even:bg-[#eeeeee]`}>
+            <tr key={i} className={`verdana13 border  even:bg-[#eeeeee]`}>
               <td className=" max-h-[15px] min-w-[40px] border border-primary-gray py-[0px] px-2 font-medium">
                 <span className="cursor-pointer">
                   <MoreAssociateInfo />
                 </span>
               </td>
-              <td className=" max-h-[15px] min-w-[230px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium text-orange-600">
+              <td className=" max-h-[15px] min-w-[230px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium text-orange-600 underline decoration-orange-600">
                 <Link href={`/Resources/associates/${associate.url}/profile`}>
                   {associate.name}
                 </Link>
