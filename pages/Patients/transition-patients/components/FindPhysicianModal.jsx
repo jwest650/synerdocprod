@@ -21,7 +21,7 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={900}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
               <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
                 Find Physician
@@ -33,7 +33,7 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
             <ModalBody>
               <section>
                 <div>
-                  <div className='flex py-2'>
+                  <div className='flex items-center py-2'>
                     <p className='mr-3 w-[150px] text-right font-semibold'>
                       Last/First:
                     </p>
@@ -41,26 +41,30 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                       <Input size={'xs'} type='text' />
                       <Input size={'xs'} className='ml-3' type='text' />
                     </div>
-                  </div>
-                  <div className='my-2 flex justify-end'>
-                    <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
-                      Searh
-                    </button>
+                    <div className='ml-2 flex justify-end'>
+                      <button className='rounded bg-secondary-color px-4  text-white shadow'>
+                        Searh
+                      </button>
+                    </div>
                   </div>
                 </div>
 
-                <table className=' min-w-full overflow-auto'>
-                  <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-                    <tr>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                <table className=' min-w-full overflow-auto text-xs'>
+                  <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+                    <tr className='border border-primary-color'>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                         Select
                       </th>
-                      <th className=' border-gray-100  pl-2 text-left'>Name</th>
-                      <th className=' border-gray-100  pl-2 text-left'>Type</th>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                        Name
+                      </th>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                        Type
+                      </th>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                         Preffered Phone
                       </th>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                         Referral Address
                       </th>
                     </tr>

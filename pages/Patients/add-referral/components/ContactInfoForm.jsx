@@ -142,11 +142,6 @@ const ContactInfoForm = () => {
           </div>
         </div>
       </div>
-      <div className='flex justify-end py-3'>
-        <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
-          Continue
-        </button>
-      </div>
 
       {/* Modals */}
       <AddContactInfoModal

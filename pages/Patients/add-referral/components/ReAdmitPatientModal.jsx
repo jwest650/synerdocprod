@@ -24,7 +24,7 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={900}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
               <h1>Re-Admit Patient</h1>
               <p>Additional information to copy along</p>

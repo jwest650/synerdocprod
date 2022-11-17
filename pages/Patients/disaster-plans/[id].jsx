@@ -1,6 +1,9 @@
 import React from 'react'
+import { useState } from 'react'
+import EditDisasterPlan from './components/EditDisasterPlan'
 
 const DisasterPlanDetails = () => {
+  const [openEditDisasterPlan, setOpenEditDisasterPlan] = useState(false)
   return (
     <div className='w-full'>
       <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
@@ -8,7 +11,12 @@ const DisasterPlanDetails = () => {
       </h1>
       <div className='flex'>
         <div>
-          <p className='px-2 py-2 text-secondary-color underline'>Edit</p>
+          <p
+            className='cursor-pointer px-2 py-2 text-secondary-color underline'
+            onClick={() => setOpenEditDisasterPlan(true)}
+          >
+            Edit
+          </p>
         </div>
 
         <div className='flex w-[75%]'>
@@ -30,6 +38,12 @@ const DisasterPlanDetails = () => {
           </div>
         </div>
       </div>
+
+      {/* EditDisasterPlan Modal */}
+      <EditDisasterPlan
+        openEditDisasterPlan={openEditDisasterPlan}
+        setOpenEditDisasterPlan={setOpenEditDisasterPlan}
+      />
     </div>
   )
 }

@@ -39,19 +39,28 @@ const NotesTab = () => {
       </section>
       {/* table */}
       <section>
-        <table className='w-full text-left capitalize'>
+        <table className='w-full text-left text-xs capitalize'>
           <thead>
             <tr className='bg-primary-color text-white'>
-              <th className='w-10'></th>
-              <th className='w-52'>date</th>
-              <th className='w-52'>type</th>
-              <th>note</th>
-              <th className='w-20'></th>
+              <th className='w-10 border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className='w-52 border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                date
+              </th>
+              <th className='w-52 border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                type
+              </th>
+              <th className='border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                note
+              </th>
+              <th className='w-20 border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
             </tr>
           </thead>
           <tbody>
             {obj.map((value, i) => (
-              <tr key={i}>
+              <tr
+                key={i}
+                className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
+              >
                 <td className='border border-[#a0a0a0] px-[2px] '>
                   {' '}
                   <GoNote className='mx-auto text-xl ' />

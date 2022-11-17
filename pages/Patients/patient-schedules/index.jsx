@@ -1,9 +1,11 @@
-import { Button, Input, Select } from '@chakra-ui/react'
+import { Button, Input, Select, Tooltip } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FcUnlock } from 'react-icons/fc'
 import { RiBook2Fill } from 'react-icons/ri'
 import SearchIcon from '../../../assets/images/search.png'
+import CustomToolTipLabel from './components/CustomToolTipLabel'
+import MoreInfo from './components/MoreInfo'
 
 const PatientSchedules = () => {
   let data = [1, 1, 1, 1]
@@ -42,39 +44,45 @@ const PatientSchedules = () => {
 
       <section>
         <div>
-          <table className='mt-2 min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'>
+          <table className='mt-2 min-w-full overflow-auto text-xs'>
+            <thead className='border bg-primary-color  text-[18px] tracking-wider text-white'>
+              <tr className='border border-primary-color'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Patient Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Agency </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Agency{' '}
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Agency Type
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Admit Date</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Admit Date
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Service Category
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Status</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Status
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Payer Reporting Group
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Service Status
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-light-blue'>
+              <tr className='border border-gray-400 bg-light-blue'>
                 <td></td>
                 <td></td>
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -91,7 +99,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -109,7 +117,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -126,7 +134,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -143,7 +151,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -160,7 +168,7 @@ const PatientSchedules = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -186,12 +194,28 @@ const PatientSchedules = () => {
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <RiBook2Fill />
+                    <Tooltip
+                      label={
+                        <CustomToolTipLabel>
+                          <MoreInfo />
+                        </CustomToolTipLabel>
+                      }
+                      aria-label='A tooltip'
+                      placement='right'
+                      bg='#c6d8ffe1'
+                      color='black'
+                    >
+                      <span>
+                        <RiBook2Fill />
+                      </span>
+                    </Tooltip>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <p className=' cursor-pointer text-sm font-bold text-secondary-color underline'>
-                      James Gordon
-                    </p>
+                    <Link href={'/Patients/patient-schedules/1'}>
+                      <p className=' cursor-pointer text-sm font-bold text-secondary-color underline'>
+                        James Gordon
+                      </p>
+                    </Link>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     1.High priority requires
@@ -215,7 +239,7 @@ const PatientSchedules = () => {
                     Winn
                   </td>
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <Link href={'#'}>
+                    <Link href={'/Patients/patient-schedules/1'}>
                       <Image
                         src={SearchIcon}
                         alt='icon'

@@ -130,23 +130,41 @@ const SetupPatientForm = () => {
         </h1>
         <hr />
         <table className=' min-w-full overflow-auto'>
-          <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-            <tr>
-              <th className=' border-gray-100  pl-2 text-left'>Select</th>
-              <th className=' border-gray-100  pl-2 text-left'>Name</th>
-              <th className=' border-gray-100  pl-2 text-left'>Birth Date</th>
-              <th className=' border-gray-100  pl-2 text-left'>Gender</th>
-              <th className=' border-gray-100  pl-2 text-left'>Status</th>
-              <th className=' border-gray-100  pl-2 text-left'>Start</th>
-              <th className=' border-gray-100  pl-2 text-left'>Discharged</th>
-              <th className=' border-gray-100  pl-2 text-left'>Declined</th>
-              <th className=' border-gray-100  pl-2 text-left'>
+          <thead className='border-b bg-primary-color text-xs tracking-wider text-white'>
+            <tr className='border border-primary-color'>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Select
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Name
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Birth Date
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Gender
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Status
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Start
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Discharged
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Declined
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                 Medical Record No
               </th>
-              <th className=' border-gray-100  pl-2 text-left'>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                 Patient Identifier No
               </th>
-              <th className=' border-gray-100  pl-2 text-left'>Agency Name</th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Agency Name
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -270,12 +288,6 @@ const SetupPatientForm = () => {
           <div>
             <Input size={'xs'} type='text' />
           </div>
-        </div>
-
-        <div className='my-3 flex justify-end'>
-          <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
-            Continue
-          </button>
         </div>
       </section>
 

@@ -21,7 +21,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={900}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <div>
               <ModalHeader>
                 Add Referral

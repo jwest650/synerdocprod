@@ -26,7 +26,7 @@ const AddFacilitySourceModal = ({
       >
         <ModalOverlay />
         <ModalContent maxWidth={900}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
               <h1>Add Address/Phone Info</h1>
               <p className='text-sm'>add information and save</p>

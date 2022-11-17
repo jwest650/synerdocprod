@@ -1,9 +1,11 @@
-import { Input, Select } from '@chakra-ui/react'
+import { Input, Select, Tooltip } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsSearch } from 'react-icons/bs'
 import { RiBook2Fill } from 'react-icons/ri'
 import SearchIcon from '../../../assets/images/search.png'
+import CustomToolTipLabel from './components/CustomToolTipLabel'
+import MoreInfo from './components/MoreInfo'
 
 const DisasterPlan = () => {
   let data = [1, 1, 1, 1]
@@ -48,36 +50,44 @@ const DisasterPlan = () => {
 
       <section>
         <div>
-          <table className='min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'>
+          <table className='min-w-full overflow-auto text-xs'>
+            <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+              <tr className='border border-primary-color'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Patient Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Disaster plan
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Plan Details
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Agency </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Agency{' '}
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Agency Type
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Admit Date</th>
-                <th className=' border-gray-100  pl-2 text-left'>Status</th>
-                <th className=' border-gray-100  pl-2 text-left'>Country</th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Admit Date
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Status
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Country
+                </th>
+                <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-light-blue'>
+              <tr className='border border-gray-400 bg-light-blue'>
                 <td></td>
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -96,7 +106,7 @@ const DisasterPlan = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -113,7 +123,7 @@ const DisasterPlan = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -131,7 +141,7 @@ const DisasterPlan = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -148,7 +158,7 @@ const DisasterPlan = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -170,10 +180,21 @@ const DisasterPlan = () => {
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
                   <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    {' '}
-                    <span className='cursor-pointer'>
-                      <RiBook2Fill />
-                    </span>
+                    <Tooltip
+                      label={
+                        <CustomToolTipLabel>
+                          <MoreInfo />
+                        </CustomToolTipLabel>
+                      }
+                      aria-label='A tooltip'
+                      placement='right'
+                      bg='#c6d8ffe1'
+                      color='black'
+                    >
+                      <span>
+                        <RiBook2Fill />
+                      </span>
+                    </Tooltip>
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
                     <Link href={'/Patients/disaster-plans/1'}>

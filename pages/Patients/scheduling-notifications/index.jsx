@@ -30,29 +30,36 @@ const SchedulingNotifications = () => {
         <section>
           <div>
             <table className=' min-w-full overflow-auto'>
-              <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-                <tr>
-                  <th color={'#selecto'}>
+              <thead className='border-b bg-primary-color text-xs text-[18px] tracking-wider text-white'>
+                <tr className='border border-primary-color '>
+                  <th
+                    color={'#selecto'}
+                    className=' border-r border-gray-400 py-1 px-2  text-left text-xs'
+                  >
                     <Checkbox></Checkbox>
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>Dates</th>
-                  <th className=' border-gray-100  pl-2 text-left'>Agency</th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Dates
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Agency
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Patient Name
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Change Reason
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Change Date
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Associate Name
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Associate Phone
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
                     Associate Email/Mobile
                   </th>
                 </tr>

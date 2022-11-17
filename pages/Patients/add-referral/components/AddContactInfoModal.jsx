@@ -24,7 +24,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={900}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalBody>
               <div className='mb-3'>
                 <h1 className=' text-2xl font-bold'>Add Address/Phone Info</h1>
@@ -138,20 +138,20 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   </div>
                 </div>
 
-                <div className='flex w-[100%] flex-1 flex-col justify-between p-2'>
-                  <table className=' min-w-full overflow-auto'>
-                    <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-                      <tr>
-                        <th className=' border-gray-100  pl-2 text-left'>
+                <div className='first-letter: flex w-[100%] flex-1 flex-col justify-between p-2'>
+                  <table className=' min-w-full overflow-auto text-xs'>
+                    <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+                      <tr className='border border-primary-color'>
+                        <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                           Preffered
                         </th>
-                        <th className=' border-gray-100  pl-2 text-left'>
+                        <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                           Phone Type
                         </th>
-                        <th className=' border-gray-100  pl-2 text-left'>
+                        <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                           Phone
                         </th>
-                        <th className=' border-gray-100  pl-2 text-left'></th>
+                        <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
                       </tr>
                     </thead>
                     <tbody>
