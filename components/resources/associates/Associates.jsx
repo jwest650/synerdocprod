@@ -178,33 +178,33 @@ const Associates = () => {
           </tr>
           {associateTableData.map((associate, i) => (
             <tr key={i} className={`verdana12 border  even:bg-[#eeeeee]`}>
-              <td className=" max-h-[20px] min-w-[50px] border border-primary-gray py-[0px] px-2 font-medium">
+              <td className=" max-h-[15px] min-w-[40px] border border-primary-gray py-[0px] px-2 font-medium">
                 <span className="cursor-pointer">
                   <MoreAssociateInfo />
                 </span>
               </td>
-              <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium text-orange-600 underline decoration-orange-600">
+              <td className=" max-h-[15px] min-w-[230px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium text-orange-600">
                 <Link href={`/Resources/associates/${associate.url}/profile`}>
                   {associate.name}
                 </Link>
               </td>
-              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium">
+              <td className=" max-h-[15px] min-w-[270px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium">
                 {associate.classification}
               </td>
-              <td className=" max-h-[20px] min-w-[330px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium">
+              <td className=" max-h-[15px] min-w-[330px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium">
                 {associate.discipline}
               </td>
-              <td className=" max-h-[20px] min-w-[120px] border border-primary-gray py-[0px] px-2 font-medium">
+              <td className=" max-h-[15px] min-w-[120px] border border-primary-gray py-[0px] px-2 font-medium">
                 {associate.hireDate}
               </td>
               <td
-                className={`max-h-[20px] min-w-[100px] border border-primary-gray py-[0px] px-2 font-semibold  ${
+                className={`max-h-[15px] min-w-[100px] border border-primary-gray py-[0px] px-2 font-semibold  ${
                   associate.status === 'Active' && 'text-green-600'
                 }`}
               >
                 {associate.status}
               </td>
-              <td className=" max-h-[20px] min-w-[120px] cursor-pointer border  border-primary-gray py-[0px] px-2 font-medium">
+              <td className=" max-h-[15px] min-w-[120px] cursor-pointer border  border-primary-gray py-[0px] px-2 font-medium">
                 <TableAction />
               </td>
             </tr>
