@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
 
-const CreateAssociate = () => {
+const EditAssociate = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -16,24 +16,17 @@ const CreateAssociate = () => {
   };
   return (
     <>
-      <span
-        onClick={onOpen}
-        className="flex cursor-pointer items-center gap-1 rounded bg-primary-orange py-[3px] px-2 text-white"
-      >
-        <BiPlus />
-        <span className="verdana12">Create Associates</span>
+      <span onClick={onOpen}>
+        <p className="mr-2 cursor-pointer text-secondary-color underline">
+          [Edit]
+        </p>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          {/* <ModalHeader>Modal Title</ModalHeader> */}
-          {/* <div className="absolute top-[-14px] right-0 bg-red-300"> */}
-          {/* <ModalCloseButton /> */}
-          {/* </div> */}
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
-            {/* <ModalBody> */}
             <form action="" onSubmit={handleForm}>
-              <h1 className="text-xl font-semibold">Add Associate</h1>
+              <h1 className="text-xl font-semibold">Edit Associate</h1>
               <div className="mt-5 flex h-full w-full flex-col items-center justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
                 <div className="w-full md:col-span-3">
                   <h2 className="border-b-2 font-semibold">Personal</h2>
@@ -354,4 +347,4 @@ const CreateAssociate = () => {
   );
 };
 
-export default CreateAssociate;
+export default EditAssociate;

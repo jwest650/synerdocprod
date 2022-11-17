@@ -27,27 +27,37 @@ const Facilities = () => {
       </div>
 
       <table className="mt-10 min-w-full overflow-auto">
-        <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
+        <thead className="border-b bg-[#0141CF] text-[15px] tracking-wider text-white">
           <tr>
-            <th className=" border-gray-400  pl-2 text-left"></th>
-            <th className=" border-gray-400 pl-2 text-left">Name</th>
-            <th className=" border-gray-400 pl-2 text-left">Facility Type</th>
-            <th className=" border-gray-400 pl-2 text-left">Email</th>
-            <th className=" border-gray-400 pl-2 text-left">
+            <th className=" border border-primary-gray border-t-primary-blue  border-l-primary-blue pl-2 text-left"></th>
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
+              Name
+            </th>
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
+              Facility Type
+            </th>
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
+              Email
+            </th>
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
               Preferred Numbers
             </th>
-            <th className=" border-gray-400 pl-2 text-left">Status</th>
-            <th className=" border-gray-400 pl-2 text-left">Action</th>
+            <th className=" border border-primary-gray border-t-primary-blue  pl-2 text-left">
+              Status
+            </th>
+            <th className=" border border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left">
+              Action
+            </th>
           </tr>
         </thead>
         <tbody>
-          <tr className="w-full bg-[#c6d8ffe1]">
+          <tr className="w-full border border-primary-gray bg-secondary-blue">
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td className=" w-full border border-gray-400">
+            <td className=" w-full border border-primary-gray">
               <Select
                 css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
                 className="cursor-pointer shadow outline-none"
@@ -67,36 +77,36 @@ const Facilities = () => {
             <td></td>
           </tr>
           {facilitiesTableData.map((facility, i) => (
-            <tr key={i} className={`border  even:bg-[#eeeeee] `}>
-              <td className=" max-h-[20px] min-w-[50px] border border-gray-400 py-1 px-2 font-medium">
+            <tr key={i} className={`border text-[15px]  even:bg-[#eeeeee]`}>
+              <td className=" max-h-[20px] min-w-[50px] border border-primary-gray py-1 px-2 font-medium">
                 <span className="cursor-pointer">
                   <MoreFacilitiesInfo />
                 </span>
               </td>
-              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
+              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-primary-gray py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
                 <Link
                   href={`/Resources/facilities/${facility.url}/contactsinfo`}
                 >
                   {facility.name}
                 </Link>
               </td>
-              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-primary-gray py-1 px-2 font-medium">
                 {facility.facilityType}
               </td>
-              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-primary-gray py-1 px-2 font-medium">
                 {facility.email}
               </td>
-              <td className=" max-h-[20px] min-w-[180px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+              <td className=" max-h-[20px] min-w-[180px] cursor-pointer border border-primary-gray py-1 px-2 font-medium">
                 {facility.preferredNumber}
               </td>
               <td
-                className={`max-h-[20px] min-w-[100px] border border-gray-400 py-1 px-2 font-semibold  ${
+                className={`max-h-[20px] min-w-[100px] border border-primary-gray py-1 px-2 font-semibold  ${
                   facility.status === 'Active' && 'text-green-600'
                 }`}
               >
                 {facility.status}
               </td>
-              <td className=" max-h-[20px] min-w-[50px] cursor-pointer border border-gray-400 py-1 px-2 text-lg font-medium text-red-600">
+              <td className=" max-h-[20px] min-w-[50px] cursor-pointer border border-primary-gray py-1 px-2 text-lg font-medium text-red-600">
                 <FiTrash2 />
 
                 {/* <PhysicianTableAction

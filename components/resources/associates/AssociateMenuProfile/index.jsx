@@ -7,6 +7,11 @@ import { useState } from 'react';
 import { FcCheckmark, FcInfo, FcSearch } from 'react-icons/fc';
 import { RiBook2Fill } from 'react-icons/ri';
 import AssociateUploadPic from './AssociateUploadPic';
+import EditAssociate from './EditAssociate';
+import EditAssociateAgencies from './EditAssociateAgencies';
+import InactivateAssociate from './InactivateAssociate';
+import ReassignAssociate from './ReassignAssociate';
+import TerminateAssociate from './TerminateAssociate';
 
 const AssociateMenuProfile = () => {
   const router = useRouter();
@@ -25,9 +30,9 @@ const AssociateMenuProfile = () => {
           </div>
           <div className="flex ">
             <div className="mr-2 space-y-1 border-r px-2">
-              <Link href="#" color="orange">
-                <p className=" mr-2 text-secondary-color underline">[Edit]</p>
-              </Link>
+              {/* <Link href="#" color="orange"> */}
+              <EditAssociate />
+              {/* </Link> */}
             </div>
 
             <div>
@@ -121,24 +126,10 @@ const AssociateMenuProfile = () => {
           </div>
           <div className="flex ">
             <div className="mr-2 space-y-1 border-r px-1">
-              <Link href="#" color="orange">
-                <p className=" mr-2 text-secondary-color underline">[Edit]</p>
-              </Link>
-              <Link href="#" color="orange">
-                <p className=" mr-2 text-secondary-color underline">
-                  [Inactivate]
-                </p>
-              </Link>
-              <Link href="#" color="orange">
-                <p className=" mr-2 text-secondary-color underline">
-                  [Terminate]
-                </p>
-              </Link>
-              <Link href="#" color="orange">
-                <p className=" mr-2 text-secondary-color underline">
-                  [Reassign]
-                </p>
-              </Link>
+              <EditAssociate />
+              <InactivateAssociate />
+              <TerminateAssociate />
+              <ReassignAssociate />
             </div>
             <div className="w-[100%] px-3">
               <div className="my-2 flex">
@@ -197,9 +188,7 @@ const AssociateMenuProfile = () => {
         </h2>
         <div className="mt-5 flex">
           <div className="space-y-1 border-r px-[10px]">
-            <Link href="#" color="orange">
-              <p className=" mr-2 text-secondary-color underline">[Edit]</p>
-            </Link>
+            <EditAssociateAgencies />
           </div>
           <table className="mx-5 w-full overflow-auto">
             <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">

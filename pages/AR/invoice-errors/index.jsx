@@ -1,8 +1,12 @@
 import { Input, Select } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import React from "react";
+import { VscGoToFile } from "react-icons/vsc";
 import { errors } from "../../../assets/ardata";
 
 const InvoiceErrors = () => {
+    const router = useRouter();
+
     return (
         <div className="ar bodytext space-y-4 p-5 capitalize">
             <section>
@@ -54,7 +58,9 @@ const InvoiceErrors = () => {
                             <th>error</th>
                             <th>solution</th>
                             <th>status</th>
+
                             <th>info</th>
+                            <th>action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -86,19 +92,35 @@ const InvoiceErrors = () => {
                                     <option value="option3">Option 3</option>
                                 </Select>
                             </td>
+
+                            <td></td>
                             <td></td>
                         </tr>
                         {errors.map((value, i) => (
                             <tr key={i}>
                                 <td>{value.name}</td>
                                 <td>{value.payer}</td>
-                                <td>{value.invoice}</td>
+                                <td className="text-orange-500">
+                                    {value.invoice}
+                                </td>
                                 <td></td>
                                 <td>{value.cate}</td>
                                 <td>{value.error}</td>
-                                <td>{value.solution}</td>
+                                <td className="text-orange-500">
+                                    {value.solution}
+                                </td>
                                 <td>{value.status}</td>
                                 <td>{value.info}</td>
+                                <td
+                                    className="text-center"
+                                    onClick={() =>
+                                        router.push(
+                                            `invoices/invoice-detail/${i}`
+                                        )
+                                    }
+                                >
+                                    <VscGoToFile className=" inline text-xl" />
+                                </td>
                             </tr>
                         ))}
                     </tbody>

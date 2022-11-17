@@ -7,10 +7,10 @@ const EachAssociateHeader = ({ associateUrl }) => {
     <div className="flex w-full flex-col items-center rounded border px-5 pt-5 pb-12 text-sm shadow">
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center gap-8">
-          <h2 className="text-lg font-semibold tracking-wide">
+          <h2 className="verdana16 font-semibold tracking-wide">
             {associateUrl}
           </h2>
-          <span className="flex w-fit cursor-pointer items-center gap-1 text-orange-600 underline">
+          <span className="flex w-fit cursor-pointer items-center gap-1 text-primary-orange underline">
             <EditPoppver />
           </span>
         </div>
@@ -23,7 +23,7 @@ const EachAssociateHeader = ({ associateUrl }) => {
           </span>
         </div>
       </div>
-      <div className="mt-6 flex w-full max-w-[800px] items-center justify-between">
+      <div className="verdana13 mt-6 flex w-full max-w-[800px] items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="flex flex-col items-end justify-center gap-[6px]">
             <p className="font-semibold">Classification:</p>
