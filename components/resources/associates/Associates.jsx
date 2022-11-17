@@ -177,7 +177,7 @@ const Associates = () => {
             <td></td>
           </tr>
           {associateTableData.map((associate, i) => (
-            <tr key={i} className={`border text-[15px]  even:bg-[#eeeeee]`}>
+            <tr key={i} className={`verdana11 border  even:bg-[#eeeeee]`}>
               <td className=" max-h-[20px] min-w-[50px] border border-primary-gray py-1 px-2 font-medium">
                 <span className="cursor-pointer">
                   <MoreAssociateInfo />

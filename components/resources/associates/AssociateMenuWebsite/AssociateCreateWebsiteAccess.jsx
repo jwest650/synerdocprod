@@ -8,12 +8,13 @@ import {
 import { BiPlus } from 'react-icons/bi';
 import { FcCalendar } from 'react-icons/fc';
 
-const AssociateCreateWebsiteAccess = () => {
+const AssociateCreateWebsiteAccess = ({ setEditUser }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
     e.preventDefault();
     onClose();
+    setEditUser(true);
   };
   return (
     <>
