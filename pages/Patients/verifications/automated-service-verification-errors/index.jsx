@@ -40,35 +40,41 @@ const AutomatedServiceVerificationErrors = () => {
 
       <section>
         <div>
-          <table className='min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'>
+          <table className='min-w-full overflow-auto text-xs'>
+            <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+              <tr className='border border-primary-color'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Patient Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Payer Name</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Payer Name
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Associate Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Transaction
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Error</th>
-                <th className=' border-gray-100  pl-2 text-left'>Solution</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Error
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Solution
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Service Date
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
                   Time In/Out
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-light-blue'>
+              <tr className='border border-primary-color bg-light-blue'>
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ backgroundColor: '#eee', border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -85,7 +91,7 @@ const AutomatedServiceVerificationErrors = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ backgroundColor: '#eee', border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -102,7 +108,7 @@ const AutomatedServiceVerificationErrors = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ backgroundColor: '#eee', border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -120,7 +126,7 @@ const AutomatedServiceVerificationErrors = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ backgroundColor: '#eee', border: 'none' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>

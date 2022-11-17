@@ -51,27 +51,53 @@ const MedsTab = () => {
 
       <section className=' mt-4 min-h-[200px]'>
         <table className=' min-w-full overflow-auto '>
-          <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-            <tr>
-              <th className='w-[300px] border-gray-100  pl-2 text-center'>
+          <thead className='border-b bg-primary-color text-xs tracking-wider text-white'>
+            <tr className='border border-primary-color'>
+              <th className='w-[300px] border-r border-gray-400 py-1 px-2  text-left text-xs'>
                 Medication
               </th>
-              <th className=' border-gray-100  pl-2 text-left'>Alert</th>
-              <th className=' border-gray-100  pl-2 text-left'>Dosage</th>
-              <th className=' border-gray-100  pl-2 text-left'>Freq</th>
-              <th className=' border-gray-100  pl-2 text-left'>Route</th>
-              <th className=' border-gray-100  pl-2 text-left'>QTY</th>
-              <th className=' border-gray-100  pl-2 text-left'>Start</th>
-              <th className=' border-gray-100  pl-2 text-left'>End</th>
-              <th className=' border-gray-100  pl-2 text-left'>Type</th>
-              <th className=' border-gray-100  pl-2 text-left'>Phycisian</th>
-              <th className=' border-gray-100  pl-2 text-left'>Administer</th>
-              <th className=' border-gray-100  pl-2 text-left'>Pharmacy</th>
-              <th className=' border-gray-100  pl-2 text-left'>ND</th>
-              <th className=' border-gray-100  pl-2 text-left'>C</th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Alert
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Dosage
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Freq
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Route
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                QTY
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Start
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                End
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Type
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Phycisian
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Administer
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Pharmacy
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                ND
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                C
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
             </tr>
           </thead>
           <tbody>

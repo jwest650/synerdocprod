@@ -28,7 +28,7 @@ const AddServiceFacilityModal = ({
       >
         <ModalOverlay />
         <ModalContent maxWidth={900}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalBody>
               <div className='mb-3'>
                 <h1 className=' text-2xl font-bold'>Add Service Facility</h1>
@@ -52,18 +52,22 @@ const AddServiceFacilityModal = ({
               </div>
 
               <div>
-                <table className='mt-10 min-w-full overflow-auto'>
-                  <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-                    <tr>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                <table className='mt-10 min-w-full overflow-auto text-xs'>
+                  <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+                    <tr className='border border-primary-color'>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                         Select
                       </th>
-                      <th className=' border-gray-100  pl-2 text-left'>Name</th>
-                      <th className=' border-gray-100  pl-2 text-left'>Type</th>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                        Name
+                      </th>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                        Type
+                      </th>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                         Preferred number
                       </th>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                      <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
                         Referral Address
                       </th>
                     </tr>

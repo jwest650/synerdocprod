@@ -48,27 +48,39 @@ const OrdersTab = () => {
 
         <section className=' min-h-[200px]'>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'>
+            <thead className='border-b bg-primary-color text-xs tracking-wider text-white'>
+              <tr className='border border-primary-color'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Reason Type
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Status</th>
-                <th className=' border-gray-100  pl-2 text-left'>Locked</th>
-                <th className=' border-gray-100  pl-2 text-left'>Transmited</th>
-                <th className=' border-gray-100  pl-2 text-left'>Response</th>
-                <th className=' border-gray-100  pl-2 text-left'>Created</th>
-                <th className=' border-gray-100  pl-2 text-left'>Created By</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Status
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Locked
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Transmited
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Response
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Created
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Created By
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Modified By
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Completed By
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
               </tr>
             </thead>
             <tbody>

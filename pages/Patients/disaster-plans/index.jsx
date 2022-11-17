@@ -50,36 +50,44 @@ const DisasterPlan = () => {
 
       <section>
         <div>
-          <table className='min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'>
+          <table className='min-w-full overflow-auto text-xs'>
+            <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+              <tr className='border border-primary-color'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Patient Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Disaster plan
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Plan Details
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Agency </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Agency{' '}
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Agency Type
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Admit Date</th>
-                <th className=' border-gray-100  pl-2 text-left'>Status</th>
-                <th className=' border-gray-100  pl-2 text-left'>Country</th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Admit Date
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Status
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Country
+                </th>
+                <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-light-blue'>
+              <tr className='border border-gray-400 bg-light-blue'>
                 <td></td>
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -98,7 +106,7 @@ const DisasterPlan = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -115,7 +123,7 @@ const DisasterPlan = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -133,7 +141,7 @@ const DisasterPlan = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -150,7 +158,7 @@ const DisasterPlan = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>

@@ -13,30 +13,48 @@ const PayersTab = () => {
 
       <section className=' min-h-[200px]'>
         <table className=' min-w-full overflow-auto'>
-          <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-            <tr>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' w-[25%] border-gray-100 pl-2 text-center '>
+          <thead className='border-b bg-primary-color  text-xs tracking-wider text-white'>
+            <tr className='border border-primary-color'>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' w-[25%] border-r border-gray-400 py-1 px-2  text-left text-xs'>
                 Payer Name
               </th>
-              <th className=' border-gray-100  pl-2 text-left'>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                 Payer Category
               </th>
-              <th className=' border-gray-100  pl-2 text-left'>Invoice Type</th>
-              <th className=' border-gray-100  pl-2 text-left'>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Invoice Type
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                 Invoice Cycle
               </th>
-              <th className=' border-gray-100  pl-2 text-left'>Status</th>
-              <th className=' border-gray-100  pl-2 text-left'>Profile</th>
-              <th className=' border-gray-100  pl-2 text-left'>Reqs</th>
-              <th className=' border-gray-100  pl-2 text-left'>Auth</th>
-              <th className=' border-gray-100  pl-2 text-left'>Elegibility</th>
-              <th className=' border-gray-100  pl-2 text-left'>Insured</th>
-              <th className=' border-gray-100  pl-2 text-left'>Copays</th>
-              <th className=' border-gray-100  pl-2 text-left'>NOE</th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Status
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Profile
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Reqs
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Auth
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Elegibility
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Insured
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Copays
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                NOE
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
             </tr>
           </thead>
           <tbody>

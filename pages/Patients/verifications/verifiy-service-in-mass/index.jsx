@@ -7,15 +7,15 @@ const VerifyServiceInMass = () => {
   let data = [1, 1, 1, 1]
 
   return (
-    <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
+    <div className='w-full space-y-4 bg-[#F6F8FC] p-5 text-xs text-gray-800 dark:text-white'>
       <div className='flex items-center'>
         <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
           Verify Service in mass
         </h1>
-        <button className='ml-3 rounded border bg-secondary-color px-3 font-medium text-white'>
+        <button className=' ml-3 rounded border bg-secondary-color py-1 px-3 font-medium text-white'>
           Verify All Checked
         </button>
-        <button className='ml-3 rounded border bg-secondary-color px-3 font-medium text-white'>
+        <button className=' ml-3 rounded border bg-secondary-color py-1 px-3 font-medium text-white'>
           View All Unverified Service
         </button>
       </div>
@@ -72,7 +72,7 @@ const VerifyServiceInMass = () => {
             </div>
           </div>
           <div>
-            <button className='ml-3 rounded border bg-secondary-color px-3 font-medium text-white'>
+            <button className=' ml-3 rounded border bg-secondary-color py-1 px-3 font-medium text-white'>
               Search
             </button>
           </div>
@@ -104,33 +104,61 @@ const VerifyServiceInMass = () => {
       </div>
 
       <section>
-        <table className='min-w-full overflow-auto'>
-          <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-            <tr>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' border-gray-100  pl-2 text-left'></th>
-              <th className=' border-gray-100  pl-2 text-left'>
+        <table className='min-w-full overflow-auto text-xs'>
+          <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+            <tr className='border border-primary-color'>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                 Associate Name
               </th>
-              <th className=' border-gray-100  pl-2 text-left'>Service</th>
-              <th className=' border-gray-100  pl-2 text-left'>Service Date</th>
-              <th className=' border-gray-100  pl-2 text-left'>Time In</th>
-              <th className=' border-gray-100  pl-2 text-left'>Time Out</th>
-              <th className=' border-gray-100  pl-2 text-left'>Reimb Type</th>
-              <th className=' border-gray-100  pl-2 text-left'>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Service
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Service Date
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Time In
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Time Out
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Reimb Type
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                 Travel Duration
               </th>
-              <th className=' border-gray-100  pl-2 text-left'>Miles</th>
-              <th className=' border-gray-100  pl-2 text-left'>Pay</th>
-              <th className=' border-gray-100  pl-2 text-left'>Unites</th>
-              <th className=' border-gray-100  pl-2 text-left'>Rate</th>
-              <th className=' border-gray-100  pl-2 text-left'>Bill</th>
-              <th className=' border-gray-100  pl-2 text-left'>Units</th>
-              <th className=' border-gray-100  pl-2 text-left'>Reimb Rate</th>
-              <th className=' border-gray-100  pl-2 text-left'>Charge Rate</th>
-              <th className=' border-gray-100  pl-2 text-left'>Payer</th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Miles
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Pay
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Unites
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Rate
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Bill
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Units
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Reimb Rate
+              </th>
+              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                Charge Rate
+              </th>
+              <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
+                Payer
+              </th>
             </tr>
           </thead>
           <tbody>

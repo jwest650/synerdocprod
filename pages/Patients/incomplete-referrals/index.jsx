@@ -42,24 +42,28 @@ const IncompleteReferrals = () => {
         <hr />
         <section>
           <div>
-            <table className='mt-3 min-w-full overflow-auto'>
-              <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-                <tr>
-                  <th className=' border-gray-100  pl-2 text-left'>Created</th>
-                  <th className=' border-gray-100  pl-2 text-left'>Agency</th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+            <table className='mt-3 min-w-full overflow-auto text-xs'>
+              <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+                <tr className='border border-primary-color'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Created
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Agency
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Agency Type
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Referral Contact
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Contact Phone
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Referral Source
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'></th>
+                  <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
                 </tr>
               </thead>
               <tbody>

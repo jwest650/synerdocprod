@@ -100,28 +100,44 @@ const SchedulesDetailListing = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'>Patient</th>
-                <th className=' border-gray-100  pl-2 text-left'>Associates</th>
-                <th className=' border-gray-100  pl-2 text-left'>Service</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+            <thead className='border bg-primary-color text-xs text-[18px] tracking-wider text-white'>
+              <tr className='border border-primary-blue'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Patient
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Associates
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Service
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Service Date{' '}
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Time In</th>
-                <th className=' border-gray-100  pl-2 text-left'>Time Out</th>
-                <th className=' border-gray-100  pl-2 text-left'>Agency</th>
-                <th className=' border-gray-100  pl-2 text-left'>Status</th>
-                <th className=' border-gray-100  pl-2 text-left'>Auth</th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Time In
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Time Out
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Agency
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Status
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Auth
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-light-blue'>
+              <tr className='border border-gray-400 bg-light-blue'>
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -138,7 +154,7 @@ const SchedulesDetailListing = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -155,7 +171,7 @@ const SchedulesDetailListing = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -175,7 +191,7 @@ const SchedulesDetailListing = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -192,7 +208,7 @@ const SchedulesDetailListing = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>

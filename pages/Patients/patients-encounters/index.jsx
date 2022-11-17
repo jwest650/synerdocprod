@@ -12,7 +12,7 @@ const PatientsEncounters = () => {
   let data = [1, 1, 1, 1]
 
   return (
-    <div className='w-full'>
+    <div className='w-full text-xs'>
       <section className='flex items-center justify-between capitalize'>
         <div className='flex items-center'>
           <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
@@ -31,7 +31,7 @@ const PatientsEncounters = () => {
         </div>
 
         <div>
-          <div className='flex justify-between'>
+          <div className='flex items-center justify-between'>
             <label htmlFor='#'>Censcus Date From:</label>
             <div className='flex '>
               <Input
@@ -52,7 +52,7 @@ const PatientsEncounters = () => {
               <option value='pdf'>PDF Summary</option>
               <option value='spreadsheet'>Spreadsheet Summary</option>
             </Select>
-            <button className='text-medium rounded  border bg-orange-600 px-2 text-white'>
+            <button className='text-medium rounded  border bg-orange-600 px-2 py-1 text-white'>
               Export
             </button>
           </div>
@@ -92,7 +92,7 @@ const PatientsEncounters = () => {
             <div>
               <Input placeholder='xsall size' size='xs' width={300} />
             </div>
-            <button className='text-medium ml-3 rounded border  bg-orange-600 px-2 text-white'>
+            <button className='text-medium ml-3 rounded border  bg-orange-600 px-2 py-1 text-white'>
               Search
             </button>
           </div>
@@ -101,40 +101,52 @@ const PatientsEncounters = () => {
 
       <section>
         <div>
-          <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'>
+          <table className=' min-w-full overflow-auto text-xs'>
+            <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+              <tr className='border border-primary-color'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Patient Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Latest cert period
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Agency </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Agency{' '}
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Agency Type
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Team</th>
-                <th className=' border-gray-100  pl-2 text-left'>Admit Date</th>
-                <th className=' border-gray-100  pl-2 text-left'>Non Admit</th>
-                <th className=' border-gray-100  pl-2 text-left'>Status</th>
-                <th className=' border-gray-100  pl-2 text-left'>Payer Name</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Team
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Admit Date
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Non Admit
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Status
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Payer Name
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Payer Category
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-light-blue'>
+              <tr className='border border-gray-400 bg-light-blue'>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -151,7 +163,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -168,7 +180,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -187,7 +199,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -204,7 +216,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -221,7 +233,7 @@ const PatientsEncounters = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>

@@ -26,7 +26,7 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
       >
         <ModalOverlay />
         <ModalContent maxWidth={900}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
               Find Referral Source
               <p className='text-sm text-gray-600'>
@@ -67,17 +67,21 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
 
               <div>
                 <table className='mt-10 min-w-full overflow-auto'>
-                  <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-                    <tr>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                  <thead className='border-b bg-primary-color text-xs tracking-wider text-white'>
+                    <tr className='border-primary border'>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                         Select
                       </th>
-                      <th className=' border-gray-100  pl-2 text-left'>Name</th>
-                      <th className=' border-gray-100  pl-2 text-left'>Type</th>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                        Name
+                      </th>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                        Type
+                      </th>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                         Preferred number
                       </th>
-                      <th className=' border-gray-100  pl-2 text-left'>
+                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                         Referral Address
                       </th>
                     </tr>
