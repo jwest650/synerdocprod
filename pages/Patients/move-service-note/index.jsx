@@ -91,19 +91,25 @@ const MoveServiceNote = () => {
 
       <section>
         <div>
-          <table className=' min-w-full overflow-auto'>
+          <table className=' min-w-full overflow-auto text-xs'>
             <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'>
+              <tr className='border border-primary-color '>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Associate Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Service</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Service
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Service Date
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Time In</th>
-                <th className=' border-gray-100  pl-2 text-left'>Time Out</th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Time In
+                </th>
+                <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
+                  Time Out
+                </th>
               </tr>
             </thead>
             <tbody>

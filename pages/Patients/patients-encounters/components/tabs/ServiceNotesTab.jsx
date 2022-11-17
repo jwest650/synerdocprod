@@ -55,27 +55,41 @@ const ServiceNotesTab = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'>Type</th>
-                <th className=' border-gray-100  pl-2 text-left'>Createed</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+            <thead className='border-b bg-primary-color text-xs tracking-wider text-white'>
+              <tr className='border border-primary-color'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Type
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Createed
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Form Entered By
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Revised By</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Revised By
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Service provided By
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Service Date
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Time in</th>
-                <th className=' border-gray-100  pl-2 text-left'>Time out</th>
-                <th className=' border-gray-100  pl-2 text-left'>Service</th>
-                <th className=' border-gray-100  pl-2 text-left'>QA Status</th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Time in
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Time out
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Service
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  QA Status
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
               </tr>
             </thead>
             <tbody>

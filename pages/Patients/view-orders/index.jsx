@@ -28,44 +28,72 @@ const ViewOrders = () => {
             </div>
           </div>
         </section>
+        <div className='flex items-center space-x-5'>
+          <div className='flex '>
+            <p>Filter By Agency:</p>
+            <div>
+              <Select size='xs'>
+                <option>Homecare center</option>
+                <option>Homecare center</option>
+                <option>Homecare center</option>
+              </Select>
+            </div>
+          </div>
+        </div>
         <hr />
         <section>
           <div>
-            <table className=' min-w-full overflow-auto'>
-              <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-                <tr>
-                  <th className=' border-gray-100  pl-2 text-left'>Print</th>
-                  <th className=' border-gray-100  pl-2 text-left'>Fax</th>
-                  <th className=' border-gray-100  pl-2 text-left'>Email</th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+            <table className=' min-w-full overflow-auto text-xs'>
+              <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+                <tr className='border border-primary-color '>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Print
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Fax
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Email
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Patient Name
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>Team</th>
-                  <th className=' border-gray-100  pl-2 text-left'>Types</th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Team
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Types
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Cert From
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>To</th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    To
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Associate
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>Status</th>
-                  <th className=' border-gray-100  pl-2 text-left'>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                    Status
+                  </th>
+                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                     Physician
                   </th>
-                  <th className=' border-gray-100  pl-2 text-left'>Sent</th>
+                  <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
+                    Sent
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className='bg-light-blue'>
+                <tr className='border border-gray-400 bg-light-blue'>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td>
                     <Select
                       size='xs'
-                      css={{ border: 'none' }}
-                      className='shadow outline-none'
+                      css={{ border: 'none', backgroundColor: '#eee' }}
+                      className='bg-gray-400 shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
                         All
@@ -81,8 +109,8 @@ const ViewOrders = () => {
                   <td>
                     <Select
                       size='xs'
-                      css={{ border: 'none' }}
-                      className='shadow outline-none'
+                      css={{ border: 'none', backgroundColor: '#eee' }}
+                      className='bg-gray-400 shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
                         All
@@ -101,8 +129,8 @@ const ViewOrders = () => {
                   <td>
                     <Select
                       size='xs'
-                      css={{ border: 'none' }}
-                      className='shadow outline-none'
+                      css={{ border: 'none', backgroundColor: '#eee' }}
+                      className='bg-gray-400 shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
                         All
@@ -119,8 +147,8 @@ const ViewOrders = () => {
                   <td>
                     <Select
                       size='xs'
-                      css={{ border: 'none' }}
-                      className='shadow outline-none'
+                      css={{ border: 'none', backgroundColor: '#eee' }}
+                      className='bg-gray-400 shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
                         All
@@ -185,8 +213,12 @@ const ViewOrders = () => {
           </div>
 
           <div className='flex justify-end p-5'>
-            <button className='rounded border  px-2'>Save</button>
-            <button className='ml-3 rounded  border px-2'>Cancel</button>
+            <button className='rounded border  bg-secondary-color px-2 text-white'>
+              Save
+            </button>
+            <button className='ml-3 rounded  border bg-secondary-color px-2 text-white'>
+              Cancel
+            </button>
           </div>
         </section>
       </div>

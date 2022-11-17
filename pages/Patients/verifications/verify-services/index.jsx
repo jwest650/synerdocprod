@@ -5,7 +5,7 @@ const VerifyServices = () => {
   let data = [1, 1, 1, 1]
 
   return (
-    <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
+    <div className='w-full space-y-4 bg-[#F6F8FC] p-5 text-xs text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
         <div>
           <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
@@ -88,34 +88,42 @@ const VerifyServices = () => {
 
       <section>
         <div>
-          <table className='min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr>
-                <th className=' border-gray-100  pl-2 text-left'>
+          <table className='min-w-full overflow-auto text-xs'>
+            <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+              <tr className='border border-primary-color'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Patient Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Associate Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Service</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Service
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Service Date
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Time In</th>
-                <th className=' border-gray-100  pl-2 text-left'>Time Out</th>
-                <th className=' border-gray-100  pl-2 text-left'>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Time In
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Time Out
+                </th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
                   Agency Name
                 </th>
-                <th className=' border-gray-100  pl-2 text-left'>Payer Name</th>
-                <th className=' border-gray-100  pl-2 text-left'></th>
+                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                  Payer Name
+                </th>
+                <th className=' border-l-4 border-gray-400 py-1 px-2  text-left text-xs'></th>
               </tr>
             </thead>
             <tbody>
-              <tr className='bg-light-blue'>
+              <tr className='border border-gray-400 bg-light-blue'>
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -132,7 +140,7 @@ const VerifyServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -153,7 +161,7 @@ const VerifyServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -170,7 +178,7 @@ const VerifyServices = () => {
                 <td>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>

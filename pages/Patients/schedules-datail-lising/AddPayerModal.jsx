@@ -20,7 +20,7 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
         >
           <ModalOverlay />
           <ModalContent maxWidth={700}>
-            <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+            <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
               <header className=' capitalize'>
                 <h1 className='text-2xl font-bold'>add Payer</h1>
               </header>
