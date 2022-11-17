@@ -21,7 +21,7 @@ const EachAssociateHeader = ({ associateUrl }) => {
           </span>
         </div>
       </div>
-      <div className="verdana13 mt-6 flex w-full max-w-[800px] items-center justify-between">
+      <div className="verdana11 mt-6 flex w-full max-w-[800px] items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="flex flex-col items-end justify-center gap-[6px]">
             <p className="font-semibold">Classification:</p>
