@@ -24,11 +24,11 @@ const AssociateMenuProfile = () => {
       <section className="flex flex-col justify-between text-sm md:flex-row">
         <div className="w-[50%] px-2 md:border-r">
           <div className="flex">
-            <h2 className="mb-5 text-lg font-semibold tracking-wider">
-              Persosnal
+            <h2 className="verdana16 mb-5 font-semibold tracking-wider">
+              Personal
             </h2>
           </div>
-          <div className="flex ">
+          <div className="verdana12 flex">
             <div className="mr-2 space-y-1 border-r px-2">
               {/* <Link href="#" color="orange"> */}
               <EditAssociate />
@@ -95,7 +95,7 @@ const AssociateMenuProfile = () => {
             </div>
           </div>
           <div className="py-5">
-            <h2 className="mb-5 mt-2 text-lg font-semibold tracking-wider">
+            <h2 className="verdana16 mb-5 mt-2 font-semibold tracking-wider">
               Missing Fields
             </h2>
             <div className="mt-3 flex">
@@ -118,9 +118,9 @@ const AssociateMenuProfile = () => {
           </div>
         </div>
 
-        <div className="w-[50%] px-2 md:border-l">
+        <div className="verdana12 w-[50%] px-2 md:border-l">
           <div className="flex">
-            <h2 className="mb-5 text-lg font-semibold tracking-wider">
+            <h2 className="verdana16 mb-5 font-semibold tracking-wider">
               Current Encounter
             </h2>
           </div>
@@ -183,7 +183,7 @@ const AssociateMenuProfile = () => {
         </div>
       </section>
       <div className="mt-10 py-2 px-2">
-        <h2 className="text-lg font-semibold tracking-wider">
+        <h2 className="verdana16 font-semibold tracking-wider">
           Agency Assignment
         </h2>
         <div className="mt-5 flex">
@@ -191,18 +191,28 @@ const AssociateMenuProfile = () => {
             <EditAssociateAgencies />
           </div>
           <table className="mx-5 w-full overflow-auto">
-            <thead className="border-b bg-[#0141CF] text-[18px] tracking-wider text-white">
+            <thead className="verdana12 border-b bg-[#0141CF] tracking-wider text-white">
               <tr>
-                <th className=" border-gray-400  pl-2 text-left">Home</th>
-                <th className=" border-gray-400 pl-2 text-left"></th>
-                <th className=" border-gray-400 pl-2 text-left">Agency</th>
-                <th className=" border-gray-400 pl-2 text-left">Territories</th>
-                <th className=" border-gray-400 pl-2 text-left">Teams</th>
-                <th className=" border-gray-400 pl-2 text-left">Action</th>
+                <th className=" border border-gray-400 border-l-primary-blue border-t-primary-blue  pl-2 text-left">
+                  Home
+                </th>
+                <th className=" border border-gray-400 border-t-primary-blue pl-2 text-left"></th>
+                <th className=" border border-gray-400 border-t-primary-blue pl-2 text-left">
+                  Agency
+                </th>
+                <th className=" border border-gray-400 border-t-primary-blue pl-2 text-left">
+                  Territories
+                </th>
+                <th className=" border border-gray-400 border-t-primary-blue pl-2 text-left">
+                  Teams
+                </th>
+                <th className=" border border-gray-400 border-r-primary-blue border-t-primary-blue pl-2 text-left">
+                  Action
+                </th>
               </tr>
             </thead>
             <tbody>
-              <tr className="w-full bg-[#e6ebf85d]">
+              <tr className="verdana13 w-full bg-[#e6ebf85d]">
                 <td className=" w-16 border border-gray-400 py-2 px-4">
                   <FcCheckmark className="scale-150" />
                 </td>

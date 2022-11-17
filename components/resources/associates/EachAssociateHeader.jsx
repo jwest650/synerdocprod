@@ -1,5 +1,4 @@
 import React from 'react';
-import { FcInfo } from 'react-icons/fc';
 import EditPopover from './EditPopover';
 
 const EachAssociateHeader = ({ associateUrl }) => {
