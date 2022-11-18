@@ -29,23 +29,20 @@ const AssociateUploadPic = ({ setAssociateImage }) => {
     <>
       <span
         onClick={onOpen}
-        className="flex w-fit cursor-pointer items-center justify-center gap-2 rounded bg-orange-600 py-1 px-4 text-white"
+        className="btn-primary ml-5 flex w-fit cursor-pointer items-center justify-center gap-2"
       >
         <BsCloudUpload className="scale-125" />
-        <span className="text-sm">Upload Picture</span>
+        <span>Upload Picture</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h2 className="text-xl font-semibold tracking-wider">
+              <h2 className="verdana18 font-semibold tracking-wider">
                 Upload File
               </h2>
               <div className="mt-10 flex w-full justify-center">
-                {/* <label>
-                  <span className="text-red-500">*</span>Select Image:
-                </label> */}
                 <Input
                   onChange={onImageChange}
                   className="w-40"
@@ -58,7 +55,7 @@ const AssociateUploadPic = ({ setAssociateImage }) => {
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
-                  className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
                 >
                   Save
                 </button>
@@ -70,7 +67,6 @@ const AssociateUploadPic = ({ setAssociateImage }) => {
                 </div>
               </div>
             </form>
-            {/* </ModalBody> */}
           </div>
         </ModalContent>
       </Modal>

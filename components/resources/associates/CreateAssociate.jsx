@@ -142,7 +142,7 @@ const CreateAssociate = () => {
                   </div>
                 </div>
                 <div className="ml-4 w-full pl-4 pb-5 md:col-span-3 md:border-l-2">
-                  <div className="flex items-center gap-2 border-b-2 pb-2">
+                  <div className="mr-5 flex items-center gap-2 border-b-2 pb-2">
                     <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
                       2
                     </div>
@@ -152,7 +152,8 @@ const CreateAssociate = () => {
                     <div className="col-span-5 mx-5 space-y-[19px] md:mx-auto">
                       <div className="flex items-center justify-end">
                         <label className="flex  pl-1">
-                          <span className="text-red-600">*</span>Classification:
+                          <span className="text-primary-orange">*</span>
+                          Classification:
                         </label>
                       </div>
                       <div className="flex items-center justify-end gap-1">
@@ -160,12 +161,14 @@ const CreateAssociate = () => {
                       </div>
                       <div className="flex items-center justify-end gap-1">
                         <label className="flex  pl-1">
-                          <span className="text-red-600">*</span>Hire Date:
+                          <span className="text-primary-orange">*</span>Hire
+                          Date:
                         </label>{' '}
                       </div>
                       <div className="flex items-center justify-end gap-1">
                         <label className="flex  pl-1">
-                          <span className="text-red-600">*</span>Start Date:
+                          <span className="text-primary-orange">*</span>Start
+                          Date:
                         </label>{' '}
                       </div>
                       <div className="flex items-center justify-end gap-1">
@@ -173,7 +176,8 @@ const CreateAssociate = () => {
                       </div>
                       <div className="flex items-center justify-end gap-1">
                         <label className="flex  pl-1">
-                          <span className="text-red-600">*</span>Home Agency:
+                          <span className="text-primary-orange">*</span>Home
+                          Agency:
                         </label>{' '}
                       </div>
                       <div className="flex items-center justify-end gap-1">
@@ -196,7 +200,7 @@ const CreateAssociate = () => {
                       <div className="w-full rounded border border-secondary-blue shadow-sm">
                         <TableSelect
                           styles={{ width: '100%' }}
-                          options={['Registered Nurse']}
+                          options={['Regist-primarytext-primary-orangese']}
                         />
                       </div>
                       <div>

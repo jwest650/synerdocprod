@@ -6,7 +6,9 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
+import { FcEmptyTrash } from 'react-icons/fc';
 import { FiTrash2 } from 'react-icons/fi';
+import TableSelect from '../../../structure/TableSelect';
 
 const AssociateCreateOrgAccess = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,7 +21,7 @@ const AssociateCreateOrgAccess = () => {
     <>
       <span
         onClick={onOpen}
-        className="flex cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white"
+        className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-125" />
         <span className="text-sm">Create Org Access</span>
@@ -40,37 +42,28 @@ const AssociateCreateOrgAccess = () => {
               <div className="mt-16 flex flex-col items-center lg:flex-row lg:items-start">
                 <div className="mr-3 w-[65%] border-primary-gray lg:border-r">
                   <div className="flex items-start">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white">
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-medium text-white">
                       1
                     </span>
                     <div>
                       <div className="flex w-[100%] flex-col items-center justify-center px-3">
-                        <div className="my-2 flex">
-                          <p className="w-[150px] text-right font-semibold">
+                        <div className="my-2 flex items-center">
+                          <p className="w-[150px] text-right font-medium">
                             <span className="text-primary-orange">*</span>
                             Address Type:
                           </p>
                           <div className="ml-3">
-                            <Select
-                              css={{
-                                backgroundColor: '#c6d8ffe1',
-                                border: 'none',
-                              }}
-                              className="shadow outline-none"
-                              size="xs"
-                            >
-                              <option value="option1" className="text-gray-800">
-                                Home{' '}
-                              </option>
-                              <option value="option1" className="text-gray-800">
-                                Option2{' '}
-                              </option>
-                            </Select>
+                            <div className="w-full rounded border border-secondary-blue shadow-sm">
+                              <TableSelect
+                                styles={{ width: '100%' }}
+                                options={['Home', 'Option2']}
+                              />
+                            </div>{' '}
                           </div>
                         </div>
 
-                        <div className="my-2 flex">
-                          <p className="ml-6 w-[150px] text-right font-semibold">
+                        <div className="my-2 flex items-center">
+                          <p className="ml-6 w-[150px] text-right font-medium">
                             <span className="text-primary-orange">*</span>
                             Address1:
                           </p>{' '}
@@ -78,23 +71,23 @@ const AssociateCreateOrgAccess = () => {
                             <input
                               type="text"
                               placeholder="222 Hwy 48"
-                              className="mx-2 w-48 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none md:mx-0"
+                              className="input-primary mx-2 w-48 md:mx-0"
                             />
                           </div>
                         </div>
-                        <div className="my-2 flex">
-                          <p className="ml-6 w-[150px] text-right font-semibold">
+                        <div className="my-2 flex items-center">
+                          <p className="ml-6 w-[150px] text-right font-medium">
                             Address2:
                           </p>{' '}
                           <div className="ml-4 w-28 pt-0.5">
                             <input
                               type="text"
-                              className="mx-2 w-48 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none md:mx-0"
+                              className="input-primary mx-2 w-48 md:mx-0"
                             />
                           </div>
                         </div>
-                        <div className="my-2 flex">
-                          <p className="ml-5 w-[150px] text-right font-semibold">
+                        <div className="my-2 flex items-center">
+                          <p className="ml-5 w-[150px] text-right font-medium">
                             {' '}
                             <span className="text-primary-orange">*</span>{' '}
                             City/State/Zip:{' '}
@@ -103,33 +96,23 @@ const AssociateCreateOrgAccess = () => {
                             <input
                               type="text"
                               placeholder="Saline"
-                              className="w-20 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                              className="input-primary w-20"
                             />{' '}
-                            <Select
-                              css={{
-                                backgroundColor: '#c6d8ffe1',
-                                border: 'none',
-                                width: '60px',
-                              }}
-                              className="shadow outline-none"
-                              size="xs"
-                            >
-                              <option value="option1" className="text-gray-800">
-                                LA{' '}
-                              </option>
-                              <option value="option1" className="text-gray-800">
-                                Option2{' '}
-                              </option>
-                            </Select>
+                            <div className=" rounded border border-secondary-blue shadow-sm">
+                              <TableSelect
+                                styles={{ width: '70px' }}
+                                options={['LA', 'Option2']}
+                              />
+                            </div>
                             <input
                               type="text"
                               placeholder="71070"
-                              className="w-16 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                              className="input-primary w-16"
                             />{' '}
                             <input
                               type="text"
                               placeholder=""
-                              className="w-16 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                              className="input-primary w-16"
                             />{' '}
                           </div>
                         </div>
@@ -137,104 +120,80 @@ const AssociateCreateOrgAccess = () => {
                     </div>
                   </div>
                   <div className="mt-14 flex items-start">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white">
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-medium text-white">
                       2
                     </span>
                     <div>
                       <div className="flex w-[100%] flex-col items-center justify-center px-3">
-                        <div className="my-2 flex">
-                          <p className="w-[150px] text-right font-semibold">
+                        <div className="my-2 flex items-center">
+                          <p className="w-[150px] text-right font-medium">
                             Phone Type:
                           </p>
                           <div className="ml-3">
-                            <Select
-                              css={{
-                                backgroundColor: '#c6d8ffe1',
-                                border: 'none',
-                              }}
-                              className="shadow outline-none"
-                              size="xs"
-                            >
-                              <option value="option1" className="text-gray-800">
-                                Option1{' '}
-                              </option>
-                              <option value="option1" className="text-gray-800">
-                                Option2{' '}
-                              </option>
-                            </Select>
+                            <div className="w-full rounded border border-secondary-blue shadow-sm">
+                              <TableSelect
+                                styles={{ width: '100%' }}
+                                options={['Option1', 'Option2']}
+                              />
+                            </div>
                           </div>
                         </div>
 
-                        <div className="my-2 flex">
-                          <p className="ml-6 w-[150px] text-right font-semibold">
+                        <div className="my-2 flex items-center">
+                          <p className="ml-6 w-[150px] text-right font-medium">
                             Phone:
                           </p>{' '}
-                          <div className="ml-4 flex w-28 items-center gap-2 pt-0.5">
+                          <div className="ml-4 flex w-28 items-center gap-1 pt-0.5">
                             (
-                            <input
-                              type="text"
-                              className="w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
-                            />
+                            <input type="text" className="input-primary w-14" />
                             )
-                            <input
-                              type="text"
-                              className="w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
-                            />
+                            <input type="text" className="input-primary w-14" />
                             -
                             <input
                               type="text"
                               placeholder=""
-                              className="w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                              className="input-primary w-14"
                             />
                             ext.
                             <input
                               type="text"
                               placeholder=""
-                              className="w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                              className="input-primary w-14"
                             />
                           </div>
                         </div>
-                        <div className="ml-24 mt-4 rounded bg-primary-orange px-3 py-1 text-white shadow-md">
-                          Add Phone
-                        </div>
+                        <div className="btn-primary ml-24 mt-4">Add Phone</div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="mt-12 flex gap-5 lg:mt-1 lg:block">
-                  <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white lg:mt-0">
+                  <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-medium text-white lg:mt-0">
                     3
                   </span>
                   <table className=" mx-auto mt-5 w-fit overflow-auto px-3 shadow-md">
-                    <thead className="border-b bg-primary-blue text-[15px] tracking-wider text-white">
+                    <thead className="thead-primary">
                       <tr>
-                        <th className="border border-primary-gray border-t-primary-blue border-l-primary-blue px-4 text-left">
-                          Preferred{' '}
-                        </th>
-                        <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
-                          Phone Type
-                        </th>
-                        <th className=" border border-primary-gray border-t-primary-blue pl-2 text-left">
-                          Phone
-                        </th>
-
-                        <th className="border border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left"></th>
+                        <th className="th-first">Preferred </th>
+                        <th className="th-middle">Phone Type</th>
+                        <th className="th-middle">Phone</th>
+                        <th className="th-last"></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="w-full bg-[#e6ebf85d]">
-                        <td className="w-10 border border-gray-400 py-2 px-4">
-                          <input type="checkbox" />
+                        <td className="td-primary w-20 px-10">
+                          <div className="flex items-center justify-center">
+                            <input type="checkbox" className="input-primary" />
+                          </div>
                         </td>
-                        <td className="w-10 border border-gray-400 px-2">
-                          Mobile
-                        </td>
-                        <td className="w-64 border border-gray-400 px-4">
+                        <td className="td-primary w-48 px-2">Mobile</td>
+                        <td className="td-primary w-52 px-4">
                           (318) 576-9999{' '}
                         </td>
 
-                        <td className="border border-gray-400 px-4">
-                          <FiTrash2 className="scale-125 text-primary-orange" />
+                        <td className="td-primary px-4">
+                          <FcEmptyTrash className="scale-125 text-primary-orange" />
                         </td>
                       </tr>
                     </tbody>
@@ -257,7 +216,6 @@ const AssociateCreateOrgAccess = () => {
                 </button>
               </div>
             </form>
-            {/* </ModalBody> */}
           </div>
         </ModalContent>
       </Modal>
