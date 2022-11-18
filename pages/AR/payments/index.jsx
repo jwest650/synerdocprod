@@ -74,7 +74,12 @@ const Payments = () => {
                                 <FcCalendar className="text-xl" />
                             </label>
                             <label htmlFor="remit-to">to:</label>
-                            <Input w={130} type="date" size="xs" />
+                            <Input
+                                w={130}
+                                type="date"
+                                size="xs"
+                                id="remit-to"
+                            />
                             <label htmlFor="remit-to">
                                 <FcCalendar className="text-xl" />
                             </label>{" "}

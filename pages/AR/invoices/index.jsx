@@ -226,7 +226,7 @@ const Invoices = () => {
                                         className="inline text-xl"
                                         onClick={() =>
                                             router.push(
-                                                `${router.pathname}/invoice-detail/${i}`
+                                                `${router.pathname}/invoice-detail/errors`
                                             )
                                         }
                                     />

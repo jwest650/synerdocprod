@@ -26,12 +26,12 @@
 }
 
 body {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .arial12 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 .verdana9 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -71,10 +71,10 @@ body {
 }
 
 .btn-primary {
-  @apply verdana12 rounded bg-orange-600 px-2 py-[2px] font-medium text-white;
+    @apply verdana12 rounded bg-orange-600 px-2 py-[2px] font-medium text-white;
 }
 .btn-secondary {
-  @apply verdana14 rounded bg-orange-600 px-2.5 py-[4px] font-medium text-white;
+    @apply verdana14 rounded bg-orange-600 px-2.5 py-[4px] font-medium text-white;
 }
 
 ::-webkit-scrollbar {
@@ -294,10 +294,9 @@ body {
         width: 100%;
         height: 100%;
     }
+
     .ar td,
     .ar th {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 12px;
         padding: 2px 5px;
         border: 1px solid #a0a0a0;
     }
@@ -306,10 +305,9 @@ body {
     }
 
     .ar th {
-        @apply bg-primary-color;
-        color: white;
-        text-align: left;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        @apply bg-primary-blue text-left text-[12px] text-white first:border-l-0   last:border-r-0;
     }
     .ar tr {
         @apply even:bg-gray-100;
@@ -321,7 +319,7 @@ body {
 }
 @layer utilities {
     .head {
-        @apply text-lg font-bold capitalize;
+        @apply text-[18px] font-bold capitalize;
     }
     .bodytext {
         @apply text-[black];
@@ -330,10 +328,10 @@ body {
         @apply bg-white;
     }
     .btn {
-        @apply rounded bg-[#EA580C] py-[2px] px-3 font-medium text-white;
+        @apply verdana12 rounded bg-orange-600 px-2 py-[2px] font-medium text-white;
     }
     .create-btn {
-        @apply rounded bg-[#EA580C] py-1 px-3 font-medium text-white;
+        @apply verdana14 rounded bg-orange-600 px-2.5 py-[4px] font-medium text-white;
     }
     .darkmode {
         @apply dark:text-white;

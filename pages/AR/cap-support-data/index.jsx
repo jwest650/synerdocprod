@@ -46,17 +46,26 @@ const CapSupportData = () => {
                     </aside>
                     <aside>
                         <div className="flex items-center space-x-2">
-                            <label htmlFor="">
+                            <label htmlFor="dates">
                                 {" "}
                                 <span className="text-orange-500">*</span> dates
                                 range:
                             </label>
-                            <Input w={120} type="text" size="xs" />
-                            <FcCalendar className="text-xl" />
-
-                            <label htmlFor="">to:</label>
-                            <Input w={120} type="text" size="xs" />
-                            <FcCalendar className="text-xl" />
+                            <Input w={120} type="text" size="xs" id="dates" />
+                            <label htmlFor="dates">
+                                {" "}
+                                <FcCalendar className="text-xl" />
+                            </label>
+                            <label htmlFor="dates-to">to:</label>
+                            <Input
+                                w={120}
+                                type="text"
+                                size="xs"
+                                id="dates-to"
+                            />
+                            <label htmlFor="dates-to">
+                                <FcCalendar className="text-xl" />
+                            </label>
                         </div>
                     </aside>
                     <div className="self-end">
