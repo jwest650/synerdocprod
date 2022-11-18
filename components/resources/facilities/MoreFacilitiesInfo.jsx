@@ -10,6 +10,7 @@ const MoreFacilitiesInfo = () => {
       <div
         onMouseOver={() => setShowInfo(true)}
         onMouseLeave={() => setShowInfo(false)}
+        className="flex w-full justify-center"
       >
         <RiBook2Fill />
       </div>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { FcEditImage, FcEmptyTrash } from 'react-icons/fc';
 import { FiSettings, FiTrash2 } from 'react-icons/fi';
 import DoctorHistory from './DoctorHistory';
 
@@ -7,7 +8,7 @@ const PhysicianTableAction = ({ physicianName, physicianUrl }) => {
   const [showOthers, setShowOthers] = useState(false);
 
   return (
-    <span className="flex h-full w-full items-center justify-center  text-lg text-[#0141CF]">
+    <span className="flex h-[27px] w-full items-center justify-center  text-lg text-[#0141CF]">
       {showOthers && (
         <span
           onMouseOver={() => setShowOthers((current) => (current = true))}
@@ -23,7 +24,7 @@ const PhysicianTableAction = ({ physicianName, physicianUrl }) => {
         onMouseLeave={() => setShowOthers((current) => (current = false))}
       >
         <Link href={`/Resources/physicians/${physicianUrl}/contactsinfo`}>
-          <FiSettings />
+          <FcEditImage />
         </Link>
       </span>
 
@@ -33,7 +34,7 @@ const PhysicianTableAction = ({ physicianName, physicianUrl }) => {
           onMouseLeave={() => setShowOthers((current) => (current = false))}
           className="table-action-anim px-1 text-orange-600"
         >
-          <FiTrash2 />
+          <FcEmptyTrash />
         </span>
       )}
     </span>

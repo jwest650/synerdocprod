@@ -21,7 +21,7 @@ const CreateAssociate = () => {
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-150" />
-        <span className="">Create Associates</span>
+        <span>Create Associates</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />

@@ -4,9 +4,15 @@ import TableAction from '../TableAction';
 import CreateAssociate from './CreateAssociate';
 import Link from 'next/link';
 import MoreAssociateInfo from './MoreAssociateInfo';
-import { MdKeyboardArrowDown, MdOutlineArrowDropDown } from 'react-icons/md';
+import TableSelect from '../../structure/TableSelect';
+import { useState } from 'react';
 
 const Associates = () => {
+  const [associateName, setAssociateName] = useState('All');
+  const [associateClassification, setAssociateClassification] = useState('All');
+  const [associateDiscipline, setAssociateDiscipline] = useState('All');
+  const [associateStatus, setAssociateStatus] = useState('All');
+
   return (
     <section className="mx-5 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
@@ -40,180 +46,91 @@ const Associates = () => {
           <button className="btn-primary">Export</button>
           <input
             placeholder="Enter first or last name"
-            className="verdana12 rounded border border-secondary-blue px-3 py-[2px] text-black outline-none"
+            className="input-primary"
             type="text"
           />
           <button className="btn-primary">Search</button>
         </div>
       </div>
       <table className="mt-10 min-w-full overflow-auto">
-        <thead className="verdana12 border-b bg-primary-blue tracking-wider text-white">
+        <thead className="thead-primary">
           <tr>
-            <th className=" border border-primary-gray border-t-primary-blue border-l-primary-blue py-[3px] pl-2 text-left"></th>
-            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
-              Name
-            </th>
-            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
-              Classification
-            </th>
-            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
-              Discipline
-            </th>
-            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
-              Hire Date
-            </th>
-            <th className=" border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left">
-              Status
-            </th>
-            <th className=" border border-primary-gray border-t-primary-blue border-r-primary-blue py-[3px] pl-2 text-left">
-              Action
-            </th>
+            <th className="th-first"></th>
+            <th className="th-middle">Name</th>
+            <th className="th-middle">Classification</th>
+            <th className="th-middle">Discipline</th>
+            <th className="th-middle">Hire Date</th>
+            <th className="th-middle">Status</th>
+            <th className="th-last">Action</th>
           </tr>
         </thead>
         <tbody>
           <tr className="w-full border border-primary-gray bg-secondary-blue">
             <td></td>
             <td className="w-full border border-primary-gray">
-              <Select
-                icon={<MdOutlineArrowDropDown />}
-                iconColor="gray"
-                width="90px"
-                css={{
-                  backgroundColor: 'c6d8ffe1',
-                  border: 'none',
-                  fontSize: '12px',
-                  fontFamily: 'Arial',
-                }}
-                className="cursor-pointer shadow outline-none"
-                size="xs"
-              >
-                <option value="option1" className="text-gray-800">
-                  All
-                </option>
-                <option value="option2" className="text-gray-800">
-                  Florida Branch
-                </option>
-                <option value="option3" className="text-gray-800">
-                  California Branch
-                </option>
-                <option value="option3" className="text-gray-800">
-                  New York Branch
-                </option>
-              </Select>
+              <TableSelect
+                setSelectedOption={setAssociateName}
+                options={[
+                  'All',
+                  'Florida Branch',
+                  'California Branch',
+                  'New York Branch',
+                ]}
+              />
             </td>
             <td className=" w-full border border-primary-gray">
-              <Select
-                icon={<MdOutlineArrowDropDown />}
-                iconColor="gray"
-                width="90px"
-                css={{
-                  backgroundColor: '#c6d8ffe1',
-                  border: 'none',
-                  fontSize: '12px',
-                }}
-                className="cursor-pointer shadow outline-none"
-                size="xs"
-              >
-                <option value="option1" className="text-gray-800">
-                  All
-                </option>
-                <option value="option2" className="text-gray-800">
-                  Aministrative
-                </option>
-                <option value="option3" className="text-gray-800">
-                  Field Staff - Full Time
-                </option>
-              </Select>
+              <TableSelect
+                setSelectedOption={setAssociateClassification}
+                options={['All', 'Aministrative', 'Field Staff - Full Time']}
+              />
             </td>
             <td className=" w-full border border-primary-gray">
-              <Select
-                icon={<MdOutlineArrowDropDown />}
-                iconColor="gray"
-                width="90px"
-                css={{
-                  backgroundColor: '#c6d8ffe1',
-                  border: 'none',
-                  fontSize: '12px',
-                }}
-                className="cursor-pointer shadow outline-none"
-                size="xs"
-              >
-                <option value="option1" className="text-gray-800">
-                  All{' '}
-                </option>
-                <option value="option2" className="text-gray-800">
-                  Registered Nurse{' '}
-                </option>
-                <option value="option3" className="text-gray-800">
-                  Nurse Practitioner
-                </option>
-              </Select>
+              <TableSelect
+                setSelectedOption={setAssociateDiscipline}
+                options={['All', 'Registered Nurse', 'Nurse Practitioner']}
+              />
             </td>
             <td></td>
             <td className=" w-full border border-primary-gray">
-              <Select
-                icon={<MdOutlineArrowDropDown />}
-                iconColor="gray"
-                width="90px"
-                css={{
-                  backgroundColor: '#c6d8ffe1',
-                  border: 'none',
-                  fontSize: '12px',
-                }}
-                className="cursor-pointer shadow outline-none"
-                size="xs"
-              >
-                <option value="option1" className="text-gray-800">
-                  All{' '}
-                </option>
-                <option value="option2" className="text-gray-800">
-                  Active
-                </option>
-                <option value="option3" className="text-gray-800">
-                  Inactive
-                </option>
-                <option value="option3" className="text-gray-800">
-                  Pending
-                </option>
-                <option value="option3" className="text-gray-800">
-                  Suspended
-                </option>
-                <option value="option3" className="text-gray-800">
-                  Terminated
-                </option>
-              </Select>
+              <TableSelect
+                setSelectedOption={setAssociateStatus}
+                options={[
+                  'All',
+                  'Active',
+                  'Inactive',
+                  'Pending',
+                  'Suspended',
+                  'Terminated',
+                ]}
+              />
             </td>
             <td></td>
           </tr>
           {associateTableData.map((associate, i) => (
             <tr key={i} className={`verdana13 border  even:bg-[#eeeeee]`}>
-              <td className=" max-h-[15px] min-w-[40px] border border-primary-gray py-[0px] px-2 font-medium">
-                <span className="cursor-pointer">
-                  <MoreAssociateInfo />
-                </span>
+              <td className="td-primary min-w-[40px] cursor-pointer">
+                <MoreAssociateInfo />
               </td>
-              <td className=" max-h-[15px] min-w-[230px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium text-orange-600 underline decoration-orange-600">
+              <td className="td-primary min-w-[230px] text-orange-600 underline">
                 <Link href={`/Resources/associates/${associate.url}/profile`}>
                   {associate.name}
                 </Link>
               </td>
-              <td className=" max-h-[15px] min-w-[270px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium">
+              <td className="td-primary min-w-[270px]">
                 {associate.classification}
               </td>
-              <td className=" max-h-[15px] min-w-[330px] cursor-pointer border border-primary-gray py-[0px] px-2 font-medium">
+              <td className="td-primary min-w-[330px]">
                 {associate.discipline}
               </td>
-              <td className=" max-h-[15px] min-w-[120px] border border-primary-gray py-[0px] px-2 font-medium">
-                {associate.hireDate}
-              </td>
+              <td className="td-primary min-w-[120px]">{associate.hireDate}</td>
               <td
-                className={`max-h-[15px] min-w-[100px] border border-primary-gray py-[0px] px-2 font-semibold  ${
+                className={`td-primary min-w-[100px] font-semibold  ${
                   associate.status === 'Active' && 'text-green-600'
                 }`}
               >
                 {associate.status}
               </td>
-              <td className=" max-h-[15px] min-w-[120px] cursor-pointer border  border-primary-gray py-[0px] px-2 font-medium">
+              <td className="td-primary min-w-[120px]">
                 <TableAction />
               </td>
             </tr>

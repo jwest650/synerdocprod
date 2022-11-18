@@ -19,7 +19,7 @@ const Menupopup = ({ menu, index }) => {
       >
         <span className="mb-1 scale-125">{menu.icon}</span>
         <span
-          className={`border-b-2 border-[#0141CF] hover:border-b-[#C8C4C3] ${
+          className={`border-b-2 border-[#0141CF] font-semibold hover:border-b-[#C8C4C3] ${
             currentPath
               ? menu.name === currentPath && 'border-gray-200'
               : menu.name === 'Dashboard' && 'border-gray-200'
@@ -30,10 +30,10 @@ const Menupopup = ({ menu, index }) => {
 
         {isHovered && (
           <>
-            <span className="absolute top-9 left-2 text-[#f6f8fc] ">
+            <span className="absolute top-8 left-2 text-[#f6f8fc] ">
               <SiVercel />
             </span>
-            <div className="absolute top-12 h-52 w-[32rem]">
+            <div className="absolute top-11 h-52 w-[32rem]">
               <div className="relative h-full">
                 <ul className=" h-full w-64 overflow-y-scroll rounded bg-[#f6f8fc] pt-3 text-[#070b16] shadow transition-all duration-[2000ms] ease-in-out">
                   {menu.options.map((option, i) => (

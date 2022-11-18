@@ -9,7 +9,7 @@ import MenuDrawer from './MenuDrawer';
 const Navbar = () => {
   return (
     <div className="sticky top-0 z-[1000] bg-[#0141CF] px-4">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-[#3374ff83] py-2 text-white">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-[#3374ff83] py-[6px] text-white">
         <div className="flex items-center gap-6">
           <Link href="/">
             <h1 className="cursor-pointer text-2xl font-semibold">
@@ -17,7 +17,7 @@ const Navbar = () => {
             </h1>
           </Link>
         </div>
-        <ul className="hidden items-center gap-8 lg:flex">
+        <ul className="hidden items-center gap-8 pt-1 lg:flex">
           {menuOptions.map((menu, index) => (
             <li key={index}>
               <Menupopup menu={menu} />

@@ -4,8 +4,10 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 import { FcSearch } from 'react-icons/fc';
 import { doctorPatients } from '../../../assets/data';
+import SearchIcon from '../../../assets/images/search.png';
 
 const DoctorHistory = ({ physicianName }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -16,7 +18,7 @@ const DoctorHistory = ({ physicianName }) => {
         onClick={onOpen}
         // className="flex cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white"
       >
-        <FcSearch />
+        <Image src={SearchIcon} alt="icon" width={16} height={16} />
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />

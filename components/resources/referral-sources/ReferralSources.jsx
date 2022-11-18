@@ -4,20 +4,29 @@ import Link from 'next/link';
 import CreateReferral from './CreateReferral';
 import MoreReferralSourcesInfo from './MoreReferralSourcesInfo';
 import ReferralSourcesTableAction from './ReferralSourcesTableAction';
+import TableSelect from '../../structure/TableSelect';
+import { useState } from 'react';
 
 const ReferralSources = () => {
+  const [referralType, setReferralType] = useState('');
+  const [referralStatus, setReferralStatus] = useState('');
+
   return (
     <section className="mx-10 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
-          <h2 className="text-xl font-semibold tracking-wider">
+          <h2 className="verdana18 font-semibold tracking-wider">
             Referral Sources
           </h2>
           <CreateReferral />
         </div>
-        <div className="flex items-center gap-3">
+        <div className="verdana12 flex items-center gap-3">
           <Select
-            css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
+            css={{
+              backgroundColor: '#c6d8ffe1',
+              border: 'none',
+              height: '22px',
+            }}
             className="shadow outline-none"
             size="xs"
           >
@@ -28,42 +37,26 @@ const ReferralSources = () => {
               Spreadsheet
             </option>
           </Select>
-          <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
-            Export
-          </button>
+          <button className="btn-primary">Export</button>
           <input
             placeholder="Enter first or last name"
-            className="rounded px-3 py-[2px] text-black outline-none"
+            className="input-primary ml-2"
             type="text"
           />
-          <button className="rounded bg-orange-600 px-2 py-[1px] font-medium text-white">
-            Search
-          </button>
+          <button className="btn-primary">Search</button>
         </div>
       </div>
 
       <table className="mt-10 min-w-full overflow-auto">
-        <thead className="border-b bg-[#0141CF] text-[15px] tracking-wider text-white">
+        <thead className="thead-primary">
           <tr>
-            <th className=" border border-gray-400 border-t-[#0141CF] border-l-[#0141CF] pl-2 text-left"></th>
-            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
-              Name
-            </th>
-            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
-              Referral source Type
-            </th>
-            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
-              Email{' '}
-            </th>
-            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
-              Preferred Numbers
-            </th>
-            <th className=" border border-gray-400 border-t-[#0141CF] pl-2 text-left">
-              Status
-            </th>
-            <th className=" border border-gray-400 border-t-[#0141CF] border-r-[#0141CF] pl-2 text-left">
-              Action
-            </th>
+            <th className="th-first"></th>
+            <th className="th-middle">Name</th>
+            <th className="th-middle">Referral source Type</th>
+            <th className="th-middle">Email </th>
+            <th className="th-middle">Preferred Numbers</th>
+            <th className="th-middle">Status</th>
+            <th className="th-last">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -71,74 +64,57 @@ const ReferralSources = () => {
             <td></td>
             <td></td>
             <td className=" w-full border border-gray-400">
-              <Select
-                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
-                className="cursor-pointer shadow outline-none"
-                size="xs"
-              >
-                <option value="option1" className="text-gray-800">
-                  All
-                </option>
-                <option value="option1" className="text-gray-800">
-                  MD
-                </option>
-                <option value="option3" className="text-gray-800">
-                  PA
-                </option>
-              </Select>
+              <TableSelect
+                setSelectedOption={setReferralType}
+                options={['All', 'MD', 'PA']}
+              />{' '}
             </td>
             <td></td>
             <td></td>
             <td className=" w-full border border-gray-400">
-              <Select
-                css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
-                className="cursor-pointer shadow outline-none"
-                size="xs"
-              >
-                <option value="option1" className="text-gray-800">
-                  All{' '}
-                </option>
-                <option value="option2" className="text-gray-800">
-                  Active
-                </option>
-                <option value="option3" className="text-gray-800">
-                  Inactive
-                </option>
-              </Select>
+              <TableSelect
+                setSelectedOption={setReferralStatus}
+                options={[
+                  'All',
+                  'Active',
+                  'Inactive',
+                  'Pending',
+                  'Suspended',
+                  'Terminated',
+                ]}
+              />
             </td>
             <td></td>
           </tr>
           {referralSourcesTableData.map((referralSource, i) => (
-            <tr key={i} className={`border text-[15px]  even:bg-[#eeeeee]`}>
-              <td className=" max-h-[20px] min-w-[50px] border border-gray-400 py-1 px-2 font-medium">
-                <span className="cursor-pointer">
-                  <MoreReferralSourcesInfo />
-                </span>
+            <tr key={i} className={`border even:bg-[#eeeeee]`}>
+              <td className=" td-primary min-w-[50px] cursor-pointer">
+                <MoreReferralSourcesInfo />
               </td>
-              <td className=" max-h-[20px] min-w-[230px] cursor-pointer border border-gray-400 py-1 px-2 font-medium text-orange-600 underline decoration-orange-600">
+              <td className=" td-primary min-w-[230px] cursor-pointer text-orange-600 underline decoration-orange-600">
                 <Link
                   href={`/Resources/referral-sources/${referralSource.url}/contactinfo`}
                 >
                   {referralSource.name}
                 </Link>
               </td>
-              <td className=" max-h-[20px] min-w-[180px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+              <td className=" td-primary min-w-[180px] cursor-pointer">
                 {referralSource.referralSourceType}
               </td>
-              <td className=" max-h-[20px] min-w-[270px] cursor-pointer border border-gray-400 py-1 px-2 font-medium">
+              <td className=" td-primary min-w-[270px] cursor-pointer">
                 {referralSource.email}
               </td>
-              <td className=" max-h-[20px] min-w-[220px] border border-gray-400 py-1 px-2 font-medium">
+              <td className=" td-primary min-w-[220px]">
                 {referralSource.preferredNumber}
               </td>
               <td
-                className={`max-h-[20px] min-w-[100px] border border-gray-400 py-1 px-2 font-semibold  ${
+                className={`td-primary min-w-[100px] font-semibold  ${
                   referralSource.status === 'Active' && 'text-green-600'
                 }`}
               >
                 {referralSource.status}
               </td>
-              <td className=" max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium">
+              <td className=" td-primary min-w-[120px] cursor-pointer">
                 <ReferralSourcesTableAction />
               </td>
             </tr>
