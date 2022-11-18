@@ -18,10 +18,10 @@ const CreateAssociate = () => {
     <>
       <span
         onClick={onOpen}
-        className="flex cursor-pointer items-center gap-1 rounded bg-primary-orange py-[3px] px-2 text-white"
+        className="btn-primary flex cursor-pointer items-center gap-1"
       >
-        <BiPlus />
-        <span className="verdana12">Create Associates</span>
+        <BiPlus className="scale-150" />
+        <span className="">Create Associates</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />

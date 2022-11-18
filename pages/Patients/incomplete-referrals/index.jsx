@@ -22,7 +22,7 @@ const IncompleteReferrals = () => {
               <Link href={'/Patients/add-referral'}>
                 <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-secondary-color py-[2px] px-3 text-sm capitalize text-[#fff]'>
                   <BiPlus />
-                  <span className='ml-1'>Add Referal/Patient</span>
+                  <span className='verdana12 ml-1'>Add Referal/Patient</span>
                 </button>
               </Link>
             </div>
@@ -31,7 +31,11 @@ const IncompleteReferrals = () => {
           <div className='flex items-center space-x-5'>
             <div className='my-2 flex '>
               <div>
-                <Input placeholder='small size' size='xs' width={300} />
+                <input
+                  placeholder=''
+                  className='verdana12 rounded border border-secondary-blue px-3 py-[2px] text-black outline-none'
+                  type='text'
+                />
               </div>
               <button className='ml-3 rounded border bg-secondary-color px-3 font-medium text-white'>
                 Search

@@ -11,7 +11,7 @@ const MoreAssociateInfo = () => {
         onMouseOver={() => setShowInfo(true)}
         onMouseLeave={() => setShowInfo(false)}
       >
-        <RiBook2Fill />
+        <RiBook2Fill className="scale-105" />
       </div>
       {showInfo && (
         <div className="absolute z-10 ml-5">

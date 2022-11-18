@@ -1,6 +1,5 @@
 import React from 'react';
-import { FcInfo } from 'react-icons/fc';
-import EditPoppver from './EditPopover';
+import EditPopover from './EditPopover';
 
 const EachAssociateHeader = ({ associateUrl }) => {
   return (
@@ -10,9 +9,7 @@ const EachAssociateHeader = ({ associateUrl }) => {
           <h2 className="verdana16 font-semibold tracking-wide">
             {associateUrl}
           </h2>
-          <span className="flex w-fit cursor-pointer items-center gap-1 text-primary-orange underline">
-            <EditPoppver />
-          </span>
+          <EditPopover />
         </div>
         <div className="space-x-5">
           <span className="cursor-pointer text-xs font-semibold tracking-wide text-blue-800 underline">
@@ -23,7 +20,7 @@ const EachAssociateHeader = ({ associateUrl }) => {
           </span>
         </div>
       </div>
-      <div className="verdana13 mt-6 flex w-full max-w-[800px] items-center justify-between">
+      <div className="verdana12 mt-6 flex w-full max-w-[800px] items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="flex flex-col items-end justify-center gap-[6px]">
             <p className="font-semibold">Classification:</p>

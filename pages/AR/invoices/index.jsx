@@ -80,23 +80,29 @@ const Invoices = () => {
                             <option value="option3">Option 3</option>
                         </Select>
                     </div>
-                    <div className="flex">
-                        <label htmlFor="">date from:</label>
-                        <Input w={100} type="text" size="xs" />
-
-                        <FcCalendar className="text-xl" />
-                        <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="xs" />
-                        <FcCalendar className="text-xl" />
+                    <div className="flex items-center">
+                        <label htmlFor="date-from">date from:</label>
+                        <Input w={100} type="text" size="xs" id="date-from" />
+                        <label htmlFor="date-from">
+                            <FcCalendar className="text-xl" />
+                        </label>{" "}
+                        <label htmlFor="date-to">to:</label>
+                        <Input w={100} type="text" size="xs" id="date-to" />
+                        <label htmlFor="date-to">
+                            <FcCalendar className="text-xl" />
+                        </label>
                     </div>
                     <div className="flex">
-                        <label htmlFor="">note from:</label>
-                        <Input w={100} type="text" size="xs" />
-                        <FcCalendar className="text-xl" />
-
-                        <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="xs" />
-                        <FcCalendar className="text-xl" />
+                        <label htmlFor="note-from">note from:</label>
+                        <Input w={100} type="text" size="xs" id="note-from" />
+                        <label htmlFor="note-from">
+                            <FcCalendar className="text-xl" />
+                        </label>
+                        <label htmlFor="note-to">to:</label>
+                        <Input w={100} type="text" size="xs" id="note-to" />
+                        <label htmlFor="note-to">
+                            <FcCalendar className="text-xl" />
+                        </label>
                     </div>
                 </aside>
                 <aside className="space-y-2">
@@ -117,13 +123,16 @@ const Invoices = () => {
                         </Select>
                     </div>
                     <div className="flex items-center ">
-                        <label htmlFor="">inv dates from:</label>
-                        <Input w={100} type="text" size="xs" />
-                        <FcCalendar className="text-xl" />
-
-                        <label htmlFor="">to:</label>
-                        <Input w={100} type="text" size="xs" />
-                        <FcCalendar className="text-xl" />
+                        <label htmlFor="inv">inv dates from:</label>
+                        <Input w={100} type="text" size="xs" id="inv" />
+                        <label htmlFor="inv">
+                            <FcCalendar className="text-xl" />
+                        </label>
+                        <label htmlFor="inv-to">to:</label>
+                        <Input w={100} type="text" size="xs" id="inv-to" />
+                        <label htmlFor="inv-to">
+                            <FcCalendar className="text-xl" />
+                        </label>
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="">note to pull:</label>
@@ -217,7 +226,7 @@ const Invoices = () => {
                                         className="inline text-xl"
                                         onClick={() =>
                                             router.push(
-                                                `${router.pathname}/invoice-detail/${i}`
+                                                `${router.pathname}/invoice-detail/errors`
                                             )
                                         }
                                     />

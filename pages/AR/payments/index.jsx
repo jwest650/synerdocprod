@@ -34,31 +34,55 @@ const Payments = () => {
                 <article className="flex justify-between">
                     <aside className="space-y-4">
                         <div className="flex items-center space-x-2">
-                            <label htmlFor="">deposit dates from:</label>
-                            <Input w={100} type="text" size="xs" />
-                            <FcCalendar className="text-xl" />
-
-                            <label htmlFor="">to:</label>
-                            <Input w={100} type="text" size="xs" />
-                            <FcCalendar className="text-xl" />
+                            <label htmlFor="deposit">deposit dates from:</label>
+                            <Input w={130} type="date" size="xs" id="deposit" />
+                            <label htmlFor="deposit">
+                                <FcCalendar className="text-xl" />
+                            </label>
+                            <label htmlFor="deposit-to">to:</label>
+                            <Input
+                                w={130}
+                                type="date"
+                                size="xs"
+                                id="deposit-to"
+                            />
+                            <label htmlFor="deposit-to">
+                                <FcCalendar className="text-xl" />
+                            </label>
                         </div>
                         <div className="flex items-center space-x-2">
-                            <label htmlFor="">entry dates from:</label>
-                            <Input w={100} type="text" size="xs" />
-                            <FcCalendar className="text-xl" />
-
-                            <label htmlFor="">to:</label>
-                            <Input w={100} type="text" size="xs" />
-                            <FcCalendar className="text-xl" />
+                            <label htmlFor="entry">entry dates from:</label>
+                            <Input w={130} type="date" size="xs" id="entry" />
+                            <label htmlFor="entry">
+                                <FcCalendar className="text-xl" />
+                            </label>
+                            <label htmlFor="entry-to">to:</label>
+                            <Input
+                                w={130}
+                                type="date"
+                                size="xs"
+                                id="entry-to"
+                            />
+                            <label htmlFor="entry-to">
+                                <FcCalendar className="text-xl" />
+                            </label>
                         </div>{" "}
                         <div className="flex items-center space-x-2">
-                            <label htmlFor="">remit dates from:</label>
-                            <Input w={100} type="text" size="xs" />
-                            <FcCalendar className="text-xl" />
-
-                            <label htmlFor="">to:</label>
-                            <Input w={100} type="text" size="xs" />
-                            <FcCalendar className="text-xl" />
+                            <label htmlFor="remit">remit dates from:</label>
+                            <Input w={130} type="date" size="xs" id="remit" />
+                            <label htmlFor="remit">
+                                <FcCalendar className="text-xl" />
+                            </label>
+                            <label htmlFor="remit-to">to:</label>
+                            <Input
+                                w={130}
+                                type="date"
+                                size="xs"
+                                id="remit-to"
+                            />
+                            <label htmlFor="remit-to">
+                                <FcCalendar className="text-xl" />
+                            </label>{" "}
                         </div>
                     </aside>
                     <aside className="space-y-4">
@@ -77,7 +101,7 @@ const Payments = () => {
                             <Select
                                 placeholder="Select option"
                                 size="xs"
-                                w={120}
+                                w={130}
                             >
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>

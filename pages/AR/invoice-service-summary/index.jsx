@@ -31,18 +31,21 @@ const InvoiceServiceSummary = () => {
                             <option value="option3">Option 3</option>
                         </Select>
                     </div>
-                    <div className="space-x-1">
-                        <label htmlFor="">
+                    <div className="flex items-center space-x-1">
+                        <label htmlFor="range">
                             {" "}
                             <span className="text-orange-500">*</span> date
                             range:
                         </label>
-                        <Input w={120} type="date" size="xs" />
-                        <FcCalendar className="inline text-xl" />
-
-                        <label htmlFor="">to:</label>
-                        <Input w={120} type="date" size="xs" />
-                        <FcCalendar className="inline text-xl" />
+                        <Input w={120} type="date" size="xs" id="range" />
+                        <label htmlFor="range">
+                            <FcCalendar className="text-xl" />
+                        </label>
+                        <label htmlFor="range-to">to:</label>
+                        <Input w={120} type="date" size="xs" id="range-to" />
+                        <label htmlFor="range-to">
+                            <FcCalendar className="text-xl" />
+                        </label>
                     </div>
                     <div>
                         {" "}
