@@ -7,6 +7,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
+import TableSelect from '../../structure/TableSelect';
 
 const CreateOrganizationPayers = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -29,26 +30,31 @@ const CreateOrganizationPayers = () => {
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="text-xl font-semibold">Add Payer</h1>
+              <h1 className="verdana18 font-semibold">Add Payer</h1>
               <div className="mt-10 flex justify-center gap-4">
-                <div className="space-y-[14px]">
+                <div className="space-y-[19px]">
                   <div className="flex items-center justify-end">
-                    <label className="text-red-600">*</label>Payer Name:{' '}
+                    <label className="text-primary-orange">*</label>Payer Name:{' '}
                   </div>
                   <div className="flex items-center justify-end gap-1">
-                    <label className="text-red-600">*</label>Payer Category:{' '}
+                    <label className="text-primary-orange">*</label>Payer
+                    Category:{' '}
                   </div>
                   <div className="flex items-center justify-end gap-1">
-                    <label className="text-red-600">*</label>Oasis/HIS Category:{' '}
+                    <label className="text-primary-orange">*</label>Oasis/HIS
+                    Category:{' '}
                   </div>
                   <div className="flex items-center justify-end gap-1">
-                    <label className="text-red-600">*</label>Claim Filing Type:{' '}
+                    <label className="text-primary-orange">*</label>Claim Filing
+                    Type:{' '}
                   </div>
                   <div className="flex items-center justify-end gap-1">
-                    <label className="text-red-600">*</label>Invoice Type:{' '}
+                    <label className="text-primary-orange">*</label>Invoice
+                    Type:{' '}
                   </div>
                   <div className="flex items-center justify-end gap-1">
-                    <label className="text-red-600">*</label>Invoice Cycle:{' '}
+                    <label className="text-primary-orange">*</label>Invoice
+                    Cycle:{' '}
                   </div>
                   <div className="flex items-center justify-end">
                     <label>Start Date:</label>
@@ -68,108 +74,58 @@ const CreateOrganizationPayers = () => {
                     <input
                       type="text"
                       placeholder="Payer Name"
-                      className="w-60 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
+                      className="input-primary w-60"
                     />
                   </div>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      Insurance{' '}
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Option2{' '}
-                    </option>
-                  </Select>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      8(H) - Private Insurance{' '}
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Option2{' '}
-                    </option>
-                  </Select>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      Commercial Insurance{' '}
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Option2{' '}
-                    </option>
-                  </Select>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      HCFA 1500{' '}
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Option2{' '}
-                    </option>
-                  </Select>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      Weekly{' '}
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Monthly{' '}
-                    </option>
-                  </Select>
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="11/27/1960"
-                      className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['Insurance', 'Option2']}
+                    />
+                  </div>{' '}
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['8(H) - Private Insurance', 'Option2']}
+                    />
+                  </div>{' '}
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['Commercial Insurance', 'Option2']}
+                    />
+                  </div>{' '}
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['HCFA 1500', 'Option2']}
+                    />
+                  </div>{' '}
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['Weekly', 'Monthly']}
                     />
                   </div>
                   <div>
                     <input
                       type="text"
                       placeholder="11/27/1960"
-                      className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                      className="input-primary w-28"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="11/27/1960"
+                      className="input-primary w-28"
                     />
                   </div>
                   <div>
                     <input
                       type="text"
                       placeholder="example@gmail.com"
-                      className="w-60 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
+                      className="input-primary w-60"
                     />
                   </div>
                   <div className="pt-2">
@@ -177,8 +133,6 @@ const CreateOrganizationPayers = () => {
                   </div>
                 </div>
               </div>
-              {/* </div> */}
-              {/* </div> */}
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
@@ -194,7 +148,6 @@ const CreateOrganizationPayers = () => {
                 </button>
               </div>
             </form>
-            {/* </ModalBody> */}
           </div>
         </ModalContent>
       </Modal>

@@ -3,13 +3,15 @@ import { MdOutlineArrowDropDown } from 'react-icons/md';
 
 // options --> an array of all the options for a category
 // setSelectedOption --> You'll have to define a state for the particular category and pass it's setState to the setSelectedOption prop for this component
-const TableSelect = ({ setSelectedOption, options }) => {
+
+const TableSelect = ({ setSelectedOption, options, styles }) => {
   return (
     <Select
       onChange={(e) => setSelectedOption(e.target.value)}
       icon={<MdOutlineArrowDropDown />}
       iconColor="gray"
       width="fit-content"
+      {...styles}
       css={{
         backgroundColor: 'c6d8ffe1',
         border: 'none',

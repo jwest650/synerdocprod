@@ -1,10 +1,10 @@
 import { facilitiesTableData, physicianTableData } from '../../../assets/data';
 import Link from 'next/link';
 import CreateFacilities from './CreateFacilites';
-import { FiTrash2 } from 'react-icons/fi';
 import MoreFacilitiesInfo from './MoreFacilitiesInfo';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
+import { FcEmptyTrash } from 'react-icons/fc';
 
 const Facilities = () => {
   const [facilityStatus, setFacilityStatus] = useState('');
@@ -87,7 +87,7 @@ const Facilities = () => {
                 {facility.status}
               </td>
               <td className="td-primary min-w-[30px] text-primary-orange ">
-                <FiTrash2 className="mx-auto" />
+                <FcEmptyTrash className="mx-auto" />
               </td>
             </tr>
           ))}

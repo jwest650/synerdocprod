@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { FcEditImage, FcEmptyTrash } from 'react-icons/fc';
-import { FiSettings, FiTrash2 } from 'react-icons/fi';
 import DoctorHistory from './DoctorHistory';
 
 const PhysicianTableAction = ({ physicianName, physicianUrl }) => {

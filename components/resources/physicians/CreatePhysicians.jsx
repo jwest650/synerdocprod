@@ -2,10 +2,10 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Select,
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
+import TableSelect from '../../structure/TableSelect';
 
 const CreatePhysicians = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -26,21 +26,14 @@ const CreatePhysicians = () => {
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          {/* <ModalHeader>Modal Title</ModalHeader> */}
-          {/* <div className="absolute top-[-14px] right-0 bg-red-300"> */}
-          {/* <ModalCloseButton /> */}
-          {/* </div> */}
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
-            {/* <ModalBody> */}
             <form action="" onSubmit={handleForm}>
-              <h1 className="text-xl font-semibold">Add Associate</h1>
-              <p className="text-sm text-gray-400">
+              <h1 className="verdana18 font-semibold">Add Physician</h1>
+              <p className="verdana12 text-gray-400">
                 Select a special, title and physician details
               </p>
-              {/* <div className="mt-5"> */}
-              {/* <div className="w-full md:col-span-3"> */}
               <div className="mt-10 flex justify-center gap-4">
-                <div className="space-y-[14px]">
+                <div className="verdana14 space-y-[18px]">
                   <div className="flex items-center justify-end">
                     <label className="flex">
                       <span className="text-red-600">*</span>First Name:{' '}
@@ -74,104 +67,68 @@ const CreatePhysicians = () => {
                     <label htmlFor="">End Date:</label>
                   </div>
                 </div>
-                <div className="space-y-[13px]">
+                <div className="space-y-[14px]">
                   <div>
                     <input
                       type="text"
                       placeholder="First Name"
-                      className="w-60 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
+                      className="input-primary w-60"
                     />
                   </div>
                   <div>
-                    <input
-                      type="text"
-                      className="w-40 rounded bg-[#c6d8ffe1] outline-none"
-                    />
+                    <input type="text" className="input-primary w-40" />
                   </div>
-
                   <div>
                     <input
                       type="text"
                       placeholder="Last Name"
-                      className="w-60 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
+                      className="input-primary w-60"
                     />
                   </div>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      Medical Doctor
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Physician Assistant
-                    </option>
-                  </Select>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      Cardiologist{' '}
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Dentist{' '}
-                    </option>
-                  </Select>
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['Medical Doctore', 'Physician Assistant']}
+                    />
+                  </div>{' '}
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['Cardiologist', 'Dentist']}
+                    />
+                  </div>
                   <div>
                     <input
                       type="text"
                       placeholder="example@gmail.com"
-                      className="w-60 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
+                      className="input-primary w-60"
                     />
                   </div>
                   <div>
-                    <input
-                      type="text"
-                      className="mt-1 w-full rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
-                    />
+                    <input type="text" className="input-primary w-full" />
                   </div>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      Matilda Ivy
-                    </option>
-                  </Select>
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['Matilda Ivy']}
+                    />
+                  </div>{' '}
                   <div>
                     <input
                       type="text"
                       placeholder="11/27/1960"
-                      className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                      className="input-primary w-28"
                     />
                   </div>
                   <div>
                     <input
                       type="text"
                       placeholder="11/27/1960"
-                      className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                      className="input-primary w-28"
                     />
                   </div>
                 </div>
               </div>
-              {/* </div> */}
-              {/* </div> */}
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"

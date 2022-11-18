@@ -6,6 +6,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
+import TableSelect from '../../structure/TableSelect';
 
 const CreateFacilities = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -28,12 +29,12 @@ const CreateFacilities = () => {
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="text-xl font-semibold">Edit Facility</h1>
-              <p className="text-sm text-gray-400">
+              <h1 className="verdana18 font-semibold">Edit Facility</h1>
+              <p className="verdana12 text-gray-400">
                 Edit existing facility details{' '}
               </p>
               <div className="mt-10 flex justify-center gap-4">
-                <div className="space-y-[14px]">
+                <div className="space-y-[19px]">
                   <div className="flex items-center justify-end">
                     <label className="text-red-600">*</label>Facility Name:{' '}
                   </div>
@@ -59,70 +60,45 @@ const CreateFacilities = () => {
                     <input
                       type="text"
                       placeholder="Facility Name"
-                      className="w-60 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
+                      className="input-primary w-60"
                     />
                   </div>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      Pharmacy{' '}
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Hospital
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      DME/Supply Company
-                    </option>
-                  </Select>
-
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['Pharmacy', 'Hospital', 'DM/E Supply Company']}
+                    />
+                  </div>
                   <div>
                     <input
                       type="text"
                       placeholder="example@gmail.com"
-                      className="w-60 rounded bg-[#c6d8ffe1] px-2 shadow outline-none"
+                      className="input-primary w-60"
                     />
                   </div>
-                  <Select
-                    css={{
-                      fontSize: '13px',
-                      backgroundColor: '#c6d8ffe1',
-                      border: 'none',
-                    }}
-                    className="shadow outline-none"
-                    size="xs"
-                  >
-                    <option value="option1" className="text-gray-800">
-                      Option1{' '}
-                    </option>
-                    <option value="option2" className="text-gray-800">
-                      Option2{' '}
-                    </option>
-                  </Select>
+                  <div className="w-full rounded border border-secondary-blue shadow-sm">
+                    <TableSelect
+                      styles={{ width: '100%' }}
+                      options={['Option1', 'Option2']}
+                    />
+                  </div>{' '}
                   <div>
                     <input
                       type="text"
                       placeholder="11/27/1960"
-                      className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                      className="input-primary w-28"
                     />
                   </div>
                   <div>
                     <input
                       type="text"
                       placeholder="11/27/1960"
-                      className="w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                      className="input-primary w-28"
                     />
                   </div>
                 </div>
               </div>
-              {/* </div> */}
-              {/* </div> */}
+
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
