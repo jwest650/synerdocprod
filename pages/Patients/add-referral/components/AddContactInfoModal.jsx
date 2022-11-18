@@ -23,11 +23,13 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent maxWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalBody>
               <div className='mb-3'>
-                <h1 className=' text-2xl font-bold'>Add Address/Phone Info</h1>
+                <h1 className=' verdana18  font-bold'>
+                  Add Address/Phone Info
+                </h1>
                 <p>add information and save</p>
               </div>
 

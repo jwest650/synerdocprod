@@ -16,7 +16,7 @@ const AddAncillaryPhoneModal = ({
   setOpenAddAncillaryPhone,
 }) => {
   return (
-    <div>
+    <div className='verdana13 '>
       <div>
         <Modal
           isOpen={openAddAncillaryPhone}
@@ -29,15 +29,15 @@ const AddAncillaryPhoneModal = ({
               {/* <ModalCloseButton /> */}
               <ModalBody>
                 <div className='mb-3'>
-                  <h1 className=' text-2xl font-bold'>
+                  <h1 className=' verdana18  font-bold'>
                     Add Ancillary Phone Info
                   </h1>
-                  <p>add information and save</p>
+                  <p className='verdana13 '>add information and save</p>
                 </div>
 
                 <section>
                   <div className='my-2 flex'>
-                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                    <p className='verdana13 mr-3 w-[150px] text-right font-semibold'>
                       <span className='font-bold text-secondary-color'>*</span>
                       Phone Type:
                     </p>
@@ -58,7 +58,7 @@ const AddAncillaryPhoneModal = ({
                   </div>
 
                   <div className='my-2 flex'>
-                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                    <p className='verdana13 mr-3 w-[150px] text-right font-semibold'>
                       <span className='font-bold text-secondary-color'>*</span>
                       Phone:
                     </p>
@@ -71,7 +71,7 @@ const AddAncillaryPhoneModal = ({
                   </div>
 
                   <div className='my-2 flex'>
-                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                    <p className='verdana13 mr-3 w-[150px] text-right font-semibold'>
                       Extension:
                     </p>
 
@@ -80,7 +80,7 @@ const AddAncillaryPhoneModal = ({
                     </div>
                   </div>
                   <div className='my-2 flex'>
-                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                    <p className='verdana13 mr-3 w-[150px] text-right font-semibold'>
                       Description:
                     </p>
 

@@ -25,10 +25,10 @@ const AddFacilitySourceModal = ({
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent maxWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
-              <h1>Add Address/Phone Info</h1>
+              <h1 className='verdana18 '>Add Address/Phone Info</h1>
               <p className='text-sm'>add information and save</p>
             </ModalHeader>
             {/* <ModalCloseButton /> */}
@@ -188,18 +188,18 @@ const AddFacilitySourceModal = ({
                   </div>
 
                   <table className=' min-w-full overflow-auto'>
-                    <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-                      <tr>
-                        <th className=' border-gray-100  pl-2 text-left'>
+                    <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
+                      <tr className='border border-primary-blue'>
+                        <th className='border border-gray-400 py-1 px-2  text-left text-xs'>
                           Preffered
                         </th>
-                        <th className=' border-gray-100  pl-2 text-left'>
+                        <th className='border border-gray-400 py-1 px-2  text-left text-xs'>
                           Phone Type
                         </th>
-                        <th className=' border-gray-100  pl-2 text-left'>
+                        <th className='border border-gray-400 py-1 px-2  text-left text-xs'>
                           Phone
                         </th>
-                        <th className=' border-gray-100  pl-2 text-left'></th>
+                        <th className='border border-gray-400 py-1 px-2  text-left text-xs'></th>
                       </tr>
                     </thead>
                     <tbody>

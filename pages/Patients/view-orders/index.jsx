@@ -4,11 +4,11 @@ import { BsFillCalendarDateFill } from 'react-icons/bs'
 const ViewOrders = () => {
   let data = [1, 1, 1, 1]
   return (
-    <div className='w-full '>
+    <div className='verdana13 w-full '>
       <div className='space-y-5'>
         <section className='flex items-center justify-between space-x-5'>
           <div className='flex items-center space-x-5'>
-            <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+            <h1 className='verdana18 font-bold capitalize text-black dark:text-white'>
               Orders
             </h1>
             <button className='mx-3 ml-2  rounded border bg-secondary-color px-2 font-medium text-white'>

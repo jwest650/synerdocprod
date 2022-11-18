@@ -4,12 +4,12 @@ import { BsPlus } from 'react-icons/bs'
 
 const DocsTab = () => {
   return (
-    <div className='space-y-3 capitalize'>
+    <div className='verdana13 space-y-3 '>
       <section className='flex items-center justify-between'>
         <header className='flex items-center space-x-4'>
           <h1 className='font-bold'>forms</h1>
           <button className='flex items-center capitalize text-orange-500 underline '>
-            <BsPlus className='text-xl text-green-500' />
+            <BsPlus className='verdana16  text-green-500' />
             add contact info
           </button>
         </header>
@@ -18,25 +18,25 @@ const DocsTab = () => {
         </button>
       </section>
       <section>
-        <table className='w-full text-left text-xs capitalize'>
+        <table className='verdana13 w-full text-left  capitalize'>
           <thead>
             <tr className='bg-primary-color text-white'>
-              <th className='border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 type
               </th>
-              <th className='border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 created
               </th>
-              <th className='border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 performed by
               </th>
-              <th className='border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 revised by
               </th>
-              <th className='border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 status
               </th>
-              <th className='border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
             </tr>
           </thead>
           <tbody>

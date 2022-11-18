@@ -18,14 +18,14 @@ const SchedulesDetailListing = () => {
   const [openAddPayer, setOpenAddPayer] = useState(false)
 
   return (
-    <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
+    <div className='verdana13  w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
         <div className='flex items-center'>
-          <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+          <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
             Schedules
           </h1>
           <button
-            className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-secondary-color py-1 px-3 text-sm capitalize text-[#fff]'
+            className='dark:text-[#E77654px-6 verdana13 ml-3 flex cursor-pointer items-center rounded bg-secondary-color py-[2px] px-3  capitalize text-[#fff]'
             onClick={() => setOpenAddReferral(true)}
           >
             <BiPlus />
@@ -77,11 +77,11 @@ const SchedulesDetailListing = () => {
       <section className='flex justify-between'>
         <div></div>
         <div className='flex'>
-          <span className='text-sm'>
+          <span className='verdana13 '>
             show activities without a service date attache
           </span>
           <Checkbox>
-            <span className='text-sm'>Payer report Group</span>
+            <span className='verdana13 '>Payer report Group</span>
           </Checkbox>
           <Select size='xs'>
             <option value='option1' className='text-gray-800'>
@@ -253,7 +253,7 @@ const SchedulesDetailListing = () => {
                     Home Health
                   </td>
                   <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <p className=' cursor-pointer text-sm font-bold text-green-700 '>
+                    <p className=' verdana13 cursor-pointer  font-bold text-green-700 '>
                       Assigned
                     </p>
                   </td>

@@ -26,13 +26,13 @@ const EditDisasterPlan = ({
           className='p-5'
         >
           <ModalOverlay />
-          <ModalContent maxWidth={900}>
-            <div className='w-full rounded border-[2px] border-t-[20px] border-primary-color p-4 pb-10 '>
+          <ModalContent maxWidth={900} className='verdana13 '>
+            <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
               {/* <ModalCloseButton /> */}
               <ModalBody>
                 <div className='mb-3'>
-                  <h1 className=' text-2xl font-bold'>Edit Disaster plan</h1>
-                  <p>eidt information and save</p>
+                  <h1 className=' verdana18  font-bold'>Edit Disaster plan</h1>
+                  <p className='verdana13 '>eidt information and save</p>
                 </div>
 
                 <section>

@@ -5,11 +5,11 @@ import { GoNote } from 'react-icons/go'
 
 const NotesTab = () => {
   return (
-    <div className='text-sm'>
+    <div className='verdana13 '>
       <section className='flex items-center justify-between py-[1px]'>
-        <h1 className='text-xl font-bold'>Notes</h1>
+        <h1 className='verdana16  font-bold'>Notes</h1>
         <button className='flex items-center capitalize text-orange-500 underline '>
-          <BsPlus className='text-xl text-green-500' />
+          <BsPlus className='verdana16  text-green-500' />
           add note
         </button>
         <aside className='flex items-center space-x-[1px]'>
@@ -63,7 +63,7 @@ const NotesTab = () => {
               >
                 <td className='border border-[#a0a0a0] px-[2px] '>
                   {' '}
-                  <GoNote className='mx-auto text-xl ' />
+                  <GoNote className='verdana16 mx-auto  ' />
                 </td>
                 <td className='border border-[#a0a0a0] px-[2px]  text-orange-500'>
                   {value.date}

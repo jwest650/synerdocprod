@@ -3,7 +3,7 @@ import { FcInfo } from 'react-icons/fc'
 
 const EncounterHeader = () => {
   return (
-    <div className='text-sm'>
+    <div className='verdana13 '>
       <div className='flex w-full items-center justify-between'>
         <div className='flex items-center gap-8 py-3'>
           <h2 className='text-lg font-semibold tracking-wide'>Smith Joseph</h2>
@@ -13,13 +13,13 @@ const EncounterHeader = () => {
           </span> */}
           <div className='flex '>
             <div className='flex'>
-              <p className='ml-3 text-sm text-secondary-color underline'>
+              <p className='verdana13 ml-3  text-secondary-color underline'>
                 Activate Patient
               </p>
-              <p className='ml-3 text-sm text-secondary-color underline'>
+              <p className='verdana13 ml-3  text-secondary-color underline'>
                 Decline Referral
               </p>
-              <p className='ml-3 text-sm text-secondary-color underline'>
+              <p className='verdana13 ml-3  text-secondary-color underline'>
                 Patient Fact Report
               </p>
             </div>

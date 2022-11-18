@@ -5,10 +5,10 @@ import { FcInfo } from 'react-icons/fc'
 const ProfileTab = () => {
   return (
     <div>
-      <section className='flex justify-between text-sm'>
+      <section className='verdana13 flex justify-between '>
         <div className='w-[50%] border-r-2 p-2'>
           <div className='flex  py-2'>
-            <h1 className='text-xl text-black'>Persosnal</h1>
+            <h1 className='verdana16  text-black'>Persosnal</h1>
           </div>
           <div className='flex '>
             <div className='mr-2 border-r-2'>
@@ -68,7 +68,7 @@ const ProfileTab = () => {
             </div>
           </div>
           <div className='py-2'>
-            <h1 className='text-xl text-black'>Missing Fields</h1>
+            <h1 className='verdana16  text-black'>Missing Fields</h1>
             <div className='flex'>
               <div className='mr-4'>
                 <FcInfo />
@@ -91,7 +91,7 @@ const ProfileTab = () => {
 
         <div className='w-[50%] border-l-4 p-2'>
           <div className='flex  py-2'>
-            <h1 className='text-xl text-black'>Current Encounter</h1>
+            <h1 className='verdana16  text-black'>Current Encounter</h1>
           </div>
           <div className='flex '>
             <div className='mr-2 border-r-2'>

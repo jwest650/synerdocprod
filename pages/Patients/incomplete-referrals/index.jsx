@@ -11,16 +11,16 @@ const IncompleteReferrals = () => {
   const [openAddReferral, setOpenAddReferral] = useState(false)
 
   return (
-    <div className='w-full'>
+    <div className='verdana13 w-full '>
       <div className='space-y-5'>
         <section className='flex items-center justify-between space-x-5'>
           <div className='flex items-center space-x-5'>
-            <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+            <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
               Incomplete Referrals
             </h1>
             <div className='flex cursor-pointer items-center space-x-2'>
               <Link href={'/Patients/add-referral'}>
-                <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-secondary-color py-1 px-3 text-sm capitalize text-[#fff]'>
+                <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-secondary-color py-[2px] px-3 text-sm capitalize text-[#fff]'>
                   <BiPlus />
                   <span className='ml-1'>Add Referal/Patient</span>
                 </button>

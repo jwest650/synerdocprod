@@ -20,12 +20,12 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent maxWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <div>
               <ModalHeader>
-                Add Referral
-                <p className='text-sm text-gray-600'>add referal details</p>
+                <h1 className='verdana19'>Add Referral</h1>
+                <p className='verdana13  text-gray-600'>add referal details</p>
               </ModalHeader>
             </div>
             {/* <ModalCloseButton /> */}

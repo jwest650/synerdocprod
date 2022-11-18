@@ -3,10 +3,10 @@ import { BsPlus } from 'react-icons/bs'
 
 const ClinicalTab = () => {
   return (
-    <div className='text-sm'>
+    <div className='verdana13 '>
       <article className='grid grid-cols-2'>
         <section className='space-y-2 p-2'>
-          <h1 className='text-xl font-bold capitalize'>clinical team</h1>
+          <h1 className='verdana16  font-bold capitalize'>clinical team</h1>
           <div className='flex space-x-3'>
             <span className='text-orange-500'>[Edit]</span>
             <table className=' border-[#a0a0a0] text-xs capitalize'>
@@ -41,7 +41,7 @@ const ClinicalTab = () => {
             </table>
           </div>
           <button className='flex items-center capitalize text-orange-500 underline'>
-            <BsPlus className='text-xl text-green-500' />
+            <BsPlus className='verdana16  text-green-500' />
             add to clinical team
           </button>
           <div>
@@ -49,7 +49,7 @@ const ClinicalTab = () => {
           </div>
         </section>
         <section className='border-l-2 p-2'>
-          <h1 className='text-xl font-bold capitalize'>disciplines</h1>
+          <h1 className='verdana16  font-bold capitalize'>disciplines</h1>
           <div className='ml-10'>
             <p>physical therapist</p>
             <p>skilled nurse</p>

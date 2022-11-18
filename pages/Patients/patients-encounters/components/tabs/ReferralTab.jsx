@@ -4,7 +4,7 @@ import { FaFax } from 'react-icons/fa'
 import { BsPlus } from 'react-icons/bs'
 const ReferralTab = () => {
   return (
-    <div className='grid grid-cols-3 text-sm'>
+    <div className='verdana13 grid grid-cols-3 '>
       <section className='col-span-2 space-y-3'>
         <header className='flex items-center space-x-5 capitalize'>
           <div className='flex items-center'>
@@ -16,7 +16,7 @@ const ReferralTab = () => {
             <h1 className='text-orange-500 underline'>fax referral order</h1>
           </div>
           <div className='flex items-center'>
-            <BsPlus className='text-xl text-green-500' />
+            <BsPlus className='verdana16  text-green-500' />
 
             <h1 className='text-orange-500 underline'>
               upload signed referral
@@ -24,7 +24,7 @@ const ReferralTab = () => {
           </div>
         </header>
         <article className=' space-y-2 capitalize'>
-          <h1 className='text-xl font-bold'>referral source</h1>
+          <h1 className='verdana16  font-bold'>referral source</h1>
           <div className='flex'>
             <p className=' px-2 text-orange-500'>[edit]</p>
             <div className='border-l-2 px-2'>
@@ -47,10 +47,10 @@ const ReferralTab = () => {
           </div>
         </article>
         <article className=' space-y-2 capitalize'>
-          <h1 className='text-xl font-bold'>referral order tracking</h1>
+          <h1 className='verdana16  font-bold'>referral order tracking</h1>
           <div className='flex'>
             <p className=' px-2 text-orange-500'>[edit]</p>
-            <div className='border-l-2 px-2 text-right'>
+            <div className='border-l-2 px-2 pl-[100px] text-right'>
               <div className='flex space-x-3'>
                 <h1 className='mr-2 w-[150px] text-right font-bold'>
                   sent data:
@@ -76,7 +76,7 @@ const ReferralTab = () => {
         </article>
       </section>
       <section className='space-y-2 border-l-2 px-3 pt-4 capitalize'>
-        <h1 classeName='font-bold text-xl'>referral contact</h1>
+        <h1 classeName='font-bold verdana16 '>referral contact</h1>
         <div className='flex'>
           <p className='px-2 text-orange-500'>[edit]</p>
           <div className='border-l-2 text-right'>

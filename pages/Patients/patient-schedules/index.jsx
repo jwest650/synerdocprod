@@ -11,10 +11,10 @@ const PatientSchedules = () => {
   let data = [1, 1, 1, 1]
 
   return (
-    <div className='w-full '>
+    <div className='verdana13 w-full '>
       <section className='flex items-center justify-between capitalize'>
         <div>
-          <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+          <h1 className='verdana18 font-bold capitalize text-black dark:text-white'>
             Patient Schedules
           </h1>
         </div>

@@ -3,12 +3,12 @@ import { BsPlus } from 'react-icons/bs'
 
 const PhysFacTab = () => {
   return (
-    <div className='grid grid-cols-2 text-sm capitalize'>
+    <div className='verdana13 grid grid-cols-2 '>
       <section className='space-y-3'>
         <header className='flex items-center space-x-5'>
-          <h1 className=' text-xl font-bold'>primary physicians</h1>
+          <h1 className=' verdana16  font-bold'>primary physicians</h1>
           <button className='flex items-center capitalize text-orange-500 underline '>
-            <BsPlus className='text-xl text-green-500' />
+            <BsPlus className='verdana16  text-green-500' />
             add physicians
           </button>
         </header>
@@ -46,11 +46,11 @@ const PhysFacTab = () => {
       </section>
       <section className='space-y-3 border-l-2'>
         <header className='flex items-center space-x-5'>
-          <h1 className='mr-2 text-xl font-bold'>
+          <h1 className='verdana16 mr-2  font-bold'>
             last facility stay prior to soc
           </h1>
           <button className='flex items-center capitalize text-secondary-color underline '>
-            <BsPlus className='text-xl text-green-500' />
+            <BsPlus className='verdana16  text-green-500' />
             add facility
           </button>
         </header>

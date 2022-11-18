@@ -18,8 +18,8 @@ const MoveServiceNote = () => {
   let data = [1, 1, 1, 1]
 
   return (
-    <div className='w-full'>
-      <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+    <div className='verdana13 w-full '>
+      <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
         Move Service Note
       </h1>
       <hr />

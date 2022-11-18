@@ -6,13 +6,13 @@ const FinishReferralForm = () => {
   const [openFindPhysician, setOpenFindPhysician] = useState(false)
 
   return (
-    <div>
+    <div className='verdana13 '>
       <section>
-        <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+        <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
           Finish Referral - Nick Jones
         </h1>
         <hr />
-        <h1 className='py-2 text-xl text-black dark:text-white'>
+        <h1 className='verdana16 py-2  text-black dark:text-white'>
           Initial Physician Order
         </h1>
         <hr />
