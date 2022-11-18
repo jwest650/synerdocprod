@@ -7,9 +7,9 @@ const VerifyServiceInMass = () => {
   let data = [1, 1, 1, 1]
 
   return (
-    <div className='w-full space-y-4 bg-[#F6F8FC] p-5 text-xs text-gray-800 dark:text-white'>
+    <div className='verdana13 w-full space-y-4 bg-[#F6F8FC] p-5  text-gray-800 dark:text-white'>
       <div className='flex items-center'>
-        <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+        <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
           Verify Service in mass
         </h1>
         <button className=' ml-3 rounded border bg-secondary-color py-1 px-3 font-medium text-white'>
@@ -104,59 +104,59 @@ const VerifyServiceInMass = () => {
       </div>
 
       <section>
-        <table className='min-w-full overflow-auto text-xs'>
+        <table className='verdana13 min-w-full overflow-auto '>
           <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
             <tr className='border border-primary-color'>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Associate Name
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Service
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Service Date
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Time In
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Time Out
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Reimb Type
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Travel Duration
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Miles
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Pay
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Unites
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Rate
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Bill
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Units
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Reimb Rate
               </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                 Charge Rate
               </th>
-              <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
+              <th className=' verdana13 border-l border-gray-400 py-1  px-2 text-left '>
                 Payer
               </th>
             </tr>

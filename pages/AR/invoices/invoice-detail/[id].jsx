@@ -15,10 +15,14 @@ import Notes from "./tabs/Notes";
 import Payer from "./tabs/Payer";
 import Pdgm from "./tabs/Pdgm";
 import Errors from "./tabs/Errors";
+import { useRouter } from "next/router";
 
 const InvoiceDetail = () => {
-    const [active, setactive] = useState("services");
-
+    const router = useRouter();
+    console.log(router.query);
+    const changeTab = (val) => {
+        router.push(`${val}`);
+    };
     const tabs = [
         {
             name: "services",
@@ -51,7 +55,7 @@ const InvoiceDetail = () => {
             <section className="flex w-full items-center justify-between">
                 <div className="flex items-center">
                     <ImBook className=" mr-2 inline text-xl" />
-                    <h1 className="text-xl font-bold">carter, melinda</h1>
+                    <h1 className="head ">carter, melinda</h1>
                 </div>
                 <div className="flex space-x-4">
                     <div className="flex items-baseline space-x-1 ">
@@ -75,7 +79,7 @@ const InvoiceDetail = () => {
                         </label>
                     </div>
                 </div>
-                <h1 className="text-xl font-bold text-green-500">invoice</h1>
+                <h1 className="head text-green-500">invoice</h1>
             </section>
             <section className="flex items-center justify-between">
                 <aside className="flex space-x-3">
@@ -127,13 +131,14 @@ const InvoiceDetail = () => {
                 </aside>
             </section>
             <section className="">
-                <ul className="flex w-full  items-center ">
+                <ul className=" flex w-full  items-center ">
                     {tabs.map((val, i) => (
                         <li
                             key={i}
-                            onClick={() => setactive(val.name)}
-                            className={`relative flex  items-center p-1  px-3  text-center after:absolute after:bottom-0 after:top-0 after:right-0 after:left-0 after:block  after:skew-x-[15deg] after:rounded-t-md after:border-2 after:border-l-0 after:border-gray-300 first:rounded first:border-l-2 ${
-                                active == val.name && "b pb-1 after:border-b-0 "
+                            onClick={() => changeTab(val.name)}
+                            className={`relative flex  items-center p-1  px-3  text-center after:absolute after:bottom-0 after:top-0 after:right-0 after:left-0 after:block  after:skew-x-[20deg] after:rounded-t-md after:border-2 after:border-l-0 after:border-gray-300 first:rounded first:border-l-2 ${
+                                router.query.id == val.name &&
+                                "  after:border-b-0"
                             }`}
                         >
                             <span className="mr-2">{val.icon}</span>
@@ -141,9 +146,8 @@ const InvoiceDetail = () => {
                         </li>
                     ))}
                 </ul>
-
-                <section className="border-2 border-t-0">
-                    {renderTab(active)}
+                <section className="border-2 bg-white">
+                    {renderTab(router.query?.id)}
                 </section>
             </section>
         </div>

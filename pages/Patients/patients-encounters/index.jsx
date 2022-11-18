@@ -12,14 +12,14 @@ const PatientsEncounters = () => {
   let data = [1, 1, 1, 1]
 
   return (
-    <div className='w-full text-xs'>
+    <div className='verdana13 w-full '>
       <section className='flex items-center justify-between capitalize'>
         <div className='flex items-center'>
-          <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+          <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
             Patient Encounters
           </h1>
           <Link href={'/Patients/add-referral'}>
-            <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-1 px-3 text-sm capitalize text-[#fff]'>
+            <button className='dark:text-[#E77654px-6 ml-3 flex cursor-pointer items-center rounded bg-orange-600 py-[2px] px-3 text-sm capitalize text-[#fff]'>
               <BiPlus />
               <span className='ml-1'>Add Referal/Patient</span>
             </button>

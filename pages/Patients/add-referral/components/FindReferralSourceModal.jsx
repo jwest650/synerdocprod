@@ -25,11 +25,11 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent maxWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
-              Find Referral Source
-              <p className='text-sm text-gray-600'>
+              <h1 className='verdana18'>Find Referral Source</h1>
+              <p className='verdana13  text-gray-600'>
                 Find referral source/add referral source if not found.
               </p>
             </ModalHeader>
@@ -43,11 +43,11 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
                   First/Last:{' '}
                 </label>
                 <div className='flex w-[60%]'>
-                  <Input placeholder='small size' size='sm' mr={'3'} />
-                  <Input placeholder='small size' size='sm' />
+                  <Input placeholder='small size' size='xs' mr={'3'} />
+                  <Input placeholder='small size' size='xs' />
                 </div>
               </div>
-              <div className='my-2 flex '>
+              <div className='my-2 flex items-center'>
                 <label
                   htmlFor='#'
                   className='mr-2 w-[40%] text-right font-semibold'
@@ -55,14 +55,13 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
                   Facility Name/Referral Company:{' '}
                 </label>
                 <div className='w-[60%]'>
-                  <Input placeholder='small size' size='sm' />
+                  <Input placeholder='small size' size='xs' />
                 </div>
-              </div>
-
-              <div className='flex justify-end'>
-                <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
-                  Search
-                </button>
+                <div className='ml-3 flex justify-end'>
+                  <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                    Search
+                  </button>
+                </div>
               </div>
 
               <div>

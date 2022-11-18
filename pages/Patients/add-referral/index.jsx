@@ -69,20 +69,40 @@ const AddReferral = () => {
         {step == 3 && <ContactInfoForm />}
         {step == 4 && <FinishReferralForm />}
 
-        <ul className='flex justify-end'>
-          <button
-            className='rounded border bg-secondary-color px-4 text-white'
-            onClick={() => step > 1 && setStep(step - 1)}
-          >
-            Back
-          </button>
-          <button
-            className='ml-3 rounded border bg-secondary-color px-4  text-white'
-            onClick={() => step < 4 && setStep(step + 1)}
-          >
-            Next
-          </button>
-        </ul>
+        {step >= 1 && step < 4 ? (
+          <ul className='flex justify-end'>
+            {step > 1 ? (
+              <button
+                className='rounded border bg-secondary-color px-4 text-white'
+                onClick={() => step > 1 && setStep(step - 1)}
+              >
+                Back
+              </button>
+            ) : null}
+            <button
+              className='ml-3 rounded border bg-secondary-color px-4  text-white'
+              onClick={() => step < 4 && setStep(step + 1)}
+            >
+              Next
+            </button>
+          </ul>
+        ) : null}
+        {step == 4 ? (
+          <ul className='flex justify-end'>
+            <button
+              className='ml-3 rounded border bg-secondary-color px-4  text-white'
+              // onClick={() => step < 4 && setStep(step + 1)}
+            >
+              finish/view
+            </button>
+            <button
+              className='ml-3 rounded border bg-secondary-color px-4  text-white'
+              onClick={() => setStep(1)}
+            >
+              finish/close
+            </button>
+          </ul>
+        ) : null}
       </section>
     </div>
   )

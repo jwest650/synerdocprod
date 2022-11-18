@@ -26,11 +26,11 @@ const AddReferralSourceContactModal = ({
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent maxWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
-              Add Referral Source Contact
-              <p className='text-sm text-gray-600'>
+              <h1 className='verdana18'>Add Referral Source Contact</h1>
+              <p className='verdana13  text-gray-600'>
                 Find referral source/add referral source if not found.
               </p>
             </ModalHeader>

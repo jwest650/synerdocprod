@@ -8,7 +8,7 @@ import Calendar from './components/Calendar'
 const PatientScheduleDetails = () => {
   const data = [1, 1, 1, 1]
   return (
-    <div className='w-full text-xs'>
+    <div className='verdana13 w-full '>
       <div>
         <section>
           <div className='mb-4 flex'>

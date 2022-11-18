@@ -5,10 +5,10 @@ const VerifyServices = () => {
   let data = [1, 1, 1, 1]
 
   return (
-    <div className='w-full space-y-4 bg-[#F6F8FC] p-5 text-xs text-gray-800 dark:text-white'>
+    <div className='verdana13 w-full space-y-4 bg-[#F6F8FC] p-5  text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
         <div>
-          <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+          <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
             Verify Services
           </h1>
         </div>
@@ -88,34 +88,34 @@ const VerifyServices = () => {
 
       <section>
         <div>
-          <table className='min-w-full overflow-auto text-xs'>
+          <table className='verdana13 min-w-full overflow-auto '>
             <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
               <tr className='border border-primary-color'>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                   Patient Name
                 </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                   Associate Name
                 </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                   Service
                 </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                   Service Date
                 </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                   Time In
                 </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                   Time Out
                 </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                   Agency Name
                 </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
+                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
                   Payer Name
                 </th>
-                <th className=' border-l-4 border-gray-400 py-1 px-2  text-left text-xs'></th>
+                <th className=' verdana13 border-l-4 border-gray-400 py-1  px-2 text-left '></th>
               </tr>
             </thead>
             <tbody>

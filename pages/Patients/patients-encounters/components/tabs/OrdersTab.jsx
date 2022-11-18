@@ -5,7 +5,7 @@ import { GoNote } from 'react-icons/go'
 const OrdersTab = () => {
   let data = []
   return (
-    <div>
+    <div className='verdana13 '>
       <div className='flex'>
         <h1 className=' font-bold'>Orders</h1>
         <p className='ml-5 text-secondary-color underline'>View Orders</p>

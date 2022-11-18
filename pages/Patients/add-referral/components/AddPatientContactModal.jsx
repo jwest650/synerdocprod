@@ -24,12 +24,12 @@ const AddPatientContactModal = ({
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent maxWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             {/* <ModalCloseButton /> */}
             <ModalBody>
               <div className='mb-3'>
-                <h1 className=' text-2xl font-bold'>
+                <h1 className=' verdana18  font-bold'>
                   Add Patient Contact info
                 </h1>
                 <p>add information and save</p>
@@ -61,14 +61,20 @@ const AddPatientContactModal = ({
                   </p>
 
                   <div className='flex flex-col'>
-                    <Checkbox defaultChecked>Primary Caregiver</Checkbox>
-                    <Checkbox>Caregiver</Checkbox>
-                    <Checkbox>Next of Kin</Checkbox>
-                    <Checkbox>Emergency</Checkbox>
-                    <Checkbox>Power of Attorney</Checkbox>
-                    <Checkbox>Willing to provide all patient care</Checkbox>
-                    <Checkbox>Berevement</Checkbox>
-                    <Checkbox defaultChecked>Family Portal</Checkbox>
+                    <Checkbox defaultChecked size={'sm'}>
+                      Primary Caregiver
+                    </Checkbox>
+                    <Checkbox size={'sm'}>Caregiver</Checkbox>
+                    <Checkbox size={'sm'}>Next of Kin</Checkbox>
+                    <Checkbox size={'sm'}>Emergency</Checkbox>
+                    <Checkbox size={'sm'}>Power of Attorney</Checkbox>
+                    <Checkbox size={'sm'}>
+                      Willing to provide all patient care
+                    </Checkbox>
+                    <Checkbox size={'sm'}>Berevement</Checkbox>
+                    <Checkbox size={'sm'} defaultChecked>
+                      Family Portal
+                    </Checkbox>
                   </div>
                 </div>
                 <div className='my-2 flex'>

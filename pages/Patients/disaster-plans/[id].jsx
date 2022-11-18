@@ -5,8 +5,8 @@ import EditDisasterPlan from './components/EditDisasterPlan'
 const DisasterPlanDetails = () => {
   const [openEditDisasterPlan, setOpenEditDisasterPlan] = useState(false)
   return (
-    <div className='w-full'>
-      <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+    <div className='verdana13 w-full '>
+      <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
         Disaster Plans
       </h1>
       <div className='flex'>

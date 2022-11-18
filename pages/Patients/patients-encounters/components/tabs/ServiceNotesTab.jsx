@@ -6,7 +6,7 @@ const ServiceNotesTab = () => {
   let data = []
 
   return (
-    <div>
+    <div className='verdana13 '>
       <div className='flex'>
         <div className='flex'>
           <h1 className=' font-bold'>Service Note</h1>

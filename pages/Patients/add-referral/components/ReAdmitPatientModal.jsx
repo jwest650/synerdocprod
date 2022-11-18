@@ -23,24 +23,24 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent maxWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
-              <h1>Re-Admit Patient</h1>
-              <p>Additional information to copy along</p>
+              <h1 className='verdana18 '>Re-Admit Patient</h1>
+              <p className='verdana13 '>Additional information to copy along</p>
             </ModalHeader>
             {/* <ModalCloseButton /> */}
             <ModalBody>
               <div className='flex flex-col'>
-                <Checkbox>Include Medications (all)</Checkbox>
-                <Checkbox>Include Medications (active only)</Checkbox>
-                <Checkbox>Include Advance Directives</Checkbox>
-                <Checkbox>Include Disaster Plan</Checkbox>
-                <Checkbox>Include DME</Checkbox>
-                <Checkbox>Include Vendor</Checkbox>
-                <Checkbox>Include Vital</Checkbox>
-                <Checkbox>Include Vaccines</Checkbox>
-                <Checkbox>Include Allergies</Checkbox>
+                <Checkbox size='sm'>Include Medications (all)</Checkbox>
+                <Checkbox size='sm'>Include Medications (active only)</Checkbox>
+                <Checkbox size='sm'>Include Advance Directives</Checkbox>
+                <Checkbox size='sm'>Include Disaster Plan</Checkbox>
+                <Checkbox size='sm'>Include DME</Checkbox>
+                <Checkbox size='sm'>Include Vendor</Checkbox>
+                <Checkbox size='sm'>Include Vital</Checkbox>
+                <Checkbox size='sm'>Include Vaccines</Checkbox>
+                <Checkbox size='sm'>Include Allergies</Checkbox>
                 <div className='my-3 flex justify-end'>
                   <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                     Continue

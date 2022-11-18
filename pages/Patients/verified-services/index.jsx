@@ -7,10 +7,10 @@ import SearchIcon from '../../../assets/images/search.png'
 const VerifiedServices = () => {
   let data = [1, 1, 1, 1]
   return (
-    <div className='ar w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
+    <div className='verdana13  w-full space-y-4 bg-[#F6F8FC] p-5 text-gray-800 dark:text-white'>
       <section className='flex items-center justify-between capitalize'>
         <div>
-          <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+          <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
             Verified Services
           </h1>
         </div>

@@ -71,7 +71,7 @@ const Enconter = () => {
   ]
 
   return (
-    <div className='w-full'>
+    <div className='verdana13 w-full '>
       <EncounterHeader />
       <section>
         <div>
