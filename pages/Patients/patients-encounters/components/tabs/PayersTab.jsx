@@ -1,14 +1,24 @@
 import Image from 'next/image'
 import React from 'react'
+import { useState } from 'react'
+import { BsPlus } from 'react-icons/bs'
 import searchIcon from '../../../../../assets/images/search.png'
+import AddPayerModal from './components/payer/AddPayerModal'
 
 const PayersTab = () => {
   let data = [1]
+  const [openAddPayer, setOpenAddPayer] = useState(false)
   return (
     <div className='verdana13'>
       <div className='flex'>
         <h1 className=' text-xl font-bold'>Payer</h1>
-        <p className='ml-5 text-secondary-color underline'>Add Payer</p>
+        <p
+          className='ml-5 cursor-pointer text-secondary-color underline'
+          onClick={() => setOpenAddPayer(true)}
+        >
+          <BsPlus className='verdana16  text-green-500' />
+          Add Payer
+        </p>
       </div>
 
       <section className=' min-h-[200px]'>
@@ -107,6 +117,12 @@ const PayersTab = () => {
           No Homecare Item set found
         </p> */}
       </section>
+
+      {/* Payer modal */}
+      <AddPayerModal
+        openAddPayer={openAddPayer}
+        setOpenAddPayer={setOpenAddPayer}
+      />
     </div>
   )
 }

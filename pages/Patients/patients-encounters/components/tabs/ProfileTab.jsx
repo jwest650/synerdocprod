@@ -1,8 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
 import { FcInfo } from 'react-icons/fc'
+import { TfiPencilAlt } from 'react-icons/tfi'
+import { GrDocumentTime } from 'react-icons/gr'
+import { useState } from 'react'
+import EditEncounterModal from './components/profile/EditEncounterModal'
+import EditPersonalModal from './components/profile/EditPersonalModal'
 
 const ProfileTab = () => {
+  const [openEditEncounter, setOpenEditEncounter] = useState(false)
+  const [openEditPersonal, setOpenEditPersonal] = useState(false)
+
   return (
     <div>
       <section className='verdana13 flex justify-between '>
@@ -12,9 +20,14 @@ const ProfileTab = () => {
           </div>
           <div className='flex '>
             <div className='mr-2 border-r-2'>
-              <Link href='#' color='orange'>
-                <p className=' mr-2 text-secondary-color underline'>Edit</p>
-              </Link>
+              <div>
+                <p
+                  className=' mr-2 cursor-pointer text-secondary-color  underline'
+                  onClick={() => setOpenEditPersonal(true)}
+                >
+                  Edit
+                </p>
+              </div>
             </div>
 
             <div>
@@ -95,14 +108,24 @@ const ProfileTab = () => {
           </div>
           <div className='flex '>
             <div className='mr-2 border-r-2'>
-              <Link href='#' color='orange'>
-                <p className=' mr-2 text-secondary-color underline'>Edit</p>
-              </Link>
+              <div>
+                <p
+                  className=' mr-2 cursor-pointer text-secondary-color underline'
+                  onClick={() => setOpenEditEncounter(true)}
+                >
+                  Edit
+                </p>
+              </div>
             </div>
             <div className='w-[100%] px-3'>
               <div className='my-2 flex'>
                 <p className='w-[150px] text-right font-semibold'>Status: </p>
-                <p className='ml-3'></p>
+                <p className='ml-3 flex items-center text-green-600'>
+                  pending{' '}
+                  <span className='ml-3 text-yellow-600'>
+                    <GrDocumentTime />
+                  </span>
+                </p>
               </div>
               <div className='my-2 flex'>
                 <p className='w-[150px] text-right font-semibold'>
@@ -130,7 +153,12 @@ const ProfileTab = () => {
               </div>
               <div className='my-2 flex'>
                 <p className='w-[150px] text-right font-semibold'>Country: </p>
-                <p className='ml-3'></p>
+                <p className='items centerml-3 flex'>
+                  Benevile
+                  <span className='ml-3 text-yellow-600'>
+                    <TfiPencilAlt />
+                  </span>
+                </p>
               </div>
               <div className='my-2 flex'>
                 <p className='w-[150px] text-right font-semibold'>
@@ -178,6 +206,16 @@ const ProfileTab = () => {
           </div>
         </div>
       </section>
+
+      {/* Modals */}
+      <EditEncounterModal
+        openEditEncounter={openEditEncounter}
+        setOpenEditEncounter={setOpenEditEncounter}
+      />
+      <EditPersonalModal
+        openEditPersonal={openEditPersonal}
+        setOpenEditPersonal={setOpenEditPersonal}
+      />
     </div>
   )
 }

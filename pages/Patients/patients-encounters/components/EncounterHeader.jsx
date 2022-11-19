@@ -1,26 +1,38 @@
-import React from 'react'
-import { FcInfo } from 'react-icons/fc'
+import { useState } from 'react'
+import { FaBook } from 'react-icons/fa'
+import { GrDocumentTime } from 'react-icons/gr'
+import { HiDocumentSearch } from 'react-icons/hi'
+import ActivatePatientModal from './ActivatePatientModal'
+import ScheduleServiceModal from './ScheduleServiceModal'
 
 const EncounterHeader = () => {
+  const [openScheduleService, setOpenScheduleService] = useState(false)
+  const [openActivatePatient, setOpenActivatePatient] = useState(false)
+
   return (
     <div className='verdana13 '>
       <div className='flex w-full items-center justify-between'>
         <div className='flex items-center gap-8 py-3'>
           <h2 className='text-lg font-semibold tracking-wide'>Smith Joseph</h2>
-          {/* <span className='flex cursor-pointer items-center gap-1 text-secondary-color underline'>
-            [Edit]
-            <FcInfo className='rotate-180' />
-          </span> */}
           <div className='flex '>
             <div className='flex'>
-              <p className='verdana13 ml-3  text-secondary-color underline'>
-                Activate Patient
+              <p
+                className='verdana13 ml-3  cursor-pointer text-secondary-color underline'
+                onClick={() => setOpenActivatePatient(true)}
+              >
+                [Activate Patient]
               </p>
-              <p className='verdana13 ml-3  text-secondary-color underline'>
-                Decline Referral
+              <p className='verdana13 ml-3  cursor-pointer text-secondary-color underline'>
+                [Decline Referral]
               </p>
-              <p className='verdana13 ml-3  text-secondary-color underline'>
-                Patient Fact Report
+              <p
+                className='verdana13 ml-3  cursor-pointer text-secondary-color underline'
+                onClick={() => setOpenScheduleService(true)}
+              >
+                [schedule initial service]
+              </p>
+              <p className='verdana13 ml-3  cursor-pointer text-secondary-color underline'>
+                [Patient Fact Report]
               </p>
             </div>
           </div>
@@ -43,7 +55,10 @@ const EncounterHeader = () => {
                 <p className='font-semibold'>Patient Phone: </p>
               </div>
               <div>
-                <p></p>
+                <p className='flex items-center'>
+                  <FaBook />
+                  H: (4545 5656 453)
+                </p>
               </div>
             </div>
             <div className='flex py-1'>
@@ -59,7 +74,10 @@ const EncounterHeader = () => {
                 <p className='font-semibold'>Primary Physician Phone: </p>
               </div>
               <div>
-                <p></p>
+                <p className='flex items-center'>
+                  <FaBook />
+                  W: (4545 5656 453)
+                </p>
               </div>
             </div>
             <div className='flex py-1'>
@@ -103,7 +121,10 @@ const EncounterHeader = () => {
                 <p className='font-semibold'>Primary Diagnosis: </p>
               </div>
               <div>
-                <p></p>
+                <p className='verdana13 flex w-[200px]'>
+                  <HiDocumentSearch className='verdana18' />
+                  150.25 Acute on chronic systolic heart failure
+                </p>
               </div>
             </div>
             <div className='flex py-1'>
@@ -122,7 +143,12 @@ const EncounterHeader = () => {
                 <p className='font-semibold'>Status: </p>
               </div>
               <div>
-                <p className='text-green-700'>Pending</p>
+                <p className='flex items-center text-green-700'>
+                  Pending{' '}
+                  <span className='ml-3 text-yellow-600'>
+                    <GrDocumentTime />
+                  </span>
+                </p>
               </div>
             </div>
             <div className='flex py-1'>
@@ -161,6 +187,15 @@ const EncounterHeader = () => {
           </div>
         </div>
       </section>
+      {/* Modals */}
+      <ScheduleServiceModal
+        openScheduleService={openScheduleService}
+        setOpenScheduleService={setOpenScheduleService}
+      />
+      <ActivatePatientModal
+        openActivatePatient={openActivatePatient}
+        setOpenActivatePatient={setOpenActivatePatient}
+      />
     </div>
   )
 }
