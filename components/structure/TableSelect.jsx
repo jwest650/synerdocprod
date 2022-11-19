@@ -7,7 +7,9 @@ import { MdOutlineArrowDropDown } from 'react-icons/md';
 const TableSelect = ({ setSelectedOption, options, styles }) => {
   return (
     <Select
-      onChange={(e) => setSelectedOption(e.target.value)}
+      onChange={(e) =>
+        setSelectedOption !== undefined && setSelectedOption(e.target.value)
+      }
       icon={<MdOutlineArrowDropDown />}
       iconColor="gray"
       width="fit-content"

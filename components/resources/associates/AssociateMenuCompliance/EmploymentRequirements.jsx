@@ -40,7 +40,9 @@ const EmploymentRequirements = () => {
               <td className="td-primary">{option.lastModifiedByDate}</td>
               <td className="td-primary">{option.comment}</td>
               <td className="td-primary text-xl">
-                {option.complaint ? <FcOk /> : <FcCancel />}
+                <div className="flex items-center justify-center">
+                  {option.complaint ? <FcOk /> : <FcCancel />}
+                </div>
               </td>
               <td className="td-primary">{option.renewal}</td>
               <td className="td-primary w-40">

@@ -1304,6 +1304,9 @@ export const notesData = [
 export const employmentReq = [
   {
     item: '2 forms of identification',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Velasquez Mirna',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1313,6 +1316,9 @@ export const employmentReq = [
   },
   {
     item: '2 referance verification',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1322,6 +1328,9 @@ export const employmentReq = [
   },
   {
     item: 'Background Check',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Peggy',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1331,6 +1340,9 @@ export const employmentReq = [
   },
   {
     item: 'Consumer Affairs',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Destiny',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1340,6 +1352,9 @@ export const employmentReq = [
   },
   {
     item: 'Employee Handbook',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Destiny',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1349,6 +1364,9 @@ export const employmentReq = [
   },
   {
     item: 'Employment Verification Authorization',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Jerry',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1358,6 +1376,9 @@ export const employmentReq = [
   },
   {
     item: 'Evaluation Date',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Joseph',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1367,6 +1388,9 @@ export const employmentReq = [
   },
   {
     item: 'HIPAA Class',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Nicholas',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1376,6 +1400,9 @@ export const employmentReq = [
   },
   {
     item: '19 Renewal Date',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1385,6 +1412,9 @@ export const employmentReq = [
   },
   {
     item: '19 Renewal Date',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1394,6 +1424,9 @@ export const employmentReq = [
   },
   {
     item: 'Interview Questionary',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1403,6 +1436,9 @@ export const employmentReq = [
   },
   {
     item: 'Job Description',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1412,6 +1448,9 @@ export const employmentReq = [
   },
   {
     item: 'Liability Insurance',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1421,6 +1460,9 @@ export const employmentReq = [
   },
   {
     item: 'OSHA',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1430,6 +1472,9 @@ export const employmentReq = [
   },
   {
     item: 'Resume',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
