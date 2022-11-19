@@ -5,8 +5,9 @@ import {
   Select,
   useDisclosure,
 } from '@chakra-ui/react';
+import { BiPlus } from 'react-icons/bi';
 
-const EditAssociateAgencies = () => {
+const CreateRole = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -15,21 +16,19 @@ const EditAssociateAgencies = () => {
   };
   return (
     <>
-      <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer pt-[2px] text-secondary-color underline">
-          [Edit]
-        </p>
+      <span
+        onClick={onOpen}
+        className="btn-primary flex cursor-pointer items-center gap-1"
+      >
+        <BiPlus className="scale-150" />
+        <span>Create Role</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">
-                Edit Associate Agencies/ Territories/ Teams
-              </h1>
-
-              <div className="mt-10"></div>
+              <h1 className="verdana18 font-semibold">Create Role</h1>
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
@@ -52,4 +51,4 @@ const EditAssociateAgencies = () => {
   );
 };
 
-export default EditAssociateAgencies;
+export default CreateRole;

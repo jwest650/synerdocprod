@@ -5,6 +5,7 @@ import {
   Select,
   useDisclosure,
 } from '@chakra-ui/react';
+import TableSelect from '../../../structure/TableSelect';
 
 const TerminateAssociate = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -25,42 +26,35 @@ const TerminateAssociate = () => {
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="text-xl font-semibold">Terminate Associate</h1>
+              <h1 className="verdana18 font-semibold">Terminate Associate</h1>
 
               <div className="">
-                <div className="flex w-[100%] flex-col items-center justify-center px-3">
-                  <div className="my-2 flex">
-                    <p className="w-[150px] text-right font-semibold">
+                <div className="mt-5 flex w-[85%] flex-col items-center justify-center px-3">
+                  <div className="my-2 flex items-center">
+                    <p className="w-[150px] text-right font-medium">
                       {' '}
                       <span className="text-primary-orange">*</span>Reason:{' '}
                     </p>
                     <div className="ml-3">
-                      {' '}
-                      <Select
-                        css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
-                        className="shadow outline-none"
-                        size="xs"
-                      >
-                        <option value="option1" className="text-gray-800">
-                          Other Leave{' '}
-                        </option>
-                        <option value="option1" className="text-gray-800">
-                          Option2{' '}
-                        </option>
-                      </Select>
+                      <div className="w-full rounded border border-secondary-blue shadow-sm">
+                        <TableSelect
+                          styles={{ width: '100%' }}
+                          options={['Other Leave', 'Option2']}
+                        />
+                      </div>{' '}
                     </div>
                   </div>
 
-                  <div className="my-2 flex">
-                    <p className="w-[150px] text-right font-semibold">
+                  <div className="my-2 flex items-center">
+                    <p className="w-[150px] text-right font-medium">
                       Eligible for Rehire:
                     </p>{' '}
                     <div className="ml-4 w-28 pt-0.5">
-                      <input type="checkbox" />{' '}
+                      <input type="checkbox" className="input-primary" />{' '}
                     </div>
                   </div>
-                  <div className="my-2 flex">
-                    <p className="w-[150px] text-right font-semibold">
+                  <div className="my-2 flex items-center">
+                    <p className="w-[150px] text-right font-medium">
                       {' '}
                       <span className="text-primary-orange">*</span> Terminate
                       Date:{' '}
@@ -68,62 +62,46 @@ const TerminateAssociate = () => {
                     <input
                       type="text"
                       placeholder="11/27/1960"
-                      className="ml-4 w-28 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
+                      className="input-primary ml-4 w-28"
                     />{' '}
                   </div>
                 </div>
-                <p className="my-9 px-2 font-semibold">
+                <p className="my-9 font-semibold">
                   All future scheduled services assigned to this Associate will
                   be unassigned.
                 </p>
-                <div className="w-fit border-b border-dashed border-black px-2 font-semibold">
+                <div className="w-fit border-b border-dashed border-black font-semibold">
                   All scheduled services assigned to this Associate that match
                   the inactive /termination date will be unassigned if checked.
                 </div>
 
                 <table className=" mx-auto mt-8 w-full overflow-auto px-3">
-                  <thead className="border-b bg-primary-blue text-[18px] tracking-wider text-white">
+                  <thead className="thead-primary">
                     <tr>
-                      <th className="border-primary-gray border-t-primary-blue border-l-primary-blue px-4 text-left">
-                        <input type="checkbox" className="" />
+                      <th className="th-first">
+                        <input type="checkbox" className="input-primary" />
                       </th>
-                      <th className=" border-primary-gray border-t-primary-blue pl-2 text-left">
-                        Date
-                      </th>
+                      <th className="th-middle">Date</th>
 
-                      <th className=" border-primary-gray border-t-primary-blue pl-2 text-left">
-                        Services
-                      </th>
-                      <th className=" border-primary-gray border-t-primary-blue pl-2 text-left">
-                        Time In
-                      </th>
-                      <th className=" border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left">
-                        Time Out
-                      </th>
+                      <th className="th-middle">Services</th>
+                      <th className="th-middle">Time In</th>
+                      <th className="th-last">Time Out</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="w-full bg-[#e6ebf85d]">
-                      <td className="w-10 border border-gray-400 py-2 px-4">
+                      <td className="td-primary w-10">
                         <input type="checkbox" />
                       </td>
-                      <td className="w-10 border border-gray-400 px-2">
-                        11/11/22
-                      </td>
-                      <td className="w-72 border border-gray-400 px-4">
+                      <td className="td-primary w-10">11/11/22</td>
+                      <td className="td-primary w-72 ">
                         Hospice MSW - Initial Assessment Visit{' '}
                       </td>
-                      <td className="border border-gray-400">
-                        <input
-                          type="text"
-                          className="mx-3 border px-3 outline-none "
-                        />
+                      <td className="td-primary">
+                        <input type="text" className="input-primary mx-3" />
                       </td>
-                      <td className="border border-gray-400">
-                        <input
-                          type="text"
-                          className="mx-3 border px-3 outline-none "
-                        />
+                      <td className="td-primary">
+                        <input type="text" className="input-primary mx-3" />
                       </td>
                     </tr>
                   </tbody>

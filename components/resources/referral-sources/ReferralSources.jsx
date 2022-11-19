@@ -87,7 +87,7 @@ const ReferralSources = () => {
             <td></td>
           </tr>
           {referralSourcesTableData.map((referralSource, i) => (
-            <tr key={i} className={`border even:bg-[#eeeeee]`}>
+            <tr key={i} className={`verdana12 border even:bg-[#eeeeee]`}>
               <td className=" td-primary min-w-[50px] cursor-pointer">
                 <MoreReferralSourcesInfo />
               </td>

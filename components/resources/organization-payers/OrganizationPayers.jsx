@@ -60,7 +60,7 @@ const OrganizationPayers = () => {
             <td></td>
           </tr>
           {organizationPayersTableData.map((organizationPayers, i) => (
-            <tr key={i} className={`border even:bg-[#eeeeee]`}>
+            <tr key={i} className={`verdana12 border even:bg-[#eeeeee]`}>
               <td className="td-primary min-w-[250px]  text-orange-600 underline decoration-orange-600">
                 <Link
                   href={`/Resources/organization-payers/${organizationPayers.url}/contactinfo`}

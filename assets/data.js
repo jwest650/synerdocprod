@@ -17,7 +17,7 @@ import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
 import { BiChalkboard, BiDollar, BiGitPullRequest } from 'react-icons/bi';
 import { GiWhiteBook } from 'react-icons/gi';
 import { CiStethoscope } from 'react-icons/ci';
-import { RiBillLine, RiProfileLine, RiToolsFill } from 'react-icons/ri';
+import { RiProfileLine, RiToolsFill } from 'react-icons/ri';
 import {
   MdAttachMoney,
   MdLibraryBooks,
@@ -33,9 +33,9 @@ import { FaHome, FaRegNewspaper } from 'react-icons/fa';
 import AssociateMenuProfile from '../components/resources/associates/AssociateMenuProfile/index';
 import AssociateMenuContact from '../components/resources/associates/AssociateMenuContact/index';
 import AssociateMenuWebsite from '../components/resources/associates/AssociateMenuWebsite/index';
-import AssociateMenuNotes from '../components/resources/associates/AssociateMenuNotes';
-import AssociateMenuAvailability from '../components/resources/associates/AssociateMenuAvailability';
-import AssociateMenuCompliance from '../components/resources/associates/AssociateMenuCompliance';
+import AssociateMenuNotes from '../components/resources/associates/AssociateMenuNotes/index';
+import AssociateMenuAvailability from '../components/resources/associates/AssociateMenuAvailability/index';
+import AssociateMenuCompliance from '../components/resources/associates/AssociateMenuCompliance/index';
 import AssociateMenuPayroll from '../components/resources/associates/AssociateMenuPayroll';
 import AssociateMenuPayRates from '../components/resources/associates/AssociateMenuPayRates';
 import AssociateMenuDocs from '../components/resources/associates/AssociateMenuDocs';
@@ -1243,6 +1243,199 @@ export const physicianOrder = [
     orderTitle: 'title4',
     date: new Date().toLocaleDateString(),
     status: 'Active',
+  },
+];
+
+export const associateRoles = [
+  'Accounts Receivable Specialist',
+  'Family Portal',
+  'Physician Document Management',
+  'Administrators',
+  'Finance Manager',
+  'Point of Care - Clinical',
+  'Agency Administrator/Director',
+  'Human Resources Specialist',
+  'Point of Care - LPN',
+  'Allow Desktop Faxing',
+  'Intake Coordinator',
+  'Point of Care - Paraprofessional',
+  'Associate HR',
+  'Medical Director/Associate Medical Director',
+  'Quality Assurance Nurse/Manager',
+  'Auditor',
+  'Office Manager',
+  'Restricted User',
+  'Case Manager - Point of Care',
+  'On-Call Coordinator',
+  'Scheduler',
+  'Clerk/Receptionist',
+  'Payroll Specialist',
+  'System Administrator',
+  'Director of Nursing',
+];
+
+export const notesData = [
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Payroll',
+    note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
+    noteId: '1',
+  },
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Payroll',
+    note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
+    noteId: '2',
+  },
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'General',
+    note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
+    noteId: '3',
+  },
+];
+
+export const employmentReq = [
+  {
+    item: '2 forms of identification',
+    lastModifiedBy: 'Velasquez Mirna',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: '2 referance verification',
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: false,
+    completed: new Date().toLocaleDateString(),
+    renewal: '',
+  },
+  {
+    item: 'Background Check',
+    lastModifiedBy: 'Peggy',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Consumer Affairs',
+    lastModifiedBy: 'Destiny',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Employee Handbook',
+    lastModifiedBy: 'Destiny',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Employment Verification Authorization',
+    lastModifiedBy: 'Jerry',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Evaluation Date',
+    lastModifiedBy: 'Joseph',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'HIPAA Class',
+    lastModifiedBy: 'Nicholas',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: false,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: '19 Renewal Date',
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: '19 Renewal Date',
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Interview Questionary',
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: false,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Job Description',
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Liability Insurance',
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'OSHA',
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: false,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Resume',
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
   },
 ];
 

@@ -14,7 +14,7 @@ const PhysicianOrderCreateOrder = () => {
     <>
       <span
         onClick={onOpen}
-        className="flex cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white"
+        className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus />
         <span className="text-sm">Create Orders</span>

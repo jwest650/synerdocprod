@@ -7,6 +7,7 @@ import {
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
 import { FiTrash2 } from 'react-icons/fi';
+import TableSelect from '../../../structure/TableSelect';
 
 const AssociateCreatePhone = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,10 +20,10 @@ const AssociateCreatePhone = () => {
     <>
       <span
         onClick={onOpen}
-        className="flex cursor-pointer items-center gap-1 rounded bg-orange-600 py-1 px-2 text-white"
+        className="btn-primary flex cursor-pointer items-center gap-1"
       >
-        <BiPlus className="scale-125" />
-        <span className="text-sm">Create Phone</span>
+        <BiPlus className="scale-150" />
+        <span>Create Phone</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
@@ -30,80 +31,67 @@ const AssociateCreatePhone = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             {/* <ModalBody> */}
             <form action="" onSubmit={handleForm}>
-              <h1 className="text-xl font-semibold">
+              <h1 className="verdana18 font-semibold">
                 Add Ancillary Phone Info
               </h1>
-              <p>Select a phone number type and enter phone number. </p>
+              <p className="verdana12">
+                Select a phone number type and enter phone number.{' '}
+              </p>
               <div className="mt-16">
                 <div className="flex w-[70%] flex-col items-center justify-center px-3">
                   <div className="my-2 flex">
-                    <p className="w-[150px] text-right font-semibold">
+                    <p className="w-[185px] text-right font-medium">
                       <span className="text-primary-orange">*</span> Phone Type:
                     </p>
                     <div className="ml-3">
-                      <Select
-                        css={{
-                          backgroundColor: '#c6d8ffe1',
-                          border: 'none',
-                        }}
-                        className="shadow outline-none"
-                        size="xs"
-                      >
-                        <option value="option1" className="text-gray-800">
-                          Home{' '}
-                        </option>
-                        <option value="option1" className="text-gray-800">
-                          Option2{' '}
-                        </option>
-                      </Select>
+                      <div className="w-full rounded border border-secondary-blue shadow-sm">
+                        <TableSelect
+                          styles={{ width: '100%' }}
+                          options={['Home', 'Option2']}
+                        />
+                      </div>
                     </div>
                   </div>
 
                   <div className="my-2 flex">
-                    <p className="ml-6 w-[150px] text-right font-semibold">
+                    <p className="ml-6 w-[180px] text-right font-medium">
                       <span className="text-primary-orange">*</span> Phone:
                     </p>{' '}
-                    <div className="ml-4 flex w-28 items-center gap-2 pt-0.5">
+                    <div className="ml-4 flex w-28 items-center gap-1 pt-0.5">
                       (
-                      <input
-                        type="text"
-                        className="w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
-                      />
+                      <input type="text" className="input-primary w-14" />
                       )
-                      <input
-                        type="text"
-                        className="w-14 rounded bg-[#c6d8ffe1] px-2 text-center shadow outline-none"
-                      />
+                      <input type="text" className="input-primary w-14" />
                       -
                       <input
                         type="text"
                         placeholder=""
-                        className="w-14 rounded bg-secondary-blue px-2 text-center shadow outline-none"
+                        className="input-primary w-14"
                       />
                     </div>
                   </div>
 
                   <div className="my-2 flex">
-                    <p className="w-[150px] text-right font-semibold">
+                    <p className="w-[150px] text-right font-medium">
                       Extension:
                     </p>
                     <div className="ml-3">
                       <input
                         type="text"
                         placeholder=""
-                        className="w-14 rounded bg-secondary-blue px-2 text-center shadow outline-none"
+                        className="input-primary w-14"
                       />{' '}
                     </div>
                   </div>
                   <div className=" my-2 flex w-full justify-center">
-                    <p className="w-[335px] text-right font-semibold">
+                    <p className="w-[335px] text-right font-medium">
                       Description:
                     </p>
                     <div className="ml-3">
                       <textarea
                         type="text"
                         placeholder=""
-                        className=" w-60 rounded bg-secondary-blue px-2 text-center shadow outline-none"
+                        className="input-primary w-60"
                       />{' '}
                     </div>
                   </div>

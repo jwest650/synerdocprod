@@ -94,7 +94,7 @@ const Physicians = () => {
             <td></td>
           </tr>
           {physicianTableData.map((physician, i) => (
-            <tr key={i} className={`verdana13 border  even:bg-[#eeeeee]`}>
+            <tr key={i} className={`verdana12 border  even:bg-[#eeeeee]`}>
               <td className="td-primary min-w-[40px] cursor-pointer  ">
                 <MorePhysicianInfo />
               </td>

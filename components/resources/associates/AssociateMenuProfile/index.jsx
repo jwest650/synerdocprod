@@ -1,11 +1,9 @@
 import { Avatar } from '@chakra-ui/react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
 import { useState } from 'react';
 import { FcCheckmark, FcInfo, FcSearch } from 'react-icons/fc';
-import { RiBook2Fill } from 'react-icons/ri';
+import MoreAssociateInfo from '../MoreAssociateInfo';
 import AssociateUploadPic from './AssociateUploadPic';
 import EditAssociate from './EditAssociate';
 import EditAssociateAgencies from './EditAssociateAgencies';
@@ -30,9 +28,7 @@ const AssociateMenuProfile = () => {
           </div>
           <div className="verdana12 flex">
             <div className="mr-2 space-y-1 border-r px-2">
-              {/* <Link href="#" color="orange"> */}
               <EditAssociate />
-              {/* </Link> */}
             </div>
 
             <div>
@@ -76,7 +72,7 @@ const AssociateMenuProfile = () => {
                   <p className="ml-3">Level 1 - Always Assign</p>
                 </div>
                 <div className={`my-2 flex items-center`}>
-                  <div className="w-[150px]">
+                  <div className="mr-3 w-[150px]">
                     <AssociateUploadPic setAssociateImage={setAssociateImage} />
                   </div>
                   {associateImage ? (
@@ -102,7 +98,7 @@ const AssociateMenuProfile = () => {
               <div className="mr-10">
                 <FcInfo className="rotate-180 scale-125 text-lg" />
               </div>
-              <div className="border-l px-3">
+              <div className="h-20 overflow-y-scroll  border-l px-3">
                 <p className="text-secondary-color underline">Missing Phone</p>
                 <p className="text-secondary-color underline">
                   Missing Patients Address
@@ -186,7 +182,7 @@ const AssociateMenuProfile = () => {
         <h2 className="verdana16 font-semibold tracking-wider">
           Agency Assignment
         </h2>
-        <div className="mt-5 flex">
+        <div className="verdana12 mt-5 flex">
           <div className="space-y-1 border-r px-[10px]">
             <EditAssociateAgencies />
           </div>
@@ -217,7 +213,7 @@ const AssociateMenuProfile = () => {
                   <FcCheckmark className="scale-150" />
                 </td>
                 <td className="w-10 border border-gray-400 px-2">
-                  <RiBook2Fill />{' '}
+                  <MoreAssociateInfo />
                 </td>
                 <td className="w-72 border border-gray-400 px-4">
                   Miami Labour of Love
