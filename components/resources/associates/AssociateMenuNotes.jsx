@@ -61,36 +61,41 @@ const AssociateMenuNotes = () => {
         <thead className="thead-primary">
           <tr>
             <th className="th-first"></th>
-            <th className="th-middle">Date</th>
+            <th className="th-middle">
+              <div className="flex items-center justify-between">
+                <div>Date</div>
+                <div className="mr-9">Note By</div>
+              </div>
+            </th>
             <th className="th-middle">Type</th>
             <th className="th-last">Note</th>
           </tr>
         </thead>
         <tbody>
           {notesData.map((note, index) => (
-            <tr key={index} className="verdana13 w-full even:bg-[#eee]">
+            <tr key={index} className="verdana11 w-full even:bg-[#eee]">
               <td className="td-primary w-5 px-2">
                 <div className="flex items-center justify-center">
                   <FcDeleteRow className="scale-125 text-xl" />
+                  {/* a pop up showing inactive or delete option */}
                 </div>
               </td>
-              <td className="td-primary min-w-[130px] px-2">
-                <div>
-                  <p className="text-primary-orange underline ">{note.date}</p>
-                  <p className="verdana12">By Internal</p>
+              <td className="td-primary min-w-[190px] px-2">
+                <div className="flex items-center gap-2">
+                  <p className="border-r border-primary-gray py-1 pr-3 text-primary-orange underline ">
+                    {note.date}
+                  </p>
+                  <p className="verdana10">By Internal</p>
                 </div>
               </td>
               <td className="td-primary min-w-[100px]">{note.type}</td>
               <td className="td-primary w-full  px-4">{note.note}</td>
             </tr>
           ))}
-          <tr className="verdana12 border border-primary-gray bg-[#eeeeee]">
+          <tr className="verdana11 border border-primary-gray bg-[#eeeeee]">
             <td colSpan="8" className="py-[3px] px-2">
               displaying page 1 of 1 | rows per page:
-              <input
-                type="number"
-                className="ml-1 w-10 border text-center text-[black]"
-              />
+              <input type="number" className="black] ml-1 w-10" />
             </td>
           </tr>
         </tbody>
