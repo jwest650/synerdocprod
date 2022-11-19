@@ -1,5 +1,6 @@
 import React from 'react';
 import CreateNote from '../AssociateMenuNotes/CreateNote';
+import EditEmploymentReq from './EditEmploymentReq';
 import EmploymentRequirements from './EmploymentRequirements';
 
 const AssociateMenuCompliance = () => {
@@ -10,7 +11,7 @@ const AssociateMenuCompliance = () => {
           Compliance - Employment Requirements
         </h2>
         <div className="w-fit">
-          <CreateNote />
+          <EditEmploymentReq />
         </div>
         <EmploymentRequirements />
       </div>
@@ -19,7 +20,7 @@ const AssociateMenuCompliance = () => {
           Compliance - Employment Requirements
         </h2>
         <div className="w-fit">
-          <CreateNote />
+          <EditEmploymentReq />
         </div>
       </div>
       <div className="mt-5">
@@ -27,7 +28,7 @@ const AssociateMenuCompliance = () => {
           Compliance - Employment Requirements
         </h2>
         <div className="w-fit">
-          <CreateNote />
+          <EditEmploymentReq />
         </div>
       </div>
     </div>

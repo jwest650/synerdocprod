@@ -19,10 +19,10 @@ const AssociateMenuProfile = () => {
 
   return (
     <div className="py-10">
-      <section className="flex flex-col justify-between text-sm md:flex-row">
+      <section className="flex-col flex justify-between text-sm md:flex-row">
         <div className="w-[50%] px-2 md:border-r">
           <div className="flex">
-            <h2 className="verdana16 mb-5 font-semibold tracking-wider">
+            <h2 className="verdana15 mb-5 font-semibold tracking-wider">
               Personal
             </h2>
           </div>
@@ -91,14 +91,14 @@ const AssociateMenuProfile = () => {
             </div>
           </div>
           <div className="py-5">
-            <h2 className="verdana16 mb-5 mt-2 font-semibold tracking-wider">
+            <h2 className="verdana15 mb-5 mt-2 font-semibold tracking-wider">
               Missing Fields
             </h2>
             <div className="mt-3 flex">
               <div className="mr-10">
                 <FcInfo className="rotate-180 scale-125 text-lg" />
               </div>
-              <div className="h-20 overflow-y-scroll  border-l px-3">
+              <div className="missingfield verdana11 h-20 overflow-y-scroll  border-l px-3">
                 <p className="text-secondary-color underline">Missing Phone</p>
                 <p className="text-secondary-color underline">
                   Missing Patients Address
@@ -116,7 +116,7 @@ const AssociateMenuProfile = () => {
 
         <div className="verdana12 w-[50%] px-2 md:border-l">
           <div className="flex">
-            <h2 className="verdana16 mb-5 font-semibold tracking-wider">
+            <h2 className="verdana15 mb-5 font-semibold tracking-wider">
               Current Encounter
             </h2>
           </div>
@@ -179,7 +179,7 @@ const AssociateMenuProfile = () => {
         </div>
       </section>
       <div className="mt-10 py-2 px-2">
-        <h2 className="verdana16 font-semibold tracking-wider">
+        <h2 className="verdana15 font-semibold tracking-wider">
           Agency Assignment
         </h2>
         <div className="verdana12 mt-5 flex">
