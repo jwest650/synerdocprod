@@ -57,7 +57,7 @@ const AssociateMenuNotes = () => {
           </div>
         </div>
       </div>
-      <table className="mx-auto mt-10 w-full overflow-auto px-3 shadow-md">
+      <table className="mx-auto mt-8 w-full overflow-auto px-3 shadow-md">
         <thead className="thead-primary">
           <tr>
             <th className="th-first"></th>

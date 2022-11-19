@@ -8,7 +8,7 @@ const AssociateEditUserRole = ({ setEditUser }) => {
   return (
     <div>
       <div className="mt-10 px-10 pb-20">
-        <h1 className="verdana18 mb-3 border-b border-primary-gray pb-2 font-semibold">
+        <h1 className="verdana14 mb-3 border-b border-primary-gray pb-2 font-semibold">
           Edit User Roles
         </h1>
         <p className="verdana12 text-gray-500">
