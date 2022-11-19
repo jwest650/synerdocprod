@@ -29,7 +29,7 @@ const CreateAssociate = () => {
         <ModalContent backgroundColor="transparent">
           <div className="w-full rounded border border-black  shadow">
             <div className="w-full rounded border-[2px] border-t-[20px] border-[rgba(198,216,255,0.7)]  ">
-              <div className="w-full rounded border border-black bg-texiary-blue p-4 pb-10 shadow-xl">
+              <div className="w-full rounded border border-black bg-white p-4 pb-10 shadow-xl">
                 <form action="" onSubmit={handleForm}>
                   <h1 className="verdana18 font-semibold">Create Associate</h1>
                   <div className="flex-col mt-10 flex h-full w-full items-center justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
