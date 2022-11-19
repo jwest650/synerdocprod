@@ -107,7 +107,7 @@ const Associates = () => {
             <td></td>
           </tr>
           {associateTableData.map((associate, i) => (
-            <tr key={i} className={`verdana13 border even:bg-[#eeeeee]`}>
+            <tr key={i} className={`verdana12 border even:bg-[#eeeeee]`}>
               <td className="td-primary min-w-[40px] cursor-pointer">
                 <MoreAssociateInfo />
               </td>

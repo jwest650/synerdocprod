@@ -7,7 +7,6 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import { BiPlus } from 'react-icons/bi';
 import { BsCloudUpload } from 'react-icons/bs';
 
 const AssociateUploadPic = ({ setAssociateImage }) => {

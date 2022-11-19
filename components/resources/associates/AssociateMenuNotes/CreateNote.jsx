@@ -2,18 +2,25 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Select,
   useDisclosure,
 } from '@chakra-ui/react';
+import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import TableSelect from '../../structure/TableSelect';
+import TableSelect from '../../../structure/TableSelect';
 
-const CreateNote = () => {
+const CreateNote = ({ setDocument }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [newDocument, setNewDocument] = useState(null);
 
+  console.log(newDocument);
   const handleForm = (e) => {
     e.preventDefault();
+    setDocument(newDocument);
     onClose();
+  };
+
+  const onFileChange = (e) => {
+    setNewDocument(e.target.files);
   };
   return (
     <>
@@ -30,7 +37,7 @@ const CreateNote = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">Create Note</h1>
-              <div className="mt-7 w-full space-y-3">
+              <div className="mt-7 w-full space-y-3 pl-5">
                 <div className="flex items-center gap-3">
                   <p className="flex items-start">
                     <span className="text-primary-orange">*</span>Note Type:
@@ -39,6 +46,16 @@ const CreateNote = () => {
                     <div className="rounded border border-secondary-blue shadow-sm">
                       <TableSelect options={['General', 'Option2']} />
                     </div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <p className="ml-2 flex items-start">Document:</p>
+                  <div>
+                    <input
+                      type="file"
+                      className="w-56 rounded border border-secondary-blue shadow"
+                      onChange={onFileChange}
+                    />
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
