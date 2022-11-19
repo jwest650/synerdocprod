@@ -1276,17 +1276,23 @@ export const associateRoles = [
 
 export const notesData = [
   {
-    date: new Date().toLocaleDateString(),
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
     type: 'Payroll',
     note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
   },
   {
-    date: new Date().toLocaleDateString(),
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
     type: 'Payroll',
     note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
   },
   {
-    date: new Date().toLocaleDateString(),
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
     type: 'General',
     note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
   },

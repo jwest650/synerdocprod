@@ -22,7 +22,7 @@ const CreateNote = () => {
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-150" />
-        <span>Create Note</span>
+        <span className="verdana11">Create Note</span>
       </span>
       <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
