@@ -1246,6 +1246,52 @@ export const physicianOrder = [
   },
 ];
 
+export const associateRoles = [
+  'Accounts Receivable Specialist',
+  'Family Portal',
+  'Physician Document Management',
+  'Administrators',
+  'Finance Manager',
+  'Point of Care - Clinical',
+  'Agency Administrator/Director',
+  'Human Resources Specialist',
+  'Point of Care - LPN',
+  'Allow Desktop Faxing',
+  'Intake Coordinator',
+  'Point of Care - Paraprofessional',
+  'Associate HR',
+  'Medical Director/Associate Medical Director',
+  'Quality Assurance Nurse/Manager',
+  'Auditor',
+  'Office Manager',
+  'Restricted User',
+  'Case Manager - Point of Care',
+  'On-Call Coordinator',
+  'Scheduler',
+  'Clerk/Receptionist',
+  'Payroll Specialist',
+  'System Administrator',
+  'Director of Nursing',
+];
+
+export const notesData = [
+  {
+    date: new Date().toLocaleDateString(),
+    type: 'Payroll',
+    note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
+  },
+  {
+    date: new Date().toLocaleDateString(),
+    type: 'Payroll',
+    note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
+  },
+  {
+    date: new Date().toLocaleDateString(),
+    type: 'General',
+    note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ',
+  },
+];
+
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status

@@ -6,7 +6,6 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
-import { FcCalendar } from 'react-icons/fc';
 
 const AssociateCreateWebsiteAccess = ({ setEditUser }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
