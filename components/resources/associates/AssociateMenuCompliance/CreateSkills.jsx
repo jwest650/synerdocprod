@@ -5,8 +5,6 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
-import { FcEditImage } from 'react-icons/fc';
-import TableSelect from '../../../structure/TableSelect';
 
 const CreateSkills = ({ option, category }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -15,7 +13,7 @@ const CreateSkills = ({ option, category }) => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center justify-center "
+        className="btn-primary flex cursor-pointer items-center justify-center gap-1 "
       >
         <BiPlus className="scale-150" />
         <span>Create Skills</span>
