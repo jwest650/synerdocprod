@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import { FcCancel, FcOk, FcPlus } from 'react-icons/fc';
-import { employmentReq } from '../../../../assets/data';
+import { employmentReq, medicalReq } from '../../../../assets/data';
 import ComplianceActionsTd from './ComplianceActionsTd';
 import ComplianceTableAction from './ComplianceTableAction';
 
-const EmploymentRequirements = () => {
+const MedicalRequirements = () => {
   return (
     <div>
       <table className="mx-auto mt-8 w-full overflow-auto px-3 shadow-md">
@@ -38,11 +38,11 @@ const EmploymentRequirements = () => {
           </tr>
         </thead>
         <tbody>
-          {employmentReq.map((option, index) => (
+          {medicalReq.map((option, index) => (
             <tr key={index} className="verdana11 w-full even:bg-[#eee]">
               <ComplianceActionsTd
                 option={option}
-                category={'Employment Requirements'}
+                category={'Medical Requirements'}
               />
             </tr>
           ))}
@@ -52,4 +52,4 @@ const EmploymentRequirements = () => {
   );
 };
 
-export default EmploymentRequirements;
+export default MedicalRequirements;
