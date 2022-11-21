@@ -39,7 +39,7 @@ import AssociateMenuCompliance from '../components/resources/associates/Associat
 import AssociateMenuPayroll from '../components/resources/associates/AssociateMenuPayroll/index';
 import AssociateMenuPayRates from '../components/resources/associates/AssociateMenuPayRates/index';
 import AssociateMenuDocs from '../components/resources/associates/AssociateMenuDocs';
-import AssociateMenuEvv from '../components/resources/associates/AssociateMenuEvv';
+import AssociateMenuEvv from '../components/resources/associates/AssociateMenuEvv/index';
 import PhysicianContactsInfo from '../components/resources/physicians/PhysicianContactsInfo';
 import PhysicianNotes from '../components/resources/physicians/PhysicianNotes';
 import PhysicianCredentials from '../components/resources/physicians/PhysicianCredentials';
@@ -1670,6 +1670,58 @@ export const payrateData = [
     weekendRate: 100,
     allowOverride: true,
     startDate: new Date().toLocaleDateString(),
+  },
+];
+
+export const evvVisitData = [
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Start Care',
+    // patientName: 'Jessie James',
+    // typeOfService: 'Personal Care Aide - Hourly',
+    // gpsLocation: '846 12th St SW, Huron, SD 57350, USA',
+    note: 'Jessie James (Personal Care Aide - Hourly) 846 12th St SW, Huron, SD 57350, USA',
+  },
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Start Care',
+    // patientName: 'Jessie James',
+    // typeOfService: 'Personal Care Aide - Hourly',
+
+    // gpsLocation: '1225 Minnesota Ave SW, Huron, SD 57350, USA',
+    note: 'Jessie James (Personal Care Aide - Hourly) 1225 Minnesota Ave SW, Huron, SD 57350, USA',
+  },
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Start Care',
+    // patientName: 'Jessie James',
+    // typeOfService: 'Personal Care Aide - Hourly',
+
+    // gpsLocation: '1225 Minnesota Ave SW, Huron, SD 57350, USA',
+    note: 'Jessie James (Personal Care Aide - Hourly) 1225 Minnesota Ave SW, Huron, SD 57350, USA',
+  },
+];
+
+export const evvDrivingData = [
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Stop Mileage',
+    note: '225 Iowa Ave SE, Huron, SD 57350, USA Washechek, Ricky (Homemaker)',
+  },
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Start Mileage',
+    note: '1225 Minnesota Ave SW, Huron, SD 57350, USA Washechek, Ricky (Homemaker)',
   },
 ];
 

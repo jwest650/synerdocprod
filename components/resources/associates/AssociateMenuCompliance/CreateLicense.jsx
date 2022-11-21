@@ -14,9 +14,9 @@ const CreateLicense = () => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center justify-center "
+        className="btn-primary flex cursor-pointer items-center justify-center gap-1 "
       >
-        <BiPlus />
+        <BiPlus className="scale-150" />
         <span>Create License/Certification</span>
       </span>
       <Modal isOpen={isOpen} size={'lg'} onClose={onClose}>
