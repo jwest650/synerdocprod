@@ -48,19 +48,18 @@ const EditMedicalReq = () => {
                       <td className="td-primary">
                         <div className="flex items-center justify-center">
                           {/* {option.hasResult && ( */}
-                          <div className="w-fit rounded border border-primary-gray shadow">
-                            <TableSelect
-                              //   setSelectedOption={}
-                              styles={{ h: '20px' }}
-                              options={[
-                                'Select',
-                                'Declined',
-                                'Series 1 Completed',
-                                'Series 2 Completed',
-                                'Series 3 Completed',
-                              ]}
-                            />
-                          </div>
+                          <TableSelect
+                            //   setSelectedOption={}
+                            styles={{ h: '23px', borderColor: 'gray' }}
+                            options={[
+                              'Select',
+                              'Declined',
+                              'Series 1 Completed',
+                              'Series 2 Completed',
+                              'Series 3 Completed',
+                            ]}
+                          />
+
                           {/* )}{' '} */}
                         </div>
                       </td>

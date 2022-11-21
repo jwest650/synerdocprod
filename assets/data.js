@@ -36,8 +36,8 @@ import AssociateMenuWebsite from '../components/resources/associates/AssociateMe
 import AssociateMenuNotes from '../components/resources/associates/AssociateMenuNotes/index';
 import AssociateMenuAvailability from '../components/resources/associates/AssociateMenuAvailability/index';
 import AssociateMenuCompliance from '../components/resources/associates/AssociateMenuCompliance/index';
-import AssociateMenuPayroll from '../components/resources/associates/AssociateMenuPayroll';
-import AssociateMenuPayRates from '../components/resources/associates/AssociateMenuPayRates';
+import AssociateMenuPayroll from '../components/resources/associates/AssociateMenuPayroll/index';
+import AssociateMenuPayRates from '../components/resources/associates/AssociateMenuPayRates/index';
 import AssociateMenuDocs from '../components/resources/associates/AssociateMenuDocs';
 import AssociateMenuEvv from '../components/resources/associates/AssociateMenuEvv';
 import PhysicianContactsInfo from '../components/resources/physicians/PhysicianContactsInfo';

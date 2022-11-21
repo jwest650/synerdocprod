@@ -32,7 +32,7 @@ const CreateAssociate = () => {
               <div className="w-full rounded border border-black bg-white p-4 pb-10 shadow-xl">
                 <form action="" onSubmit={handleForm}>
                   <h1 className="verdana18 font-semibold">Create Associate</h1>
-                  <div className="flex-col mt-10 flex h-full w-full items-center justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
+                  <div className="mt-10 flex h-full w-full flex-col items-center justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
                     <div className="w-full pb-5 md:col-span-3">
                       <div className="flex items-center gap-2 border-b-2 pb-2">
                         <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
@@ -104,26 +104,22 @@ const CreateAssociate = () => {
                               className="input-primary w-28"
                             />
                           </div>
-                          <div className="w-full rounded border border-secondary-blue shadow-sm">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['Male', 'Female', 'Other']}
-                            />
-                          </div>
-                          <div className="w-full rounded border border-secondary-blue shadow-sm">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={[
-                                'White',
-                                'Black',
-                                'Asian',
-                                'Native American',
-                                'Native Hawaiian',
-                                'Pacific Islander',
-                                'Other',
-                              ]}
-                            />
-                          </div>
+                          <TableSelect
+                            styles={{ width: '100%' }}
+                            options={['Male', 'Female', 'Other']}
+                          />
+                          <TableSelect
+                            styles={{ width: '100%' }}
+                            options={[
+                              'White',
+                              'Black',
+                              'Asian',
+                              'Native American',
+                              'Native Hawaiian',
+                              'Pacific Islander',
+                              'Other',
+                            ]}
+                          />
 
                           <div>
                             <input
@@ -138,12 +134,10 @@ const CreateAssociate = () => {
                               className="input-primary w-full"
                             />
                           </div>
-                          <div className="w-full rounded border border-secondary-blue shadow-sm">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['N/A']}
-                            />
-                          </div>
+                          <TableSelect
+                            styles={{ width: '100%' }}
+                            options={['N/A']}
+                          />
                         </div>
                       </div>
                     </div>
@@ -194,39 +188,32 @@ const CreateAssociate = () => {
                           </div>
                         </div>
                         <div className="col-span-7 space-y-3">
-                          <div className="w-full rounded border border-secondary-blue shadow-sm">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={[
-                                'Field Staff - Full Time',
-                                'Field Staff - Part Time',
-                              ]}
-                            />
-                          </div>
-                          <div className="w-full rounded border border-secondary-blue shadow-sm">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['Regist-primarytext-primary-orangese']}
-                            />
-                          </div>
+                          <TableSelect
+                            styles={{ width: '100%' }}
+                            options={[
+                              'Field Staff - Full Time',
+                              'Field Staff - Part Time',
+                            ]}
+                          />
+                          <TableSelect
+                            styles={{ width: '100%' }}
+                            options={['Regist-primarytext-primary-orangese']}
+                          />
                           <div>
                             <input type="date" className="input-primary w-32" />
                           </div>
                           <div>
                             <input type="text" className="input-primary w-32" />
                           </div>
-                          <div className="w-full rounded border border-secondary-blue shadow-sm">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['Balley Debie']}
-                            />
-                          </div>{' '}
-                          <div className="w-full rounded border border-secondary-blue shadow-sm">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['Sinamcare']}
-                            />
-                          </div>
+                          <TableSelect
+                            styles={{ width: '100%' }}
+                            options={['Balley Debie']}
+                          />
+                          <TableSelect
+                            styles={{ width: '100%' }}
+                            options={['Sinamcare']}
+                          />
+
                           <div>
                             <input
                               type="text"

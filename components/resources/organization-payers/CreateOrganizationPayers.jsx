@@ -77,36 +77,26 @@ const CreateOrganizationPayers = () => {
                       className="input-primary w-60"
                     />
                   </div>
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Insurance', 'Option2']}
-                    />
-                  </div>{' '}
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['8(H) - Private Insurance', 'Option2']}
-                    />
-                  </div>{' '}
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Commercial Insurance', 'Option2']}
-                    />
-                  </div>{' '}
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['HCFA 1500', 'Option2']}
-                    />
-                  </div>{' '}
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Weekly', 'Monthly']}
-                    />
-                  </div>
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Insurance', 'Option2']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['8(H) - Private Insurance', 'Option2']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Commercial Insurance', 'Option2']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['HCFA 1500', 'Option2']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Weekly', 'Monthly']}
+                  />
                   <div>
                     <input
                       type="text"

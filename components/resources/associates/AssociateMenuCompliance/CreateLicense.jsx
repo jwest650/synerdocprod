@@ -33,9 +33,7 @@ const CreateLicense = () => {
                   <span className="text-primary-orange">*</span>Type:
                 </p>
                 <div>
-                  <div className="rounded border border-secondary-blue shadow-sm">
-                    <TableSelect options={['Select', 'Option2', 'Option3']} />
-                  </div>
+                  <TableSelect options={['Select', 'Option2', 'Option3']} />
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -51,9 +49,7 @@ const CreateLicense = () => {
                   <span className="text-primary-orange">*</span>State:
                 </p>
                 <div>
-                  <div className="rounded border border-secondary-blue shadow-sm">
-                    <TableSelect options={['Select', 'Option2', 'Option3']} />
-                  </div>
+                  <TableSelect options={['Select', 'Option2', 'Option3']} />
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -77,9 +73,7 @@ const CreateLicense = () => {
                   <span className="text-primary-orange">*</span>Status:
                 </p>
                 <div>
-                  <div className="rounded border border-secondary-blue shadow-sm">
-                    <TableSelect options={['Select', 'Option2', 'Option3']} />
-                  </div>{' '}
+                  <TableSelect options={['Select', 'Option2', 'Option3']} />
                 </div>
               </div>
             </div>

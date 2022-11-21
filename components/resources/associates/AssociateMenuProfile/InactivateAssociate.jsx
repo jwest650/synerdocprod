@@ -37,12 +37,10 @@ const InactivateAssociate = () => {
                     </p>
                     <div className="ml-3">
                       {' '}
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={['Other Leave', 'Option2']}
-                        />
-                      </div>{' '}
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={['Other Leave', 'Option2']}
+                      />
                     </div>
                   </div>
                   <div className="my-2 flex justify-center">

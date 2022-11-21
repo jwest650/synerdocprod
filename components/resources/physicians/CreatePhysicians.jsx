@@ -85,18 +85,14 @@ const CreatePhysicians = () => {
                       className="input-primary w-60"
                     />
                   </div>
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Medical Doctore', 'Physician Assistant']}
-                    />
-                  </div>{' '}
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Cardiologist', 'Dentist']}
-                    />
-                  </div>
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Medical Doctore', 'Physician Assistant']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Cardiologist', 'Dentist']}
+                  />
                   <div>
                     <input
                       type="text"
@@ -107,12 +103,10 @@ const CreatePhysicians = () => {
                   <div>
                     <input type="text" className="input-primary w-full" />
                   </div>
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Matilda Ivy']}
-                    />
-                  </div>{' '}
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Matilda Ivy']}
+                  />
                   <div>
                     <input
                       type="text"

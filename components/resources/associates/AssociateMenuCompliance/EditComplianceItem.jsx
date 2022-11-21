@@ -56,21 +56,19 @@ const EditComplianceItem = ({ option, category }) => {
                   <span className="text-primary-orange">*</span>Result:
                 </p>
                 <div>
-                  <div className="rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      options={
-                        category === 'Employment Requirements'
-                          ? ['Select', 'Pass', 'Fail']
-                          : [
-                              'Select',
-                              'Declined',
-                              'Series 1 Completed',
-                              'Series 2 Completed',
-                              'Series 3 Completed',
-                            ]
-                      }
-                    />
-                  </div>
+                  <TableSelect
+                    options={
+                      category === 'Employment Requirements'
+                        ? ['Select', 'Pass', 'Fail']
+                        : [
+                            'Select',
+                            'Declined',
+                            'Series 1 Completed',
+                            'Series 2 Completed',
+                            'Series 3 Completed',
+                          ]
+                    }
+                  />
                 </div>
               </div>
               <div className="flex items-center gap-3">

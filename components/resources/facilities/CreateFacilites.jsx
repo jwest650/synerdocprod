@@ -63,12 +63,10 @@ const CreateFacilities = () => {
                       className="input-primary w-60"
                     />
                   </div>
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Pharmacy', 'Hospital', 'DM/E Supply Company']}
-                    />
-                  </div>
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Pharmacy', 'Hospital', 'DM/E Supply Company']}
+                  />
                   <div>
                     <input
                       type="text"
@@ -76,12 +74,10 @@ const CreateFacilities = () => {
                       className="input-primary w-60"
                     />
                   </div>
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Option1', 'Option2']}
-                    />
-                  </div>{' '}
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Option1', 'Option2']}
+                  />
                   <div>
                     <input
                       type="text"

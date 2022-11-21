@@ -32,7 +32,7 @@ const AssociateCreateReferralSource = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">
-                Add Associate/Phone Info
+                Create Associate/Phone Info
               </h1>
               <p className="verdana12">
                 Select an address type and enter address details. Then add
@@ -52,12 +52,10 @@ const AssociateCreateReferralSource = () => {
                             Address Type:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['Home', 'Option2']}
-                              />
-                            </div>{' '}
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['Home', 'Option2']}
+                            />
                           </div>
                         </div>
 
@@ -97,12 +95,10 @@ const AssociateCreateReferralSource = () => {
                               placeholder="Saline"
                               className="input-primary w-20"
                             />{' '}
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['LA', 'Option2']}
-                              />
-                            </div>
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['LA', 'Option2']}
+                            />
                             <input
                               type="text"
                               placeholder="71070"
@@ -129,12 +125,10 @@ const AssociateCreateReferralSource = () => {
                             Phone Type:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['Option1', 'Option2']}
-                              />
-                            </div>
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['Option1', 'Option2']}
+                            />
                           </div>
                         </div>
 
