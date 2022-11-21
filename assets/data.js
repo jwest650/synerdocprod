@@ -1607,6 +1607,72 @@ export const medicalReq = [
   },
 ];
 
+export const payrateData = [
+  {
+    description: 'DB - LPN/LVN ROUTINE VISIT - 15 MIN',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - LPN/LVN ROUTINE DIRECT CARE - Hourly',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - LPN/LVN ROUTINE DIRECT CARE - Per Visit',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - LPN/LVN ROUTINE TEACHING - Per Visit',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - RN MANAGEMENT AND EVALUATION - Per Visit',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - RN PEDIATRIC ADMISSION ASSESSMENT',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - RN SUPERVISORY VISIT - HHA',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - RN ASSESSMENT - 15 MIN',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'HSP - RN Psychiatric Nurse SOC with Oasis',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+];
+
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status

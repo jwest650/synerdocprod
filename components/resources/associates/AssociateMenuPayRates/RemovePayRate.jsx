@@ -4,9 +4,9 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
-import { FcDeleteDatabase, FcEmptyTrash, FcPlus } from 'react-icons/fc';
+import { FcEmptyTrash } from 'react-icons/fc';
 
-const RemovePayroll = () => {
+const RemovePayRate = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -21,7 +21,7 @@ const RemovePayroll = () => {
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10">
-            <h1 className="verdana16 font-semibold">Delete Payroll?</h1>
+            <h1 className="verdana16 font-semibold">Delete Pay Rate?</h1>
             <div className="mt-8 flex w-full justify-center gap-3">
               <button
                 onClick={onClose}
@@ -43,4 +43,4 @@ const RemovePayroll = () => {
   );
 };
 
-export default RemovePayroll;
+export default RemovePayRate;
