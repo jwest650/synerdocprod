@@ -1,13 +1,20 @@
 import RoleTableActions from '../components/structure/RoleTableActions';
 import { associateRoles } from '../assets/data';
-import CreateAssociate from '../components/resources/associates/CreateAssociate';
 import CreateRole from '../components/structure/CreateRole';
+import PatientManagementRoles from '../components/resources/associates/AssociateMenuWebsite/PatientManagementRoles';
+import ResourceManagementRoles from '../components/resources/associates/AssociateMenuWebsite/ResourceManagementRoles';
+import { useState } from 'react';
 
 const RolesPage = () => {
+  const [checkedResources, setCheckedResources] = useState([]);
+  const [checkedPatients, setCheckedPatients] = useState([]);
+
+  console.log('resources----------->', checkedResources);
+  console.log('patients------------>', checkedPatients);
   return (
-    <div className="w-full">
+    <div className="mt-5 w-full">
       <div className="flex w-full justify-between">
-        <div className="w-[45%]">
+        <div className="w-[40%]">
           <div className="flex items-center gap-6">
             <h1 className="verdana17 font-semibold">Roles</h1>
             <CreateRole />{' '}
@@ -38,14 +45,21 @@ const RolesPage = () => {
             </tbody>
           </table>
         </div>
-        <div className="w-[45%]">
+        <div className="w-[57%]">
           <h1 className="verdana17 font-semibold">
             Permissions{' '}
             <span className="verdana11 font-medium">
               - The Poin of Care - Clinical role has access to the following
             </span>
           </h1>
-          <div className="b-2 mt-7 rounded bg-texiary-blue p-5 shadow"></div>
+          <div className="mt-7 rounded border bg-texiary-blue pb-1 pt-5 shadow">
+            <div className="verdana11 flex w-full items-center">
+              <ResourceManagementRoles
+                setCheckedResources={setCheckedResources}
+              />
+              <PatientManagementRoles setCheckedPatients={setCheckedPatients} />
+            </div>
+          </div>
         </div>
       </div>
     </div>

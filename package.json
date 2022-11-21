@@ -12,6 +12,7 @@
     "@chakra-ui/react": "^2.3.6",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@syncfusion/ej2-react-navigations": "^20.3.57",
     "@syncfusion/ej2-react-schedule": "^20.3.50",
     "cookies-next": "^2.1.1",
     "framer-motion": "^7.6.1",
