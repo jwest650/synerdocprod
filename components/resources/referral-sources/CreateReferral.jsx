@@ -61,12 +61,10 @@ const CreateReferral = () => {
                   </div>
                 </div>
                 <div className="space-y-[13px]">
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Facility', 'Option2']}
-                    />
-                  </div>
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Facility', 'Option2']}
+                  />
                   <div>
                     <input
                       type="text"
@@ -74,16 +72,14 @@ const CreateReferral = () => {
                       className="input-primary w-60"
                     />
                   </div>
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={[
-                        'Outpatient Facility',
-                        'Hospital',
-                        'DME/Supply Company',
-                      ]}
-                    />
-                  </div>
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={[
+                      'Outpatient Facility',
+                      'Hospital',
+                      'DME/Supply Company',
+                    ]}
+                  />
 
                   <div>
                     <input
@@ -92,12 +88,11 @@ const CreateReferral = () => {
                       className="input-primary w-60"
                     />
                   </div>
-                  <div className="w-full rounded border border-secondary-blue shadow-sm">
-                    <TableSelect
-                      styles={{ width: '100%' }}
-                      options={['Option1', 'Option2']}
-                    />
-                  </div>
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Option1', 'Option2']}
+                  />
+
                   <div>
                     <input
                       type="text"

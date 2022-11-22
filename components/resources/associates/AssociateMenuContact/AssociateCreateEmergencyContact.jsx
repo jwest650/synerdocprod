@@ -48,22 +48,20 @@ const AssociateCreateEmergencyContact = () => {
                             Relationship:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={[
-                                  'Daughter',
-                                  'Sister',
-                                  'Father',
-                                  'Brother',
-                                  'Uncle',
-                                  'Aunty',
-                                  'Nephew',
-                                  'Niece',
-                                  'Other',
-                                ]}
-                              />
-                            </div>
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={[
+                                'Daughter',
+                                'Sister',
+                                'Father',
+                                'Brother',
+                                'Uncle',
+                                'Aunty',
+                                'Nephew',
+                                'Niece',
+                                'Other',
+                              ]}
+                            />
                           </div>
                         </div>
 
@@ -118,12 +116,10 @@ const AssociateCreateEmergencyContact = () => {
                             Address Type:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['Home', 'Option2']}
-                              />
-                            </div>
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['Home', 'Option2']}
+                            />
                           </div>
                         </div>
                         <div className="my-2 flex items-center">
@@ -162,12 +158,10 @@ const AssociateCreateEmergencyContact = () => {
                               placeholder="Saline"
                               className="input-primary w-20"
                             />{' '}
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['LA', 'Option1']}
-                              />
-                            </div>
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['LA', 'Option1']}
+                            />
                             <input
                               type="text"
                               placeholder="71070"
@@ -196,12 +190,10 @@ const AssociateCreateEmergencyContact = () => {
                             Phone Type:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['Option1', 'Option2']}
-                              />
-                            </div>{' '}
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['Option1', 'Option2']}
+                            />
                           </div>
                         </div>
 

@@ -1,51 +1,39 @@
-// import { useState } from 'react';
-import {
-  FcAcceptDatabase,
-  FcDocument,
-  FcEditImage,
-  FcEmptyTrash,
-  FcSearch,
-} from 'react-icons/fc';
-// import { FiSettings, FiTrash2 } from 'react-icons/fi';
+import { FcDocument, FcEmptyTrash } from 'react-icons/fc';
+import ComplianceFlag from './ComplianceFlag';
+import ComplianceFlagRemove from './ComplianceFlagRemove';
+import CreateComplianceItem from './CreateComplianceItem';
+import EditComplianceItem from './EditComplianceItem';
 
-const ComplianceTableAction = () => {
-  //   const [showOthers, setShowOthers] = useState(false);
-
+const ComplianceTableAction = ({
+  setFlaggedMessage,
+  flaggedMessage,
+  empty,
+  option,
+  category,
+}) => {
   return (
     <div className="flex h-[27px] w-full items-center justify-center gap-3 text-lg">
-      {/* {showOthers && ( */}
-      <span
-        //   onMouseOver={() => setShowOthers((current) => (current = true))}
-        //   onMouseLeave={() => setShowOthers((current) => (current = false))}
-        className="table-action-anim "
-      >
-        <FcEditImage />
+      <span className="table-action-anim">
+        {empty ? (
+          <CreateComplianceItem option={option} category={category} />
+        ) : (
+          <EditComplianceItem option={option} category={category} />
+        )}
       </span>
-      <span
-        //   onMouseOver={() => setShowOthers((current) => (current = true))}
-        //   onMouseLeave={() => setShowOthers((current) => (current = false))}
-        className="table-action-anim"
-      >
-        <FcAcceptDatabase />
+      <span className="table-action-anim">
+        {flaggedMessage ? (
+          <ComplianceFlagRemove setFlaggedMessage={setFlaggedMessage} />
+        ) : (
+          <ComplianceFlag setFlaggedMessage={setFlaggedMessage} />
+        )}
       </span>
-      {/* )} */}
-      <span
-        className=""
-        // onMouseOver={() => setShowOthers((current) => (current = true))}
-        // onMouseLeave={() => setShowOthers((current) => (current = false))}
-      >
+      <span className="">
         <FcDocument />
       </span>
 
-      {/* {showOthers && ( */}
-      <span
-        //   onMouseOver={() => setShowOthers((current) => (current = true))}
-        //   onMouseLeave={() => setShowOthers((current) => (current = false))}
-        className="table-action-anim"
-      >
+      <span className="table-action-anim">
         <FcEmptyTrash />
       </span>
-      {/* )} */}
     </div>
   );
 };

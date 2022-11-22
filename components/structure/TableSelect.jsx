@@ -7,18 +7,20 @@ import { MdOutlineArrowDropDown } from 'react-icons/md';
 const TableSelect = ({ setSelectedOption, options, styles }) => {
   return (
     <Select
-      onChange={(e) => setSelectedOption(e.target.value)}
+      onChange={(e) =>
+        setSelectedOption !== undefined && setSelectedOption(e.target.value)
+      }
       icon={<MdOutlineArrowDropDown />}
       iconColor="gray"
       width="fit-content"
-      {...styles}
-      css={{
-        backgroundColor: 'c6d8ffe1',
-        border: 'none',
-        fontSize: '12px',
-        fontFamily: 'Arial',
-      }}
+      borderColor="#c6d8ffe1"
+      borderRadius="4px"
+      backgroundColor="c6d8ffe1"
+      fontSize="12px"
+      h="26px"
+      fontFamily="Arial"
       className="cursor-pointer shadow outline-none"
+      {...styles}
       size="xs"
     >
       {options?.map((option, index) => (

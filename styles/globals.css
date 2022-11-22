@@ -111,6 +111,28 @@ body {
   @apply bg-gray-300;
 }
 
+.missingfield::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+  @apply rounded-full;
+}
+
+.missingfield::-webkit-scrollbar-thumb {
+  background-color: #90b3ffe1;
+  border-radius: 40px;
+  @apply rounded-full;
+}
+.missingfield::-webkit-scrollbar-track {
+  @apply rounded-full bg-gray-300;
+}
+
+.custom
+  .e-list-item.e-level-1
+  .e-text-content.e-icon-wrapper
+  .e-checkbox-wrapper {
+  display: none;
+}
+
 .bezier-nav2 {
   animation: bezz2 0.8s forwards ease-in-out;
 }

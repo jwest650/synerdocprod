@@ -21,9 +21,7 @@ const AssociateMenuNotes = () => {
             </div>
             <div className="flex items-center gap-1">
               Type:
-              <div className="rounded border border-secondary-blue shadow-sm">
-                <TableSelect options={['All', 'Option2']} />
-              </div>
+              <TableSelect options={['All', 'Option2']} />
             </div>
             <div className="flex items-center gap-1">
               From:
@@ -50,9 +48,7 @@ const AssociateMenuNotes = () => {
             />
             <button className="btn-primary h-6"> Search</button>
 
-            <div className="ml-[1px] rounded border border-secondary-blue shadow-sm">
-              <TableSelect options={['PDF', 'SPREADSHEET']} />
-            </div>
+            <TableSelect options={['PDF', 'SPREADSHEET']} />
             <button className="btn-primary h-6">Export</button>
           </div>
         </div>

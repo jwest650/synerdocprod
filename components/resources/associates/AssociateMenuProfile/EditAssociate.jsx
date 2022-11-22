@@ -100,26 +100,23 @@ const EditAssociate = () => {
                           className="input-primary w-28"
                         />
                       </div>
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={['Male', 'Female', 'Other']}
-                        />
-                      </div>
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={[
-                            'White',
-                            'Black',
-                            'Asian',
-                            'Native American',
-                            'Native Hawaiian',
-                            'Pacific Islander',
-                            'Other',
-                          ]}
-                        />
-                      </div>
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={['Male', 'Female', 'Other']}
+                      />
+
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={[
+                          'White',
+                          'Black',
+                          'Asian',
+                          'Native American',
+                          'Native Hawaiian',
+                          'Pacific Islander',
+                          'Other',
+                        ]}
+                      />
 
                       <div>
                         <input
@@ -131,12 +128,10 @@ const EditAssociate = () => {
                       <div>
                         <input type="text" className="input-primary w-full" />
                       </div>
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={['N/A']}
-                        />
-                      </div>
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={['N/A']}
+                      />
                     </div>
                   </div>
                 </div>
@@ -187,39 +182,34 @@ const EditAssociate = () => {
                       </div>
                     </div>
                     <div className="col-span-7 space-y-3">
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={[
-                            'Field Staff - Full Time',
-                            'Field Staff - Part Time',
-                          ]}
-                        />
-                      </div>
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={['Regist-primarytext-primary-orangese']}
-                        />
-                      </div>
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={[
+                          'Field Staff - Full Time',
+                          'Field Staff - Part Time',
+                        ]}
+                      />
+
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={['Regist-primarytext-primary-orangese']}
+                      />
+
                       <div>
                         <input type="date" className="input-primary w-32" />
                       </div>
                       <div>
                         <input type="text" className="input-primary w-32" />
                       </div>
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={['Balley Debie']}
-                        />
-                      </div>{' '}
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={['Sinamcare']}
-                        />
-                      </div>
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={['Balley Debie']}
+                      />
+
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={['Sinamcare']}
+                      />
                       <div>
                         <input
                           type="text"

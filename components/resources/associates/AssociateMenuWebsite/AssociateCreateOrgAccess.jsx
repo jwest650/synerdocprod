@@ -53,12 +53,10 @@ const AssociateCreateOrgAccess = () => {
                             Address Type:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['Home', 'Option2']}
-                              />
-                            </div>{' '}
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['Home', 'Option2']}
+                            />
                           </div>
                         </div>
 
@@ -98,12 +96,10 @@ const AssociateCreateOrgAccess = () => {
                               placeholder="Saline"
                               className="input-primary w-20"
                             />{' '}
-                            <div className=" rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '70px' }}
-                                options={['LA', 'Option2']}
-                              />
-                            </div>
+                            <TableSelect
+                              styles={{ width: '70px' }}
+                              options={['LA', 'Option2']}
+                            />
                             <input
                               type="text"
                               placeholder="71070"
@@ -130,12 +126,10 @@ const AssociateCreateOrgAccess = () => {
                             Phone Type:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['Option1', 'Option2']}
-                              />
-                            </div>
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['Option1', 'Option2']}
+                            />
                           </div>
                         </div>
 

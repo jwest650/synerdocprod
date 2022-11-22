@@ -51,12 +51,10 @@ const AssociateCreateReports = () => {
                             Address Type:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['Home', 'Option2']}
-                              />
-                            </div>
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['Home', 'Option2']}
+                            />
                           </div>
                         </div>
 
@@ -96,7 +94,7 @@ const AssociateCreateReports = () => {
                               placeholder="Saline"
                               className="input-primary w-20"
                             />{' '}
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
+                            <div className="w-full">
                               <TableSelect
                                 styles={{ width: '60px' }}
                                 options={['LA', 'Option2']}
@@ -128,12 +126,10 @@ const AssociateCreateReports = () => {
                             Phone Type:
                           </p>
                           <div className="ml-3">
-                            <div className="w-full rounded border border-secondary-blue shadow-sm">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['Option1', 'Option2']}
-                              />
-                            </div>{' '}
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['Option1', 'Option2']}
+                            />
                           </div>
                         </div>
 

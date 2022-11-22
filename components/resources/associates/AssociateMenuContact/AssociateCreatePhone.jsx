@@ -25,7 +25,7 @@ const AssociateCreatePhone = () => {
         <BiPlus className="scale-150" />
         <span>Create Phone</span>
       </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
@@ -44,12 +44,10 @@ const AssociateCreatePhone = () => {
                       <span className="text-primary-orange">*</span> Phone Type:
                     </p>
                     <div className="ml-3">
-                      <div className="w-full rounded border border-secondary-blue shadow-sm">
-                        <TableSelect
-                          styles={{ width: '100%' }}
-                          options={['Home', 'Option2']}
-                        />
-                      </div>
+                      <TableSelect
+                        styles={{ width: '100%' }}
+                        options={['Home', 'Option2']}
+                      />
                     </div>
                   </div>
 
@@ -84,7 +82,7 @@ const AssociateCreatePhone = () => {
                     </div>
                   </div>
                   <div className=" my-2 flex w-full justify-center">
-                    <p className="w-[335px] text-right font-medium">
+                    <p className="ml-[260px] w-[335px] text-right font-medium">
                       Description:
                     </p>
                     <div className="ml-3">

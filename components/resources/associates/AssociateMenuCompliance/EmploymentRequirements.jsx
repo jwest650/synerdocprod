@@ -1,6 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 import { FcCancel, FcOk, FcPlus } from 'react-icons/fc';
 import { employmentReq } from '../../../../assets/data';
+import ComplianceActionsTd from './ComplianceActionsTd';
 import ComplianceTableAction from './ComplianceTableAction';
 
 const EmploymentRequirements = () => {
@@ -22,6 +24,9 @@ const EmploymentRequirements = () => {
               Comment
             </th>
             <th className="border border-primary-gray border-t-primary-blue py-[1px] pl-2 text-left">
+              Compliant
+            </th>
+            <th className="border border-primary-gray border-t-primary-blue py-[1px] pl-2 text-left">
               Completed
             </th>
             <th className="border border-primary-gray border-t-primary-blue py-[1px] pl-2 text-left">
@@ -35,17 +40,10 @@ const EmploymentRequirements = () => {
         <tbody>
           {employmentReq.map((option, index) => (
             <tr key={index} className="verdana11 w-full even:bg-[#eee]">
-              <td className="td-primary">{option.item} </td>
-              <td className="td-primary">{option.lastModifiedBy} </td>
-              <td className="td-primary">{option.lastModifiedByDate}</td>
-              <td className="td-primary">{option.comment}</td>
-              <td className="td-primary text-xl">
-                {option.complaint ? <FcOk /> : <FcCancel />}
-              </td>
-              <td className="td-primary">{option.renewal}</td>
-              <td className="td-primary w-40">
-                <ComplianceTableAction />
-              </td>
+              <ComplianceActionsTd
+                option={option}
+                category={'Employment Requirements'}
+              />
             </tr>
           ))}
         </tbody>

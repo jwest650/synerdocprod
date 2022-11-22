@@ -36,15 +36,15 @@ import AssociateMenuWebsite from '../components/resources/associates/AssociateMe
 import AssociateMenuNotes from '../components/resources/associates/AssociateMenuNotes/index';
 import AssociateMenuAvailability from '../components/resources/associates/AssociateMenuAvailability/index';
 import AssociateMenuCompliance from '../components/resources/associates/AssociateMenuCompliance/index';
-import AssociateMenuPayroll from '../components/resources/associates/AssociateMenuPayroll';
-import AssociateMenuPayRates from '../components/resources/associates/AssociateMenuPayRates';
-import AssociateMenuDocs from '../components/resources/associates/AssociateMenuDocs';
-import AssociateMenuEvv from '../components/resources/associates/AssociateMenuEvv';
-import PhysicianContactsInfo from '../components/resources/physicians/PhysicianContactsInfo';
-import PhysicianNotes from '../components/resources/physicians/PhysicianNotes';
-import PhysicianCredentials from '../components/resources/physicians/PhysicianCredentials';
-import PhysicianDocuments from '../components/resources/physicians/PhysicianDocuments';
-import PhysicianWebsite from '../components/resources/physicians/PhysicianWebsite';
+import AssociateMenuPayroll from '../components/resources/associates/AssociateMenuPayroll/index';
+import AssociateMenuPayRates from '../components/resources/associates/AssociateMenuPayRates/index';
+import AssociateMenuDocs from '../components/resources/associates/AssociateMenuDocs/index';
+import AssociateMenuEvv from '../components/resources/associates/AssociateMenuEvv/index';
+import PhysicianContactsInfo from '../components/resources/physicians/PhysicianContactsInfo/index';
+import PhysicianNotes from '../components/resources/physicians/PhysicianNotes/index';
+import PhysicianCredentials from '../components/resources/physicians/PhysicianCredentials/index';
+import PhysicianDocuments from '../components/resources/physicians/PhysicianDocuments/index';
+import PhysicianWebsite from '../components/resources/physicians/PhysicianWebsite/index';
 import PhysicianOrders from '../components/resources/physicians/PhysicianOrders';
 import FacilityContactsInfo from '../components/resources/facilities/FacilityContactsInfo';
 import FacilityNotes from '../components/resources/facilities/FacilityNotes';
@@ -1304,15 +1304,21 @@ export const notesData = [
 export const employmentReq = [
   {
     item: '2 forms of identification',
-    lastModifiedBy: 'Velasquez Mirna',
-    lastModifiedByDate: new Date().toLocaleDateString(),
-    comment: 'Hello World',
-    complaint: true,
-    completed: new Date().toLocaleDateString(),
-    renewal: new Date().toLocaleDateString(),
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
+    lastModifiedBy: '',
+    lastModifiedByDate: '',
+    comment: '',
+    complaint: false,
+    completed: '',
+    renewal: '',
   },
   {
     item: '2 referance verification',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1322,6 +1328,9 @@ export const employmentReq = [
   },
   {
     item: 'Background Check',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Peggy',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1331,15 +1340,21 @@ export const employmentReq = [
   },
   {
     item: 'Consumer Affairs',
-    lastModifiedBy: 'Destiny',
-    lastModifiedByDate: new Date().toLocaleDateString(),
-    comment: 'Hello World',
-    complaint: true,
-    completed: new Date().toLocaleDateString(),
-    renewal: new Date().toLocaleDateString(),
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
+    lastModifiedBy: '',
+    lastModifiedByDate: '',
+    comment: '',
+    complaint: '',
+    completed: '',
+    renewal: '',
   },
   {
     item: 'Employee Handbook',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Destiny',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1349,6 +1364,9 @@ export const employmentReq = [
   },
   {
     item: 'Employment Verification Authorization',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Jerry',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1358,6 +1376,9 @@ export const employmentReq = [
   },
   {
     item: 'Evaluation Date',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Joseph',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1367,6 +1388,9 @@ export const employmentReq = [
   },
   {
     item: 'HIPAA Class',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Nicholas',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1376,6 +1400,9 @@ export const employmentReq = [
   },
   {
     item: '19 Renewal Date',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1385,6 +1412,9 @@ export const employmentReq = [
   },
   {
     item: '19 Renewal Date',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1394,15 +1424,21 @@ export const employmentReq = [
   },
   {
     item: 'Interview Questionary',
-    lastModifiedBy: 'Guest',
-    lastModifiedByDate: new Date().toLocaleDateString(),
-    comment: 'Hello World',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
+    lastModifiedBy: '',
+    lastModifiedByDate: '',
+    comment: '',
     complaint: false,
-    completed: new Date().toLocaleDateString(),
-    renewal: new Date().toLocaleDateString(),
+    completed: '',
+    renewal: '',
   },
   {
     item: 'Job Description',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1412,15 +1448,21 @@ export const employmentReq = [
   },
   {
     item: 'Liability Insurance',
-    lastModifiedBy: 'Guest',
-    lastModifiedByDate: new Date().toLocaleDateString(),
-    comment: 'Hello World',
-    complaint: true,
-    completed: new Date().toLocaleDateString(),
-    renewal: new Date().toLocaleDateString(),
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
+    lastModifiedBy: '',
+    lastModifiedByDate: '',
+    comment: '',
+    complaint: false,
+    completed: '',
+    renewal: '',
   },
   {
     item: 'OSHA',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
@@ -1430,12 +1472,294 @@ export const employmentReq = [
   },
   {
     item: 'Resume',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
     lastModifiedBy: 'Guest',
     lastModifiedByDate: new Date().toLocaleDateString(),
     comment: 'Hello World',
     complaint: true,
     completed: new Date().toLocaleDateString(),
     renewal: new Date().toLocaleDateString(),
+  },
+];
+
+export const medicalReq = [
+  {
+    item: 'COVID 19',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
+    lastModifiedBy: '',
+    lastModifiedByDate: '',
+    comment: '',
+    complaint: false,
+    completed: '',
+    renewal: '',
+  },
+  {
+    item: 'Hepatitis B',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: false,
+    completed: new Date().toLocaleDateString(),
+    renewal: '',
+  },
+  {
+    item: 'Measless/Mups',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
+    lastModifiedBy: 'Peggy',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Physical Exam',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
+    lastModifiedBy: '',
+    lastModifiedByDate: '',
+    comment: '',
+    complaint: '',
+    completed: '',
+    renewal: '',
+  },
+  {
+    item: 'Quantiferon Gold Test',
+    hasResult: true,
+    hasCompleted: true,
+    hasRenewal: false,
+    lastModifiedBy: 'Destiny',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Rubella',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
+    lastModifiedBy: 'Jerry',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Rubeola',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
+    lastModifiedBy: 'Joseph',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'T-dap',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
+    lastModifiedBy: 'Nicholas',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: false,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Tuberculine Skin Test ',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+  {
+    item: 'Varicella',
+    hasResult: false,
+    hasCompleted: false,
+    hasRenewal: true,
+    lastModifiedBy: 'Guest',
+    lastModifiedByDate: new Date().toLocaleDateString(),
+    comment: 'Hello World',
+    complaint: true,
+    completed: new Date().toLocaleDateString(),
+    renewal: new Date().toLocaleDateString(),
+  },
+];
+
+export const payrateData = [
+  {
+    description: 'DB - LPN/LVN ROUTINE VISIT - 15 MIN',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - LPN/LVN ROUTINE DIRECT CARE - Hourly',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - LPN/LVN ROUTINE DIRECT CARE - Per Visit',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - LPN/LVN ROUTINE TEACHING - Per Visit',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - RN MANAGEMENT AND EVALUATION - Per Visit',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - RN PEDIATRIC ADMISSION ASSESSMENT',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - RN SUPERVISORY VISIT - HHA',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'DB - RN ASSESSMENT - 15 MIN',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+  {
+    description: 'HSP - RN Psychiatric Nurse SOC with Oasis',
+    weekdayRate: 100,
+    weekendRate: 100,
+    allowOverride: true,
+    startDate: new Date().toLocaleDateString(),
+  },
+];
+
+export const evvVisitData = [
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Start Care',
+    // patientName: 'Jessie James',
+    // typeOfService: 'Personal Care Aide - Hourly',
+    // gpsLocation: '846 12th St SW, Huron, SD 57350, USA',
+    note: 'Jessie James (Personal Care Aide - Hourly) 846 12th St SW, Huron, SD 57350, USA',
+  },
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Start Care',
+    // patientName: 'Jessie James',
+    // typeOfService: 'Personal Care Aide - Hourly',
+
+    // gpsLocation: '1225 Minnesota Ave SW, Huron, SD 57350, USA',
+    note: 'Jessie James (Personal Care Aide - Hourly) 1225 Minnesota Ave SW, Huron, SD 57350, USA',
+  },
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Start Care',
+    // patientName: 'Jessie James',
+    // typeOfService: 'Personal Care Aide - Hourly',
+
+    // gpsLocation: '1225 Minnesota Ave SW, Huron, SD 57350, USA',
+    note: 'Jessie James (Personal Care Aide - Hourly) 1225 Minnesota Ave SW, Huron, SD 57350, USA',
+  },
+];
+
+export const evvDrivingData = [
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Stop Mileage',
+    note: '225 Iowa Ave SE, Huron, SD 57350, USA Washechek, Ricky (Homemaker)',
+  },
+  {
+    date: `${new Date().toLocaleString()}-${
+      new Date().toUTCString().split(' ')[5]
+    }  `,
+    type: 'Start Mileage',
+    note: '1225 Minnesota Ave SW, Huron, SD 57350, USA Washechek, Ricky (Homemaker)',
+  },
+];
+
+export const resourceManagement = [
+  { id: 1, name: 'RESOURCE MANAGEMENT', hasChild: true, expanded: true },
+  { id: 2, pid: 1, name: 'Associate', hasChild: true, expanded: true },
+  { id: 3, pid: 2, name: 'View Associate' },
+  { id: 4, pid: 2, name: 'Add Associate' },
+  { id: 5, pid: 2, name: 'Edit Associate' },
+  { id: 6, pid: 2, name: 'Delete Associate' },
+  { id: 7, pid: 2, name: 'Edit Completed Associate Forms' },
+  { id: 8, pid: 2, name: 'Delete Completed Associate Forms' },
+  { id: 9, pid: 2, name: 'View Associate Forms' },
+  { id: 10, pid: 2, name: 'Add Associate Forms' },
+  { id: 11, pid: 2, name: 'Edit Associate Forms' },
+  { id: 12, pid: 2, name: 'Delete Associate Forms' },
+  { id: 13, pid: 2, name: 'View Associate Payroll' },
+];
+
+export const patientManagement = [
+  { id: 1, name: 'PATIENT MANAGEMENT', hasChild: true, expanded: true },
+  { id: 2, pid: 1, name: 'Add Referral/Patient' },
+  { id: 3, pid: 1, name: 'Transition Patients' },
+  { id: 4, pid: 1, name: 'View Patient Encounters' },
+  { id: 5, pid: 1, name: 'View Imcomplete Referrals' },
+  { id: 6, pid: 1, name: 'View Encounter Disaster Plans' },
+  { id: 7, pid: 1, name: 'Do Not Restrict to Patient Served' },
+  { id: 8, pid: 1, name: 'Edit Patient' },
+  { id: 9, pid: 1, name: 'Manage Patient Schedules' },
+  { id: 10, pid: 1, name: 'Manage My Patient Schedules' },
+  { id: 11, pid: 1, name: 'View Schedules' },
+  { id: 12, pid: 1, name: 'View Verified Services' },
+  {
+    id: 14,
+    pid: 1,
+    name: 'View Verifications',
+    hasChild: true,
+    expanded: true,
   },
 ];
 
@@ -1448,3 +1772,22 @@ export const employmentReq = [
 // ordertype
 // form based on ordertype
 //
+
+// |-- @syncfusion/ej2-react-navigations
+//     |-- @syncfusion/ej2-base
+//     |-- @syncfusion/ej2-data
+//     |-- @syncfusion/ej2-react-base
+//     |-- @syncfusion/ej2-navigations
+//         |-- @syncfusion/ej2-lists
+//         |-- @syncfusion/ej2-inputs
+//         |-- @syncfusion/ej2-popups
+//             |-- @syncfusion/ej2-buttons
+
+// npm install @syncfusion/ej2-react-navigations --save
+
+/* import the TreeView dependency styles */
+
+// @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-react-navigations/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";

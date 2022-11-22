@@ -43,9 +43,7 @@ const CreateNote = ({ setDocument }) => {
                     <span className="text-primary-orange">*</span>Note Type:
                   </p>
                   <div>
-                    <div className="rounded border border-secondary-blue shadow-sm">
-                      <TableSelect options={['General', 'Option2']} />
-                    </div>
+                    <TableSelect options={['General', 'Option2']} />
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

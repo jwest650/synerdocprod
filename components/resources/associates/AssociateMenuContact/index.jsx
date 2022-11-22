@@ -1,6 +1,6 @@
 import AssociateCreateEmergencyContact from './AssociateCreateEmergencyContact';
 import AssociateCreatePhone from './AssociateCreatePhone';
-import AssociateCreateReferralSource from './AssociateCreateReferralSource';
+import AssociateCreateContactInfo from './AssociateCreateContactInfo';
 
 const AssociateMenuContact = () => {
   return (
@@ -10,7 +10,7 @@ const AssociateMenuContact = () => {
           <div className="w-full border-primary-gray py-5 md:border-r md:pr-14">
             <div className="mb-5 flex  items-center gap-3">
               <h2 className="verdana16 font-semibold">Address/ Phone Info </h2>
-              <AssociateCreateReferralSource />
+              <AssociateCreateContactInfo />
             </div>
             <p className="verdana12">
               No addresses have been added for this associate

@@ -2,11 +2,9 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Select,
   useDisclosure,
 } from '@chakra-ui/react';
 import { BsEye } from 'react-icons/bs';
-import { FcSearch } from 'react-icons/fc';
 
 const ViewOrder = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

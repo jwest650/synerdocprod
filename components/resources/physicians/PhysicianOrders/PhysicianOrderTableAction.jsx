@@ -1,7 +1,5 @@
-import Link from 'next/link';
 import { useState } from 'react';
 import { FiSettings, FiTrash2 } from 'react-icons/fi';
-import { BsEye } from 'react-icons/bs';
 import ViewOrder from './ViewOrder';
 
 const PhysicianOrderTableAction = () => {
