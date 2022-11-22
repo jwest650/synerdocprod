@@ -1,9 +1,16 @@
+import { useRouter } from 'next/router';
 import React from 'react';
+import PhysicianAncillaryPhoneTable from './PhysicianAncillaryPhoneTable';
+import PhysicianContactInfoTable from './PhysicianContactInfoTable';
 import PhysicianCreateContact from './PhysicianCreateContact';
 import PhysicianCreateContactInfo from './PhysicianCreateContactInfo';
 import PhysicianCreatePhone from './PhysicianCreatePhone';
+import PhysicianReferralSourceContactsTable from './PhysicianReferralSourceContactsTable';
 
 const PhysicianContactsInfo = () => {
+  const router = useRouter();
+  const physicianUrl = router.asPath.split('/')[3];
+
   return (
     <div>
       <div className="mx-2 my-14 md:mx-9">
@@ -13,9 +20,7 @@ const PhysicianContactsInfo = () => {
               <h2 className="verdana16 font-semibold">Address/ Phone Info </h2>
               <PhysicianCreateContactInfo />
             </div>
-            <p className="verdana12">
-              No addresses have been added for this doctor
-            </p>
+            <PhysicianContactInfoTable />
           </div>
           <div className="w-full py-5 md:pl-8">
             <div className="mb-5 flex  items-center gap-3">
@@ -24,9 +29,7 @@ const PhysicianContactsInfo = () => {
               </h2>
               <PhysicianCreateContact />
             </div>
-            <p className="verdana12">
-              No contacts have been added for this Referral Source
-            </p>
+            <PhysicianReferralSourceContactsTable physicianUrl={physicianUrl} />
           </div>
         </div>
         <div className="mt-20 w-[50%] border-primary-gray py-5 md:border-r">
@@ -34,9 +37,7 @@ const PhysicianContactsInfo = () => {
             <h2 className="verdana16 font-semibold">Ancillary Phone Info </h2>
             <PhysicianCreatePhone />
           </div>
-          <p className="verdana12">
-            No phone numbers have been added for this doctor
-          </p>
+          <PhysicianAncillaryPhoneTable />
         </div>
       </div>
     </div>

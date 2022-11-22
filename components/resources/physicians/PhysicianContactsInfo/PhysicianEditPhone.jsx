@@ -4,10 +4,9 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
-import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../../structure/TableSelect';
 
-const PhysicianCreatePhone = () => {
+const PhysicianEditPhone = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -18,10 +17,9 @@ const PhysicianCreatePhone = () => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1  "
+        className="flex cursor-pointer items-center text-primary-orange underline  "
       >
-        <BiPlus className="scale-150" />
-        <span className="verdana11">Create Phone</span>
+        [Edit]
       </span>
       <Modal isOpen={isOpen} size={'2xl'} onClose={onClose}>
         <ModalOverlay />
@@ -29,11 +27,9 @@ const PhysicianCreatePhone = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">
-                Create Ancillary Phone Info
+                edit Ancillary Phone Info
               </h1>
-              <p className="verdana12">
-                Select a phone number type and enter phone number.{' '}
-              </p>
+              <p className="verdana12">Edit an existing phone number. </p>
               <div className="verdana12 mt-14">
                 <div className="flex w-full flex-col items-center gap-3.5">
                   <div className="flex w-full items-center justify-center gap-3 ">
@@ -41,7 +37,7 @@ const PhysicianCreatePhone = () => {
                       <span className="text-primary-orange">*</span>Phone Type:
                     </p>
                     <div className=" flex w-[65%] items-center">
-                      <TableSelect options={['Work', 'Option2']} />
+                      <TableSelect options={['Work', 'Fax']} />
                     </div>
                   </div>
 
@@ -93,4 +89,4 @@ const PhysicianCreatePhone = () => {
   );
 };
 
-export default PhysicianCreatePhone;
+export default PhysicianEditPhone;

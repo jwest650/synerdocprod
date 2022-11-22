@@ -2,13 +2,15 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
+  Select,
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
 import { FcEmptyTrash } from 'react-icons/fc';
+import { FiTrash2 } from 'react-icons/fi';
 import TableSelect from '../../../structure/TableSelect';
 
-const PhysicianCreateContactInfo = () => {
+const PhysicianEditAddressInfo = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -19,10 +21,9 @@ const PhysicianCreateContactInfo = () => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1"
+        className="verdana10 flex cursor-pointer items-center text-primary-orange underline"
       >
-        <BiPlus className="scale-150" />
-        <span className="verdana11">Create Contact Info</span>
+        [Edit]
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
@@ -30,11 +31,10 @@ const PhysicianCreateContactInfo = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">
-                Create Address/Phone Info
+                Edit Address/Phone Info
               </h1>
               <p className="verdana12">
-                Select an address type and enter address details. Then add
-                relevant phone numbers. Finally, hit &quot;Save&quot;
+                Edit existing address and phone number details.{' '}
               </p>
               <div className="mt-16 flex flex-col items-center lg:flex-row lg:items-start">
                 <div className="mr-3 w-[65%] border-primary-gray lg:border-r">
@@ -170,7 +170,6 @@ const PhysicianCreateContactInfo = () => {
                         <th className="th-first">Preferred </th>
                         <th className="th-middle">Phone Type</th>
                         <th className="th-middle">Phone</th>
-
                         <th className="th-last"></th>
                       </tr>
                     </thead>
@@ -188,7 +187,6 @@ const PhysicianCreateContactInfo = () => {
                         <td className="td-primary w-56 px-4">
                           (318) 576-9999{' '}
                         </td>
-
                         <td className="td-primary px-4">
                           <FcEmptyTrash className="scale-150" />
                         </td>
@@ -206,7 +204,6 @@ const PhysicianCreateContactInfo = () => {
                         <td className="td-primary w-56 px-4">
                           (318) 576-9999{' '}
                         </td>
-
                         <td className="td-primary px-4">
                           <FcEmptyTrash className="scale-150" />
                         </td>
@@ -238,4 +235,4 @@ const PhysicianCreateContactInfo = () => {
   );
 };
 
-export default PhysicianCreateContactInfo;
+export default PhysicianEditAddressInfo;

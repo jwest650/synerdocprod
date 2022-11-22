@@ -7,7 +7,7 @@ import {
 import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../../structure/TableSelect';
 
-const PhysicianCreateContact = () => {
+const PhysicianEditReferralSourceContact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -18,10 +18,9 @@ const PhysicianCreateContact = () => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1"
+        className="flex cursor-pointer items-center text-primary-orange underline"
       >
-        <BiPlus className="scale-150" />
-        <span className="verdana11">Create Contact</span>
+        [Edit]
       </span>
       <Modal isOpen={isOpen} size={'3xl'} onClose={onClose}>
         <ModalOverlay />
@@ -29,10 +28,10 @@ const PhysicianCreateContact = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">
-                Create Referral Source Contact
+                Edit Referral Source Contact
               </h1>
               <p className="verdana12">
-                Create Referral Source Contact Information
+                Edit Referral Source Contact Information
               </p>
               <div className="verdana12 mt-14">
                 <div className="flex w-full flex-col items-center gap-3.5">
@@ -115,4 +114,4 @@ const PhysicianCreateContact = () => {
   );
 };
 
-export default PhysicianCreateContact;
+export default PhysicianEditReferralSourceContact;

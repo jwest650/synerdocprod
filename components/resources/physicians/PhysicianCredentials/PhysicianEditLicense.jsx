@@ -5,9 +5,10 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
+import { FcEditImage } from 'react-icons/fc';
 import TableSelect from '../../../structure/TableSelect';
 
-const PhysicianCreatePhone = () => {
+const PhysicianEditLicense = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -18,54 +19,60 @@ const PhysicianCreatePhone = () => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1  "
+        className="mr-5 border-r border-primary-gray py-2 pr-5"
       >
-        <BiPlus className="scale-150" />
-        <span className="verdana11">Create Phone</span>
+        <FcEditImage className="scale-150" />
       </span>
-      <Modal isOpen={isOpen} size={'2xl'} onClose={onClose}>
+      <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">
-                Create Ancillary Phone Info
-              </h1>
-              <p className="verdana12">
-                Select a phone number type and enter phone number.{' '}
-              </p>
+              <h1 className="verdana18 font-semibold">Edit License</h1>
+              <p className="verdana12">Edit the license details</p>
               <div className="verdana12 mt-14">
                 <div className="flex w-full flex-col items-center gap-3.5">
                   <div className="flex w-full items-center justify-center gap-3 ">
                     <p className="flex w-[35%]  justify-end">
-                      <span className="text-primary-orange">*</span>Phone Type:
+                      <span className="text-primary-orange">*</span>License
+                      Number:
                     </p>
-                    <div className=" flex w-[65%] items-center">
-                      <TableSelect options={['Work', 'Option2']} />
+                    <div className=" flex w-[65%] gap-2">
+                      <input type="text" className="input-primary" />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[35%] justify-end">
+                      {' '}
+                      <span className="text-primary-orange">*</span> Sate:
+                    </p>
+                    <div className=" flex w-[65%] items-center gap-2">
+                      <TableSelect options={['Louisiana', 'Option2']} />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[35%] justify-end">Expiration Date:</p>
+                    <div className=" flex w-[65%] items-center gap-2">
+                      <input type="date" className="input-primary" />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[35%] justify-end">
+                      Verification Date:
+                    </p>
+                    <div className=" flex w-[65%] ">
+                      <input type="date" className="input-primary" />
                     </div>
                   </div>
 
                   <div className="flex w-full items-center justify-center gap-3 ">
                     <p className="flex w-[35%] justify-end">
-                      {' '}
-                      <span className="text-primary-orange">*</span> Phone :
+                      <span className="text-primary-orange">*</span>Status:
                     </p>
-                    <div className=" flex w-[65%] items-center gap-2">
-                      (<input type="text" className="input-primary w-16" />)
-                      <input type="text" className="input-primary w-16" />-
-                      <input type="text" className="input-primary w-16" />
-                    </div>
-                  </div>
-                  <div className="flex w-full items-center justify-center gap-3 ">
-                    <p className="flex w-[35%] justify-end">Extension:</p>
-                    <div className=" flex w-[65%] items-center gap-2">
-                      <input type="text" className="input-primary w-14" />
-                    </div>
-                  </div>
-                  <div className="flex w-full items-center justify-center gap-3 ">
-                    <p className="flex w-[35%] justify-end">Description:</p>
                     <div className=" flex w-[65%] ">
-                      <textarea className="input-primary" />
+                      <TableSelect
+                        options={['Active', 'Pending', 'Terminated']}
+                      />
                     </div>
                   </div>
                 </div>
@@ -93,4 +100,4 @@ const PhysicianCreatePhone = () => {
   );
 };
 
-export default PhysicianCreatePhone;
+export default PhysicianEditLicense;

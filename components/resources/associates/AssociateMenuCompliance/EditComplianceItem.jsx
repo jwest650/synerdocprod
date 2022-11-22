@@ -45,7 +45,7 @@ const EditComplianceItem = ({ option, category }) => {
                 <div>
                   <input
                     type="text"
-                    value={option.item}
+                    value={option?.item}
                     disabled
                     className="input-primary"
                   />

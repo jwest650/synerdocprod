@@ -1,4 +1,3 @@
-import React from 'react';
 import { FcInfo } from 'react-icons/fc';
 
 const EachPhysicianHeader = ({ physicianUrl }) => {
