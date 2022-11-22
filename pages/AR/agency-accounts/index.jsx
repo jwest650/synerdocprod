@@ -22,17 +22,21 @@ const AgencyAccounts = () => {
                 <h1 className="head  capitalize">agency accounts</h1>
                 <aside className="flex items-center space-x-40">
                     <div className="flex space-x-2">
-                        <label htmlFor="">Agency:</label>
+                        <label htmlFor="" className="font-bold">
+                            Agency:
+                        </label>
 
-                        <Select placeholder="Select option" size="xs" w={150}>
+                        <Select placeholder="Select option" size="xs" w={130}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
                     </div>
                     <div className="flex space-x-2">
-                        <label htmlFor="">Payment Type:</label>
-                        <Select placeholder="Select option" size="xs" w={150}>
+                        <label htmlFor="" className="font-bold">
+                            Payment Type:
+                        </label>
+                        <Select placeholder="Select option" size="xs" w={130}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>

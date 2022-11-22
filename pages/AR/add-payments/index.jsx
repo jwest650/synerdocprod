@@ -16,7 +16,7 @@ const AddPayments = () => {
                     <article className="flex space-x-5">
                         <section className="space-y-3">
                             <div>
-                                <label htmlFor="">
+                                <label htmlFor="" className="font-bold">
                                     {" "}
                                     <span className="text-orange-500">
                                         *
@@ -26,7 +26,7 @@ const AddPayments = () => {
                             </div>
                             <div>
                                 {" "}
-                                <label htmlFor="">
+                                <label htmlFor="" className="font-bold">
                                     {" "}
                                     <span className="text-orange-500">
                                         *
@@ -35,7 +35,7 @@ const AddPayments = () => {
                                 </label>
                             </div>
                             <div>
-                                <label htmlFor="">
+                                <label htmlFor="" className="font-bold">
                                     {" "}
                                     <span className="text-orange-500">
                                         *
@@ -44,7 +44,7 @@ const AddPayments = () => {
                                 </label>
                             </div>
                             <div>
-                                <label htmlFor="">
+                                <label htmlFor="" className="font-bold">
                                     {" "}
                                     <span className="text-orange-500">
                                         *
@@ -53,7 +53,7 @@ const AddPayments = () => {
                                 </label>
                             </div>
                             <div>
-                                <label htmlFor="">
+                                <label htmlFor="" className="font-bold">
                                     {" "}
                                     <span className="text-orange-500">
                                         *
@@ -62,10 +62,14 @@ const AddPayments = () => {
                                 </label>
                             </div>
                             <div>
-                                <label htmlFor="">reference number:</label>
+                                <label htmlFor="" className="font-bold">
+                                    reference number:
+                                </label>
                             </div>
                             <div>
-                                <label htmlFor="">apply payments to:</label>
+                                <label htmlFor="" className="font-bold">
+                                    apply payments to:
+                                </label>
                             </div>
                             <div className="flex items-center space-x-2 pt-10">
                                 <FcSearch />
@@ -79,7 +83,7 @@ const AddPayments = () => {
                                 <Select
                                     placeholder="Select option"
                                     size="xs"
-                                    w={120}
+                                    w={130}
                                 >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
@@ -91,7 +95,7 @@ const AddPayments = () => {
                                 <Select
                                     placeholder="Select option"
                                     size="xs"
-                                    w={120}
+                                    w={130}
                                 >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
@@ -99,22 +103,22 @@ const AddPayments = () => {
                                 </Select>
                             </div>
                             <div>
-                                <Input w={120} type="text" size="xs" />
+                                <Input w={130} type="text" size="xs" />
                             </div>
                             <div>
-                                <Input w={120} type="text" size="xs" />
+                                <Input w={130} type="text" size="xs" />
                             </div>
                             <div>
-                                <Input w={120} type="date" size="xs" />
+                                <Input w={130} type="date" size="xs" />
                             </div>
                             <div>
-                                <Input w={120} type="date" size="xs" />
+                                <Input w={130} type="date" size="xs" />
                             </div>
                             <div>
                                 <Select
                                     placeholder="Select option"
                                     size="xs"
-                                    w={120}
+                                    w={130}
                                 >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
@@ -131,11 +135,13 @@ const AddPayments = () => {
                             </p>
                         </div>
                         <div className="flex space-x-5">
-                            <label htmlFor="">Note type:</label>
+                            <label htmlFor="" className="font-bold">
+                                Note type:
+                            </label>
                             <Select
                                 placeholder="Select option"
                                 size="xs"
-                                w={120}
+                                w={130}
                             >
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -144,7 +150,9 @@ const AddPayments = () => {
                         </div>
                         <div className="flex space-x-5">
                             <div>
-                                <label htmlFor="">Note:</label>
+                                <label htmlFor="" className="font-bold">
+                                    Note:
+                                </label>
                                 <p>abc</p>
                                 <FcCheckmark className="text-xl font-bold" />
                             </div>
