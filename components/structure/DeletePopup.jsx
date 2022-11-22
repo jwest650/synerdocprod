@@ -9,6 +9,7 @@ import { FcEmptyTrash } from 'react-icons/fc';
 const DeletePopup = ({ toDelete, setAction, deleteIcon }) => {
   // toDelete is a text of what is being deleted
   // define a state  and pass the setState to setAction prop to get the user action
+  // set deleteIcon to true if you want to display a trash icon
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -28,11 +29,11 @@ const DeletePopup = ({ toDelete, setAction, deleteIcon }) => {
           </span>
         )}
       </span>
-      <Modal isOpen={isOpen} size={'lg'} onClose={onClose}>
+      <Modal isOpen={isOpen} size={'md'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10">
-            <h1 className="verdana14 font-semibold">
+            <h1 className="verdana12 font-semibold">
               Are you sure you want to delete this {toDelete}?
             </h1>
             <div className="mt-8 flex w-full justify-center gap-3">
