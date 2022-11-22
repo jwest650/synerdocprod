@@ -1,53 +1,46 @@
 import {
   Checkbox,
-  Input,
   Modal,
   ModalBody,
-  ModalCloseButton,
   ModalContent,
-  ModalHeader,
   ModalOverlay,
   Select,
-  Textarea,
 } from '@chakra-ui/react'
 import React from 'react'
-import { GrTableAdd } from 'react-icons/gr'
 
-const EditDisasterPlanModal = ({
-  openEditDisasterPlan,
-  setOpenEditDisasterPlan,
+const AddSpecialtySkillsModal = ({
+  openAddSpecialtySkill,
+  setOpenAddSpecialtySkill,
 }) => {
   const data = [1, 1, 1, 1]
+
   return (
     <div>
       <div>
         <Modal
-          isOpen={openEditDisasterPlan}
-          onClose={() => setOpenEditDisasterPlan(false)}
+          isOpen={openAddSpecialtySkill}
+          onClose={() => setOpenAddSpecialtySkill(false)}
           className='p-5'
         >
           <ModalOverlay />
           <ModalContent maxWidth={900} className='verdana13 '>
             <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
               {/* <ModalCloseButton /> */}
-              <ModalBody>
+              <ModalBody className='mx-auto w-[70%]'>
                 <div className='mb-3'>
-                  <h1 className=' verdana18  font-bold'>Edit Disaster plan</h1>
-                  <p className='verdana13 '>eidt information and save</p>
+                  <h1 className=' verdana18  font-bold'>Add Skills</h1>
                 </div>
 
                 <section>
-                  <table className='min-w-full overflow-auto'>
+                  <table className='w-[100%]'>
                     <thead className='thead-primary'>
                       <tr>
-                        <th className=' th-first'></th>
-                        <th className=' th-middle'>Disaster plan</th>
-                        <th className=' th-middle'>Plan Details</th>
-                        <th className=' th-last'></th>
+                        <th className='th-first '></th>
+                        <th className='th-middle'>Skill</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {data.map((data, i) => (
+                      {data.map((item, i) => (
                         <tr
                           key={i}
                           className={`border  ${
@@ -57,25 +50,14 @@ const EditDisasterPlanModal = ({
                           <td className='td-primary'>
                             <Checkbox />
                           </td>
-                          <td className='td-primary'>
-                            Patients needs Assistance
-                          </td>
-                          <td className='td-primary'>
-                            <Textarea
-                              width={'100%'}
-                              backgroundColor='white'
-                            ></Textarea>
-                          </td>
-                          <td className='td-primary'>
-                            <GrTableAdd />
-                          </td>
+                          <td className='td-primary'>Adult care</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </section>
-                <div className='flex justify-end'>
-                  <div className='my-3 ml-auto '>
+                <div className='flex justify-center'>
+                  <div className='my-3 '>
                     <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
                       Save
                     </button>
@@ -93,4 +75,4 @@ const EditDisasterPlanModal = ({
   )
 }
 
-export default EditDisasterPlanModal
+export default AddSpecialtySkillsModal

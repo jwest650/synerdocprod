@@ -2,15 +2,31 @@ import { Select } from '@chakra-ui/react'
 import React from 'react'
 import { useState } from 'react'
 import { BsPlus } from 'react-icons/bs'
+import { FcEditImage, FcEmptyTrash } from 'react-icons/fc'
+import AddAllergiesModal from './components/clinicaltab/AddAllergiesModal'
+import AddDMEModal from './components/clinicaltab/AddDMEModal'
+import AddProgramsModal from './components/clinicaltab/AddProgramsModal'
+import AddSpecialtySkillsModal from './components/clinicaltab/AddSpecialtySkillsModal'
+import AddVendorModal from './components/clinicaltab/AddVendorModal'
+import AddVitalSignModal from './components/clinicaltab/AddVitalSignModal'
 import EditClinicalAssociateModal from './components/clinicaltab/EditClinicalAssociateModal'
 import EditClinicalManagerModal from './components/clinicaltab/EditClinicalManagerModal'
 import EditDisasterPlanModal from './components/clinicaltab/EditDisasterPlanModal'
+import UploadConsentDocumentModal from './components/clinicaltab/UploadConsentDocumentModal'
 
 const ClinicalTab = () => {
   const [openEditDisasterPlan, setOpenEditDisasterPlan] = useState(false)
   const [openEditClinical, setOpenEditClinical] = useState(false)
   const [openEditClinicalAssociate, setOpenEditClinicalAssociate] =
     useState(false)
+  const [openAddSpecialtySkill, setOpenAddSpecialtySkill] = useState(false)
+  const [openAddVendor, setOpenAddVendor] = useState(false)
+  const [openUploadConsentDocument, setOpenUploadConsentDocument] =
+    useState(false)
+  const [openAddVitalSign, setOpenAddVitalSign] = useState(false)
+  const [openAddAllergy, setOpenAddAllergy] = useState(false)
+  const [openAddDME, setOpenAddDME] = useState(false)
+  const [openAddPrograms, setOpenAddPrograms] = useState(false)
   const data = [1, 1, 1, 1]
 
   return (
@@ -119,7 +135,10 @@ const ClinicalTab = () => {
         <section className='space-y-2 p-2'>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Specilty Skills</h1>
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button
+              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              onClick={() => setOpenAddSpecialtySkill(true)}
+            >
               <BsPlus className='verdana16  text-green-500' />
               add Specialty Skills
             </button>
@@ -134,7 +153,10 @@ const ClinicalTab = () => {
         <section className='space-y-2 border-l-2 p-2 '>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Programs</h1>
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button
+              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              onClick={() => setOpenAddPrograms(true)}
+            >
               <BsPlus className='verdana16  text-green-500' />
               add programs
             </button>
@@ -152,7 +174,10 @@ const ClinicalTab = () => {
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Vendors</h1>
 
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button
+              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              onClick={() => setOpenAddVendor(true)}
+            >
               <BsPlus className='verdana16  text-green-500' />
               add Vendors
             </button>
@@ -243,9 +268,9 @@ const ClinicalTab = () => {
                 <thead className='thead-primary'>
                   <tr>
                     <th className='th-first '>Advance Directives</th>
-                    <th className='th-middle'>Low Vitals</th>
-                    <th className='th-middle'></th>
-                    <th className='th-last'></th>
+                    <th className='th-middle'>Signed</th>
+                    <th className='th-middle'>Description</th>
+                    <th className='th-last'>Uploaded</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -254,9 +279,9 @@ const ClinicalTab = () => {
                       key={i}
                       className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                     >
-                      <td className='td-primary'>James Gordon</td>
-                      <td className='td-primary'>James Gordon</td>
-                      <td className='td-primary'>James Gordon</td>
+                      <td className='td-primary'>Living Will</td>
+                      <td className='td-primary'>24/29/2022</td>
+                      <td className='td-primary w-[40%]'>James Gordon</td>
                       <td className='td-primary'>James Gordon</td>
                     </tr>
                   ))}
@@ -274,9 +299,12 @@ const ClinicalTab = () => {
               Consent and Notices
             </h1>
 
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button
+              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              onClick={() => setOpenUploadConsentDocument(true)}
+            >
               <BsPlus className='verdana16  text-green-500' />
-              add consent Notice
+              upload Documents
             </button>
           </div>
 
@@ -284,7 +312,7 @@ const ClinicalTab = () => {
             <div>
               <p
                 className='cursor-pointer px-2 py-2 text-secondary-color underline'
-                onClick={() => setOpenEditDisasterPlan(true)}
+                onClick={() => setOpenUploadConsentDocument(true)}
               >
                 Edit
               </p>
@@ -294,11 +322,11 @@ const ClinicalTab = () => {
               <table>
                 <thead className='thead-primary'>
                   <tr>
-                    <th className='th-first '>Concent Notice</th>
-                    <th className='th-middle'>Low Vitals</th>
-                    <th className='th-middle'>High Vitals</th>
-                    <th className='th-middle'></th>
-                    <th className='th-last'></th>
+                    <th className='th-first '>Concent or Notice</th>
+                    <th className='th-middle'>Signed</th>
+                    <th className='th-middle'>Description</th>
+                    <th className='th-middle'>Documents</th>
+                    <th className='th-last'>Uploaded</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -307,9 +335,9 @@ const ClinicalTab = () => {
                       key={i}
                       className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                     >
+                      <td className='td-primary'>Assignment of Benefits</td>
                       <td className='td-primary'>James Gordon</td>
-                      <td className='td-primary'>James Gordon</td>
-                      <td className='td-primary'>James Gordon</td>
+                      <td className='td-primary'>Yes</td>
                       <td className='td-primary'>James Gordon</td>
                       <td className='td-primary'>James Gordon</td>
                     </tr>
@@ -323,7 +351,10 @@ const ClinicalTab = () => {
         <section className='space-y-2 border-l-2 p-2'>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>DME</h1>
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button
+              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              onClick={() => setOpenAddDME(true)}
+            >
               <BsPlus className='verdana16  text-green-500' />
               add DME
             </button>
@@ -343,11 +374,11 @@ const ClinicalTab = () => {
               <table>
                 <thead className='thead-primary'>
                   <tr>
-                    <th className='th-first '>DME</th>
-                    <th className='th-middle'>Low Vitals</th>
-                    <th className='th-middle'>High Vitals</th>
-                    <th className='th-middle'></th>
-                    <th className='th-last'></th>
+                    <th className='th-first '>Name</th>
+                    <th className='th-middle'>Vendor</th>
+                    <th className='th-middle'>Delivery</th>
+                    <th className='th-middle'>Return</th>
+                    <th className='th-last'>Comments</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -377,7 +408,10 @@ const ClinicalTab = () => {
               Vital sign Parameters
             </h1>
 
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button
+              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              onClick={() => setOpenAddVitalSign(true)}
+            >
               <BsPlus className='verdana16  text-green-500' />
               add Vitals
             </button>
@@ -386,7 +420,7 @@ const ClinicalTab = () => {
             <table>
               <thead className='thead-primary'>
                 <tr>
-                  <th className='th-first w-[60%]'>Vital Parameters</th>
+                  <th className='th-first w-[60%]'>Vital Description</th>
                   <th className='th-middle'>Low Vitals</th>
                   <th className='th-middle'>High Vitals</th>
                   <th className='th-middle'></th>
@@ -399,11 +433,22 @@ const ClinicalTab = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
+                    <td className='td-primary'>Tempreture</td>
+                    <td className='td-primary'>96.0</td>
+                    <td className='td-primary'>101.9</td>
+                    <td className='td-primary'>
+                      <span
+                        className='px-3'
+                        onClick={() => setOpenAddVitalSign(true)}
+                      >
+                        <FcEditImage />
+                      </span>
+                    </td>
+                    <td className='td-primary'>
+                      <span className='table-action-anim px-1 text-orange-600'>
+                        <FcEmptyTrash />
+                      </span>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -414,7 +459,10 @@ const ClinicalTab = () => {
         <section className='space-y-2 border-l-2 p-2'>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Allergies</h1>
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button
+              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              onClick={() => setOpenAddAllergy(true)}
+            >
               <BsPlus className='verdana16  text-green-500' />
               add Allergies
             </button>
@@ -424,12 +472,12 @@ const ClinicalTab = () => {
             <table>
               <thead className='thead-primary'>
                 <tr>
-                  <th className='th-first '>Allergy Parameters</th>
-                  <th className='th-middle'></th>
-                  <th className='th-middle'></th>
-                  <th className='th-middle'></th>
-                  <th className='th-middle'></th>
-                  <th className='th-middle'></th>
+                  <th className='th-first '>Allergy Description</th>
+                  <th className='th-middle'>Created By User</th>
+                  <th className='th-middle'>Modified By User</th>
+                  <th className='th-middle'>Start Date</th>
+                  <th className='th-middle'>End Date</th>
+                  <th className='th-middle'>Status</th>
                   <th className='th-middle'></th>
                   <th className='th-last'></th>
                 </tr>
@@ -457,14 +505,24 @@ const ClinicalTab = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
+                    <td className='td-primary'>No known allergies</td>
                     <td className='td-primary'>James Gordon</td>
                     <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
-                    <td className='td-primary'>James Gordon</td>
+                    <td className='td-primary'>12/12/22</td>
+                    <td className='td-primary'>12/12/22</td>
+                    <td className='td-primary'>
+                      <p className='text-green-700'>Active</p>
+                    </td>
+                    <td className='td-primary'>
+                      <span className='px-3'>
+                        <FcEditImage />
+                      </span>
+                    </td>
+                    <td className='td-primary'>
+                      <span className='table-action-anim px-1 text-orange-600'>
+                        <FcEmptyTrash />
+                      </span>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -485,6 +543,31 @@ const ClinicalTab = () => {
       <EditClinicalAssociateModal
         openEditClinicalAssociate={openEditClinicalAssociate}
         setOpenEditClinicalAssociate={setOpenEditClinicalAssociate}
+      />
+      <AddSpecialtySkillsModal
+        openAddSpecialtySkill={openAddSpecialtySkill}
+        setOpenAddSpecialtySkill={setOpenAddSpecialtySkill}
+      />
+      <AddVendorModal
+        openAddVendor={openAddVendor}
+        setOpenAddVendor={setOpenAddVendor}
+      />
+      <UploadConsentDocumentModal
+        openUploadConsentDocument={openUploadConsentDocument}
+        setOpenUploadConsentDocument={setOpenUploadConsentDocument}
+      />
+      <AddVitalSignModal
+        openAddVitalSign={openAddVitalSign}
+        setOpenAddVitalSign={setOpenAddVitalSign}
+      />
+      <AddAllergiesModal
+        openAddAllergy={openAddAllergy}
+        setOpenAddAllergy={setOpenAddAllergy}
+      />
+      <AddDMEModal openAddDME={openAddDME} setOpenAddDME={setOpenAddDME} />
+      <AddProgramsModal
+        openAddPrograms={openAddPrograms}
+        setOpenAddPrograms={setOpenAddPrograms}
       />
     </div>
   )

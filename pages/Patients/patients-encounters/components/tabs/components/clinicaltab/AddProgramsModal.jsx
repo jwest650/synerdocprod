@@ -13,17 +13,14 @@ import {
 import React from 'react'
 import { GrTableAdd } from 'react-icons/gr'
 
-const EditDisasterPlanModal = ({
-  openEditDisasterPlan,
-  setOpenEditDisasterPlan,
-}) => {
-  const data = [1, 1, 1, 1]
+const AddProgramsModal = ({ openAddPrograms, setOpenAddPrograms }) => {
+  const data = []
   return (
     <div>
       <div>
         <Modal
-          isOpen={openEditDisasterPlan}
-          onClose={() => setOpenEditDisasterPlan(false)}
+          isOpen={openAddPrograms}
+          onClose={() => setOpenAddPrograms(false)}
           className='p-5'
         >
           <ModalOverlay />
@@ -32,18 +29,22 @@ const EditDisasterPlanModal = ({
               {/* <ModalCloseButton /> */}
               <ModalBody>
                 <div className='mb-3'>
-                  <h1 className=' verdana18  font-bold'>Edit Disaster plan</h1>
-                  <p className='verdana13 '>eidt information and save</p>
+                  <h1 className=' verdana18  font-bold'>Add Programs</h1>
+                  <p className='verdana13 '>
+                    Select or remove programs, edit start and end dates.
+                  </p>
                 </div>
 
                 <section>
                   <table className='min-w-full overflow-auto'>
                     <thead className='thead-primary'>
                       <tr>
-                        <th className=' th-first'></th>
-                        <th className=' th-middle'>Disaster plan</th>
-                        <th className=' th-middle'>Plan Details</th>
-                        <th className=' th-last'></th>
+                        <th className=' th-first'>
+                          <Checkbox />
+                        </th>
+                        <th className=' th-middle'>Program</th>
+                        <th className=' th-middle'>Start Date</th>
+                        <th className=' th-last'>End Date</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -60,19 +61,15 @@ const EditDisasterPlanModal = ({
                           <td className='td-primary'>
                             Patients needs Assistance
                           </td>
-                          <td className='td-primary'>
-                            <Textarea
-                              width={'100%'}
-                              backgroundColor='white'
-                            ></Textarea>
-                          </td>
-                          <td className='td-primary'>
-                            <GrTableAdd />
-                          </td>
+                          <td className='td-primary'>12/12/19</td>
+                          <td className='td-primary'>23/23/19</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
+                  <p className='w-full bg-gray-400 p-2'>
+                    No programs to display
+                  </p>
                 </section>
                 <div className='flex justify-end'>
                   <div className='my-3 ml-auto '>
@@ -93,4 +90,4 @@ const EditDisasterPlanModal = ({
   )
 }
 
-export default EditDisasterPlanModal
+export default AddProgramsModal
