@@ -1,9 +1,7 @@
 import { Input, Select } from '@chakra-ui/react';
-import { physicianOrder, physicianTableData } from '../../../assets/data';
-import Link from 'next/link';
-// import MorePhysicianInfo from './MorePhysicianInfo';
 import PhysicianOrderTableAction from './PhysicianOrderTableAction';
 import PhysicianOrderCreateOrder from './PhysicianOrderCreateOrder';
+import { physicianOrder } from '../../../../assets/data';
 
 const PhysicianOrders = () => {
   return (

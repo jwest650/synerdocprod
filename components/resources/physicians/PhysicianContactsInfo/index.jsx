@@ -1,8 +1,9 @@
-import AssociateCreateEmergencyContact from './AssociateCreateEmergencyContact';
-import AssociateCreatePhone from './AssociateCreatePhone';
-import AssociateCreateContactInfo from './AssociateCreateContactInfo';
+import React from 'react';
+import PhysicianCreateContact from './PhysicianCreateContact';
+import PhysicianCreateContactInfo from './PhysicianCreateContactInfo';
+import PhysicianCreatePhone from './PhysicianCreatePhone';
 
-const AssociateMenuContact = () => {
+const PhysicianContactsInfo = () => {
   return (
     <div>
       <div className="mx-2 my-14 md:mx-9">
@@ -10,29 +11,31 @@ const AssociateMenuContact = () => {
           <div className="w-full border-primary-gray py-5 md:border-r md:pr-14">
             <div className="mb-5 flex  items-center gap-3">
               <h2 className="verdana16 font-semibold">Address/ Phone Info </h2>
-              <AssociateCreateContactInfo />
+              <PhysicianCreateContactInfo />
             </div>
             <p className="verdana12">
-              No addresses have been added for this associate
+              No addresses have been added for this doctor
             </p>
           </div>
           <div className="w-full py-5 md:pl-8">
             <div className="mb-5 flex  items-center gap-3">
-              <h2 className="verdana16 font-semibold">Emergency Contacts</h2>
-              <AssociateCreateEmergencyContact />
+              <h2 className="verdana16 font-semibold">
+                Referral Source Contacts
+              </h2>
+              <PhysicianCreateContact />
             </div>
             <p className="verdana12">
-              No emergency contacts have been added for this associate
+              No contacts have been added for this Referral Source
             </p>
           </div>
         </div>
         <div className="mt-20 w-[50%] border-primary-gray py-5 md:border-r">
           <div className="mb-5 flex items-center gap-3">
             <h2 className="verdana16 font-semibold">Ancillary Phone Info </h2>
-            <AssociateCreatePhone />
+            <PhysicianCreatePhone />
           </div>
           <p className="verdana12">
-            No phone numbers have been added for this associate
+            No phone numbers have been added for this doctor
           </p>
         </div>
       </div>
@@ -40,4 +43,4 @@ const AssociateMenuContact = () => {
   );
 };
 
-export default AssociateMenuContact;
+export default PhysicianContactsInfo;
