@@ -6,6 +6,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
+import TableSelect from '../../../structure/TableSelect';
 
 const PhysicianOrderCreateOrder = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -16,31 +17,17 @@ const PhysicianOrderCreateOrder = () => {
         onClick={onOpen}
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
-        <BiPlus />
-        <span className="text-sm">Create Orders</span>
+        <BiPlus className="scale-150" />
+        <span className="verdana11">Create Orders</span>
       </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <div className="flex w-fit items-center gap-2">
               <span className="">Order Type:</span>
               <div className="">
-                <Select
-                  css={{ backgroundColor: '#c6d8ffe1', border: 'none' }}
-                  className="cursor-pointer shadow outline-none"
-                  size="xs"
-                >
-                  <option value="option1" className="text-gray-800">
-                    option1
-                  </option>
-                  <option value="option2" className="text-gray-800">
-                    option2
-                  </option>
-                  <option value="option3" className="text-gray-800">
-                    option3
-                  </option>
-                </Select>
+                <TableSelect options={['Option1']} />{' '}
               </div>
             </div>
             <button

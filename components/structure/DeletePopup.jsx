@@ -20,7 +20,7 @@ const DeletePopup = ({ toDelete, setAction, deleteIcon }) => {
 
   return (
     <>
-      <span onClick={onOpen} className="">
+      <span onClick={onOpen} className="cursor-pointer">
         {deleteIcon ? (
           <FcEmptyTrash className="scale-150" />
         ) : (
