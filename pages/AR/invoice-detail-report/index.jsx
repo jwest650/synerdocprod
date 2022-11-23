@@ -11,7 +11,7 @@ const InvoiceDetailReport = () => {
                 <h1 className="head">Invoice Detail Report</h1>
                 <hr />
                 <div className="ml-auto mt-2 flex w-52 space-x-2">
-                    <Select placeholder="Select option" size="xs" w={120}>
+                    <Select placeholder="Select option" size="xs" w={130}>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -19,8 +19,10 @@ const InvoiceDetailReport = () => {
                     <button className="btn">Export</button>
                 </div>
                 <div className="flex space-x-2">
-                    <label htmlFor="">Agency:</label>
-                    <Select placeholder="Select option" size="xs" w={120}>
+                    <label htmlFor="" className="font-bold">
+                        Agency:
+                    </label>
+                    <Select placeholder="Select option" size="xs" w={130}>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -28,23 +30,27 @@ const InvoiceDetailReport = () => {
                 </div>
                 <section className="mt-2 flex items-center justify-between space-x-2">
                     <div className="flex space-x-2">
-                        <label htmlFor="">payer:</label>
-                        <Select placeholder="Select option" size="xs" w={120}>
+                        <label htmlFor="" className="font-bold">
+                            payer:
+                        </label>
+                        <Select placeholder="Select option" size="xs" w={130}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </Select>
                     </div>
                     <div className="flex items-center space-x-2">
-                        <label htmlFor="inv-from">
+                        <label htmlFor="inv-from" className="font-bold">
                             invoice from dates from:
                         </label>
-                        <Input w={120} type="text" size="xs" id="inv-from" />
+                        <Input w={130} type="text" size="xs" id="inv-from" />
                         <label htmlFor="inv-from">
                             <FcCalendar className="text-xl" />
                         </label>
-                        <label htmlFor="inv-to">to:</label>
-                        <Input w={120} type="text" size="xs" id="inv-to" />
+                        <label htmlFor="inv-to" className="font-bold">
+                            to:
+                        </label>
+                        <Input w={130} type="text" size="xs" id="inv-to" />
                         <label htmlFor="inv-to">
                             <FcCalendar className="text-xl" />
                         </label>
