@@ -28,7 +28,13 @@ const PhysicianDocuments = () => {
           <tr className="verdana11 w-full even:bg-[#eee]">
             <td className="td-primary">Physician Attention</td>
             <td className="td-primary">No action needed</td>
-            <td className="td-primary text-primary-orange underline">{file}</td>
+            <td className="td-primary text-primary-orange underline">
+              {file === null
+                ? ''
+                : file[0]?.name.slice(0, 15) +
+                  '...' +
+                  file[0]?.name.split('.')[file[0]?.name.split('.').length - 1]}
+            </td>
             <td className="td-primary">John Doe</td>
             <td className="td-primary">12/23/30</td>
             <td className="td-primary">

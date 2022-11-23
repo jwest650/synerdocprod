@@ -9,7 +9,7 @@ import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../../structure/TableSelect';
 
-const UploadDocument = ({ setFileProp }) => {
+const AssociateUploadDocument = ({ setFileProp }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [file, setFile] = useState(null);
 
@@ -21,7 +21,7 @@ const UploadDocument = ({ setFileProp }) => {
   // console.log(file);
 
   const onImageChange = (event) => {
-      setFile(event.target.files);
+    setFile(event.target.files);
   };
 
   return (
@@ -56,7 +56,7 @@ const UploadDocument = ({ setFileProp }) => {
                   <div className="flex w-full items-center justify-center gap-3 ">
                     <p className="flex w-[35%] justify-end">Attach to:</p>
                     <div className=" flex w-[65%] items-center gap-2">
-                      <TableSelect options={['Physician', 'Option2']} />
+                      <TableSelect options={['Associate', 'Option2']} />
                     </div>
                   </div>
                   <div className="flex w-full items-center justify-center gap-3 ">
@@ -66,9 +66,7 @@ const UploadDocument = ({ setFileProp }) => {
                       Type:
                     </p>
                     <div className=" flex w-[65%] items-center gap-2">
-                      <TableSelect
-                        options={['Physician Attention', 'Option2']}
-                      />
+                      <TableSelect options={['Other', 'Option2']} />
                     </div>
                   </div>
                   <div className="flex w-full items-center justify-center gap-3 ">
@@ -84,7 +82,11 @@ const UploadDocument = ({ setFileProp }) => {
                   <div className="flex w-full items-center justify-center gap-3 ">
                     <p className="flex w-[35%] justify-end">Description:</p>
                     <div className=" flex w-[65%] ">
-                      <input type="text" className="input-primary" />
+                      <input
+                        type="text"
+                        placeholder="Background Check"
+                        className="input-primary"
+                      />
                     </div>
                   </div>
 
@@ -125,4 +127,4 @@ const UploadDocument = ({ setFileProp }) => {
   );
 };
 
-export default UploadDocument;
+export default AssociateUploadDocument;
