@@ -1763,6 +1763,22 @@ export const patientManagement = [
   },
 ];
 
+export const physicianRoles = [
+  'Administrators',
+  'Business  Office Manager',
+  'Demo User',
+  'HHA',
+  'Human Resources',
+  'Louisiana Labour of Love - Director',
+  'Physician Document Management',
+  'Point of Care - Clinical',
+  'Quality Assurance',
+  'Restricted Users',
+  'Service Note Review',
+  'Surveyor',
+  'View Medical Records Only',
+];
+
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status
