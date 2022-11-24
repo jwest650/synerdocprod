@@ -2,12 +2,10 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Select,
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
 import { FcEmptyTrash } from 'react-icons/fc';
-import { FiTrash2 } from 'react-icons/fi';
 import TableSelect from '../../../structure/TableSelect';
 
 const PhysicianCreateContactInfo = () => {
@@ -24,7 +22,7 @@ const PhysicianCreateContactInfo = () => {
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-150" />
-        <span>Create Contact Info</span>
+        <span className="verdana11">Create Contact Info</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
@@ -186,7 +184,25 @@ const PhysicianCreateContactInfo = () => {
                             />
                           </div>
                         </td>
-                        <td className="td-primary w-32 px-2">Mobile</td>
+                        <td className="td-primary w-32 px-2">Fax</td>
+                        <td className="td-primary w-56 px-4">
+                          (318) 576-9999{' '}
+                        </td>
+
+                        <td className="td-primary px-4">
+                          <FcEmptyTrash className="scale-150" />
+                        </td>
+                      </tr>
+                      <tr className="w-full bg-[#e6ebf85d]">
+                        <td className="td-primary w-10">
+                          <div className="flex items-center justify-center">
+                            <input
+                              type="checkbox"
+                              className="input-primary flex items-center justify-center"
+                            />
+                          </div>
+                        </td>
+                        <td className="td-primary w-32 px-2">Work</td>
                         <td className="td-primary w-56 px-4">
                           (318) 576-9999{' '}
                         </td>

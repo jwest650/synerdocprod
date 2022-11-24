@@ -15,6 +15,7 @@ const TableSelect = ({ setSelectedOption, options, styles }) => {
       width="fit-content"
       borderColor="#c6d8ffe1"
       borderRadius="4px"
+      outline="none"
       backgroundColor="c6d8ffe1"
       fontSize="12px"
       h="26px"

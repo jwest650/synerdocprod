@@ -10,7 +10,7 @@ const ARTransactionSummary = () => {
                 <h1 className="head">A/R TransactionSummary</h1>
                 <div className="flex items-center space-x-3">
                     <div className="space-x-2">
-                        <label htmlFor="" className="w-fit">
+                        <label htmlFor="" className="w-fit font-bold">
                             unapplied reciept to date:
                         </label>
                         <Input
@@ -37,7 +37,7 @@ const ARTransactionSummary = () => {
                 <aside className="space-y-2 capitalize ">
                     <div className="flex items-end space-x-2">
                         <div className="flex items-center">
-                            <label htmlFor="revenue" className="pr-2">
+                            <label htmlFor="revenue" className="pr-2 font-bold">
                                 revenue date from:
                             </label>
                             <Input
@@ -53,7 +53,7 @@ const ARTransactionSummary = () => {
                         </div>
 
                         <div className="flex items-center">
-                            <label htmlFor="" className="pr-2">
+                            <label htmlFor="" className="pr-2 font-bold">
                                 to:
                             </label>
                             <Input
@@ -69,7 +69,7 @@ const ARTransactionSummary = () => {
                         </div>
                     </div>
                     <div className="flex items-center ">
-                        <label htmlFor="" className="pr-2">
+                        <label htmlFor="" className="pr-2 font-bold">
                             extend remit payment through date:
                         </label>
                         <Input
@@ -86,7 +86,9 @@ const ARTransactionSummary = () => {
                 </aside>
                 <aside className="space-y-2 capitalize">
                     <div className="flex space-x-2">
-                        <label htmlFor="">agency:</label>
+                        <label htmlFor="" className="font-bold">
+                            agency:
+                        </label>
                         <Select placeholder="Select option" size="xs" w={130}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
@@ -94,7 +96,9 @@ const ARTransactionSummary = () => {
                         </Select>
                     </div>
                     <div className="flex space-x-2">
-                        <label htmlFor="">report by:</label>
+                        <label htmlFor="" className="font-bold">
+                            report by:
+                        </label>
                         <Select placeholder="Select option" size="xs" w={130}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>

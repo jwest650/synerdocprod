@@ -7,14 +7,16 @@ const AgencyAccount = () => {
             <section className="bg-[ #eeeeee] flex w-full items-center justify-between">
                 <div>
                     <h1 className="head">loiusiana labour of love</h1>
-                    <label className="ml-10 pr-5">account type:</label>
+                    <label className="ml-10 pr-5 font-bold">
+                        account type:
+                    </label>
                     <span>Agency Suspense</span>
                 </div>
                 <div>
                     <h1 className="text-right font-bold text-green-500">
                         Agency account
                     </h1>
-                    <span className="pr-20">balance</span>
+                    <span className="pr-20 font-bold">balance</span>
                     <span>$2,500.00</span>
                 </div>
             </section>

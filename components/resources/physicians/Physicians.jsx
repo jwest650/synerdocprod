@@ -53,7 +53,7 @@ const Physicians = () => {
         </div>
       </div>
 
-      <table className="mt-10 min-w-full overflow-auto">
+      <table className="mt-10 min-w-full overflow-auto shadow-md">
         <thead className="thead-primary">
           <tr>
             <th className="th-first"></th>

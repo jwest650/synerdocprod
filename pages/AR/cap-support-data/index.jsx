@@ -9,7 +9,7 @@ const CapSupportData = () => {
                 <header>
                     <h1 className="head ">Cap Support Data</h1>
                     <div className="flex justify-end  space-x-1">
-                        <Select placeholder="Select option" size="xs" w={120}>
+                        <Select placeholder="Select option" size="xs" w={130}>
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -20,11 +20,13 @@ const CapSupportData = () => {
                 <article className="flex justify-between">
                     <aside className="space-y-2">
                         <div className="flex   space-x-1">
-                            <label htmlFor="">agency:</label>
+                            <label htmlFor="" className="font-bold">
+                                agency:
+                            </label>
                             <Select
                                 placeholder="Select option"
                                 size="xs"
-                                w={120}
+                                w={130}
                             >
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -32,11 +34,13 @@ const CapSupportData = () => {
                             </Select>
                         </div>
                         <div className="flex   space-x-1">
-                            <label htmlFor="">reporting groups:</label>
+                            <label htmlFor="" className="font-bold">
+                                reporting groups:
+                            </label>
                             <Select
                                 placeholder="Select option"
                                 size="xs"
-                                w={120}
+                                w={130}
                             >
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -46,24 +50,26 @@ const CapSupportData = () => {
                     </aside>
                     <aside>
                         <div className="flex items-center space-x-2">
-                            <label htmlFor="dates">
+                            <label htmlFor="dates" className="font-bold">
                                 {" "}
                                 <span className="text-orange-500">*</span> dates
                                 range:
                             </label>
-                            <Input w={120} type="text" size="xs" id="dates" />
-                            <label htmlFor="dates">
+                            <Input w={130} type="text" size="xs" id="dates" />
+                            <label htmlFor="dates" className="font-bold">
                                 {" "}
                                 <FcCalendar className="text-xl" />
                             </label>
-                            <label htmlFor="dates-to">to:</label>
+                            <label htmlFor="dates-to" className="font-bold">
+                                to:
+                            </label>
                             <Input
-                                w={120}
+                                w={130}
                                 type="text"
                                 size="xs"
                                 id="dates-to"
                             />
-                            <label htmlFor="dates-to">
+                            <label htmlFor="dates-to" className="font-bold">
                                 <FcCalendar className="text-xl" />
                             </label>
                         </div>

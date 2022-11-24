@@ -1,6 +1,7 @@
 import { TreeViewComponent } from '@syncfusion/ej2-react-navigations';
 import { useRef } from 'react';
 import { patientManagement } from '../../../../assets/data';
+
 const PatientManagementRoles = ({ setCheckedPatients }) => {
   const patRef = useRef();
 
@@ -12,19 +13,16 @@ const PatientManagementRoles = ({ setCheckedPatients }) => {
     hasChildren: 'hasChild',
   };
 
-  const handleCheckedNodesPat = (e) => {
-    // console.log('RES------->>>>', e);
-    // console.log('ref--------->', resRef.current.checkedElement);
+  const handleCheckedNodesPat = () => {
     setCheckedPatients(patRef.current.properties.checkedNodes);
   };
 
   return (
     <div>
-      {/* Render the TreeView with checkboxes */}
       <TreeViewComponent
         ref={patRef}
         cssClass="scale-90 custom"
-        nodeChecked={(e) => handleCheckedNodesPat(e)}
+        nodeChecked={handleCheckedNodesPat}
         fields={fields}
         showCheckBox={true}
       />

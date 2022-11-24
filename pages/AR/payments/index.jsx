@@ -34,29 +34,37 @@ const Payments = () => {
                 <article className="flex justify-between">
                     <aside className="space-y-4">
                         <div className="flex items-center space-x-2">
-                            <label htmlFor="deposit">deposit dates from:</label>
+                            <label htmlFor="deposit" className="font-bold">
+                                deposit dates from:
+                            </label>
                             <Input w={130} type="date" size="xs" id="deposit" />
                             <label htmlFor="deposit">
                                 <FcCalendar className="text-xl" />
                             </label>
-                            <label htmlFor="deposit-to">to:</label>
+                            <label htmlFor="deposit-to" className="font-bold">
+                                to:
+                            </label>
                             <Input
                                 w={130}
                                 type="date"
                                 size="xs"
                                 id="deposit-to"
                             />
-                            <label htmlFor="deposit-to">
+                            <label htmlFor="deposit-to" className="font-bold">
                                 <FcCalendar className="text-xl" />
                             </label>
                         </div>
                         <div className="flex items-center space-x-2">
-                            <label htmlFor="entry">entry dates from:</label>
+                            <label htmlFor="entry" className="font-bold">
+                                entry dates from:
+                            </label>
                             <Input w={130} type="date" size="xs" id="entry" />
-                            <label htmlFor="entry">
+                            <label htmlFor="entry" className="font-bold">
                                 <FcCalendar className="text-xl" />
                             </label>
-                            <label htmlFor="entry-to">to:</label>
+                            <label htmlFor="entry-to" className="font-bold">
+                                to:
+                            </label>
                             <Input
                                 w={130}
                                 type="date"
@@ -68,12 +76,16 @@ const Payments = () => {
                             </label>
                         </div>{" "}
                         <div className="flex items-center space-x-2">
-                            <label htmlFor="remit">remit dates from:</label>
+                            <label htmlFor="remit" className="font-bold">
+                                remit dates from:
+                            </label>
                             <Input w={130} type="date" size="xs" id="remit" />
                             <label htmlFor="remit">
                                 <FcCalendar className="text-xl" />
                             </label>
-                            <label htmlFor="remit-to">to:</label>
+                            <label htmlFor="remit-to" className="font-bold">
+                                to:
+                            </label>
                             <Input
                                 w={130}
                                 type="date"
@@ -97,7 +109,9 @@ const Payments = () => {
                             <button className="btn">Search</button>
                         </div>
                         <div className="flex justify-end  space-x-1">
-                            <label htmlFor="">payment status:</label>
+                            <label htmlFor="" className="font-bold">
+                                payment status:
+                            </label>
                             <Select
                                 placeholder="Select option"
                                 size="xs"

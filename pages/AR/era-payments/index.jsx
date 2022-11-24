@@ -21,29 +21,39 @@ const EraPayments = () => {
                 <h1 className="head  ">Era Payments</h1>
                 <aside>
                     <div className="flex items-center space-x-2">
-                        <label htmlFor="recieve">recieve dates from:</label>
-                        <Input w={120} type="date" size="xs" id="recieve" />
+                        <label htmlFor="recieve" className="font-bold">
+                            recieve dates from:
+                        </label>
+                        <Input w={130} type="date" size="xs" id="recieve" />
                         <label htmlFor="recieve">
                             <FcCalendar className="text-xl" />
                         </label>
-                        <label htmlFor="">to:</label>
-                        <Input w={120} type="date" size="xs" id="recieve-to" />
+                        <label htmlFor="" className="font-bold">
+                            to:
+                        </label>
+                        <Input w={130} type="date" size="xs" id="recieve-to" />
                         <label htmlFor="recieve-to">
                             <FcCalendar className="text-xl" />
                         </label>{" "}
                     </div>
                     <div className="flex justify-end space-x-2">
-                        <label>show only era with claims to post:</label>
+                        <label className="font-bold">
+                            show only era with claims to post:
+                        </label>
                         <input type="checkbox" name="" id="" />
                     </div>
                     <div className="flex items-center space-x-2">
-                        <label htmlFor="remit">remit dates from:</label>
-                        <Input w={120} type="date" size="xs" id="remit" />
+                        <label htmlFor="remit " className="font-bold">
+                            remit dates from:
+                        </label>
+                        <Input w={130} type="date" size="xs" id="remit" />
                         <label htmlFor="remit">
                             <FcCalendar className="text-xl" />
                         </label>
-                        <label htmlFor="remit-to">to:</label>
-                        <Input w={120} type="date" size="xs" id="remit-to" />
+                        <label htmlFor="remit-to" className="font-bold">
+                            to:
+                        </label>
+                        <Input w={130} type="date" size="xs" id="remit-to" />
                         <label htmlFor="remit-to">
                             <FcCalendar className="text-xl" />
                         </label>

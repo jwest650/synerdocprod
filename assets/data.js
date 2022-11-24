@@ -1763,6 +1763,52 @@ export const patientManagement = [
   },
 ];
 
+export const associateOrgAccess = [
+  { id: 1, name: 'Louisiana Labour of Love', hasChild: true, expanded: true },
+  {
+    id: 2,
+    pid: 1,
+    name: 'Louisiana Labour of Love',
+    hasChild: true,
+    expanded: true,
+  },
+  { id: 3, pid: 2, name: 'Labour of Love Hospice' },
+  { id: 4, pid: 2, name: 'Louisiana Labour of Love' },
+];
+
+export const physicianOrgAccess = [
+  { id: 1, name: 'ESI Demo', hasChild: true, expanded: true },
+  { id: 2, pid: 1, name: 'Arizona', hasChild: true, expanded: true },
+  { id: 3, pid: 2, name: 'Arizona Home Health - Chandler' },
+  { id: 4, pid: 2, name: 'Arizona Home Health - Scottsdale ' },
+  { id: 5, pid: 2, name: 'Arizona Home Health - Tempe' },
+  { id: 6, pid: 2, name: 'Test Home Health Agency' },
+  { id: 7, pid: 1, name: 'Florida', hasChild: true, expanded: true },
+  { id: 8, pid: 7, name: 'Tampa Bay Home Health' },
+  { id: 9, pid: 1, name: 'Kansas', hasChild: true, expanded: true },
+  { id: 10, pid: 9, name: 'Kansas Home Health' },
+  { id: 11, pid: 9, name: 'Kansas City Hospice' },
+  { id: 12, pid: 1, name: 'Louisiana', hasChild: true, expanded: true },
+  { id: 13, pid: 12, name: 'Faith In Action' },
+  { id: 14, pid: 12, name: 'Loisiana Labour of Love' },
+];
+
+export const physicianRoles = [
+  'Administrators',
+  'Business  Office Manager',
+  'Demo User',
+  'HHA',
+  'Human Resources',
+  'Louisiana Labour of Love - Director',
+  'Physician Document Management',
+  'Point of Care - Clinical',
+  'Quality Assurance',
+  'Restricted Users',
+  'Service Note Review',
+  'Surveyor',
+  'View Medical Records Only',
+];
+
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status

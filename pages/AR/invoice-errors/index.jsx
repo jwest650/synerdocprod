@@ -14,7 +14,7 @@ const InvoiceErrors = () => {
                 <hr />
                 <aside className="mt-2 space-y-2">
                     <div className="flex justify-end space-x-2">
-                        <Select placeholder="Select option" w={120} size="xs">
+                        <Select placeholder="Select option" w={130} size="xs">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -23,10 +23,12 @@ const InvoiceErrors = () => {
                     </div>
                     <div className="flex justify-between">
                         <div className="flex space-x-2">
-                            <label htmlFor="">Agency:</label>
+                            <label htmlFor="" className="font-bold">
+                                Agency:
+                            </label>
                             <Select
                                 placeholder="Select option"
-                                w={120}
+                                w={130}
                                 size="xs"
                             >
                                 <option value="option1">Option 1</option>
