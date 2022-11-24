@@ -4,10 +4,9 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
-import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../structure/TableSelect';
 
-const CreateFacilities = () => {
+const EditFacilities = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -18,18 +17,19 @@ const CreateFacilities = () => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1"
+        className="verdana11 cursor-pointer text-primary-orange underline"
       >
-        <BiPlus className="scale-150" />
-        <span>Create Facilities</span>
+        [Edit]
       </span>
       <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">Create Facility</h1>
-              <p className="verdana12 text-gray-400">Create Facility details</p>
+              <h1 className="verdana18 font-semibold">Edit Facility</h1>
+              <p className="verdana12 text-gray-400">
+                Edit existing facility details{' '}
+              </p>
 
               <div className="verdana13 mt-10">
                 <div className="flex w-full flex-col items-center gap-3.5">
@@ -103,4 +103,4 @@ const CreateFacilities = () => {
   );
 };
 
-export default CreateFacilities;
+export default EditFacilities;

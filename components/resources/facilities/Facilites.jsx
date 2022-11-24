@@ -5,6 +5,7 @@ import MoreFacilitiesInfo from './MoreFacilitiesInfo';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
 import { FcEmptyTrash } from 'react-icons/fc';
+import DeletePopup from '../../structure/DeletePopup';
 
 const Facilities = () => {
   const [facilityStatus, setFacilityStatus] = useState('');
@@ -86,8 +87,10 @@ const Facilities = () => {
               >
                 {facility.status}
               </td>
-              <td className="td-primary min-w-[30px] text-primary-orange ">
-                <FcEmptyTrash className="mx-auto" />
+              <td className="td-primary min-w-[30px] text-primary-orange">
+                <div className="flex justify-center">
+                  <DeletePopup toDelete="facility" deleteIcon={true} />
+                </div>
               </td>
             </tr>
           ))}

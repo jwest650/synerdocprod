@@ -4,10 +4,9 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
-import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../structure/TableSelect';
 
-const CreateFacilities = () => {
+const EditPhysicians = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -18,53 +17,91 @@ const CreateFacilities = () => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1"
+        className="verdana11 cursor-pointer text-primary-orange underline"
       >
-        <BiPlus className="scale-150" />
-        <span>Create Facilities</span>
+        [Edit]
       </span>
-      <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
+      <Modal isOpen={isOpen} size={'2xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">Create Facility</h1>
-              <p className="verdana12 text-gray-400">Create Facility details</p>
+              <h1 className="verdana18 font-semibold">Edit Physician</h1>
+              <p className="verdana12 text-gray-400">
+                Editing existing physician details
+              </p>
 
               <div className="verdana13 mt-10">
                 <div className="flex w-full flex-col items-center gap-3.5">
                   <div className="flex w-full items-center justify-center gap-3 ">
                     <p className="flex w-[40%]  justify-end">
-                      <span className="text-primary-orange">*</span>Facility
-                      Name:
+                      <span className="text-primary-orange">*</span>Fist Name:
                     </p>
                     <div className=" flex w-[60%] gap-2">
                       <input
                         type="text"
-                        placeholder="Facility Name"
+                        placeholder="First Name"
                         className="input-primary"
                       />
                     </div>
                   </div>
                   <div className="flex w-full items-center justify-center gap-3 ">
-                    <p className="flex w-[40%] justify-end">Email:</p>
+                    <p className="flex w-[40%] justify-end">Middle Initial:</p>
                     <div className=" flex w-[60%] items-center gap-2">
-                      <input
-                        type="email"
-                        placeholder="exmaple@gmail.com"
-                        className="input-primary"
-                      />{' '}
-                    </div>
-                  </div>
-
-                  <div className="flex w-full items-center justify-center gap-3 ">
-                    <p className="flex w-[40%] justify-end">Sales Rep:</p>
-                    <div className=" flex w-[60%] ">
-                      <TableSelect options={['Option1', 'Option2']} />
+                      <input type="text" className="input-primary" />{' '}
                     </div>
                   </div>
                   <div className="flex w-full items-center justify-center gap-3 ">
                     <p className="flex w-[40%] justify-end">
+                      <span className="text-primary-orange">*</span> Last Name:
+                    </p>
+                    <div className=" flex w-[60%] items-center gap-2">
+                      <input
+                        type="text"
+                        placeholder="Last Name"
+                        className="input-primary"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Title:</p>
+                    <div className=" flex w-[60%]">
+                      <TableSelect
+                        options={['Medical Doctor', 'Physician Assistant']}
+                      />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Speciality:</p>
+                    <div className=" flex w-[60%] ">
+                      <TableSelect options={['Cardiologist', 'Dentist']} />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Email:</p>
+                    <div className=" flex w-[60%] ">
+                      <input
+                        type="email"
+                        placeholder="example@gmail.com"
+                        className="input-primary"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Physician Group:</p>
+                    <div className=" flex w-[60%] ">
+                      <input type="email" className="input-primary" />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Sales Rep:</p>
+                    <div className=" flex w-[60%] ">
+                      <TableSelect options={['Matilda Ivy', 'Option2']} />
+                    </div>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">
+                      {' '}
                       <span className="text-primary-orange">*</span> Start Date:
                     </p>
                     <div className=" flex w-[60%] ">
@@ -103,4 +140,4 @@ const CreateFacilities = () => {
   );
 };
 
-export default CreateFacilities;
+export default EditPhysicians;

@@ -45,10 +45,10 @@ import PhysicianNotes from '../components/resources/physicians/PhysicianNotes/in
 import PhysicianCredentials from '../components/resources/physicians/PhysicianCredentials/index';
 import PhysicianDocuments from '../components/resources/physicians/PhysicianDocuments/index';
 import PhysicianWebsite from '../components/resources/physicians/PhysicianWebsite/index';
-import PhysicianOrders from '../components/resources/physicians/PhysicianOrders';
-import FacilityContactsInfo from '../components/resources/facilities/FacilityContactsInfo';
-import FacilityNotes from '../components/resources/facilities/FacilityNotes';
-import FacilityCredentials from '../components/resources/facilities/FacilityCredentials';
+import PhysicianOrders from '../components/resources/physicians/PhysicianOrders/index';
+import FacilityContactsInfo from '../components/resources/facilities/FacilityContactsInfo/index';
+import FacilityNotes from '../components/resources/facilities/FacilityNotes/index';
+import FacilityCredentials from '../components/resources/facilities/FacilityCredentials/index';
 import OrganizationPayersContactInfo from '../components/resources/organization-payers/OrganizationPayersContactInfo';
 import OrganizationPayersNotes from '../components/resources/organization-payers/OrganizationPayersNotes';
 import OrganizationPayersSettings from '../components/resources/organization-payers/OrganizationPayersSettings';
@@ -1141,6 +1141,12 @@ export const facilityMenu = [
     url: 'credentials',
     icon: <SlCheck />,
     component: <FacilityCredentials />,
+  },
+  {
+    menu: 'Documents',
+    url: 'documents',
+    icon: <BsFolder2Open />,
+    component: <PhysicianDocuments />,
   },
 ];
 
