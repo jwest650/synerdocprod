@@ -6,13 +6,17 @@ import {
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
 
-const PhysicianCreateWebsiteAccess = ({ setEditUser }) => {
+const PhysicianCreateWebsiteAccess = ({ setEditUserRole }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
     e.preventDefault();
+
+    setEditUserRole(() => ({
+      action: true,
+      from: 'physiciancreatewebsiteaccess',
+    }));
     onClose();
-    setEditUser(() => ({ action: true, from: 'createwebsiteaccess' }));
   };
   return (
     <>
@@ -159,7 +163,6 @@ const PhysicianCreateWebsiteAccess = ({ setEditUser }) => {
                 </div>
               </div>
             </form>
-            {/* </ModalBody> */}
           </div>
         </ModalContent>
       </Modal>

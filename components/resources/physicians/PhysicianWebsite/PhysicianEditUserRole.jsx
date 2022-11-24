@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router';
 import { physicianRoles } from '../../../../assets/data';
+import PhysicianUserDetails from './PhysicianUserDetails';
 
-const PhysicianEditUserRole = ({ setEditUser }) => {
+const PhysicianEditUserRole = ({ setEditUserRole }) => {
   const router = useRouter();
   const associateUrl = router.asPath.split('/')[3];
 
@@ -18,72 +19,7 @@ const PhysicianEditUserRole = ({ setEditUser }) => {
           <div className="w-[40%]">
             <h2 className="verdana16 my-10 font-semibold">{associateUrl}</h2>
             <div className="verdana12 flex flex-col items-center justify-center gap-3 rounded border-2 bg-texiary-blue p-6 shadow">
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Username:
-                </label>
-                <p className="input-primary w-[100%] ">
-                  {associateUrl}@gmail.com
-                </p>
-              </div>
-              <div className="flex w-full justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Is Active:
-                </label>
-                <div className="w-full">
-                  <input type="checkbox" className="input-primary" />
-                </div>
-              </div>
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Is Locked Out:
-                </label>
-                <div className="w-full">
-                  <input type="checkbox" className="input-primary" />
-                </div>
-              </div>
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Start Date:
-                </label>
-                <p className="input-primary w-[100%] ">7/22/2022</p>
-              </div>
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  End Date:
-                </label>
-                <p className="input-primary w-[100%] ">1/1/2042</p>
-              </div>
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Last Login:
-                </label>
-                <p className="w-[100%]"></p>
-              </div>
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Previous Login:
-                </label>
-                <p className="w-[100%] "></p>
-              </div>
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Password Expires:
-                </label>
-                <p className="input-primary w-[100%] ">7/7/2022</p>
-              </div>
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Created:{' '}
-                </label>
-                <p className="input-primary w-[100%] ">7/7/2022</p>
-              </div>
-              <div className="flex w-full items-center justify-center">
-                <label className="mr-3 w-[50%] text-end font-semibold">
-                  Updated:{' '}
-                </label>
-                <p className="input-primary w-[100%] ">7/7/2022</p>
-              </div>
+              <PhysicianUserDetails associateUrl={associateUrl} />
             </div>
           </div>
           <div className="w-[60%]">
@@ -110,7 +46,10 @@ const PhysicianEditUserRole = ({ setEditUser }) => {
             <div className="mt-8 flex w-full justify-end gap-3">
               <button
                 onClick={() =>
-                  setEditUser(() => ({ action: true, from: 'edituserroles' }))
+                  setEditUserRole(() => ({
+                    action: false,
+                    from: 'physicianedituserrole',
+                  }))
                 }
                 className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
               >
@@ -118,13 +57,10 @@ const PhysicianEditUserRole = ({ setEditUser }) => {
               </button>
               <button
                 onClick={() =>
-                  setEditUser((prev) => {
-                    const newAction = prev.from === 'edit' ? true : false;
-                    return {
-                      action: newAction,
-                      from: 'edituserroles',
-                    };
-                  })
+                  setEditUserRole((prev) => ({
+                    action: false,
+                    from: prev.from === 'edit' ? 'physicianedituserrole' : '',
+                  }))
                 }
                 className="rounded bg-gray-500 px-4 py-1 text-white shadow"
               >

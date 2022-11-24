@@ -23,7 +23,7 @@ const AssociateCreatePhone = () => {
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-150" />
-        <span>Create Phone</span>
+        <span className="verdana11">Create Phone</span>
       </span>
       <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />

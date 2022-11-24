@@ -1,219 +1,83 @@
-import {
-  Modal,
-  ModalContent,
-  ModalOverlay,
-  Select,
-  useDisclosure,
-} from '@chakra-ui/react';
-import { BiPlus } from 'react-icons/bi';
-import { FcEmptyTrash } from 'react-icons/fc';
-import { FiTrash2 } from 'react-icons/fi';
-import TableSelect from '../../../structure/TableSelect';
+import { useRouter } from 'next/router';
+import OrgAccessTreeview from '../../OrgAccessTreeview';
+import AssociateUserDetails from './AssociateUserDetails';
+import { associateOrgAccess } from '../../../../assets/data';
 
-const AssociateCreateOrgAccess = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+const AssociateCreateOrgAccess = ({
+  setEditUserRole,
+  setEditUserOrgAccess,
+}) => {
+  const router = useRouter();
+  const associateUrl = router.asPath.split('/')[3];
 
-  const handleForm = (e) => {
-    e.preventDefault();
-    onClose();
+  const handlesave = () => {
+    setEditUserRole((prev) => ({
+      action: false,
+      from: prev.tempFrom,
+      tempFrom: '',
+    }));
+    setEditUserOrgAccess(() => ({
+      action: false,
+      from: 'associatecreateorgaccess',
+    }));
+  };
+
+  const handleCancel = () => {
+    setEditUserRole((prev) => ({
+      action: false,
+      from: prev.tempFrom,
+      tempFrom: '',
+    }));
+    setEditUserOrgAccess((prev) => ({
+      action: false,
+      from: prev.from,
+    }));
   };
   return (
-    <>
-      <span
-        onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1"
-      >
-        <BiPlus className="scale-125" />
-        <span className="text-sm">Create Org Access</span>
-      </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
-            {/* <ModalBody> */}
-            <form action="" onSubmit={handleForm}>
-              <h1 className="text-xl font-semibold">
-                Add Associate/Phone Info
-              </h1>
-              <p>
-                Select an address type and enter address details. Then add
-                relevant phone numbers. Finally, hit &quot;Save&quot;
-              </p>
-              <div className="mt-16 flex flex-col items-center lg:flex-row lg:items-start">
-                <div className="mr-3 w-[65%] border-primary-gray lg:border-r">
-                  <div className="flex items-start">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-medium text-white">
-                      1
-                    </span>
-                    <div>
-                      <div className="flex w-[100%] flex-col items-center justify-center px-3">
-                        <div className="my-2 flex items-center">
-                          <p className="w-[150px] text-right font-medium">
-                            <span className="text-primary-orange">*</span>
-                            Address Type:
-                          </p>
-                          <div className="ml-3">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['Home', 'Option2']}
-                            />
-                          </div>
-                        </div>
-
-                        <div className="my-2 flex items-center">
-                          <p className="ml-6 w-[150px] text-right font-medium">
-                            <span className="text-primary-orange">*</span>
-                            Address1:
-                          </p>{' '}
-                          <div className="ml-4 w-28 pt-0.5">
-                            <input
-                              type="text"
-                              placeholder="222 Hwy 48"
-                              className="input-primary mx-2 w-48 md:mx-0"
-                            />
-                          </div>
-                        </div>
-                        <div className="my-2 flex items-center">
-                          <p className="ml-6 w-[150px] text-right font-medium">
-                            Address2:
-                          </p>{' '}
-                          <div className="ml-4 w-28 pt-0.5">
-                            <input
-                              type="text"
-                              className="input-primary mx-2 w-48 md:mx-0"
-                            />
-                          </div>
-                        </div>
-                        <div className="my-2 flex items-center">
-                          <p className="ml-5 w-[150px] text-right font-medium">
-                            {' '}
-                            <span className="text-primary-orange">*</span>{' '}
-                            City/State/Zip:{' '}
-                          </p>{' '}
-                          <div className="ml-4 flex w-28 items-center gap-2 pt-0.5">
-                            <input
-                              type="text"
-                              placeholder="Saline"
-                              className="input-primary w-20"
-                            />{' '}
-                            <TableSelect
-                              styles={{ width: '70px' }}
-                              options={['LA', 'Option2']}
-                            />
-                            <input
-                              type="text"
-                              placeholder="71070"
-                              className="input-primary w-16"
-                            />{' '}
-                            <input
-                              type="text"
-                              placeholder=""
-                              className="input-primary w-16"
-                            />{' '}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-14 flex items-start">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-medium text-white">
-                      2
-                    </span>
-                    <div>
-                      <div className="flex w-[100%] flex-col items-center justify-center px-3">
-                        <div className="my-2 flex items-center">
-                          <p className="w-[150px] text-right font-medium">
-                            Phone Type:
-                          </p>
-                          <div className="ml-3">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['Option1', 'Option2']}
-                            />
-                          </div>
-                        </div>
-
-                        <div className="my-2 flex items-center">
-                          <p className="ml-6 w-[150px] text-right font-medium">
-                            Phone:
-                          </p>{' '}
-                          <div className="ml-4 flex w-28 items-center gap-1 pt-0.5">
-                            (
-                            <input type="text" className="input-primary w-14" />
-                            )
-                            <input type="text" className="input-primary w-14" />
-                            -
-                            <input
-                              type="text"
-                              placeholder=""
-                              className="input-primary w-14"
-                            />
-                            ext.
-                            <input
-                              type="text"
-                              placeholder=""
-                              className="input-primary w-14"
-                            />
-                          </div>
-                        </div>
-                        <div className="btn-primary ml-24 mt-4">Add Phone</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-12 flex gap-5 lg:mt-1 lg:block">
-                  <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-medium text-white lg:mt-0">
-                    3
-                  </span>
-                  <table className=" mx-auto mt-5 w-fit overflow-auto px-3 shadow-md">
-                    <thead className="thead-primary">
-                      <tr>
-                        <th className="th-first">Preferred </th>
-                        <th className="th-middle">Phone Type</th>
-                        <th className="th-middle">Phone</th>
-                        <th className="th-last"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="w-full bg-[#e6ebf85d]">
-                        <td className="td-primary w-20 px-10">
-                          <div className="flex items-center justify-center">
-                            <input type="checkbox" className="input-primary" />
-                          </div>
-                        </td>
-                        <td className="td-primary w-48 px-2">Mobile</td>
-                        <td className="td-primary w-52 px-4">
-                          (318) 576-9999{' '}
-                        </td>
-
-                        <td className="td-primary px-4">
-                          <FcEmptyTrash className="scale-125 text-primary-orange" />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div className="mt-14 flex w-full justify-end gap-3">
-                <button
-                  type="submit"
-                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
-                >
-                  Save
-                </button>
-                <button
-                  onClick={onClose}
-                  className="rounded bg-gray-500 px-4 py-1 text-white shadow"
-                >
-                  Cancel
-                </button>
-              </div>
-            </form>
+    <div>
+      <div className="mt-10 px-10 pb-20">
+        <h1 className="verdana14 mb-3 border-b border-primary-gray pb-2 font-semibold">
+          Edit User Org Access
+        </h1>
+        <p className="verdana12 text-gray-500">
+          Edit the org/region/agencies that the user will use when accessing the
+          website
+        </p>
+        <div className="flex w-full gap-6">
+          <div className="w-[40%]">
+            <h2 className="verdana16 my-10 font-semibold">{associateUrl}</h2>
+            <div className="verdana12 flex flex-col items-center justify-center gap-3 rounded border-2 bg-texiary-blue p-6 shadow">
+              <AssociateUserDetails associateUrl={associateUrl} />{' '}
+            </div>
           </div>
-        </ModalContent>
-      </Modal>
-    </>
+          <div className="w-[60%]">
+            <h2 className="verdana16 my-10 px-6 font-semibold">
+              Org Access -{' '}
+              <span className="verdana11 font-medium">
+                affects the patient records that canbe viewed{' '}
+              </span>
+            </h2>
+            <div className="verdana12 rounded border-2 bg-texiary-blue px-5 pb-5 shadow">
+              <OrgAccessTreeview treeviewData={associateOrgAccess} />
+            </div>
+            <div className="mt-8 flex w-full justify-end gap-3">
+              <button
+                onClick={handlesave}
+                className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+              >
+                Save
+              </button>
+              <button
+                onClick={handleCancel}
+                className="rounded bg-gray-500 px-4 py-1 text-white shadow"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

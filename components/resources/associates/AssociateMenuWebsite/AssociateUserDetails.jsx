@@ -1,10 +1,6 @@
-import { useRouter } from 'next/router';
-
-const UserRolesSection = () => {
-  const router = useRouter();
-  const associateUrl = router.asPath.split('/')[3];
+const AssociateUserDetails = ({ associateUrl }) => {
   return (
-    <section className="verdana11 mx-8 flex w-full flex-col items-center justify-center gap-3 rounded-sm border border-primary-gray bg-texiary-blue p-6 shadow-md">
+    <>
       <div className="flex w-full items-center justify-center">
         <label className="mr-3 w-[50%] text-end font-semibold">Username:</label>
         <p className="input-primary w-[100%] ">{associateUrl}@gmail.com</p>
@@ -61,8 +57,8 @@ const UserRolesSection = () => {
         <label className="mr-3 w-[50%] text-end font-semibold">Updated: </label>
         <p className="input-primary w-[100%] ">7/7/2022</p>
       </div>
-    </section>
+    </>
   );
 };
 
-export default UserRolesSection;
+export default AssociateUserDetails;
