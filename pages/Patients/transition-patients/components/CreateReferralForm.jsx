@@ -1,24 +1,24 @@
-import { Select, Input, Checkbox } from '@chakra-ui/react';
-import { useState } from 'react';
-import AddReferralSourceContactModal from './AddReferralSourceContactModal';
-import FindReferralSourceModal from './FindReferralSourceModal';
+import { Select, Input, Checkbox } from '@chakra-ui/react'
+import { useState } from 'react'
+import AddReferralSourceContactModal from './AddReferralSourceContactModal'
+import FindReferralSourceModal from './FindReferralSourceModal'
 
 const CreateReferralForm = () => {
-  let data = [1, 1, 1, 1];
-  const [openFindReferral, setOpenFindReferral] = useState(false);
-  const [openAddReferralContact, setOpenAddReferralContact] = useState(false);
+  let data = [1, 1, 1, 1]
+  const [openFindReferral, setOpenFindReferral] = useState(false)
+  const [openAddReferralContact, setOpenAddReferralContact] = useState(false)
 
   return (
-    <div>
+    <div className='verdana13'>
       <section>
-        <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+        <h1 className='verdana18 font-bold capitalize text-black dark:text-white'>
           Create Referral
         </h1>
         <hr />
 
-        <div className='py-4'>
+        <div>
           <p>Add a new referral into the system</p>
-          <h1 className='text-2xl'>Agency</h1>
+          <h1 className='verdana16 mt-3'>Agency</h1>
         </div>
         <hr />
         <div className=' flex  items-center justify-between'>
@@ -59,8 +59,8 @@ const CreateReferralForm = () => {
       <section>
         {/* Referral Source */}
         <section className=' mt-5 '>
-          <div className=' py-4'>
-            <h1 className='text-2xl'>Referral Source</h1>
+          <div>
+            <h1 className='verdana16'>Referral Source</h1>
           </div>
           <hr />
           <div className='flex py-3'>
@@ -123,7 +123,7 @@ const CreateReferralForm = () => {
         setOpenAddReferralContact={setOpenAddReferralContact}
       />
     </div>
-  );
-};
+  )
+}
 
-export default CreateReferralForm;
+export default CreateReferralForm

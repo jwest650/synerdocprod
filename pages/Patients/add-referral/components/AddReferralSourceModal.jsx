@@ -5,13 +5,53 @@ import {
   ModalContent,
   ModalHeader,
   ModalBody,
-  ModalCloseButton,
-  Button,
   Input,
-  Checkbox,
 } from '@chakra-ui/react'
+import FacilityForm from './referralforms/FacilityForm'
+import PhysicianForm from './referralforms/PhysicianForm'
+import SelfReferralForm from './referralforms/SelfReferralForm'
+import HMOPPOForm from './referralforms/HMOPPOForm'
+import IndividualReferralForm from './referralforms/IndividualReferralForm'
+import InsuranceCompanyForm from './referralforms/InsuranceCompanyForm'
+import TrustOfficerForm from './referralforms/TrustOfficerForm'
+import GovernmentReferralForm from './referralforms/GovernmentReferralForm'
+import { useState } from 'react'
+
+const renderForm = (form) => {
+  switch (form) {
+    case 'physician':
+      return <PhysicianForm />
+    case 'facility':
+      return <FacilityForm />
+    case 'self-referral':
+      return <SelfReferralForm />
+    case 'hmo-ppo':
+      return <HMOPPOForm />
+    case 'individual-referral':
+      return <IndividualReferralForm />
+    case 'insurance-company':
+      return <InsuranceCompanyForm />
+    case 'trust-officer':
+      return <TrustOfficerForm />
+    case 'government-referral':
+      return <GovernmentReferralForm />
+    default:
+      return <PhysicianForm />
+  }
+}
 
 const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
+  const [activeForm, setActiveForm] = useState('physician')
+  const forms = [
+    { name: 'Physician', value: 'physician' },
+    { name: 'Facility', value: 'facility' },
+    { name: 'Self Referral', value: 'self-referral' },
+    { name: 'HMO/PPO', value: 'hmo-ppo' },
+    { name: 'Individual Referral', value: 'individual-referral' },
+    { name: 'Insurance Company', value: 'insurance-company' },
+    { name: 'Trust Officer', value: 'trust-officer' },
+    { name: 'Government Referral', value: 'government-referral' },
+  ]
   return (
     <div>
       <Modal
@@ -20,12 +60,12 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900} className='verdana13 '>
+        <ModalContent maxWidth={900}>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <div>
               <ModalHeader>
-                <h1 className='verdana19'>Add Referral</h1>
-                <p className='verdana13  text-gray-600'>add referal details</p>
+                Add Referral
+                <p className='text-sm text-gray-600'>add referal details</p>
               </ModalHeader>
             </div>
             {/* <ModalCloseButton /> */}
@@ -37,154 +77,42 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
                 </p>
 
                 <div className='w-[70%]'>
-                  <Select size='xs'>
-                    <option value='option1' className='text-gray-800'>
-                      Option 1
-                    </option>
-                    <option value='option2' className='text-gray-800'>
+                  <Select
+                    size='xs'
+                    onChange={(e) => setActiveForm(e.target.value)}
+                  >
+                    {forms.map((form, index) => (
+                      <option
+                        key={index}
+                        value={form.value}
+                        className='text-gray-800'
+                      >
+                        {form.name}
+                      </option>
+                    ))}
+                    {/* <option value='option2' className='text-gray-800'>
                       Option 2
                     </option>
                     <option value='option3' className='text-gray-800'>
                       Option 3
-                    </option>
+                    </option> */}
                   </Select>
                 </div>
               </div>
+              {/* Render Form */}
+              {renderForm(activeForm)}
 
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>
-                  <span className='font-bold text-secondary-color'>*</span>
-                  First Name:
-                </p>
-
-                <div className='w-[70%]'>
-                  <Input placeholder='small size' size='sm' />
-                </div>
-              </div>
-
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>
-                  Middle initial:
-                </p>
-
-                <div className='w-[70%]'>
-                  <Input placeholder='small size' size='sm' />
-                </div>
-              </div>
-
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>
-                  <span className='font-bold text-secondary-color'>*</span>Last
-                  Name:
-                </p>
-
-                <div className='w-[70%]'>
-                  <Input placeholder='small size' size='sm' />
-                </div>
-              </div>
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>Email:</p>
-
-                <div className='w-[70%]'>
-                  <Input placeholder='small size' type={'email'} size='sm' />
-                </div>
-              </div>
-
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>
-                  Sales Rep:
-                </p>
-
-                <div className='w-[70%]'>
-                  <Select size='xs'>
-                    <option value='option1' className='text-gray-800'>
-                      Option 1
-                    </option>
-                    <option value='option2' className='text-gray-800'>
-                      Option 2
-                    </option>
-                    <option value='option3' className='text-gray-800'>
-                      Option 3
-                    </option>
-                  </Select>
-                </div>
-              </div>
-
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>
-                  <span className='font-bold text-secondary-color'>*</span>
-                  Start:
-                </p>
-
-                <div className='w-[70%]'>
-                  <Input
-                    placeholder='Select Date and Time'
-                    size='sm'
-                    type='date'
-                  />
-                </div>
-              </div>
-
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>
-                  End Date:
-                </p>
-
-                <div className='w-[70%]'>
-                  <Input
-                    placeholder='Select Date and Time'
-                    size='sm'
-                    type='date'
-                  />
-                </div>
-              </div>
-
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>
-                  Physician Group:
-                </p>
-
-                <div className='w-[70%]'>
-                  <Input placeholder='small size' size='sm' />
-                </div>
-              </div>
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>
-                  Specialty:
-                </p>
-
-                <div className='w-[70%]'>
-                  <Input placeholder='small size' size='sm' />
-                </div>
-              </div>
-
-              <div className='my-2 flex'>
-                <p className='mr-3 w-[20%] text-right font-semibold'>Title:</p>
-
-                <div className='w-[70%]'>
-                  <Select size='xs'>
-                    <option value='option1' className='text-gray-800'>
-                      Option 1
-                    </option>
-                    <option value='option2' className='text-gray-800'>
-                      Option 2
-                    </option>
-                    <option value='option3' className='text-gray-800'>
-                      Option 3
-                    </option>
-                  </Select>
+              <div className='mx-auto flex justify-center p-5'>
+                <div>
+                  <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                    Save
+                  </button>
+                  <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                    Cancel
+                  </button>
                 </div>
               </div>
             </ModalBody>
-
-            <div className='mx-auto p-5'>
-              <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
-                Save
-              </button>
-              <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
-                Cancel
-              </button>
-            </div>
           </div>
         </ModalContent>
       </Modal>
