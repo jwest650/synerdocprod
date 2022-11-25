@@ -37,11 +37,11 @@ const EditDisasterPlan = ({
 
                 <section>
                   <table className='min-w-full overflow-auto'>
-                    <thead>
+                    <thead className='thead-primary'>
                       <tr>
-                        <th className=' w-[20px] pl-2 text-left'></th>
-                        <th className=' pl-2 text-left'>Disaster plan</th>
-                        <th className=' pl-2 text-left'>Plan Details</th>
+                        <th className=' th-first'></th>
+                        <th className=' th-middle'>Disaster plan</th>
+                        <th className=' th-last'>Plan Details</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -52,13 +52,13 @@ const EditDisasterPlan = ({
                             i % 2 === 0 && 'bg-[#eeeeee]'
                           } `}
                         >
-                          <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                          <td className=' td-primary'>
                             <Checkbox />
                           </td>
-                          <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                          <td className=' td-primary'>
                             Patients needs Assistance
                           </td>
-                          <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                          <td className=' td-primary'>
                             <Textarea width={'100%'}></Textarea>
                           </td>
                         </tr>

@@ -102,48 +102,28 @@ const PatientsEncounters = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto text-xs'>
-            <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr className='border border-primary-color'>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Patient Name
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Latest cert period
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Agency{' '}
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Agency Type
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Team
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Admit Date
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Non Admit
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Status
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Payer Name
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Payer Category
-                </th>
-                <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
+            <thead className='thead-primary'>
+              <tr>
+                <th className=' th-first'></th>
+                <th className=' th-middle'>Patient Name</th>
+                <th className=' th-middle'>Latest cert period</th>
+                <th className=' th-middle'>Agency </th>
+                <th className=' th-middle'>Agency Type</th>
+                <th className=' th-middle'>Team</th>
+                <th className=' th-middle'>Admit Date</th>
+                <th className=' th-middle'>Non Admit</th>
+                <th className=' th-middle'>Status</th>
+                <th className=' th-middle'>Payer Name</th>
+                <th className=' th-middle'>Payer Category</th>
+                <th className=' th-last'></th>
               </tr>
             </thead>
             <tbody>
               <tr className='border border-gray-400 bg-light-blue'>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -160,7 +140,7 @@ const PatientsEncounters = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -177,7 +157,7 @@ const PatientsEncounters = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -194,9 +174,9 @@ const PatientsEncounters = () => {
                     </option>
                   </Select>
                 </td>
-                <td></td>
-                <td></td>
-                <td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -213,7 +193,7 @@ const PatientsEncounters = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -230,7 +210,7 @@ const PatientsEncounters = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -247,7 +227,7 @@ const PatientsEncounters = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <FcUnlock className='mx-auto h-[20px] w-[20px]' />
                 </td>
               </tr>
@@ -257,7 +237,7 @@ const PatientsEncounters = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <td className=' td-primary'>
                     <Tooltip
                       label={
                         <CustomToolTipLabel>
@@ -274,20 +254,16 @@ const PatientsEncounters = () => {
                       </span>
                     </Tooltip>
                   </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <td className=' td-primary'>
                     <Link href={'/Patients/patients-encounters/1'}>
-                      <p className=' cursor-pointer text-sm font-bold text-orange-500 underline'>
+                      <p className=' cursor-pointer  text-orange-500 underline'>
                         James Gordon
                       </p>
                     </Link>
                   </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    23/4/2022 8:43 AM
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Tampa Home Health
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <td className=' td-primary'>23/4/2022 8:43 AM</td>
+                  <td className=' td-primary'>Tampa Home Health</td>
+                  <td className=' td-primary'>
                     <Tooltip
                       label={
                         <CustomToolTipLabel text='Homecare Health Center' />
@@ -300,25 +276,13 @@ const PatientsEncounters = () => {
                       Home Health...
                     </Tooltip>
                   </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Amess Alicia
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    23/4/2022 8:43 AM
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    23/4/2022 8:43 AM
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    pending
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    James Gordon
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Medicare
-                  </td>
-                  <td className=' max-h-[20px] min-w-[30px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <td className=' td-primary'>Amess Alicia</td>
+                  <td className=' td-primary'>23/4/2022 8:43 AM</td>
+                  <td className=' td-primary'>23/4/2022 8:43 AM</td>
+                  <td className=' td-primary'>pending</td>
+                  <td className=' td-primary'>James Gordon</td>
+                  <td className=' td-primary'>Medicare</td>
+                  <td className=' td-primary'>
                     <Link href={'/Patients/patients-encounters/1'}>
                       <Image
                         src={SearchIcon}

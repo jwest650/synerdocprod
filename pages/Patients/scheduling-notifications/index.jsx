@@ -30,38 +30,19 @@ const SchedulingNotifications = () => {
         <section>
           <div>
             <table className=' min-w-full overflow-auto'>
-              <thead className='border-b bg-primary-color text-xs text-[18px] tracking-wider text-white'>
-                <tr className='border border-primary-color '>
-                  <th
-                    color={'#selecto'}
-                    className=' border-r border-gray-400 py-1 px-2  text-left text-xs'
-                  >
+              <thead className='thead-primary'>
+                <tr>
+                  <th color={'#selecto'} className='th-first'>
                     <Checkbox></Checkbox>
                   </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Dates
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Agency
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Patient Name
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Change Reason
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Change Date
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Associate Name
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Associate Phone
-                  </th>
-                  <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
-                    Associate Email/Mobile
-                  </th>
+                  <th className='th-middle'>Dates</th>
+                  <th className='th-middle'>Agency</th>
+                  <th className='th-middle'>Patient Name</th>
+                  <th className='th-middle'>Change Reason</th>
+                  <th className='th-middle'>Change Date</th>
+                  <th className='th-middle'>Associate Name</th>
+                  <th className='th-middle'>Associate Phone</th>
+                  <th className='th-last'>Associate Email/Mobile</th>
                 </tr>
               </thead>
               <tbody>
@@ -70,40 +51,28 @@ const SchedulingNotifications = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium '>
+                    <td className=' td-primary '>
                       <div className='flex justify-center'>
                         <Checkbox></Checkbox>
                       </div>
                     </td>
-                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium '>
+                    <td className=' td-primary'>
                       <div className='flex justify-center'>
                         <BsFillCalendarDateFill />
                       </div>
                     </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Tampa Home Health
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Amess Alicia
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      new reason
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      23/4/2022 8:43 AM
-                    </td>
+                    <td className=' td-primary'>Tampa Home Health</td>
+                    <td className=' td-primary'>Amess Alicia</td>
+                    <td className=' td-primary'>new reason</td>
+                    <td className=' td-primary'>23/4/2022 8:43 AM</td>
                     <td
-                      className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'
+                      className=' td-primary'
                       onClick={() => setOpenAddReferral(true)}
                     >
                       James Gordon
                     </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      233-445-565-666
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      destiny@synerdoc.com
-                    </td>
+                    <td className=' td-primary'>233-445-565-666</td>
+                    <td className=' td-primary'>destiny@synerdoc.com</td>
                   </tr>
                 ))}
               </tbody>

@@ -44,52 +44,28 @@ const ViewOrders = () => {
         <section>
           <div>
             <table className=' min-w-full overflow-auto text-xs'>
-              <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
-                <tr className='border border-primary-color '>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Print
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Fax
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Email
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Patient Name
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Team
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Types
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Cert From
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    To
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Associate
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Status
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Physician
-                  </th>
-                  <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
-                    Sent
-                  </th>
+              <thead className='thead-primary'>
+                <tr>
+                  <th className=' th-first'>Print</th>
+                  <th className=' th-middle'>Fax</th>
+                  <th className=' th-middle'>Email</th>
+                  <th className=' th-middle'>Patient Name</th>
+                  <th className=' th-middle'>Team</th>
+                  <th className=' th-middle'>Types</th>
+                  <th className=' th-middle'>Cert From</th>
+                  <th className=' th-middle'>To</th>
+                  <th className=' th-middle'>Associate</th>
+                  <th className=' th-middle'>Status</th>
+                  <th className=' th-middle'>Physician</th>
+                  <th className=' th-last'>Sent</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className='border border-gray-400 bg-light-blue'>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
+                  <td className='td-primary'></td>
+                  <td className='td-primary'></td>
+                  <td className='td-primary'></td>
+                  <td className='td-primary'>
                     <Select
                       size='xs'
                       css={{ border: 'none', backgroundColor: '#eee' }}
@@ -106,7 +82,7 @@ const ViewOrders = () => {
                       </option>
                     </Select>
                   </td>
-                  <td>
+                  <td className='td-primary'>
                     <Select
                       size='xs'
                       css={{ border: 'none', backgroundColor: '#eee' }}
@@ -123,10 +99,10 @@ const ViewOrders = () => {
                       </option>
                     </Select>
                   </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
+                  <td className='td-primary'></td>
+                  <td className='td-primary'></td>
+                  <td className='td-primary'></td>
+                  <td className='td-primary'>
                     <Select
                       size='xs'
                       css={{ border: 'none', backgroundColor: '#eee' }}
@@ -143,8 +119,8 @@ const ViewOrders = () => {
                       </option>
                     </Select>
                   </td>
-                  <td></td>
-                  <td>
+                  <td className='td-primary'></td>
+                  <td className='td-primary'>
                     <Select
                       size='xs'
                       css={{ border: 'none', backgroundColor: '#eee' }}
@@ -161,51 +137,35 @@ const ViewOrders = () => {
                       </option>
                     </Select>
                   </td>
-                  <td></td>
+                  <td className='td-primary'></td>
                 </tr>
                 {data.map((data, i) => (
                   <tr
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <td className=' td-primary'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <td className=' td-primary'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <td className=' td-primary'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      <p className=' cursor-pointer text-sm font-bold text-secondary-color underline'>
+                    <td className=' td-primary'>
+                      <p className=' cursor-pointer  text-secondary-color underline'>
                         Amess Alicia
                       </p>
                     </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Accra
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Wound care
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      23/4/2022 8:43 AM
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      23/4/2022 8:43 AM
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Printed and Mailed
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Dickson Janet
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Dickson Janet
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      23/4/2022 8:43 AM
-                    </td>
+                    <td className=' td-primary'>Accra</td>
+                    <td className=' td-primary'>Wound care</td>
+                    <td className=' td-primary'>23/4/2022 8:43 AM</td>
+                    <td className=' td-primary'>23/4/2022 8:43 AM</td>
+                    <td className=' td-primary'>Printed and Mailed</td>
+                    <td className=' td-primary'>Dickson Janet</td>
+                    <td className=' td-primary'>Dickson Janet</td>
+                    <td className=' td-primary'>23/4/2022 8:43 AM</td>
                   </tr>
                 ))}
               </tbody>

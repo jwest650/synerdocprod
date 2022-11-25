@@ -55,49 +55,29 @@ const ServiceNotesTab = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-xs tracking-wider text-white'>
-              <tr className='border border-primary-color'>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Type
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Createed
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Form Entered By
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Revised By
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Service provided By
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Service Date
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Time in
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Time out
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Service
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  QA Status
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+            <thead className='thead-primary'>
+              <tr>
+                <th className=' th-first'>Type</th>
+                <th className=' th-middle'>Createed</th>
+                <th className=' th-middle'>Form Entered By</th>
+                <th className=' th-middle'>Revised By</th>
+                <th className=' th-middle'>Service provided By</th>
+                <th className=' th-middle'>Service Date</th>
+                <th className=' th-middle'>Time in</th>
+                <th className=' th-middle'>Time out</th>
+                <th className=' th-middle'>Service</th>
+                <th className=' th-middle'>QA Status</th>
+                <th className=' th-middle'></th>
+                <th className=' th-middle'></th>
+                <th className=' th-last'></th>
               </tr>
             </thead>
             <tbody>
               <tr className='bg-light-blue'>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#ccc' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -111,17 +91,17 @@ const ServiceNotesTab = () => {
                     </option>
                   </Select>
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#ccc' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -135,10 +115,10 @@ const ServiceNotesTab = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
-                    css={{ border: 'none' }}
+                    css={{ border: 'none', backgroundColor: '#ccc' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -152,9 +132,9 @@ const ServiceNotesTab = () => {
                     </option>
                   </Select>
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
               </tr>
 
               {data.map((data, i) => (
@@ -162,18 +142,18 @@ const ServiceNotesTab = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
                 </tr>
               ))}
             </tbody>

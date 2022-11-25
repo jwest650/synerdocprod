@@ -46,23 +46,13 @@ const AddServiceFacilityModal = ({
 
               <div>
                 <table className='mt-10 min-w-full overflow-auto text-xs'>
-                  <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
-                    <tr className='border border-primary-color'>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Select
-                      </th>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Name
-                      </th>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Type
-                      </th>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Preferred number
-                      </th>
-                      <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
-                        Referral Address
-                      </th>
+                  <thead className='thead-primary'>
+                    <tr>
+                      <th className=' th-first'>Select</th>
+                      <th className=' th-middle'>Name</th>
+                      <th className=' th-middle'>Type</th>
+                      <th className=' th-middle'>Preferred number</th>
+                      <th className=' th-last'>Referral Address</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -71,13 +61,13 @@ const AddServiceFacilityModal = ({
                         key={i}
                         className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                       >
-                        <td className='border border-gray-400'>
+                        <td className='td-primary'>
                           <Checkbox defaultChecked></Checkbox>
                         </td>
-                        <td className='border border-gray-400'>John Mason</td>
-                        <td className='border border-gray-400'>Others</td>
-                        <td className='border border-gray-400'>054344455</td>
-                        <td className='border border-gray-400'>CL, Miami</td>
+                        <td className='td-primary'>John Mason</td>
+                        <td className='td-primary'>Others</td>
+                        <td className='td-primary'>054344455</td>
+                        <td className='td-primary'>CL, Miami</td>
                       </tr>
                     ))}
                   </tbody>

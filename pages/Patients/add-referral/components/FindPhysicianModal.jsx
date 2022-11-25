@@ -49,24 +49,14 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                   </div>
                 </div>
 
-                <table className=' min-w-full overflow-auto text-xs'>
-                  <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
-                    <tr className='border border-primary-color'>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Select
-                      </th>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Name
-                      </th>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Type
-                      </th>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Preffered Phone
-                      </th>
-                      <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                        Referral Address
-                      </th>
+                <table className=' min-w-full overflow-auto '>
+                  <thead className='thead-primary'>
+                    <tr>
+                      <th className=' th-first'>Select</th>
+                      <th className=' th-middle'>Name</th>
+                      <th className=' th-middle'>Type</th>
+                      <th className=' th-middle'>Preffered Phone</th>
+                      <th className=' th-last'>Referral Address</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -75,13 +65,13 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                         key={i}
                         className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                       >
-                        <td className='border border-gray-400'>
+                        <td className='td-primary'>
                           <Checkbox></Checkbox>
                         </td>
-                        <td className='border border-gray-400'>Nick, Jones</td>
-                        <td className='border border-gray-400'>23/12/05</td>
-                        <td className='border border-gray-400'>Male</td>
-                        <td className='border border-gray-400'>Pending</td>
+                        <td className='td-primary'>Nick, Jones</td>
+                        <td className='td-primary'>23/12/05</td>
+                        <td className='td-primary'>Male</td>
+                        <td className='td-primary'>Pending</td>
                       </tr>
                     ))}
                   </tbody>

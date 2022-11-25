@@ -47,27 +47,15 @@ const IncompleteReferrals = () => {
         <section>
           <div>
             <table className='mt-3 min-w-full overflow-auto text-xs'>
-              <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
-                <tr className='border border-primary-color'>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Created
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Agency
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Agency Type
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Referral Contact
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Contact Phone
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Referral Source
-                  </th>
-                  <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
+              <thead className='thead-primary'>
+                <tr>
+                  <th className=' th-first'>Created</th>
+                  <th className=' th-middle'>Agency</th>
+                  <th className=' th-middle'>Agency Type</th>
+                  <th className=' th-middle'>Referral Contact</th>
+                  <th className=' th-middle'>Contact Phone</th>
+                  <th className=' th-middle'>Referral Source</th>
+                  <th className=' th-last'></th>
                 </tr>
               </thead>
               <tbody>
@@ -76,30 +64,22 @@ const IncompleteReferrals = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      23/4/2022 8:43 AM
-                    </td>
-                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Tampa Home Health
-                    </td>
-                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Home Health
-                    </td>
-                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Amess Alicia
-                    </td>
-                    <td className=' max-h-[20px] min-w-[120px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                    <td className=' td-primary'>23/4/2022 8:43 AM</td>
+                    <td className=' td-primary'>Tampa Home Health</td>
+                    <td className=' td-primary'>Home Health</td>
+                    <td className=' td-primary'>Amess Alicia</td>
+                    <td className=' td-primary'></td>
                     <td
-                      className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'
+                      className=' td-primary'
                       // onClick={() => setOpenAddReferral(true)}
                     >
                       <Link href={'/Patients/add-referral'}>
-                        <p className=' cursor-pointer text-sm font-bold text-secondary-color underline'>
+                        <p className=' cursor-pointer text-secondary-color underline'>
                           James Gordon
                         </p>
                       </Link>
                     </td>
-                    <td className=' max-h-[20px] max-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <td className=' td-primary'>
                       <Link href={'/Patients/add-referral'}>
                         <Image
                           src={SearchIcon}

@@ -87,38 +87,22 @@ const VerifiedServices = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border bg-primary-color text-[18px] text-xs tracking-wider text-white'>
-              <tr className='border border-primary-color '>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Patient
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Associates
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Service
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Service Date{' '}
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Time In
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Time Out
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Payer Name
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Status
-                </th>
-                <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
+            <thead className='thead-primary'>
+              <tr>
+                <th className='th-first'>Patient</th>
+                <th className='th-middle'>Associates</th>
+                <th className='th-middle'>Service</th>
+                <th className='th-middle'>Service Date </th>
+                <th className='th-middle'>Time In</th>
+                <th className='th-middle'>Time Out</th>
+                <th className='th-middle'>Payer Name</th>
+                <th className='th-middle'>Status</th>
+                <th className=' th-last'></th>
               </tr>
             </thead>
             <tbody>
               <tr className='border border-gray-400 bg-light-blue'>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -135,7 +119,7 @@ const VerifiedServices = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -152,7 +136,7 @@ const VerifiedServices = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -169,10 +153,10 @@ const VerifiedServices = () => {
                     </option>
                   </Select>
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -189,7 +173,7 @@ const VerifiedServices = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -206,7 +190,7 @@ const VerifiedServices = () => {
                     </option>
                   </Select>
                 </td>
-                <td></td>
+                <td className='td-primary'></td>
               </tr>
 
               {data.map((data, i) => (
@@ -214,29 +198,17 @@ const VerifiedServices = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    James Gordon
+                  <td className=' td-primary'>James Gordon</td>
+                  <td className=' td-primary'>1.High priority requires</td>
+                  <td className=' td-primary'>Tampa Home Health</td>
+                  <td className=' td-primary'>10/8/19</td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'>Home Health</td>
+                  <td className=' td-primary'>
+                    <p className=' cursor-pointer  text-green-700'>Verified</p>
                   </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    1.High priority requires
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Tampa Home Health
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    10/8/19
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Home Health
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <p className=' cursor-pointer text-sm font-bold text-green-700'>
-                      Verified
-                    </p>
-                  </td>
-                  <td className=' max-h-[20px] min-w-[20px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <td className=' td-primary'>
                     <Link href={'#'}>
                       <Image
                         src={SearchIcon}

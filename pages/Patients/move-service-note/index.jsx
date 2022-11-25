@@ -92,34 +92,24 @@ const MoveServiceNote = () => {
       <section>
         <div>
           <table className=' min-w-full overflow-auto text-xs'>
-            <thead className='border-b bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr className='border border-primary-color '>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Associate Name
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Service
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Service Date
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Time In
-                </th>
-                <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'>
-                  Time Out
-                </th>
+            <thead className='thead-primary'>
+              <tr>
+                <th className=' th-first'></th>
+                <th className=' th-middle'>Associate Name</th>
+                <th className=' th-middle'>Service</th>
+                <th className=' th-middle'>Service Date</th>
+                <th className=' th-middle'>Time In</th>
+                <th className=' th-last'>Time Out</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <tr className='bg-light-blue'>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
               </tr>
               <tr className='dark:text-white'></tr>
               {data.map((data, i) => (
@@ -127,24 +117,14 @@ const MoveServiceNote = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <td className=' td-primary'>
                     <Checkbox defaultChecked></Checkbox>
                   </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Amess Alicia
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Wound care
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    23/4/2022 8:43 AM
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    23/4/2022 8:43 AM
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    23/4/2022 8:43 AM
-                  </td>
+                  <td className=' td-primary'>Amess Alicia</td>
+                  <td className=' td-primary'>Wound care</td>
+                  <td className=' td-primary'>23/4/2022 8:43 AM</td>
+                  <td className=' td-primary'>23/4/2022 8:43 AM</td>
+                  <td className=' td-primary'>23/4/2022 8:43 AM</td>
                 </tr>
               ))}
             </tbody>

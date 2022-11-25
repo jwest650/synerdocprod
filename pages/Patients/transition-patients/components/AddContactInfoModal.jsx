@@ -140,18 +140,12 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
 
                 <div className='first-letter: flex w-[100%] flex-1 flex-col justify-between p-2'>
                   <table className=' min-w-full overflow-auto text-xs'>
-                    <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
-                      <tr className='border border-primary-color'>
-                        <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                          Preffered
-                        </th>
-                        <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                          Phone Type
-                        </th>
-                        <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                          Phone
-                        </th>
-                        <th className=' border-l border-gray-400 py-1 px-2  text-left text-xs'></th>
+                    <thead className='thead-primary'>
+                      <tr>
+                        <th className=' th-first'>Preffered</th>
+                        <th className=' th-middle'>Phone Type</th>
+                        <th className=' th-middle'>Phone</th>
+                        <th className=' th-last'></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -162,15 +156,12 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                             i % 2 === 0 && 'bg-[#eeeeee]'
                           } `}
                         >
-                          <td className='border border-gray-400'>
+                          <td className='td-primary'>
                             <Checkbox></Checkbox>
                           </td>
-                          <td className='border border-gray-400'>Home</td>
-                          <td className='border border-gray-400'>233454545</td>
-                          <td
-                            // className='border border-gray-400'
-                            className=' max-h-[20px] min-w-[80px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'
-                          >
+                          <td className='td-primary'>Home</td>
+                          <td className='td-primary'>233454545</td>
+                          <td className='td-primary'>
                             <FiTrash2 />
                           </td>
                         </tr>

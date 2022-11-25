@@ -47,7 +47,7 @@ const ScheduleServiceModal = ({
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className='border'>
+                      <tr>
                         <td className='td-primary'>
                           <Checkbox></Checkbox>
                         </td>
