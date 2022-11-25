@@ -1,4 +1,4 @@
-import { FcInfo } from 'react-icons/fc';
+import EditPhysicians from './EditPhysician';
 
 const EachPhysicianHeader = ({ physicianUrl }) => {
   return (
@@ -8,10 +8,7 @@ const EachPhysicianHeader = ({ physicianUrl }) => {
           <h2 className="verdana16 font-semibold tracking-wide">
             {physicianUrl}
           </h2>
-          <span className="verdana11 flex cursor-pointer items-center gap-1 text-orange-600 underline">
-            [Edit]
-            <FcInfo className="rotate-180" />
-          </span>
+          <EditPhysicians />
         </div>
         <div className="space-x-5">
           <span className="text-base font-extrabold text-green-800">

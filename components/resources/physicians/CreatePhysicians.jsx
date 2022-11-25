@@ -23,7 +23,7 @@ const CreatePhysicians = () => {
         <BiPlus className="scale-150" />
         <span>Create Physicians</span>
       </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      <Modal isOpen={isOpen} size={'2xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
@@ -32,97 +32,93 @@ const CreatePhysicians = () => {
               <p className="verdana12 text-gray-400">
                 Select a special, title and physician details
               </p>
-              <div className="mt-10 flex justify-center gap-4">
-                <div className="verdana14 space-y-[18px]">
-                  <div className="flex items-center justify-end">
-                    <label className="flex">
-                      <span className="text-red-600">*</span>First Name:{' '}
-                    </label>
+
+              <div className="verdana13 mt-10">
+                <div className="flex w-full flex-col items-center gap-3.5">
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%]  justify-end">
+                      <span className="text-primary-orange">*</span>Fist Name:
+                    </p>
+                    <div className=" flex w-[60%] gap-2">
+                      <input
+                        type="text"
+                        placeholder="First Name"
+                        className="input-primary"
+                      />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label htmlFor="">Middle Initial:</label>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Middle Initial:</p>
+                    <div className=" flex w-[60%] items-center gap-2">
+                      <input type="text" className="input-primary" />{' '}
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end">
-                    <label className="text-red-600">*</label>Last Name:{' '}
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">
+                      <span className="text-primary-orange">*</span> Last Name:
+                    </p>
+                    <div className=" flex w-[60%] items-center gap-2">
+                      <input
+                        type="text"
+                        placeholder="Last Name"
+                        className="input-primary"
+                      />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label htmlFor="">Title:</label>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Title:</p>
+                    <div className=" flex w-[60%]">
+                      <TableSelect
+                        options={['Medical Doctor', 'Physician Assistant']}
+                      />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label htmlFor="">Speciality:</label>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Speciality:</p>
+                    <div className=" flex w-[60%] ">
+                      <TableSelect options={['Cardiologist', 'Dentist']} />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label htmlFor="">Email:</label>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Email:</p>
+                    <div className=" flex w-[60%] ">
+                      <input
+                        type="email"
+                        placeholder="example@gmail.com"
+                        className="input-primary"
+                      />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label htmlFor="">Physician Group:</label>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Physician Group:</p>
+                    <div className=" flex w-[60%] ">
+                      <input type="email" className="input-primary" />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label htmlFor="">Sales Rep:</label>
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">Sales Rep:</p>
+                    <div className=" flex w-[60%] ">
+                      <TableSelect options={['Matilda Ivy', 'Option2']} />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end">
-                    <label className="text-red-600">*</label>Start Date:{' '}
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">
+                      {' '}
+                      <span className="text-primary-orange">*</span> Start Date:
+                    </p>
+                    <div className=" flex w-[60%] ">
+                      <input type="date" className="input-primary" />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label htmlFor="">End Date:</label>
-                  </div>
-                </div>
-                <div className="space-y-[14px]">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="First Name"
-                      className="input-primary w-60"
-                    />
-                  </div>
-                  <div>
-                    <input type="text" className="input-primary w-40" />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Last Name"
-                      className="input-primary w-60"
-                    />
-                  </div>
-                  <TableSelect
-                    styles={{ width: '100%' }}
-                    options={['Medical Doctore', 'Physician Assistant']}
-                  />
-                  <TableSelect
-                    styles={{ width: '100%' }}
-                    options={['Cardiologist', 'Dentist']}
-                  />
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="example@gmail.com"
-                      className="input-primary w-60"
-                    />
-                  </div>
-                  <div>
-                    <input type="text" className="input-primary w-full" />
-                  </div>
-                  <TableSelect
-                    styles={{ width: '100%' }}
-                    options={['Matilda Ivy']}
-                  />
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="11/27/1960"
-                      className="input-primary w-28"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="11/27/1960"
-                      className="input-primary w-28"
-                    />
+                  <div className="flex w-full items-center justify-center gap-3 ">
+                    <p className="flex w-[40%] justify-end">End Date:</p>
+                    <div className=" flex w-[60%] ">
+                      <input type="date" className="input-primary" />
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
