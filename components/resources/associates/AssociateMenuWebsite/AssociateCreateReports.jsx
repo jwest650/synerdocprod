@@ -24,7 +24,7 @@ const AssociateCreateReports = ({ setShowReports, action }) => {
           className="btn-primary flex cursor-pointer items-center gap-1"
         >
           <BiPlus className="scale-150" />
-          <span className="verdana11">Create Report</span>
+          <span>Create Report</span>
         </span>
       )}
       {action === 'edit' && (
@@ -43,7 +43,7 @@ const AssociateCreateReports = ({ setShowReports, action }) => {
               <h1 className="verdana16 font-bold">
                 {action === 'create' ? 'Create' : 'Edit'} Report
               </h1>
-              <p className="verdana12 mt-2 text-gray-500">
+              <p className="verdana11 mt-2 text-gray-500">
                 Select a report and enter start date.
               </p>
               <div className="verdana12 mx-2 mt-14 w-full space-y-5">

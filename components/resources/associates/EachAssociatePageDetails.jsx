@@ -8,8 +8,8 @@ const EachAssociatePageDetails = ({ children }) => {
   const currentMenu = router.query?.associatemenu;
 
   return (
-    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b  pt-5 text-sm">
-      <ul className="flex w-full flex-wrap items-end justify-start">
+    <div className="-mt-12 flex w-full flex-col items-center rounded border-x  border-b pt-5">
+      <ul className="verdana12 flex w-full flex-wrap items-end justify-start">
         {associateMenu.map((menu, index) => (
           <Link
             href={`/Resources/associates/${currentAssociate}/${menu.url}`}
@@ -38,7 +38,7 @@ const EachAssociatePageDetails = ({ children }) => {
         ))}
         <li className="flex-auto border border-gray-300" />
       </ul>
-      <div className="-mt-[1px] h-full w-full  border-x  bg-white">
+      <div className="verdana11 -mt-[1px] h-full w-full  border-x  bg-white">
         {children}
       </div>
     </div>

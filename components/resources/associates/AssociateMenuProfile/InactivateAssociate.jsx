@@ -17,7 +17,7 @@ const InactivateAssociate = () => {
   return (
     <>
       <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer pt-[2px] text-secondary-color underline">
+        <p className="mr-2 cursor-pointer pt-[5px] text-secondary-color underline">
           [Inactivate]
         </p>
       </span>

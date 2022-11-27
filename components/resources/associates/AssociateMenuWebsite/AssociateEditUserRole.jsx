@@ -12,13 +12,13 @@ const AssociateEditUserRole = ({ setEditUserRole }) => {
         <h1 className="verdana14 mb-3 border-b border-primary-gray pb-2 font-semibold">
           Edit User Roles
         </h1>
-        <p className="verdana12 text-gray-500">
+        <p className="text-gray-500">
           Edit the roles that the user will use when accessing the website
         </p>
         <div className="flex w-full gap-6">
           <div className="w-[40%]">
             <h2 className="verdana16 my-10 font-semibold">{associateUrl}</h2>
-            <div className="verdana12 flex flex-col items-center justify-center gap-3 rounded border-2 bg-texiary-blue p-6 shadow">
+            <div className="flex flex-col items-center justify-center gap-3 rounded border-2 bg-texiary-blue p-6 shadow">
               <AssociateUserDetails associateUrl={associateUrl} />
             </div>
           </div>
@@ -29,7 +29,7 @@ const AssociateEditUserRole = ({ setEditUserRole }) => {
                 these roles control security when accessing the website
               </span>
             </h2>
-            <ul className="verdana12 grid grid-cols-2  rounded border-2 bg-texiary-blue p-5 shadow lg:grid-cols-3">
+            <ul className="grid grid-cols-2  rounded border-2 bg-texiary-blue p-5 shadow lg:grid-cols-3">
               {associateRoles.map((role, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <input

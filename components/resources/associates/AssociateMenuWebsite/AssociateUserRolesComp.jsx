@@ -12,11 +12,11 @@ const AssociateUserRolesComp = ({ setEditUserRole }) => {
           onClick={() =>
             setEditUserRole(() => ({ action: true, from: 'edit' }))
           }
-          className="cursor-pointer border-r border-primary-gray pr-4 text-primary-orange underline"
+          className="verdana10 cursor-pointer border-r border-primary-gray pr-4 text-primary-orange underline"
         >
           [Edit]
         </div>
-        <div className="verdana11 mx-8 flex w-full flex-col items-center justify-center gap-3 rounded-sm border border-primary-gray bg-texiary-blue p-6 shadow-md">
+        <div className="mx-8 flex w-full flex-col items-center justify-center gap-3 rounded-sm border border-primary-gray bg-texiary-blue p-6 shadow-md">
           <AssociateUserDetails associateUrl={associateUrl} />
         </div>
       </div>

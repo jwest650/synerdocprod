@@ -13,7 +13,7 @@ const OrganizationPayers = () => {
     <section className="mx-10 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
-          <h2 className="verdana18 font-semibold tracking-wider">Payers</h2>
+          <h2 className="verdana16 font-semibold tracking-wider">Payers</h2>
           <CreateOrganizationPayers />
         </div>
         <div className="space-x-3">
@@ -26,9 +26,9 @@ const OrganizationPayers = () => {
         </div>
       </div>
 
-      <table className="mt-10 min-w-full overflow-auto shadow-md">
+      <table className="mt-2 min-w-full overflow-auto shadow-md">
         <thead className="thead-primary">
-          <tr className="verdana11">
+          <tr>
             <th className="th-first">Name</th>
             <th className="th-middle">Payer Category</th>
             <th className="th-middle">Claim Filing Type</th>
@@ -60,7 +60,7 @@ const OrganizationPayers = () => {
             <td></td>
           </tr>
           {organizationPayersTableData.map((organizationPayers, i) => (
-            <tr key={i} className={`verdana11 border even:bg-[#eeeeee]`}>
+            <tr key={i} className={`border even:bg-[#eeeeee]`}>
               <td className="td-primary min-w-[200px] text-orange-600 underline decoration-orange-600">
                 <Link
                   href={`/Resources/organization-payers/${organizationPayers.url}/contactinfo`}

@@ -4,16 +4,16 @@ import SearchIcon from '../../../../assets/images/search.png';
 
 const AssociateSecurityTable = ({ setEditUserRole }) => {
   return (
-    <div className="flex ">
+    <div className="flex">
       <div
         onClick={() => setEditUserRole(() => ({ action: true, from: 'edit' }))}
-        className="verdana11 cursor-pointer border-r border-primary-gray pr-4 text-primary-orange"
+        className="verdana10 cursor-pointer border-r border-primary-gray pr-4 text-primary-orange"
       >
         [Edit]
       </div>
       <table className=" mx-8 w-full overflow-auto px-3 shadow-md">
         <thead className="thead-primary">
-          <tr className="verdana11">
+          <tr>
             <th className="th-first underline">User Roles </th>
             <th className="th-last">Action</th>
           </tr>

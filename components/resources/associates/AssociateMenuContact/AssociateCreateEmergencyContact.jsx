@@ -24,14 +24,14 @@ const AssociateCreateEmergencyContact = () => {
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-150" />
-        <span className="verdana11">Create Emergency Contact</span>
+        <span>Create Emergency Contact</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">
+              <h1 className="verdana16 font-semibold">
                 Add Emergency Contact Info
               </h1>
               <div className="mt-16 flex flex-col items-center lg:flex-row lg:items-start">

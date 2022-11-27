@@ -16,7 +16,7 @@ const EditAssociateAgencies = () => {
   return (
     <>
       <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer pt-[2px] text-secondary-color underline">
+        <p className="verdana10 mr-2 cursor-pointer pt-[2px] text-secondary-color underline">
           [Edit]
         </p>
       </span>
@@ -25,7 +25,7 @@ const EditAssociateAgencies = () => {
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">
+              <h1 className="verdana16 font-semibold">
                 Edit Associate Agencies/ Territories/ Teams
               </h1>
 

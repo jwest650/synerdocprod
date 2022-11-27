@@ -16,7 +16,7 @@ const ReassignAssociate = () => {
   return (
     <>
       <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer pt-[2px] text-secondary-color underline">
+        <p className="mr-2 cursor-pointer text-secondary-color underline">
           [Reassign]
         </p>
       </span>
