@@ -33,7 +33,7 @@ const PhysicianOrders = () => {
         </div>
       </div>
 
-      <table className="mt-10 w-full overflow-auto shadow-md">
+      <table className="mt-1 w-full overflow-auto shadow-md">
         <thead className="thead-primary">
           <tr className="verdana11">
             <th className="th-first">Order Type</th>
