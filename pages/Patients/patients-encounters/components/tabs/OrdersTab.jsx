@@ -48,39 +48,21 @@ const OrdersTab = () => {
 
         <section className=' min-h-[200px]'>
           <table className=' min-w-full overflow-auto'>
-            <thead className='border-b bg-primary-color text-xs tracking-wider text-white'>
-              <tr className='border border-primary-color'>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Reason Type
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Status
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Locked
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Transmited
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Response
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Created
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Created By
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Modified By
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                  Completed By
-                </th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-                <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+            <thead className='thead-primary'>
+              <tr>
+                <th className=' th-first'>Reason Type</th>
+                <th className=' th-middle'>Status</th>
+                <th className=' th-middle'>Locked</th>
+                <th className=' th-middle'>Transmited</th>
+                <th className=' th-middle'>Response</th>
+                <th className=' th-middle'>Created</th>
+                <th className=' th-middle'>Created By</th>
+                <th className=' th-middle'>Modified By</th>
+                <th className=' th-middle'>Completed By</th>
+                <th className=' th-middle'></th>
+                <th className=' th-middle'></th>
+                <th className=' th-middle'></th>
+                <th className=' th-last'></th>
               </tr>
             </thead>
             <tbody>
@@ -89,30 +71,18 @@ const OrdersTab = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    James Gordon
+                  <td className=' td-primary'>James Gordon</td>
+                  <td className=' td-primary'>1.High priority requires</td>
+                  <td className=' td-primary'>Tampa Home Health</td>
+                  <td className=' td-primary'>10/8/19</td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'>Home Health</td>
+                  <td className=' td-primary'>
+                    <p className=' cursor-pointer  text-green-700 '>Assigned</p>
                   </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    1.High priority requires
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Tampa Home Health
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    10/8/19
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Home Health
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    <p className=' cursor-pointer text-sm font-bold text-green-700 '>
-                      Assigned
-                    </p>
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
                 </tr>
               ))}
             </tbody>

@@ -79,38 +79,22 @@ const AdjustVerifiedService = () => {
       <section>
         <div>
           <table className='verdana13 min-w-full overflow-auto '>
-            <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
-              <tr className='border border-primary-color'>
-                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                  Patient Name
-                </th>
-                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                  Associate Name
-                </th>
-                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                  Service
-                </th>
-                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                  Service Date
-                </th>
-                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                  Time In
-                </th>
-                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                  Time Out
-                </th>
-                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                  Agency Name
-                </th>
-                <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                  Payer Name
-                </th>
-                <th className=' verdana13 border-l border-gray-400 py-1  px-2 text-left '></th>
+            <thead className='thead-primary'>
+              <tr>
+                <th className=' th-first'>Patient Name</th>
+                <th className=' th-middle'>Associate Name</th>
+                <th className=' th-middle'>Service</th>
+                <th className=' th-middle'>Service Date</th>
+                <th className=' th-middle'>Time In</th>
+                <th className=' th-middle'>Time Out</th>
+                <th className=' th-middle'>Agency Name</th>
+                <th className=' th-middle'>Payer Name</th>
+                <th className=' th-last '></th>
               </tr>
             </thead>
             <tbody>
               <tr className='border border-gray-400 bg-light-blue'>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -127,7 +111,7 @@ const AdjustVerifiedService = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -144,11 +128,11 @@ const AdjustVerifiedService = () => {
                     </option>
                   </Select>
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -165,7 +149,7 @@ const AdjustVerifiedService = () => {
                     </option>
                   </Select>
                 </td>
-                <td>
+                <td className='td-primary'>
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
@@ -182,34 +166,22 @@ const AdjustVerifiedService = () => {
                     </option>
                   </Select>
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                <td className=' td-primary'></td>
               </tr>
               {data.map((data, i) => (
                 <tr
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Nick Jones
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    James Gordon
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Routine
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    15/12/2022
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Home Health
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                    Tampa Home Health
-                  </td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                  <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                  <td className=' td-primary'>Nick Jones</td>
+                  <td className=' td-primary'>James Gordon</td>
+                  <td className=' td-primary'>Routine</td>
+                  <td className=' td-primary'>15/12/2022</td>
+                  <td className=' td-primary'>Home Health</td>
+                  <td className=' td-primary'>Tampa Home Health</td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'>
                     <TableAction />
                   </td>
                 </tr>

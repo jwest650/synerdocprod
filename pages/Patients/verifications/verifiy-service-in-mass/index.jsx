@@ -105,60 +105,28 @@ const VerifyServiceInMass = () => {
 
       <section>
         <table className='verdana13 min-w-full overflow-auto '>
-          <thead className='border bg-primary-color text-[18px] tracking-wider text-white'>
-            <tr className='border border-primary-color'>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Associate Name
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Service
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Service Date
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Time In
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Time Out
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Reimb Type
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Travel Duration
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Miles
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Pay
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Unites
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Rate
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Bill
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Units
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Reimb Rate
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Charge Rate
-              </th>
-              <th className=' verdana13 border-l border-gray-400 py-1  px-2 text-left '>
-                Payer
-              </th>
+          <thead className='thead-primary'>
+            <tr>
+              <th className=' th-first '></th>
+              <th className=' th-middle '></th>
+              <th className=' th-middle '></th>
+              <th className=' th-middle '></th>
+              <th className=' th-middle '>Associate Name</th>
+              <th className=' th-middle '>Service</th>
+              <th className=' th-middle '>Service Date</th>
+              <th className=' th-middle '>Time In</th>
+              <th className=' th-middle '>Time Out</th>
+              <th className=' th-middle '>Reimb Type</th>
+              <th className=' th-middle '>Travel Duration</th>
+              <th className=' th-middle '>Miles</th>
+              <th className=' th-middle '>Pay</th>
+              <th className=' th-middle '>Unites</th>
+              <th className=' th-middle '>Rate</th>
+              <th className=' th-middle '>Bill</th>
+              <th className=' th-middle '>Units</th>
+              <th className=' th-middle '>Reimb Rate</th>
+              <th className=' th-middle '>Charge Rate</th>
+              <th className=' th-last '>Payer</th>
             </tr>
           </thead>
           <tbody>
@@ -167,13 +135,13 @@ const VerifyServiceInMass = () => {
                 key={i}
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Checkbox defaultChecked></Checkbox>
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <GrEdit />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <div className='flex space-x-2'>
                     <Select className='rounded text-black' size='xs'>
                       <option value='pdf'></option>
@@ -182,13 +150,11 @@ const VerifyServiceInMass = () => {
                     </Select>
                   </div>
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <BiNotepad />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  Nick Jones
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>Nick Jones</td>
+                <td className=' td-primary'>
                   <div className='flex space-x-2'>
                     <Select
                       name=''
@@ -202,16 +168,16 @@ const VerifyServiceInMass = () => {
                     </Select>
                   </div>
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='date' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <div className='flex space-x-2'>
                     <Select
                       name=''
@@ -225,35 +191,35 @@ const VerifyServiceInMass = () => {
                     </Select>
                   </div>
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Checkbox defaultChecked></Checkbox>
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Checkbox defaultChecked></Checkbox>
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <Input size='xs' type='text' />
                 </td>
 
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>
                   <div className='flex space-x-2'>
                     <Select
                       name=''

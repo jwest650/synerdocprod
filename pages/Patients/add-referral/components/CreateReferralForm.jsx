@@ -106,32 +106,26 @@ const CreateReferralForm = () => {
             </p>
             <div className='mt-10'>
               <table className=' min-w-full overflow-auto'>
-                <thead className='verdana10 border-b bg-primary-color tracking-wider text-white'>
+                <thead className='thead-primary'>
                   <tr>
-                    <th className=' border border-primary-gray border-t-primary-blue border-l-primary-blue px-2  pl-2 text-left'></th>
-                    <th className=' border border-primary-gray border-t-primary-blue px-2  pl-2 text-left'>
-                      30 days
-                    </th>
-                    <th className=' border border-primary-gray border-t-primary-blue px-2  pl-2 text-left'>
-                      60 days
-                    </th>
-                    <th className=' border border-primary-gray border-t-primary-blue px-2  pl-2 text-left'>
-                      90 days
-                    </th>
+                    <th className=' th-first'></th>
+                    <th className=' th-middle'>30 days</th>
+                    <th className=' th-middle'>60 days</th>
+                    <th className=' th-last'>90 days</th>
                   </tr>
                 </thead>
                 <tbody className='verdana10'>
                   <tr className='border'>
-                    <td className='border border-gray-400 px-2'>Admits</td>
-                    <td className='border border-gray-400 px-2'>0</td>
-                    <td className='border border-gray-400 px-2'>0</td>
-                    <td className='border border-gray-400 px-2'>0</td>
+                    <td className='td-primary'>Admits</td>
+                    <td className='td-primary'>0</td>
+                    <td className='td-primary'>0</td>
+                    <td className='td-primary'>0</td>
                   </tr>
                   <tr className='border bg-[#eee]'>
-                    <td className='border border-gray-400 px-2'>Non Admits</td>
-                    <td className='border border-gray-400 px-2'>0</td>
-                    <td className='border border-gray-400 px-2'>0</td>
-                    <td className='border border-gray-400 px-2'>0</td>
+                    <td className='td-primary'>Non Admits</td>
+                    <td className='td-primary'>0</td>
+                    <td className='td-primary'>0</td>
+                    <td className='td-primary'>0</td>
                   </tr>
                 </tbody>
               </table>
@@ -362,60 +356,46 @@ const CreateReferralForm = () => {
 
             <div className='mt-1'>
               <table className=' min-w-full overflow-auto'>
-                <thead className='verdana10 border-b bg-primary-color tracking-wider text-white'>
+                <thead className='thead-primary'>
                   <tr>
-                    <th className=' border border-primary-gray border-l-primary-blue border-t-primary-blue px-2  pl-2 text-left'></th>
-                    <th className=' border border-primary-gray border-t-primary-blue px-2  pl-2 text-left'>
-                      Descipline
-                    </th>
-                    <th className=' border border-primary-gray border-t-primary-blue px-2  pl-2 text-left'>
-                      Active Associates
-                    </th>
-                    <th className=' border border-primary-gray border-r-primary-blue border-t-primary-blue px-2  pl-2 text-left'>
-                      Associates In Zip Code
-                    </th>
+                    <th className=' th-first'></th>
+                    <th className=' th-middle'>Descipline</th>
+                    <th className=' th-middle'>Active Associates</th>
+                    <th className=' th-last'>Associates In Zip Code</th>
                   </tr>
                 </thead>
-                <tbody className='verdana10'>
+                <tbody>
                   <tr className='border'>
-                    <td className='border border-primary-gray px-2'>
+                    <td className='td-primary'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className='border border-primary-gray px-2'>
-                      Skilled Nurse
-                    </td>
-                    <td className='border border-primary-gray px-2'>9</td>
-                    <td className='border border-primary-gray px-2'>0</td>
+                    <td className='td-primary'>Skilled Nurse</td>
+                    <td className='td-primary'>9</td>
+                    <td className='td-primary'>0</td>
                   </tr>
                   <tr className='border'>
-                    <td className='border border-primary-gray px-2'>
+                    <td className='td-primary'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className='border border-primary-gray px-2'>
-                      Skilled Nurse
-                    </td>
-                    <td className='border border-primary-gray px-2'>9</td>
-                    <td className='border border-primary-gray px-2'>0</td>
+                    <td className='td-primary'>Skilled Nurse</td>
+                    <td className='td-primary'>9</td>
+                    <td className='td-primary'>0</td>
                   </tr>
                   <tr className='border'>
-                    <td className='border border-primary-gray px-2'>
+                    <td className='td-primary'>
                       <Checkbox defaultChecked></Checkbox>
                     </td>
-                    <td className='border border-primary-gray px-2'>
-                      Skilled Nurse
-                    </td>
-                    <td className='border border-primary-gray px-2'>9</td>
-                    <td className='border border-primary-gray px-2'>0</td>
+                    <td className='td-primary'>Skilled Nurse</td>
+                    <td className='td-primary'>9</td>
+                    <td className='td-primary'>0</td>
                   </tr>
                   <tr className='border'>
-                    <td className='border border-primary-gray px-2'>
+                    <td className='td-primary'>
                       <Checkbox></Checkbox>
                     </td>
-                    <td className='border border-primary-gray px-2'>
-                      Skilled Nurse
-                    </td>
-                    <td className='border border-primary-gray px-2'>9</td>
-                    <td className='border border-primary-gray px-2'>0</td>
+                    <td className='td-primary'>Skilled Nurse</td>
+                    <td className='td-primary'>9</td>
+                    <td className='td-primary'>0</td>
                   </tr>
                 </tbody>
               </table>

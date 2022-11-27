@@ -18,60 +18,50 @@ const DocsTab = () => {
         </button>
       </section>
       <section>
-        <table className='verdana13 w-full text-left  capitalize'>
-          <thead>
-            <tr className='bg-primary-color text-white'>
-              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                type
-              </th>
-              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                created
-              </th>
-              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                performed by
-              </th>
-              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                revised by
-              </th>
-              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                status
-              </th>
-              <th className='verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
+        <table className='w-full text-left  capitalize'>
+          <thead className='thead-primary'>
+            <tr>
+              <th className='th-first '>type</th>
+              <th className='th-middle '>created</th>
+              <th className='th-middle '>performed by</th>
+              <th className='th-middle '>revised by</th>
+              <th className='th-middle '>status</th>
+              <th className='th-last '></th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <Select size={'xs'}>
+            <tr className=' bg-light-blue'>
+              <td className='td-primary'>
+                <Select size={'xs'} css={{ backgroundColor: '#ccc' }}>
                   <option value=''>option</option>
                 </Select>
               </td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className='td-primary'></td>
+              <td className='td-primary'></td>
+              <td className='td-primary'></td>
+              <td className='td-primary'></td>
+              <td className='td-primary'></td>
             </tr>
             {obj.map((val, i) => (
               <tr
                 key={i}
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
+                <td className='td-primary'></td>
               </tr>
             ))}
             <tr className=''>
-              <td>no record to display</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className='td-primary'>no record to display</td>
+              <td className='td-primary'></td>
+              <td className='td-primary'></td>
+              <td className='td-primary'></td>
+              <td className='td-primary'></td>
+              <td className='td-primary'></td>
             </tr>
           </tbody>
         </table>

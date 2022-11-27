@@ -48,32 +48,20 @@ const ClinicalTab = () => {
               [Edit]
             </span>
             <table className='mb-[30px] border-[#a0a0a0] text-xs capitalize'>
-              <thead>
-                <tr className='bg-primary-color text-white'>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    case manager
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    manager phone
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    clinical manager
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    manager phone
-                  </th>
+              <thead className='thead-primary'>
+                <tr>
+                  <th className=' th-first'>case manager</th>
+                  <th className=' th-middle'>manager phone</th>
+                  <th className=' th-middle'>clinical manager</th>
+                  <th className=' th-last'>manager phone</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className='border-b-0'>
-                  <td className='border-x border-[#a0a0a0]'>Bailey</td>
-                  <td className=' border-x border-[#a0a0a0]'></td>
-                  <td className=' border-x border-[#a0a0a0]'>
-                    creamer heather
-                  </td>
-                  <td className=' border-x border-[#a0a0a0]'>
-                    h:(318 )-222-345
-                  </td>
+                <tr>
+                  <td className='td-primary'>Bailey</td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'>creamer heather</td>
+                  <td className=' td-primary'>h:(318 )-222-345</td>
                 </tr>
               </tbody>
             </table>
@@ -87,32 +75,20 @@ const ClinicalTab = () => {
               [Edit]
             </span>
             <table className=' border-[#a0a0a0] text-xs capitalize'>
-              <thead>
-                <tr className='bg-primary-color text-white'>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    Associate Name
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    manager phone
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    clinical manager
-                  </th>
-                  <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                    manager phone
-                  </th>
+              <thead className='thead-primary'>
+                <tr>
+                  <th className=' th-first'>Associate Name</th>
+                  <th className=' th-middle'>manager phone</th>
+                  <th className=' th-middle'>clinical manager</th>
+                  <th className=' th-last'>manager phone</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className='border-b-0'>
-                  <td className='border-x border-[#a0a0a0]'>Bailey</td>
-                  <td className=' border-x border-[#a0a0a0]'></td>
-                  <td className=' border-x border-[#a0a0a0]'>
-                    creamer heather
-                  </td>
-                  <td className=' border-x border-[#a0a0a0]'>
-                    h:(318 )-222-345
-                  </td>
+                  <td className='td-primary'>Bailey</td>
+                  <td className=' td-primary'></td>
+                  <td className=' td-primary'>creamer heather</td>
+                  <td className=' td-primary'>h:(318 )-222-345</td>
                 </tr>
               </tbody>
             </table>
@@ -483,7 +459,7 @@ const ClinicalTab = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr className='bg-light-blue'>
                   <td className='td-primary'></td>
                   <td className='td-primary'></td>
                   <td className='td-primary'></td>

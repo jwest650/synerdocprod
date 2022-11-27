@@ -134,41 +134,19 @@ const SetupPatientForm = () => {
         </h1>
         <hr />
         <table className=' min-w-full overflow-auto'>
-          <thead className='border-b bg-primary-color text-xs tracking-wider text-white'>
-            <tr className='border border-primary-color'>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Select
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Name
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Birth Date
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Gender
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Status
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Start
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Discharged
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Declined
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Medical Record No
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Patient Identifier No
-              </th>
-              <th className=' border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                Agency Name
-              </th>
+          <thead className='thead-primary'>
+            <tr>
+              <th className='th-first'>Select</th>
+              <th className='th-middle'>Name</th>
+              <th className='th-middle'>Birth Date</th>
+              <th className='th-middle'>Gender</th>
+              <th className='th-middle'>Status</th>
+              <th className='th-middle'>Start</th>
+              <th className='th-middle'>Discharged</th>
+              <th className='th-middle'>Declined</th>
+              <th className='th-middle'>Medical Record No</th>
+              <th className='th-middle'>Patient Identifier No</th>
+              <th className='th-last'>Agency Name</th>
             </tr>
           </thead>
           <tbody>
@@ -177,20 +155,21 @@ const SetupPatientForm = () => {
                 key={i}
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
-                <td className='border border-gray-400'>
+                <td className='td-primary'>
                   <Checkbox
                     onChange={(e) => setOpenReAdmit(e.target.checked)}
                   ></Checkbox>
                 </td>
-                <td className='border border-gray-400'>Nick, Jones</td>
-                <td className='border border-gray-400'>23/12/05</td>
-                <td className='border border-gray-400'>Male</td>
-                <td className='border border-gray-400'>Pending</td>
-                <td className='border border-gray-400'></td>
-                <td className='border border-gray-400'>23/12/03</td>
-                <td className='border border-gray-400'>23</td>
-                <td className='border border-gray-400'></td>
-                <td className='border border-gray-400'>Labour of love</td>
+                <td className='td-primary'>Nick, Jones</td>
+                <td className='td-primary'>23/12/05</td>
+                <td className='td-primary'>Male</td>
+                <td className='td-primary'>Pending</td>
+                <td className='td-primary'></td>
+                <td className='td-primary'>23/12/03</td>
+                <td className='td-primary'>23</td>
+                <td className='td-primary'></td>
+                <td className='td-primary'>Labour of love</td>
+                <td className='td-primary'></td>
               </tr>
             ))}
           </tbody>

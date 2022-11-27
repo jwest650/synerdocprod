@@ -90,12 +90,6 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
                         {form.name}
                       </option>
                     ))}
-                    {/* <option value='option2' className='text-gray-800'>
-                      Option 2
-                    </option>
-                    <option value='option3' className='text-gray-800'>
-                      Option 3
-                    </option> */}
                   </Select>
                 </div>
               </div>

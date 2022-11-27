@@ -40,19 +40,13 @@ const NotesTab = () => {
       {/* table */}
       <section>
         <table className='w-full text-left text-xs capitalize'>
-          <thead>
-            <tr className='bg-primary-color text-white'>
-              <th className='w-10 border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
-              <th className='w-52 border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                date
-              </th>
-              <th className='w-52 border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                type
-              </th>
-              <th className='border-r border-gray-400 py-1 px-2  text-left text-xs'>
-                note
-              </th>
-              <th className='w-20 border-r border-gray-400 py-1 px-2  text-left text-xs'></th>
+          <thead className='thead-primary'>
+            <tr>
+              <th className='th-first'></th>
+              <th className='th-middle'>date</th>
+              <th className='th-middle'>type</th>
+              <th className='th-middle'>note</th>
+              <th className='th-last'></th>
             </tr>
           </thead>
           <tbody>
@@ -61,26 +55,26 @@ const NotesTab = () => {
                 key={i}
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
-                <td className='border border-[#a0a0a0] px-[2px] '>
+                <td className='td-primary'>
                   {' '}
                   <GoNote className='verdana16 mx-auto  ' />
                 </td>
-                <td className='border border-[#a0a0a0] px-[2px]  text-orange-500'>
+                <td className='td-primary text-orange-500'>
                   {value.date}
                   <p className='text-black'>by internal</p>
                 </td>
-                <td className='border border-[#a0a0a0] px-[2px]'>
-                  {value.type}
-                </td>
-                <td className='border border-[#a0a0a0] px-[2px]'>
+                <td className='td-primary'>{value.type}</td>
+                <td className='td-primary'>
                   {value.note}
                   <p className='text-orange-500'>release notes.pdf</p>
                 </td>
-                <td className='border border-[#a0a0a0] px-[2px]'></td>
+                <td className='td-primary'></td>
               </tr>
             ))}
             <tr>
-              <td colSpan={5}>displaying 1 0f 1</td>
+              <td colSpan={5} className='td-primary'>
+                displaying 1 0f 1
+              </td>
             </tr>
           </tbody>
         </table>

@@ -23,48 +23,24 @@ const PayersTab = () => {
 
       <section className=' min-h-[200px]'>
         <table className=' min-w-full overflow-auto'>
-          <thead className='verdana13 border-b  bg-primary-color  tracking-wider text-white'>
-            <tr className='border border-primary-color'>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 w-[25%] border-r border-gray-400 py-1  px-2 text-left '>
-                Payer Name
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Payer Category
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Invoice Type
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Invoice Cycle
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Status
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Profile
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Reqs
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Auth
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Elegibility
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Insured
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Copays
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                NOE
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
+          <thead className='thead-primary'>
+            <tr>
+              <th className=' th-first '></th>
+              <th className=' th-middle '></th>
+              <th className=' th-middle '>Payer Name</th>
+              <th className=' th-middle '>Payer Category</th>
+              <th className=' th-middle '>Invoice Type</th>
+              <th className=' th-middle '>Invoice Cycle</th>
+              <th className=' th-middle '>Status</th>
+              <th className=' th-middle '>Profile</th>
+              <th className=' th-middle '>Reqs</th>
+              <th className=' th-middle '>Auth</th>
+              <th className=' th-middle '>Elegibility</th>
+              <th className=' th-middle '>Insured</th>
+              <th className=' th-middle '>Copays</th>
+              <th className=' th-middle '>NOE</th>
+              <th className=' th-middle '></th>
+              <th className=' th-last '></th>
             </tr>
           </thead>
           <tbody>
@@ -73,42 +49,26 @@ const PayersTab = () => {
                 key={i}
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  1
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  Tampa Home Health
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  Medicare
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  UB04
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  Monthly
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'>1</td>
+                <td className=' td-primary'>Tampa Home Health</td>
+                <td className=' td-primary'>Medicare</td>
+                <td className=' td-primary'>UB04</td>
+                <td className=' td-primary'>Monthly</td>
+                <td className=' td-primary'>
                   <p className='text-green-700'>Active</p>
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  N/A
-                </td>
-                <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  N/A
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  N/A
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'>N/A</td>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'>N/A</td>
+                <td className=' td-primary'>N/A</td>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'>
                   <Image src={searchIcon} height={20} width={20} alt='icon' />{' '}
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                <td className=' td-primary'></td>
               </tr>
             ))}
           </tbody>

@@ -184,20 +184,14 @@ const PatientScheduleDetails = () => {
         <section className='flex justify-between'>
           <div className=''>
             <table className='min-w-full overflow-auto'>
-              <thead>
-                <tr className='border border-gray-400 bg-light-blue'>
-                  <th className='w-[20px] border border-gray-400 px-2 py-1 text-left'></th>
-                  <th className='border border-gray-400 px-2 py-1 text-left'>
-                    Associate
-                  </th>
-                  <th className='border border-gray-400 px-2 py-1 text-left'>
-                    Match
-                  </th>
-                  <th className='border border-gray-400 px-2 py-1 text-left'>
-                    Disc
-                  </th>
-                  <th className='w-[20px] border border-gray-400 px-2 py-1 text-left'></th>
-                  <th className='w-[20px] border border-gray-400 px-2 py-1 text-left'></th>
+              <thead className='thead-primary'>
+                <tr>
+                  <th className='th-first'></th>
+                  <th className='th-middle'>Associate</th>
+                  <th className='th-middle'>Match</th>
+                  <th className='th-middle'>Disc</th>
+                  <th className='th-middle'></th>
+                  <th className='th-last'></th>
                 </tr>
               </thead>
               <tbody>
@@ -206,18 +200,16 @@ const PatientScheduleDetails = () => {
                     key={i}
                     className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                   >
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <td className=' td-primary'>
                       <FaBook />
                     </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                      Patients needs Assistance
-                    </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <td className=' td-primary'>Patients needs Assistance</td>
+                    <td className=' td-primary'></td>
+                    <td className=' td-primary'></td>
+                    <td className=' td-primary'>
                       <BsCalendar2Fill />
                     </td>
-                    <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                    <td className=' td-primary'>
                       <BsCalendar2Fill />
                     </td>
                   </tr>
@@ -234,17 +226,13 @@ const PatientScheduleDetails = () => {
               </div>
 
               <table className='min-w-full overflow-auto'>
-                <thead>
-                  <tr className='border border-gray-400 bg-light-blue'>
-                    <th className='w-[20px] border border-gray-400 px-2 py-1 text-left'></th>
-                    <th className='border border-gray-400 px-2 py-1 text-left'>
-                      Associate
-                    </th>
-                    <th className='border border-gray-400 px-2 py-1 text-left'>
-                      Notes
-                    </th>
-                    <th className='w-[20px] border border-gray-400 px-2 py-1 text-left'></th>
-                    <th className='w-[20px] border border-gray-400 px-2 py-1 text-left'></th>
+                <thead className='thead-primary'>
+                  <tr>
+                    <th className='th-first'></th>
+                    <th className='th-middle'>Associate</th>
+                    <th className='th-middle'>Notes</th>
+                    <th className='th-middle'></th>
+                    <th className='th-last'></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -253,17 +241,17 @@ const PatientScheduleDetails = () => {
                       key={i}
                       className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                     >
-                      <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      <td className=' td-primary'>
                         <FaBook />
                       </td>
-                      <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      <td className=' td-primary'>
                         Patients needs Assistance
                       </td>
-                      <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                      <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      <td className=' td-primary'></td>
+                      <td className=' td-primary'>
                         <BsCalendar2Fill />
                       </td>
-                      <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                      <td className=' td-primary'>
                         <BsCalendar2Fill />
                       </td>
                     </tr>

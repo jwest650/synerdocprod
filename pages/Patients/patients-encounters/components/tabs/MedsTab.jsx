@@ -51,53 +51,25 @@ const MedsTab = () => {
 
       <section className=' mt-4 min-h-[200px]'>
         <table className=' min-w-full overflow-auto '>
-          <thead className='verdana13 border-b bg-primary-color  tracking-wider text-white'>
-            <tr className='border border-primary-color'>
-              <th className='verdana13 w-[300px] border-r border-gray-400 py-1  px-2 text-left '>
-                Medication
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Alert
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Dosage
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Freq
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Route
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                QTY
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Start
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                End
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Type
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Phycisian
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Administer
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                Pharmacy
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                ND
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '>
-                C
-              </th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
-              <th className=' verdana13 border-r border-gray-400 py-1  px-2 text-left '></th>
+          <thead className='thead-primary'>
+            <tr>
+              <th className='th-first '>Medication</th>
+              <th className=' th-middle '>Alert</th>
+              <th className=' th-middle '>Dosage</th>
+              <th className=' th-middle '>Freq</th>
+              <th className=' th-middle '>Route</th>
+              <th className=' th-middle '>QTY</th>
+              <th className=' th-middle '>Start</th>
+              <th className=' th-middle '>End</th>
+              <th className=' th-middle '>Type</th>
+              <th className=' th-middle '>Phycisian</th>
+              <th className=' th-middle '>Administer</th>
+              <th className=' th-middle '>Pharmacy</th>
+              <th className=' th-middle '>ND</th>
+              <th className=' th-middle '>C</th>
+              <th className=' th-middle '></th>
+              <th className=' th-middle '></th>
+              <th className=' th-last '></th>
             </tr>
           </thead>
           <tbody>
@@ -106,46 +78,26 @@ const MedsTab = () => {
                 key={i}
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  Warfa in tablet
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
+                <td className=' td-primary'>Warfa in tablet</td>
+                <td className=' td-primary'>
                   <TiWarningOutline />
                 </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  325
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  1 tab
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  oral
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  1/23
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  perscription
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  Robert
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  Self/Patient
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  Mablis
-                </td>
+                <td className=' td-primary'>325</td>
+                <td className=' td-primary'>1 tab</td>
+                <td className=' td-primary'>oral</td>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'>1/23</td>
+                <td className=' td-primary'>perscription</td>
+                <td className=' td-primary'>Robert</td>
+                <td className=' td-primary'>Self/Patient</td>
+                <td className=' td-primary'>Mablis</td>
 
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'>
-                  No
-                </td>
-                <td className=' max-h-[20px] min-w-[50px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
-                <td className=' max-h-[20px] min-w-[100px] cursor-pointer border  border-gray-400 py-1 px-2 font-medium'></td>
+                <td className=' td-primary'>No</td>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'></td>
+                <td className=' td-primary'></td>
               </tr>
             ))}
           </tbody>
