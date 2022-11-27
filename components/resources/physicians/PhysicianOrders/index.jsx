@@ -45,7 +45,7 @@ const PhysicianOrders = () => {
         </thead>
         <tbody>
           {physicianOrder.map((order, i) => (
-            <tr key={i} className={`border  even:bg-[#eeeeee] `}>
+            <tr key={i} className={`border even:bg-[#eeeeee]`}>
               <td className="td-primary text-orange-600 decoration-orange-600">
                 {order.orderType}
               </td>

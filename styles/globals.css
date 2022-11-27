@@ -84,16 +84,16 @@ body {
   @apply verdana12 rounded border border-secondary-blue px-3 py-[2px] text-black shadow outline-none;
 }
 .thead-primary {
-  @apply verdana12 border-b bg-primary-blue tracking-wider text-white;
+  @apply verdana11 border-b bg-primary-blue tracking-wider text-white;
 }
 .th-first {
-  @apply border border-primary-gray border-t-primary-blue border-l-primary-blue py-[3px] pl-2 text-left;
+  @apply border  border-primary-gray border-t-primary-blue border-l-primary-blue pl-2 text-left;
 }
 .th-middle {
-  @apply border border-primary-gray border-t-primary-blue py-[3px] pl-2 text-left;
+  @apply border  border-primary-gray border-t-primary-blue pl-2 text-left;
 }
 .th-last {
-  @apply border border-primary-gray border-t-primary-blue border-r-primary-blue py-[3px] pl-2 text-left;
+  @apply border  border-primary-gray border-t-primary-blue border-r-primary-blue pl-2 text-left;
 }
 .td-primary {
   @apply h-[28px] max-h-[28px] cursor-pointer border border-primary-gray px-2;
