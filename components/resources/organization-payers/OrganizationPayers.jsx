@@ -28,7 +28,7 @@ const OrganizationPayers = () => {
 
       <table className="mt-10 min-w-full overflow-auto shadow-md">
         <thead className="thead-primary">
-          <tr>
+          <tr className="verdana11">
             <th className="th-first">Name</th>
             <th className="th-middle">Payer Category</th>
             <th className="th-middle">Claim Filing Type</th>
@@ -60,46 +60,48 @@ const OrganizationPayers = () => {
             <td></td>
           </tr>
           {organizationPayersTableData.map((organizationPayers, i) => (
-            <tr key={i} className={`verdana12 border even:bg-[#eeeeee]`}>
-              <td className="td-primary min-w-[250px]  text-orange-600 underline decoration-orange-600">
+            <tr key={i} className={`verdana11 border even:bg-[#eeeeee]`}>
+              <td className="td-primary min-w-[200px] text-orange-600 underline decoration-orange-600">
                 <Link
                   href={`/Resources/organization-payers/${organizationPayers.url}/contactinfo`}
                 >
                   {organizationPayers.name}
                 </Link>
               </td>
-              <td className=" max-h-[20px] min-w-[150px] border border-primary-gray py-1 px-2 font-medium">
+              <td className="td-primary min-w-[130px]">
                 {organizationPayers.payerCategory}
               </td>
-              <td className="td-primary min-w-[270px] ">
+              <td className="td-primary min-w-[180px]">
                 {organizationPayers.claimFilingType}
               </td>
-              <td className="td-primary min-w-[150px] ">
+              <td className="td-primary min-w-[100px]">
                 {organizationPayers.agencyType}
               </td>
-              <td className="td-primary min-w-[180px] ">
+              <td className="td-primary min-w-[100px]">
                 {organizationPayers.invoiceType}
               </td>
-              <td className="td-primary min-w-[180px] ">
-                {organizationPayers.cycle}
-              </td>
-              <td className="td-primary min-w-[180px] ">
+              <td className="td-primary">{organizationPayers.cycle}</td>
+              <td className="td-primary min-w-[120px]">
                 {organizationPayers.orgStartDate}
               </td>
-              <td className="td-primary min-w-[180px] ">
+              <td className="td-primary min-w-[130px]">
                 {organizationPayers.orgEndDate}
               </td>
               <td
-                className={`td-primary min-w-[100px] font-semibold  ${
+                className={`td-primary font-semibold  ${
                   organizationPayers.status === 'Active' && 'text-green-600'
                 }`}
               >
                 {organizationPayers.status}
               </td>
-              <td className="td-primary min-w-[50px]">
-                <div className="flex w-full justify-center">
-                  <Image src={SearchIcon} alt="icon" width={16} height={16} />
-                </div>
+              <td className="td-primary">
+                <Link
+                  href={`/Resources/organization-payers/${organizationPayers.url}/contactinfo`}
+                >
+                  <div className="flex w-full justify-center">
+                    <Image src={SearchIcon} alt="icon" width={16} height={16} />
+                  </div>
+                </Link>
               </td>
             </tr>
           ))}

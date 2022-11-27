@@ -3,7 +3,6 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Select,
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
@@ -25,7 +24,7 @@ const CreateOrganizationPayers = () => {
         <BiPlus className="scale-150" />
         <span>Create Payers</span>
       </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      <Modal isOpen={isOpen} size={'2xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">

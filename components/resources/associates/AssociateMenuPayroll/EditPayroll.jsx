@@ -14,8 +14,8 @@ const EditPayroll = ({ option, category }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [federalDeductions, setFederalDeductions] = useState(0);
   const [stateDeductions, setStateDeductions] = useState(0);
-  console.log(federalDeductions);
-  console.log(stateDeductions);
+  // console.log(federalDeductions);
+  // console.log(stateDeductions);
   return (
     <>
       <span

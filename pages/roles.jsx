@@ -9,8 +9,8 @@ const RolesPage = () => {
   const [checkedResources, setCheckedResources] = useState([]);
   const [checkedPatients, setCheckedPatients] = useState([]);
 
-  console.log('resources----------->', checkedResources);
-  console.log('patients------------>', checkedPatients);
+  // console.log('resources----------->', checkedResources);
+  // console.log('patients------------>', checkedPatients);
   return (
     <div className="mt-5 w-full">
       <div className="flex w-full justify-between">

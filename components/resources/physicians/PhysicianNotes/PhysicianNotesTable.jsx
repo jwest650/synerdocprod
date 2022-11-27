@@ -7,7 +7,7 @@ const PhysicianNotesTable = ({ document }) => {
   const router = useRouter();
   const associateUrl = router.asPath.split('/')[3];
 
-  console.log(document !== null && document[0].name);
+  // console.log(document !== null && document[0].name);
   const [newNotesData, setNewNotesData] = useState([]);
   const [actionType, setActionType] = useState({ action: '', noteId: '' });
 

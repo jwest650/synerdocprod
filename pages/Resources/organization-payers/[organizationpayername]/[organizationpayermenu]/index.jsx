@@ -8,8 +8,8 @@ const OrganizationPayersMenuPage = () => {
   const menuTitle = router.query?.organizationpayermenu;
   const organizationPayerUrl = router.asPath.split('/')[3];
 
-  console.log(menuTitle);
-  console.log(organizationPayerUrl);
+  // console.log(menuTitle);
+  // console.log(organizationPayerUrl);
 
   return (
     <div className="w-full">

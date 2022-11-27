@@ -8,8 +8,8 @@ const FacilityMenuPage = () => {
   const menuTitle = router.query?.facilitymenu;
   const facilityUrl = router.asPath.split('/')[3];
 
-  console.log(menuTitle);
-  console.log(facilityUrl);
+  // console.log(menuTitle);
+  // console.log(facilityUrl);
 
   return (
     <div className="w-full">
