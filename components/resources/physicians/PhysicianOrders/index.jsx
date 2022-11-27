@@ -6,7 +6,7 @@ import TableSelect from '../../../structure/TableSelect';
 
 const PhysicianOrders = () => {
   return (
-    <section className="verdana11 mx-10 mb-10 mt-10">
+    <section className="verdana11 mx-10 mb-10 mt-3">
       <div className=" flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
           <h2 className="verdana16 font-semibold tracking-wider">Orders</h2>
