@@ -8,7 +8,7 @@ import { BiPlus } from 'react-icons/bi';
 import { FcEmptyTrash } from 'react-icons/fc';
 import TableSelect from '../../../structure/TableSelect';
 
-const PhysicianCreateContactInfo = () => {
+const PayerCreateAddress = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -22,17 +22,17 @@ const PhysicianCreateContactInfo = () => {
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-150" />
-        <span className="verdana11">Create Contact Info</span>
+        <span>Create Address</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">
+              <h1 className="verdana16 font-semibold">
                 Create Address/Phone Info
               </h1>
-              <p className="verdana12">
+              <p className="verdana11">
                 Select an address type and enter address details. Then add
                 relevant phone numbers. Finally, hit &quot;Save&quot;
               </p>
@@ -107,6 +107,37 @@ const PhysicianCreateContactInfo = () => {
                             />{' '}
                           </div>
                         </div>
+                        <div className="flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%] justify-end">Bill To:</p>
+                          <div className=" flex w-[65%] items-center gap-2">
+                            <input
+                              type="text"
+                              placeholder="Aetna"
+                              className="input-primary mx-2 w-48"
+                            />{' '}
+                          </div>
+                        </div>
+                        <div className="flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%] justify-end">Attention:</p>
+                          <div className=" flex w-[65%] items-center gap-2">
+                            <input
+                              type="text"
+                              placeholder="Claims Department"
+                              className="input-primary mx-2 w-48"
+                            />{' '}
+                          </div>
+                        </div>
+                        <div className="flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%] justify-end">
+                            Description:
+                          </p>
+                          <div className=" flex w-[65%] items-center gap-2">
+                            <input
+                              type="text"
+                              className="input-primary mx-2 w-48"
+                            />{' '}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -139,7 +170,9 @@ const PhysicianCreateContactInfo = () => {
                             <input type="text" className="input-primary w-16" />
                           </div>
                         </div>
-                        <div className="btn-primary mr-10">Add Phone</div>
+                        <div className="btn-primary mr-10 cursor-pointer">
+                          Add Phone
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -222,4 +255,4 @@ const PhysicianCreateContactInfo = () => {
   );
 };
 
-export default PhysicianCreateContactInfo;
+export default PayerCreateAddress;

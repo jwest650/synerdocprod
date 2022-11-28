@@ -8,7 +8,7 @@ import {
 import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../structure/TableSelect';
 
-const CreateOrganizationPayers = () => {
+const CreatePayers = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -144,4 +144,4 @@ const CreateOrganizationPayers = () => {
   );
 };
 
-export default CreateOrganizationPayers;
+export default CreatePayers;

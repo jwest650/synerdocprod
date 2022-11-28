@@ -49,17 +49,17 @@ import PhysicianOrders from '../components/resources/physicians/PhysicianOrders/
 import FacilityContactsInfo from '../components/resources/facilities/FacilityContactsInfo/index';
 import FacilityNotes from '../components/resources/facilities/FacilityNotes/index';
 import FacilityCredentials from '../components/resources/facilities/FacilityCredentials/index';
-import OrganizationPayersContactInfo from '../components/resources/organization-payers/OrganizationPayersContactInfo';
-import OrganizationPayersNotes from '../components/resources/organization-payers/OrganizationPayersNotes';
-import OrganizationPayersSettings from '../components/resources/organization-payers/OrganizationPayersSettings';
-import OrganizationPayersRequirements from '../components/resources/organization-payers/OrganizationPayersRequirements';
-import OrganizationPayersBillRates from '../components/resources/organization-payers/OrganizationPayersBillRates';
-import OrganizationPayersRules from '../components/resources/organization-payers/OrganizationPayersRules';
-import OrganizationPayersEncounters from '../components/resources/organization-payers/OrganizationPayersEncounters';
-import OrganizationPayersDocuments from '../components/resources/organization-payers/OrganizationPayersDocuments';
 import ReferralSourcesContactInfo from '../components/resources/referral-sources/ReferralSourcesContactInfo';
 import ReferralSourcesNotes from '../components/resources/referral-sources/ReferralSourcesNotes';
 import ReferralSourcesCredentials from '../components/resources/referral-sources/ReferralSourcesCredentials';
+import PayersContactInfo from '../components/resources/organization-payers/PayersContactInfo/index';
+import PayersDocuments from '../components/resources/organization-payers/PayersDocuments';
+import PayersEncounters from '../components/resources/organization-payers/PayersEncounters';
+import PayersRules from '../components/resources/organization-payers/PayersRules';
+import PayersBillRates from '../components/resources/organization-payers/PayersBillRates';
+import PayersRequirements from '../components/resources/organization-payers/PayersRequirements';
+import PayersSettings from '../components/resources/organization-payers/PayersSettings/index';
+import PayersNotes from '../components/resources/organization-payers/PayersNotes/index';
 
 export const scheduleData = [
   {
@@ -1036,49 +1036,49 @@ export const organizationPayersMenu = [
     menu: 'Contact Info',
     url: 'contactinfo',
     icon: <AiOutlineContacts />,
-    component: <OrganizationPayersContactInfo />,
+    component: <PayersContactInfo />,
   },
   {
     menu: 'Notes',
     url: 'notes',
     icon: <FaRegNewspaper />,
-    component: <OrganizationPayersNotes />,
+    component: <PayersNotes />,
   },
   {
     menu: 'Settings',
     url: 'settings',
     icon: <FiSettings />,
-    component: <OrganizationPayersSettings />,
+    component: <PayersSettings />,
   },
   {
     menu: 'Requirements',
     url: 'requirements',
     icon: <BsListStars />,
-    component: <OrganizationPayersRequirements />,
+    component: <PayersRequirements />,
   },
   {
     menu: 'Bill Rates',
     url: 'billrates',
     icon: <BiDollar />,
-    component: <OrganizationPayersBillRates />,
+    component: <PayersBillRates />,
   },
   {
     menu: 'Rules',
     url: 'rules',
     icon: <MdNotes />,
-    component: <OrganizationPayersRules />,
+    component: <PayersRules />,
   },
   {
     menu: 'Encounters',
     url: 'encounters',
     icon: <VscNote />,
-    component: <OrganizationPayersEncounters />,
+    component: <PayersEncounters />,
   },
   {
     menu: 'Documents',
     url: 'documents',
     icon: <BsFolder2Open />,
-    component: <OrganizationPayersDocuments />,
+    component: <PayersDocuments />,
   },
 ];
 
@@ -1813,6 +1813,40 @@ export const physicianRoles = [
   'Service Note Review',
   'Surveyor',
   'View Medical Records Only',
+];
+
+export const payerInvoiceReviewData = [
+  { title: 'Orders Review' },
+  { title: 'Visit Note Review' },
+  { title: 'All Service Review' },
+  { title: 'All Supplies Processed' },
+  { title: 'All OASIS assessments done' },
+  { title: 'RAP Review' },
+];
+
+export const payerHCPCData = [
+  {
+    placeOfService: 'Assisted Living Facility',
+    service: 'HSP - CONTINUOUS CARE',
+    HCPCCode: 'Q5002',
+    HCPCModifier: '',
+    HCPCModifier2: '',
+    HCPCModifier3: '',
+    HCPCModifier4: '',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+  },
+  {
+    placeOfService: 'Nursing Facility/Home',
+    service: 'HSP - CONTINUOUS CARE',
+    HCPCCode: '',
+    HCPCModifier: '',
+    HCPCModifier2: '',
+    HCPCModifier3: '',
+    HCPCModifier4: '',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+  },
 ];
 
 // createorder, search order

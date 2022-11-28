@@ -16,7 +16,9 @@ const NumberInputComp = ({ setValue }) => {
       // outline="none"
       // borderColor="#c6d8ffe1"
       // outlineColor="#c6d8ffe1"
-      onChange={(valueString) => setValue(valueString)}
+      onChange={(valueString) =>
+        setValue !== undefined && setValue(valueString)
+      }
       // _focus="#c6d8ffe1"
       defaultValue={0}
       //   min={10}
@@ -24,6 +26,7 @@ const NumberInputComp = ({ setValue }) => {
     >
       <NumberInputField
         h="26px"
+        fontSize="13px"
         className="border-2 border-secondary-blue shadow"
         // border="none"
         outline="none"

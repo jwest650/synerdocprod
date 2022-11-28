@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { organizationPayersMenu } from '../../../assets/data';
 
-const EachorganizationPayerPageDetails = ({ children }) => {
+const EachPayerPageDetails = ({ children }) => {
   const router = useRouter();
   const currentOrganizationPayers = router.asPath.split('/')[3];
   const currentMenu = router.query?.organizationpayermenu;
 
   return (
-    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5 pb-12 text-sm">
-      <ul className="flex w-full flex-wrap items-end justify-start">
+    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5">
+      <ul className="verdana12 flex w-full flex-wrap items-end justify-start">
         {organizationPayersMenu.map((menu, index) => (
           <Link
             href={`/Resources/organization-payers/${currentOrganizationPayers}/${menu.url}`}
@@ -38,11 +38,11 @@ const EachorganizationPayerPageDetails = ({ children }) => {
         ))}
         <li className="flex-auto border border-gray-300" />
       </ul>
-      <div className="-mt-[1px] h-96 w-full  border-x  bg-white">
+      <div className="verdana11 -mt-[1px] w-full  border-x  bg-white">
         {children}
       </div>
     </div>
   );
 };
 
-export default EachorganizationPayerPageDetails;
+export default EachPayerPageDetails;

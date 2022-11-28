@@ -4,11 +4,10 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
-import { BiPlus } from 'react-icons/bi';
 import { FcEmptyTrash } from 'react-icons/fc';
 import TableSelect from '../../../structure/TableSelect';
 
-const PhysicianCreateContactInfo = () => {
+const PayerEditContact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -19,10 +18,9 @@ const PhysicianCreateContactInfo = () => {
     <>
       <span
         onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1"
+        className="cursor-pointer  items-center text-primary-orange underline"
       >
-        <BiPlus className="scale-150" />
-        <span className="verdana11">Create Contact Info</span>
+        [Edit]
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
@@ -30,13 +28,12 @@ const PhysicianCreateContactInfo = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">
-                Create Address/Phone Info
+                Edit Referral Source Contact
               </h1>
               <p className="verdana12">
-                Select an address type and enter address details. Then add
-                relevant phone numbers. Finally, hit &quot;Save&quot;
+                Edit Referral Source Contact Information
               </p>
-              <div className="verdana12 mt-16 flex flex-col items-center lg:flex-row lg:items-start">
+              <div className="verdana12  mt-16 flex flex-col items-center lg:flex-row lg:items-start">
                 <div className="mr-3 w-[55%] border-primary-gray lg:border-r">
                   <div className="flex items-start">
                     <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-white">
@@ -44,24 +41,23 @@ const PhysicianCreateContactInfo = () => {
                     </span>
 
                     <div>
-                      <div className="flex w-full flex-col items-center gap-3.5">
+                      <div className="ml-10 flex w-full flex-col items-center gap-3.5">
                         <div className="ml-1 flex w-full items-center justify-center gap-3 ">
                           <p className="flex w-[35%] justify-end">
                             <span className="text-primary-orange">*</span>
-                            Address Type:
+                            Contact Name:
                           </p>
                           <div className=" ml-2 flex w-[65%] items-center">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['Mailing', 'Option2']}
-                            />{' '}
+                            <input
+                              type="text"
+                              className="input-primary mx-0.5 w-48"
+                            />
                           </div>
                         </div>
 
                         <div className="flex w-full items-center justify-center gap-3 ">
                           <p className="flex w-[35%] justify-end">
-                            <span className="text-primary-orange">*</span>
-                            Address1:
+                            Contact Email:
                           </p>
                           <div className=" flex w-[65%] ">
                             <input
@@ -71,39 +67,15 @@ const PhysicianCreateContactInfo = () => {
                             />{' '}
                           </div>
                         </div>
+
                         <div className="flex w-full items-center justify-center gap-3 ">
-                          <p className="flex w-[35%] justify-end">Address2:</p>
+                          <p className="flex w-[35%] justify-end">
+                            Department:
+                          </p>
                           <div className=" flex w-[65%] items-center gap-2">
                             <input
                               type="text"
                               className="input-primary mx-2 w-48"
-                            />{' '}
-                          </div>
-                        </div>
-                        <div className="ml-2 flex w-full items-center justify-center gap-3 ">
-                          <p className="flex w-[35%] justify-end">
-                            <span className="text-primary-orange">*</span>{' '}
-                            City/State/Zip:
-                          </p>
-                          <div className=" ml-2 flex w-[65%] items-center gap-2 ">
-                            <input
-                              type="text"
-                              placeholder="El Paso"
-                              className="input-primary w-20"
-                            />
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['TX', 'Option2']}
-                            />
-                            <input
-                              type="text"
-                              placeholder="79998"
-                              className="input-primary w-16"
-                            />
-                            <input
-                              type="text"
-                              placeholder="1106"
-                              className="input-primary w-16"
                             />{' '}
                           </div>
                         </div>
@@ -122,7 +94,7 @@ const PhysicianCreateContactInfo = () => {
                             Phone Type:
                           </p>
                           <div className=" flex w-[65%] items-center">
-                            <TableSelect options={['Work', 'Option2']} />
+                            <TableSelect options={['Select', 'Option1']} />
                           </div>
                         </div>
 
@@ -139,7 +111,9 @@ const PhysicianCreateContactInfo = () => {
                             <input type="text" className="input-primary w-16" />
                           </div>
                         </div>
-                        <div className="btn-primary mr-10">Add Phone</div>
+                        <div className="btn-primary mr-10 cursor-pointer">
+                          Add Phone
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -168,24 +142,6 @@ const PhysicianCreateContactInfo = () => {
                             />
                           </div>
                         </td>
-                        <td className="td-primary w-32 px-2">Fax</td>
-                        <td className="td-primary w-56 px-4">
-                          (318) 576-9999{' '}
-                        </td>
-
-                        <td className="td-primary px-4">
-                          <FcEmptyTrash className="scale-150" />
-                        </td>
-                      </tr>
-                      <tr className="w-full bg-[#e6ebf85d]">
-                        <td className="td-primary w-10">
-                          <div className="flex items-center justify-center">
-                            <input
-                              type="checkbox"
-                              className="input-primary flex items-center justify-center"
-                            />
-                          </div>
-                        </td>
                         <td className="td-primary w-32 px-2">Work</td>
                         <td className="td-primary w-56 px-4">
                           (318) 576-9999{' '}
@@ -199,7 +155,6 @@ const PhysicianCreateContactInfo = () => {
                   </table>
                 </div>
               </div>
-
               <div className="mt-14 flex w-full justify-end gap-3">
                 <button
                   type="submit"
@@ -222,4 +177,4 @@ const PhysicianCreateContactInfo = () => {
   );
 };
 
-export default PhysicianCreateContactInfo;
+export default PayerEditContact;

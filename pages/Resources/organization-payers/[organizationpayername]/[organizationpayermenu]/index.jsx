@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { organizationPayersMenu } from '../../../../../assets/data';
-import EachorganizationPayerHeader from '../../../../../components/resources/organization-payers/EachOrganizationPayerHeader';
-import EachorganizationPayerPageDetails from '../../../../../components/resources/organization-payers/EachOrganizationPayerPageDetails';
+import EachPayerHeader from '../../../../../components/resources/organization-payers/EachPayerHeader';
+import EachPayerPageDetails from '../../../../../components/resources/organization-payers/EachPayerPageDetails';
 
 const OrganizationPayersMenuPage = () => {
   const router = useRouter();
@@ -13,17 +13,15 @@ const OrganizationPayersMenuPage = () => {
 
   return (
     <div className="w-full">
-      <EachorganizationPayerHeader
-        organizationPayerUrl={organizationPayerUrl}
-      />
-      <EachorganizationPayerPageDetails>
+      <EachPayerHeader organizationPayerUrl={organizationPayerUrl} />
+      <EachPayerPageDetails>
         {organizationPayersMenu.map((menu, index) => (
           <div key={index}>
             {/* hello */}
             {menu.url === menuTitle && <>{menu.component} </>}
           </div>
         ))}
-      </EachorganizationPayerPageDetails>
+      </EachPayerPageDetails>
     </div>
   );
 };

@@ -8,8 +8,8 @@ const EachPhysicianPageDetails = ({ children }) => {
   const currentMenu = router.query?.physicianmenu;
 
   return (
-    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5 text-sm">
-      <ul className="flex w-full flex-wrap items-end justify-start">
+    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5">
+      <ul className="verdana12 flex w-full flex-wrap items-end justify-start">
         {physicianMenu.map((menu, index) => (
           <Link
             href={`/Resources/physicians/${currentPhysician}/${menu.url}`}
@@ -38,7 +38,9 @@ const EachPhysicianPageDetails = ({ children }) => {
         ))}
         <li className="flex-auto border border-gray-300" />
       </ul>
-      <div className="-mt-[1px] w-full  border-x  bg-white">{children}</div>
+      <div className="verdana11 -mt-[1px]  w-full border-x bg-white">
+        {children}
+      </div>
     </div>
   );
 };
