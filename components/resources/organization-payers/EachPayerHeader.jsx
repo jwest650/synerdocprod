@@ -1,5 +1,7 @@
 import React from 'react';
 import { FcInfo } from 'react-icons/fc';
+import CopyPayers from './CopyPayers';
+import EditPayers from './EditPayers';
 
 const EachPayerHeader = ({ organizationPayerUrl }) => {
   return (
@@ -9,14 +11,8 @@ const EachPayerHeader = ({ organizationPayerUrl }) => {
           <h2 className="verdana16 font-semibold tracking-wide">
             {organizationPayerUrl}
           </h2>
-          <div className="flex cursor-pointer items-center gap-2 text-primary-orange underline">
-            [Edit]
-            <FcInfo className="scale-150" />
-          </div>
-          <div className="cursor-pointer text-primary-orange underline">
-            [Copy Payer to another Org]
-          </div>
-          {/* <EditPhysicians /> */}
+          <EditPayers />
+          <CopyPayers />
         </div>
         <div className="space-x-5">
           <span className="text-base font-extrabold text-green-800">PAYER</span>

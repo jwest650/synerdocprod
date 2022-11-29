@@ -80,6 +80,9 @@ body {
 .btn-secondary {
   @apply verdana14 rounded bg-orange-600 px-2.5 py-[4px] font-medium text-white shadow;
 }
+.btn-cancel {
+  @apply verdana11 rounded bg-primary-gray px-2 py-[2px] font-medium text-white shadow;
+}
 .input-primary {
   @apply verdana11 rounded border border-secondary-blue px-3 py-[2px] text-black shadow outline-none;
 }

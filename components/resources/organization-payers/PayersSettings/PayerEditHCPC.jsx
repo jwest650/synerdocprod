@@ -20,7 +20,7 @@ const PayerEditHCPC = () => {
         onClick={onOpen}
         className="mr-5 border-r border-primary-gray py-2 pr-5"
       >
-        <FcEditImage className="scale-150" />{' '}
+        <FcEditImage className="scale-150" />
       </span>
       <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />

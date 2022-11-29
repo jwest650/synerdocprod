@@ -57,7 +57,7 @@ import PayersDocuments from '../components/resources/organization-payers/PayersD
 import PayersEncounters from '../components/resources/organization-payers/PayersEncounters';
 import PayersRules from '../components/resources/organization-payers/PayersRules';
 import PayersBillRates from '../components/resources/organization-payers/PayersBillRates';
-import PayersRequirements from '../components/resources/organization-payers/PayersRequirements';
+import PayersRequirements from '../components/resources/organization-payers/PayersRequirements/index';
 import PayersSettings from '../components/resources/organization-payers/PayersSettings/index';
 import PayersNotes from '../components/resources/organization-payers/PayersNotes/index';
 
@@ -1847,6 +1847,33 @@ export const payerHCPCData = [
     startDate: new Date().toLocaleDateString(),
     endDate: '',
   },
+];
+
+export const payerServiceCat = [
+  { description: 'Skilled Nurse' },
+  { description: 'Physical Therapist' },
+  { description: 'Occupational Therapist' },
+  { description: 'Speech Therapist' },
+  { description: 'Social Worker' },
+  { description: 'Home Wealth Aide' },
+  { description: 'Chore Services' },
+  { description: 'Comprehension' },
+  { description: 'Homemaker' },
+  { description: 'Other Paraprofessional' },
+  { description: 'Personal Care' },
+  { description: 'Respite' },
+  { description: 'Supplies' },
+  { description: 'Durable Medical Equipment' },
+  { description: 'Pharmaceuticals' },
+  { description: 'Lab Services' },
+  { description: 'Level of Care' },
+  { description: 'Bereavement' },
+  { description: 'Chaplain' },
+  { description: 'Dietician' },
+  { description: 'Massage Therapist' },
+  { description: 'Supervisory Visit - Aide' },
+  { description: 'Supervisory Visit - LPN' },
+  { description: 'Supervisory Visit - OT' },
 ];
 
 // createorder, search order

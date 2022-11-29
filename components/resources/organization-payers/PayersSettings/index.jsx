@@ -1,4 +1,5 @@
 import React from 'react';
+import PayerCarrierCode from './PayerCarrierCode';
 import PayerEditSettings from './PayerEditSettings';
 import PayerHCPC from './PayerHCPC';
 import PayerIdentifiers from './PayerIdentifiers';
@@ -94,6 +95,7 @@ const PayersSettings = () => {
         <PayerIdentifiers />
         <PayerInvoiceReview />
         <PayerHCPC />
+        <PayerCarrierCode />
       </div>
     </div>
   );
