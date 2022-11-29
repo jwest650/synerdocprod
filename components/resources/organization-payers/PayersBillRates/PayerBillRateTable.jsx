@@ -5,7 +5,7 @@ import PayerCreateBillRate from './PayerCreateBillRate';
 
 const PayerBillRateTable = () => {
   return (
-    <table className="mt-7 w-full">
+    <table className="mt-4 w-full">
       <thead className="thead-primary">
         <tr className="verdana10">
           <th className="th-first">Agency Name</th>
