@@ -56,7 +56,7 @@ import PayersContactInfo from '../components/resources/organization-payers/Payer
 import PayersDocuments from '../components/resources/organization-payers/PayersDocuments';
 import PayersEncounters from '../components/resources/organization-payers/PayersEncounters';
 import PayersRules from '../components/resources/organization-payers/PayersRules';
-import PayersBillRates from '../components/resources/organization-payers/PayersBillRates';
+import PayersBillRates from '../components/resources/organization-payers/PayersBillRates/index';
 import PayersRequirements from '../components/resources/organization-payers/PayersRequirements/index';
 import PayersSettings from '../components/resources/organization-payers/PayersSettings/index';
 import PayersNotes from '../components/resources/organization-payers/PayersNotes/index';
@@ -1876,6 +1876,148 @@ export const payerServiceCat = [
   { description: 'Supervisory Visit - OT' },
 ];
 
+export const payerBillRates = [
+  {
+    agencyName: 'Louisiana Labor of  Love',
+    serviceDescription: 'COTA - Hourly',
+    billingDescription: 'COTA Hourly',
+    unitOfMeasure: 'Hourly',
+    allowOverride: true,
+    payerRate: 30,
+    chargeAmount: 0,
+    revenueCode: 432,
+    billingCodes: 'G0158',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+  },
+  {
+    agencyName: 'Louisiana Labor of  Love',
+    serviceDescription: 'COTA - Visit',
+    billingDescription: 'COTA Visit',
+    unitOfMeasure: 'Per Visit',
+    allowOverride: false,
+    payerRate: 30,
+    chargeAmount: 145,
+    revenueCode: 431,
+    billingCodes: 'G0158',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+  },
+  {
+    agencyName: 'Louisiana Labor of  Love',
+    serviceDescription: 'HHA - Visit',
+    billingDescription: 'HHA Visit',
+    unitOfMeasure: 'Per Visit',
+    allowOverride: false,
+    payerRate: 0,
+    chargeAmount: 65,
+    revenueCode: 571,
+    billingCodes: 'G0156',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+  },
+  {
+    agencyName: 'Louisiana Labor of  Love',
+    serviceDescription: 'Hospice LPN - Post-Mortem Visit',
+    billingDescription: 'Hospice LPN Post-Mortem',
+    unitOfMeasure: '15 Minute Increment',
+    allowOverride: true,
+    payerRate: 95,
+    chargeAmount: 75,
+    revenueCode: 551,
+    billingCodes: 'G0300 PM',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '12/32/2021',
+  },
+  {
+    agencyName: 'Louisiana Labor of  Love',
+    serviceDescription: 'Hospice LPN - Post-Mortem Visit',
+    billingDescription: 'Hospice LPN Post-Mortem',
+    unitOfMeasure: '15 Minute Increment',
+    allowOverride: true,
+    payerRate: 0,
+    chargeAmount: 75,
+    revenueCode: 432,
+    billingCodes: 'G0300 PM',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+  },
+];
+
+export const payerCBRData = [
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'O-97755 Assistive Technology',
+    description: 'Assistive Technology',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '9775',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+  {
+    service: 'P-97113 Aquatic Therapy',
+    description: 'Aquatic Therapy/Exercise',
+    unitOfMeasure: '15 Minute Increment',
+    HCPCCode: '97113',
+  },
+];
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status
