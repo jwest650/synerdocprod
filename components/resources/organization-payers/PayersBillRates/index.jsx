@@ -6,7 +6,7 @@ import PayerMassDelete from './PayerMassDelete';
 const PayersBillRates = () => {
   return (
     <div className="p-5">
-      <div className="mt-3 flex items-center justify-between border-b border-primary-gray pb-3">
+      <div className="mt-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <TableSelect
             styles={{ width: '100px' }}
