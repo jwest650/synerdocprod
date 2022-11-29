@@ -1,9 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
-import { FcCancel, FcOk, FcPlus } from 'react-icons/fc';
 import { employmentReq } from '../../../../assets/data';
 import ComplianceActionsTd from './ComplianceActionsTd';
-import ComplianceTableAction from './ComplianceTableAction';
 
 const EmploymentRequirements = () => {
   return (

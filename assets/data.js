@@ -55,7 +55,7 @@ import ReferralSourcesCredentials from '../components/resources/referral-sources
 import PayersContactInfo from '../components/resources/organization-payers/PayersContactInfo/index';
 import PayersDocuments from '../components/resources/organization-payers/PayersDocuments';
 import PayersEncounters from '../components/resources/organization-payers/PayersEncounters';
-import PayersRules from '../components/resources/organization-payers/PayersRules';
+import PayersRules from '../components/resources/organization-payers/PayersRules/index';
 import PayersBillRates from '../components/resources/organization-payers/PayersBillRates/index';
 import PayersRequirements from '../components/resources/organization-payers/PayersRequirements/index';
 import PayersSettings from '../components/resources/organization-payers/PayersSettings/index';
@@ -2018,6 +2018,28 @@ export const payerCBRData = [
     HCPCCode: '97113',
   },
 ];
+
+export const payerRules = [
+  {
+    name: 'Print Time InOut',
+    description: 'Print time In/Out',
+    groupCode: 'Generic',
+    isActive: false,
+    isVisible: true,
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+  },
+  {
+    name: 'Charge Rate',
+    description: 'Set Charge rate to payer Rate',
+    groupCode: 'Rates',
+    isActive: false,
+    isVisible: true,
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+  },
+];
+
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status

@@ -1,5 +1,3 @@
-import React from 'react';
-import CreateNote from '../AssociateMenuNotes/CreateNote';
 import CreateLicense from './CreateLicense';
 import CreateSkills from './CreateSkills';
 import EditEmploymentReq from './EditEmploymentReq';

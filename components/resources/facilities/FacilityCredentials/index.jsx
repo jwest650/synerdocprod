@@ -4,7 +4,7 @@ import FacilityEditIdentifier from './FacilityEditIdentifier';
 
 const FacilityCredentials = () => {
   return (
-    <div className="mt-16">
+    <div className="p-7">
       <div className="flex items-center gap-4">
         <h2 className="verdana16 font-semibold">Identifiers</h2>
         <FacilityCreateIdentifier />
