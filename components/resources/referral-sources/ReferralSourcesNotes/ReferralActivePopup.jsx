@@ -2,12 +2,13 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
+  Select,
   useDisclosure,
 } from '@chakra-ui/react';
 import { BsDot } from 'react-icons/bs';
 import { FcDeleteRow } from 'react-icons/fc';
 
-const PhysicianActivePopup = ({ setActionType, noteId }) => {
+const ReferralActivePopup = ({ setActionType, noteId }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleAction = (action) => {
@@ -68,4 +69,4 @@ const PhysicianActivePopup = ({ setActionType, noteId }) => {
   );
 };
 
-export default PhysicianActivePopup;
+export default ReferralActivePopup;

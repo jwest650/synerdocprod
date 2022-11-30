@@ -50,9 +50,9 @@ import PhysicianOrders from '../components/resources/physicians/PhysicianOrders/
 import FacilityContactsInfo from '../components/resources/facilities/FacilityContactsInfo/index';
 import FacilityNotes from '../components/resources/facilities/FacilityNotes/index';
 import FacilityCredentials from '../components/resources/facilities/FacilityCredentials/index';
-import ReferralSourcesContactInfo from '../components/resources/referral-sources/ReferralSourcesContactInfo';
-import ReferralSourcesNotes from '../components/resources/referral-sources/ReferralSourcesNotes';
-import ReferralSourcesCredentials from '../components/resources/referral-sources/ReferralSourcesCredentials';
+import ReferralContactInfo from '../components/resources/referral-sources/ReferralContactInfo/index';
+import ReferralSourcesNotes from '../components/resources/referral-sources/ReferralSourcesNotes/index';
+import ReferralCredentials from '../components/resources/referral-sources/ReferralCredentials/index';
 import PayersContactInfo from '../components/resources/organization-payers/PayersContactInfo/index';
 import PayersDocuments from '../components/resources/organization-payers/PayersDocuments/index';
 import PayersEncounters from '../components/resources/organization-payers/PayersEncounters/index';
@@ -61,7 +61,7 @@ import PayersBillRates from '../components/resources/organization-payers/PayersB
 import PayersRequirements from '../components/resources/organization-payers/PayersRequirements/index';
 import PayersSettings from '../components/resources/organization-payers/PayersSettings/index';
 import PayersNotes from '../components/resources/organization-payers/PayersNotes/index';
-import PayerForms from '../components/resources/organization-payers/PayerForms';
+import PayerForms from '../components/resources/organization-payers/PayerForms/index';
 
 export const scheduleData = [
   {
@@ -1163,7 +1163,7 @@ export const referralSourcesMenu = [
     menu: 'Contact Info',
     url: 'contactinfo',
     icon: <AiOutlineContacts />,
-    component: <ReferralSourcesContactInfo />,
+    component: <ReferralContactInfo />,
   },
   {
     menu: 'Notes',
@@ -1176,7 +1176,7 @@ export const referralSourcesMenu = [
     menu: 'Credentials',
     url: 'credentials',
     icon: <SlCheck />,
-    component: <ReferralSourcesCredentials />,
+    component: <ReferralCredentials />,
   },
 ];
 

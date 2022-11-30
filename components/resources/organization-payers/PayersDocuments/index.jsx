@@ -9,7 +9,7 @@ const PayerDocuments = () => {
   return (
     <div className="mt-7 mb-10 px-5">
       <div className="flex items-center gap-4">
-        <h2 classNmae="font-semobold verdana16">Documents</h2>
+        <h2 className="verdana16 font-semibold">Documents</h2>
         <UploadDocument setFileProp={setFile} />
       </div>
 

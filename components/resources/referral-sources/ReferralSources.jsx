@@ -18,7 +18,7 @@ const ReferralSources = () => {
           <h2 className="verdana16 font-semibold tracking-wider">
             Referral Sources
           </h2>
-          <CreateReferral />
+          <CreateReferral edit={false} />
         </div>
         <div className="verdana12 flex items-center gap-3">
           <Select
