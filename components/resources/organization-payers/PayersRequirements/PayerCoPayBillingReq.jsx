@@ -4,7 +4,9 @@ import TableSelect from '../../../structure/TableSelect';
 const PayerCoPayBillingReq = () => {
   return (
     <div>
-      <h3 className="verdana14 font-semibold">Co-Pay & Billing Requirements</h3>
+      <h3 className="verdana14 font-semibold text-primary-orange">
+        Co-Pay & Billing Requirements
+      </h3>
       <div className="mt-5 flex w-full flex-col items-center justify-center gap-3.5">
         <div className="flex w-full items-center gap-3 ">
           <p className="flex w-[35%] justify-end  font-semibold">

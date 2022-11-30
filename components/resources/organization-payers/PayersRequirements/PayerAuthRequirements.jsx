@@ -4,7 +4,7 @@ import TableSelect from '../../../structure/TableSelect';
 const PayerAuthRequirements = () => {
   return (
     <div>
-      <h3 className="verdana14 font-semibold text-[#c2e7ff]">
+      <h3 className="verdana14 font-semibold text-primary-orange">
         Authorization Requirements
       </h3>
       <div className="mt-5 flex w-full flex-col items-center justify-center gap-3.5">

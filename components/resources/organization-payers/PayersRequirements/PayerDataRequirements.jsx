@@ -4,7 +4,9 @@ import TableSelect from '../../../structure/TableSelect';
 const PayerDataRequirements = () => {
   return (
     <div>
-      <h3 className="verdana14 font-semibold">Data Requirements</h3>
+      <h3 className="verdana14 font-semibold text-primary-orange">
+        Data Requirements
+      </h3>
       <div className="mt-4 flex w-full flex-col items-center gap-3.5">
         <div className="flex w-full items-center justify-center gap-3 ">
           <p className="flex w-[45%] justify-end font-semibold">
