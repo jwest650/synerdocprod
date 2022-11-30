@@ -20,7 +20,7 @@ const RolesPage = () => {
             <CreateRole />{' '}
           </div>
 
-          <table className="mt-7 w-full overflow-auto shadow">
+          <table className="mt-3 w-full overflow-auto shadow">
             <thead className="thead-primary">
               <tr>
                 <th className="th-first">Role </th>

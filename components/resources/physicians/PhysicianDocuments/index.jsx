@@ -13,7 +13,7 @@ const PhysicianDocuments = () => {
         <UploadDocument setFileProp={setFile} />
       </div>
 
-      <table className="mx-auto mt-8 w-full overflow-auto px-3 shadow-md">
+      <table className="mx-auto mt-3 w-full overflow-auto px-3 shadow-md">
         <thead className="thead-primary">
           <tr className="verdana11">
             <th className="th-first">Document Type</th>

@@ -26,7 +26,7 @@ const NotesTable = ({ document }) => {
   }, [actionType, actionType.action, actionType.noteId]);
 
   return (
-    <table className="mx-auto mt-8 w-full overflow-auto px-3 shadow-md">
+    <table className="mx-auto mt-4 w-full overflow-auto px-3 shadow-md">
       <thead className=" verdana11 border-b bg-primary-blue tracking-wider text-white ">
         <tr>
           <th className="border border-primary-gray border-t-primary-blue border-l-primary-blue py-[1px] pl-2 text-left"></th>

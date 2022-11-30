@@ -48,7 +48,7 @@ const CreatePayRate = () => {
                       <strong>McNaughton, Hillary</strong>{' '}
                     </span>
                   </div>
-                  <table className="mt-5 w-full overflow-auto">
+                  <table className="mt-3 w-full overflow-auto">
                     <thead className="thead-primary">
                       <tr className="verdana11">
                         <th className="th-first">Row</th>

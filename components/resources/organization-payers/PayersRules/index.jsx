@@ -9,7 +9,7 @@ const PayersRules = () => {
   return (
     <div className="p-7">
       <h2 className="verdana16 font-semibold">Payer Rules</h2>
-      <table className="mt-5 w-full">
+      <table className="mt-3 w-full">
         <thead className="thead-primary">
           <tr>
             <th className="th-first">Rule Name</th>

@@ -36,7 +36,7 @@ const PayerBypassServices = () => {
                 </p>
                 <TableSelect options={['Skilled Nurse']} />{' '}
               </div>
-              <table className="mt-5 w-full overflow-auto px-3 shadow-md">
+              <table className="mt-3 w-full overflow-auto px-3 shadow-md">
                 <thead className="thead-primary">
                   <tr>
                     <th className="th-first">

@@ -1,4 +1,3 @@
-import React from 'react';
 import CreateDeduction from './CreateDeduction';
 import CreatePayroll from './CreatePayroll';
 import EditDeduction from './EditDeduction';
@@ -15,7 +14,7 @@ const AssociateMenuPayroll = () => {
             <h2 className="verdana16 font-semibold">Payroll</h2>
             <CreatePayroll />
           </div>
-          <table className="mt-7 w-full overflow-auto shadow">
+          <table className="mt-3 w-full overflow-auto shadow">
             <thead className="thead-primary">
               <tr className="verdana11">
                 <th className="th-first">Type</th>
@@ -67,7 +66,7 @@ const AssociateMenuPayroll = () => {
             <h2 className="verdana16 font-semibold">Payroll Deductions</h2>
             <CreateDeduction />
           </div>
-          <table className="mt-7 w-full overflow-auto shadow">
+          <table className="mt-3 w-full overflow-auto shadow">
             <thead className="thead-primary">
               <tr className="verdana11">
                 <th className="th-first">Deduction</th>

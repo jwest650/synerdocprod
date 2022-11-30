@@ -10,7 +10,7 @@ const PayerCarrierCode = () => {
         <PayerCreateCarrierCode />
       </div>
 
-      <table className="mx-auto mt-5 w-full overflow-auto px-3 shadow-md">
+      <table className="mx-auto mt-3 w-full overflow-auto px-3 shadow-md">
         <thead className="thead-primary">
           <tr className="verdana11">
             <th className="th-first">Relational Payer Name</th>

@@ -73,7 +73,7 @@ const TerminateAssociate = () => {
                   the inactive /termination date will be unassigned if checked.
                 </div>
 
-                <table className=" mx-auto mt-8 w-full overflow-auto px-3">
+                <table className=" mx-auto mt-4 w-full overflow-auto px-3">
                   <thead className="thead-primary">
                     <tr>
                       <th className="th-first">

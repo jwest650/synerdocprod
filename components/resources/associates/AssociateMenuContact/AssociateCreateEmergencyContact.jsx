@@ -229,7 +229,7 @@ const AssociateCreateEmergencyContact = () => {
                     <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-medium text-white lg:mt-0">
                       4
                     </span>
-                    <table className=" mx-auto mt-5 w-fit overflow-auto px-3 shadow-md">
+                    <table className=" mx-auto mt-3 w-fit overflow-auto px-3 shadow-md">
                       <thead className="thead-primary">
                         <tr>
                           <th className="th-first">Preferred </th>
