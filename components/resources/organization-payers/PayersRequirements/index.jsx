@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import PayerAuthRequirements from './PayerAuthRequirements';
-import PayerBCBS from './PayerBCBS';
 import PayerBypassServices from './PayerBypassServices';
 import PayerClinicalReq from './PayerClinicalReq';
 import PayerCoPayBillingReq from './PayerCoPayBillingReq';
@@ -10,13 +9,14 @@ import PayerDataRequirements from './PayerDataRequirements';
 import PayerInvoiceAO from './PayerInvoiceAO';
 import PayerMiscBillingReq from './PayerMiscBillingReq';
 import PayerServiceCategory from './PayerServiceCategory';
+import PayerCreateEdit from './PayerCreateEdit';
 
 const PayersRequirements = () => {
   const [showInit, setShowInit] = useState({ action: false, from: '' });
   return (
     <div className="m-8">
       {showInit.action ? (
-        <PayerBCBS setShowInit={setShowInit} />
+        <PayerCreateEdit setShowInit={setShowInit} />
       ) : (
         <div>
           <div className="flex items-center justify-between">

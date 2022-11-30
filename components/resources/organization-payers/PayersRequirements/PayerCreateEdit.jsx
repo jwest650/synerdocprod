@@ -1,4 +1,3 @@
-import React from 'react';
 import PayerAuthRequirements from './PayerAuthRequirements';
 import PayerClinicalReq from './PayerClinicalReq';
 import PayerCoPayBillingReq from './PayerCoPayBillingReq';
@@ -7,7 +6,7 @@ import PayerInvoiceAO from './PayerInvoiceAO';
 import PayerMiscBillingReq from './PayerMiscBillingReq';
 import PayerServiceCategory from './PayerServiceCategory';
 
-const PayerBCBS = ({ setShowInit }) => {
+const PayerCreateEdit = ({ setShowInit }) => {
   return (
     <div>
       <div className="flex items-center justify-between border-b border-primary-gray pb-2">
@@ -25,7 +24,7 @@ const PayerBCBS = ({ setShowInit }) => {
             onClick={() => setShowInit({ action: false, from: 'BCBS' })}
             className="btn-cancel"
           >
-            Cancel
+            Cancel{' '}
           </button>
         </div>
       </div>
@@ -46,4 +45,4 @@ const PayerBCBS = ({ setShowInit }) => {
   );
 };
 
-export default PayerBCBS;
+export default PayerCreateEdit;

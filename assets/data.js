@@ -17,6 +17,7 @@ import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
 import { BiChalkboard, BiDollar, BiGitPullRequest } from 'react-icons/bi';
 import { GiWhiteBook } from 'react-icons/gi';
 import { CiStethoscope } from 'react-icons/ci';
+import { CgFileDocument } from 'react-icons/cg';
 import { RiProfileLine, RiToolsFill } from 'react-icons/ri';
 import {
   MdAttachMoney,
@@ -53,13 +54,14 @@ import ReferralSourcesContactInfo from '../components/resources/referral-sources
 import ReferralSourcesNotes from '../components/resources/referral-sources/ReferralSourcesNotes';
 import ReferralSourcesCredentials from '../components/resources/referral-sources/ReferralSourcesCredentials';
 import PayersContactInfo from '../components/resources/organization-payers/PayersContactInfo/index';
-import PayersDocuments from '../components/resources/organization-payers/PayersDocuments';
-import PayersEncounters from '../components/resources/organization-payers/PayersEncounters';
+import PayersDocuments from '../components/resources/organization-payers/PayersDocuments/index';
+import PayersEncounters from '../components/resources/organization-payers/PayersEncounters/index';
 import PayersRules from '../components/resources/organization-payers/PayersRules/index';
 import PayersBillRates from '../components/resources/organization-payers/PayersBillRates/index';
 import PayersRequirements from '../components/resources/organization-payers/PayersRequirements/index';
 import PayersSettings from '../components/resources/organization-payers/PayersSettings/index';
 import PayersNotes from '../components/resources/organization-payers/PayersNotes/index';
+import PayerForms from '../components/resources/organization-payers/PayerForms';
 
 export const scheduleData = [
   {
@@ -1080,6 +1082,12 @@ export const organizationPayersMenu = [
     icon: <BsFolder2Open />,
     component: <PayersDocuments />,
   },
+  {
+    menu: 'Forms',
+    url: 'forms',
+    icon: <CgFileDocument />,
+    component: <PayerForms />,
+  },
 ];
 
 export const physicianMenu = [
@@ -2037,6 +2045,40 @@ export const payerRules = [
     isVisible: true,
     startDate: new Date().toLocaleDateString(),
     endDate: '',
+  },
+];
+
+export const payerEncountersData = [
+  {
+    patient: 'McNaughton James',
+    status: 'Active',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+    dischargeDate: '',
+    encounterPayerStatus: 'Active',
+    sequence: 1,
+    differences: 'Service Requirement',
+  },
+  {
+    patient: 'McNaughton James',
+    status: 'Active',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+    dischargeDate: '',
+    encounterPayerStatus: 'Active',
+    sequence: 1,
+    differences: 'Service Requirement, Miscellaneous Billing Required',
+  },
+  {
+    patient: 'Pitts Coyle',
+    status: 'Active',
+    startDate: new Date().toLocaleDateString(),
+    endDate: '',
+    dischargeDate: '',
+    encounterPayerStatus: 'Active',
+    sequence: 1,
+    differences:
+      'Service Requirement, Copay Type Code, Miscellaneous Billing Required',
   },
 ];
 
