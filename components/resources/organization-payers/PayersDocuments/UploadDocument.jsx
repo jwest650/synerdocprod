@@ -38,7 +38,7 @@ const UploadDocument = ({ setFileProp }) => {
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">Upload File</h1>
+              <h1 className="verdana16 font-semibold">Upload File</h1>
               <div className="verdana12 mt-14">
                 <div className="flex w-full flex-col items-center gap-3.5">
                   <div className="flex w-full items-center justify-center gap-3 ">

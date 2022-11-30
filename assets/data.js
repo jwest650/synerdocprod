@@ -2082,6 +2082,30 @@ export const payerEncountersData = [
   },
 ];
 
+export const payerFormData = [
+  {
+    type: '60 Day Summary',
+    created: new Date().toLocaleDateString(),
+    performedBy: 'Peggy Oppong',
+    revisedBy: 'Nick Dadzie',
+    status: 'Incomplete',
+  },
+  {
+    type: 'Infection Control Form',
+    created: new Date().toLocaleDateString(),
+    performedBy: 'Peggy Oppong',
+    revisedBy: 'Nick Dadzie',
+    status: 'Completed',
+  },
+  {
+    type: '60 Day Summary',
+    created: new Date().toLocaleDateString(),
+    performedBy: 'Peggy Oppong',
+    revisedBy: 'Nick Dadzie',
+    status: 'Incomplete',
+  },
+];
+
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status
