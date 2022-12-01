@@ -1235,27 +1235,27 @@ export const doctorPatients = [
 
 export const physicianOrder = [
   {
-    orderType: 'ordertype1',
-    orderTitle: 'title1',
-    date: new Date().toLocaleDateString(),
+    orderName: 'orderName1',
+    orderDescription: 'lorem lorem lorem lorem',
+    date: new Date().toLocaleString(),
     status: 'Active',
   },
   {
-    orderType: 'ordertype2',
-    orderTitle: 'title2',
-    date: new Date().toLocaleDateString(),
+    orderName: 'orderName2',
+    orderDescription: 'lorem lorem lorem lorem',
+    date: new Date().toLocaleString(),
     status: 'Active',
   },
   {
-    orderType: 'ordertype3',
-    orderTitle: 'title3',
-    date: new Date().toLocaleDateString(),
+    orderName: 'orderName3',
+    orderDescription: 'lorem lorem lorem lorem',
+    date: new Date().toLocaleString(),
     status: 'Active',
   },
   {
-    orderType: 'ordertype4',
-    orderTitle: 'title4',
-    date: new Date().toLocaleDateString(),
+    orderName: 'orderName4',
+    orderDescription: 'lorem lorem lorem lorem',
+    date: new Date().toLocaleString(),
     status: 'Active',
   },
 ];

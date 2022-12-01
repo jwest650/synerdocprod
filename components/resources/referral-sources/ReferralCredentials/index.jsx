@@ -6,7 +6,6 @@ const ReferralCredentials = () => {
   return (
     <div>
       <ReferralLicense />
-
       <ReferralIdentifier />
     </div>
   );

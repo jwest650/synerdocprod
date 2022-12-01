@@ -1,5 +1,4 @@
 import {
-  Input,
   Modal,
   ModalContent,
   ModalOverlay,
@@ -21,7 +20,7 @@ const UploadDocument = ({ setFileProp }) => {
   // console.log(file);
 
   const onImageChange = (event) => {
-      setFile(event.target.files);
+    setFile(event.target.files);
   };
 
   return (

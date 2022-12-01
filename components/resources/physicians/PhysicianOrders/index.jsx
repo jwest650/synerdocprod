@@ -36,8 +36,8 @@ const PhysicianOrders = () => {
       <table className="mt-1 w-full overflow-auto shadow-md">
         <thead className="thead-primary">
           <tr className="verdana11">
-            <th className="th-first">Order Type</th>
-            <th className="th-middle">Order Title</th>
+            <th className="th-first">Name</th>
+            <th className="th-middle">Description</th>
             <th className="th-middle">Date</th>
             <th className="th-middle">Status</th>
             <th className="th-last">Action</th>
@@ -47,9 +47,9 @@ const PhysicianOrders = () => {
           {physicianOrder.map((order, i) => (
             <tr key={i} className={`border even:bg-[#eeeeee]`}>
               <td className="td-primary text-orange-600 decoration-orange-600">
-                {order.orderType}
+                {order.orderName}
               </td>
-              <td className="td-primary">{order.orderTitle}</td>
+              <td className="td-primary">{order.orderDescription}</td>
               <td className="td-primary">{order.date}</td>
 
               <td
