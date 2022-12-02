@@ -12,7 +12,7 @@ import {
   TimelineViews,
 } from '@syncfusion/ej2-react-schedule';
 import { useState, useContext } from 'react';
-import scheduleData from '../../../../assets/scheduleData';
+import { scheduleData } from '../../../../assets/scheduleData';
 import GeneralContext from '../../../../context/GeneralContext';
 
 const Calendar = () => {

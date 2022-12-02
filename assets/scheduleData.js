@@ -1,4 +1,4 @@
-export default scheduleData = [
+export const scheduleData = [
   {
     Id: 1,
     Subject: 'Explosion of Betelgeuse Star',
