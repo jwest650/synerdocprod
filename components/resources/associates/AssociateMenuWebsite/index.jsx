@@ -3,7 +3,7 @@ import AssociateEditUserRole from './AssociateEditUserRole';
 import AssociateWebsiteInitialPage from './AssociateWebsiteInitialPage';
 import AssociateCreateOrgAccess from './AssociateCreateOrgAccess';
 
-const AssociateWebsite = () => {
+const AssociateMenuWebsite = () => {
   const [editUserRole, setEditUserRole] = useState({
     action: false,
     from: '',
@@ -45,4 +45,4 @@ const AssociateWebsite = () => {
   );
 };
 
-export default AssociateWebsite;
+export default AssociateMenuWebsite;

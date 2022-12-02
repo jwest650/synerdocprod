@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import SearchIcon from '../../../../assets/images/search.png';
-import { payerRules } from '../../../../assets/data';
+import { payerRules } from '../payerDatatwo';
 import PayerCreateRule from './PayerCreateRule';
 import PayerEditRule from './PayerEditRule';
 import PayerRuleMod from './PayerRuleMod';

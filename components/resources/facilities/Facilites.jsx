@@ -1,11 +1,10 @@
-import { facilitiesTableData, physicianTableData } from '../../../assets/data';
 import Link from 'next/link';
 import CreateFacilities from './CreateFacilites';
 import MoreFacilitiesInfo from './MoreFacilitiesInfo';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
-import { FcEmptyTrash } from 'react-icons/fc';
 import DeletePopup from '../../structure/DeletePopup';
+import { facilitiesTableData } from './facilityData';
 
 const Facilities = () => {
   const [facilityStatus, setFacilityStatus] = useState('');

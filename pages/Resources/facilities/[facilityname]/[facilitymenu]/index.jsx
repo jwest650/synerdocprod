@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import { facilityMenu } from '../../../../../assets/data';
 import EachFacilityHeader from '../../../../../components/resources/facilities/EachFacilityHeader';
 import EachFacilityPageDetails from '../../../../../components/resources/facilities/EachFacilityPageDetails';
+import { facilityMenu } from '../../../../../components/resources/facilities/facilityData';
 
 const FacilityMenuPage = () => {
   const router = useRouter();

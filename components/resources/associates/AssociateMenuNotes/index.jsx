@@ -1,9 +1,5 @@
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import { useState } from 'react';
-import { notesData } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
-import ActivePopup from './ActivePopup';
 import CreateNote from './CreateNote';
 import NotesTable from './NotesTable';
 

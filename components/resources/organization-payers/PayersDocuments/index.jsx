@@ -3,7 +3,7 @@ import { useState } from 'react';
 import DeletePopup from '../../../structure/DeletePopup';
 import UploadDocument from './UploadDocument';
 
-const PayerDocuments = () => {
+const PayersDocuments = () => {
   const [file, setFile] = useState(null);
   // console.log(file);
   return (
@@ -49,4 +49,4 @@ const PayerDocuments = () => {
   );
 };
 
-export default PayerDocuments;
+export default PayersDocuments;

@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { associateRoles } from '../../../../assets/data';
+import { associateRoles } from '../associateData';
 import AssociateUserDetails from './AssociateUserDetails';
 
 const AssociateEditUserRole = ({ setEditUserRole }) => {

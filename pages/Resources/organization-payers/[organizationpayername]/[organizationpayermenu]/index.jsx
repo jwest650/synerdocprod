@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import { organizationPayersMenu } from '../../../../../assets/data';
 import EachPayerHeader from '../../../../../components/resources/organization-payers/EachPayerHeader';
 import EachPayerPageDetails from '../../../../../components/resources/organization-payers/EachPayerPageDetails';
+import { organizationPayersMenu } from '../../../../../components/resources/organization-payers/payerData';
 
 const OrganizationPayersMenuPage = () => {
   const router = useRouter();

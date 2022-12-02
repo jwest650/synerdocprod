@@ -5,8 +5,8 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
-import { payerBillRates } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { payerBillRates } from '../payerDatatwo';
 
 const PayerMassDelete = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

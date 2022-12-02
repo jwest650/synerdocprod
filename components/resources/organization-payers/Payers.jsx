@@ -1,11 +1,11 @@
 import { Select } from '@chakra-ui/react';
-import { organizationPayersTableData } from '../../../assets/data';
 import Link from 'next/link';
 import SearchIcon from '../../../assets/images/search.png';
 import { useState } from 'react';
 import TableSelect from '../../structure/TableSelect';
 import Image from 'next/image';
 import CreatePayers from './CreatePayers';
+import { organizationPayersTableData } from './payerData';
 
 const Payers = () => {
   const [payerStatus, setPayerStatus] = useState('');

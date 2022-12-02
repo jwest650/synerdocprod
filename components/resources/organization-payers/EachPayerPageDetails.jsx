@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { organizationPayersMenu } from '../../../assets/data';
+import { organizationPayersMenu } from './payerData';
 
 const EachPayerPageDetails = ({ children }) => {
   const router = useRouter();

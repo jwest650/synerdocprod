@@ -1,6 +1,6 @@
 import React from 'react';
 import { FcEditImage } from 'react-icons/fc';
-import { payerEncountersData } from '../../../../assets/data';
+import { payerEncountersData } from '../payerDatatwo';
 
 const PayerEncoutersTable = ({ setShowPatientPage }) => {
   return (

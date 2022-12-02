@@ -1,6 +1,6 @@
 import React from 'react';
-import { payerHCPCData } from '../../../../assets/data';
 import DeletePopup from '../../../structure/DeletePopup';
+import { payerHCPCData } from '../payerData';
 import PayerCreateHCPC from './PayerCreateHCPC';
 import PayerCreatePOSCodes from './PayerCreatePOSCodes';
 import PayerEditHCPC from './PayerEditHCPC';

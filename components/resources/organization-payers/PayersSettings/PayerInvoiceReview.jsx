@@ -1,9 +1,7 @@
 import React from 'react';
-import { payerInvoiceReviewData } from '../../../../assets/data';
 import DeletePopup from '../../../structure/DeletePopup';
-import PayerCreateIdentifier from './PayerCreateIdentifier';
+import { payerInvoiceReviewData } from '../payerData';
 import PayerCreateInvoiceReview from './PayerCreateInvoiceReview';
-import PayerEditIentifier from './PayerEditIentifier';
 import PayerEditInvoiceReview from './PayerEditInvoiceReview';
 
 const PayerInvoiceReview = () => {

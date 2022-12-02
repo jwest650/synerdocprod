@@ -5,7 +5,6 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
-import { payerInvoiceReviewData } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
 
 const PayerCreateCarrierCode = () => {

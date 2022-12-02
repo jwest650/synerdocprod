@@ -1,9 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
-import { FcCancel, FcOk, FcPlus } from 'react-icons/fc';
-import { employmentReq, medicalReq } from '../../../../assets/data';
+import { medicalReq } from '../associateDatatwo';
 import ComplianceActionsTd from './ComplianceActionsTd';
-import ComplianceTableAction from './ComplianceTableAction';
 
 const MedicalRequirements = () => {
   return (

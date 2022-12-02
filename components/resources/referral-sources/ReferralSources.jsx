@@ -1,11 +1,11 @@
 import { Select } from '@chakra-ui/react';
-import { referralSourcesTableData } from '../../../assets/data';
 import Link from 'next/link';
 import CreateReferral from './CreateReferral';
 import MoreReferralSourcesInfo from './MoreReferralSourcesInfo';
 import ReferralSourcesTableAction from './ReferralSourcesTableAction';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
+import { referralSourcesTableData } from './referralData';
 
 const ReferralSources = () => {
   const [referralType, setReferralType] = useState('');

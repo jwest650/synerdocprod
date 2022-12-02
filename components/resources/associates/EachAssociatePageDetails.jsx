@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { associateMenu } from '../../../assets/data';
+import { associateMenu } from './associateData';
 
 const EachAssociatePageDetails = ({ children }) => {
   const router = useRouter();

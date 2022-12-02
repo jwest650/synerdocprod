@@ -1,4 +1,4 @@
-import { employmentReq } from '../../../../assets/data';
+import { employmentReq } from '../associateDatathree';
 import ComplianceActionsTd from './ComplianceActionsTd';
 
 const EmploymentRequirements = () => {

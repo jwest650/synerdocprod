@@ -1,6 +1,6 @@
 import { FcEngineering } from 'react-icons/fc';
-import { payerBillRates } from '../../../../assets/data';
 import DeletePopup from '../../../structure/DeletePopup';
+import { payerBillRates } from '../payerDatatwo';
 import PayerCreateBillRate from './PayerCreateBillRate';
 
 const PayerBillRateTable = () => {

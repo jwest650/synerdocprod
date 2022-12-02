@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { facilityMenu } from '../../../assets/data';
+import { facilityMenu } from './facilityData';
 
 const EachFacilityPageDetails = ({ children }) => {
   const router = useRouter();

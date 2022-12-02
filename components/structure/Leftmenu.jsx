@@ -1,8 +1,8 @@
 import { useContext, useRef, useState } from 'react';
-import { menuOptions } from '../assets/data';
 import GeneralContext from '../context/GeneralContext';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { menuOptions } from '../../assets/menuOptionsData';
 
 const Leftmenu = () => {
   const router = useRouter();

@@ -1,11 +1,11 @@
 import { Select } from '@chakra-ui/react';
-import { associateTableData } from '../../../assets/data';
 import TableAction from '../TableAction';
 import CreateAssociate from './CreateAssociate';
 import Link from 'next/link';
 import MoreAssociateInfo from './MoreAssociateInfo';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
+import { associateTableData } from './associateData';
 
 const Associates = () => {
   const [associateName, setAssociateName] = useState('All');

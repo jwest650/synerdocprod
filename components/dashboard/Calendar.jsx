@@ -11,7 +11,7 @@ import {
   ScheduleComponent,
 } from '@syncfusion/ej2-react-schedule';
 import React, { useState, useContext } from 'react';
-import { scheduleData } from '../../assets/data';
+import scheduleData from '../../assets/scheduleData';
 import GeneralContext from '../../context/GeneralContext';
 
 const Calendar = () => {
@@ -23,11 +23,11 @@ const Calendar = () => {
   };
   return (
     <ScheduleComponent
-      cssClass='schedule'
-      height='650px'
+      cssClass="schedule"
+      height="650px"
       ref={(schedule) => setScheduleObj(schedule)}
       selectedDate={new Date(2021, 0, 10)}
-      currentView='Month'
+      currentView="Month"
       actionComplete={handleSave}
       eventSettings={{ dataSource: scheduleData }}
     >

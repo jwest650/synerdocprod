@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { physicianMenu } from '../../../assets/data';
+import { physicianMenu } from './physicianData';
 
 const EachPhysicianPageDetails = ({ children }) => {
   const router = useRouter();

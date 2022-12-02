@@ -1,5 +1,5 @@
 import React from 'react';
-import { payerServiceCat } from '../../../../assets/data';
+import { payerServiceCat } from '../payerData';
 
 const PayerServiceCategory = () => {
   return (

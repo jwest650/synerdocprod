@@ -1,6 +1,6 @@
 import { TreeViewComponent } from '@syncfusion/ej2-react-navigations';
 import { useRef } from 'react';
-import { patientManagement } from '../../../../assets/data';
+import { patientManagement } from '../../resourcesData';
 
 const PatientManagementRoles = ({ setCheckedPatients }) => {
   const patRef = useRef();

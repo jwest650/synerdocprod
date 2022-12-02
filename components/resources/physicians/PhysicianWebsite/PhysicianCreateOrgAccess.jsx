@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import { physicianOrgAccess } from '../../../../assets/data';
 import OrgAccessTreeview from '../../OrgAccessTreeview';
+import { physicianOrgAccess } from '../physicianData';
 import PhysicianUserDetails from './PhysicianUserDetails';
 
 const PhysicianCreateOrgAccess = ({

@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import { employmentReq } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { employmentReq } from '../associateDatathree';
 
 const EditEmploymentReq = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

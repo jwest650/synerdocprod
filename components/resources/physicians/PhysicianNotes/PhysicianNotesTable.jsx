@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { notesData } from '../../../../assets/data';
+import { notesData } from '../../resourcesData';
 import PhysicianActivePopup from './PhysicianActivePopup';
 
 const PhysicianNotesTable = ({ document }) => {

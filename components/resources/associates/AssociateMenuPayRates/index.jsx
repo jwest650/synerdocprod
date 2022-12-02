@@ -1,6 +1,6 @@
 import React from 'react';
-import { payrateData } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { payrateData } from '../../organization-payers/payerData';
 import CreatePayRate from './CreatePayRate';
 import EditPayRate from './EditPayRate';
 import RemovePayRate from './RemovePayRate';

@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { FcSearch } from 'react-icons/fc';
-import { doctorPatients } from '../../../assets/data';
 import SearchIcon from '../../../assets/images/search.png';
+import { doctorPatients } from './physicianData';
 
 const DoctorHistory = ({ physicianName }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();

@@ -1,5 +1,5 @@
-import { payerCBRData } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { payerCBRData } from '../payerDatatwo';
 
 const PayerCBR3 = ({ setShowModal, onClose, setFrom }) => {
   return (

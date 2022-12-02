@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import { payrateData } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { payrateData } from '../../organization-payers/payerData';
 
 const CreatePayRate = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

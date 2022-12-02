@@ -1,6 +1,6 @@
-import { FcEditImage, FcPrint } from 'react-icons/fc';
-import { payerFormData } from '../../../../assets/data';
+import { FcPrint } from 'react-icons/fc';
 import DeletePopup from '../../../structure/DeletePopup';
+import { payerFormData } from '../payerDatatwo';
 import PayerCreateForm from './PayerCreateForm';
 
 const PayerForms = () => {

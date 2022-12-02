@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import { medicalReq } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { medicalReq } from '../associateDatatwo';
 
 const EditMedicalReq = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

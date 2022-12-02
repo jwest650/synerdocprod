@@ -3,7 +3,7 @@ import TableSelect from '../../../structure/TableSelect';
 import FacilityCreateNote from './FacilityCreateNote';
 import FacilityNotesTable from './FacilityNotesTable';
 
-const FacilityMenuNotes = () => {
+const FacilityNotes = () => {
   const [document, setDocument] = useState(null);
 
   return (
@@ -54,4 +54,4 @@ const FacilityMenuNotes = () => {
   );
 };
 
-export default FacilityMenuNotes;
+export default FacilityNotes;

@@ -15,7 +15,7 @@ import { useRef } from 'react';
 import { BsGrid } from 'react-icons/bs';
 import { FiBell } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
-import { menuOptions } from '../../assets/data';
+import { menuOptions } from '../../assets/menuOptionsData';
 import Settings from './Settings';
 
 const MenuDrawer = () => {

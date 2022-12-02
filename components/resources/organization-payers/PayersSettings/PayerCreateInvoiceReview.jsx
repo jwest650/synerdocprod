@@ -5,7 +5,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
-import { payerInvoiceReviewData } from '../../../../assets/data';
+import { payerInvoiceReviewData } from '../payerData';
 
 const PayerCreateInvoiceReview = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

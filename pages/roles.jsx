@@ -1,9 +1,9 @@
 import RoleTableActions from '../components/structure/RoleTableActions';
-import { associateRoles } from '../assets/data';
 import CreateRole from '../components/structure/CreateRole';
 import PatientManagementRoles from '../components/resources/associates/AssociateMenuWebsite/PatientManagementRoles';
 import ResourceManagementRoles from '../components/resources/associates/AssociateMenuWebsite/ResourceManagementRoles';
 import { useState } from 'react';
+import { associateRoles } from '../components/resources/associates/associateData';
 
 const RolesPage = () => {
   const [checkedResources, setCheckedResources] = useState([]);

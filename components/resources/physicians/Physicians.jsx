@@ -1,11 +1,11 @@
 import { Select } from '@chakra-ui/react';
-import { physicianTableData } from '../../../assets/data';
 import Link from 'next/link';
 import CreatePhysicians from './CreatePhysicians';
 import MorePhysicianInfo from './MorePhysicianInfo';
 import PhysicianTableAction from './PhysicianTableAction';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
+import { physicianTableData } from './physicianData';
 
 const Physicians = () => {
   const [physicianTitle, setPhysicianTitle] = useState('');

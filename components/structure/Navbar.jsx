@@ -2,9 +2,9 @@ import { FiBell } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
 import Link from 'next/link';
 import Settings from './Settings';
-import { menuOptions } from '../../assets/data';
 import Menupopup from './Menupopup';
 import MenuDrawer from './MenuDrawer';
+import { menuOptions } from '../../assets/menuOptionsData';
 
 const Navbar = () => {
   return (

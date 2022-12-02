@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import { physicianMenu } from '../../../../../assets/data';
 import EachPhysicianHeader from '../../../../../components/resources/physicians/EachPhysicianHeader';
 import EachPhysicianPageDetails from '../../../../../components/resources/physicians/EachPhysicianPageDetails';
+import { physicianMenu } from '../../../../../components/resources/physicians/physicianData';
 
 const PhysicianMenuPage = () => {
   const router = useRouter();

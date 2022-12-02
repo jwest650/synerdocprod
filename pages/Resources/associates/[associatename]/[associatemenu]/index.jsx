@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { associateMenu } from '../../../../../assets/data';
+import { associateMenu } from '../../../../../components/resources/associates/associateData';
 import EachAssociateHeader from '../../../../../components/resources/associates/EachAssociateHeader';
 import EachAssociatePageDetails from '../../../../../components/resources/associates/EachAssociatePageDetails';
 

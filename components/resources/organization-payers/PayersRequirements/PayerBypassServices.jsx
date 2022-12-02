@@ -4,8 +4,8 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
-import { payerServiceCat } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { payerServiceCat } from '../payerData';
 
 const PayerBypassServices = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

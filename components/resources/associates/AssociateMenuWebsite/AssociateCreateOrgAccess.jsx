@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import OrgAccessTreeview from '../../OrgAccessTreeview';
+import { associateOrgAccess } from '../associateData';
 import AssociateUserDetails from './AssociateUserDetails';
-import { associateOrgAccess } from '../../../../assets/data';
 
 const AssociateCreateOrgAccess = ({
   setEditUserRole,
