@@ -59,6 +59,7 @@ export const menuOptions = [
       },
     ],
   },
+
   {
     name: 'Resources',
     icon: <MdOutlineMedicalServices />,
@@ -194,6 +195,7 @@ export const menuOptions = [
       },
     ],
   },
+
   {
     name: 'AR',
     icon: <MdLibraryBooks />,
@@ -266,6 +268,7 @@ export const menuOptions = [
       },
     ],
   },
+
   {
     name: 'Processes',
     icon: <VscServerProcess />,
@@ -348,6 +351,7 @@ export const menuOptions = [
       },
     ],
   },
+
   {
     name: 'Reports',
     icon: <GiWhiteBook />,
@@ -494,6 +498,7 @@ export const menuOptions = [
       },
     ],
   },
+
   {
     name: 'Settings',
     icon: <RiToolsFill />,
@@ -502,6 +507,33 @@ export const menuOptions = [
         title: 'Lookup Tables',
         url: 'lookup-tables',
         icon: <BsDot />,
+        subOptions: [
+          {
+            title: 'Verify Services',
+            url: 'verify-services',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Adjust Verified Services',
+            url: 'adjust-verified-services',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Automated Service Verification Errors',
+            url: 'automated-service-verification-errors',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Automated Verification Process',
+            url: 'automated-verification-process',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Verify Service in Mass',
+            url: 'verifiy-service-in-mass',
+            icon: <BsDot />,
+          },
+        ],
       },
       {
         title: 'Org/Region/Agency',
