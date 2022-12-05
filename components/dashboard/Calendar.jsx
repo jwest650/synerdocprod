@@ -21,11 +21,11 @@ const Calendar = () => {
   const handleSave = (args) => {
     console.log('args---->', args);
   };
-  console.log('args---->', scheduleObj);
+  console.log('scheduleObj---->', scheduleObj);
   return (
     <ScheduleComponent
       cssClass="schedule"
-      height="530px"
+      height="450px"
       // width="900px"
       ref={(schedule) => setScheduleObj(schedule)}
       selectedDate={new Date(2021, 0, 10)}

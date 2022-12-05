@@ -234,9 +234,10 @@ border-right: 1px solid #becad3;
 }
 */
 
-/* .schedule {
-  @apply rounded border-[#becad3] shadow-md;
+.schedule {
+  @apply rounded-lg border-[#becad3] shadow-md;
 }
+/* 
 
 .e-schedule .e-schedule-toolbar .e-toolbar-items {
   @apply bg-[#becad3];
