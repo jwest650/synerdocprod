@@ -207,18 +207,18 @@ body {
 
 /* 
 .e-schedule .e-month-view .e-appointment {
-  background: #dfe2e7;
-  border: 1px solid #e5e7eb;
-  border-radius: 2px;
-  color: #000;
-  cursor: default;
-  display: flex;
-  height: 26px;
-  overflow: hidden;
-  position: absolute;
+    background: #dfe2e7;
+    border: 1px solid #e5e7eb;
+    border-radius: 2px;
+    color: #000;
+    cursor: default;
+    display: flex;
+    height: 26px;
+    overflow: hidden;
+    position: absolute;
 }
 .e-schedule .e-schedule-toolbar .e-toolbar-items {
-  background: #e7eaec;
+    background: #e7eaec;
 }
 
 .e-toolbar .e-tbar-btn {
@@ -229,7 +229,10 @@ body {
 
 .e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
   border-right: 1px solid #becad3;
-} */
+} 
+border-right: 1px solid #becad3;
+}
+*/
 
 /* .schedule {
   @apply rounded border-[#becad3] shadow-md;
@@ -379,19 +382,18 @@ body {
     height: 100%;
   }
 
-  .ar td,
-  .ar th {
-    padding: 2px 5px;
-    border: 1px solid #a0a0a0;
+  .ar td {
+    @apply verdana11 h-[28px] max-h-[28px] cursor-pointer border border-primary-gray px-2;
+    /* padding: 2px 5px;
+        border: 1px solid #a0a0a0; */
   }
   .ar td:first-child {
     border-left: 0;
   }
 
   .ar th {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    @apply bg-primary-blue text-left text-[12px] text-white first:border-l-0   last:border-r-0;
+    @apply verdana11 border border-primary-gray  bg-primary-blue tracking-wider text-white;
+    /* @apply bg-primary-blue text-left text-[12px] text-white first:border-l-0   last:border-r-0; */
   }
   .ar tr {
     @apply even:bg-gray-100;
@@ -403,7 +405,7 @@ body {
 }
 @layer utilities {
   .head {
-    @apply text-[18px] font-bold capitalize;
+    @apply verdana16 font-semibold capitalize tracking-wider;
   }
   .bodytext {
     @apply text-[black];
@@ -411,11 +413,21 @@ body {
   .background {
     @apply bg-white;
   }
+  .modal-btn {
+    @apply rounded bg-[#0141CF] px-4 py-1 text-white shadow;
+  }
+  .modal-cancel {
+    @apply rounded bg-gray-500 px-4 py-1 text-white shadow;
+  }
   .btn {
-    @apply verdana12 rounded bg-orange-600 px-2 py-[2px] font-medium text-white;
+    @apply verdana13 rounded bg-orange-600 px-3 py-[4px] font-medium text-white shadow;
+    /* @apply verdana12 rounded bg-orange-600 px-2 py-[2px] font-medium text-white; */
   }
   .create-btn {
-    @apply verdana14 rounded bg-orange-600 px-2.5 py-[4px] font-medium text-white;
+    @apply verdana11 rounded bg-orange-600 px-2 py-[2px] font-medium capitalize text-white shadow;
+  }
+  .input-shadow {
+    @apply verdana11 rounded border border-secondary-blue px-3 py-[2px] text-black shadow outline-none;
   }
   .darkmode {
     @apply dark:text-white;

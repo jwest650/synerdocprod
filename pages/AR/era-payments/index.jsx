@@ -24,14 +24,26 @@ const EraPayments = () => {
                         <label htmlFor="recieve" className="font-bold">
                             recieve dates from:
                         </label>
-                        <Input w={130} type="date" size="xs" id="recieve" />
+                        <Input
+                            w={130}
+                            type="date"
+                            className="input-shadow"
+                            size="xs"
+                            id="recieve"
+                        />
                         <label htmlFor="recieve">
                             <FcCalendar className="text-xl" />
                         </label>
                         <label htmlFor="" className="font-bold">
                             to:
                         </label>
-                        <Input w={130} type="date" size="xs" id="recieve-to" />
+                        <Input
+                            w={130}
+                            type="date"
+                            className="input-shadow"
+                            size="xs"
+                            id="recieve-to"
+                        />
                         <label htmlFor="recieve-to">
                             <FcCalendar className="text-xl" />
                         </label>{" "}
@@ -46,14 +58,26 @@ const EraPayments = () => {
                         <label htmlFor="remit " className="font-bold">
                             remit dates from:
                         </label>
-                        <Input w={130} type="date" size="xs" id="remit" />
+                        <Input
+                            w={130}
+                            type="date"
+                            className="input-shadow"
+                            size="xs"
+                            id="remit"
+                        />
                         <label htmlFor="remit">
                             <FcCalendar className="text-xl" />
                         </label>
                         <label htmlFor="remit-to" className="font-bold">
                             to:
                         </label>
-                        <Input w={130} type="date" size="xs" id="remit-to" />
+                        <Input
+                            w={130}
+                            type="date"
+                            className="input-shadow"
+                            size="xs"
+                            id="remit-to"
+                        />
                         <label htmlFor="remit-to">
                             <FcCalendar className="text-xl" />
                         </label>
@@ -61,6 +85,7 @@ const EraPayments = () => {
                     <div className="flex justify-end space-x-2">
                         <div className="flex w-[210px] items-center">
                             <Input
+                                className="input-shadow"
                                 type="text"
                                 size="sm"
                                 placeholder="Enter invioce #"
@@ -117,20 +142,20 @@ const EraPayments = () => {
                             </tr>
                         ))}
                         <tr className="text-white">
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color">10</td>
-                            <td className="bg-primary-color">5</td>
-                            <td className="bg-primary-color">0</td>
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color"></td>
-                            <td className="bg-primary-color">$3000,000.00</td>
-                            <td className="bg-primary-color">$3000,000.00</td>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color">10</th>
+                            <th className="bg-primary-color">5</th>
+                            <th className="bg-primary-color">0</th>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color"></th>
+                            <th className="bg-primary-color">$3000,000.00</th>
+                            <th className="bg-primary-color">$3000,000.00</th>
                         </tr>
                         <tr className="bg-[#eeeeee]">
                             <td colSpan="14">

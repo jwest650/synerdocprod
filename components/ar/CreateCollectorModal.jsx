@@ -38,14 +38,14 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
             <Modal isOpen={isOpen} onClose={onClose} size={"xl"}>
                 <ModalOverlay />
                 <ModalContent>
-                    <div className="w-full rounded border-[2px] border-t-[20px] border-[#0141CF] p-4  ">
+                    <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4  ">
                         <ModalHeader>Add Collector Assignment</ModalHeader>
                         <ModalBody
                             className="flex justify-center space-x-5  "
                             p={"20px"}
                         >
                             <div className="space-y-3 capitalize">
-                                <div>
+                                <div className="font-semibold">
                                     <label htmlFor="">
                                         <span className="text-orange-500">
                                             *
@@ -53,7 +53,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                         Agency:
                                     </label>
                                 </div>
-                                <div>
+                                <div className="font-semibold">
                                     {" "}
                                     <label htmlFor="">
                                         {" "}
@@ -64,7 +64,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     </label>
                                 </div>
                                 {(option.payer || option.single) && (
-                                    <div>
+                                    <div className="font-semibold">
                                         {" "}
                                         <label htmlFor="">
                                             {" "}
@@ -76,7 +76,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     </div>
                                 )}
                                 {option.single && (
-                                    <div>
+                                    <div className="font-semibold">
                                         {" "}
                                         <label htmlFor="">
                                             <span className="text-orange-500">
@@ -87,7 +87,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     </div>
                                 )}
                                 {option.payer && (
-                                    <div>
+                                    <div className="font-semibold">
                                         <label htmlFor="">
                                             <span className="text-orange-500">
                                                 *
@@ -98,7 +98,11 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                 )}
                             </div>
                             <div className=" space-y-3 ">
-                                <Select placeholder="Select Agency" size="xs">
+                                <Select
+                                    className="input-shadow"
+                                    placeholder="Select Agency"
+                                    size="xs"
+                                >
                                     {collectorData.agency.map((value, i) => (
                                         <option value={value} key={i}>
                                             {value}
@@ -106,6 +110,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     ))}
                                 </Select>
                                 <Select
+                                    className="input-shadow"
                                     placeholder="Select Level"
                                     size="xs"
                                     onChange={HandleLevelChange}
@@ -120,6 +125,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     <Select
                                         placeholder="Select Associate Category"
                                         size="xs"
+                                        className="input-shadow"
                                     >
                                         {collectorData.asign.map((value, i) => (
                                             <option value={value} key={i}>
@@ -132,6 +138,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     <Select
                                         placeholder="Select Payer Category"
                                         size="xs"
+                                        className="input-shadow"
                                     >
                                         {collectorData.payerCate.map(
                                             (value, i) => (
@@ -147,6 +154,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                     <Select
                                         placeholder="Select Payer "
                                         size="xs"
+                                        className="input-shadow"
                                     >
                                         {collectorData.payer.map((value, i) => (
                                             <option value={value} key={i}>
@@ -161,14 +169,14 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                         <ModalFooter className="space-x-2 ">
                             {option.single || option.payer ? (
                                 <>
-                                    <button className="btn rounded  text-white">
-                                        Save/Add More
+                                    <button className="modal-btn">
+                                        Save / Add More
                                     </button>
-                                    <button className="btn rounded  text-white">
-                                        Save/Close
+                                    <button className="modal-btn">
+                                        Save / Close
                                     </button>
                                     <button
-                                        className="rounded bg-gray-500  px-3 text-white"
+                                        className="modal-cancel"
                                         onClick={() => {
                                             setoption({
                                                 payer: false,
@@ -183,7 +191,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                             ) : (
                                 <>
                                     <button
-                                        className="rounded bg-gray-500  px-3 text-white"
+                                        className="modal-cancel"
                                         onClick={() => {
                                             setoption({
                                                 payer: false,
@@ -195,7 +203,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                         Cancel
                                     </button>
                                     <button
-                                        className="rounded bg-[#0141CF]  px-3 text-white"
+                                        className="modal-btn"
                                         onClick={handleCategory}
                                     >
                                         Continue

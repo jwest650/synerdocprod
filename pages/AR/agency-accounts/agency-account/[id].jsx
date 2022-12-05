@@ -80,7 +80,7 @@ const AgencyAccount = () => {
                             </tr>
                         ))}
                         <tr className=" text-right">
-                            <td colSpan={7}>
+                            <td colSpan={7} className="border-none py-2">
                                 total applied:
                                 <Input
                                     size="xs"
@@ -92,8 +92,8 @@ const AgencyAccount = () => {
                             </td>
                             <td className="border-none"></td>
                         </tr>
-                        <tr className=" text-right">
-                            <td colSpan={7}>
+                        <tr className=" border-none text-right">
+                            <td colSpan={7} className="border-none py-2">
                                 account balance:
                                 <Input
                                     size="xs"
@@ -103,15 +103,18 @@ const AgencyAccount = () => {
                                     className="text-right"
                                 />
                             </td>
-                            <td></td>
+                            <td className="border-none"></td>
                         </tr>
-                        <tr className=" border-b-none text-right">
-                            <td colSpan={7} className="space-x-2">
+                        <tr className=" border-none  text-right">
+                            <td
+                                colSpan={7}
+                                className="space-x-2 border-none py-2"
+                            >
                                 <button className="btn">Apply</button>
                                 <button className="btn">Clear All</button>
                                 <button className="btn">Cancel</button>
                             </td>
-                            <td></td>
+                            <td className="border-none"></td>
                         </tr>
                     </tbody>
                 </table>

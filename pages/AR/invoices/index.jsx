@@ -19,10 +19,20 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             show my responsiilty only:
                         </label>
-                        <input type="checkbox" name="" id="" />
+                        <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            className="input-shadow"
+                        />
                     </div>
                     <div className="flex items-center space-x-2">
-                        <Select placeholder="Select option" w={100} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -37,7 +47,12 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             invoice type:
                         </label>
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -47,7 +62,12 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             agency:
                         </label>
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -57,18 +77,33 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             balance amt.from:
                         </label>
-                        <Input w={100} type="text" size="xs" />
+                        <Input
+                            className="input-shadow"
+                            w={100}
+                            type="text"
+                            size="xs"
+                        />
 
                         <label htmlFor="" className="font-bold">
                             to:
                         </label>
-                        <Input w={100} type="text" size="xs" />
+                        <Input
+                            className="input-shadow"
+                            w={100}
+                            type="text"
+                            size="xs"
+                        />
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="" className="font-bold">
                             note type:
                         </label>
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -80,7 +115,12 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             age by:
                         </label>
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -90,7 +130,12 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             agency type:
                         </label>
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -100,14 +145,26 @@ const Invoices = () => {
                         <label htmlFor="date-from" className="font-bold">
                             date from:
                         </label>
-                        <Input w={100} type="text" size="xs" id="date-from" />
+                        <Input
+                            className="input-shadow"
+                            w={130}
+                            type="date"
+                            size="xs"
+                            id="date-from"
+                        />
                         <label htmlFor="date-from">
                             <FcCalendar className="text-xl" />
                         </label>{" "}
                         <label htmlFor="date-to" className="font-bold">
                             to:
                         </label>
-                        <Input w={100} type="text" size="xs" id="date-to" />
+                        <Input
+                            className="input-shadow"
+                            w={130}
+                            type="date"
+                            size="xs"
+                            id="date-to"
+                        />
                         <label htmlFor="date-to">
                             <FcCalendar className="text-xl" />
                         </label>
@@ -116,14 +173,26 @@ const Invoices = () => {
                         <label htmlFor="note-from" className="font-bold">
                             note from:
                         </label>
-                        <Input w={100} type="text" size="xs" id="note-from" />
+                        <Input
+                            className="input-shadow"
+                            w={130}
+                            type="date"
+                            size="xs"
+                            id="note-from"
+                        />
                         <label htmlFor="note-from">
                             <FcCalendar className="text-xl" />
                         </label>
                         <label htmlFor="note-to" className="font-bold">
                             to:
                         </label>
-                        <Input w={100} type="text" size="xs" id="note-to" />
+                        <Input
+                            className="input-shadow"
+                            w={130}
+                            type="date"
+                            size="xs"
+                            id="note-to"
+                        />
                         <label htmlFor="note-to">
                             <FcCalendar className="text-xl" />
                         </label>
@@ -134,7 +203,12 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             reporting group:
                         </label>
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -144,7 +218,12 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             payer category:
                         </label>
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -154,14 +233,26 @@ const Invoices = () => {
                         <label htmlFor="inv" className="font-bold">
                             inv dates from:
                         </label>
-                        <Input w={100} type="text" size="xs" id="inv" />
+                        <Input
+                            className="input-shadow"
+                            w={130}
+                            type="date"
+                            size="xs"
+                            id="inv"
+                        />
                         <label htmlFor="inv">
                             <FcCalendar className="text-xl" />
                         </label>
                         <label htmlFor="inv-to" className="font-bold">
                             to:
                         </label>
-                        <Input w={100} type="text" size="xs" id="inv-to" />
+                        <Input
+                            className="input-shadow"
+                            w={130}
+                            type="date"
+                            size="xs"
+                            id="inv-to"
+                        />
                         <label htmlFor="inv-to">
                             <FcCalendar className="text-xl" />
                         </label>
@@ -170,7 +261,12 @@ const Invoices = () => {
                         <label htmlFor="" className="font-bold">
                             note to pull:
                         </label>
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -181,6 +277,7 @@ const Invoices = () => {
             <section className="ml-auto flex w-fit items-center space-x-2">
                 <div className="w-[210px]">
                     <Input
+                        className="input-shadow"
                         type="text"
                         size="sm"
                         placeholder="Enter Patient first or last name"
@@ -188,6 +285,7 @@ const Invoices = () => {
                 </div>
                 <div className="w-[220px]">
                     <Input
+                        className="input-shadow"
                         type="text"
                         size="sm"
                         placeholder="Enter Payer name"
@@ -195,6 +293,7 @@ const Invoices = () => {
                 </div>
                 <div className="flex w-[210px] items-center">
                     <Input
+                        className="input-shadow"
                         type="text"
                         size="sm"
                         placeholder="Enter invioce #"
@@ -208,7 +307,12 @@ const Invoices = () => {
                 <label htmlFor="" className="font-bold">
                     Update:
                 </label>
-                <Select placeholder="Select option" w={130} size="xs">
+                <Select
+                    placeholder="Select option"
+                    className="input-shadow"
+                    w={130}
+                    size="xs"
+                >
                     <option value="option1">Option 1</option>
                     <option value="option2">Option 2</option>
                     <option value="option3">Option 3</option>

@@ -11,7 +11,12 @@ const InvoiceDetailReport = () => {
                 <h1 className="head">Invoice Detail Report</h1>
                 <hr />
                 <div className="ml-auto mt-2 flex w-52 space-x-2">
-                    <Select placeholder="Select option" size="xs" w={130}>
+                    <Select
+                        placeholder="Select option"
+                        className="input-shadow"
+                        size="xs"
+                        w={130}
+                    >
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -22,7 +27,12 @@ const InvoiceDetailReport = () => {
                     <label htmlFor="" className="font-bold">
                         Agency:
                     </label>
-                    <Select placeholder="Select option" size="xs" w={130}>
+                    <Select
+                        placeholder="Select option"
+                        className="input-shadow"
+                        size="xs"
+                        w={130}
+                    >
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -33,7 +43,12 @@ const InvoiceDetailReport = () => {
                         <label htmlFor="" className="font-bold">
                             payer:
                         </label>
-                        <Select placeholder="Select option" size="xs" w={130}>
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            size="xs"
+                            w={130}
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -43,19 +58,32 @@ const InvoiceDetailReport = () => {
                         <label htmlFor="inv-from" className="font-bold">
                             invoice from dates from:
                         </label>
-                        <Input w={130} type="text" size="xs" id="inv-from" />
+                        <Input
+                            className="input-shadow"
+                            w={130}
+                            type="text"
+                            size="xs"
+                            id="inv-from"
+                        />
                         <label htmlFor="inv-from">
                             <FcCalendar className="text-xl" />
                         </label>
                         <label htmlFor="inv-to" className="font-bold">
                             to:
                         </label>
-                        <Input w={130} type="text" size="xs" id="inv-to" />
+                        <Input
+                            className="input-shadow"
+                            w={130}
+                            type="text"
+                            size="xs"
+                            id="inv-to"
+                        />
                         <label htmlFor="inv-to">
                             <FcCalendar className="text-xl" />
                         </label>
                         <div className="space-x-1">
                             <Input
+                                className="input-shadow"
                                 w={200}
                                 type="text"
                                 size="sm"
