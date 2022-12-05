@@ -10,19 +10,11 @@ const Menupopup = ({ menu, index }) => {
   const currentPath = router.asPath.split('/')[1];
   const [isHovered, setIsHovered] = useState(false);
   const [showSubOptionsMenu, setShowSubOptionsMenu] = useState(false);
+  const round2 = (num) => Math.round(num * 100 + Number.EPSILON) / 100;
 
   const [pageY, setPageY] = useState('');
-
-  const handlePageY = (e) => {
-    setPageY(
-      () =>
-        `${
-          ((e.clientY - (menu.name === 'Settings' ? 50 : 40)) / 30 + '').split(
-            '.'
-          )[0]
-        }rem`
-    );
-  };
+  // useEffect(() => {}, [pageY]);
+  console.log(pageY);
   return (
     <>
       <div
@@ -76,7 +68,24 @@ const Menupopup = ({ menu, index }) => {
                     >
                       <div
                         className="flex w-full items-center justify-between gap-2"
-                        onMouseOver={handlePageY}
+                        onMouseOver={(e) => {
+                          // console.log(
+                          //   'split--->',
+                          //   ((e.clientY - 70) / 16 + '').split('.')[0]
+                          // );
+                          // const arr = (
+                          //   round2((e.clientY - 70) / 20) + ''
+                          // ).split('');
+                          // arr[arr.length - 1] = '0';
+                          // console.log(
+                          //   'newArr--->',
+                          //   arr.reduce((a, b) => a + b)
+                          // );
+                          setPageY(
+                            () =>
+                              `${((e.clientY - 70) / 16 + '').split('.')[0]}rem`
+                          );
+                        }}
                       >
                         <div className="flex items-center justify-between gap-2">
                           <span className="scale-110">{option.icon}</span>
