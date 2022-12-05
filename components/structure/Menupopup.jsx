@@ -54,7 +54,7 @@ const Menupopup = ({ menu, index }) => {
                     key={i}
                   >
                     <li
-                      className={`flex w-full items-center gap-2 py-[7px] font-medium hover:w-full hover:bg-blue-100/80 ${
+                      className={`flex w-full items-center gap-2 font-medium hover:w-full hover:bg-blue-100/80 ${
                         index === menu.options.length - 1
                           ? 'border-none'
                           : 'border-b'
@@ -67,24 +67,9 @@ const Menupopup = ({ menu, index }) => {
                       }}
                     >
                       <div
-                        className="flex w-full items-center justify-between gap-2"
+                        className="flex w-full items-center justify-between gap-2 py-[7px]"
                         onMouseOver={(e) => {
-                          // console.log(
-                          //   'split--->',
-                          //   ((e.clientY - 70) / 16 + '').split('.')[0]
-                          // );
-                          // const arr = (
-                          //   round2((e.clientY - 70) / 20) + ''
-                          // ).split('');
-                          // arr[arr.length - 1] = '0';
-                          // console.log(
-                          //   'newArr--->',
-                          //   arr.reduce((a, b) => a + b)
-                          // );
-                          setPageY(
-                            () =>
-                              `${((e.clientY - 70) / 16 + '').split('.')[0]}rem`
-                          );
+                          setPageY(() => `${(e.clientY - 70) / 16 + ''}rem`);
                         }}
                       >
                         <div className="flex items-center justify-between gap-2">

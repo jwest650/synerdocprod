@@ -1,5 +1,6 @@
 import React from 'react';
 import { BiPlus } from 'react-icons/bi';
+import Calendar from '../../../dashboard/Calendar';
 
 const AssociateMenuAvailability = () => {
   return (
@@ -32,10 +33,11 @@ const AssociateMenuAvailability = () => {
         <h2 className="verdana12 mt-5 font-semibold">
           Left click on the calendar to add/edit availability times.
         </h2>
-        <div className="h-[80rem]">
-          <h2 className="verdana18 my-20 text-center  font-semibold">
-            Calender
-          </h2>
+        <div className="mt-5">
+          <h2 className="verdana18 text-center  font-semibold"></h2>
+          <div className="mx-auto max-w-7xl px-3">
+            <Calendar />
+          </div>
         </div>
       </div>
     </div>
