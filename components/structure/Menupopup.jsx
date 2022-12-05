@@ -14,7 +14,7 @@ const Menupopup = ({ menu, index }) => {
 
   const [pageY, setPageY] = useState('');
   // useEffect(() => {}, [pageY]);
-  console.log(pageY);
+  // console.log(pageY);
   return (
     <>
       <div

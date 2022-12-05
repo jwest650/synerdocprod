@@ -33,7 +33,7 @@ const AssociateMenuAvailability = () => {
         <h2 className="verdana12 mt-5 font-semibold">
           Left click on the calendar to add/edit availability times.
         </h2>
-        <div className="mt-5">
+        <div className="my-7">
           <h2 className="verdana18 text-center  font-semibold"></h2>
           <div className="mx-auto max-w-7xl px-3">
             <Calendar />

@@ -19,12 +19,13 @@ const Calendar = () => {
   const [scheduleObj, setScheduleObj] = useState({});
 
   const handleSave = (args) => {
-    // console.log(args);
+    console.log('args---->', args);
   };
+  console.log('args---->', scheduleObj);
   return (
     <ScheduleComponent
       cssClass="schedule"
-      height="650px"
+      height="530px"
       // width="900px"
       ref={(schedule) => setScheduleObj(schedule)}
       selectedDate={new Date(2021, 0, 10)}
