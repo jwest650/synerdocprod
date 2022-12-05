@@ -25,7 +25,7 @@ const Calendar = () => {
   return (
     <ScheduleComponent
       cssClass="schedule"
-      height="450px"
+      height="455px"
       // width="900px"
       ref={(schedule) => setScheduleObj(schedule)}
       selectedDate={new Date(2021, 0, 10)}
