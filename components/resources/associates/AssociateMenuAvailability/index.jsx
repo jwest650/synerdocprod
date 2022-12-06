@@ -1,8 +1,16 @@
-import React from 'react';
+import { Schedule } from '@syncfusion/ej2-react-schedule';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { BiPlus } from 'react-icons/bi';
+import { scheduleData } from '../../../../assets/scheduleData';
 import Calendar from '../../../dashboard/Calendar';
 
 const AssociateMenuAvailability = () => {
+  const [eventsData, setEventsData] = useState(scheduleData);
+  // useEffect(() => {
+  // }, [eventsData]);
+  console.log('edata--->>', eventsData);
+
   return (
     <div>
       <div className="px-5">
@@ -36,7 +44,7 @@ const AssociateMenuAvailability = () => {
         <div className="my-7">
           <h2 className="verdana18 text-center  font-semibold"></h2>
           <div className="mx-auto max-w-7xl px-3">
-            <Calendar />
+            <Calendar eventsData={eventsData} setEventsData={setEventsData} />
           </div>
         </div>
       </div>
