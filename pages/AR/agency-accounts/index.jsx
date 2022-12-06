@@ -19,14 +19,19 @@ const AgencyAccounts = () => {
     return (
         <div className="ar bodytext  space-y-5 p-5">
             <section className="space-y-5">
-                <h1 className="head  capitalize">agency accounts</h1>
+                <h1 className="head">agency accounts</h1>
                 <aside className="flex items-center space-x-40">
                     <div className="flex space-x-2">
                         <label htmlFor="" className="font-bold">
                             Agency:
                         </label>
 
-                        <Select placeholder="Select option" size="xs" w={130}>
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            size="xs"
+                            w={130}
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -36,7 +41,12 @@ const AgencyAccounts = () => {
                         <label htmlFor="" className="font-bold">
                             Payment Type:
                         </label>
-                        <Select placeholder="Select option" size="xs" w={130}>
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            size="xs"
+                            w={130}
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>

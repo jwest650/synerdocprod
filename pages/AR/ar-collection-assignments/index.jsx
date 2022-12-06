@@ -17,20 +17,19 @@ const ARCollectionAssignments = () => {
         } else {
             setdata(ar.slice(0, value));
         }
-        console.log(value);
     };
     return (
         <div className="ar  bodytext h-full p-5">
             <CreateCollectorModal isOpen={isOpen} onClose={onClose} />
-            <div className="space-y-5">
+            <div className="space-y-3">
                 <section className="flex items-center space-x-5">
                     <h1 className="head">collector assignments</h1>
                     <button
                         className="create-btn flex  items-center space-x-1 "
                         onClick={onOpen}
                     >
-                        <BsPlus />
-                        <h1 className="text-sm capitalize">assign collector</h1>
+                        <BsPlus className="scale-150" />
+                        <h1 className="create-btn">assign collector</h1>
                     </button>
                 </section>
                 <hr />
@@ -56,6 +55,7 @@ const ARCollectionAssignments = () => {
                                         placeholder="Select option"
                                         size="xs"
                                         border
+                                        className="input-shadow"
                                     >
                                         <option value="option1">
                                             Option 1

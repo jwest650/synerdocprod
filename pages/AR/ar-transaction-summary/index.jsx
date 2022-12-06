@@ -16,12 +16,18 @@ const ARTransactionSummary = () => {
                         <Input
                             size="xs"
                             w={130}
+                            border={"none"}
                             placeholder={"$10.00"}
                             _placeholder={{ opacity: 1, color: "orange.500" }}
                         />
                     </div>
                     <div>
-                        <Select placeholder="Select option" size="xs" w={130}>
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            size="xs"
+                            w={130}
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -41,6 +47,7 @@ const ARTransactionSummary = () => {
                                 revenue date from:
                             </label>
                             <Input
+                                className="input-shadow"
                                 id="revenue"
                                 w={130}
                                 type="date"
@@ -57,6 +64,7 @@ const ARTransactionSummary = () => {
                                 to:
                             </label>
                             <Input
+                                className="input-shadow"
                                 id="revenue-to"
                                 w={130}
                                 type="date"
@@ -73,6 +81,7 @@ const ARTransactionSummary = () => {
                             extend remit payment through date:
                         </label>
                         <Input
+                            className="input-shadow"
                             id="extend"
                             w={130}
                             type="date"
@@ -89,7 +98,12 @@ const ARTransactionSummary = () => {
                         <label htmlFor="" className="font-bold">
                             agency:
                         </label>
-                        <Select placeholder="Select option" size="xs" w={130}>
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            size="xs"
+                            w={130}
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -99,7 +113,12 @@ const ARTransactionSummary = () => {
                         <label htmlFor="" className="font-bold">
                             report by:
                         </label>
-                        <Select placeholder="Select option" size="xs" w={130}>
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            size="xs"
+                            w={130}
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -140,15 +159,13 @@ const ARTransactionSummary = () => {
                             </tr>
                         ))}
                         <tr>
-                            <td className="bg-[#0141cf] text-white"></td>
-                            <td className="bg-[#0141cf] text-white">
-                                {"$489.00"}
-                            </td>
-                            <td className="bg-[#0141cf] text-white">{0}</td>
-                            <td className="bg-[#0141cf] text-white">{0}</td>
-                            <td className="bg-[#0141cf] text-white">{0}</td>
-                            <td className="bg-[#0141cf] text-white"></td>
-                            <td className="bg-[#0141cf] text-white"></td>
+                            <th></th>
+                            <th>{"$489.00"}</th>
+                            <th>{0}</th>
+                            <th>{0}</th>
+                            <th>{0}</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </tbody>
                 </table>

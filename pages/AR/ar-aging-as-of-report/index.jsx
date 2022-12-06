@@ -12,8 +12,9 @@ const ArAgingAsOfReport = () => {
                         ar as of date:
                     </label>
                     <Input
+                        className="input-shadow"
                         id="date"
-                        w={120}
+                        w={130}
                         type="date"
                         size="xs"
                         placeholder="default placeholder"
@@ -23,7 +24,12 @@ const ArAgingAsOfReport = () => {
                     </label>
                 </div>
                 <div className="flex space-x-2">
-                    <Select placeholder="Select option" w={130} size="xs">
+                    <Select
+                        placeholder="Select option"
+                        className="input-shadow"
+                        w={130}
+                        size="xs"
+                    >
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -36,7 +42,12 @@ const ArAgingAsOfReport = () => {
                     <label htmlFor="" className="font-bold">
                         agency:
                     </label>
-                    <Select placeholder="Select option" w={130} size="xs">
+                    <Select
+                        placeholder="Select option"
+                        className="input-shadow"
+                        w={130}
+                        size="xs"
+                    >
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -46,7 +57,12 @@ const ArAgingAsOfReport = () => {
                     <label htmlFor="" className="font-bold">
                         agency type:
                     </label>
-                    <Select placeholder="Select option" w={130} size="xs">
+                    <Select
+                        placeholder="Select option"
+                        className="input-shadow"
+                        w={130}
+                        size="xs"
+                    >
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -56,7 +72,12 @@ const ArAgingAsOfReport = () => {
                     <label htmlFor="" className="font-bold">
                         age by:
                     </label>
-                    <Select placeholder="Select option" w={130} size="xs">
+                    <Select
+                        placeholder="Select option"
+                        className="input-shadow"
+                        w={130}
+                        size="xs"
+                    >
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
