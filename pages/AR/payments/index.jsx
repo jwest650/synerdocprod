@@ -25,7 +25,7 @@ const Payments = () => {
                 <header className="flex items-center space-x-3">
                     <h1 className="head ">Payments</h1>
                     <div className="create-btn flex cursor-pointer items-center space-x-1">
-                        <BsPlus />
+                        <BsPlus className="scale-150" />
                         <Link href="/AR/add-payments">
                             <p className=" text-xs capitalize">add payment</p>
                         </Link>
@@ -37,7 +37,13 @@ const Payments = () => {
                             <label htmlFor="deposit" className="font-bold">
                                 deposit dates from:
                             </label>
-                            <Input w={130} type="date" size="xs" id="deposit" />
+                            <Input
+                                w={130}
+                                type="date"
+                                className="input-shadow"
+                                size="xs"
+                                id="deposit"
+                            />
                             <label htmlFor="deposit">
                                 <FcCalendar className="text-xl" />
                             </label>
@@ -47,6 +53,7 @@ const Payments = () => {
                             <Input
                                 w={130}
                                 type="date"
+                                className="input-shadow"
                                 size="xs"
                                 id="deposit-to"
                             />
@@ -58,7 +65,13 @@ const Payments = () => {
                             <label htmlFor="entry" className="font-bold">
                                 entry dates from:
                             </label>
-                            <Input w={130} type="date" size="xs" id="entry" />
+                            <Input
+                                w={130}
+                                type="date"
+                                className="input-shadow"
+                                size="xs"
+                                id="entry"
+                            />
                             <label htmlFor="entry" className="font-bold">
                                 <FcCalendar className="text-xl" />
                             </label>
@@ -68,6 +81,7 @@ const Payments = () => {
                             <Input
                                 w={130}
                                 type="date"
+                                className="input-shadow"
                                 size="xs"
                                 id="entry-to"
                             />
@@ -79,7 +93,13 @@ const Payments = () => {
                             <label htmlFor="remit" className="font-bold">
                                 remit dates from:
                             </label>
-                            <Input w={130} type="date" size="xs" id="remit" />
+                            <Input
+                                w={130}
+                                type="date"
+                                className="input-shadow"
+                                size="xs"
+                                id="remit"
+                            />
                             <label htmlFor="remit">
                                 <FcCalendar className="text-xl" />
                             </label>
@@ -89,6 +109,7 @@ const Payments = () => {
                             <Input
                                 w={130}
                                 type="date"
+                                className="input-shadow"
                                 size="xs"
                                 id="remit-to"
                             />
@@ -100,7 +121,11 @@ const Payments = () => {
                     <aside className="space-y-4">
                         <div className="flex justify-end space-x-2">
                             <div className="flex  items-center">
-                                <Select placeholder="Select option" size="xs">
+                                <Select
+                                    placeholder="Select option"
+                                    className="input-shadow"
+                                    size="xs"
+                                >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
@@ -114,6 +139,7 @@ const Payments = () => {
                             </label>
                             <Select
                                 placeholder="Select option"
+                                className="input-shadow"
                                 size="xs"
                                 w={130}
                             >
@@ -127,12 +153,14 @@ const Payments = () => {
                                 <Input
                                     w={320}
                                     type="text"
+                                    className="input-shadow"
                                     size="sm"
                                     placeholder="Enter check or reference number number "
                                 />
                                 <Input
                                     w={200}
                                     type="text"
+                                    className="input-shadow"
                                     size="sm"
                                     placeholder="Enter payment source"
                                 />
@@ -164,7 +192,11 @@ const Payments = () => {
                             <td></td>
                             <td></td>
                             <td>
-                                <Select placeholder="Select option" size="xs">
+                                <Select
+                                    placeholder="Select option"
+                                    className="input-shadow"
+                                    size="xs"
+                                >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
@@ -172,7 +204,11 @@ const Payments = () => {
                             </td>
                             <td></td>
                             <td>
-                                <Select placeholder="Select option" size="xs">
+                                <Select
+                                    placeholder="Select option"
+                                    className="input-shadow"
+                                    size="xs"
+                                >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
@@ -201,16 +237,16 @@ const Payments = () => {
                                 </td>
                             </tr>
                         ))}
-                        <tr className="bg-primary-color text-white">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>$30,000.00</td>
-                            <td>$30,000.00</td>
-                            <td></td>
+                        <tr className=" text-white">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>$30,000.00</th>
+                            <th>$30,000.00</th>
+                            <th></th>
                         </tr>
                         <tr className="bg-[#eeeeee]">
                             <td colSpan="9">

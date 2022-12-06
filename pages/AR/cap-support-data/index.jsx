@@ -9,7 +9,12 @@ const CapSupportData = () => {
                 <header>
                     <h1 className="head ">Cap Support Data</h1>
                     <div className="flex justify-end  space-x-1">
-                        <Select placeholder="Select option" size="xs" w={130}>
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            size="xs"
+                            w={130}
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -25,6 +30,7 @@ const CapSupportData = () => {
                             </label>
                             <Select
                                 placeholder="Select option"
+                                className="input-shadow"
                                 size="xs"
                                 w={130}
                             >
@@ -39,6 +45,7 @@ const CapSupportData = () => {
                             </label>
                             <Select
                                 placeholder="Select option"
+                                className="input-shadow"
                                 size="xs"
                                 w={130}
                             >
@@ -55,7 +62,13 @@ const CapSupportData = () => {
                                 <span className="text-orange-500">*</span> dates
                                 range:
                             </label>
-                            <Input w={130} type="text" size="xs" id="dates" />
+                            <Input
+                                w={130}
+                                type="date"
+                                className="input-shadow"
+                                size="xs"
+                                id="dates"
+                            />
                             <label htmlFor="dates" className="font-bold">
                                 {" "}
                                 <FcCalendar className="text-xl" />
@@ -65,7 +78,8 @@ const CapSupportData = () => {
                             </label>
                             <Input
                                 w={130}
-                                type="text"
+                                type="date"
+                                className="input-shadow"
                                 size="xs"
                                 id="dates-to"
                             />

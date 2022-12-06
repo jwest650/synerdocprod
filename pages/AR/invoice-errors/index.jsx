@@ -14,7 +14,12 @@ const InvoiceErrors = () => {
                 <hr />
                 <aside className="mt-2 space-y-2">
                     <div className="flex justify-end space-x-2">
-                        <Select placeholder="Select option" w={130} size="xs">
+                        <Select
+                            placeholder="Select option"
+                            className="input-shadow"
+                            w={130}
+                            size="xs"
+                        >
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -28,6 +33,7 @@ const InvoiceErrors = () => {
                             </label>
                             <Select
                                 placeholder="Select option"
+                                className="input-shadow"
                                 w={130}
                                 size="xs"
                             >
@@ -40,6 +46,7 @@ const InvoiceErrors = () => {
                             <Input
                                 w={210}
                                 type="text"
+                                className="input-shadow"
                                 size="sm"
                                 placeholder="First or last name"
                             />
@@ -69,7 +76,11 @@ const InvoiceErrors = () => {
                         <tr>
                             <td></td>
                             <td>
-                                <Select placeholder="Select option" size="xs">
+                                <Select
+                                    placeholder="Select option"
+                                    className="input-shadow"
+                                    size="xs"
+                                >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
@@ -77,7 +88,11 @@ const InvoiceErrors = () => {
                             </td>
                             <td></td>
                             <td>
-                                <Select placeholder="Select option" size="xs">
+                                <Select
+                                    placeholder="Select option"
+                                    className="input-shadow"
+                                    size="xs"
+                                >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
@@ -88,7 +103,11 @@ const InvoiceErrors = () => {
                             <td></td>
                             <td>
                                 {" "}
-                                <Select placeholder="Select option" size="xs">
+                                <Select
+                                    placeholder="Select option"
+                                    className="input-shadow"
+                                    size="xs"
+                                >
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
