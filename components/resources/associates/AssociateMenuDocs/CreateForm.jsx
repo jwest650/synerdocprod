@@ -6,6 +6,7 @@ import {
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../../structure/TableSelect';
+import { associateAddFormData } from '../associateDatathree';
 
 const CreateForm = ({ setShowForm }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,13 +36,13 @@ const CreateForm = ({ setShowForm }) => {
               <div className="verdana12 mt-14">
                 <div className="flex w-full flex-col items-center gap-3.5">
                   <div className="flex w-full items-center justify-center gap-3 ">
-                    <p className="flex w-[35%] justify-end">
+                    <p className="flex w-[20%] justify-end">
                       {' '}
                       <span className="text-primary-orange">*</span>Form Type:
                     </p>
-                    <div className=" flex w-[65%] items-center gap-2">
+                    <div className=" flex w-[80%] items-center gap-2">
                       <TableSelect
-                        options={['Form - 90 Day Evaluation', 'Option2']}
+                        options={['<--Select-->', ...associateAddFormData]}
                       />
                     </div>
                   </div>

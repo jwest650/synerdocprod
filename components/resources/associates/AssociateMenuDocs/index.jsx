@@ -39,7 +39,7 @@ const AssociateMenuDocs = () => {
                   <th className="th-middle">Document Type</th>
                   <th className="th-middle">Document Description</th>
                   <th className="th-middle">Upload By</th>
-                  <th className="th-middle">Upload</th>
+                  <th className="th-middle">Uploaded</th>
                   <th className="th-last">Actions</th>
                 </tr>
               </thead>
@@ -78,7 +78,7 @@ const AssociateMenuDocs = () => {
                   </td>
                   <td className="td-primary">12346778</td>
                   <td className="td-primary w-60">Incoming Desktop Fax</td>
-                  <td className="td-primary">
+                  <td className="td-primary text-primary-orange underline">
                     {file === null
                       ? ''
                       : file[0]?.name.slice(0, 8) +

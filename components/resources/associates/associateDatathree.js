@@ -180,3 +180,22 @@ export const employmentReq = [
     renewal: new Date().toLocaleDateString(),
   },
 ];
+
+export const associateAddFormData = [
+  '90 Day Eval',
+  'Auto Insurance Coverage Verification',
+  'Automobile Insurance Verification Form',
+  'Baseline TB Screening Tool for Heath Care Workers',
+  'Conflict of Interest',
+  'CORONAVIRUS SCREENING QUESTIONNAIRE (EMPLOYEE)(v2)',
+  'Direct Deposit',
+  'Drug Testing Consent Form',
+  'Electronic Documentation & Signature authenticity',
+  'Employee Confidentiality Non-Disclosure Agreement',
+  'Employee Grievance Form',
+  'Employee Wage Notice',
+  "Employee's Withholding Exemption Certificate",
+  'Hepatitis B / Flu Vaccine Screening Form',
+  'Mantous Tuberculin (TB) Skin Test Record',
+  'MVR Authorization Form',
+];
