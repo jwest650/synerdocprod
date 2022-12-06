@@ -47,7 +47,7 @@ const InvoiceErrors = () => {
                                 w={210}
                                 type="text"
                                 className="input-shadow"
-                                size="sm"
+                                size="xs"
                                 placeholder="First or last name"
                             />
                             <button className="btn">Search</button>

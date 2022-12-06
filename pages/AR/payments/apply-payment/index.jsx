@@ -10,7 +10,7 @@ const ApplyPayment = () => {
             </header>
             <section className="flex  w-full items-center justify-between">
                 <aside className="flex space-x-5 ">
-                    <div className="space-y-2">
+                    <div className="space-y-2 text-right">
                         <h1 className="font-bold">check/reference #:</h1>
                         <h1 className="font-bold">payment source:</h1>
                     </div>
@@ -28,11 +28,9 @@ const ApplyPayment = () => {
                         <p>04/03/2022</p>
                         <div className="flex">
                             <p>88544333</p>
-                            <button className="ml-2">
-                                <BsPlus className="inline text-2xl text-green-500" />
-                                <span className=" text-orange-500 underline">
-                                    Add Note
-                                </span>
+                            <button className="create-btn ml-2 flex items-center space-x-1">
+                                <BsPlus className="scale-150" />
+                                <span className="">Add Note</span>
                             </button>
                         </div>
                     </div>
@@ -54,8 +52,15 @@ const ApplyPayment = () => {
             </section>
             <section className="flex items-center justify-between">
                 <aside className="flex space-x-2">
-                    <label htmlFor="">status:</label>
-                    <Select placeholder="Select option" size="xs" w={130}>
+                    <label htmlFor="" className="font-bold">
+                        status:
+                    </label>
+                    <Select
+                        placeholder="Select option"
+                        className="input-shadow"
+                        size="xs"
+                        w={130}
+                    >
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
@@ -65,19 +70,22 @@ const ApplyPayment = () => {
                     <Input
                         size={"xs"}
                         type="text"
+                        className="input-shadow"
                         w={120}
                         placeholder="Enter Invoice #"
                     />
                     <Input
                         size={"xs"}
                         type="text"
-                        w={190}
+                        className="input-shadow"
+                        w={220}
                         placeholder="Enter Patient First or Last Name"
                     />
                     <Input
                         size={"xs"}
                         type="text"
-                        w={120}
+                        className="input-shadow"
+                        w={130}
                         placeholder="Enter Payer name"
                     />
                 </aside>
@@ -116,43 +124,65 @@ const ApplyPayment = () => {
                                 <td>{val.adj}</td>
                                 <td>{val.pay}</td>
                                 <td>{val.balance}</td>
-                                <td>
+                                <td className="text-center">
                                     <input type={"checkbox"} />
                                 </td>
                                 <td>
-                                    <Select size="xs">
+                                    <Select size="xs" className="input-shadow">
                                         <option value="">{val.amt}</option>
                                     </Select>
                                 </td>
                                 <td>
-                                    <Select size="xs">
+                                    <Select size="xs" className="input-shadow">
                                         <option value="">{val.payer}</option>
                                     </Select>
                                 </td>
                                 <td>{val.applied}</td>
                             </tr>
                         ))}
+                        <tr className="border-none  text-right font-bold">
+                            <td colSpan={7} className="border-none "></td>
+                            <td
+                                colSpan={2}
+                                className="space-x-1 border-none py-2"
+                            >
+                                <label htmlFor="">total applied:</label>
+                                <Input
+                                    w={120}
+                                    type="text"
+                                    className="input-shadow"
+                                    size="xs"
+                                />
+                            </td>
+                            <td colSpan={2} className="border-none"></td>
+                        </tr>
+                        <tr className="text-right font-bold">
+                            <td colSpan={7} className="border-none"></td>
+                            <td colSpan={2} className="space-x-1 border-none">
+                                <label htmlFor="">payment balance:</label>
+                                <Input
+                                    w={120}
+                                    type="text"
+                                    className="input-shadow"
+                                    size="xs"
+                                />
+                            </td>
+                            <td colSpan={2} className="border-none"></td>
+                        </tr>
+                        <tr>
+                            <td
+                                colSpan={11}
+                                className="space-x-3 border-none text-right"
+                            >
+                                <button className="btn">Apply</button>
+                                <button className="btn">Clear all</button>
+                                <button className="btn">Cancel</button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
-                <div className="mr-[20%] ml-auto mt-3 flex w-fit items-center space-x-3">
-                    <div>
-                        <label htmlFor="">total applied:</label>
-                        <br />
-                        <label htmlFor="">payment balance:</label>
-                    </div>
-
-                    <div>
-                        <Input w={120} type="text" size="xs" />
-                        <br />
-                        <Input w={120} type="text" size="xs" />
-                    </div>
-                </div>
             </section>
-            <div className="flex justify-end space-x-3">
-                <button className="btn">Apply</button>
-                <button className="btn">Clear all</button>
-                <button className="btn">Cancel</button>
-            </div>
+            <div className="flex justify-end space-x-3"></div>
         </div>
     );
 };

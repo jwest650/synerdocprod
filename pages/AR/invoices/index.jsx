@@ -6,6 +6,7 @@ import { TbFileExport } from "react-icons/tb";
 import { invoice } from "../../../assets/ardata";
 import Actions from "./../../../components/ar/Actions";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Invoices = () => {
     const router = useRouter();
@@ -279,7 +280,7 @@ const Invoices = () => {
                     <Input
                         className="input-shadow"
                         type="text"
-                        size="sm"
+                        size="xs"
                         placeholder="Enter Patient first or last name"
                     />
                 </div>
@@ -287,7 +288,7 @@ const Invoices = () => {
                     <Input
                         className="input-shadow"
                         type="text"
-                        size="sm"
+                        size="xs"
                         placeholder="Enter Payer name"
                     />
                 </div>
@@ -295,7 +296,7 @@ const Invoices = () => {
                     <Input
                         className="input-shadow"
                         type="text"
-                        size="sm"
+                        size="xs"
                         placeholder="Enter invioce #"
                     />
                 </div>
@@ -346,8 +347,14 @@ const Invoices = () => {
                                 <td>
                                     <input type="checkbox" name="" id="" />
                                 </td>
-                                <td className="text-orange-500">
-                                    {value.patientname}
+                                <td className="text-orange-500 underline">
+                                    <Link
+                                        href={
+                                            "invoices/invoice-detail/services"
+                                        }
+                                    >
+                                        {value.patientname}
+                                    </Link>
                                 </td>
                                 <td>{value.invoice}</td>
                                 <td>{value.currentpayer}</td>
