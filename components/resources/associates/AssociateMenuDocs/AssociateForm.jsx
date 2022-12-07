@@ -1,21 +1,68 @@
 import { Kbd } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import React from 'react';
+import { useState } from 'react';
 import TableSelect from '../../../structure/TableSelect';
+import {
+  appearanceForm,
+  attendanceForm,
+  attitudeForm,
+  cooperationForm,
+  dependabilityForm,
+  developmentForm,
+  knowledgeofworkForm,
+  overallForm,
+  publicRelationsForm,
+  punctualityForm,
+  quantityForm,
+  ratingAbilityForm,
+  supervisionForm,
+} from '../associateDataFour';
+import FormFields from './FormFields';
+import TextFormFields from './TextFormFields';
 
-const AssociateForm = ({ setShowForm }) => {
+const AssociateForm = ({ setShowForm, formType }) => {
   const router = useRouter();
   const associateUrl = router.asPath.split('/')[3];
+
+  const [attendance, setAttendance] = useState(attendanceForm);
+  const [punctuality, setPunctuality] = useState(punctualityForm);
+  const [attitude, setAttitude] = useState(attitudeForm);
+  const [appearance, setAppearance] = useState(appearanceForm);
+  const [dependability, setDependability] = useState(dependabilityForm);
+  const [development, setDevelopment] = useState(developmentForm);
+  const [knowledgeofwork, setKnowledgeofwork] = useState(knowledgeofworkForm);
+  const [cooperation, setCooperation] = useState(cooperationForm);
+  const [quantity, setQuantity] = useState(quantityForm);
+  const [supervision, setSupervision] = useState(supervisionForm);
+  const [publicRelations, setPublicRelations] = useState(publicRelationsForm);
+  const [ratingAbility, setRatingAbility] = useState(ratingAbilityForm);
+  const [overall, setOverall] = useState(overallForm);
+
+  // console.log(attendance.selectedOption);
+  // console.log(punctuality.selectedOption);
+  // console.log(attitude.selectedOption);
+  // console.log(appearance.selectedOption);
+  // console.log(dependability.selectedOption);
+  // console.log(development.selectedOption);
+  // console.log(knowledgeofwork.selectedOption);
+  // console.log(cooperation.selectedOption);
+  // console.log(quantity.selectedOption);
+  // console.log(supervision.selectedOption);
+  // console.log(publicRelations.selectedOption);
+  // console.log(ratingAbility.selectedOption);
+  // console.log(overall.selectedOption);
   return (
     <div>
-      <div>
+      <div className="rounded bg-amber-200 p-3 shadow-sm">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="verdana12 font-semibold text-primary-orange">
               Hold down{' '}
               <span className="verdana16">
                 <Kbd>ctrl</Kbd>{' '}
-                <span className="verdana12 font-medium">and then</span> <Kbd>f</Kbd>
+                <span className="verdana12 font-medium">and then</span>{' '}
+                <Kbd>f</Kbd>
               </span>
               to Search
             </h2>
@@ -46,93 +93,29 @@ const AssociateForm = ({ setShowForm }) => {
       <div className="verdana12 mt-4">
         <div className="flex w-full items-center justify-center gap-2 font-semibold">
           <label>Org/Agency Name: </label>
-          <p className="mr-9">ESI Demo</p>
+          <p className="mr-9">Sinam Care LLC</p>
         </div>
         <div className="mt-1 flex w-full items-center justify-center gap-2 font-semibold">
           <label>Associate Name: </label> <p> {associateUrl}</p>
         </div>
-        <p className="mt-7 rounded bg-secondary-blue px-2">
-          Form - 90 Day Evaluation
+        <p className="mt-7 rounded bg-secondary-blue py-1 px-3">
+          Associate Form - {formType}
         </p>
-        <div className="mt-5 flex gap-5">
-          <h3>
-            Attendance: Consider frequency of absences (e.g. sickness,
-            unexpected absences, etc)
-          </h3>
-          <ul>
-            <li className="flex cursor-pointer items-center gap-2">
-              <input type="checkbox" id="opt1" className="input-primary" />
-              <label htmlFor="opt1">Rarely absent</label>{' '}
-            </li>
-            <li className="flex cursor-pointer items-center gap-2">
-              <input type="checkbox" id="opt2" className="input-primary" />
-              <label htmlFor="opt2">Very regular in attendance</label>{' '}
-            </li>
-            <li className="flex cursor-pointer items-center gap-2">
-              <input type="checkbox" id="opt3" className="input-primary" />
-              <label htmlFor="opt3">Usually present</label>{' '}
-            </li>
-            <li className="flex cursor-pointer items-center gap-2">
-              <input type="checkbox" id="opt4" className="input-primary" />
-              <label htmlFor="opt4">Irregular in attendance</label>{' '}
-            </li>
-            <li className="flex cursor-pointer items-center gap-2">
-              <input type="checkbox" id="opt5" className="input-primary" />
-              <label htmlFor="opt5">Frequently absent</label>{' '}
-            </li>
-          </ul>
-        </div>
-        <div className="mt-7 flex w-full flex-col items-center gap-3.5">
-          <div className="flex w-full items-center justify-center gap-3 ">
-            <p className="flex w-[43%]  justify-end">Comments:</p>
-            <div className=" flex w-[56%] gap-2">
-              <textarea className="w-60 rounded border border-secondary-blue shadow-sm" />
-            </div>
-          </div>
-          <div className="flex w-full items-center justify-center gap-3 ">
-            <p className="flex w-[43%] justify-end">Evaluated by:</p>
-            <div className=" flex w-[56%] items-center gap-2">
-              <input type="text" className="input-primary w-60" />
-            </div>
-          </div>
-          <div className="flex w-full items-center justify-center gap-3 ">
-            <p className="flex w-[43%] justify-end">Date:</p>
-            <div className=" flex w-[56%] items-center gap-2">
-              <input type="date" className="input-primary" />
-            </div>
-          </div>
-          <div className="flex w-full items-center justify-center gap-3 ">
-            <p className="flex w-[43%] justify-end">
-              Employee&apos;s Comments:
-            </p>
-            <div className=" flex w-[56%] ">
-              <textarea className="input-primary w-60" />{' '}
-            </div>
-          </div>
+        <FormFields setFormObj={setAttendance} formObj={attendance} />
+        <FormFields setFormObj={setPunctuality} formObj={punctuality} />
+        <FormFields setFormObj={setAttitude} formObj={attitude} />
+        <FormFields setFormObj={setAppearance} formObj={appearance} />
+        <FormFields setFormObj={setDependability} formObj={dependability} />
+        <FormFields setFormObj={setDevelopment} formObj={development} />
+        <FormFields setFormObj={setKnowledgeofwork} formObj={knowledgeofwork} />
+        <FormFields setFormObj={setCooperation} formObj={cooperation} />
+        <FormFields setFormObj={setQuantity} formObj={quantity} />
+        <FormFields setFormObj={setSupervision} formObj={supervision} />
+        <FormFields setFormObj={setPublicRelations} formObj={publicRelations} />
+        <FormFields setFormObj={setRatingAbility} formObj={ratingAbility} />
+        <FormFields setFormObj={setOverall} formObj={overall} />
 
-          <div className="flex w-full justify-center gap-3 ">
-            <p className="flex w-[43%] justify-end">
-              This evaluation has been discussed with employee?:
-            </p>
-            <div className=" flex w-[56%] flex-col">
-              <div className="flex items-center gap-2">
-                <input type="checkbox" id="yes" className="input-primary" />
-                <label htmlFor="yes">Yes</label>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" id="no" className="input-primary" />
-                <label htmlFor="no">No (explain below)</label>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex w-full items-center justify-center gap-3 ">
-            <p className="flex w-[43%] justify-end">Explanation:</p>
-            <div className=" flex w-[56%] ">
-              <textarea type="text" className="input-primary w-60" />
-            </div>
-          </div>
-        </div>
+        <TextFormFields />
         <div className="mt-5 space-y-10">
           <button className="btn-primary">Apply Signature</button>
           <p className="text-primary-orange underline">

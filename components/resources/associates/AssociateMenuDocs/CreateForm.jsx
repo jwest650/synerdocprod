@@ -8,7 +8,7 @@ import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../../structure/TableSelect';
 import { associateAddFormData } from '../associateDatathree';
 
-const CreateForm = ({ setShowForm }) => {
+const CreateForm = ({ setShowForm, setFormType }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -42,6 +42,7 @@ const CreateForm = ({ setShowForm }) => {
                     </p>
                     <div className=" flex w-[80%] items-center gap-2">
                       <TableSelect
+                        setSelectedOption={setFormType}
                         options={['<--Select-->', ...associateAddFormData]}
                       />
                     </div>
