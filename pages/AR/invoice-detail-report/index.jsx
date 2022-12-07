@@ -56,12 +56,12 @@ const InvoiceDetailReport = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="inv-from" className="font-bold">
-                            invoice from dates from:
+                            invoice dates from:
                         </label>
                         <Input
                             className="input-shadow"
                             w={130}
-                            type="text"
+                            type="date"
                             size="xs"
                             id="inv-from"
                         />
@@ -74,7 +74,7 @@ const InvoiceDetailReport = () => {
                         <Input
                             className="input-shadow"
                             w={130}
-                            type="text"
+                            type="date"
                             size="xs"
                             id="inv-to"
                         />
@@ -86,7 +86,7 @@ const InvoiceDetailReport = () => {
                                 className="input-shadow"
                                 w={200}
                                 type="text"
-                                size="sm"
+                                size="xs"
                                 placeholder="Enter first or last name"
                             />
                             <button className="btn">Search</button>

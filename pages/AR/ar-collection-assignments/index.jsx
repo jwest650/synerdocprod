@@ -29,7 +29,7 @@ const ARCollectionAssignments = () => {
                         onClick={onOpen}
                     >
                         <BsPlus className="scale-150" />
-                        <h1 className="create-btn">assign collector</h1>
+                        <h1 className="">assign collector</h1>
                     </button>
                 </section>
                 <hr />

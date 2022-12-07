@@ -57,21 +57,9 @@ const InvoiceDetail = () => {
                     <ImBook className=" mr-2 inline text-xl" />
                     <h1 className="head ">carter, melinda</h1>
                 </div>
-                <div className="flex space-x-4">
-                    <div className="flex items-baseline space-x-1 ">
-                        <VscGoToFile className=" inline " />
-                        <label className="text-orange-500 underline">
-                            rebill
-                        </label>
-                    </div>
-                    <div className="flex items-baseline space-x-1 ">
-                        <TbFileExport className="inline " />
-
-                        <label className="text-orange-500 underline" htmlFor="">
-                            move to
-                        </label>
-                    </div>
-                    <div className="flex items-baseline space-x-1 ">
+                <div className="flex items-center space-x-24">
+                    <p className="text-orange-500">[Payer Review/Release]</p>
+                    <div className=" ">
                         {" "}
                         <BsFileEarmarkPlus className=" inline " />
                         <label className="text-orange-500 underline" htmlFor="">
@@ -79,6 +67,7 @@ const InvoiceDetail = () => {
                         </label>
                     </div>
                 </div>
+
                 <h1 className="head text-green-500">invoice</h1>
             </section>
             <section className="flex items-center justify-between">

@@ -154,14 +154,14 @@ const Payments = () => {
                                     w={320}
                                     type="text"
                                     className="input-shadow"
-                                    size="sm"
+                                    size="xs"
                                     placeholder="Enter check or reference number number "
                                 />
                                 <Input
                                     w={200}
                                     type="text"
                                     className="input-shadow"
-                                    size="sm"
+                                    size="xs"
                                     placeholder="Enter payment source"
                                 />
                             </div>

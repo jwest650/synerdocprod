@@ -87,7 +87,7 @@ const EraPayments = () => {
                             <Input
                                 className="input-shadow"
                                 type="text"
-                                size="sm"
+                                size="xs"
                                 placeholder="Enter invioce #"
                             />
                         </div>
