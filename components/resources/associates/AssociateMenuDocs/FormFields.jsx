@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FormFields = ({ formObj, setFormObj }) => {
   return (
     <div className="mt-5 flex w-full justify-center gap-3">

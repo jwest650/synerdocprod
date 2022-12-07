@@ -1,7 +1,9 @@
 import { Kbd } from '@chakra-ui/react';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { useState } from 'react';
+import ModalContainer from '../../../structure/ModalContainer';
 import TableSelect from '../../../structure/TableSelect';
 import {
   appearanceForm,
@@ -18,7 +20,9 @@ import {
   ratingAbilityForm,
   supervisionForm,
 } from '../associateDataFour';
+import AssociateSignature from './AssociateSignature';
 import FormFields from './FormFields';
+import RepresentativeSignature from './RepresentativeSignature';
 import TextFormFields from './TextFormFields';
 
 const AssociateForm = ({ setShowForm, formType }) => {
@@ -38,6 +42,10 @@ const AssociateForm = ({ setShowForm, formType }) => {
   const [publicRelations, setPublicRelations] = useState(publicRelationsForm);
   const [ratingAbility, setRatingAbility] = useState(ratingAbilityForm);
   const [overall, setOverall] = useState(overallForm);
+
+  const [associateSignUrl, setAssociateSignUrl] = useState('');
+  const [repSignUrl, setRepSignUrl] = useState('');
+  const [repImg, setRepImg] = useState('');
 
   // console.log(attendance.selectedOption);
   // console.log(punctuality.selectedOption);
@@ -114,14 +122,19 @@ const AssociateForm = ({ setShowForm, formType }) => {
         <FormFields setFormObj={setPublicRelations} formObj={publicRelations} />
         <FormFields setFormObj={setRatingAbility} formObj={ratingAbility} />
         <FormFields setFormObj={setOverall} formObj={overall} />
-
         <TextFormFields />
         <div className="mt-8 space-y-7 px-10">
           <button className="btn-primary">Apply Signature</button>
-          <p className="text-primary-orange underline">Associate Signature</p>
-          <p className="text-primary-orange underline">
-            Representative Signature
-          </p>
+          <AssociateSignature
+            associateSignUrl={associateSignUrl}
+            setAssociateSignUrl={setAssociateSignUrl}
+          />
+          <RepresentativeSignature
+            repSignUrl={repSignUrl}
+            setRepSignUrl={setRepSignUrl}
+            setRepImg={setRepImg}
+            repImg={repImg}
+          />
         </div>
       </div>
     </div>
