@@ -116,8 +116,9 @@ const AssociateForm = ({ setShowForm, formType }) => {
         <FormFields setFormObj={setOverall} formObj={overall} />
 
         <TextFormFields />
-        <div className="mt-5 space-y-10">
+        <div className="mt-8 space-y-7 px-10">
           <button className="btn-primary">Apply Signature</button>
+          <p className="text-primary-orange underline">Associate Signature</p>
           <p className="text-primary-orange underline">
             Representative Signature
           </p>

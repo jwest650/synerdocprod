@@ -6,9 +6,9 @@ const FormFields = ({ formObj, setFormObj }) => {
       <div className="flex w-[48%] justify-end text-end">
         <h3>{formObj.title}</h3>
       </div>
-      <ul className="w-[52%]">
+      <ul className="w-[52%] space-y-1">
         {formObj.options.map((option, index) => (
-          <li key={index} className="flex cursor-pointer items-center gap-2">
+          <li key={index} className="flex cursor-pointer items-center gap-2.5">
             <input
               type="checkbox"
               checked={option === formObj.selectedOption ? true : false}
