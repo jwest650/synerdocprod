@@ -15,8 +15,8 @@ const AssociateForm = ({ setShowForm }) => {
               Hold down{' '}
               <span className="verdana16">
                 <Kbd>ctrl</Kbd>{' '}
-                <span className="verdana12 font-medium">then</span> <Kbd>f</Kbd>
-              </span>{' '}
+                <span className="verdana12 font-medium">and then</span> <Kbd>f</Kbd>
+              </span>
               to Search
             </h2>
           </div>
