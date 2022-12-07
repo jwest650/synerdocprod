@@ -10,26 +10,27 @@ import {
   ViewDirective,
   ScheduleComponent,
 } from '@syncfusion/ej2-react-schedule';
-import React, { useState, useContext } from 'react';
-import { scheduleData } from '../../assets/scheduleData';
-import GeneralContext from '../../context/GeneralContext';
+import { useState } from 'react';
 
-const Calendar = () => {
-  const { sectionClicked } = useContext(GeneralContext);
-  const [scheduleObj, setScheduleObj] = useState({});
+const Calendar = ({ setEventsData, eventsData }) => {
+  const [events, setEvents] = useState(null);
 
   const handleSave = (args) => {
-    // console.log(args);
+    setTimeout(() => {
+      const newEvents = events?.getEvents();
+      setEventsData(newEvents);
+    }, 100);
   };
   return (
     <ScheduleComponent
       cssClass="schedule"
-      height="650px"
-      ref={(schedule) => setScheduleObj(schedule)}
+      height="528px"
+      ref={(schedule) => setEvents(schedule)}
       selectedDate={new Date(2021, 0, 10)}
       currentView="Month"
+      activeCellsData={(e) => console.log(e)}
       actionComplete={handleSave}
-      eventSettings={{ dataSource: scheduleData }}
+      eventSettings={{ dataSource: eventsData }}
     >
       <ViewsDirective>
         {['Day', 'Week', 'Month', 'Agenda'].map((item) => (
