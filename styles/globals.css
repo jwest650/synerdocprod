@@ -201,6 +201,11 @@ body {
 
 /* SHEDULER */
 
+.e-schedule .e-month-view .e-content-table {
+    height: 70%;
+}
+
+/* 
 .e-schedule .e-month-view .e-appointment {
     background: #dfe2e7;
     border: 1px solid #e5e7eb;
@@ -217,18 +222,22 @@ body {
 }
 
 .e-toolbar .e-tbar-btn {
-    background: #e7eaec;
-    box-shadow: none;
-    color: #111827;
+  background: #e7eaec;
+  box-shadow: none;
+  color: #111827;
 }
 
 .e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
-    border-right: 1px solid #becad3;
+  border-right: 1px solid #becad3;
+} 
+border-right: 1px solid #becad3;
 }
+*/
 
-/* .schedule {
-  @apply rounded border-[#becad3] shadow-md;
+.schedule {
+    @apply rounded-lg border-[#becad3] shadow-md;
 }
+/* 
 
 .e-schedule .e-schedule-toolbar .e-toolbar-items {
   @apply bg-[#becad3];
@@ -366,6 +375,7 @@ body {
   table-layout: fixed;
   width: 100%;
 } */
+
 /* ar */
 @layer base {
     .ar {
