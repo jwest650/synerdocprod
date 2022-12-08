@@ -11,26 +11,31 @@ const CalendarComp = ({ setDate, date }) => {
     // console.log(e.value.toLocaleDateString());
   };
   return (
-    <div className="relative">
-      <div
-        className="flex items-center gap-1.5"
-        onClick={() => setShowCal((current) => (current = !current))}
-      >
+    <div
+      className="relative"
+      onMouseOver={() => setShowCal(true)}
+      onMouseLeave={() => setShowCal(false)}
+    >
+      <div className="flex items-center gap-1.5">
         <input
           type="text"
           placeholder="mm/dd/yyyy"
           value={date}
           onChange={() => true}
-          className="input-date"
+          className="input-date cursor-pointer"
         />
         <FcPlanner className="scale-150 text-lg" />
       </div>
       <div
-        className={`absolute left-0 top-6 z-10 ${
-          showCal ? 'inline-flex' : 'hidden'
+        className={`absolute left-0 top-6 z-10 flex flex-col ${
+          showCal ? 'date-anim inline-flex' : 'hidden'
         }`}
       >
-        <CalendarComponent onChange={handleChange} />
+        <CalendarComponent
+          onChange={handleChange}
+          cssClass="cal-primary"
+          showTodayButton={false}
+        />
       </div>
     </div>
   );

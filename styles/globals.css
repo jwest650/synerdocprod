@@ -144,6 +144,9 @@ body {
   height: 4px;
   @apply rounded-full;
 }
+.cal-primary::-webkit-scrollbar {
+  display: none;
+}
 
 .menu-anim::-webkit-scrollbar-thumb {
   background-color: #90b3ffe1;
@@ -159,6 +162,20 @@ body {
   .e-text-content.e-icon-wrapper
   .e-checkbox-wrapper {
   display: none;
+}
+
+.date-anim {
+  animation: dateAnim 0.6s forwards ease-in-out;
+}
+
+@keyframes dateAnim {
+  0% {
+    height: 0rem;
+  }
+
+  100% {
+    height: 265px;
+  }
 }
 
 .menu-anim {
@@ -210,6 +227,36 @@ body {
 
 .e-schedule .e-month-view .e-content-table {
   height: 70%;
+}
+
+/* CALENDAR */
+
+.e-calendar .e-header .e-title,
+.e-bigger.e-small .e-calendar .e-header .e-title {
+  cursor: pointer;
+  display: inline-block;
+  /* float: left; */
+  font-size: 11px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.e-calendar .e-content span.e-day,
+.e-bigger.e-small .e-calendar .e-content span.e-day {
+  border: none;
+  font-size: 11px;
+  font-weight: normal;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+}
+
+.e-calendar th,
+.e-bigger.e-small .e-calendar th {
+  cursor: default;
+  font-size: 11px;
+  font-weight: normal;
+  text-align: center;
 }
 
 /* 
