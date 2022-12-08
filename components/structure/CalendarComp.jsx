@@ -24,18 +24,14 @@ const CalendarComp = ({ setDate, date }) => {
           onChange={() => true}
           className="input-date cursor-pointer"
         />
-        <FcPlanner className="scale-150 text-lg" />
+        <FcPlanner className="scale-125 text-lg" />
       </div>
       <div
         className={`absolute left-0 top-6 z-10 flex flex-col ${
           showCal ? 'date-anim inline-flex' : 'hidden'
         }`}
       >
-        <CalendarComponent
-          onChange={handleChange}
-          cssClass="cal-primary"
-          showTodayButton={false}
-        />
+        <CalendarComponent onChange={handleChange} cssClass="cal-primary" />
       </div>
     </div>
   );
