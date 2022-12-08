@@ -10,14 +10,16 @@ import { FcEditImage, FcPrint } from 'react-icons/fc';
 const AssociateMenuDocs = () => {
   const [showForm, setShowForm] = useState(false);
   const [file, setFile] = useState(null);
+  const [formType, setFormType] = useState('90 Day Evaluation');
+
   return (
-    <div className="mt-7 mb-10 px-4">
+    <div className="p-4">
       {showForm ? (
-        <AssociateForm setShowForm={setShowForm} />
+        <AssociateForm formType={formType} setShowForm={setShowForm} />
       ) : (
         <>
           <div>
-            <div className="mb-5 flex items-center justify-between">
+            <div className="mb-5 mt-2 flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <h2 className="verdana16 font-semibold">Documents</h2>
                 <AssociateUploadDocument setFileProp={setFile} />
@@ -39,7 +41,7 @@ const AssociateMenuDocs = () => {
                   <th className="th-middle">Document Type</th>
                   <th className="th-middle">Document Description</th>
                   <th className="th-middle">Upload By</th>
-                  <th className="th-middle">Upload</th>
+                  <th className="th-middle">Uploaded</th>
                   <th className="th-last">Actions</th>
                 </tr>
               </thead>
@@ -78,7 +80,7 @@ const AssociateMenuDocs = () => {
                   </td>
                   <td className="td-primary">12346778</td>
                   <td className="td-primary w-60">Incoming Desktop Fax</td>
-                  <td className="td-primary">
+                  <td className="td-primary text-primary-orange underline">
                     {file === null
                       ? ''
                       : file[0]?.name.slice(0, 8) +
@@ -99,10 +101,10 @@ const AssociateMenuDocs = () => {
             </table>
           </div>
 
-          <div className="mt-14">
+          <div className="mt-10">
             <div className="flex items-center gap-4">
               <h2 className="verdana16 font-semibold">Forms</h2>
-              <CreateForm setShowForm={setShowForm} />
+              <CreateForm setFormType={setFormType} setShowForm={setShowForm} />
             </div>
 
             <table className="mx-auto mt-3 w-full overflow-auto px-3 shadow-md">

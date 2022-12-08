@@ -541,14 +541,55 @@ export const menuOptions = [
         icon: <BsDot />,
       },
       {
+        title: 'Security',
+        url: 'security',
+        icon: <BsDot />,
+        subOptions: [
+          {
+            title: 'title',
+            url: 'url',
+            icon: <BsDot />,
+          },
+        ],
+      },
+      {
         title: 'Work Basket',
         url: 'work-basket',
         icon: <BsDot />,
+        subOptions: [
+          {
+            title: 'title',
+            url: 'url',
+            icon: <BsDot />,
+          },
+        ],
       },
       {
-        title: 'Journey Entry',
-        url: 'journey-entry',
+        title: 'Journal Entry Setup',
+        url: 'journal-entry-setup',
         icon: <BsDot />,
+        subOptions: [
+          {
+            title: 'Journal Entry Mapping',
+            url: 'journal-entry-mapping',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Journal Entry Mapping Override',
+            url: 'journal-entry-mapping-override',
+            icon: <BsDot />,
+          },
+          {
+            title: 'Journal Entry Preliminary Results',
+            url: 'journal-entry-preliminary-results',
+            icon: <BsDot />,
+          },
+          {
+            title: 'QuickBooks File Creation',
+            url: 'quickBooks-file-creation',
+            icon: <BsDot />,
+          },
+        ],
       },
       {
         title: 'Offline Forms App',
@@ -556,9 +597,16 @@ export const menuOptions = [
         icon: <BsDot />,
       },
       {
-        title: 'Note Forms Tables',
-        url: 'note-forms-tables',
+        title: 'Note Form Tables',
+        url: 'note-form-tables',
         icon: <BsDot />,
+        subOptions: [
+          {
+            title: 'title',
+            url: 'url',
+            icon: <BsDot />,
+          },
+        ],
       },
     ],
   },

@@ -24,7 +24,7 @@ const Calendar = ({ setEventsData, eventsData }) => {
   return (
     <ScheduleComponent
       cssClass="schedule"
-      height="528px"
+      height="453px"
       ref={(schedule) => setEvents(schedule)}
       selectedDate={new Date(2021, 0, 10)}
       currentView="Month"
