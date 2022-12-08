@@ -13,7 +13,6 @@ import Services from "./tabs/Services";
 import ArTransaction from "./tabs/ArTransaction";
 import Notes from "./tabs/Notes";
 import Payer from "./tabs/Payer";
-import Pdgm from "./tabs/Pdgm";
 import Errors from "./tabs/Errors";
 import { useRouter } from "next/router";
 
@@ -41,10 +40,6 @@ const InvoiceDetail = () => {
             icon: <HiOutlineQrcode />,
         },
 
-        {
-            name: "pdgm",
-            icon: <BiErrorCircle />,
-        },
         {
             name: "errors",
             icon: <VscError />,
@@ -155,8 +150,7 @@ function renderTab(tab) {
             return <ArTransaction />;
         case "payer codes":
             return <Payer />;
-        case "pdgm":
-            return <Pdgm />;
+
         case "errors":
             return <Errors />;
         default:

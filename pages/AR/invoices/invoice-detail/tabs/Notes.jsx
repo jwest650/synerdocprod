@@ -89,9 +89,9 @@ const Notes = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {data.map((val) => {
+                        {data.map((val, i) => {
                             return (
-                                <tr>
+                                <tr key={i}>
                                     {!val.date && (
                                         <td className="bg-gray-500" colSpan={6}>
                                             no note found for the criteria
