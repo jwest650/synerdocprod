@@ -12,7 +12,7 @@ import {
 } from '@syncfusion/ej2-react-schedule';
 import { useState } from 'react';
 
-const Calendar = ({ setEventsData, eventsData }) => {
+const ScheduleComp = ({ setEventsData, eventsData }) => {
   const [events, setEvents] = useState(null);
 
   const handleSave = (args) => {
@@ -54,4 +54,4 @@ const Calendar = ({ setEventsData, eventsData }) => {
   );
 };
 
-export default Calendar;
+export default ScheduleComp;

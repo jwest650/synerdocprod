@@ -5,11 +5,14 @@ import {
   Select,
   useDisclosure,
 } from '@chakra-ui/react';
+import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
+import CalendarComp from '../../structure/CalendarComp';
 import TableSelect from '../../structure/TableSelect';
 
 const CreateAssociate = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [birthDate, setBirthDate] = useState('');
 
   const handleForm = (e) => {
     e.preventDefault();
@@ -100,11 +103,12 @@ const CreateAssociate = () => {
                         <input type="text" className="input-primary w-14" />
                       </div>
                       <div>
-                        <input
+                        <CalendarComp setDate={setBirthDate} date={birthDate} />
+                        {/* <input
                           type="date"
-                          placeholder="11/27/1960"
+                          placeholder="11/11/1960"
                           className="input-primary w-28"
-                        />
+                        /> */}
                       </div>
                       <TableSelect
                         styles={{ width: '100%' }}

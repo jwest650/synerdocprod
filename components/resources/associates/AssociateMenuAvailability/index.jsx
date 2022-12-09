@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import { scheduleData } from '../../../../assets/scheduleData';
-import Calendar from '../../../dashboard/Calendar';
+import ScheduleComp from '../../../dashboard/ScheduleComp';
 
 const AssociateMenuAvailability = () => {
   const [eventsData, setEventsData] = useState(scheduleData);
@@ -42,7 +42,10 @@ const AssociateMenuAvailability = () => {
         <div className="my-7">
           <h2 className="verdana18 text-center  font-semibold"></h2>
           <div className="mx-auto max-w-7xl px-3">
-            <Calendar eventsData={eventsData} setEventsData={setEventsData} />
+            <ScheduleComp
+              eventsData={eventsData}
+              setEventsData={setEventsData}
+            />
           </div>
         </div>
       </div>
