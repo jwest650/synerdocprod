@@ -78,8 +78,6 @@ const CreateDeduction = () => {
               </button>
             </div>
           </div>
-          {/* </div> */}
-          {/* </div> */}
         </ModalContent>
       </Modal>
     </>

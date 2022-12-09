@@ -14,7 +14,7 @@ const Menupopup = ({ menu, index }) => {
 
   const [pageY, setPageY] = useState('');
   // useEffect(() => {}, [pageY]);
-  // console.log(pageY);
+  console.log(currentPath);
   return (
     <>
       <div
@@ -24,10 +24,8 @@ const Menupopup = ({ menu, index }) => {
       >
         <span className="mb-1 scale-125">{menu.icon}</span>
         <span
-          className={`border-b-2 border-[#0141CF] font-semibold hover:border-b-[#C8C4C3] ${
-            currentPath
-              ? menu.name === currentPath && 'border-gray-200'
-              : menu.name === 'Dashboard' && 'border-gray-200'
+          className={`border-b-2 border-[#0141CF] font-semibold hover:border-b-gray-200 ${
+            currentPath && menu.name === currentPath && 'border-gray-200'
           }  `}
         >
           {menu.name}
@@ -40,11 +38,9 @@ const Menupopup = ({ menu, index }) => {
             </span>
             <div className="absolute top-11">
               <ul
-                className={`menu-anim h-full ${
-                  menu.name === 'Settings' ? 'w-56' : 'w-60'
-                } overflow-y-scroll rounded bg-[#f6f8fc] pt-1 text-[#070b16] shadow transition-all duration-[2000ms] ease-in-out`}
+                className={`menu-anim w-60 overflow-y-scroll rounded bg-[#f6f8fc] pt-1 text-[#070b16] shadow transition-all duration-[2000ms] ease-in-out`}
               >
-                {menu.options.map((option, i) => (
+                {menu?.options?.map((option, i) => (
                   <Link
                     href={`${
                       option.title === 'Home'
@@ -82,10 +78,10 @@ const Menupopup = ({ menu, index }) => {
                       </div>
                       <div
                         style={{ top: pageY }}
-                        className={`absolute ${
+                        className={`absolute w-60 ${
                           menu.name === 'Settings'
-                            ? 'left-[220px] w-56'
-                            : 'left-[237px] w-60'
+                            ? 'left-[-15rem]'
+                            : 'left-[237px]'
                         } z-10 block`}
                       >
                         {option.subOptions && showSubOptionsMenu && (

@@ -7,7 +7,6 @@ import {
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import { FcEditImage } from 'react-icons/fc';
-import TableSelect from '../../../structure/TableSelect';
 import PayerCBR1 from './PayerCBR1';
 import PayerCBR2 from './PayerCBR2';
 import PayerCBR3 from './PayerCBR3';

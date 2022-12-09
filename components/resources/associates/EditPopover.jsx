@@ -13,7 +13,7 @@ const EditPopover = () => {
         className="verdana11 relative flex cursor-pointer items-center gap-2 py-3"
       >
         {' '}
-        <span className="text-primary-orange underline">[Edit]</span>
+        <span className="text-primary-orange underline">[Edits]</span>
         <FcInfo className="ml-1 rotate-180 scale-125" />
         {isHovered && (
           <>
@@ -24,7 +24,7 @@ const EditPopover = () => {
               <h2 className="verdana13 mb-1 px-2 font-semibold tracking-wider text-primary-orange">
                 Missing Fields
               </h2>
-              <div className="verdana-12 flex-col mt-3 flex w-48  gap-1">
+              <div className="verdana-12 mt-3 flex w-48 flex-col  gap-1">
                 <p className="border-b px-2 py-[2px]  text-secondary-color">
                   Missing Phone
                 </p>

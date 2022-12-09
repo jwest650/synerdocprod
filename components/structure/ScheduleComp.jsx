@@ -18,7 +18,7 @@ const ScheduleComp = ({ setEventsData, eventsData }) => {
   const handleSave = (args) => {
     setTimeout(() => {
       const newEvents = events?.getEvents();
-      setEventsData(newEvents);
+      setEventsData && setEventsData(newEvents);
     }, 100);
   };
   return (
