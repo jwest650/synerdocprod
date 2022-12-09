@@ -53,8 +53,8 @@ const ArTransaction = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {data.map((val) => (
-                            <tr>
+                        {data.map((val, i) => (
+                            <tr key={i}>
                                 <td>{val.payer}</td>
                                 <td>{val.service_date}</td>
                                 <td>{val.service}</td>
