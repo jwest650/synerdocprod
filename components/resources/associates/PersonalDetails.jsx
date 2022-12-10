@@ -58,7 +58,7 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
         </label>
         <div className=" flex w-[65%] ">
           <TableSelect
-            styles={{ width: '100%' }}
+            styles={{ width: 'fit-content', height: '25px' }}
             options={['Male', 'Female', 'Other']}
           />
         </div>
@@ -69,7 +69,7 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
         </label>
         <div className=" flex w-[65%] ">
           <TableSelect
-            styles={{ width: '100%' }}
+            styles={{ width: 'fit-content', height: '25px' }}
             options={[
               'White',
               'Black',
@@ -90,7 +90,7 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
           <input
             type="text"
             placeholder="example@gmail.com"
-            className="input-primary w-full"
+            className="input-primary"
           />
         </div>
       </div>
@@ -99,7 +99,7 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
           Mobile Email:
         </label>
         <div className=" flex w-[65%] ">
-          <input type="text" className="input-primary w-full" />
+          <input type="text" className="input-primary" />
         </div>
       </div>
       <div className="flex w-full items-center justify-center gap-3 ">
@@ -107,7 +107,10 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
           Scheduling Rank:
         </label>
         <div className=" flex w-[65%] ">
-          <TableSelect styles={{ width: '100%' }} options={['N/A']} />
+          <TableSelect
+            styles={{ width: 'fit-content', height: '25px' }}
+            options={['N/A']}
+          />
         </div>
       </div>
     </div>

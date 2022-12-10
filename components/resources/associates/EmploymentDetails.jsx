@@ -16,7 +16,7 @@ const EmploymentDetails = ({
         </label>
         <div className=" flex w-[65%] items-center">
           <TableSelect
-            styles={{ width: '100%' }}
+            styles={{ width: 'fit-content', height: '25px' }}
             options={['Field Staff - Full Time', 'Field Staff - Part Time']}
           />
         </div>
@@ -29,7 +29,7 @@ const EmploymentDetails = ({
 
         <div className=" flex w-[65%] items-center gap-2">
           <TableSelect
-            styles={{ width: '100%' }}
+            styles={{ width: 'fit-content', height: '25px' }}
             options={['Regist-primarytext-primary-orangese']}
           />
         </div>
@@ -57,7 +57,10 @@ const EmploymentDetails = ({
           Supervisor
         </label>
         <div className=" flex w-[65%] ">
-          <TableSelect styles={{ width: '100%' }} options={['Balley Debie']} />
+          <TableSelect
+            styles={{ width: 'fit-content', height: '25px' }}
+            options={['Balley Debie']}
+          />
         </div>
       </div>
       <div className="flex w-full items-center justify-center gap-3 ">
@@ -65,7 +68,10 @@ const EmploymentDetails = ({
           <span className="text-primary-orange">*</span>Home Agency:
         </label>
         <div className=" flex w-[65%] ">
-          <TableSelect styles={{ width: '100%' }} options={['Sinamcare']} />
+          <TableSelect
+            styles={{ width: 'fit-content', height: '25px' }}
+            options={['Sinamcare']}
+          />
         </div>
       </div>
       <div className="flex w-full items-center justify-center gap-3 ">
