@@ -57,16 +57,7 @@ const MySchedule = () => {
       {/* <table className="mt-3 w-full">
         <thead className="thead-primary">
           <tr>
-            <th className="th-first">Patient</th>
-            <th className="th-middle">Associate</th>
-            <th className="th-middle">Service</th>
-            <th className="th-middle">Service Date</th>
-            <th className="th-middle">Time In</th>
-            <th className="th-middle">Time Out</th>
-            <th className="th-middle">Agency</th>
-            <th className="th-middle">Status</th>
-            <th className="th-last">Action</th>
-          </tr>
+             </tr>
         </thead>
         <tbody>
           <tr>
