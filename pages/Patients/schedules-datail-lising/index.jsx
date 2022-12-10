@@ -36,7 +36,12 @@ const SchedulesDetailListing = () => {
         <div className='flex items-center'>
           <div className='flex items-center space-x-3'>
             <div className='flex items-center space-x-2'>
-              <Select name='' id='' className='rounded text-black' size='xs'>
+              <Select
+                name=''
+                id=''
+                className='input-primary rounded text-black'
+                size='xs'
+              >
                 <option value='pdf'>PDF Summary</option>
                 <option value='spreadsheet'>Spreadsheet Summary</option>
               </Select>
@@ -48,14 +53,16 @@ const SchedulesDetailListing = () => {
           <div className='ml-3 flex items-center space-x-3'>
             <div className='flex items-center space-x-2'>
               <p>From:</p>
-              <Input
+              <input
+                className='input-primary'
                 placeholder='small size'
                 size='xs'
                 ml={'3'}
                 type={'date'}
               />
               <p>To:</p>
-              <Input
+              <input
+                className='input-primary'
                 placeholder='small size'
                 size='xs'
                 ml={'3'}
@@ -65,7 +72,13 @@ const SchedulesDetailListing = () => {
           </div>
           <div className='flex'>
             <div className='flex '>
-              <Input placeholder='small size' size='xs' type={'text'} ml={3} />
+              <input
+                className='input-primary'
+                placeholder='small size'
+                size='xs'
+                type={'text'}
+                ml={3}
+              />
             </div>
             <button className='ml-2 rounded  border bg-secondary-color px-2 text-white'>
               Search
@@ -83,7 +96,7 @@ const SchedulesDetailListing = () => {
           <Checkbox>
             <span className='verdana13 '>Payer report Group</span>
           </Checkbox>
-          <Select size='xs'>
+          <Select size='xs' className='input-primary'>
             <option value='option1' className='text-gray-800'>
               All
             </option>
@@ -120,7 +133,7 @@ const SchedulesDetailListing = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -137,7 +150,7 @@ const SchedulesDetailListing = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -154,7 +167,7 @@ const SchedulesDetailListing = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -174,7 +187,7 @@ const SchedulesDetailListing = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -191,7 +204,7 @@ const SchedulesDetailListing = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1

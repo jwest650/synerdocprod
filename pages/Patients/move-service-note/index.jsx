@@ -31,7 +31,7 @@ const MoveServiceNote = () => {
           </h1>
         </div>
         <div>
-          <Select size='xs' minWidth={400}>
+          <Select className='input-primary' size='xs' minWidth={400}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -51,7 +51,7 @@ const MoveServiceNote = () => {
           </h1>
         </div>
         <div>
-          <Select size='xs' minWidth={400}>
+          <Select className='input-primary' size='xs' minWidth={400}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -72,7 +72,7 @@ const MoveServiceNote = () => {
           </h1>
         </div>
         <div>
-          <Select size='xs' minWidth={400}>
+          <Select className='input-primary' size='xs' minWidth={400}>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>

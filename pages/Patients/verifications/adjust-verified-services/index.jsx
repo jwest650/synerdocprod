@@ -17,7 +17,8 @@ const AdjustVerifiedService = () => {
           <div className='flex'>
             <p>Service Date From:</p>
             <div className='flex '>
-              <Input
+              <input
+                className='input-primary'
                 placeholder='small size'
                 size='xs'
                 ml={'3'}
@@ -29,7 +30,8 @@ const AdjustVerifiedService = () => {
           <div className='flex'>
             <p>To:</p>
             <div className='flex '>
-              <Input
+              <input
+                className='input-primary'
                 placeholder='small size'
                 size='xs'
                 ml={'3'}
@@ -40,7 +42,12 @@ const AdjustVerifiedService = () => {
 
           <div className='ml-2 flex items-center space-x-3'>
             <div className='flex space-x-2'>
-              <Select name='' id='' className='rounded text-black' size='xs'>
+              <Select
+                name=''
+                id=''
+                className='input-primary rounded text-black'
+                size='xs'
+              >
                 <option value='pdf'>all patient/Team</option>
                 <option value='pdf'>all patient/Team</option>
                 <option value='pdf'>all patient/Team</option>
@@ -50,7 +57,12 @@ const AdjustVerifiedService = () => {
 
           <div className='ml-2 flex items-center space-x-3'>
             <div className='flex space-x-2'>
-              <Select name='' id='' className='rounded text-black' size='xs'>
+              <Select
+                name=''
+                id=''
+                className='input-primary rounded text-black'
+                size='xs'
+              >
                 <option value='pdf'>Skilled Nurse</option>
                 <option value='pdf'>Skilled Nurse</option>
                 <option value='pdf'>Skilled Nurse</option>
@@ -60,7 +72,12 @@ const AdjustVerifiedService = () => {
 
           <div className='ml-2 flex items-center space-x-3'>
             <div className='flex space-x-2'>
-              <Select name='' id='' className='rounded text-black' size='xs'>
+              <Select
+                name=''
+                id=''
+                className='input-primary rounded text-black'
+                size='xs'
+              >
                 <option value='pdf'>Pay all of bill service</option>
                 <option value='pdf'>Pay all of bill service</option>
                 <option value='pdf'>Pay all of bill service</option>
@@ -98,7 +115,7 @@ const AdjustVerifiedService = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -115,7 +132,7 @@ const AdjustVerifiedService = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -136,7 +153,7 @@ const AdjustVerifiedService = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -153,7 +170,7 @@ const AdjustVerifiedService = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1

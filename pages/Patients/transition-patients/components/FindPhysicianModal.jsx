@@ -13,7 +13,7 @@ import React from 'react'
 const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
   let data = [1, 1, 1, 1]
   return (
-    <div>
+    <div className='verdana13 '>
       <Modal
         isOpen={openFindPhysician}
         onClose={() => setOpenFindPhysician(false)}
@@ -23,10 +23,10 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
         <ModalContent maxWidth={900}>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
-              <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+              <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
                 Find Physician
               </h1>
-              <p>search or add physician</p>
+              <p className='verdana13 '>search or add physician</p>
               <hr />
             </ModalHeader>
             {/* <ModalCloseButton /> */}
@@ -34,12 +34,20 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
               <section>
                 <div>
                   <div className='flex items-center py-2'>
-                    <p className='mr-3 w-[150px] text-right font-semibold'>
+                    <p className='verdana13 mr-3 w-[150px] text-right font-semibold'>
                       Last/First:
                     </p>
                     <div className='flex w-[100%]'>
-                      <Input size={'xs'} type='text' />
-                      <Input size={'xs'} className='ml-3' type='text' />
+                      <input
+                        className='input-primary'
+                        size={'xs'}
+                        type='text'
+                      />
+                      <input
+                        size={'xs'}
+                        className='input-primary ml-3'
+                        type='text'
+                      />
                     </div>
                     <div className='ml-2 flex justify-end'>
                       <button className='rounded bg-secondary-color px-4  text-white shadow'>
@@ -49,7 +57,7 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                   </div>
                 </div>
 
-                <table className=' min-w-full overflow-auto text-xs'>
+                <table className=' min-w-full overflow-auto '>
                   <thead className='thead-primary'>
                     <tr>
                       <th className=' th-first'>Select</th>

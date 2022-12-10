@@ -8,7 +8,7 @@ const NotesTab = () => {
     <div className='verdana13 '>
       <section className='flex items-center justify-between py-[1px]'>
         <h1 className='verdana16  font-bold'>Notes</h1>
-        <button className='flex items-center capitalize text-orange-500 underline '>
+        <button className='btn-primary flex items-center'>
           <BsPlus className='verdana16  text-green-500' />
           add note
         </button>
