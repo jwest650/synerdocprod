@@ -1,9 +1,7 @@
 import { useRouter } from 'next/router';
-import { referralSourcesMenu } from '../../../../../assets/data';
-import EachPhysicianHeader from '../../../../../components/resources/physicians/EachPhysicianHeader';
-import EachPhysicianPageDetails from '../../../../../components/resources/physicians/EachPhysicianPageDetails';
 import EachReferralSourcesHeader from '../../../../../components/resources/referral-sources/EachReferralSourcesHeader';
 import EachReferralSourcesPageDetails from '../../../../../components/resources/referral-sources/EachReferralSourcesPageDetails';
+import { referralSourcesMenu } from '../../../../../components/resources/referral-sources/referralData';
 
 const ReferralSourcesMenuPage = () => {
   const router = useRouter();

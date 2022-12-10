@@ -1,11 +1,10 @@
-import { facilitiesTableData, physicianTableData } from '../../../assets/data';
 import Link from 'next/link';
 import CreateFacilities from './CreateFacilites';
 import MoreFacilitiesInfo from './MoreFacilitiesInfo';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
-import { FcEmptyTrash } from 'react-icons/fc';
 import DeletePopup from '../../structure/DeletePopup';
+import { facilitiesTableData } from './facilityData';
 
 const Facilities = () => {
   const [facilityStatus, setFacilityStatus] = useState('');
@@ -14,7 +13,7 @@ const Facilities = () => {
     <section className="mx-10 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
-          <h2 className="verdana18 font-semibold tracking-wider">Facilities</h2>
+          <h2 className="verdana16 font-semibold tracking-wider">Facilities</h2>
           <CreateFacilities />
         </div>
         <div className="space-x-3">
@@ -27,7 +26,7 @@ const Facilities = () => {
         </div>
       </div>
 
-      <table className="mt-10 min-w-full overflow-auto shadow-md">
+      <table className="mt-2 min-w-full overflow-auto shadow-md">
         <thead className="thead-primary">
           <tr>
             <th className="th-first"></th>
@@ -62,7 +61,7 @@ const Facilities = () => {
             <td></td>
           </tr>
           {facilitiesTableData.map((facility, i) => (
-            <tr key={i} className={`verdana12 border even:bg-[#eeeeee]`}>
+            <tr key={i} className={`border even:bg-[#eeeeee]`}>
               <td className="td-primary min-w-[50px]  ">
                 <MoreFacilitiesInfo />
               </td>

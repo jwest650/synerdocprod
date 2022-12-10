@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import { medicalReq } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { medicalReq } from '../associateDatatwo';
 
 const EditMedicalReq = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -31,7 +31,7 @@ const EditMedicalReq = () => {
             </h1>
 
             <div>
-              <table className="mx-auto mt-8 w-full overflow-auto px-3 shadow-md">
+              <table className="mx-auto mt-4 w-full overflow-auto px-3 shadow-md">
                 <thead className=" verdana11 border-b bg-primary-blue tracking-wider text-white ">
                   <tr>
                     <th className="th-first">Item</th>

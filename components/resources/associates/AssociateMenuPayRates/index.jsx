@@ -1,6 +1,6 @@
 import React from 'react';
-import { payrateData } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { payrateData } from '../../organization-payers/payerData';
 import CreatePayRate from './CreatePayRate';
 import EditPayRate from './EditPayRate';
 import RemovePayRate from './RemovePayRate';
@@ -16,7 +16,7 @@ const AssociateMenuPayRates = () => {
             Pay Type: <TableSelect options={['All', 'Registered Nurse']} />
           </div>
         </div>
-        <table className="mt-5 w-full overflow-auto">
+        <table className="mt-3 w-full overflow-auto">
           <thead className="thead-primary">
             <tr className="verdana11">
               <th className="th-first">Service Description</th>

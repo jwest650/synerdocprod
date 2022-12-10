@@ -12,18 +12,14 @@ const AssociateMenuContact = () => {
               <h2 className="verdana16 font-semibold">Address/ Phone Info </h2>
               <AssociateCreateContactInfo />
             </div>
-            <p className="verdana12">
-              No addresses have been added for this associate
-            </p>
+            <p>No addresses have been added for this associate</p>
           </div>
           <div className="w-full py-5 md:pl-8">
             <div className="mb-5 flex  items-center gap-3">
               <h2 className="verdana16 font-semibold">Emergency Contacts</h2>
               <AssociateCreateEmergencyContact />
             </div>
-            <p className="verdana12">
-              No emergency contacts have been added for this associate
-            </p>
+            <p>No emergency contacts have been added for this associate</p>
           </div>
         </div>
         <div className="mt-20 w-[50%] border-primary-gray py-5 md:border-r">
@@ -31,9 +27,7 @@ const AssociateMenuContact = () => {
             <h2 className="verdana16 font-semibold">Ancillary Phone Info </h2>
             <AssociateCreatePhone />
           </div>
-          <p className="verdana12">
-            No phone numbers have been added for this associate
-          </p>
+          <p>No phone numbers have been added for this associate</p>
         </div>
       </div>
     </div>

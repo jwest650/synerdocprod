@@ -17,7 +17,7 @@ const TerminateAssociate = () => {
   return (
     <>
       <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer pt-[2px] text-secondary-color underline">
+        <p className="mr-2 cursor-pointer py-[5px] text-secondary-color underline">
           [Terminate]
         </p>
       </span>
@@ -73,7 +73,7 @@ const TerminateAssociate = () => {
                   the inactive /termination date will be unassigned if checked.
                 </div>
 
-                <table className=" mx-auto mt-8 w-full overflow-auto px-3">
+                <table className=" mx-auto mt-4 w-full overflow-auto px-3">
                   <thead className="thead-primary">
                     <tr>
                       <th className="th-first">

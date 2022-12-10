@@ -4,13 +4,13 @@ import FacilityEditIdentifier from './FacilityEditIdentifier';
 
 const FacilityCredentials = () => {
   return (
-    <div className="mt-16">
+    <div className="p-7">
       <div className="flex items-center gap-4">
         <h2 className="verdana16 font-semibold">Identifiers</h2>
         <FacilityCreateIdentifier />
       </div>
 
-      <table className="mx-auto mt-5 w-full overflow-auto px-3 shadow-md">
+      <table className="mx-auto mt-3 w-full overflow-auto px-3 shadow-md">
         <thead className="thead-primary">
           <tr className="verdana11">
             <th className="th-first">Identify Number</th>

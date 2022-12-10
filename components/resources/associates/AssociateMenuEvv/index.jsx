@@ -1,5 +1,5 @@
-import React from 'react';
-import { evvDrivingData, evvVisitData } from '../../../../assets/data';
+import { evvDrivingData } from '../associateData';
+import { evvVisitData } from '../associateDatatwo';
 
 const AssociateMenuEvv = () => {
   return (

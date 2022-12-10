@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { notesData } from '../../../../assets/data';
+import { notesData } from '../../resourcesData';
 import FacilityActivePopup from './FacilityActivePopup';
 
 const FacilityNotesTable = ({ document }) => {
@@ -26,7 +26,7 @@ const FacilityNotesTable = ({ document }) => {
   }, [actionType, actionType.action, actionType.noteId]);
 
   return (
-    <table className="mx-auto mt-8 w-full overflow-auto px-3 shadow-md">
+    <table className="mx-auto mt-4 w-full overflow-auto px-3 shadow-md">
       <thead className=" verdana11 border-b bg-primary-blue tracking-wider text-white ">
         <tr>
           <th className="th-first"></th>

@@ -16,7 +16,7 @@ const ReassignAssociate = () => {
   return (
     <>
       <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer pt-[2px] text-secondary-color underline">
+        <p className="mr-2 cursor-pointer text-secondary-color underline">
           [Reassign]
         </p>
       </span>
@@ -67,7 +67,7 @@ const ReassignAssociate = () => {
                   Schedules to Reassign{' '}
                 </div>
                 <div className="w-full overflow-auto px-2 py-4">
-                  <table className=" mx-auto mt-8 w-full px-3">
+                  <table className=" mx-auto mt-4 w-full px-3">
                     <thead className="thead-primary">
                       <tr>
                         <th className="th-first">

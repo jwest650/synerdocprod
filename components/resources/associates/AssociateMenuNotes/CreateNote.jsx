@@ -12,7 +12,7 @@ const CreateNote = ({ setDocument }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [newDocument, setNewDocument] = useState(null);
 
-  console.log(newDocument);
+  // console.log(newDocument);
   const handleForm = (e) => {
     e.preventDefault();
     setDocument(newDocument);

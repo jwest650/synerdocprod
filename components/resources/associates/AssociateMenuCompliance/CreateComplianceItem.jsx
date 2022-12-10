@@ -2,10 +2,8 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Select,
   useDisclosure,
 } from '@chakra-ui/react';
-import { BsDot } from 'react-icons/bs';
 import { FcPlus } from 'react-icons/fc';
 
 const CreateComplianceItem = ({ category, option }) => {

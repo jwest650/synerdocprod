@@ -1,24 +1,24 @@
 import { Select } from '@chakra-ui/react';
-import { referralSourcesTableData } from '../../../assets/data';
 import Link from 'next/link';
 import CreateReferral from './CreateReferral';
 import MoreReferralSourcesInfo from './MoreReferralSourcesInfo';
 import ReferralSourcesTableAction from './ReferralSourcesTableAction';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
+import { referralSourcesTableData } from './referralData';
 
 const ReferralSources = () => {
   const [referralType, setReferralType] = useState('');
   const [referralStatus, setReferralStatus] = useState('');
 
   return (
-    <section className="mx-10 mt-10">
+    <section className="verdana11 mx-10 mt-10">
       <div className="flex items-center justify-between border-b border-gray-600 pb-2">
         <div className="flex items-center gap-8">
-          <h2 className="verdana18 font-semibold tracking-wider">
+          <h2 className="verdana16 font-semibold tracking-wider">
             Referral Sources
           </h2>
-          <CreateReferral />
+          <CreateReferral edit={false} />
         </div>
         <div className="verdana12 flex items-center gap-3">
           <Select
@@ -47,7 +47,7 @@ const ReferralSources = () => {
         </div>
       </div>
 
-      <table className="mt-10 min-w-full overflow-auto shadow-md">
+      <table className="mt-2 min-w-full overflow-auto shadow-md">
         <thead className="thead-primary">
           <tr>
             <th className="th-first"></th>
@@ -87,7 +87,7 @@ const ReferralSources = () => {
             <td></td>
           </tr>
           {referralSourcesTableData.map((referralSource, i) => (
-            <tr key={i} className={`verdana12 border even:bg-[#eeeeee]`}>
+            <tr key={i} className={`border even:bg-[#eeeeee]`}>
               <td className=" td-primary min-w-[50px] cursor-pointer">
                 <MoreReferralSourcesInfo />
               </td>

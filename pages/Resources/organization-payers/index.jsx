@@ -1,9 +1,9 @@
-import OrganizationPayers from '../../../components/resources/organization-payers/OrganizationPayers';
+import Payers from '../../../components/resources/organization-payers/Payers';
 
 const OrganizationPayersPage = () => {
   return (
     <div className="w-full">
-      <OrganizationPayers />{' '}
+      <Payers />{' '}
     </div>
   );
 };

@@ -18,7 +18,7 @@ const EditAssociate = () => {
   return (
     <>
       <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer text-secondary-color underline">
+        <p className="verdana10 mr-2  cursor-pointer text-secondary-color underline">
           [Edit]
         </p>
       </span>
@@ -27,18 +27,17 @@ const EditAssociate = () => {
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">Edit Associate</h1>
-
-              <div className="mt-10 flex h-full w-full flex-col items-center justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
+              <h1 className="verdana16 font-semibold">Edit Associate</h1>
+              <div className="verdana12 mt-10 flex h-full w-full flex-col items-center justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
                 <div className="w-full pb-5 md:col-span-3">
                   <div className="flex items-center gap-2 border-b-2 pb-2">
                     <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
                       1
                     </div>
-                    <h2 className="verdana16 font-semibold">Personal</h2>
+                    <h2 className="verdana14 font-semibold">Personal</h2>
                   </div>
                   <div className="mt-5 grid grid-cols-12">
-                    <div className="col-span-5 mx-5 space-y-[19px] md:mx-auto">
+                    <div className="col-span-5 mx-5 space-y-[19px]">
                       <div className="flex items-center justify-end">
                         <label className="flex">
                           <span className="text-primary-orange">*</span>
@@ -140,10 +139,10 @@ const EditAssociate = () => {
                     <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
                       2
                     </div>
-                    <h2 className=" verdana16 font-semibold">Employment</h2>
+                    <h2 className=" verdana14 font-semibold">Employment</h2>
                   </div>
                   <div className="mt-5 mr-5 grid grid-cols-12">
-                    <div className="col-span-5 mx-5 space-y-[19px] md:mx-auto">
+                    <div className="col-span-5 mx-5 space-y-[19px]">
                       <div className="flex items-center justify-end">
                         <label className="flex  pl-1">
                           <span className="text-primary-orange">*</span>

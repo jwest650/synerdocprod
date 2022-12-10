@@ -6,8 +6,8 @@ const Errors = () => {
             <section>
                 <header className="flex  ">
                     <div className="flex flex-1 justify-center   space-x-1">
-                        <h1>payer:</h1>
-                        <p>medicare part a (PPS) - CGS</p>
+                        <h1 className="font-bold">payer:</h1>
+                        <p>clover</p>
                     </div>
                     <p className=" text-orange-500 underline">
                         recheck invoice
@@ -52,7 +52,27 @@ export default Errors;
 
 const data = [
     {
-        error: "invoice payer box not checked",
-        solution: "payer review/release",
+        error: "service not verified",
+        solution: "check scheduling",
+    },
+    {
+        error: "service not verified",
+        solution: "verify service",
+    },
+    {
+        error: "patient-payer id missing",
+        solution: "check patient payer profile",
+    },
+    {
+        error: "patient-payer eligiblity not met",
+        solution: "check patient payer elegiblity",
+    },
+    {
+        error: "pps data missing",
+        solution: "verify service",
+    },
+    {
+        error: "agency facilty missing",
+        solution: "contact e solutions",
     },
 ];

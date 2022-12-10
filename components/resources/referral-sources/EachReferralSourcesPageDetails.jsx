@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { referralSourcesMenu } from '../../../assets/data';
+import { referralSourcesMenu } from './referralData';
 
 const EachReferralSourcesPageDetails = ({ children }) => {
   const router = useRouter();
@@ -8,8 +8,8 @@ const EachReferralSourcesPageDetails = ({ children }) => {
   const currentMenu = router.query?.referralsourcemenu;
 
   return (
-    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5 pb-12 text-sm">
-      <ul className="flex w-full flex-wrap items-end justify-start">
+    <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5 text-sm">
+      <ul className="verdana12 flex w-full flex-wrap items-end justify-start">
         {referralSourcesMenu.map((menu, index) => (
           <Link
             href={`/Resources/referral-sources/${currentreferralsource}/${menu.url}`}
@@ -38,7 +38,7 @@ const EachReferralSourcesPageDetails = ({ children }) => {
         ))}
         <li className="flex-auto border border-gray-300" />
       </ul>
-      <div className="-mt-[1px] h-96 w-full  border-x  bg-white">
+      <div className="verdana11 -mt-[1px]  w-full border-x bg-white ">
         {children}
       </div>
     </div>

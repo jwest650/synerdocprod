@@ -1,6 +1,6 @@
 import React from 'react';
-import Availability from '../../../components/dashboard/Availability';
-import HomepageLayout from '../../../components/dashboard/HomepageLayout';
+import Availability from '../../../components/home/Availability';
+import HomepageLayout from '../../../components/home/HomepageLayout';
 
 const AvailabilityPage = () => {
   return (

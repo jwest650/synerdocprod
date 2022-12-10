@@ -1,6 +1,6 @@
 import { TreeViewComponent } from '@syncfusion/ej2-react-navigations';
 import { useRef } from 'react';
-import { resourceManagement } from '../../../../assets/data';
+import { resourceManagement } from '../../resourcesData';
 
 const ResourceManagementRoles = ({ setCheckedResources }) => {
   const resRef = useRef();

@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { FcSearch } from 'react-icons/fc';
-import { doctorPatients } from '../../../assets/data';
 import SearchIcon from '../../../assets/images/search.png';
+import { doctorPatients } from './physicianData';
 
 const DoctorHistory = ({ physicianName }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -24,7 +24,7 @@ const DoctorHistory = ({ physicianName }) => {
             <h2 className="verdana18 mt-3 font-medium">
               {physicianName}&apos;s History
             </h2>
-            <table className="mt-7 min-w-full overflow-auto">
+            <table className="mt-3 min-w-full overflow-auto">
               <thead className="thead-primary">
                 <tr>
                   <th className="th-first">Patient Name</th>

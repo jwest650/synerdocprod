@@ -2,15 +2,20 @@ import { FiBell } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
 import Link from 'next/link';
 import Settings from './Settings';
-import { menuOptions } from '../../assets/data';
 import Menupopup from './Menupopup';
 import MenuDrawer from './MenuDrawer';
+import { menuOptions } from '../../assets/menuOptionsData';
+import { FaHome } from 'react-icons/fa';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const router = useRouter();
+  const currentPath = router.asPath;
+
   return (
     <div className="sticky top-0 z-[1000] bg-[#0141CF] px-4">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-[#3374ff83] py-[6px] text-white">
-        <div className="flex items-center gap-6">
+        <div className="flex items-center">
           <Link href="/">
             <h1 className="cursor-pointer text-2xl font-semibold">
               Syner<span className="font-normal">doc</span>{' '}
@@ -18,6 +23,18 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className="hidden items-center gap-8 pt-1 lg:flex">
+          <Link href="/">
+            <li className="flex cursor-pointer items-center gap-2 py-3">
+              <FaHome className="mb-1 scale-125" />
+              <span
+                className={`border-b-2 border-[#0141CF] font-semibold hover:border-b-gray-200 ${
+                  currentPath && currentPath === '/' && 'border-gray-200'
+                }`}
+              >
+                Home
+              </span>
+            </li>
+          </Link>
           {menuOptions.map((menu, index) => (
             <li key={index}>
               <Menupopup menu={menu} />

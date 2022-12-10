@@ -1,7 +1,7 @@
 import { Input, Select } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
-import { FcCheckmark, FcSearch } from "react-icons/fc";
+import { FcCalendar, FcCheckmark, FcSearch } from "react-icons/fc";
 
 const AddPayments = () => {
     const router = useRouter();
@@ -12,9 +12,9 @@ const AddPayments = () => {
                     <h1 className="head text-2xl ">Add Payments</h1>
                     <hr />
                 </header>
-                <div className="mt-5 flex space-x-10">
-                    <article className="flex space-x-5">
-                        <section className="space-y-3">
+                <div className="mt-5 flex   space-x-10">
+                    <article className="flex  space-x-5">
+                        <section className="space-y-3 text-right">
                             <div>
                                 <label htmlFor="" className="font-bold">
                                     {" "}
@@ -71,17 +71,12 @@ const AddPayments = () => {
                                     apply payments to:
                                 </label>
                             </div>
-                            <div className="flex items-center space-x-2 pt-10">
-                                <FcSearch />
-                                <p className=" cursor-pointer text-sm font-bold text-orange-500 underline">
-                                    attach document
-                                </p>
-                            </div>
                         </section>
-                        <section className="space-y-3">
+                        <section className="space-y-2">
                             <div>
                                 <Select
                                     placeholder="Select option"
+                                    className="input-shadow"
                                     size="xs"
                                     w={130}
                                 >
@@ -94,6 +89,7 @@ const AddPayments = () => {
                             <div>
                                 <Select
                                     placeholder="Select option"
+                                    className="input-shadow"
                                     size="xs"
                                     w={130}
                                 >
@@ -103,20 +99,52 @@ const AddPayments = () => {
                                 </Select>
                             </div>
                             <div>
-                                <Input w={130} type="text" size="xs" />
+                                <Input
+                                    className="input-shadow"
+                                    w={130}
+                                    type="text"
+                                    size="xs"
+                                />
+                            </div>
+
+                            <div className="flex items-center">
+                                <Input
+                                    id="date1"
+                                    className="input-shadow"
+                                    w={130}
+                                    type="date"
+                                    size="xs"
+                                />
+                                <label htmlFor="date1" className="font-bold">
+                                    {" "}
+                                    <FcCalendar className="text-xl" />
+                                </label>
+                            </div>
+                            <div className="flex items-center">
+                                <Input
+                                    id="date2"
+                                    className="input-shadow"
+                                    w={130}
+                                    type="date"
+                                    size="xs"
+                                />
+                                <label htmlFor="date2" className="font-bold">
+                                    {" "}
+                                    <FcCalendar className="text-xl" />
+                                </label>
                             </div>
                             <div>
-                                <Input w={130} type="text" size="xs" />
-                            </div>
-                            <div>
-                                <Input w={130} type="date" size="xs" />
-                            </div>
-                            <div>
-                                <Input w={130} type="date" size="xs" />
+                                <Input
+                                    className="input-shadow"
+                                    w={130}
+                                    type="text"
+                                    size="xs"
+                                />
                             </div>
                             <div>
                                 <Select
                                     placeholder="Select option"
+                                    className="input-shadow"
                                     size="xs"
                                     w={130}
                                 >
@@ -128,18 +156,17 @@ const AddPayments = () => {
                         </section>
                     </article>
                     <article className="space-y-2">
-                        <div className="flex items-center space-x-2">
+                        <btn className="create-btn flex w-fit items-center space-x-1">
                             <FcSearch />
-                            <p className=" cursor-pointer text-sm font-bold text-orange-500 underline">
-                                add payment source
-                            </p>
-                        </div>
+                            <p className=" ">add payment source</p>
+                        </btn>
                         <div className="flex space-x-5">
-                            <label htmlFor="" className="font-bold">
+                            <label htmlFor="" className="text-right font-bold">
                                 Note type:
                             </label>
                             <Select
                                 placeholder="Select option"
+                                className="input-shadow"
                                 size="xs"
                                 w={130}
                             >
@@ -150,14 +177,17 @@ const AddPayments = () => {
                         </div>
                         <div className="flex space-x-5">
                             <div>
-                                <label htmlFor="" className="font-bold">
+                                <label
+                                    htmlFor=""
+                                    className="text-right font-bold"
+                                >
                                     Note:
                                 </label>
                                 <p>abc</p>
                                 <FcCheckmark className="text-xl font-bold" />
                             </div>
                             <textarea
-                                className="border bg-transparent"
+                                className="input-shadow border bg-transparent "
                                 name=""
                                 id=""
                                 cols="30"
@@ -166,6 +196,10 @@ const AddPayments = () => {
                         </div>
                     </article>
                 </div>
+                <btn className="create-btn mt-2 flex w-fit items-center space-x-1">
+                    <FcSearch />
+                    <p>attach document</p>
+                </btn>
                 <div className=" my-5 flex justify-end space-x-3">
                     <button
                         className="btn capitalize"

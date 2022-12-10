@@ -2,7 +2,6 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Select,
   useDisclosure,
 } from '@chakra-ui/react';
 import { BsDot } from 'react-icons/bs';

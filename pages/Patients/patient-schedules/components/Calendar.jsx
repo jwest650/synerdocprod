@@ -10,25 +10,25 @@ import {
   ViewDirective,
   ScheduleComponent,
   TimelineViews,
-} from '@syncfusion/ej2-react-schedule'
-import React, { useState, useContext } from 'react'
-import { scheduleData } from '../../../../assets/data'
-import GeneralContext from '../../../../context/GeneralContext'
+} from '@syncfusion/ej2-react-schedule';
+import { useState, useContext } from 'react';
+import { scheduleData } from '../../../../assets/scheduleData';
+import GeneralContext from '../../../../context/GeneralContext';
 
 const Calendar = () => {
-  const { sectionClicked } = useContext(GeneralContext)
-  const [scheduleObj, setScheduleObj] = useState({})
+  const { sectionClicked } = useContext(GeneralContext);
+  const [scheduleObj, setScheduleObj] = useState({});
 
   const handleSave = (args) => {
     // console.log(args);
-  }
+  };
   return (
     <ScheduleComponent
-      cssClass='schedule'
-      height='650px'
+      cssClass="schedule"
+      height="650px"
       ref={(schedule) => setScheduleObj(schedule)}
       selectedDate={new Date(2021, 0, 10)}
-      currentView='Month'
+      currentView="Month"
       actionComplete={handleSave}
       eventSettings={{ dataSource: scheduleData }}
     >
@@ -51,7 +51,7 @@ const Calendar = () => {
         ]}
       />
     </ScheduleComponent>
-  )
-}
+  );
+};
 
-export default Calendar
+export default Calendar;

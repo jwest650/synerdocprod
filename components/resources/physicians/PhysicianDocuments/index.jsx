@@ -9,11 +9,11 @@ const PhysicianDocuments = () => {
   return (
     <div className="mt-7 mb-10 px-5">
       <div className="flex items-center gap-4">
-        <h2 classNmae="font-semobold verdana16">Documents</h2>
+        <h2 className="verdana16 font-semibold">Documents</h2>
         <UploadDocument setFileProp={setFile} />
       </div>
 
-      <table className="mx-auto mt-8 w-full overflow-auto px-3 shadow-md">
+      <table className="mx-auto mt-3 w-full overflow-auto px-3 shadow-md">
         <thead className="thead-primary">
           <tr className="verdana11">
             <th className="th-first">Document Type</th>

@@ -13,7 +13,6 @@ import Services from "./tabs/Services";
 import ArTransaction from "./tabs/ArTransaction";
 import Notes from "./tabs/Notes";
 import Payer from "./tabs/Payer";
-import Pdgm from "./tabs/Pdgm";
 import Errors from "./tabs/Errors";
 import { useRouter } from "next/router";
 
@@ -42,10 +41,6 @@ const InvoiceDetail = () => {
         },
 
         {
-            name: "pdgm",
-            icon: <BiErrorCircle />,
-        },
-        {
             name: "errors",
             icon: <VscError />,
         },
@@ -57,21 +52,9 @@ const InvoiceDetail = () => {
                     <ImBook className=" mr-2 inline text-xl" />
                     <h1 className="head ">carter, melinda</h1>
                 </div>
-                <div className="flex space-x-4">
-                    <div className="flex items-baseline space-x-1 ">
-                        <VscGoToFile className=" inline " />
-                        <label className="text-orange-500 underline">
-                            rebill
-                        </label>
-                    </div>
-                    <div className="flex items-baseline space-x-1 ">
-                        <TbFileExport className="inline " />
-
-                        <label className="text-orange-500 underline" htmlFor="">
-                            move to
-                        </label>
-                    </div>
-                    <div className="flex items-baseline space-x-1 ">
+                <div className="flex items-center space-x-24">
+                    <p className="text-orange-500">[Payer Review/Release]</p>
+                    <div className=" ">
                         {" "}
                         <BsFileEarmarkPlus className=" inline " />
                         <label className="text-orange-500 underline" htmlFor="">
@@ -79,6 +62,7 @@ const InvoiceDetail = () => {
                         </label>
                     </div>
                 </div>
+
                 <h1 className="head text-green-500">invoice</h1>
             </section>
             <section className="flex items-center justify-between">
@@ -166,8 +150,7 @@ function renderTab(tab) {
             return <ArTransaction />;
         case "payer codes":
             return <Payer />;
-        case "pdgm":
-            return <Pdgm />;
+
         case "errors":
             return <Errors />;
         default:

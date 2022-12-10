@@ -15,14 +15,12 @@ const AssociateReports = () => {
           />
         )}
       </div>
-      {!showReports && (
-        <p className="verdana12">This associate does not have any reports.</p>
-      )}
+      {!showReports && <p>This associate does not have any reports.</p>}
       {showReports && (
         <>
           <table className="w-full overflow-auto shadow-md">
             <thead className="thead-primary">
-              <tr className="verdana11">
+              <tr>
                 <th className="th-first underline">Name</th>
                 <th className="th-middle">Frequency</th>
                 <th className="th-middle">Start Date</th>

@@ -19,14 +19,14 @@ const AssociateMenuProfile = () => {
 
   return (
     <div className="py-10">
-      <section className="flex-col flex justify-between text-sm md:flex-row">
+      <section className=" flex flex-col justify-between md:flex-row">
         <div className="w-[50%] px-2 md:border-r">
           <div className="flex">
-            <h2 className="verdana15 mb-5 font-semibold tracking-wider">
+            <h2 className="verdana14 mb-5 font-semibold tracking-wider">
               Personal
             </h2>
           </div>
-          <div className="verdana12 flex">
+          <div className="flex">
             <div className="mr-2 space-y-1 border-r px-2">
               <EditAssociate />
             </div>
@@ -77,11 +77,11 @@ const AssociateMenuProfile = () => {
                   </div>
                   {associateImage ? (
                     <Image
-                      className="object-contain "
+                      className="object-contain"
                       src={associateImage}
                       alt="associateimage"
-                      width="120"
-                      height="100"
+                      width="100"
+                      height="80"
                     />
                   ) : (
                     <Avatar bg="teal.500" />
@@ -91,14 +91,14 @@ const AssociateMenuProfile = () => {
             </div>
           </div>
           <div className="py-5">
-            <h2 className="verdana15 mb-5 mt-2 font-semibold tracking-wider">
+            <h2 className="verdana14 mb-5 mt-2 font-semibold tracking-wider">
               Missing Fields
             </h2>
             <div className="mt-3 flex">
               <div className="mr-10">
                 <FcInfo className="rotate-180 scale-125 text-lg" />
               </div>
-              <div className="missingfield verdana11 h-20 overflow-y-scroll  border-l px-3">
+              <div className="missingfield h-20 overflow-y-scroll  border-l px-3">
                 <p className="text-secondary-color underline">Missing Phone</p>
                 <p className="text-secondary-color underline">
                   Missing Patients Address
@@ -114,14 +114,14 @@ const AssociateMenuProfile = () => {
           </div>
         </div>
 
-        <div className="verdana12 w-[50%] px-2 md:border-l">
+        <div className="w-[50%] px-2 md:border-l">
           <div className="flex">
-            <h2 className="verdana15 mb-5 font-semibold tracking-wider">
+            <h2 className="verdana14 mb-5 font-semibold tracking-wider">
               Current Encounter
             </h2>
           </div>
           <div className="flex ">
-            <div className="mr-2 space-y-1 border-r px-1">
+            <div className="verdana10 mr-2 border-r px-1">
               <EditAssociate />
               <InactivateAssociate />
               <TerminateAssociate />
@@ -179,50 +179,37 @@ const AssociateMenuProfile = () => {
         </div>
       </section>
       <div className="mt-10 py-2 px-2">
-        <h2 className="verdana15 font-semibold tracking-wider">
+        <h2 className="verdana14 font-semibold tracking-wider">
           Agency Assignment
         </h2>
-        <div className="verdana12 mt-5 flex">
+        <div className="mt-5 flex">
           <div className="space-y-1 border-r px-[10px]">
             <EditAssociateAgencies />
           </div>
           <table className="mx-5 w-full overflow-auto">
-            <thead className="verdana12 border-b bg-[#0141CF] tracking-wider text-white">
+            <thead className="thead-primary">
               <tr>
-                <th className=" border border-gray-400 border-l-primary-blue border-t-primary-blue  pl-2 text-left">
-                  Home
-                </th>
-                <th className=" border border-gray-400 border-t-primary-blue pl-2 text-left"></th>
-                <th className=" border border-gray-400 border-t-primary-blue pl-2 text-left">
-                  Agency
-                </th>
-                <th className=" border border-gray-400 border-t-primary-blue pl-2 text-left">
-                  Territories
-                </th>
-                <th className=" border border-gray-400 border-t-primary-blue pl-2 text-left">
-                  Teams
-                </th>
-                <th className=" border border-gray-400 border-r-primary-blue border-t-primary-blue pl-2 text-left">
-                  Action
-                </th>
+                <th className="th-first">Home</th>
+                <th className="th-middle"></th>
+                <th className="th-middle">Agency</th>
+                <th className="th-middle">Territories</th>
+                <th className="th-middle">Teams</th>
+                <th className="th-last">Action</th>
               </tr>
             </thead>
             <tbody>
-              <tr className="verdana13 w-full bg-[#e6ebf85d]">
-                <td className=" w-16 border border-gray-400 py-2 px-4">
-                  <FcCheckmark className="scale-150" />
+              <tr className="w-full bg-[#e6ebf85d]">
+                <td className="td-primary w-14">
+                  <FcCheckmark className="mx-auto scale-150" />
                 </td>
-                <td className="w-10 border border-gray-400 px-2">
+                <td className="td-primary w-10">
                   <MoreAssociateInfo />
                 </td>
-                <td className="w-72 border border-gray-400 px-4">
-                  Miami Labour of Love
-                </td>
-                <td className="border border-gray-400"></td>
-                <td className="border border-gray-400"></td>
-                <td className="w-16 border border-gray-400 px-4">
-                  {' '}
-                  <FcSearch className="scale-150" />{' '}
+                <td className="td-primary">Miami Labour of Love</td>
+                <td className="td-primary"></td>
+                <td className="td-primary"></td>
+                <td className="td-primary w-16">
+                  <FcSearch className="mx-auto scale-150" />{' '}
                 </td>
               </tr>
             </tbody>

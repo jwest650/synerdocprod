@@ -3,7 +3,7 @@ import TableSelect from '../../../structure/TableSelect';
 import PhysicianCreateNote from './PhysicianCreateNote';
 import PhysicianNotesTable from './PhysicianNotesTable';
 
-const PhysicianMenuNotes = () => {
+const PhysicianNotes = () => {
   const [document, setDocument] = useState(null);
 
   return (
@@ -54,4 +54,4 @@ const PhysicianMenuNotes = () => {
   );
 };
 
-export default PhysicianMenuNotes;
+export default PhysicianNotes;

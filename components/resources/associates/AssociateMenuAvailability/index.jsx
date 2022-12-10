@@ -1,7 +1,14 @@
-import React from 'react';
+import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
+import { scheduleData } from '../../../../assets/scheduleData';
+import ScheduleComp from '../../../structure/ScheduleComp';
 
 const AssociateMenuAvailability = () => {
+  const [eventsData, setEventsData] = useState(scheduleData);
+  // useEffect(() => {
+  // }, [eventsData]);
+  // console.log('edata--->>', eventsData);
+
   return (
     <div>
       <div className="px-5">
@@ -32,10 +39,14 @@ const AssociateMenuAvailability = () => {
         <h2 className="verdana12 mt-5 font-semibold">
           Left click on the calendar to add/edit availability times.
         </h2>
-        <div className="h-[80rem]">
-          <h2 className="verdana18 my-20 text-center  font-semibold">
-            Calender
-          </h2>
+        <div className="my-7">
+          <h2 className="verdana18 text-center  font-semibold"></h2>
+          <div className="mx-auto max-w-7xl px-3">
+            <ScheduleComp
+              eventsData={eventsData}
+              setEventsData={setEventsData}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { facilityMenu } from '../../../assets/data';
+import { facilityMenu } from './facilityData';
 
 const EachFacilityPageDetails = ({ children }) => {
   const router = useRouter();
@@ -9,7 +9,7 @@ const EachFacilityPageDetails = ({ children }) => {
 
   return (
     <div className="-mt-12 flex w-full flex-col items-center rounded border-x border-b pt-5 text-sm">
-      <ul className="flex w-full flex-wrap items-end justify-start">
+      <ul className="verdana12 flex w-full flex-wrap items-end justify-start">
         {facilityMenu.map((menu, index) => (
           <Link
             href={`/Resources/facilities/${currentFacility}/${menu.url}`}
@@ -38,7 +38,9 @@ const EachFacilityPageDetails = ({ children }) => {
         ))}
         <li className="flex-auto border border-gray-300" />
       </ul>
-      <div className="-mt-[1px] w-full  border-x  bg-white">{children}</div>
+      <div className="verdana11 -mt-[1px] w-full  border-x  bg-white">
+        {children}
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
-import React from 'react';
 import { FcInfo } from 'react-icons/fc';
+import CreateReferral from './CreateReferral';
 
 const EachReferralSourcesHeader = ({ referralSourceUrl }) => {
   return (
@@ -9,10 +9,7 @@ const EachReferralSourcesHeader = ({ referralSourceUrl }) => {
           <h2 className="text-lg font-semibold tracking-wide">
             {referralSourceUrl}
           </h2>
-          <span className="flex cursor-pointer items-center gap-1 text-orange-600 underline">
-            [Edit]
-            <FcInfo className="rotate-180" />
-          </span>
+          <CreateReferral edit={true} />
         </div>
         <div className="space-x-5">
           <span className="text-base font-extrabold text-green-800">
@@ -20,29 +17,41 @@ const EachReferralSourcesHeader = ({ referralSourceUrl }) => {
           </span>
         </div>
       </div>
-      <div className="mt-6 flex w-full max-w-[800px] items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="flex flex-col items-end justify-center gap-[6px]">
-            <p className="font-semibold">Classification:</p>
-            <p className="font-semibold">Phone:</p>
-            <p className="font-semibold">Status:</p>
-          </div>
-          <div className="flex flex-col justify-center gap-[6px]">
-            <p>Field Staff - Full Time</p>
-            <p>+12 229 736 463</p>
-            <p>Active</p>
+      <div className="verdana12 mt-5 flex w-full justify-between px-16">
+        <div className="flex w-full flex-col items-center gap-1">
+          <div className="flex w-full justify-center gap-3 ">
+            <p className="flex w-[50%] justify-end  font-semibold">
+              Facility Type:
+            </p>
+            <p className=" flex w-[50%] "></p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="flex flex-col items-end gap-[6px]">
-            <p className="font-semibold">Discipline:</p>
-            <p className="font-semibold">Started:</p>
-            <p className="font-semibold">Updated:</p>
+        <div className="flex w-full flex-col items-center gap-1">
+          <div className="flex w-full justify-center gap-3 ">
+            <p className="flex w-[50%] justify-end  font-semibold">Email:</p>
+            <p className=" flex w-[50%] ">{referralSourceUrl}@gmail.com</p>
           </div>
-          <div className="flex flex-col gap-[6px]">
-            <p>Registered Nurse</p>
-            <p>11/04/2022</p>
-            <p>11/04/2022</p>
+          <div className="flex w-full justify-center gap-3 ">
+            <p className="flex w-[50%] justify-end  font-semibold">
+              Sales Rep:
+            </p>
+            <p className=" flex w-[50%] uppercase">Bailey Deborah</p>
+          </div>
+        </div>
+        <div className="flex w-full flex-col items-center gap-1">
+          <div className="flex w-full justify-center gap-3 ">
+            <p className="flex w-[50%] justify-end  font-semibold">
+              Start Date:
+            </p>
+            <p className=" flex w-[50%] ">1/1/2020</p>
+          </div>
+          <div className="flex w-full justify-center gap-3 ">
+            <p className="flex w-[50%] justify-end  font-semibold">End Date:</p>
+            <p className=" flex w-[50%] "></p>
+          </div>
+          <div className="flex w-full justify-center gap-3 ">
+            <p className="flex w-[50%] justify-end  font-semibold">Updated:</p>
+            <p className=" flex w-[50%] ">9/10/2020</p>
           </div>
         </div>
       </div>

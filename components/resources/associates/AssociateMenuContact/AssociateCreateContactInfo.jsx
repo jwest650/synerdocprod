@@ -22,17 +22,17 @@ const AssociateCreateContactInfo = () => {
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-150" />
-        <span className="verdana11">Create Contact Info</span>
+        <span>Create Contact Info</span>
       </span>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">
+              <h1 className="verdana16 font-semibold">
                 Create Address/Phone Info
               </h1>
-              <p className="verdana12">
+              <p>
                 Select an address type and enter address details. Then add
                 relevant phone numbers. Finally, hit &quot;Save&quot;
               </p>
@@ -162,7 +162,7 @@ const AssociateCreateContactInfo = () => {
                   <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white lg:mt-0">
                     3
                   </span>
-                  <table className=" mx-auto mt-5 w-fit overflow-auto px-3 shadow-md">
+                  <table className=" mx-auto mt-3 w-fit overflow-auto px-3 shadow-md">
                     <thead className="thead-primary">
                       <tr>
                         <th className="th-first">Preferred </th>

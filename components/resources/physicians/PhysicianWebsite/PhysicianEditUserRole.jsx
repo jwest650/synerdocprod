@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { physicianRoles } from '../../../../assets/data';
+import { physicianRoles } from '../physicianData';
 import PhysicianUserDetails from './PhysicianUserDetails';
 
 const PhysicianEditUserRole = ({ setEditUserRole }) => {

@@ -23,7 +23,7 @@ const AssociateWebsiteInitialPage = ({
     }));
   };
   return (
-    <div className="verdana11 mx-2 my-8 space-y-10 md:mx-9">
+    <div className="mx-2 my-8 space-y-10 md:mx-9">
       <div className="flex">
         <div className="w-[50%] border-primary-gray py-5 md:border-r">
           <div className="mb-5 flex items-center gap-3">
@@ -33,9 +33,7 @@ const AssociateWebsiteInitialPage = ({
             )}
           </div>
           {editUserRole.action === false && editUserRole.from === '' && (
-            <p className="verdana12">
-              This associate does not have access to the website.
-            </p>
+            <p>This associate does not have access to the website.</p>
           )}
           {editUserRole.from === 'associateedituserrole' && (
             <AssociateUserRolesComp setEditUserRole={setEditUserRole} />
@@ -47,9 +45,7 @@ const AssociateWebsiteInitialPage = ({
               <h2 className="verdana16 font-semibold">Security </h2>
             </div>
             {editUserRole.action === false && editUserRole.from === '' && (
-              <p className="verdana12">
-                This associate does not belong to any roles
-              </p>
+              <p>This associate does not belong to any roles</p>
             )}
             {editUserRole.from === 'associateedituserrole' && (
               <AssociateSecurityTable setEditUserRole={setEditUserRole} />
@@ -67,7 +63,7 @@ const AssociateWebsiteInitialPage = ({
                     className="btn-primary flex cursor-pointer items-center gap-1"
                   >
                     <BiPlus className="scale-150" />
-                    <span className="verdana11">Create Org Access</span>
+                    <span>Create Org Access</span>
                   </span>
                 )}
             </div>
@@ -75,9 +71,7 @@ const AssociateWebsiteInitialPage = ({
             {editUserOrgAccess.action === false &&
               editUserOrgAccess.from !== 'associatecreateorgaccess' &&
               editUserOrgAccess.from !== 'edit' && (
-                <p className="verdana12">
-                  This associate does not have any org access
-                </p>
+                <p>This associate does not have any org access</p>
               )}
 
             {(editUserOrgAccess.from === 'associatecreateorgaccess' ||

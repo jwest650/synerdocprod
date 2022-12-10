@@ -62,42 +62,6 @@ const EachPhysicianHeader = ({ physicianUrl }) => {
           </div>
         </div>
       </div>
-      {/* <div className="verdana12 mt-6 flex w-full max-w-[800px] items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="flex flex-col items-end justify-center gap-[6px]">
-            <p className="font-semibold">Title:</p>
-            <p className="font-semibold">Speciality:</p>
-            <p className="font-semibold">Group:</p>
-          </div>
-          <div className="flex flex-col justify-center gap-[6px]">
-            <p>Medical Doctor</p>
-            <p>Cardiologist</p>
-            <p></p>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="flex flex-col items-end justify-center gap-[6px]">
-            <p className="font-semibold">Email:</p>
-            <p className="font-semibold">Sales Rep:</p>
-          </div>
-          <div className="flex flex-col justify-center gap-[6px]">
-            <p>{physicianUrl}@gmail.com</p>
-            <p className="uppercase">BAILEY DEBORAH</p>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="flex flex-col items-end gap-[6px]">
-            <p className="font-semibold">Start Date:</p>
-            <p className="font-semibold">End Date:</p>
-            <p className="font-semibold">Updated:</p>
-          </div>
-          <div className="flex flex-col gap-[6px]">
-            <p>11/04/2022</p>
-            <p></p>
-            <p>11/04/2022</p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

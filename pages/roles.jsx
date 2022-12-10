@@ -1,16 +1,16 @@
 import RoleTableActions from '../components/structure/RoleTableActions';
-import { associateRoles } from '../assets/data';
 import CreateRole from '../components/structure/CreateRole';
 import PatientManagementRoles from '../components/resources/associates/AssociateMenuWebsite/PatientManagementRoles';
 import ResourceManagementRoles from '../components/resources/associates/AssociateMenuWebsite/ResourceManagementRoles';
 import { useState } from 'react';
+import { associateRoles } from '../components/resources/associates/associateData';
 
 const RolesPage = () => {
   const [checkedResources, setCheckedResources] = useState([]);
   const [checkedPatients, setCheckedPatients] = useState([]);
 
-  console.log('resources----------->', checkedResources);
-  console.log('patients------------>', checkedPatients);
+  // console.log('resources----------->', checkedResources);
+  // console.log('patients------------>', checkedPatients);
   return (
     <div className="mt-5 w-full">
       <div className="flex w-full justify-between">
@@ -20,7 +20,7 @@ const RolesPage = () => {
             <CreateRole />{' '}
           </div>
 
-          <table className="mt-7 w-full overflow-auto shadow">
+          <table className="mt-3 w-full overflow-auto shadow">
             <thead className="thead-primary">
               <tr>
                 <th className="th-first">Role </th>

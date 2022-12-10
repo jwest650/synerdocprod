@@ -36,77 +36,73 @@ const PhysicianCreateContactInfo = () => {
                 Select an address type and enter address details. Then add
                 relevant phone numbers. Finally, hit &quot;Save&quot;
               </p>
-              <div className="mt-16 flex flex-col items-center lg:flex-row lg:items-start">
-                <div className="mr-3 w-[65%] border-primary-gray lg:border-r">
+              <div className="verdana12 mt-16 flex flex-col items-center lg:flex-row lg:items-start">
+                <div className="mr-3 w-[55%] border-primary-gray lg:border-r">
                   <div className="flex items-start">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white">
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-white">
                       1
                     </span>
+
                     <div>
-                      <div className="flex w-[100%] flex-col items-center justify-center px-3">
-                        <div className="my-2 flex items-center">
-                          <p className="w-[150px] text-right font-medium">
+                      <div className="flex w-full flex-col items-center gap-3.5">
+                        <div className="ml-1 flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%] justify-end">
                             <span className="text-primary-orange">*</span>
                             Address Type:
                           </p>
-                          <div className="ml-3">
+                          <div className=" ml-2 flex w-[65%] items-center">
                             <TableSelect
                               styles={{ width: '100%' }}
-                              options={['Work', 'Option2']}
-                            />
+                              options={['Mailing', 'Option2']}
+                            />{' '}
                           </div>
                         </div>
 
-                        <div className="my-2 flex items-center">
-                          <p className="ml-1 w-[150px] text-right font-medium">
+                        <div className="flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%] justify-end">
                             <span className="text-primary-orange">*</span>
                             Address1:
-                          </p>{' '}
-                          <div className="ml-4 w-28 pt-0.5">
+                          </p>
+                          <div className=" flex w-[65%] ">
                             <input
                               type="text"
-                              placeholder="222 Tom Carson Road"
+                              placeholder="PO BOX  981106"
                               className="input-primary mx-2 w-48"
-                            />
+                            />{' '}
                           </div>
                         </div>
-                        <div className="my-2 flex items-center">
-                          <p className="ml-1 w-[150px] text-right font-medium">
-                            Address2:
-                          </p>{' '}
-                          <div className="ml-4 w-28 pt-0.5">
+                        <div className="flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%] justify-end">Address2:</p>
+                          <div className=" flex w-[65%] items-center gap-2">
                             <input
                               type="text"
                               className="input-primary mx-2 w-48"
-                            />
+                            />{' '}
                           </div>
                         </div>
-                        <div className="my-2 flex items-center">
-                          <p className="ml-5 w-[150px] text-right font-medium">
-                            {' '}
+                        <div className="ml-2 flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%] justify-end">
                             <span className="text-primary-orange">*</span>{' '}
-                            City/State/Zip:{' '}
-                          </p>{' '}
-                          <div className="ml-4 flex w-28 items-center gap-2 pt-0.5">
+                            City/State/Zip:
+                          </p>
+                          <div className=" ml-2 flex w-[65%] items-center gap-2 ">
                             <input
                               type="text"
-                              placeholder="Saline"
+                              placeholder="El Paso"
                               className="input-primary w-20"
-                            />{' '}
-                            <div className="min-w-[60px]">
-                              <TableSelect
-                                styles={{ width: '100%' }}
-                                options={['LA', 'Option2']}
-                              />
-                            </div>
+                            />
+                            <TableSelect
+                              styles={{ width: '100%' }}
+                              options={['TX', 'Option2']}
+                            />
                             <input
                               type="text"
-                              placeholder="71070"
+                              placeholder="79998"
                               className="input-primary w-16"
-                            />{' '}
+                            />
                             <input
                               type="text"
-                              placeholder=""
+                              placeholder="1106"
                               className="input-primary w-16"
                             />{' '}
                           </div>
@@ -115,56 +111,44 @@ const PhysicianCreateContactInfo = () => {
                     </div>
                   </div>
                   <div className="mt-14 flex items-start">
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white">
+                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-white">
                       2
                     </span>
+
                     <div>
-                      <div className="flex w-[100%] flex-col items-center justify-center px-3">
-                        <div className="my-2 flex items-center">
-                          <p className="w-[150px] text-right font-semibold">
+                      <div className="flex w-full flex-col items-center gap-3.5">
+                        <div className="flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%]  justify-end">
                             Phone Type:
                           </p>
-                          <div className="ml-3">
-                            <TableSelect
-                              styles={{ width: '100%' }}
-                              options={['Option1', 'Option2']}
-                            />
+                          <div className=" flex w-[65%] items-center">
+                            <TableSelect options={['Work', 'Option2']} />
                           </div>
                         </div>
 
-                        <div className="my-2 flex items-center">
-                          <p className="ml-6 w-[150px] text-right font-semibold">
-                            Phone:
-                          </p>{' '}
-                          <div className="ml-4 flex w-28 items-center gap-1 pt-0.5">
+                        <div className="flex w-full items-center justify-center gap-3 ">
+                          <p className="flex w-[35%] justify-end"> Phone :</p>
+                          <div className=" flex w-[65%] items-center gap-2">
                             (
-                            <input type="text" className="input-primary w-14" />
+                            <input type="text" className="input-primary w-16" />
                             )
-                            <input type="text" className="input-primary w-14" />
+                            <input type="text" className="input-primary w-16" />
                             -
-                            <input
-                              type="text"
-                              placeholder=""
-                              className="input-primary w-14"
-                            />
+                            <input type="text" className="input-primary w-16" />
                             ext.
-                            <input
-                              type="text"
-                              placeholder=""
-                              className="input-primary w-14"
-                            />
+                            <input type="text" className="input-primary w-16" />
                           </div>
                         </div>
-                        <div className="btn-primary ml-24 mt-4">Add Phone</div>
+                        <div className="btn-primary mr-10">Add Phone</div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="mt-12 flex gap-5 lg:mt-1 lg:block">
-                  <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-sm font-semibold text-white lg:mt-0">
+                  <span className="mt-4 flex h-5 w-5 items-center justify-center rounded-full bg-primary-blue text-white lg:mt-0">
                     3
                   </span>
-                  <table className=" mx-auto mt-5 w-fit overflow-auto px-3 shadow-md">
+                  <table className=" mx-auto mt-3 w-fit overflow-auto px-3 shadow-md">
                     <thead className="thead-primary">
                       <tr>
                         <th className="th-first">Preferred </th>

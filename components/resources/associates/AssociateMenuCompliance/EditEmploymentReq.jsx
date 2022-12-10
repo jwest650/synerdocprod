@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import { employmentReq } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { employmentReq } from '../associateDatathree';
 
 const EditEmploymentReq = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,7 +35,7 @@ const EditEmploymentReq = () => {
             </h1>
 
             <div>
-              <table className="mx-auto mt-8 w-full overflow-auto px-3 shadow-md">
+              <table className="mx-auto mt-4 w-full overflow-auto px-3 shadow-md">
                 <thead className=" verdana11 border-b bg-primary-blue tracking-wider text-white ">
                   <tr>
                     <th className="th-first">Item</th>

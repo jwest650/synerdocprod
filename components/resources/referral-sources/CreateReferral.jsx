@@ -6,9 +6,10 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { BiPlus } from 'react-icons/bi';
+import { FcInfo } from 'react-icons/fc';
 import TableSelect from '../../structure/TableSelect';
 
-const CreateReferral = () => {
+const CreateReferral = ({ edit }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
@@ -17,21 +18,33 @@ const CreateReferral = () => {
   };
   return (
     <>
-      <span
-        onClick={onOpen}
-        className="btn-primary flex cursor-pointer items-center gap-1"
-      >
-        <BiPlus className="scale-150" />
-        <span>Create Referral Source</span>
-      </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      {edit ? (
+        <span
+          onClick={onOpen}
+          className="verdana11 flex cursor-pointer items-center gap-2 text-orange-600 underline"
+        >
+          [Edit]
+          <FcInfo className="rotate-180 scale-150" />
+        </span>
+      ) : (
+        <span
+          onClick={onOpen}
+          className="btn-primary flex cursor-pointer items-center gap-1"
+        >
+          <BiPlus className="scale-150" />
+          <span>Create Referral Source</span>
+        </span>
+      )}
+      <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">Add Referral Source</h1>
+              <h1 className="verdana18 font-semibold">
+                {edit ? 'Edit' : 'Create'} Referral Source
+              </h1>
               <p className="verdana-12 text-gray-400">
-                Add Referral Source details{' '}
+                {edit ? 'Edit' : 'Create'} Referral Source details{' '}
               </p>
               <div className="mt-10 flex justify-center gap-4">
                 <div className="space-y-[19px]">

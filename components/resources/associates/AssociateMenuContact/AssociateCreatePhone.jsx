@@ -23,7 +23,7 @@ const AssociateCreatePhone = () => {
         className="btn-primary flex cursor-pointer items-center gap-1"
       >
         <BiPlus className="scale-150" />
-        <span className="verdana11">Create Phone</span>
+        <span>Create Phone</span>
       </span>
       <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
@@ -31,12 +31,10 @@ const AssociateCreatePhone = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             {/* <ModalBody> */}
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">
+              <h1 className="verdana16 font-semibold">
                 Add Ancillary Phone Info
               </h1>
-              <p className="verdana12">
-                Select a phone number type and enter phone number.{' '}
-              </p>
+              <p>Select a phone number type and enter phone number. </p>
               <div className="mt-16">
                 <div className="flex w-[70%] flex-col items-center justify-center px-3">
                   <div className="my-2 flex">

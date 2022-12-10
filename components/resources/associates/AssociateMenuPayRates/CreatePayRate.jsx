@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import { payrateData } from '../../../../assets/data';
 import TableSelect from '../../../structure/TableSelect';
+import { payrateData } from '../../organization-payers/payerData';
 
 const CreatePayRate = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -48,7 +48,7 @@ const CreatePayRate = () => {
                       <strong>McNaughton, Hillary</strong>{' '}
                     </span>
                   </div>
-                  <table className="mt-5 w-full overflow-auto">
+                  <table className="mt-3 w-full overflow-auto">
                     <thead className="thead-primary">
                       <tr className="verdana11">
                         <th className="th-first">Row</th>
