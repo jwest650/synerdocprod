@@ -1,5 +1,8 @@
+import Link from 'next/link';
 import { BsDot } from 'react-icons/bs';
+import ScheduleComp from '../structure/ScheduleComp';
 import Card from './Card';
+import SchedulerNav from './SchedulerNav';
 
 const HomePage = () => {
   return (
@@ -10,9 +13,11 @@ const HomePage = () => {
           <p className="">There are no annoucements.</p>
         </div>
         <div className="card-primary space-y-4">
-          <h2 className="verdana14 font-semibold text-primary-orange underline">
-            Reports and Options
-          </h2>
+          <Link href="reportsandoptions">
+            <button className="verdana14 font-semibold text-primary-orange underline">
+              Reports and Options
+            </button>
+          </Link>
         </div>
         <Card selectOptions={['<--select-->']} title="Schedules" />
         <Card
@@ -45,8 +50,9 @@ const HomePage = () => {
           ))}
         </ul>
       </div>
-      <div className="col-span-3 rounded text-6xl font-bold shadow">
-        <p className="mx-auto">Calendar</p>
+      <div className="col-span-3 space-y-4">
+        <SchedulerNav />
+        <ScheduleComp />
       </div>
     </div>
   );
