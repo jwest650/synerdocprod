@@ -1,6 +1,5 @@
-import { Input } from '@chakra-ui/react';
 import { CalendarComponent } from '@syncfusion/ej2-react-calendars';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { FcPlanner } from 'react-icons/fc';
 
 const CalendarComp = ({ setDate, date }) => {
@@ -8,8 +7,6 @@ const CalendarComp = ({ setDate, date }) => {
 
   const handleChange = (e) => {
     setDate && setDate(e.value.toLocaleDateString());
-    // console.log(e.value.toLocaleDateString());
-    // console.log(calE.);
   };
   return (
     <>
@@ -42,7 +39,7 @@ const CalendarComp = ({ setDate, date }) => {
           />
           <div className="-mt-1 flex items-center justify-end rounded-b bg-[#c6d8ff] p-1 px-3">
             <span
-              className={`cursor-pointer rounded border border-primary-blue px-2 py-1 hover:bg-primary-blue hover:text-white ${
+              className={`cursor-pointer rounded px-2 py-1 hover:bg-primary-blue hover:text-white ${
                 date === new Date().toLocaleDateString() &&
                 'bg-primary-blue text-white'
               } `}

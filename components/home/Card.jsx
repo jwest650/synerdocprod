@@ -1,7 +1,20 @@
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../structure/TableSelect';
 
 const Card = ({ title, addOption, selectOptions }) => {
+  const router = useRouter();
+  const [selectedOption, setSelectedOption] = useState('');
+  useEffect(() => {
+    if (
+      selectedOption === 'My Schedule' ||
+      selectedOption === 'Unverified Schedules'
+    ) {
+      router.push(`/${selectedOption.replace(/\s/g, '').toLowerCase()}`);
+    }
+  }, [router, selectedOption]);
   return (
     <div className="card-primary space-y-3.5">
       <div className="flex items-center justify-between">
@@ -25,6 +38,7 @@ const Card = ({ title, addOption, selectOptions }) => {
       <TableSelect
         styles={{ backgroundColor: 'white' }}
         options={selectOptions}
+        setSelectedOption={setSelectedOption}
       />
     </div>
   );

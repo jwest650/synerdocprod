@@ -1,10 +1,15 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { BsDot } from 'react-icons/bs';
+import { scheduleData } from '../../assets/scheduleData';
 import ScheduleComp from '../structure/ScheduleComp';
 import Card from './Card';
 import SchedulerNav from './SchedulerNav';
 
 const HomePage = () => {
+  const [events, setEvents] = useState(scheduleData);
   return (
     <div className="verdana11 mt-4 grid w-full grid-cols-4 gap-4">
       <div className="col-span-1 space-y-4">
@@ -19,7 +24,14 @@ const HomePage = () => {
             </button>
           </Link>
         </div>
-        <Card selectOptions={['<--select-->']} title="Schedules" />
+        <Card
+          selectOptions={[
+            '<--select-->',
+            'My Schedule',
+            'Unverified Schedules',
+          ]}
+          title="Schedules"
+        />
         <Card
           addOption="Create Referral/Patient"
           selectOptions={['<--select-->']}
@@ -52,7 +64,7 @@ const HomePage = () => {
       </div>
       <div className="col-span-3 space-y-4">
         <SchedulerNav />
-        <ScheduleComp />
+        <ScheduleComp eventsData={events} setEventsData={setEvents} />
       </div>
     </div>
   );
