@@ -172,10 +172,7 @@ const AddFacilitySourceModal = ({
                       </p>
 
                       <div className='flex w-[70%]'>
-                        <Select
-                          size='xs'
-                          className='input-primary w-full w-[200px]'
-                        >
+                        <Select size='xs' className='input-primary w-full  '>
                           <option value='option1' className='text-gray-800'>
                             select
                           </option>
