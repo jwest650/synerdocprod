@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import { scheduleData } from '../../../../assets/scheduleData';
-import ScheduleComp from '../../../dashboard/ScheduleComp';
+import ScheduleComp from '../../../structure/ScheduleComp';
 
 const AssociateMenuAvailability = () => {
   const [eventsData, setEventsData] = useState(scheduleData);

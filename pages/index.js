@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import HomePage from '../components/home';
-import HomepageLayout from '../components/home/HomepageLayout';
-import ScheduleComp from '../components/structure/ScheduleComp';
 
 export default function Home() {
   return (
@@ -14,13 +12,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <HomePage />
-
-      {/* 
-      <HomepageLayout>
-        <ScheduleComp />
-      </HomepageLayout> */}
     </div>
   );
 }
