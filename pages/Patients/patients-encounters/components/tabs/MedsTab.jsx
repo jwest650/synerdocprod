@@ -1,59 +1,55 @@
 import { Select } from '@chakra-ui/react'
 import React from 'react'
 import { TiWarningOutline } from 'react-icons/ti'
+import { FcCalendar, FcPrint } from 'react-icons/fc'
+import { GrNotes } from 'react-icons/gr'
+import { FaStarOfLife } from 'react-icons/fa'
+import { AiFillWarning } from 'react-icons/ai'
+import { useState } from 'react'
+import PrintModal from './components/medstab/PrintModal'
+import Actions from './components/medstab/Actions'
+import Pharmacy from './components/medstab/Pharmacy'
 
 const MedsTab = () => {
-  let data = []
+  let data = [1, 1, 1, 1, 1]
+  const [openPrint, setOpenPrint] = useState(false)
+
   return (
     <div className='verdana13 '>
       <h1>Alergies: Penicillin</h1>
       <div className='flex items-center'>
-        <h1 className='font-bold'>Medications</h1>
+        <h1 className='verdana18 font-bold'>Medications</h1>
 
-        <p className='ml-5 text-secondary-color underline'>Add Medication</p>
-        <p className='ml-5 text-secondary-color underline'>
-          Add Medication kit
-        </p>
-        <p className='ml-5 text-secondary-color underline'>
-          Print Medication Profile
-        </p>
-        <p className='ml-5 text-secondary-color underline'>
-          Approve Medication Profile
-        </p>
-        <p className='ml-5 text-secondary-color underline'>Med Admin</p>
-        <p className='ml-5 text-secondary-color underline'>Med Taken</p>
-        <p className='ml-5 text-secondary-color underline'>Fax Medications</p>
+        <button className='btn-primary ml-3'>
+          <p>Add Medication</p>
+        </button>
+        <button className='btn-primary ml-3'>
+          <p>Print Medication Profile</p>
+        </button>
+        <button className='btn-primary ml-3'>
+          <p>Approve Medication Profile</p>
+        </button>
 
-        <div className='mx-2'>
-          <Select size={'xs'}>
-            <option>value</option>
-          </Select>
-        </div>
+        <button className='btn-primary ml-3'>
+          <p>Fax Medications</p>
+        </button>
 
-        <p className='mx-2'>Status:</p>
-        <div>
+        <div className='flex'>
+          <p className='mx-2 font-bold'>Status:</p>
           <Select size={'xs'}>
             <option>Active</option>
           </Select>
         </div>
-      </div>
-      <div className='flex items-center'>
-        <p className='ml-2 text-secondary-color underline'>
-          Approve Medications Taken:
-        </p>
-        <div className='ml-2'>
-          <Select size={'xs'}>
-            <option>Active</option>
-          </Select>
-        </div>
-        <p className='ml-2 text-secondary-color underline'>Mass Inactive:</p>
+        <button className='btn-primary ml-3'>
+          <p>Mass Inactive</p>
+        </button>
       </div>
 
       <section className=' mt-4 min-h-[200px]'>
         <table className=' min-w-full overflow-auto '>
           <thead className='thead-primary'>
             <tr>
-              <th className='th-first '>Medication</th>
+              <th className='th-first w-[300px]'>Medication</th>
               <th className=' th-middle '>Alert</th>
               <th className=' th-middle '>Dosage</th>
               <th className=' th-middle '>Freq</th>
@@ -63,10 +59,9 @@ const MedsTab = () => {
               <th className=' th-middle '>End</th>
               <th className=' th-middle '>Type</th>
               <th className=' th-middle '>Phycisian</th>
-              <th className=' th-middle '>Administer</th>
+              <th className=' th-middle '>Administered</th>
               <th className=' th-middle '>Pharmacy</th>
-              <th className=' th-middle '>ND</th>
-              <th className=' th-middle '>C</th>
+              <th className=' th-middle '></th>
               <th className=' th-middle '></th>
               <th className=' th-middle '></th>
               <th className=' th-last '></th>
@@ -79,8 +74,10 @@ const MedsTab = () => {
                 className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
               >
                 <td className=' td-primary'>Warfa in tablet</td>
-                <td className=' td-primary'>
-                  <TiWarningOutline />
+                <td className=' td-primary flex items-center'>
+                  <AiFillWarning className='ml-2' />
+                  <FaStarOfLife className='ml-2' />
+                  {/* <TfiReload className='ml-2' /> */}
                 </td>
                 <td className=' td-primary'>325</td>
                 <td className=' td-primary'>1 tab</td>
@@ -92,20 +89,69 @@ const MedsTab = () => {
                 <td className=' td-primary'>Self/Patient</td>
                 <td className=' td-primary'>Mablis</td>
 
-                <td className=' td-primary'>No</td>
                 <td className=' td-primary'></td>
-                <td className=' td-primary'></td>
-                <td className=' td-primary'></td>
-                <td className=' td-primary'></td>
+                <td className=' td-primary'>
+                  <Pharmacy />
+                </td>
+                <td className=' td-primary  '>
+                  <Actions />
+                </td>
+                <td className=' td-primary' onClick={() => setOpenPrint(true)}>
+                  <FcPrint />
+                </td>
                 <td className=' td-primary'></td>
               </tr>
             ))}
           </tbody>
         </table>
-        <p className='w-[100%] bg-gray-300  p-2 text-sm'>
+        {/* <p className='w-[100%] bg-gray-300  p-2 text-sm'>
           No Homecare Item set found
-        </p>
+        </p> */}
       </section>
+
+      <section className=' mt-10'>
+        <h1 className='verdana18'>Drug to Drug Interaction</h1>
+        <table className=' min-w-[500px]'>
+          <thead className='thead-primary'>
+            <tr>
+              <th className='th-first '>Sevierity</th>
+              <th className=' th-middle '>Drug 1</th>
+              <th className=' th-middle '>Drug 2</th>
+              <th className=' th-last '></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className=' td-primary'>
+                <Select size={'xs'} css={{ backgroundColor: '#eee' }}>
+                  <option value=''>Select</option>
+                </Select>
+              </td>
+              <td className=' td-primary'> </td>
+              <td className=' td-primary'> </td>
+              <td className=' td-primary'></td>
+            </tr>
+            {data.map((data, i) => (
+              <tr
+                key={i}
+                className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
+              >
+                <td className=' td-primary'>Warfa in tablet</td>
+                <td className=' td-primary'>perscription</td>
+                <td className=' td-primary'>Robert</td>
+                <td className=' td-primary'>
+                  <FcCalendar />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {/* <p className='w-[100%] bg-gray-300  p-2 text-sm'>
+          No Homecare Item set found
+        </p> */}
+      </section>
+
+      <PrintModal openPrint={openPrint} setOpenPrint={setOpenPrint} />
     </div>
   )
 }

@@ -13,8 +13,8 @@ const ContactInfoForm = () => {
   const [openAddAncillaryPhone, setOpenAddAncillaryPhone] = useState(false)
 
   return (
-    <div>
-      <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+    <div className='verdana13 '>
+      <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
         Add Or Edit Contact Info - Nick Jones
       </h1>
       <hr />
@@ -23,7 +23,7 @@ const ContactInfoForm = () => {
       <div className=' my-4 grid grid-flow-col grid-rows-2 gap-4'>
         <div className='h-[200px] border-r-2 p-2'>
           <div className='flex justify-between py-2'>
-            <h1 className='text-xl text-black'>Address/Phone Info</h1>
+            <h1 className='verdana16  text-black'>Address/Phone Info</h1>
             <button
               className='rounded border bg-secondary-color px-3 text-xs text-white'
               onClick={() => setOpenAddContactInfo(true)}
@@ -62,7 +62,7 @@ const ContactInfoForm = () => {
         </div>
         <div className='h-[200px] border-r-2 p-2'>
           <div className='flex  py-2'>
-            <h1 className='text-xl text-black'>Patient Contact</h1>
+            <h1 className='verdana16  text-black'>Patient Contact</h1>
             <button
               onClick={() => setOpenPatientContact(true)}
               className='ml-3 rounded border bg-secondary-color px-3 text-xs text-white'
@@ -115,7 +115,7 @@ const ContactInfoForm = () => {
         </div>
         <div className='h-[200px] border-r-2 p-2'>
           <div className='flex  py-2'>
-            <h1 className='text-xl text-black'>Ancillary Phone Info</h1>
+            <h1 className='verdana16  text-black'>Ancillary Phone Info</h1>
             <button
               onClick={() => setOpenAddAncillaryPhone(true)}
               className='ml-3 rounded border bg-secondary-color px-3 text-xs text-white'

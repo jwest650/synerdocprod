@@ -1,3 +1,35 @@
+// export const reportsandOptions = [
+//   {
+//     title: 'Resources',
+//     options: [
+//       'Associates',
+//       'Facilities',
+//       'Organization Payers',
+//       'Physicians',
+//       'Refferal Sources',
+//     ],
+//     title: 'Dashboard',
+//     options: [
+//       'Agency Cost',
+//       'Budget',
+//       'Charts',
+//       'Dates',
+//       'Metrics',
+//       'Whiteboard',
+//     ],
+//   },
+//   {
+//     title: 'Patients',
+//     options: [
+//       'Add Refferal/Patient',
+//       'Associates Load Balancing',
+//       'Disaster Plans',
+//       'Incomplete Referrals',
+//       'Move Service Note',
+//     ],
+//   },
+// ];
+
 // createorder, search order
 // ordertype, ordertitle, date, status
 // ordertype, date, status

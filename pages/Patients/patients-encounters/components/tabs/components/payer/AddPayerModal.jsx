@@ -1,90 +1,130 @@
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalOverlay,
-  Input,
-  Select,
-} from '@chakra-ui/react'
+import { Modal, ModalContent, ModalOverlay, Checkbox } from '@chakra-ui/react'
+import { BiPlus } from 'react-icons/bi'
+import TableSelect from '../../../../../../../components/structure/TableSelect'
 
 const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
   let data = [1, 1, 1, 1, 1]
 
   return (
-    <div>
+    <>
       <Modal
         isOpen={openAddPayer}
+        size={'5xl'}
         onClose={() => setOpenAddPayer(false)}
-        className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900} className='verdana13 '>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
-            <ModalBody>
-              <div>
-                <h1 className=' verdana18  font-bold'>Add Payer</h1>
-                <p>to add payer select from bellow</p>
-              </div>
-
-              <div className='mb-1 flex w-[70%] items-center'>
-                <Input placeholder='Enter Payer Name' size='xs' />
-                <Select size={'xs'} className='ml-2'>
-                  <option>Active</option>
-                  <option>Pending</option>
-                  <option>Suspended</option>
-                  <option>Terminated</option>
-                </Select>
-                <Select size={'xs'} className='ml-2'>
-                  <option>Medicare</option>
-                  <option>Homecare</option>
-                  <option>Suspended</option>
-                  <option>Terminated</option>
-                </Select>
-                <div className='ml-3 flex justify-end'>
-                  <button className='btn-primary'>Search</button>
+        <ModalContent>
+          <div className='w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 '>
+            <form action=''>
+              <h1 className='verdana18 font-semibold'>Add Payer</h1>
+              <div className='mt-10 flex justify-center gap-4'>
+                <div className='space-y-[19px]'>
+                  <div className='flex items-center justify-end'>
+                    <label className='text-primary-orange'>*</label>Payer Name:{' '}
+                  </div>
+                  <div className='flex items-center justify-end gap-1'>
+                    <label className='text-primary-orange'>*</label>Payer
+                    Category:{' '}
+                  </div>
+                  <div className='flex items-center justify-end gap-1'>
+                    <label className='text-primary-orange'>*</label>Oasis/HIS
+                    Category:{' '}
+                  </div>
+                  <div className='flex items-center justify-end gap-1'>
+                    <label className='text-primary-orange'>*</label>Claim Filing
+                    Type:{' '}
+                  </div>
+                  <div className='flex items-center justify-end gap-1'>
+                    <label className='text-primary-orange'>*</label>Invoice
+                    Type:{' '}
+                  </div>
+                  <div className='flex items-center justify-end gap-1'>
+                    <label className='text-primary-orange'>*</label>Invoice
+                    Cycle:{' '}
+                  </div>
+                  <div className='flex items-center justify-end'>
+                    <label>Start Date:</label>
+                  </div>
+                  <div className='flex items-center justify-end'>
+                    <label>End Date:</label>
+                  </div>
+                  <div className='flex items-center justify-end gap-1'>
+                    <label>Payer Email:</label>
+                  </div>
+                  <div className='flex items-center justify-end gap-1'>
+                    <label>Apply Sales Tax:</label>
+                  </div>
+                </div>
+                <div className='space-y-[13px]'>
+                  <div>
+                    <input
+                      type='text'
+                      placeholder='Payer Name'
+                      className='input-primary w-60'
+                    />
+                  </div>
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Insurance', 'Option2']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['8(H) - Private Insurance', 'Option2']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Commercial Insurance', 'Option2']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['HCFA 1500', 'Option2']}
+                  />
+                  <TableSelect
+                    styles={{ width: '100%' }}
+                    options={['Weekly', 'Monthly']}
+                  />
+                  <div>
+                    <input
+                      type='text'
+                      placeholder='11/27/1960'
+                      className='input-primary w-28'
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type='text'
+                      placeholder='11/27/1960'
+                      className='input-primary w-28'
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type='text'
+                      placeholder='example@gmail.com'
+                      className='input-primary w-60'
+                    />
+                  </div>
+                  <div className='pt-2'>
+                    <Checkbox />
+                  </div>
                 </div>
               </div>
-
-              <div>
-                <table className=' min-w-full overflow-auto text-xs'>
-                  <thead className='thead-primary'>
-                    <tr>
-                      <th className=' th-first'>Payer Name</th>
-                      <th className=' th-middle'>Payer Category</th>
-                      <th className=' th-middle'>Clain Filling Type</th>
-                      <th className=' th-middle'>Invoice Type</th>
-                      <th className=' th-middle'>Invoice Cycle</th>
-                      <th className=' th-middle'>Oasis Category</th>
-                      <th className=' th-middle'>Organization Start Date</th>
-                      <th className=' th-middle'>Organization End Date</th>
-                      <th className=' th-last'></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {data.map((data, i) => (
-                      <tr
-                        key={i}
-                        className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
-                      >
-                        <td className='td-primary'>Jonas Tuga</td>
-                        <td className='td-primary'>John Mason</td>
-                        <td className='td-primary'>Others</td>
-                        <td className='td-primary'>054344455</td>
-                        <td className='td-primary'>CL, Miami</td>
-                        <td className='td-primary'>CL, Miami</td>
-                        <td className='td-primary'>CL, Miami</td>
-                        <td className='td-primary'>CL, Miami</td>
-                        <td className='td-primary'></td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <div className='mt-8 flex w-full justify-end gap-3'>
+                <button
+                  type='submit'
+                  className='rounded bg-[#0141CF] px-4 py-1 text-white shadow'
+                >
+                  Add
+                </button>
+                <button className='rounded bg-gray-500 px-4 py-1 text-white shadow'>
+                  Cancel
+                </button>
               </div>
-            </ModalBody>
+            </form>
           </div>
         </ModalContent>
       </Modal>
-    </div>
+    </>
   )
 }
 

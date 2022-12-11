@@ -13,9 +13,7 @@ const SuboptionMenu = ({ subOptions, urlPath }) => {
       {subOptions.map((subOption, i) => (
         <Link href={`${urlPath}/${subOption.url}`} key={i}>
           <li
-            className={`relative flex  items-center gap-2 ${
-              i === 0 && 'pt-3.5'
-            } py-[7px] font-medium hover:bg-blue-100/80 ${
+            className={`relative flex  items-center gap-2 py-[7px] font-medium hover:bg-blue-100/80 ${
               i === subOptions.length - 1 ? 'border-none' : 'border-b'
             } px-3 `}
           >

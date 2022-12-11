@@ -18,7 +18,11 @@ const SchedulingNotifications = () => {
           <div className='flex items-center space-x-5'>
             <div className='my-2 flex '>
               <div>
-                <Input placeholder='small size' size='xs' />
+                <input
+                  className='input-primary'
+                  placeholder='small size'
+                  size='xs'
+                />
               </div>
               <button className='ml-2 rounded  border bg-secondary-color px-2 font-medium text-white'>
                 Search

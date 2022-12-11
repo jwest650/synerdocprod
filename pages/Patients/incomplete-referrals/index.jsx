@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { Input } from '@chakra-ui/react'
-import EditReferral from './components/EditReferral'
 import { BiPlus } from 'react-icons/bi'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -8,7 +6,6 @@ import SearchIcon from '../../../assets/images/search.png'
 
 const IncompleteReferrals = () => {
   let data = [1, 1, 1, 1]
-  const [openAddReferral, setOpenAddReferral] = useState(false)
 
   return (
     <div className='verdana13 w-full '>
@@ -33,7 +30,7 @@ const IncompleteReferrals = () => {
               <div>
                 <input
                   placeholder=''
-                  className='verdana12 rounded border border-secondary-blue px-3 py-[2px] text-black outline-none'
+                  className='verdana12 input-primary rounded border border-secondary-blue px-3 py-[2px] text-black outline-none'
                   type='text'
                 />
               </div>
@@ -69,10 +66,7 @@ const IncompleteReferrals = () => {
                     <td className=' td-primary'>Home Health</td>
                     <td className=' td-primary'>Amess Alicia</td>
                     <td className=' td-primary'></td>
-                    <td
-                      className=' td-primary'
-                      // onClick={() => setOpenAddReferral(true)}
-                    >
+                    <td className=' td-primary'>
                       <Link href={'/Patients/add-referral'}>
                         <p className=' cursor-pointer text-secondary-color underline'>
                           James Gordon
@@ -96,11 +90,6 @@ const IncompleteReferrals = () => {
           </div>
         </section>
       </div>
-
-      <EditReferral
-        openAddReferral={openAddReferral}
-        setOpenAddReferral={setOpenAddReferral}
-      />
     </div>
   )
 }

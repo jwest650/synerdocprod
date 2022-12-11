@@ -26,7 +26,7 @@ const CreateReferralForm = () => {
             <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
               <span className='font-bold text-secondary-color '>*</span>Agency:
             </p>
-            <Select size='xs' fontSize='13px'>
+            <Select className='input-primary' size='xs' fontSize='13px'>
               <option value='option1' className='text-gray-800'>
                 Option 1
               </option>
@@ -44,7 +44,7 @@ const CreateReferralForm = () => {
               <span className='font-bold text-secondary-color'>*</span>Agency
               Type:{' '}
             </p>
-            <Select size='xs' fontSize='13px'>
+            <Select className='input-primary' size='xs' fontSize='13px'>
               <option value='option1' className='text-gray-800'>
                 Option 1
               </option>
@@ -73,7 +73,7 @@ const CreateReferralForm = () => {
               Referral Source:{' '}
             </p>
             <div>
-              <Select size='xs' marginRight={5}>
+              <Select className='input-primary' size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -137,7 +137,7 @@ const CreateReferralForm = () => {
               Mode of Delivery:
             </p>
             <div>
-              <Select size='xs' marginRight={5}>
+              <Select className='input-primary' size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -155,7 +155,7 @@ const CreateReferralForm = () => {
               Sales Rep:
             </p>
             <div>
-              <Select size='xs' marginRight={5}>
+              <Select className='input-primary' size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -176,7 +176,7 @@ const CreateReferralForm = () => {
               Referral Source Contact:
             </p>
             <div>
-              <Select size='xs' marginRight={5}>
+              <Select className='input-primary' size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -205,7 +205,7 @@ const CreateReferralForm = () => {
             </p>
             <div className='flex items-center'>
               <div>
-                <Select size='xs'>
+                <Select className='input-primary' size='xs'>
                   <option value='option1' className='text-gray-800'>
                     Option 1
                   </option>
@@ -219,7 +219,7 @@ const CreateReferralForm = () => {
               </div>
               <p className='verdana13 ml-3 text-gray-500'>(343)-343-445</p>
               <div className='ml-3'>
-                <Input size={'xs'} />
+                <input className='input-primary' size={'xs'} />
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@ const CreateReferralForm = () => {
             </p>
             <div className='flex items-center'>
               <div>
-                <Select size='xs'>
+                <Select className='input-primary' size='xs'>
                   <option value='option1' className='text-gray-800'>
                     Option 1
                   </option>
@@ -243,7 +243,7 @@ const CreateReferralForm = () => {
               </div>
               <p className='verdana13 ml-3 text-gray-500'>(343)-343-445</p>
               <div className='ml-3'>
-                <Input size={'xs'} />
+                <input className='input-primary' size={'xs'} />
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@ const CreateReferralForm = () => {
               Email:
             </p>
             <div>
-              <Input size={'xs'} />
+              <input className='input-primary' size={'xs'} />
             </div>
           </div>
 
@@ -261,7 +261,7 @@ const CreateReferralForm = () => {
               Information:
             </p>
             <div>
-              <Input size={'xs'} />
+              <input className='input-primary' size={'xs'} />
             </div>
           </div>
         </section>
@@ -279,7 +279,7 @@ const CreateReferralForm = () => {
               Payer Category:
             </p>
             <div>
-              <Select size='xs' marginRight={5}>
+              <Select className='input-primary' size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -297,7 +297,7 @@ const CreateReferralForm = () => {
               Referral Date:
             </p>
             <div>
-              <Input size={'xs'} type='date' />
+              <input className='input-primary' size={'xs'} type='date' />
             </div>
           </div>
 
@@ -306,7 +306,7 @@ const CreateReferralForm = () => {
               Requested start of care:
             </p>
             <div>
-              <Input size={'xs'} type='date' />
+              <input className='input-primary' size={'xs'} type='date' />
             </div>
           </div>
 
@@ -315,7 +315,7 @@ const CreateReferralForm = () => {
               Admission Source:
             </p>
             <div>
-              <Select size='xs' marginRight={5}>
+              <Select className='input-primary' size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -334,7 +334,7 @@ const CreateReferralForm = () => {
               Admission Type:
             </p>
             <div>
-              <Select size='xs' marginRight={5}>
+              <Select className='input-primary' size='xs' marginRight={5}>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>

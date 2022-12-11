@@ -9,7 +9,7 @@ const SetupPatientForm = () => {
   return (
     <div>
       <section>
-        <h1 className='text-2xl font-bold capitalize text-black dark:text-white'>
+        <h1 className='verdana18 font-bold capitalize text-black dark:text-white'>
           Set Up Patient
         </h1>
         <hr />
@@ -20,11 +20,11 @@ const SetupPatientForm = () => {
 
         <div>
           <div className='my-2 flex'>
-            <p className='mr-3 w-[200px] text-right font-semibold'>
+            <p className=' verdana13 mr-3 w-[200px] text-right font-semibold'>
               Presentation to be done:
             </p>
             <div>
-              <Select size='xs'>
+              <Select className='input-primary' size='xs'>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -38,21 +38,21 @@ const SetupPatientForm = () => {
             </div>
           </div>
           <div className='my-2 flex'>
-            <p className='mr-3 w-[200px] text-right font-semibold'>
+            <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
               Additional Information:
             </p>
 
             <div>
-              <Input size={'xs'} />
+              <input className='input-primary' size={'xs'} />
             </div>
           </div>
           <div className='my-2 flex'>
-            <p className='mr-3 w-[200px] text-right font-semibold'>
+            <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
               Place of Admission:
             </p>
 
             <div>
-              <Select size='xs'>
+              <Select className='input-primary' size='xs'>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -66,57 +66,61 @@ const SetupPatientForm = () => {
             </div>
           </div>
           <div className='my-2 flex'>
-            <p className='mr-3 w-[200px] text-right font-semibold'>
+            <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
               Admission Date:
             </p>
 
             <div>
-              <Input size={'xs'} type='date' />
+              <input className='input-primary' size={'xs'} type='date' />
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h1 className='py-5 text-xl text-black dark:text-white'>
+        <h1 className='verdana16 py-5  text-black dark:text-white'>
           Search Patient
         </h1>
         <hr />
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>Last/First:</p>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
+            Last/First:
+          </p>
 
           <div className='flex'>
-            <Input size={'xs'} type='text' />
-            <Input size={'xs'} className='ml-3' type='text' />
+            <input className='input-primary' size={'xs'} type='text' />
+            <input className='input-primary ml-3' size={'xs'} type='text' />
           </div>
         </div>
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>Birth Date:</p>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
+            Birth Date:
+          </p>
 
           <div>
-            <Input size={'xs'} type='date' />
+            <input className='input-primary' size={'xs'} type='date' />
           </div>
         </div>
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
             Medical Record No:
           </p>
 
           <div>
-            <Input size={'xs'} type='type' />
+            <input className='input-primary' size={'xs'} type='type' />
           </div>
         </div>
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
             Patient Identifier No:
           </p>
 
           <div>
-            <Input size={'xs'} type='type' />
+            <input className='input-primary' size={'xs'} type='type' />
           </div>
         </div>
         <div className='flex w-[200px] justify-end'>
@@ -125,24 +129,24 @@ const SetupPatientForm = () => {
           </button>
         </div>
 
-        <h1 className='py-2 text-xl text-black dark:text-white'>
+        <h1 className='verdana16 py-2 text-xl text-black dark:text-white'>
           Re-Admit Existing Patient
         </h1>
         <hr />
         <table className=' min-w-full overflow-auto'>
           <thead className='thead-primary'>
             <tr>
-              <th className=' th-first'>Select</th>
-              <th className=' th-middle'>Name</th>
-              <th className=' th-middle'>Birth Date</th>
-              <th className=' th-middle'>Gender</th>
-              <th className=' th-middle'>Status</th>
-              <th className=' th-middle'>Start</th>
-              <th className=' th-middle'>Discharged</th>
-              <th className=' th-middle'>Declined</th>
-              <th className=' th-middle'>Medical Record No</th>
-              <th className=' th-middle'>Patient Identifier No</th>
-              <th className=' th-last'>Agency Name</th>
+              <th className='th-first'>Select</th>
+              <th className='th-middle'>Name</th>
+              <th className='th-middle'>Birth Date</th>
+              <th className='th-middle'>Gender</th>
+              <th className='th-middle'>Status</th>
+              <th className='th-middle'>Start</th>
+              <th className='th-middle'>Discharged</th>
+              <th className='th-middle'>Declined</th>
+              <th className='th-middle'>Medical Record No</th>
+              <th className='th-middle'>Patient Identifier No</th>
+              <th className='th-last'>Agency Name</th>
             </tr>
           </thead>
           <tbody>
@@ -165,50 +169,50 @@ const SetupPatientForm = () => {
                 <td className='td-primary'>23</td>
                 <td className='td-primary'></td>
                 <td className='td-primary'>Labour of love</td>
+                <td className='td-primary'></td>
               </tr>
             ))}
           </tbody>
         </table>
-        <div className='my-3 flex justify-end'>
-          <button className='rounded border bg-secondary-color px-3 font-medium text-white'>
-            Continue
-          </button>
-        </div>
       </section>
 
       <section>
-        <h1 className='py-5 text-xl text-black dark:text-white'>
+        <h1 className='verdana16 py-5 text-xl text-black dark:text-white'>
           Or Add Patient
         </h1>
         <hr />
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
             <span className='font-bold text-secondary-color'>*</span>Last/
             <span className='font-bold text-secondary-color'>*</span>
             First/Middle:
           </p>
 
           <div className='flex'>
-            <Input size={'xs'} type='text' />
-            <Input size={'xs'} className='ml-3' type='text' />
-            <Input size={'xs'} className='ml-3' type='text' />
+            <input className='input-primary' size={'xs'} type='text' />
+            <input className='input-primary ml-3' size={'xs'} type='text' />
+            <input className='input-primary ml-3' size={'xs'} type='text' />
           </div>
         </div>
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>Birth Date:</p>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
+            Birth Date:
+          </p>
 
           <div className='flex'>
-            <Input size={'xs'} type='date' />
+            <input className='input-primary' size={'xs'} type='date' />
           </div>
         </div>
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>Gender:</p>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
+            Gender:
+          </p>
 
           <div>
-            <Select size='xs'>
+            <Select className='input-primary' size='xs'>
               <option value='option1' className='text-gray-800'>
                 Female
               </option>
@@ -223,10 +227,12 @@ const SetupPatientForm = () => {
         </div>
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>Race:</p>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
+            Race:
+          </p>
 
           <div>
-            <Select size='xs'>
+            <Select className='input-primary' size='xs'>
               <option value='option1' className='text-gray-800'>
                 white
               </option>
@@ -241,12 +247,12 @@ const SetupPatientForm = () => {
         </div>
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
             Marital Status:
           </p>
 
           <div>
-            <Select size='xs'>
+            <Select className='input-primary' size='xs'>
               <option value='option1' className='text-gray-800'>
                 Married
               </option>
@@ -261,10 +267,12 @@ const SetupPatientForm = () => {
         </div>
 
         <div className='my-2 flex'>
-          <p className='mr-3 w-[200px] text-right font-semibold'>Email:</p>
+          <p className='verdana13 mr-3 w-[200px] text-right font-semibold'>
+            Email:
+          </p>
 
           <div>
-            <Input size={'xs'} type='text' />
+            <input className='input-primary' size={'xs'} type='text' />
           </div>
         </div>
       </section>

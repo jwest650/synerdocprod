@@ -13,6 +13,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useRef } from 'react';
 import { BsGrid } from 'react-icons/bs';
+import { FaHome } from 'react-icons/fa';
 import { FiBell } from 'react-icons/fi';
 import { GoMail } from 'react-icons/go';
 import { menuOptions } from '../../assets/menuOptionsData';
@@ -24,11 +25,12 @@ const MenuDrawer = () => {
 
   const router = useRouter();
   const currentPath = router.asPath.split('/')[2];
+  const home = router.asPath;
 
   return (
-    <>
+    <div className="lg:hidden">
       <Button ref={btnRef} __css={{}} onClick={onOpen}>
-        <div className="ml-[95px] cursor-pointer lg:hidden">
+        <div className="ml-[95px] cursor-pointer">
           <BsGrid className="scale-150" />
         </div>
       </Button>
@@ -45,15 +47,22 @@ const MenuDrawer = () => {
 
           <DrawerBody>
             <div>
+              <Link href="/">
+                <h1 className="verdana14 flex cursor-pointer items-center gap-2 px-2 font-semibold">
+                  <FaHome className="scale-125" />
+                  Home
+                </h1>
+              </Link>
               {menuOptions.map((menu, index) => (
                 <div key={index} className="border-b">
                   <h1
-                    className={`mt-7 h-12 w-fit px-2 text-sm font-medium text-secondary-text-light dark:text-secondary-text-dark`}
+                    className={`verdana14 mt-2 flex h-12 w-fit items-center gap-2 px-2 font-semibold text-secondary-text-light dark:text-secondary-text-dark`}
                   >
+                    <span className="scale-125">{menu.icon}</span>
                     {menu.name}
                   </h1>
                   <ul className="ml-5 h-52 space-y-4 overflow-x-hidden overflow-y-scroll text-secondary-text-light">
-                    {menu.options.map((option, index) => (
+                    {menu?.options?.map((option, index) => (
                       <Link
                         href={`${
                           option.title === 'Home'
@@ -121,7 +130,7 @@ const MenuDrawer = () => {
           </div>
         </DrawerContent>
       </Drawer>
-    </>
+    </div>
   );
 };
 

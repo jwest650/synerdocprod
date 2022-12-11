@@ -18,7 +18,7 @@ const TableSelect = ({ setSelectedOption, options, styles }) => {
       outline="none"
       backgroundColor="c6d8ffe1"
       fontSize="11px"
-      h="23px"
+      height="23px"
       fontFamily="Arial"
       className="cursor-pointer shadow outline-none"
       {...styles}

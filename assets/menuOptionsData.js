@@ -3,7 +3,7 @@ import { BiChalkboard } from 'react-icons/bi';
 import { BsBuilding, BsCalendar4Event, BsDot } from 'react-icons/bs';
 import { CiStethoscope } from 'react-icons/ci';
 import { FaHome } from 'react-icons/fa';
-import { FiHome } from 'react-icons/fi';
+import { RxDashboard } from 'react-icons/rx';
 import { GiWhiteBook } from 'react-icons/gi';
 import { IoIosPeople } from 'react-icons/io';
 import {
@@ -18,48 +18,6 @@ import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
 import { VscServerProcess } from 'react-icons/vsc';
 
 export const menuOptions = [
-  {
-    name: 'Dashboard',
-    icon: <FaHome />,
-    options: [
-      {
-        title: 'Home',
-        url: 'home',
-        icon: <FiHome />,
-      },
-      {
-        title: 'Charts',
-        url: 'charts',
-        icon: <AiOutlineLineChart />,
-      },
-      {
-        title: 'Budget',
-        url: 'budget',
-        icon: <SlCalculator />,
-      },
-      {
-        title: 'Dates',
-        url: 'dates',
-        icon: <BsCalendar4Event />,
-      },
-      {
-        title: 'Metrics',
-        url: 'metrics',
-        icon: <TbPresentationAnalytics />,
-      },
-      {
-        title: 'Agency Cost',
-        url: 'agency-cost',
-        icon: <MdAttachMoney />,
-      },
-      {
-        title: 'Whiteboard',
-        url: 'whiteboard',
-        icon: <BiChalkboard />,
-      },
-    ],
-  },
-
   {
     name: 'Resources',
     icon: <MdOutlineMedicalServices />,
@@ -495,6 +453,43 @@ export const menuOptions = [
         title: 'Statistical Reports',
         url: 'statistical-reports',
         icon: <BsDot />,
+      },
+    ],
+  },
+
+  {
+    name: 'Dashboard',
+    icon: <RxDashboard />,
+    options: [
+      {
+        title: 'Charts',
+        url: 'charts',
+        icon: <AiOutlineLineChart />,
+      },
+      {
+        title: 'Budget',
+        url: 'budget',
+        icon: <SlCalculator />,
+      },
+      {
+        title: 'Dates',
+        url: 'dates',
+        icon: <BsCalendar4Event />,
+      },
+      {
+        title: 'Metrics',
+        url: 'metrics',
+        icon: <TbPresentationAnalytics />,
+      },
+      {
+        title: 'Agency Cost',
+        url: 'agency-cost',
+        icon: <MdAttachMoney />,
+      },
+      {
+        title: 'Whiteboard',
+        url: 'whiteboard',
+        icon: <BiChalkboard />,
       },
     ],
   },

@@ -17,7 +17,12 @@ const VerifiedServices = () => {
 
         <div className='flex items-center space-x-3'>
           <div className='flex space-x-2'>
-            <Select size={'xs'} name='' id='' className='rounded text-black'>
+            <Select
+              size={'xs'}
+              name=''
+              id=''
+              className='input-primary rounded text-black'
+            >
               <option value='pdf'>PDF Summary</option>
               <option value='spreadsheet'>Spreadsheet Summary</option>
             </Select>
@@ -32,35 +37,59 @@ const VerifiedServices = () => {
         <div className='flex justify-between'>
           <label htmlFor='#'>Service start Date:</label>
           <div className='flex '>
-            <Input placeholder='small size' size='xs' type={'date'} />
+            <Input
+              className='input-primary'
+              placeholder='small size'
+              size='xs'
+              type={'date'}
+            />
           </div>
         </div>
 
         <div className='flex justify-between'>
           <label htmlFor='#'>To:</label>
           <div className='flex '>
-            <Input placeholder='small size' size='xs' type={'date'} />
+            <Input
+              className='input-primary'
+              placeholder='small size'
+              size='xs'
+              type={'date'}
+            />
           </div>
         </div>
 
         <div className='flex justify-between'>
           <label htmlFor='#'>Verification Date From:</label>
           <div className='flex '>
-            <Input placeholder='small size' size='xs' type={'date'} />
+            <Input
+              className='input-primary'
+              placeholder='small size'
+              size='xs'
+              type={'date'}
+            />
           </div>
         </div>
 
         <div className='flex justify-between'>
           <label htmlFor='#'>To:</label>
           <div className='flex '>
-            <Input placeholder='small size' size='xs' type={'date'} />
+            <Input
+              className='input-primary'
+              placeholder='small size'
+              size='xs'
+              type={'date'}
+            />
           </div>
         </div>
 
         <div className='ml-3 flex items-center space-x-5'>
           <div className='my-2 flex items-center'>
             <div>
-              <Input placeholder='small size' size='xs' />
+              <Input
+                className='input-primary'
+                placeholder='small size'
+                size='xs'
+              />
             </div>
             <button className='ml-3 rounded  border bg-orange-600 px-2 font-medium text-white'>
               Search
@@ -106,7 +135,7 @@ const VerifiedServices = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -123,7 +152,7 @@ const VerifiedServices = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -140,7 +169,7 @@ const VerifiedServices = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -160,7 +189,7 @@ const VerifiedServices = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -177,7 +206,7 @@ const VerifiedServices = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1

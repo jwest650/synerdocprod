@@ -31,11 +31,11 @@ const ClinicalTab = () => {
 
   return (
     <div className='verdana13 '>
-      <article className='mt-5 grid min-h-[200px] grid-cols-2'>
-        <section className='space-y-2 p-2'>
-          <div className='flex'>
+      <article className='mt-20 grid min-h-[200px] grid-cols-2'>
+        <section className=' p-2'>
+          <div className='mb-5 flex'>
             <h1 className='verdana16  font-bold capitalize'>clinical team</h1>
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button className='btn-primary ml-3 flex items-center'>
               <BsPlus className='verdana16  text-green-500' />
               add to clinical team
             </button>
@@ -67,7 +67,7 @@ const ClinicalTab = () => {
             </table>
           </div>
 
-          <div className='mb-6 flex space-x-3'>
+          <div className='mt-16 flex space-x-3'>
             <span
               className='cursor-pointer text-orange-500'
               onClick={() => setOpenEditClinicalAssociate(true)}
@@ -107,12 +107,12 @@ const ClinicalTab = () => {
         </section>
       </article>
 
-      <article className='mt-5 grid min-h-[200px] grid-cols-2'>
+      <article className='mt-16 grid min-h-[200px] grid-cols-2'>
         <section className='space-y-2 p-2'>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Specilty Skills</h1>
             <button
-              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              className='btn-primary ml-3 flex items-center'
               onClick={() => setOpenAddSpecialtySkill(true)}
             >
               <BsPlus className='verdana16  text-green-500' />
@@ -130,7 +130,7 @@ const ClinicalTab = () => {
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Programs</h1>
             <button
-              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              className='btn-primary ml-3 flex items-center'
               onClick={() => setOpenAddPrograms(true)}
             >
               <BsPlus className='verdana16  text-green-500' />
@@ -145,13 +145,13 @@ const ClinicalTab = () => {
         </section>
       </article>
 
-      <article className='mt-5 grid min-h-[200px] grid-cols-2'>
+      <article className='mt-20 grid min-h-[200px] grid-cols-2'>
         <section className='space-y-2 p-2'>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Vendors</h1>
 
             <button
-              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              className='btn-primary ml-3 flex items-center'
               onClick={() => setOpenAddVendor(true)}
             >
               <BsPlus className='verdana16  text-green-500' />
@@ -167,7 +167,7 @@ const ClinicalTab = () => {
         <section className='space-y-2 border-l-2 p-2'>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Vaccines</h1>
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button className='btn-primary ml-3 flex items-center'>
               <BsPlus className='verdana16  text-green-500' />
               add Vaccines
             </button>
@@ -180,7 +180,7 @@ const ClinicalTab = () => {
         </section>
       </article>
 
-      <article className='mt-5 grid min-h-[200px] grid-cols-2'>
+      <article className='mt-20 grid min-h-[200px] grid-cols-2'>
         <section className='space-y-2 p-2'>
           <div className='verdana13 w-full '>
             <h1 className='verdana18  font-bold capitalize text-black dark:text-white'>
@@ -223,7 +223,7 @@ const ClinicalTab = () => {
             <h1 className='verdana16  font-bold capitalize'>
               Advance Directives
             </h1>
-            <button className='ml-3 flex items-center capitalize text-orange-500 underline'>
+            <button className='btn-primary ml-3 flex items-center'>
               <BsPlus className='verdana16  text-green-500' />
               add Directives
             </button>
@@ -239,8 +239,8 @@ const ClinicalTab = () => {
               </p>
             </div>
 
-            <div className='w-[75%]'>
-              <table>
+            <div className='w-full'>
+              <table className='w-full'>
                 <thead className='thead-primary'>
                   <tr>
                     <th className='th-first '>Advance Directives</th>
@@ -268,7 +268,7 @@ const ClinicalTab = () => {
         </section>
       </article>
 
-      <article className='mt-5 grid min-h-[200px] grid-cols-2'>
+      <article className='mt-20 grid min-h-[200px] grid-cols-2'>
         <section className='space-y-2 p-2'>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>
@@ -276,7 +276,7 @@ const ClinicalTab = () => {
             </h1>
 
             <button
-              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              className='btn-primary ml-3 flex items-center'
               onClick={() => setOpenUploadConsentDocument(true)}
             >
               <BsPlus className='verdana16  text-green-500' />
@@ -294,8 +294,8 @@ const ClinicalTab = () => {
               </p>
             </div>
 
-            <div className=' w-[75%]'>
-              <table>
+            <div className='w-full'>
+              <table className='w-full'>
                 <thead className='thead-primary'>
                   <tr>
                     <th className='th-first '>Concent or Notice</th>
@@ -328,7 +328,7 @@ const ClinicalTab = () => {
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>DME</h1>
             <button
-              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              className='btn-primary ml-3 flex items-center'
               onClick={() => setOpenAddDME(true)}
             >
               <BsPlus className='verdana16  text-green-500' />
@@ -346,8 +346,8 @@ const ClinicalTab = () => {
               </p> */}
             </div>
 
-            <div className='w-[75%]'>
-              <table>
+            <div className='w-full'>
+              <table className='w-full'>
                 <thead className='thead-primary'>
                   <tr>
                     <th className='th-first '>Name</th>
@@ -377,7 +377,7 @@ const ClinicalTab = () => {
         </section>
       </article>
 
-      <article className='mt-5 grid min-h-[200px] grid-cols-2'>
+      <article className='mt-20 grid min-h-[200px] grid-cols-2'>
         <section className='space-y-2 p-2'>
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>
@@ -385,15 +385,15 @@ const ClinicalTab = () => {
             </h1>
 
             <button
-              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              className='btn-primary ml-3 flex items-center'
               onClick={() => setOpenAddVitalSign(true)}
             >
               <BsPlus className='verdana16  text-green-500' />
               add Vitals
             </button>
           </div>
-          <div>
-            <table>
+          <div className='w-full'>
+            <table className='w-full'>
               <thead className='thead-primary'>
                 <tr>
                   <th className='th-first w-[60%]'>Vital Description</th>
@@ -436,7 +436,7 @@ const ClinicalTab = () => {
           <div className='flex'>
             <h1 className='verdana16  font-bold capitalize'>Allergies</h1>
             <button
-              className='ml-3 flex items-center capitalize text-orange-500 underline'
+              className='btn-primary ml-3 flex items-center'
               onClick={() => setOpenAddAllergy(true)}
             >
               <BsPlus className='verdana16  text-green-500' />
@@ -445,7 +445,7 @@ const ClinicalTab = () => {
           </div>
 
           <div>
-            <table>
+            <table className='w-full'>
               <thead className='thead-primary'>
                 <tr>
                   <th className='th-first '>Allergy Description</th>
@@ -466,7 +466,7 @@ const ClinicalTab = () => {
                   <td className='td-primary'></td>
                   <td className='td-primary'></td>
                   <td className='td-primary'>
-                    <Select size='xs' css={{ backgroundColor: '#ccc' }}>
+                    <Select size='xs' css={{ backgroundColor: '#eee' }}>
                       <option>All</option>
                       <option>All</option>
                       <option>All</option>

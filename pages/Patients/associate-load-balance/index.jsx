@@ -14,7 +14,12 @@ const AssociateLoadBalance = () => {
           <div className='flex'>
             <label htmlFor='#'>Choose Discipline:</label>
             <div className='flex items-center'>
-              <Select size={'xs'} name='' id='' className='rounded text-black'>
+              <Select
+                size={'xs'}
+                name=''
+                id=''
+                className='input-primary rounded text-black'
+              >
                 <option value='pdf'>discipline one</option>
                 <option value='pdf'>discipline two</option>
               </Select>
@@ -23,7 +28,12 @@ const AssociateLoadBalance = () => {
           <div className='flex items-center'>
             <label htmlFor='#'>Agency:</label>
             <div className='flex '>
-              <Select size={'xs'} name='' id='' className='rounded text-black'>
+              <Select
+                size={'xs'}
+                name=''
+                id=''
+                className='input-primary rounded text-black'
+              >
                 <option value='pdf'>Agency one</option>
                 <option value='pdf'>Agency two</option>
               </Select>
@@ -32,7 +42,12 @@ const AssociateLoadBalance = () => {
           <div className='flex items-center'>
             <label htmlFor='#'>Ranking:</label>
             <div className='flex '>
-              <Select size={'xs'} name='' id='' className='rounded text-black'>
+              <Select
+                size={'xs'}
+                name=''
+                id=''
+                className='input-primary rounded text-black '
+              >
                 <option value='pdf'>discipline one</option>
                 <option value='pdf'>discipline two</option>
               </Select>

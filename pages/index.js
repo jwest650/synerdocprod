@@ -1,11 +1,9 @@
 import Head from 'next/head';
-// import Calendar from '../components/dashboard/Calendar';
-// import HomepageLayout from '../components/dashboard/HomepageLayout';
-import Associates from '../components/resources/associates/Associates';
+import HomePage from '../components/home';
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full">
       <Head>
         <title>Synerdoc</title>
         <meta
@@ -14,12 +12,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Associates />
-
-      {/* <HomepageLayout>
-        <Calendar />
-      </HomepageLayout> */}
+      <HomePage />
     </div>
   );
 }

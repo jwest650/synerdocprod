@@ -42,7 +42,7 @@ const AddPatientContactModal = ({
                   </p>
 
                   <div>
-                    <Select size='xs' marginRight={5}>
+                    <Select className='input-primary' size='xs' marginRight={5}>
                       <option value='option1' className='text-gray-800'>
                         Option 1
                       </option>
@@ -84,7 +84,7 @@ const AddPatientContactModal = ({
                   </p>
 
                   <div>
-                    <Input size='xs' />
+                    <input className='input-primary' size='xs' />
                   </div>
                 </div>
 
@@ -95,7 +95,7 @@ const AddPatientContactModal = ({
                   </p>
 
                   <div>
-                    <Input size='xs' />
+                    <input className='input-primary' size='xs' />
                   </div>
                 </div>
 
@@ -106,7 +106,7 @@ const AddPatientContactModal = ({
                   </p>
 
                   <div>
-                    <Input size='xs' type='date' />
+                    <input className='input-primary' size='xs' type='date' />
                   </div>
                 </div>
                 <div className='my-2 flex'>
@@ -115,7 +115,7 @@ const AddPatientContactModal = ({
                   </p>
 
                   <div>
-                    <Select size='xs' marginRight={5}>
+                    <Select className='input-primary' size='xs' marginRight={5}>
                       <option value='option1' className='text-gray-800'>
                         1
                       </option>
@@ -134,7 +134,7 @@ const AddPatientContactModal = ({
                   </p>
 
                   <div>
-                    <Input size='xs' type='text' />
+                    <input className='input-primary' size='xs' type='text' />
                   </div>
                 </div>
                 <div className='my-2 flex'>

@@ -10,11 +10,11 @@ const ContactsTab = () => {
             <h1 className='verdana16  font-bold capitalize'>
               address / phone info
             </h1>
-            <button className='flex items-center capitalize text-orange-500 underline '>
+            <button className='btn-primary flex items-center'>
               <BsPlus className='verdana16  text-green-500' />
               add contact info
             </button>
-            <button className='flex items-center capitalize text-orange-500 underline'>
+            <button className='btn-primary flex items-center'>
               <BsPlus className='verdana16  text-green-500' />
               add service facility
             </button>
@@ -47,7 +47,7 @@ const ContactsTab = () => {
             <h1 className='verdana16  font-bold capitalize'>
               patient contacts
             </h1>
-            <button className='flex items-center capitalize text-orange-500 underline'>
+            <button className='btn-primary flex items-center'>
               <BsPlus className='verdana16  text-green-500' />
               add patient contact
             </button>

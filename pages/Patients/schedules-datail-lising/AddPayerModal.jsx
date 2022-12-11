@@ -1,9 +1,7 @@
 import {
   Modal,
-  ModalBody,
   ModalContent,
   Input,
-  ModalHeader,
   ModalOverlay,
   Select,
 } from '@chakra-ui/react'
@@ -29,11 +27,22 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
                   <div className='flex items-center space-x-2'>
                     <label htmlFor=''>*Payer name:</label>
 
-                    <Input w={200} type='text' size='sm' placeholder='' />
+                    <input
+                      className='input-primary'
+                      w={200}
+                      type='text'
+                      size='sm'
+                      placeholder=''
+                    />
                   </div>
                   <div className='flex space-x-2'>
                     <label htmlFor=''>*payer category:</label>{' '}
-                    <Select placeholder='Select option' size='xs' w={120}>
+                    <Select
+                      className='input-primary'
+                      placeholder='Select option'
+                      size='xs'
+                      w={120}
+                    >
                       <option value='option1'>Option 1</option>
                       <option value='option2'>Option 2</option>
                       <option value='option3'>Option 3</option>
@@ -41,7 +50,12 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
                   </div>
                   <div className='flex space-x-2'>
                     <label htmlFor=''>*oasis/his category:</label>{' '}
-                    <Select placeholder='Select option' size='xs' w={120}>
+                    <Select
+                      className='input-primary'
+                      placeholder='Select option'
+                      size='xs'
+                      w={120}
+                    >
                       <option value='option1'>Option 1</option>
                       <option value='option2'>Option 2</option>
                       <option value='option3'>Option 3</option>
@@ -50,7 +64,12 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
 
                   <div className='flex space-x-2'>
                     <label htmlFor=''>*claim filling type:</label>
-                    <Select placeholder='Select option' size='xs' w={120}>
+                    <Select
+                      className='input-primary'
+                      placeholder='Select option'
+                      size='xs'
+                      w={120}
+                    >
                       <option value='option1'>Option 1</option>
                       <option value='option2'>Option 2</option>
                       <option value='option3'>Option 3</option>
@@ -58,7 +77,12 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
                   </div>
                   <div className='flex space-x-2'>
                     <label htmlFor=''>*invoice type:</label>
-                    <Select placeholder='Select option' size='xs' w={120}>
+                    <Select
+                      className='input-primary'
+                      placeholder='Select option'
+                      size='xs'
+                      w={120}
+                    >
                       <option value='option1'>Option 1</option>
                       <option value='option2'>Option 2</option>
                       <option value='option3'>Option 3</option>
@@ -66,7 +90,12 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
                   </div>
                   <div className='flex space-x-2'>
                     <label htmlFor=''>*invoice cycle:</label>
-                    <Select placeholder='Select option' size='xs' w={120}>
+                    <Select
+                      className='input-primary'
+                      placeholder='Select option'
+                      size='xs'
+                      w={120}
+                    >
                       <option value='option1'>Option 1</option>
                       <option value='option2'>Option 2</option>
                       <option value='option3'>Option 3</option>
@@ -77,19 +106,42 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
                 <aside className='space-y-3'>
                   <div className='space-x-2'>
                     <label htmlFor=''>start date:</label>
-                    <Input w={200} type='date' size='sm' placeholder='' />
+                    <input
+                      className='input-primary'
+                      w={200}
+                      type='date'
+                      size='sm'
+                      placeholder=''
+                    />
                   </div>
                   <div className='space-x-2'>
                     <label htmlFor=''>end date:</label>
-                    <Input w={200} type='date' size='sm' placeholder='' />
+                    <input
+                      className='input-primary'
+                      w={200}
+                      type='date'
+                      size='sm'
+                      placeholder=''
+                    />
                   </div>
                   <div className='space-x-2'>
                     <label htmlFor=''>payer email:</label>
-                    <Input w={200} type='text' size='sm' placeholder='' />
+                    <input
+                      className='input-primary'
+                      w={200}
+                      type='text'
+                      size='sm'
+                      placeholder=''
+                    />
                   </div>
                   <div className='space-x-2'>
                     <label htmlFor=''>apply sales tax:</label>
-                    <input type='checkbox' name='' id='' />
+                    <input
+                      className='input-primary'
+                      type='checkbox'
+                      name=''
+                      id=''
+                    />
                   </div>
                 </aside>
               </section>

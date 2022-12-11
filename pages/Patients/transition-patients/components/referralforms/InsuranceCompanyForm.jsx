@@ -1,4 +1,4 @@
-import { Input, Select } from '@chakra-ui/react'
+import { Select } from '@chakra-ui/react'
 import React from 'react'
 
 const InsuranceCompanyForm = () => {
@@ -10,7 +10,7 @@ const InsuranceCompanyForm = () => {
           Referral Company:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input className='input-primary' placeholder='small size' size='xs' />
         </div>
       </div>
       <div className='my-2 flex '>
@@ -18,7 +18,7 @@ const InsuranceCompanyForm = () => {
           Email:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input className='input-primary' placeholder='small size' size='xs' />
         </div>
       </div>
 
@@ -27,7 +27,7 @@ const InsuranceCompanyForm = () => {
           Sales Rep:{' '}
         </label>
         <div className='w-[70%]'>
-          <Select size='xs'>
+          <Select size='xs' className='input-primary'>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -46,7 +46,12 @@ const InsuranceCompanyForm = () => {
           Start Date:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='Select Date and Time' size='xs' type='date' />
+          <input
+            className='input-primary'
+            placeholder='Select Date and Time'
+            size='xs'
+            type='date'
+          />
         </div>
       </div>
       <div className='my-2 flex '>
@@ -54,7 +59,12 @@ const InsuranceCompanyForm = () => {
           End Date:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='Select Date and Time' size='xs' type='date' />
+          <input
+            className='input-primary'
+            placeholder='Select Date and Time'
+            size='xs'
+            type='date'
+          />
         </div>
       </div>
     </div>

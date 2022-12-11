@@ -1,5 +1,4 @@
 import {
-  Input,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -43,7 +42,11 @@ const AddAncillaryPhoneModal = ({
                     </p>
 
                     <div>
-                      <Select size='xs' marginRight={5}>
+                      <Select
+                        className='input-primary'
+                        size='xs'
+                        marginRight={5}
+                      >
                         <option value='option1' className='text-gray-800'>
                           Option 1
                         </option>
@@ -64,9 +67,21 @@ const AddAncillaryPhoneModal = ({
                     </p>
 
                     <div className='flex'>
-                      <Input size={'xs'} value='2334' />
-                      <Input size={'xs'} value='2334' className='ml-3' />
-                      <Input size={'xs'} value='2334' className='ml-3' />
+                      <input
+                        className='input-primary'
+                        size={'xs'}
+                        value='2334'
+                      />
+                      <input
+                        className='input-primary ml-3'
+                        size={'xs'}
+                        value='2334'
+                      />
+                      <input
+                        className='input-primary ml-3'
+                        size={'xs'}
+                        value='2334'
+                      />
                     </div>
                   </div>
 
@@ -76,7 +91,11 @@ const AddAncillaryPhoneModal = ({
                     </p>
 
                     <div className='flex'>
-                      <Input size={'xs'} value='2334' />
+                      <input
+                        className='input-primary'
+                        size={'xs'}
+                        value='2334'
+                      />
                     </div>
                   </div>
                   <div className='my-2 flex'>

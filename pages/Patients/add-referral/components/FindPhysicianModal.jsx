@@ -38,8 +38,16 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                       Last/First:
                     </p>
                     <div className='flex w-[100%]'>
-                      <Input size={'xs'} type='text' />
-                      <Input size={'xs'} className='ml-3' type='text' />
+                      <input
+                        className='input-primary'
+                        size={'xs'}
+                        type='text'
+                      />
+                      <input
+                        size={'xs'}
+                        className='input-primary ml-3'
+                        type='text'
+                      />
                     </div>
                     <div className='ml-2 flex justify-end'>
                       <button className='rounded bg-secondary-color px-4  text-white shadow'>

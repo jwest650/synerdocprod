@@ -16,24 +16,24 @@ const EncounterHeader = () => {
           <h2 className='text-lg font-semibold tracking-wide'>Smith Joseph</h2>
           <div className='flex '>
             <div className='flex'>
-              <p
-                className='verdana13 ml-3  cursor-pointer text-secondary-color underline'
+              <button
+                className='verdana13 btn-primary  ml-3 cursor-pointer'
                 onClick={() => setOpenActivatePatient(true)}
               >
                 [Activate Patient]
-              </p>
-              <p className='verdana13 ml-3  cursor-pointer text-secondary-color underline'>
+              </button>
+              <button className='verdana13 btn-primary  ml-3 cursor-pointer'>
                 [Decline Referral]
-              </p>
-              <p
-                className='verdana13 ml-3  cursor-pointer text-secondary-color underline'
+              </button>
+              <button
+                className='verdana13 btn-primary  ml-3 cursor-pointer'
                 onClick={() => setOpenScheduleService(true)}
               >
                 [schedule initial service]
-              </p>
-              <p className='verdana13 ml-3  cursor-pointer text-secondary-color underline'>
+              </button>
+              <button className='verdana13 btn-primary  ml-3 cursor-pointer'>
                 [Patient Fact Report]
-              </p>
+              </button>
             </div>
           </div>
         </div>

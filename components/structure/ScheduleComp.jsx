@@ -18,7 +18,7 @@ const ScheduleComp = ({ setEventsData, eventsData }) => {
   const handleSave = (args) => {
     setTimeout(() => {
       const newEvents = events?.getEvents();
-      setEventsData(newEvents);
+      setEventsData && setEventsData(newEvents);
     }, 100);
   };
   return (
@@ -26,7 +26,7 @@ const ScheduleComp = ({ setEventsData, eventsData }) => {
       cssClass="schedule"
       height="453px"
       ref={(schedule) => setEvents(schedule)}
-      selectedDate={new Date(2021, 0, 10)}
+      selectedDate={new Date('2022-11-02')} // month is in the middle and it actually starts from 0
       currentView="Month"
       activeCellsData={(e) => console.log(e)}
       actionComplete={handleSave}
