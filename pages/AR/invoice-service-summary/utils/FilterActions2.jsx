@@ -29,11 +29,6 @@ const useFilterActions2 = (values, setvalues, group2, setgroup2) => {
         const selection = document.getSelection();
         if (!selection.anchorNode) return;
 
-        if (
-            selection.focusNode.parentElement.closest("div").className !=
-            "parent2"
-        )
-            return;
         const range = selection.getRangeAt(0);
         if (range.cloneContents().childElementCount > 0) {
             range
@@ -58,8 +53,6 @@ const useFilterActions2 = (values, setvalues, group2, setgroup2) => {
         const selection = document.getSelection();
         if (!selection.anchorNode) return;
 
-        if (selection.focusNode.parentElement.closest("div").id != "parent2")
-            return;
         const range = selection.getRangeAt(0);
         if (range.cloneContents().childElementCount > 0) {
             range
