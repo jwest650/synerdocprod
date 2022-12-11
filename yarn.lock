@@ -1262,19 +1262,6 @@
   dependencies:
     "tslib" "^2.4.0"
 
-<<<<<<< HEAD
-"@syncfusion/ej2-base@~20.3.50", "@syncfusion/ej2-base@~20.3.56":
-  version "20.3.56"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-base/-/ej2-base-20.3.56.tgz#96ed9028816f4892a3f2a2eb9cb1009a9bcfde31"
-  integrity sha512-BeXX3XBOs1kv9/rki9f1kPuLbNJU06kJE8o0jLY62fEd/U5k2KkuG5Z/WbWHJIuQVH5dv57ZM2Adl3rG+vkvjg==
-  dependencies:
-    "@syncfusion/ej2-icons" "~20.3.56"
-
-"@syncfusion/ej2-buttons@20.3.58", "@syncfusion/ej2-buttons@~20.3.50", "@syncfusion/ej2-buttons@~20.3.56", "@syncfusion/ej2-buttons@~20.3.57", "@syncfusion/ej2-buttons@~20.3.58":
-  version "20.3.58"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-buttons/-/ej2-buttons-20.3.58.tgz#750900f0eb5a356d64ba73783001a32d88e3c65f"
-  integrity sha512-FfCdxr+2UD4TaznJu9389g6G9HNzakwq/gTiwyckNSUrMdSSDHLCqIv591HXV+XGoGNJ7Svmhj8kfHv3xoEuVQ==
-=======
 "@syncfusion/ej2-base@~20.3.47", "@syncfusion/ej2-base@~20.3.50", "@syncfusion/ej2-base@~20.3.56":
   "integrity" "sha512-BeXX3XBOs1kv9/rki9f1kPuLbNJU06kJE8o0jLY62fEd/U5k2KkuG5Z/WbWHJIuQVH5dv57ZM2Adl3rG+vkvjg=="
   "resolved" "https://registry.npmjs.org/@syncfusion/ej2-base/-/ej2-base-20.3.56.tgz"
@@ -1286,7 +1273,6 @@
   "integrity" "sha512-FfCdxr+2UD4TaznJu9389g6G9HNzakwq/gTiwyckNSUrMdSSDHLCqIv591HXV+XGoGNJ7Svmhj8kfHv3xoEuVQ=="
   "resolved" "https://registry.npmjs.org/@syncfusion/ej2-buttons/-/ej2-buttons-20.3.58.tgz"
   "version" "20.3.58"
->>>>>>> e8b7b49a770078d2fab2a37753340ce4c2e7a67c
   dependencies:
     "@syncfusion/ej2-base" "~20.3.56"
 
@@ -1295,27 +1281,6 @@
   resolved "https://registry.npmjs.org/@syncfusion/ej2-calendars/-/ej2-calendars-20.3.59.tgz"
   integrity sha512-qbvW2gUQtHaJP1JGq8KSW8juQYvYCph/DccWsTo0tzxXzdpV43Rqa4NTV1vQ3YbKU45BOr04aPwxepv5ELoRZQ==
   dependencies:
-<<<<<<< HEAD
-    "@syncfusion/ej2-base" "~20.3.56"
-    "@syncfusion/ej2-buttons" "~20.3.58"
-    "@syncfusion/ej2-inputs" "~20.3.57"
-    "@syncfusion/ej2-lists" "~20.3.56"
-    "@syncfusion/ej2-popups" "~20.3.59"
-
-"@syncfusion/ej2-compression@~20.3.56":
-  version "20.3.56"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-compression/-/ej2-compression-20.3.56.tgz#e91ae39b92499b05832dcc991783824b1da90544"
-  integrity sha512-w/GAcaUlYhwwIpMCHG2p77vacM3FHYJP6Gy0Ha0lzkt2e30/aukeJO4MQUxViZLAe9lBYQnuIsWqSvZbZaa4BA==
-  dependencies:
-    "@syncfusion/ej2-file-utils" "~20.3.56"
-
-"@syncfusion/ej2-data@~20.3.56", "@syncfusion/ej2-data@~20.3.60":
-  version "20.3.60"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-data/-/ej2-data-20.3.60.tgz#ba28835c0ee71f6853d96c801dcb7c744c22c2e4"
-  integrity sha512-cbs5UnLENJOApNPRulS4HSkVZFND0RQ0SjzQ2YsHe7FyKNQAqZcZbigOZwn5DUidZ0jCQOHXqP8f50g6wE9IvA==
-  dependencies:
-=======
->>>>>>> e8b7b49a770078d2fab2a37753340ce4c2e7a67c
     "@syncfusion/ej2-base" "~20.3.56"
     "@syncfusion/ej2-buttons" "~20.3.58"
     "@syncfusion/ej2-inputs" "~20.3.57"
@@ -1366,17 +1331,10 @@
   "resolved" "https://registry.npmjs.org/@syncfusion/ej2-icons/-/ej2-icons-20.3.56.tgz"
   "version" "20.3.56"
 
-<<<<<<< HEAD
-"@syncfusion/ej2-inputs@20.3.57", "@syncfusion/ej2-inputs@~20.3.50", "@syncfusion/ej2-inputs@~20.3.57":
-  version "20.3.57"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-inputs/-/ej2-inputs-20.3.57.tgz#bfda861e5b9dbf765b990d42b1d1ecc1ef0c5909"
-  integrity sha512-klzpmszCw1PxIc5HtqRxliNB53G4w9ac1Roo6+jzzgiTjgzM0ZTUrteJlicQLwHGWXzKD0qvtEF/lvqFhqJ9eQ==
-=======
 "@syncfusion/ej2-inputs@~20.3.50", "@syncfusion/ej2-inputs@~20.3.57", "@syncfusion/ej2-inputs@20.3.57":
   "integrity" "sha512-klzpmszCw1PxIc5HtqRxliNB53G4w9ac1Roo6+jzzgiTjgzM0ZTUrteJlicQLwHGWXzKD0qvtEF/lvqFhqJ9eQ=="
   "resolved" "https://registry.npmjs.org/@syncfusion/ej2-inputs/-/ej2-inputs-20.3.57.tgz"
   "version" "20.3.57"
->>>>>>> e8b7b49a770078d2fab2a37753340ce4c2e7a67c
   dependencies:
     "@syncfusion/ej2-base" "~20.3.56"
     "@syncfusion/ej2-buttons" "~20.3.57"
@@ -1384,15 +1342,9 @@
     "@syncfusion/ej2-splitbuttons" "~20.3.56"
 
 "@syncfusion/ej2-lists@~20.3.50", "@syncfusion/ej2-lists@~20.3.56":
-<<<<<<< HEAD
-  version "20.3.56"
-  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-lists/-/ej2-lists-20.3.56.tgz#77726cf2d3040105c8bc8dc390982f7d16c11869"
-  integrity sha512-I7BizR/RANyxzwSV+tuJMwN5sK2GHi7tOZpiaIGE8b5sm6ygffR9cIniomDvt4lz4JhmBeBrTpzJbpj4XjbCFQ==
-=======
   "integrity" "sha512-I7BizR/RANyxzwSV+tuJMwN5sK2GHi7tOZpiaIGE8b5sm6ygffR9cIniomDvt4lz4JhmBeBrTpzJbpj4XjbCFQ=="
   "resolved" "https://registry.npmjs.org/@syncfusion/ej2-lists/-/ej2-lists-20.3.56.tgz"
   "version" "20.3.56"
->>>>>>> e8b7b49a770078d2fab2a37753340ce4c2e7a67c
   dependencies:
     "@syncfusion/ej2-base" "~20.3.56"
     "@syncfusion/ej2-buttons" "~20.3.56"
