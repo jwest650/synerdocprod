@@ -5,8 +5,8 @@ import {
     RxDoubleArrowLeft,
     RxDoubleArrowRight,
 } from "react-icons/rx";
-import useFilterActions from "./utils/FilterActions";
-import useFilterActions2 from "./utils/FilterActions2";
+import useFilterActions from "./utils/useFilterActions";
+import useFilterActions2 from "./utils/useFilterActions2";
 const Filters = () => {
     const [values, setvalues] = useState([...filters]);
     const [group1, setgroup1] = useState([]);
