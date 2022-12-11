@@ -41,7 +41,7 @@ const MySchedule = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-end">
+      <div className="flex items-center justify-end gap-3">
         <div className="flex items-center gap-2">
           <p>Show Services without a service note attached</p>
           <input type="checkbox" className="input-primary" />
@@ -51,42 +51,7 @@ const MySchedule = () => {
           <TableSelect options={['All']} />
         </div>
       </div>
-
       <MyScheduleTable />
-
-      {/* <table className="mt-3 w-full">
-        <thead className="thead-primary">
-          <tr>
-             </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <TableSelect option={['All', 'Option2']} />
-            </td>
-            <td>
-              <TableSelect option={['All', 'Option2']} />
-            </td>
-            <td>
-              <TableSelect option={['Guest Guest', 'Option2']} />
-            </td>
-            <td>
-              <TableSelect option={['All', 'Option2']} />
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <TableSelect option={['All', 'Option2']} />
-            </td>
-            <td>
-              <TableSelect option={['Unverified', 'Option2']} />
-            </td>
-            <td></td>
-          </tr>
-          <tr>No recordes to display</tr>
-        </tbody>
-      </table> */}
     </div>
   );
 };
