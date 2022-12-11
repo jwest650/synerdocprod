@@ -30,7 +30,7 @@ body {
 }
 
 .container-primary {
-  @apply verdana11 mt-5 min-h-screen w-full rounded border border-gray-200/50 p-5 shadow-lg;
+    @apply verdana11 mt-5 min-h-screen w-full rounded border border-gray-200/50 p-5 shadow-lg;
 }
 
 .w-signature {
@@ -83,7 +83,7 @@ body {
     font-size: 18px;
 }
 .card-primary {
-  @apply rounded bg-secondary-blue p-3 shadow-md;
+    @apply rounded bg-secondary-blue p-3 shadow-md;
 }
 
 .btn-primary {
@@ -102,11 +102,7 @@ body {
     @apply verdana11 rounded border border-secondary-blue px-3 py-[2px] text-black shadow outline-none;
 }
 .input-date {
-<<<<<<< HEAD
-    @apply verdana11 w-[97px] rounded border border-secondary-blue px-3 text-black shadow outline-none;
-=======
-  @apply verdana11 w-[97px] rounded border border-secondary-blue py-[2px] px-3 text-black shadow outline-none;
->>>>>>> e8b7b49a770078d2fab2a37753340ce4c2e7a67c
+    @apply verdana11 w-[97px] rounded border border-secondary-blue py-[2px] px-3 text-black shadow outline-none;
 }
 .thead-primary {
     @apply verdana11 border-b bg-primary-blue tracking-wider text-white;
@@ -177,11 +173,7 @@ body {
 }
 
 .date-anim {
-<<<<<<< HEAD
-    animation: dateAnim 0.6s forwards ease-in-out;
-=======
-  animation: dateAnim 0.5s forwards ease-in-out;
->>>>>>> e8b7b49a770078d2fab2a37753340ce4c2e7a67c
+    animation: dateAnim 0.5s forwards ease-in-out;
 }
 
 @keyframes dateAnim {
@@ -203,20 +195,14 @@ body {
         height: 0rem;
     }
 
-<<<<<<< HEAD
-    100% {
-        height: 13rem;
+    99% {
+        height: 11rem;
     }
-=======
-  99% {
-    height: 11rem;
-  }
 
-  100% {
-    height: fit-content;
-    max-height: 12.5rem;
-  }
->>>>>>> e8b7b49a770078d2fab2a37753340ce4c2e7a67c
+    100% {
+        height: fit-content;
+        max-height: 12.5rem;
+    }
 }
 .bezier-nav2 {
     animation: bezz2 0.8s forwards ease-in-out;
@@ -252,72 +238,67 @@ body {
 
 /* SHEDULER */
 
-<<<<<<< HEAD
-.e-schedule .e-month-view .e-content-table {
-    height: 70%;
-=======
 .schedule {
-  @apply rounded-lg shadow-md;
->>>>>>> e8b7b49a770078d2fab2a37753340ce4c2e7a67c
+    @apply rounded-lg shadow-md;
 }
 
 /* Services */
 .e-schedule .e-schedule-toolbar .e-tbar-btn .e-tbar-btn-text {
-  cursor: pointer;
-  font-size: 13px;
-  text-transform: none;
+    cursor: pointer;
+    font-size: 13px;
+    text-transform: none;
 }
 
 /* Calendar */
 .e-schedule
-  .e-schedule-toolbar
-  .e-toolbar-items
-  .e-toolbar-item.e-date-range
-  .e-tbar-btn
-  .e-tbar-btn-text {
-  font-size: 12px;
-  text-transform: initial;
+    .e-schedule-toolbar
+    .e-toolbar-items
+    .e-toolbar-item.e-date-range
+    .e-tbar-btn
+    .e-tbar-btn-text {
+    font-size: 12px;
+    text-transform: initial;
 }
 
 /* Today */
 .e-toolbar
-  .e-toolbar-items.e-tbar-pos
-  .e-toolbar-right:last-child
-  > div:nth-child(1) {
-  right: 0;
-  display: none;
+    .e-toolbar-items.e-tbar-pos
+    .e-toolbar-right:last-child
+    > div:nth-child(1) {
+    right: 0;
+    display: none;
 }
 
 /* Bar */
 .e-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
-  height: 24px;
-  display: none;
-  vertical-align: middle;
+    height: 24px;
+    display: none;
+    vertical-align: middle;
 }
 
 /* Days of the week */
 .e-schedule .e-month-view .e-date-header-wrap table td,
 .e-schedule .e-month-agenda-view .e-date-header-wrap table td {
-  background-color: #fff;
-  border-color: #e5e7eb;
-  border-style: solid;
-  border-width: 0 0 1px 1px;
-  color: #374151;
-  font-size: 11px;
-  text-align: center;
-  text-transform: uppercase;
+    background-color: #fff;
+    border-color: #e5e7eb;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    color: #374151;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Cells */
 .e-schedule .e-month-view .e-work-cells,
 .e-schedule .e-month-agenda-view .e-work-cells {
-  background-color: #f9fafb;
-  border-color: #e5e7eb;
-  border-style: solid;
-  border-width: 0 0 1px 1px;
-  color: #111827;
-  font-size: 11px;
-  padding: 0;
+    background-color: #f9fafb;
+    border-color: #e5e7eb;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    color: #111827;
+    font-size: 11px;
+    padding: 0;
 }
 
 /* Cells Height */
@@ -326,34 +307,34 @@ body {
   height: 70%;
 } */
 .e-schedule .e-month-view .e-work-cells {
-  height: 75px;
-  vertical-align: top;
-  width: 36px;
+    height: 75px;
+    vertical-align: top;
+    width: 36px;
 }
 /*each event */
 .e-schedule .e-month-view .e-appointment .e-appointment-details .e-subject {
-  -ms-flex: auto;
-  flex: auto;
-  font-size: 11px;
-  font-weight: 500;
-  overflow: hidden;
-  padding: 1px 2px;
-  text-overflow: ellipsis;
+    -ms-flex: auto;
+    flex: auto;
+    font-size: 11px;
+    font-weight: 500;
+    overflow: hidden;
+    padding: 1px 2px;
+    text-overflow: ellipsis;
 }
 
 /* Add event small */
 
 /* Header */
 .e-quick-popup-wrapper
-  .e-cell-popup
-  .e-popup-content
-  .e-popup-table
-  .e-subject {
-  font-size: 14px;
-  height: 40px;
-  height: 30px;
-  line-height: 22px;
-  padding: 2px 10px;
+    .e-cell-popup
+    .e-popup-content
+    .e-popup-table
+    .e-subject {
+    font-size: 14px;
+    height: 40px;
+    height: 30px;
+    line-height: 22px;
+    padding: 2px 10px;
 }
 
 /* body */
@@ -367,16 +348,16 @@ body {
 .e-quick-popup-wrapper .e-event-popup .e-time-zone-details,
 .e-quick-popup-wrapper .e-event-popup .e-description-details,
 .e-quick-popup-wrapper .e-event-popup .e-resource-details {
-  color: #111827;
-  cursor: default;
-  font-size: 12px;
+    color: #111827;
+    cursor: default;
+    font-size: 12px;
 }
 
 /* foooter */
 .e-schedule .e-text-ellipsis {
-  overflow: hidden;
-  font-size: 12px;
-  text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    text-overflow: ellipsis;
 }
 
 /* SHEDULER END*/
