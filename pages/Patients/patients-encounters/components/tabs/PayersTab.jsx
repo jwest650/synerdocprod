@@ -12,13 +12,13 @@ const PayersTab = () => {
     <div className='verdana13'>
       <div className='flex'>
         <h1 className=' text-xl font-bold'>Payer</h1>
-        <p
-          className='ml-5 cursor-pointer text-secondary-color underline'
+        <button
+          className='btn-primary ml-5 mb-2 flex items-center'
           onClick={() => setOpenAddPayer(true)}
         >
           <BsPlus className='verdana16  text-green-500' />
           Add Payer
-        </p>
+        </button>
       </div>
 
       <section className=' min-h-[200px]'>

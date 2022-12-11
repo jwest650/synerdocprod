@@ -24,7 +24,12 @@ const VerifyServiceInMass = () => {
         <div className='flex'>
           <p>Agency:</p>
           <div className='flex space-x-2'>
-            <Select name='' id='' className='rounded text-black' size='xs'>
+            <Select
+              name=''
+              id=''
+              className='input-primary rounded text-black'
+              size='xs'
+            >
               <option value='pdf'>Accra Home Care</option>
               <option value='pdf'>Accra Home Care</option>
               <option value='pdf'>Accra Home Care</option>
@@ -35,7 +40,12 @@ const VerifyServiceInMass = () => {
         <div className='flex'>
           <p>Associate:</p>
           <div className='flex space-x-2'>
-            <Select name='' id='' className='rounded text-black' size='xs'>
+            <Select
+              name=''
+              id=''
+              className='input-primary rounded text-black'
+              size='xs'
+            >
               <option value='pdf'>All</option>
               <option value='pdf'>All</option>
               <option value='pdf'>All</option>
@@ -46,7 +56,12 @@ const VerifyServiceInMass = () => {
         <div className='flex'>
           <p>Patient:</p>
           <div className='flex space-x-2'>
-            <Select name='' id='' className='rounded text-black' size='xs'>
+            <Select
+              name=''
+              id=''
+              className='input-primary rounded text-black'
+              size='xs'
+            >
               <option value='pdf'>James Lane</option>
               <option value='pdf'>James Lane</option>
               <option value='pdf'>James Lane</option>
@@ -56,14 +71,21 @@ const VerifyServiceInMass = () => {
         <div className='flex'>
           <p>Service Date From:</p>
           <div className='flex '>
-            <Input placeholder='small size' size='xs' ml={'3'} type={'date'} />
+            <input
+              className='input-primary'
+              placeholder='small size'
+              size='xs'
+              ml={'3'}
+              type={'date'}
+            />
           </div>
         </div>
         <div className='flex'>
           <div className='flex'>
             <p>To:</p>
             <div className='flex '>
-              <Input
+              <input
+                className='input-primary'
                 placeholder='small size'
                 size='xs'
                 ml={'3'}
@@ -83,7 +105,12 @@ const VerifyServiceInMass = () => {
         <div className='flex'>
           <p>Patient Team:</p>
           <div className='flex space-x-2'>
-            <Select name='' id='' className='rounded text-black' size='xs'>
+            <Select
+              name=''
+              id=''
+              className='input-primary rounded text-black'
+              size='xs'
+            >
               <option value='pdf'>Accra Home Care</option>
               <option value='pdf'>Accra Home Care</option>
               <option value='pdf'>Accra Home Care</option>
@@ -94,7 +121,12 @@ const VerifyServiceInMass = () => {
         <div className='flex'>
           <p>Service Category:</p>
           <div className='flex space-x-2'>
-            <Select name='' id='' className='rounded text-black' size='xs'>
+            <Select
+              name=''
+              id=''
+              className='input-primary rounded text-black'
+              size='xs'
+            >
               <option value='pdf'>All</option>
               <option value='pdf'>All</option>
               <option value='pdf'>All</option>
@@ -143,7 +175,10 @@ const VerifyServiceInMass = () => {
                 </td>
                 <td className=' td-primary'>
                   <div className='flex space-x-2'>
-                    <Select className='rounded text-black' size='xs'>
+                    <Select
+                      className='input-primary rounded text-black'
+                      size='xs'
+                    >
                       <option value='pdf'></option>
                       <option value='pdf'></option>
                       <option value='pdf'></option>
@@ -159,7 +194,7 @@ const VerifyServiceInMass = () => {
                     <Select
                       name=''
                       id=''
-                      className='rounded text-black'
+                      className='input-primary rounded text-black '
                       size='xs'
                     >
                       <option value='pdf'>All</option>
@@ -169,20 +204,20 @@ const VerifyServiceInMass = () => {
                   </div>
                 </td>
                 <td className=' td-primary'>
-                  <Input size='xs' type='date' />
+                  <input className='input-primary' size='xs' type='date' />
                 </td>
                 <td className=' td-primary'>
-                  <Input size='xs' type='text' />
+                  <input className='input-primary' size='xs' type='text' />
                 </td>
                 <td className=' td-primary'>
-                  <Input size='xs' type='text' />
+                  <input className='input-primary' size='xs' type='text' />
                 </td>
                 <td className=' td-primary'>
                   <div className='flex space-x-2'>
                     <Select
                       name=''
                       id=''
-                      className='rounded text-black'
+                      className='input-primary rounded text-black'
                       size='xs'
                     >
                       <option value='pdf'>All</option>
@@ -192,31 +227,31 @@ const VerifyServiceInMass = () => {
                   </div>
                 </td>
                 <td className=' td-primary'>
-                  <Input size='xs' type='text' />
+                  <input className='input-primary' size='xs' type='text' />
                 </td>
                 <td className=' td-primary'>
-                  <Input size='xs' type='text' />
-                </td>
-                <td className=' td-primary'>
-                  <Checkbox defaultChecked></Checkbox>
-                </td>
-                <td className=' td-primary'>
-                  <Input size='xs' type='text' />
-                </td>
-                <td className=' td-primary'>
-                  <Input size='xs' type='text' />
+                  <input className='input-primary' size='xs' type='text' />
                 </td>
                 <td className=' td-primary'>
                   <Checkbox defaultChecked></Checkbox>
                 </td>
                 <td className=' td-primary'>
-                  <Input size='xs' type='text' />
+                  <input className='input-primary' size='xs' type='text' />
                 </td>
                 <td className=' td-primary'>
-                  <Input size='xs' type='text' />
+                  <input className='input-primary' size='xs' type='text' />
                 </td>
                 <td className=' td-primary'>
-                  <Input size='xs' type='text' />
+                  <Checkbox defaultChecked></Checkbox>
+                </td>
+                <td className=' td-primary'>
+                  <input className='input-primary' size='xs' type='text' />
+                </td>
+                <td className=' td-primary'>
+                  <input className='input-primary' size='xs' type='text' />
+                </td>
+                <td className=' td-primary'>
+                  <input className='input-primary' size='xs' type='text' />
                 </td>
 
                 <td className=' td-primary'>
@@ -224,7 +259,7 @@ const VerifyServiceInMass = () => {
                     <Select
                       name=''
                       id=''
-                      className='rounded text-black'
+                      className='input-primary rounded text-black'
                       size='xs'
                     >
                       <option value='pdf'>All</option>

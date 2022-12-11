@@ -17,7 +17,12 @@ const AutomatedServiceVerificationErrors = () => {
           <div className='ml-2 flex items-center space-x-3'>
             <p>Agency: </p>
             <div className='ml-3 flex w-[150px] space-x-2'>
-              <Select name='' id='' className='rounded text-black' size='xs'>
+              <Select
+                name=''
+                id=''
+                className='input-primary rounded text-black'
+                size='xs'
+              >
                 <option value='pdf'>All </option>
                 <option value='pdf'>All </option>
                 <option value='pdf'>All </option>
@@ -28,7 +33,12 @@ const AutomatedServiceVerificationErrors = () => {
           <div className='ml-3 flex items-center space-x-5'>
             <div className='my-2 flex '>
               <div>
-                <Input placeholder='small size' size='xs' width={300} />
+                <input
+                  className='input-primary'
+                  placeholder='small size'
+                  size='xs'
+                  width={300}
+                />
               </div>
               <button className='ml-3 rounded border bg-secondary-color px-2 text-sm font-medium text-white'>
                 Search
@@ -59,7 +69,7 @@ const AutomatedServiceVerificationErrors = () => {
                   <Select
                     size='xs'
                     css={{ backgroundColor: '#eee', border: 'none' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -76,7 +86,7 @@ const AutomatedServiceVerificationErrors = () => {
                   <Select
                     size='xs'
                     css={{ backgroundColor: '#eee', border: 'none' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -93,7 +103,7 @@ const AutomatedServiceVerificationErrors = () => {
                   <Select
                     size='xs'
                     css={{ backgroundColor: '#eee', border: 'none' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -111,7 +121,7 @@ const AutomatedServiceVerificationErrors = () => {
                   <Select
                     size='xs'
                     css={{ backgroundColor: '#eee', border: 'none' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1

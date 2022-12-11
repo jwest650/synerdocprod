@@ -22,7 +22,12 @@ const DisasterPlan = () => {
         <div className='flex items-center'>
           <div className='flex items-center space-x-3'>
             <div className='flex space-x-2'>
-              <Select name='' id='' className='rounded text-black' size='xs'>
+              <Select
+                name=''
+                id=''
+                className='input-primary rounded text-black'
+                size='xs'
+              >
                 <option value='pdf'>PDF Summary</option>
                 <option value='spreadsheet'>Spreadsheet Summary</option>
               </Select>
@@ -33,13 +38,20 @@ const DisasterPlan = () => {
           </div>
           <div className='flex'>
             <div className='flex '>
-              <Input
+              <input
+                className='input-primary'
                 placeholder='small size'
                 size='xs'
                 ml={'3'}
                 type={'text'}
               />
-              <Input placeholder='small size' size='xs' type={'text'} ml={3} />
+              <input
+                className='input-primary'
+                placeholder='small size'
+                size='xs'
+                type={'text'}
+                ml={3}
+              />
             </div>
             <button className='text-medium ml-3 rounded border  bg-orange-600 px-2 text-white'>
               Search

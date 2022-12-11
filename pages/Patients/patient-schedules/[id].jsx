@@ -118,7 +118,7 @@ const PatientScheduleDetails = () => {
               <div className="ml-2 flex  items-center">
                 <p className="font-xs">Patient schedule for:</p>
                 <div>
-                  <Select size={'xs'}>
+                  <Select className='input-primary' size={'xs'}>
                     <option>John Mason</option>
                     <option>John Mason</option>
                     <option>John Mason</option>
@@ -136,7 +136,7 @@ const PatientScheduleDetails = () => {
               <div className="ml-2 flex  items-center">
                 <p className="font-xs">Choose Disipline:</p>
                 <div>
-                  <Select size={'xs'}>
+                  <Select className='input-primary' size={'xs'}>
                     <option>Skilled Nurse</option>
                     <option>Skilled Nurse</option>
                     <option>Skilled Nurse</option>

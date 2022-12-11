@@ -1,11 +1,8 @@
 import {
   Checkbox,
-  Input,
   Modal,
   ModalBody,
-  ModalCloseButton,
   ModalContent,
-  ModalHeader,
   ModalOverlay,
   Select,
 } from '@chakra-ui/react'
@@ -23,16 +20,18 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
-          <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
+        <ModalContent maxWidth={900} className='verdana13 '>
+          <div className=' rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalBody>
               <div className='mb-3'>
-                <h1 className=' text-2xl font-bold'>Add Address/Phone Info</h1>
+                <h1 className=' verdana18  font-bold'>
+                  Add Address/Phone Info
+                </h1>
                 <p>add information and save</p>
               </div>
 
               <section className='justify-betweeen flex'>
-                <div className='flex-1 border-r-2 p-2'>
+                <div className=' w-[60%] border-r-2 p-2'>
                   <div className='my-2 flex'>
                     <p className='mr-3 w-[150px] text-right font-semibold'>
                       <span className='font-bold text-secondary-color'>*</span>
@@ -40,7 +39,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Select size='xs'>
+                      <Select size='xs' className='input-primary'>
                         <option value='option1' className='text-gray-800'>
                           Option 1
                         </option>
@@ -61,7 +60,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} />
+                      <input className='input-primary' size={'xs'} />
                     </div>
                   </div>
 
@@ -71,7 +70,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} />
+                      <input className='input-primary' size={'xs'} />
                     </div>
                   </div>
                   <div className='my-2 flex'>
@@ -81,10 +80,10 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} />
+                      <input className='input-primary' size={'xs'} />
 
                       <div className='ml-1 flex-1'>
-                        <Select size='xs'>
+                        <Select size='xs' className='input-primary'>
                           <option value='option1' className='text-gray-800'>
                             La
                           </option>
@@ -97,7 +96,11 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                         </Select>
                       </div>
 
-                      <Input size={'xs'} value='2334' className='ml-1' />
+                      <input
+                        size={'xs'}
+                        value='2334'
+                        className='input-primary ml-1 w-[50px]'
+                      />
                     </div>
                   </div>
                   <div className='my-2 flex'>
@@ -106,7 +109,11 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </p>
 
                     <div className=' w-[70%]'>
-                      <Select size='xs' marginRight={5}>
+                      <Select
+                        size='xs'
+                        marginRight={5}
+                        className='input-primary'
+                      >
                         <option value='option1' className='text-gray-800'>
                           select
                         </option>
@@ -125,9 +132,21 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} value='2334' />
-                      <Input size={'xs'} value='2334' className='ml-1' />
-                      <Input size={'xs'} value='2334' className='ml-1' />
+                      <input
+                        className='input-primary w-[50px]'
+                        size={'xs'}
+                        value='2334'
+                      />
+                      <input
+                        size={'xs'}
+                        value='2334'
+                        className='input-primary ml-1 w-[50px]'
+                      />
+                      <input
+                        size={'xs'}
+                        value='2334'
+                        className='input-primary ml-1 w-[50px]'
+                      />
                     </div>
                   </div>
 
@@ -138,11 +157,11 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   </div>
                 </div>
 
-                <div className='first-letter: flex w-[100%] flex-1 flex-col justify-between p-2'>
+                <div className=' flex   flex-1 flex-col justify-between p-2'>
                   <table className=' min-w-full overflow-auto text-xs'>
                     <thead className='thead-primary'>
                       <tr>
-                        <th className=' th-first'>Preffered</th>
+                        <th className='th-first'>Preffered</th>
                         <th className=' th-middle'>Phone Type</th>
                         <th className=' th-middle'>Phone</th>
                         <th className=' th-last'></th>
@@ -161,7 +180,10 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                           </td>
                           <td className='td-primary'>Home</td>
                           <td className='td-primary'>233454545</td>
-                          <td className='td-primary'>
+                          <td
+                            // className='border border-gray-400'
+                            className=' td-primary'
+                          >
                             <FiTrash2 />
                           </td>
                         </tr>

@@ -25,11 +25,11 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent maxWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
-              Find Referral Source
-              <p className='text-sm text-gray-600'>
+              <h1 className='verdana18'>Find Referral Source</h1>
+              <p className='verdana13  text-gray-600'>
                 Find referral source/add referral source if not found.
               </p>
             </ModalHeader>
@@ -43,11 +43,20 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
                   First/Last:{' '}
                 </label>
                 <div className='flex w-[60%]'>
-                  <Input placeholder='small size' size='sm' mr={'3'} />
-                  <Input placeholder='small size' size='sm' />
+                  <input
+                    className='input-primary'
+                    placeholder='small size'
+                    size='xs'
+                    mr={'3'}
+                  />
+                  <input
+                    className='input-primary'
+                    placeholder='small size'
+                    size='xs'
+                  />
                 </div>
               </div>
-              <div className='my-2 flex '>
+              <div className='my-2 flex items-center'>
                 <label
                   htmlFor='#'
                   className='mr-2 w-[40%] text-right font-semibold'
@@ -55,25 +64,28 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
                   Facility Name/Referral Company:{' '}
                 </label>
                 <div className='w-[60%]'>
-                  <Input placeholder='small size' size='sm' />
+                  <input
+                    className='input-primary'
+                    placeholder='small size'
+                    size='xs'
+                  />
                 </div>
-              </div>
-
-              <div className='flex justify-end'>
-                <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
-                  Search
-                </button>
+                <div className='ml-3 flex justify-end'>
+                  <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                    Search
+                  </button>
+                </div>
               </div>
 
               <div>
                 <table className='mt-10 min-w-full overflow-auto'>
                   <thead className='thead-primary'>
                     <tr>
-                      <th className=' td-first'>Select</th>
-                      <th className=' td-middle'>Name</th>
-                      <th className=' td-middle'>Type</th>
-                      <th className=' td-middle'>Preferred number</th>
-                      <th className=' td-last'>Referral Address</th>
+                      <th className=' th-first'>Select</th>
+                      <th className=' th-middle'>Name</th>
+                      <th className=' th-middle'>Type</th>
+                      <th className=' th-middle'>Preferred number</th>
+                      <th className=' th-last'>Referral Address</th>
                     </tr>
                   </thead>
                   <tbody>

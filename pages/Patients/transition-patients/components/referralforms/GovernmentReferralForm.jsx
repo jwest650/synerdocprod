@@ -1,4 +1,4 @@
-import { Input, Select } from '@chakra-ui/react'
+import { Select } from '@chakra-ui/react'
 import React from 'react'
 
 const GovernmentReferralForm = () => {
@@ -10,7 +10,7 @@ const GovernmentReferralForm = () => {
           Referral Company:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input className='input-primary' placeholder='small size' size='xs' />
         </div>
       </div>
       <div className='my-2 flex '>
@@ -18,7 +18,7 @@ const GovernmentReferralForm = () => {
           Email:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input className='input-primary' placeholder='small size' size='xs' />
         </div>
       </div>
 
@@ -46,7 +46,12 @@ const GovernmentReferralForm = () => {
           Start Date:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='Select Date and Time' size='xs' type='date' />
+          <input
+            className='input-primary'
+            placeholder='Select Date and Time'
+            size='xs'
+            type='date'
+          />
         </div>
       </div>
       <div className='my-2 flex '>
@@ -54,7 +59,12 @@ const GovernmentReferralForm = () => {
           End Date:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='Select Date and Time' size='xs' type='date' />
+          <input
+            className='input-primary'
+            placeholder='Select Date and Time'
+            size='xs'
+            type='date'
+          />
         </div>
       </div>
     </div>

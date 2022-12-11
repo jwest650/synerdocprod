@@ -24,7 +24,7 @@ const SetupPatientForm = () => {
               Presentation to be done:
             </p>
             <div>
-              <Select size='xs'>
+              <Select className='input-primary' size='xs'>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -43,7 +43,7 @@ const SetupPatientForm = () => {
             </p>
 
             <div>
-              <Input size={'xs'} />
+              <input className='input-primary' size={'xs'} />
             </div>
           </div>
           <div className='my-2 flex'>
@@ -52,7 +52,7 @@ const SetupPatientForm = () => {
             </p>
 
             <div>
-              <Select size='xs'>
+              <Select className='input-primary' size='xs'>
                 <option value='option1' className='text-gray-800'>
                   Option 1
                 </option>
@@ -71,7 +71,7 @@ const SetupPatientForm = () => {
             </p>
 
             <div>
-              <Input size={'xs'} type='date' />
+              <input className='input-primary' size={'xs'} type='date' />
             </div>
           </div>
         </div>
@@ -89,8 +89,8 @@ const SetupPatientForm = () => {
           </p>
 
           <div className='flex'>
-            <Input size={'xs'} type='text' />
-            <Input size={'xs'} className='ml-3' type='text' />
+            <input className='input-primary' size={'xs'} type='text' />
+            <input className='input-primary ml-3' size={'xs'} type='text' />
           </div>
         </div>
 
@@ -100,7 +100,7 @@ const SetupPatientForm = () => {
           </p>
 
           <div>
-            <Input size={'xs'} type='date' />
+            <input className='input-primary' size={'xs'} type='date' />
           </div>
         </div>
 
@@ -110,7 +110,7 @@ const SetupPatientForm = () => {
           </p>
 
           <div>
-            <Input size={'xs'} type='type' />
+            <input className='input-primary' size={'xs'} type='type' />
           </div>
         </div>
 
@@ -120,7 +120,7 @@ const SetupPatientForm = () => {
           </p>
 
           <div>
-            <Input size={'xs'} type='type' />
+            <input className='input-primary' size={'xs'} type='type' />
           </div>
         </div>
         <div className='flex w-[200px] justify-end'>
@@ -190,9 +190,9 @@ const SetupPatientForm = () => {
           </p>
 
           <div className='flex'>
-            <Input size={'xs'} type='text' />
-            <Input size={'xs'} className='ml-3' type='text' />
-            <Input size={'xs'} className='ml-3' type='text' />
+            <input className='input-primary' size={'xs'} type='text' />
+            <input className='input-primary ml-3' size={'xs'} type='text' />
+            <input className='input-primary ml-3' size={'xs'} type='text' />
           </div>
         </div>
 
@@ -202,7 +202,7 @@ const SetupPatientForm = () => {
           </p>
 
           <div className='flex'>
-            <Input size={'xs'} type='date' />
+            <input className='input-primary' size={'xs'} type='date' />
           </div>
         </div>
 
@@ -212,7 +212,7 @@ const SetupPatientForm = () => {
           </p>
 
           <div>
-            <Select size='xs'>
+            <Select className='input-primary' size='xs'>
               <option value='option1' className='text-gray-800'>
                 Female
               </option>
@@ -232,7 +232,7 @@ const SetupPatientForm = () => {
           </p>
 
           <div>
-            <Select size='xs'>
+            <Select className='input-primary' size='xs'>
               <option value='option1' className='text-gray-800'>
                 white
               </option>
@@ -252,7 +252,7 @@ const SetupPatientForm = () => {
           </p>
 
           <div>
-            <Select size='xs'>
+            <Select className='input-primary' size='xs'>
               <option value='option1' className='text-gray-800'>
                 Married
               </option>
@@ -272,7 +272,7 @@ const SetupPatientForm = () => {
           </p>
 
           <div>
-            <Input size={'xs'} type='text' />
+            <input className='input-primary' size={'xs'} type='text' />
           </div>
         </div>
       </section>

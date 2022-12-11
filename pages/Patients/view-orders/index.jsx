@@ -20,7 +20,11 @@ const ViewOrders = () => {
           <div className='flex items-center space-x-5'>
             <div className='my-2 flex '>
               <div>
-                <Input placeholder='small size' size='xs' />
+                <input
+                  className='input-primary'
+                  placeholder='small size'
+                  size='xs'
+                />
               </div>
               <button className='ml-2 rounded  border bg-secondary-color px-2 font-medium text-white'>
                 Search
@@ -32,7 +36,7 @@ const ViewOrders = () => {
           <div className='flex '>
             <p>Filter By Agency:</p>
             <div>
-              <Select size='xs'>
+              <Select className='input-primary' size='xs'>
                 <option>Homecare center</option>
                 <option>Homecare center</option>
                 <option>Homecare center</option>
@@ -69,7 +73,7 @@ const ViewOrders = () => {
                     <Select
                       size='xs'
                       css={{ border: 'none', backgroundColor: '#eee' }}
-                      className='bg-gray-400 shadow outline-none'
+                      className='input-primary bg-gray-400 shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
                         All
@@ -86,7 +90,7 @@ const ViewOrders = () => {
                     <Select
                       size='xs'
                       css={{ border: 'none', backgroundColor: '#eee' }}
-                      className='bg-gray-400 shadow outline-none'
+                      className='input-primary bg-gray-400 shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
                         All
@@ -106,7 +110,7 @@ const ViewOrders = () => {
                     <Select
                       size='xs'
                       css={{ border: 'none', backgroundColor: '#eee' }}
-                      className='bg-gray-400 shadow outline-none'
+                      className='input-primary bg-gray-400 shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
                         All
@@ -124,7 +128,7 @@ const ViewOrders = () => {
                     <Select
                       size='xs'
                       css={{ border: 'none', backgroundColor: '#eee' }}
-                      className='bg-gray-400 shadow outline-none'
+                      className='input-primary bg-gray-400 shadow outline-none'
                     >
                       <option value='option1' className='text-gray-800'>
                         All

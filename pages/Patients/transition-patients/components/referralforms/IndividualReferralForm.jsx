@@ -1,4 +1,4 @@
-import { Select, Input } from '@chakra-ui/react'
+import { Select } from '@chakra-ui/react'
 import React from 'react'
 
 const IndividualReferralForm = () => {
@@ -10,7 +10,7 @@ const IndividualReferralForm = () => {
           First Name:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input className='input-primary' placeholder='small size' size='xs' />
         </div>
       </div>
       <div className='my-2 flex '>
@@ -18,7 +18,7 @@ const IndividualReferralForm = () => {
           Middle initial:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input className='input-primary' placeholder='small size' size='xs' />
         </div>
       </div>
       <div className='my-2 flex '>
@@ -27,7 +27,7 @@ const IndividualReferralForm = () => {
           Last Name:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input className='input-primary' placeholder='small size' size='xs' />
         </div>
       </div>
       <div className='my-2 flex '>
@@ -35,7 +35,12 @@ const IndividualReferralForm = () => {
           Email:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' type={'email'} size='xs' />
+          <input
+            className='input-primary'
+            placeholder='small size'
+            type={'email'}
+            size='xs'
+          />
         </div>
       </div>
       <div className='my-2 flex'>
@@ -43,7 +48,7 @@ const IndividualReferralForm = () => {
           Sales Rep:{' '}
         </label>
         <div className='w-[70%]'>
-          <Select size='xs'>
+          <Select size='xs' className='input-primary'>
             <option value='option1' className='text-gray-800'>
               Option 1
             </option>
@@ -62,7 +67,12 @@ const IndividualReferralForm = () => {
           Start Date:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='Select Date and Time' size='xs' type='date' />
+          <input
+            className='input-primary'
+            placeholder='Select Date and Time'
+            size='xs'
+            type='date'
+          />
         </div>
       </div>
       <div className='my-2 flex '>
@@ -70,7 +80,12 @@ const IndividualReferralForm = () => {
           End Date:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='Select Date and Time' size='xs' type='date' />
+          <input
+            className='input-primary'
+            placeholder='Select Date and Time'
+            size='xs'
+            type='date'
+          />
         </div>
       </div>
     </div>

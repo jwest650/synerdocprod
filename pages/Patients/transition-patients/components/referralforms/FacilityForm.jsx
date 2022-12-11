@@ -1,4 +1,4 @@
-import { Input, Select } from '@chakra-ui/react'
+import { Select } from '@chakra-ui/react'
 import React from 'react'
 
 const FacilityForm = () => {
@@ -10,7 +10,7 @@ const FacilityForm = () => {
           Facility Name:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input placeholder='small size' className='input-primary' />
         </div>
       </div>
 
@@ -20,7 +20,11 @@ const FacilityForm = () => {
           Facility Type:{' '}
         </label>
         <div className='w-[70%]'>
-          <Select size='xs' onChange={(e) => setReferralType(e.target.value)}>
+          <Select
+            size='xs'
+            className='input-primary'
+            onChange={(e) => setReferralType(e.target.value)}
+          >
             <option value='physician' className='text-gray-800'>
               physician
             </option>
@@ -39,7 +43,7 @@ const FacilityForm = () => {
           Email:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' />
+          <input placeholder='small size' className='input-primary' />
         </div>
       </div>
 
@@ -48,7 +52,11 @@ const FacilityForm = () => {
           Sales Rep:{' '}
         </label>
         <div className='w-[70%]'>
-          <Select size='xs' onChange={(e) => setReferralType(e.target.value)}>
+          <Select
+            size='xs'
+            className='input-primary'
+            onChange={(e) => setReferralType(e.target.value)}
+          >
             <option value='physician' className='text-gray-800'>
               physician
             </option>
@@ -68,7 +76,11 @@ const FacilityForm = () => {
           Start Date:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' type='date' />
+          <input
+            placeholder='small size'
+            className='input-primary'
+            type='date'
+          />
         </div>
       </div>
 
@@ -77,7 +89,11 @@ const FacilityForm = () => {
           End Date:{' '}
         </label>
         <div className='w-[70%]'>
-          <Input placeholder='small size' size='xs' type='date' />
+          <input
+            placeholder='small size'
+            className='input-primary'
+            type='date'
+          />
         </div>
       </div>
     </div>

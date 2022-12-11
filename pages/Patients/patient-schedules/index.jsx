@@ -22,18 +22,31 @@ const PatientSchedules = () => {
         <div className='flex items-center'>
           <div className='flex'>
             <div className='flex '>
-              <Input
+              <input
+                className='input-primary'
                 placeholder='small size'
                 size='xs'
                 ml={'3'}
                 type={'date'}
               />
-              <Input placeholder='small size' size='xs' type={'date'} ml={3} />
+              <input
+                className='input-primary'
+                placeholder='small size'
+                size='xs'
+                type={'date'}
+                ml={3}
+              />
             </div>
           </div>
           <div className='flex items-center'>
             <div className='flex '>
-              <Input placeholder='small size' size='xs' type={'text'} ml={3} />
+              <input
+                className='input-primary'
+                placeholder='small size'
+                size='xs'
+                type={'text'}
+                ml={3}
+              />
             </div>
             <button className='text-medium ml-3 rounded border bg-secondary-color px-2  text-white'>
               Search
@@ -67,7 +80,7 @@ const PatientSchedules = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -84,7 +97,7 @@ const PatientSchedules = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -102,7 +115,7 @@ const PatientSchedules = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -119,7 +132,7 @@ const PatientSchedules = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -136,7 +149,7 @@ const PatientSchedules = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1
@@ -153,7 +166,7 @@ const PatientSchedules = () => {
                   <Select
                     size='xs'
                     css={{ border: 'none', backgroundColor: '#eee' }}
-                    className='shadow outline-none'
+                    className='input-primary shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
                       All 1

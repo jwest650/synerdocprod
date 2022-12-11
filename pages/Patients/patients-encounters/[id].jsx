@@ -79,30 +79,29 @@ const Enconter = () => {
           <section className='my-2'>
             <ul className='flex '>
               {tabs.map((tab, index) => (
-                <>
-                  <li
-                    className={`-mx-[1px] flex skew-x-[12deg] cursor-pointer items-center gap-1 rounded-t-lg border-2 border-gray-300 py-[1px] px-2 text-center italic ${
-                      activeTab === tab.path &&
-                      'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 not-italic '
-                    }    ${
-                      activeTab === undefined &&
-                      tab.path === 'Profile' &&
-                      'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1.5 not-italic '
-                    }    ${
-                      index === 0 && ' skew-x-[1deg] border-r-0 not-italic'
-                    }   `}
-                    onClick={() => setActiveTab(tab.path)}
+                <li
+                  key={index}
+                  className={`-mx-[1px] flex skew-x-[12deg] cursor-pointer items-center gap-1 rounded-t-lg border-2 border-gray-300 py-[1px] px-2 text-center italic ${
+                    activeTab === tab.path &&
+                    'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 not-italic '
+                  }    ${
+                    activeTab === undefined &&
+                    tab.path === 'Profile' &&
+                    'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1.5 not-italic '
+                  }    ${
+                    index === 0 && ' skew-x-[1deg] border-r-0 not-italic'
+                  }   `}
+                  onClick={() => setActiveTab(tab.path)}
+                >
+                  <span
+                    className={`${
+                      activeTab === tab.path && 'skew-x-[-0deg]'
+                    }   ${index === 0 && 'skew-x-[-0deg] '} -skew-x-[12deg]`}
                   >
-                    <span
-                      className={`${
-                        activeTab === tab.path && 'skew-x-[-0deg]'
-                      }   ${index === 0 && 'skew-x-[-0deg] '} -skew-x-[12deg]`}
-                    >
-                      {tab.icon}
-                    </span>
-                    <span>{tab.name}</span>
-                  </li>
-                </>
+                    {tab.icon}
+                  </span>
+                  <span>{tab.name}</span>
+                </li>
               ))}
             </ul>
 

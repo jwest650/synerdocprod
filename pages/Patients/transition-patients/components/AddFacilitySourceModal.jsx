@@ -25,24 +25,24 @@ const AddFacilitySourceModal = ({
         className='p-5'
       >
         <ModalOverlay />
-        <ModalContent maxWidth={900}>
+        <ModalContent minWidth={900} className='verdana13 '>
           <div className='w-full rounded border-[2px] border-t-[20px] border-light-blue p-4 pb-10 '>
             <ModalHeader>
-              <h1>Add Address/Phone Info</h1>
+              <h1 className='verdana18 '>Add Address/Phone Info</h1>
               <p className='text-sm'>add information and save</p>
             </ModalHeader>
             {/* <ModalCloseButton /> */}
             <ModalBody>
               <section className='justify-betweeen flex'>
-                <div className='flex-1 border-r-2 p-2'>
+                <div className=' w-[50%] border-r-2 p-2'>
                   <div className='my-2 flex'>
                     <p className='mr-3 w-[150px] text-right font-semibold'>
                       <span className='font-bold text-secondary-color'>*</span>
                       Address Type:
                     </p>
 
-                    <div className='flex w-[70%]'>
-                      <Select size='xs'>
+                    <div className=' w-[70%]'>
+                      <Select size='xs' className='input-primary w-full  '>
                         <option value='option1' className='text-gray-800'>
                           Option 1
                         </option>
@@ -62,7 +62,7 @@ const AddFacilitySourceModal = ({
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} />
+                      <input className='input-primary w-full' size={'xs'} />
                     </div>
                   </div>
 
@@ -72,7 +72,7 @@ const AddFacilitySourceModal = ({
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} />
+                      <input className='input-primary w-full' size={'xs'} />
                     </div>
                   </div>
 
@@ -83,10 +83,10 @@ const AddFacilitySourceModal = ({
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} />
+                      <input className='input-primary w-full' size={'xs'} />
 
                       <div className='ml-1 flex-1'>
-                        <Select size='xs'>
+                        <Select size='xs' className='input-primary w-full'>
                           <option value='option1' className='text-gray-800'>
                             La
                           </option>
@@ -99,7 +99,11 @@ const AddFacilitySourceModal = ({
                         </Select>
                       </div>
 
-                      <Input size={'xs'} value='2334' className='ml-1' />
+                      <input
+                        size={'xs'}
+                        value='2334'
+                        className='input-primary ml-1 w-full'
+                      />
                     </div>
                   </div>
 
@@ -110,7 +114,11 @@ const AddFacilitySourceModal = ({
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Select size='xs' marginRight={5}>
+                      <Select
+                        size='xs'
+                        marginRight={5}
+                        className='input-primary w-full'
+                      >
                         <option value='option1' className='text-gray-800'>
                           select
                         </option>
@@ -131,7 +139,12 @@ const AddFacilitySourceModal = ({
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} value='2334' type={'date'} />
+                      <input
+                        className='input-primary w-full'
+                        size={'xs'}
+                        value='2334'
+                        type={'date'}
+                      />
                     </div>
                   </div>
 
@@ -141,12 +154,17 @@ const AddFacilitySourceModal = ({
                     </p>
 
                     <div className='flex w-[70%]'>
-                      <Input size={'xs'} value='2334' type={'date'} />
+                      <input
+                        className='input-primary w-full'
+                        size={'xs'}
+                        value='2334'
+                        type={'date'}
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div className='flex w-[100%] flex-1 flex-col justify-between p-2'>
+                <div className='flex flex-col justify-between p-2'>
                   <div>
                     <div className='my-2 flex'>
                       <p className='mr-3 w-[150px] text-right font-semibold'>
@@ -154,7 +172,7 @@ const AddFacilitySourceModal = ({
                       </p>
 
                       <div className='flex w-[70%]'>
-                        <Select size='xs'>
+                        <Select size='xs' className='input-primary w-full  '>
                           <option value='option1' className='text-gray-800'>
                             select
                           </option>
@@ -174,9 +192,17 @@ const AddFacilitySourceModal = ({
                       </p>
 
                       <div className='flex w-[70%]'>
-                        <Input size={'xs'} value='2334' />
-                        <Input size={'xs'} value='2334' className='ml-3' />
-                        <Input size={'xs'} value='2334' className='ml-3' />
+                        <input size={'xs'} value='2334' />
+                        <input
+                          size={'xs'}
+                          value='2334'
+                          className='input-primary ml-3 w-full'
+                        />
+                        <input
+                          size={'xs'}
+                          value='2334'
+                          className='input-primary ml-3 w-full'
+                        />
                       </div>
                     </div>
 
@@ -188,12 +214,12 @@ const AddFacilitySourceModal = ({
                   </div>
 
                   <table className=' min-w-full overflow-auto'>
-                    <thead className='th-primary'>
+                    <thead className='thead-primary'>
                       <tr>
-                        <th className=' th-first'>Preffered</th>
-                        <th className=' th-middle'>Phone Type</th>
-                        <th className=' th-middle'>Phone</th>
-                        <th className=' th-last'></th>
+                        <th className='th-first'>Preffered</th>
+                        <th className='th-middle'>Phone Type</th>
+                        <th className='th-middle'>Phone</th>
+                        <th className='th-last'></th>
                       </tr>
                     </thead>
                     <tbody>

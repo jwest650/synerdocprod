@@ -7,48 +7,61 @@ const ServiceNotesTab = () => {
 
   return (
     <div className='verdana13 '>
-      <div className='flex'>
+      <div className='flex justify-between'>
         <div className='flex'>
-          <h1 className=' font-bold'>Service Note</h1>
-          <p className='ml-5 text-secondary-color underline'>View Orders</p>
-          <p className='ml-5 text-secondary-color underline'>Unlock Orders</p>
-          <p className='ml-5 text-secondary-color underline'>Min/Max</p>
+          <h1 className='verdana16 font-bold'>Service Note</h1>
+          <button className='btn-primary ml-3'>
+            <p>Add Service Note/Assignment</p>
+          </button>
+          <button className='btn-primary ml-3'>
+            <p>Attach Document</p>
+          </button>
+          <button className='btn-primary ml-3'>
+            <p>Min/Max</p>
+          </button>
         </div>
-        <p className='ml-5 text-secondary-color underline'>Set Default</p>
+        <p>Set Default</p>
 
         <div className='flex'>
           <Select size={'xs'}>
             <option>PDF</option>
           </Select>
-          <button className='rounde ml-2 rounded border px-3 '>Export</button>
+          <button className='rounde btn-primary ml-2 '>Export</button>
         </div>
       </div>
 
       <div className='my-4 flex justify-between'>
         <div className='flex'>
-          <p className='rounde mr-2 underline'>Selection</p>
-          <Select size={'xs'}>
-            <option>Selection</option>
-          </Select>
+          <p className='rounde mr-2  '>Selection:</p>
+          <div>
+            <Select size={'xs'}>
+              <option>Selection</option>
+            </Select>
+          </div>
         </div>
         <div className='flex'>
-          <p className='rounde mr-2 underline'>Item</p>
-          <Select size={'xs'}>
-            <option>Item</option>
-          </Select>
+          <p className='rounde mr-2'>Item:</p>
+          <div>
+            <Select size={'xs'}>
+              <option>Item</option>
+            </Select>
+          </div>
         </div>
         <div className='flex'>
-          <p className='rounde mr-2 underline'>Date Range</p>
-          <div className='flex'>
+          <p className='rounde mr-2 '>Date Range:</p>
+          <div>
             <Input type='date' size={'xs'} />
+          </div>
+          <p className='rounde mr-2 '>To:</p>
+          <div>
             <Input type='date' size={'xs'} />
           </div>
         </div>
 
         <div className='flex'>
-          <Input type='date' size={'xs'} />
+          <Input type='text' size={'xs'} />
 
-          <button className='ml-2 rounded border px-3 '>Search</button>
+          <button className='btn-primary ml-2 '>Search</button>
         </div>
       </div>
 
@@ -58,7 +71,7 @@ const ServiceNotesTab = () => {
             <thead className='thead-primary'>
               <tr>
                 <th className=' th-first'>Type</th>
-                <th className=' th-middle'>Createed</th>
+                <th className=' th-middle'>Created</th>
                 <th className=' th-middle'>Form Entered By</th>
                 <th className=' th-middle'>Revised By</th>
                 <th className=' th-middle'>Service provided By</th>
@@ -66,6 +79,7 @@ const ServiceNotesTab = () => {
                 <th className=' th-middle'>Time in</th>
                 <th className=' th-middle'>Time out</th>
                 <th className=' th-middle'>Service</th>
+                <th className=' th-middle'>Status</th>
                 <th className=' th-middle'>QA Status</th>
                 <th className=' th-middle'></th>
                 <th className=' th-middle'></th>
@@ -77,7 +91,7 @@ const ServiceNotesTab = () => {
                 <td className='td-primary'>
                   <Select
                     size='xs'
-                    css={{ border: 'none', backgroundColor: '#ccc' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -101,7 +115,7 @@ const ServiceNotesTab = () => {
                 <td className='td-primary'>
                   <Select
                     size='xs'
-                    css={{ border: 'none', backgroundColor: '#ccc' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -118,7 +132,7 @@ const ServiceNotesTab = () => {
                 <td className='td-primary'>
                   <Select
                     size='xs'
-                    css={{ border: 'none', backgroundColor: '#ccc' }}
+                    css={{ border: 'none', backgroundColor: '#eee' }}
                     className='shadow outline-none'
                   >
                     <option value='option1' className='text-gray-800'>
@@ -132,6 +146,7 @@ const ServiceNotesTab = () => {
                     </option>
                   </Select>
                 </td>
+                <td className='td-primary'></td>
                 <td className='td-primary'></td>
                 <td className='td-primary'></td>
                 <td className='td-primary'></td>
@@ -142,6 +157,7 @@ const ServiceNotesTab = () => {
                   key={i}
                   className={`border  ${i % 2 === 0 && 'bg-[#eeeeee]'} `}
                 >
+                  <td className=' td-primary'></td>
                   <td className=' td-primary'></td>
                   <td className=' td-primary'></td>
                   <td className=' td-primary'></td>

@@ -48,9 +48,9 @@ const AddReferralSourceContactModal = ({
                   </div>
 
                   <div className='flex items-center'>
-                    <Input size={'xs'} />
-                    <Input size={'xs'} className='ml-3' />
-                    <Input size={'xs'} className='ml-3' />
+                    <input className='input-primary' size={'xs'} />
+                    <input className='input-primary ml-3' size={'xs'} />
+                    <input className='input-primary ml-3' size={'xs'} />
                   </div>
                 </div>
                 <div className='my-2 flex'>
@@ -60,7 +60,7 @@ const AddReferralSourceContactModal = ({
 
                   <div className='flex'>
                     <div>
-                      <Select size='xs'>
+                      <Select className='input-primary' size='xs'>
                         <option value='option1' className='text-gray-800'>
                           Option 1
                         </option>
@@ -74,7 +74,7 @@ const AddReferralSourceContactModal = ({
                     </div>
                     <p className='ml-3 text-gray-500'>(343)-343-445</p>
                     <div className='ml-3'>
-                      <Input size={'xs'} />
+                      <input className='input-primary' size={'xs'} />
                     </div>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const AddReferralSourceContactModal = ({
 
                   <div className='flex'>
                     <div>
-                      <Select size='xs'>
+                      <Select className='input-primary' size='xs'>
                         <option value='option1' className='text-gray-800'>
                           Option 1
                         </option>
@@ -100,7 +100,7 @@ const AddReferralSourceContactModal = ({
                     </div>
                     <p className='ml-3 text-gray-500'>(343)-343-445</p>
                     <div className='ml-3'>
-                      <Input size={'xs'} />
+                      <input className='input-primary' size={'xs'} />
                     </div>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ const AddReferralSourceContactModal = ({
                   </div>
 
                   <div className='w-[70%]'>
-                    <Input size={'xs'} />
+                    <input className='input-primary' size={'xs'} />
                   </div>
                 </div>
                 <div className='my-2 flex'>
@@ -120,7 +120,7 @@ const AddReferralSourceContactModal = ({
                   </div>
 
                   <div className='w-[70%]'>
-                    <Input size={'xs'} />
+                    <input className='input-primary' size={'xs'} />
                   </div>
                 </div>
                 <div className='my-2 flex'>
@@ -132,7 +132,7 @@ const AddReferralSourceContactModal = ({
                   </div>
 
                   <div className='w-[70%]'>
-                    <Input size={'xs'} />
+                    <input className='input-primary' size={'xs'} />
                   </div>
                 </div>
               </section>

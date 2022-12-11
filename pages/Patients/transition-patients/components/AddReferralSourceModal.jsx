@@ -78,6 +78,7 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
 
                 <div className='w-[70%]'>
                   <Select
+                    className='input-primary'
                     size='xs'
                     onChange={(e) => setActiveForm(e.target.value)}
                   >
@@ -90,12 +91,6 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
                         {form.name}
                       </option>
                     ))}
-                    {/* <option value='option2' className='text-gray-800'>
-                      Option 2
-                    </option>
-                    <option value='option3' className='text-gray-800'>
-                      Option 3
-                    </option> */}
                   </Select>
                 </div>
               </div>

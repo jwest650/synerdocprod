@@ -41,7 +41,7 @@ const AddServiceFacilityModal = ({
                 </p>
 
                 <div className='w-[60%]'>
-                  <Input placeholder='' size='xs' />
+                  <input className='input-primary' placeholder='' size='xs' />
                 </div>
                 <div className='ml-3 flex justify-end'>
                   <button className='my-2 rounded bg-secondary-color px-4 py-1 text-white shadow'>
@@ -53,7 +53,7 @@ const AddServiceFacilityModal = ({
               <div>
                 <table className='mt-10 min-w-full overflow-auto text-xs'>
                   <thead className='thead-primary'>
-                    <tr >
+                    <tr>
                       <th className='  th-first'>Select</th>
                       <th className='  th-middle'>Name</th>
                       <th className='  th-middle'>Type</th>
