@@ -79,10 +79,16 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                 <div className='my-3 flex justify-end'>
                   <div>
                     <div>
-                      <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenFindPhysician(false)}
+                      >
                         Save
                       </button>
-                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenFindPhysician(false)}
+                      >
                         Cancel
                       </button>
                     </div>

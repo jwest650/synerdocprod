@@ -109,10 +109,10 @@ const AddAncillaryPhoneModal = ({
                   </div>
                 </section>
                 <div className='my-3 mx-auto w-52'>
-                  <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                  <button className='rounded bg-secondary-color px-4 py-1 text-white shadow' onClick={() => setOpenAddAncillaryPhone(false)}>
                     Save
                   </button>
-                  <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                  <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow' onClick={() => setOpenAddAncillaryPhone(false)}>
                     Cancel
                   </button>
                 </div>

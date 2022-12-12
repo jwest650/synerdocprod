@@ -54,10 +54,16 @@ const EditEncounterPhysicianModal = ({
                 <div className='my-3 flex justify-center'>
                   <div>
                     <div>
-                      <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenEditEncounterPhysician(false)}
+                      >
                         Save
                       </button>
-                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenEditEncounterPhysician(false)}
+                      >
                         Cancel
                       </button>
                     </div>
