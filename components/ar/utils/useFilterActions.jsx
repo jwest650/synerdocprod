@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
-export const useFilterActions = (values, setvalues, group1, setgroup1) => {
+export const useFilterActions = (
+    values,
+    setvalues,
+    group1,
+    setgroup1,
+    selected
+) => {
     const handleGroup1Right = () => {
         setgroup1((prev) => [...prev, ...values]);
         setvalues([]);
@@ -10,15 +16,16 @@ export const useFilterActions = (values, setvalues, group1, setgroup1) => {
         setgroup1([]);
     };
     const Selected = (e) => {
-        const val = e.target.id;
+        const val = selected;
+
         if (e.target.id && e.target.id == val) {
-            const el = e.target.parentNode.querySelectorAll("p");
+            const el = e.target.closest("div").querySelectorAll("p");
             el.forEach((e) => {
                 e.classList.remove("active");
             });
             e.target.classList.add("active");
         } else {
-            const el = e.target.parentNode.querySelectorAll("p");
+            const el = e.target.closest("div").querySelectorAll("p");
 
             el.forEach((e) => {
                 e.classList.remove("active");
