@@ -137,10 +137,16 @@ const AddReferralSourceContactModal = ({
                 </div>
               </section>
               <div className='flex justify-end py-3'>
-                <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                <button
+                  onClick={() => setOpenAddReferralContact(false)}
+                  className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                >
                   Save
                 </button>
-                <button className='ml-2 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                <button
+                  onClick={() => setOpenAddReferralContact(false)}
+                  className='ml-2 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                >
                   Cancel
                 </button>
               </div>

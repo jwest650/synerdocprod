@@ -172,10 +172,7 @@ const AddFacilitySourceModal = ({
                       </p>
 
                       <div className='flex w-[70%]'>
-                        <Select
-                          size='xs'
-                          className='input-primary w-full w-[200px]'
-                        >
+                        <Select size='xs' className='input-primary w-full '>
                           <option value='option1' className='text-gray-800'>
                             select
                           </option>
@@ -247,13 +244,22 @@ const AddFacilitySourceModal = ({
                   </table>
                   <div className='my-3 flex items-end justify-end'>
                     <div>
-                      <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenFacilitySource(false)}
+                      >
                         Save
                       </button>
-                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenFacilitySource(false)}
+                      >
                         Continue
                       </button>
-                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenFacilitySource(false)}
+                      >
                         Cancel
                       </button>
                     </div>

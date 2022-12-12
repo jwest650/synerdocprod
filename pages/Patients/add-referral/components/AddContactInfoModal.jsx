@@ -192,13 +192,22 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   </table>
                   <div className='my-3 flex items-end justify-end'>
                     <div>
-                      <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenAddContactInfo(false)}
+                      >
                         Save
                       </button>
-                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenAddContactInfo(false)}
+                      >
                         Continue
                       </button>
-                      <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                      <button
+                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        onClick={() => setOpenAddContactInfo(false)}
+                      >
                         Cancel
                       </button>
                     </div>

@@ -129,9 +129,19 @@ const UploadDocumentModal = ({ openUploadDocument, setOpenUploadDocument }) => {
               </div>
 
               <div className='ml-3 mt-12 flex justify-center'>
-                <button className='btn-primary ml-3'>Upload/Close</button>
+                <button
+                  className='btn-primary ml-3'
+                  onClick={() => setOpenUploadDocument(false)}
+                >
+                  Upload/Close
+                </button>
                 <button className='btn-primary ml-3'>Upload/Add More</button>
-                <button className='btn-primary ml-3'>cancel</button>
+                <button
+                  className='btn-primary ml-3'
+                  onClick={() => setOpenUploadDocument(false)}
+                >
+                  cancel
+                </button>
               </div>
             </ModalBody>
           </div>

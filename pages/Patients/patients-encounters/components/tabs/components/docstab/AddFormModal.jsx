@@ -45,7 +45,12 @@ const AddFormModal = ({ openAddForm, setOpenAddForm }) => {
                 >
                   continue
                 </Link>
-                <button className='btn-primary ml-3'>cancel</button>
+                <button
+                  className='btn-primary ml-3'
+                  onClick={() => setOpenAddForm(false)}
+                >
+                  cancel
+                </button>
               </div>
             </ModalBody>
           </div>

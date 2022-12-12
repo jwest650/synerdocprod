@@ -152,10 +152,16 @@ const AddPatientContactModal = ({
                 </div>
               </section>
               <div className='flex justify-end py-3'>
-                <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                <button
+                  onClick={() => setOpenPatientContact(false)}
+                  className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                >
                   Continue
                 </button>
-                <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                <button
+                  onClick={() => setOpenPatientContact(false)}
+                  className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                >
                   Cancel
                 </button>
               </div>

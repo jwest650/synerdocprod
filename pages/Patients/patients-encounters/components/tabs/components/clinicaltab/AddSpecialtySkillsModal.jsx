@@ -58,10 +58,16 @@ const AddSpecialtySkillsModal = ({
                 </section>
                 <div className='flex justify-center'>
                   <div className='my-3 '>
-                    <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                    <button
+                      className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                      onClick={() => setOpenAddSpecialtySkill(false)}
+                    >
                       Save
                     </button>
-                    <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
+                    <button
+                      className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                      onClick={() => setOpenAddSpecialtySkill(false)}
+                    >
                       Cancel
                     </button>
                   </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FcCalendar } from 'react-icons/fc';
+import SelectDay from '../components/home/SelectDay';
 import UnverifiedSchedulesTable from '../components/home/UnverifiedSchedulesTable';
 import CalendarComp from '../components/structure/CalendarComp';
 
@@ -11,7 +12,7 @@ const UnverifiedSchedules = () => {
       <div className="flex w-full items-center justify-between">
         <h2 className="verdana16 font-semibold">Patient Schedules</h2>
         <div className="flex items-center gap-4">
-          <FcCalendar className="scale-150 text-lg" />
+          <SelectDay />
           <div className="flex items-center gap-2 ">
             <label>From:</label>
             <CalendarComp date={fromDate} setDate={setFromDate} />
