@@ -1,11 +1,12 @@
 import React from "react";
 import { Input, Select } from "@chakra-ui/react";
 import { FcCalendar } from "react-icons/fc";
+import Filters from "./Filters";
 
 const InvoiceServiceSummary = () => {
     return (
-        <div className="ar  bodytext p-5 capitalize">
-            <section className="space-y-5 ">
+        <div className="ar  bodytext space-y-2 p-5 capitalize">
+            <section className="space-y-3 ">
                 <header className="flex items-center justify-between">
                     <h1 className="head">Invoice Service Summary</h1>
                     <div className=" flex w-52   space-x-1">
@@ -76,6 +77,35 @@ const InvoiceServiceSummary = () => {
                         <button className="btn">Search</button>
                     </div>
                 </section>
+                <hr />
+            </section>
+            <section>
+                <Filters />
+            </section>
+            <section>
+                <table className="w-full">
+                    <thead>
+                        <tr>
+                            <th>invoice</th>
+                            <th>patient name</th>
+                            <th>payer group</th>
+                            <th>payer name</th>
+                            <th>invoice range</th>
+                            <th>discharge</th>
+                            <th>expected</th>
+                            <th>adjustments</th>
+                            <th>payments</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td className="bg-gray-500" colSpan={9}>
+                                no records to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </div>
     );

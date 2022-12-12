@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect,useState } from 'react';
 import { BsDot } from 'react-icons/bs';
 import { scheduleData } from '../../assets/scheduleData';
 import ScheduleComp from '../structure/ScheduleComp';

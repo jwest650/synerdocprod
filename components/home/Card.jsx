@@ -16,7 +16,7 @@ const Card = ({ title, addOption, selectOptions }) => {
     }
   }, [router, selectedOption]);
   return (
-    <div className="card-primary space-y-3.5">
+    <div className="card-primary space-y-3">
       <div className="flex items-center justify-between">
         <h2 className="verdana14 font-semibold">{title && title}</h2>
         {addOption && (

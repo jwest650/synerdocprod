@@ -3,7 +3,7 @@ import TableSelect from '../structure/TableSelect';
 
 const SchedulerNav = () => {
   return (
-    <div>
+    <div className="rounded p-5 shadow">
       <div className="flex items-center gap-5">
         <div className="flex items-center gap-2">
           <h2 className="verdana14 font-semibold">Calendar For :</h2>
