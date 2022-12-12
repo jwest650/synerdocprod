@@ -257,7 +257,7 @@ export const errors = [
     {
         name: "joe",
         payer: "medicare",
-        invoice: "1234",
+        invoice: "1",
         cate: "billing",
         error: "",
         solution: "payer review release",
@@ -267,7 +267,29 @@ export const errors = [
     {
         name: "joe",
         payer: "medicare",
-        invoice: "1234",
+        invoice: "1",
+        cate: "billing",
+        error: "",
+        solution: "payer review release",
+        status: "rpa",
+        info: "2/04/2022",
+    },
+
+    {
+        name: "joe",
+        payer: "medicare",
+        invoice: "1",
+        cate: "billing",
+        error: "",
+        solution: "payer review release",
+        status: "rpa",
+        info: "2/04/2022",
+    },
+
+    {
+        name: "joe",
+        payer: "medicare",
+        invoice: "1",
         cate: "billing",
         error: "",
         solution: "payer review release",

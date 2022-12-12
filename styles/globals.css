@@ -96,10 +96,10 @@ body {
   @apply verdana13 rounded bg-primary-gray px-3 py-[4px] font-medium text-white shadow;
 }
 .btn-cancel {
-  @apply verdana11 rounded bg-primary-gray px-2 py-[2px] shadow;
+  @apply verdana11 rounded bg-primary-gray px-2 py-[2px] font-medium text-white shadow;
 }
 .input-primary {
-  @apply verdana11 rounded-[3px] border border-secondary-blue px-3 py-[2px] text-black shadow outline-none;
+  @apply verdana11 rounded border border-secondary-blue px-3 py-[2px] text-black shadow outline-none;
 }
 .input-date {
   @apply verdana11 w-[97px] rounded border border-secondary-blue py-[2px] px-3 text-black shadow outline-none;
@@ -468,7 +468,7 @@ body {
     @apply rounded bg-gray-500 px-4 py-1 text-white shadow;
   }
   .btn {
-    @apply verdana13 rounded bg-orange-600 px-3 py-[4px] text-xs font-medium text-white shadow;
+    @apply verdana13 rounded bg-orange-600 px-3 py-[4px] text-xs font-medium capitalize text-white shadow;
     /* @apply verdana12 rounded bg-orange-600 px-2 py-[2px] font-medium text-white; */
   }
   .create-btn {

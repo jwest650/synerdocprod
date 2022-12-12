@@ -148,11 +148,15 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
               <div className='mt-8 flex justify-end space-x-3'>
                 <button
                   type='submit'
+                  onClick={() => setOpenAddPayer(false)}
                   className='rounded bg-secondary-color px-4 py-1 text-white shadow'
                 >
                   Save
                 </button>
-                <button className='rounded bg-gray-500 px-4 py-1 text-white shadow'>
+                <button
+                  onClick={() => setOpenAddPayer(false)}
+                  className='rounded bg-gray-500 px-4 py-1 text-white shadow'
+                >
                   Cancel
                 </button>
               </div>

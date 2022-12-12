@@ -1,12 +1,20 @@
 import { Input, Select } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import { VscGoToFile } from "react-icons/vsc";
 import { errors } from "../../../assets/ardata";
 
 const InvoiceErrors = () => {
     const router = useRouter();
-
+    const [data, setdata] = useState([...errors]);
+    const setRows = (e) => {
+        let value = parseInt(e.target.value);
+        if (!value) {
+            setdata(errors);
+        } else {
+            setdata(errors.slice(0, value));
+        }
+    };
     return (
         <div className="ar bodytext space-y-4 p-5 capitalize">
             <section>
@@ -62,7 +70,8 @@ const InvoiceErrors = () => {
                         <tr>
                             <th>patient name</th>
                             <th>payer</th>
-                            <th colSpan="2">invoiceteam</th>
+                            <th>invoice</th>
+                            <th>team</th>
                             <th>category</th>
                             <th>error</th>
                             <th>solution</th>
@@ -73,7 +82,7 @@ const InvoiceErrors = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr className="bg-[#c6d8ffe1]">
                             <td></td>
                             <td>
                                 <Select
@@ -101,14 +110,14 @@ const InvoiceErrors = () => {
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>
+                            <td className="w-24">
                                 {" "}
                                 <Select
-                                    placeholder="Select option"
+                                    placeholder="All"
                                     className="input-shadow"
                                     size="xs"
                                 >
-                                    <option value="option1">Option 1</option>
+                                    <option value="option1">All</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
                                 </Select>
@@ -117,7 +126,7 @@ const InvoiceErrors = () => {
                             <td></td>
                             <td></td>
                         </tr>
-                        {errors.map((value, i) => (
+                        {data.map((value, i) => (
                             <tr key={i}>
                                 <td>{value.name}</td>
                                 <td>{value.payer}</td>
@@ -144,6 +153,26 @@ const InvoiceErrors = () => {
                                 </td>
                             </tr>
                         ))}
+
+                        <tr className="bg-[#eeeeee]">
+                            <td colSpan="10" className="space-x-1">
+                                <label htmlFor="">change page: </label>
+                                <span className="text-orange-500">
+                                    1 2 3 4 5 6 7 8 9 10
+                                </span>
+                                <button>Next |</button>
+                                <span>
+                                    {" "}
+                                    displaying page 1 of 1 | rows per page:
+                                </span>
+                                <input
+                                    type="number"
+                                    className="ml-1 w-10 border text-center text-[black]"
+                                    placeholder={`${errors.length}`}
+                                    onChange={setRows}
+                                />
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
