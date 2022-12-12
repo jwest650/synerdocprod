@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { SiVercel } from 'react-icons/si';
 import { MdArrowRight } from 'react-icons/md';
 import SuboptionMenu from './SuboptionMenu';
@@ -14,7 +14,6 @@ const Menupopup = ({ menu, index }) => {
 
   const [pageY, setPageY] = useState('');
   // useEffect(() => {}, [pageY]);
-  console.log(currentPath);
   return (
     <>
       <div

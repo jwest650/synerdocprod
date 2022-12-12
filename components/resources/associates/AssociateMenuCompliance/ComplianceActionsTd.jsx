@@ -15,7 +15,11 @@ const ComplianceActionsTd = ({ option, category }) => {
       </td>
       <td className="td-primary text-xl">
         <div className="flex items-center justify-center">
-          {option.complaint ? <FcOk /> : <FcCancel />}
+          {option.complaint ? (
+            <FcOk className="scale-150" />
+          ) : (
+            <FcCancel className="scale-150" />
+          )}
         </div>
       </td>
       <td className="td-primary">{option.completed}</td>

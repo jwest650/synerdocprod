@@ -6,6 +6,7 @@ import ReferralSourcesTableAction from './ReferralSourcesTableAction';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
 import { referralSourcesTableData } from './referralData';
+import { BiPlus } from 'react-icons/bi';
 
 const ReferralSources = () => {
   const [referralType, setReferralType] = useState('');
@@ -18,7 +19,15 @@ const ReferralSources = () => {
           <h2 className="verdana16 font-semibold tracking-wider">
             Referral Sources
           </h2>
-          <CreateReferral edit={false} />
+          <CreateReferral
+            edit={false}
+            action={
+              <span className="btn-primary flex cursor-pointer items-center gap-1">
+                <BiPlus className="scale-150" />
+                <span>Create Referral Source</span>
+              </span>
+            }
+          />
         </div>
         <div className="verdana12 flex items-center gap-3">
           <Select

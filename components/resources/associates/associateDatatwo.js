@@ -147,3 +147,27 @@ export const evvVisitData = [
     note: 'Jessie James (Personal Care Aide - Hourly) 1225 Minnesota Ave SW, Huron, SD 57350, USA',
   },
 ];
+
+export const employmentDiscipline = [
+  'Registered Nurse',
+  'Licensed Practical/Vocational Nurse',
+  'Physical Therapist',
+  'Physical Therapist Assistant',
+  'Occupational Therapist',
+  'Certified Occupational Therapist Assistant',
+  'Speech Therapist',
+  'Speech Therapist Assistant',
+  'Social Worker',
+  'Bachelor of Social Worker',
+  'Home Health Aide',
+  'Other Paraprofessional',
+  'Supervisory Visit - Aide',
+  'Supervisory Visit - LPN',
+  'Supervisory Visit - OT',
+  'Supervisory Visit - PT',
+  'Chore Worker',
+  'Comprehensive',
+  'HomeMaker',
+  'Personal Care',
+  'Respite',
+];

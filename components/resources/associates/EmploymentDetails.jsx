@@ -1,5 +1,6 @@
 import CalendarComp from '../../structure/CalendarComp';
 import TableSelect from '../../structure/TableSelect';
+import { employmentDiscipline } from './associateDatatwo';
 
 const EmploymentDetails = ({
   setStartDate,
@@ -17,20 +18,29 @@ const EmploymentDetails = ({
         <div className=" flex w-[65%] items-center">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
-            options={['Field Staff - Full Time', 'Field Staff - Part Time']}
+            options={[
+              '<--select-->',
+              'Administrative',
+              'Collector',
+              'Contractor',
+              'Field Staff - Full Time',
+              'Field Staff - Part Time',
+              'Salesperson',
+              'Volunteer',
+            ]}
           />
         </div>
       </div>
 
       <div className="flex w-full items-center justify-center gap-3 ">
         <label htmlFor="" className="flex w-[35%] justify-end">
-          Discipline
+          Discipline:
         </label>
 
         <div className=" flex w-[65%] items-center gap-2">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
-            options={['Regist-primarytext-primary-orangese']}
+            options={['<--select-->', ...employmentDiscipline]}
           />
         </div>
       </div>
@@ -54,12 +64,12 @@ const EmploymentDetails = ({
       </div>
       <div className="flex w-full items-center justify-center gap-3 ">
         <label htmlFor="" className="flex w-[35%] justify-end">
-          Supervisor
+          Supervisor:
         </label>
         <div className=" flex w-[65%] ">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
-            options={['Balley Debie']}
+            options={['<--select-->', 'Balley Debie']}
           />
         </div>
       </div>
@@ -70,13 +80,13 @@ const EmploymentDetails = ({
         <div className=" flex w-[65%] ">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
-            options={['Sinamcare']}
+            options={['Sinam Care']}
           />
         </div>
       </div>
       <div className="flex w-full items-center justify-center gap-3 ">
         <label htmlFor="" className="flex w-[35%] justify-end">
-          Associate Number
+          Associate Number:
         </label>
         <div className=" flex w-[65%] ">
           <input type="text" placeholder="12345678" className="input-primary" />{' '}
@@ -84,7 +94,7 @@ const EmploymentDetails = ({
       </div>
       <div className="flex w-full items-center justify-center gap-3 ">
         <label htmlFor="" className="flex w-[35%] justify-end">
-          Associate NPI
+          Associate NPI:
         </label>
         <div className=" flex w-[65%] ">
           <input

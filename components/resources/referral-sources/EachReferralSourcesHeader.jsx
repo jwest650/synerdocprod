@@ -9,7 +9,15 @@ const EachReferralSourcesHeader = ({ referralSourceUrl }) => {
           <h2 className="text-lg font-semibold tracking-wide">
             {referralSourceUrl}
           </h2>
-          <CreateReferral edit={true} />
+          <CreateReferral
+            edit={true}
+            action={
+              <span className="verdana11 flex cursor-pointer items-center gap-2 text-orange-600 underline">
+                [Edit]
+                <FcInfo className="rotate-180 scale-150" />
+              </span>
+            }
+          />
         </div>
         <div className="space-x-5">
           <span className="text-base font-extrabold text-green-800">

@@ -2,15 +2,22 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
-  Select,
   useDisclosure,
 } from '@chakra-ui/react';
-import { BiPlus } from 'react-icons/bi';
-import { FcInfo } from 'react-icons/fc';
+import { useState } from 'react';
 import TableSelect from '../../structure/TableSelect';
+import FacilityInputs from './FacilityInputs';
+import GovReferralInputs from './GovReferralInputs';
+import HMOPPOInputs from './HMOPPOInputs';
+import IndividualReferralInputs from './IndividualReferralInputs';
+import InsuranceCompanyInputs from './InsuranceCompanyInputs';
+import PhysicianInputs from './PhysicianInputs';
+import SelfReferralInputs from './SelfReferralInputs';
+import TrustOfficerInputs from './TrustOfficerInputs';
 
-const CreateReferral = ({ edit }) => {
+const CreateReferral = ({ edit, action }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [referralType, setReferralType] = useState('');
 
   const handleForm = (e) => {
     e.preventDefault();
@@ -18,27 +25,12 @@ const CreateReferral = ({ edit }) => {
   };
   return (
     <>
-      {edit ? (
-        <span
-          onClick={onOpen}
-          className="verdana11 flex cursor-pointer items-center gap-2 text-orange-600 underline"
-        >
-          [Edit]
-          <FcInfo className="rotate-180 scale-150" />
-        </span>
-      ) : (
-        <span
-          onClick={onOpen}
-          className="btn-primary flex cursor-pointer items-center gap-1"
-        >
-          <BiPlus className="scale-150" />
-          <span>Create Referral Source</span>
-        </span>
-      )}
-      <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
+      <span onClick={onOpen}>{action}</span>
+
+      <Modal isOpen={isOpen} size={'lg'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+          <div className="verdana12 w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">
                 {edit ? 'Edit' : 'Create'} Referral Source
@@ -46,82 +38,48 @@ const CreateReferral = ({ edit }) => {
               <p className="verdana-12 text-gray-400">
                 {edit ? 'Edit' : 'Create'} Referral Source details{' '}
               </p>
-              <div className="mt-10 flex justify-center gap-4">
-                <div className="space-y-[19px]">
-                  <div className="flex items-center justify-end">
-                    <label className="text-primary-orange">*</label>Referral
-                    Type:{' '}
-                  </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label className="text-primary-orange">*</label>Facility
-                    Name:{' '}
-                  </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label className="text-primary-orange">*</label>Facility
-                    Type:{' '}
-                  </div>
-                  <div className="flex items-center justify-end">
-                    <label>Email:</label>
-                  </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label>Sales Rep:</label>
-                  </div>
-                  <div className="flex items-center justify-end">
-                    <label className="text-primary-orange">*</label>Start Date:{' '}
-                  </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <label>End Date:</label>
-                  </div>
-                </div>
-                <div className="space-y-[13px]">
-                  <TableSelect
-                    styles={{ width: '100%' }}
-                    options={['Facility', 'Option2']}
-                  />
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Facility Name"
-                      className="input-primary w-60"
-                    />
-                  </div>
-                  <TableSelect
-                    styles={{ width: '100%' }}
-                    options={[
-                      'Outpatient Facility',
-                      'Hospital',
-                      'DME/Supply Company',
-                    ]}
-                  />
 
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="example@gmail.com"
-                      className="input-primary w-60"
-                    />
-                  </div>
-                  <TableSelect
-                    styles={{ width: '100%' }}
-                    options={['Option1', 'Option2']}
-                  />
-
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="11/27/1960"
-                      className="input-primary w-28"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="11/27/1960"
-                      className="input-primary w-28"
+              <div className="mt-6 flex  w-full flex-col items-center gap-3.5 pr-8">
+                <div className="flex w-full items-center justify-center gap-3 ">
+                  <label className="flex w-[42%]  justify-end">
+                    <span className="text-primary-orange">*</span>Referral Type:{' '}
+                  </label>
+                  <div className=" flex w-[58%] items-center">
+                    <TableSelect
+                      setSelectedOption={setReferralType}
+                      options={[
+                        '<--select-->',
+                        'Physician',
+                        'Facility',
+                        'Self Referral',
+                        'HMO/PPO',
+                        'Individual Referral',
+                        'Insurance Company',
+                        'Trust Officer',
+                        'Government Referral',
+                      ]}
                     />
                   </div>
                 </div>
+                {referralType === '<--select-->' && (
+                  <p className="text-primary-orange ">Referral Type Required</p>
+                )}
+                {referralType === 'Physician' && <PhysicianInputs />}
+                {referralType === 'Facility' && <FacilityInputs />}
+                {referralType === 'Self Referral' && <SelfReferralInputs />}
+                {referralType === 'HMO/PPO' && <HMOPPOInputs />}
+                {referralType === 'Individual Referral' && (
+                  <IndividualReferralInputs />
+                )}
+                {referralType === 'Insurance Company' && (
+                  <InsuranceCompanyInputs />
+                )}
+                {referralType === 'Trust Officer' && <TrustOfficerInputs />}
+                {referralType === 'Government Referral' && (
+                  <GovReferralInputs />
+                )}
               </div>
+
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
@@ -137,7 +95,6 @@ const CreateReferral = ({ edit }) => {
                 </button>
               </div>
             </form>
-            {/* </ModalBody> */}
           </div>
         </ModalContent>
       </Modal>

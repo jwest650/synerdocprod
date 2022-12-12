@@ -53,3 +53,28 @@ export const referralSourcesMenu = [
     component: <ReferralCredentials />,
   },
 ];
+
+export const physicianSpeciality = [
+  'Cardiologist',
+  'Endocrinologist',
+  'Gastroenterologist',
+  'General Practice',
+  'General Surgery',
+  'Gerontologist',
+  'Gynecologist',
+  'Infectious Disease',
+  'Internal Medicine',
+  'Nephrologist',
+  'Neurologist',
+  'Oncologist',
+  'Ophthalmologist',
+  'Orthopedic Surgean',
+  'Otorhinolaringologist',
+  'Pain Management',
+  'Pediatrician',
+  'Plastic Surgeon',
+  'Podiatrist',
+  'Pulmonologist',
+  'Urologist',
+  'Vascular Surgeon',
+];

@@ -59,7 +59,7 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
         <div className=" flex w-[65%] ">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
-            options={['Male', 'Female', 'Other']}
+            options={['<--select-->', 'Male', 'Female', 'Other']}
           />
         </div>
       </div>
@@ -71,12 +71,13 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
             options={[
-              'White',
-              'Black',
+              '<--select-->',
+              'American Indian / Alaskan Native',
               'Asian',
-              'Native American',
-              'Native Hawaiian',
-              'Pacific Islander',
+              'Black or African-American',
+              'Hispanic or Latino',
+              'Native Hawaiian or Pacific Islander',
+              'White',
               'Other',
             ]}
           />
@@ -109,7 +110,13 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
         <div className=" flex w-[65%] ">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
-            options={['N/A']}
+            options={[
+              'N/A',
+              'Level 1 - Always Assign',
+              'Level 2 - Occationally Assign',
+              'Level 3 - Rarely Assign',
+              'Level 4 - Never Assign',
+            ]}
           />
         </div>
       </div>

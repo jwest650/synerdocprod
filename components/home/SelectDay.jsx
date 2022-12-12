@@ -3,7 +3,7 @@ import { FcCalendar } from 'react-icons/fc';
 import { SiVercel } from 'react-icons/si';
 import { days } from './homeData';
 
-const SelectDay = () => {
+const SelectDay = ({ setDayDuration }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -25,6 +25,7 @@ const SelectDay = () => {
                 {days.map((day, index) => (
                   <li
                     key={index}
+                    onClick={() => setDayDuration(day)}
                     className="w-44 py-2 px-4 font-medium hover:bg-texiary-blue"
                   >
                     {day}

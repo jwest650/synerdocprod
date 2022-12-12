@@ -1,11 +1,14 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect,useState } from 'react';
+import { useState } from 'react';
+import { BiPlus } from 'react-icons/bi';
 import { BsDot } from 'react-icons/bs';
 import { scheduleData } from '../../assets/scheduleData';
+import CreateAssociate from '../resources/associates/CreateAssociate';
+import CreateReferral from '../resources/referral-sources/CreateReferral';
 import ScheduleComp from '../structure/ScheduleComp';
 import Card from './Card';
 import SchedulerNav from './SchedulerNav';
+import UploadSeviceNotes from './UploadSeviceNotes';
 
 const HomePage = () => {
   const [events, setEvents] = useState(scheduleData);
@@ -32,33 +35,63 @@ const HomePage = () => {
           title="Schedules"
         />
         <Card
-          addOption="Create Referral/Patient"
-          selectOptions={['<--select-->']}
+          addOption={
+            <Link href={`/Patients/add-referral`}>
+              <button className="btn-primary flex items-center gap-1">
+                <BiPlus className="scale-150" />
+                Create Referral/Patient
+              </button>
+            </Link>
+          }
+          selectOptions={[
+            '<--select-->',
+            'All patients',
+            'Active Patients',
+            'Pending Patients',
+            'Patients on Hold',
+            'Patients in my agency',
+          ]}
           title="Patients"
+          hasDropDown={true}
         />
-        <Card selectOptions={['<--select-->']} title="Invoices" />
         <Card
-          addOption="Create Associate"
-          selectOptions={['<--select-->']}
+          selectOptions={['<--select-->', 'Open invoices', 'Unbilled invoices']}
+          title="Invoices"
+        />
+        <Card
+          addOption={<CreateAssociate />}
+          selectOptions={[
+            '<--select-->',
+            'All associates',
+            'Associates in my agency',
+          ]}
           title="Associates"
         />
         <ul className="card-primary space-y-1">
           <li className="verdana14 mb-4 font-semibold">Other Actions</li>
-          {[
-            'Add Referral Source',
-            'Directions/Mapping',
-            'Attach uploaded service notes',
-            'Add Pay Only',
-            'Educational Documents',
-          ].map((option, index) => (
-            <li
-              key={index}
-              className="flex items-center gap-2 text-primary-orange underline"
-            >
-              <BsDot className="scale-150 text-base text-black" />
-              {option}
-            </li>
-          ))}
+          <li>
+            <CreateReferral
+              key={1}
+              action={
+                <span className="flex cursor-pointer items-center gap-2 text-primary-orange underline">
+                  <BsDot className="scale-150 text-base text-black" />
+                  Create Referral Source
+                </span>
+              }
+            />
+          </li>
+          <li className="flex items-center gap-2 text-primary-orange underline">
+            <BsDot className="scale-150 text-base text-black" />
+            <Link href="/staff/staffdirections">Directions/Mapping</Link>
+          </li>
+          <li>
+            <UploadSeviceNotes />
+          </li>
+          <li className="flex items-center gap-2 text-primary-orange underline">
+            <BsDot className="scale-150 text-base text-black" />
+            <Link href="/staff/payonlydetail">Add Pay Only</Link>
+          </li>
+          {/* {/* 'Educational Documents' */}
         </ul>
       </div>
       <div className="col-span-3 space-y-4">
