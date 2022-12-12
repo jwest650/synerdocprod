@@ -235,6 +235,21 @@ body {
     width: 70px;
   }
 }
+.moreInfo-anim {
+  animation: moreInfo 35ms forwards ease-in;
+}
+
+@keyframes moreInfo {
+  0% {
+    @apply scale-75;
+  }
+  90% {
+    @apply scale-105;
+  }
+  100% {
+    @apply scale-100;
+  }
+}
 
 /* SHEDULER */
 

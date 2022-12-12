@@ -1,7 +1,10 @@
+import { Tooltip } from '@chakra-ui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import SearchIcon from '../../assets/images/search.png';
 import MoreAssociateInfo from '../resources/associates/MoreAssociateInfo';
 import TableSelect from '../structure/TableSelect';
+import { payerReportingGroup, serviceCat } from './homeData';
 
 const UnverifiedSchedulesTable = () => {
   return (
@@ -25,23 +28,49 @@ const UnverifiedSchedulesTable = () => {
           <td className="td-primary"></td>
           <td className="td-primary"></td>
           <td className=" border border-primary-gray">
-            <TableSelect options={['All', 'Option2']} />
+            <TableSelect options={['All', 'Sinam Care, LLC']} />
           </td>
           <td className="  border border-primary-gray">
-            <TableSelect options={['All', 'Option2']} />
+            <TableSelect
+              options={[
+                'All',
+                'Home Health',
+                'Hospice',
+                'Palliative care',
+                'Private Duty',
+              ]}
+            />
           </td>
           <td className="td-primary"></td>
           <td className="  border border-primary-gray">
-            <TableSelect options={['All', 'Option2']} />
+            <TableSelect options={['All', ...serviceCat]} />
           </td>
           <td className="  border border-primary-gray">
-            <TableSelect options={['All', 'Option2']} />
+            <TableSelect
+              options={[
+                'All',
+                'Active',
+                'Pending',
+                'Active and Pending',
+                'Discharged',
+                'Non-Admit',
+                'Hold',
+              ]}
+            />
           </td>
           <td className="  border border-primary-gray">
-            <TableSelect options={['All', 'Option2']} />
+            <TableSelect options={['All', ...payerReportingGroup]} />
           </td>
           <td className="  border border-primary-gray">
-            <TableSelect options={['Unverified', 'Option2']} />
+            <TableSelect
+              options={[
+                'All',
+                'Unassigned',
+                'Assigned',
+                'Unverified',
+                'Verified',
+              ]}
+            />
           </td>
           <td></td>
         </tr>
@@ -50,7 +79,7 @@ const UnverifiedSchedulesTable = () => {
             <MoreAssociateInfo />
           </td>
           <td className="td-primary text-primary-orange underline">
-            Berry Allen
+            <Link href="/Patients/patient-schedules/1">Berry Allen</Link>
           </td>
           <td className="td-primary ">Sinam Care, LLC</td>
           <td className="td-primary ">Home Health</td>
@@ -61,7 +90,26 @@ const UnverifiedSchedulesTable = () => {
           <td className="td-primary ">25</td>
           <td className="td-primary ">
             <div className="flex cursor-pointer items-center justify-center">
-              <Image src={SearchIcon} width="17px" height="17px" alt="search" />
+              {/* Link to that particular patient page */}
+              <Link href={`/Patients/patient-schedules/1`}>
+                <div>
+                  <Tooltip
+                    hasArrow
+                    label={`View Patient`}
+                    fontSize="11px"
+                    color="white"
+                  >
+                    <figure>
+                      <Image
+                        src={SearchIcon}
+                        width="17px"
+                        height="17px"
+                        alt="search"
+                      />
+                    </figure>
+                  </Tooltip>
+                </div>
+              </Link>
             </div>
           </td>
         </tr>
