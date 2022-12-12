@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const useFilterActions = (values, setvalues, group1, setgroup1) => {
+export const useFilterActions = (values, setvalues, group1, setgroup1) => {
     const handleGroup1Right = () => {
         setgroup1((prev) => [...prev, ...values]);
         setvalues([]);
@@ -82,5 +82,3 @@ const useFilterActions = (values, setvalues, group1, setgroup1) => {
         Selected,
     };
 };
-
-export default useFilterActions;

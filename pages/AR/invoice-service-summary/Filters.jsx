@@ -5,8 +5,9 @@ import {
     RxDoubleArrowLeft,
     RxDoubleArrowRight,
 } from "react-icons/rx";
-import useFilterActions from "./utils/useFilterActions";
-import useFilterActions2 from "./utils/useFilterActions2";
+import { useFilterActions } from "../../../components/ar/utils/useFilterActions";
+import { useFilterActionsTwo } from "../../../components/ar/utils/useFilterActionsTwo";
+
 const Filters = () => {
     const [values, setvalues] = useState([...filters]);
     const [group1, setgroup1] = useState([]);
@@ -25,7 +26,7 @@ const Filters = () => {
         handleSelectedLeft2,
         handleSelectedRight2,
         Selected2,
-    } = useFilterActions2(values, setvalues, group2, setgroup2);
+    } = useFilterActionsTwo(values, setvalues, group2, setgroup2);
 
     return (
         <div className="ml-5">
