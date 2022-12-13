@@ -43,7 +43,7 @@ const Navbar = () => {
         </ul>
 
         <MenuDrawer />
-        <ul className="hidden items-center gap-7 text-lg md:flex">
+        <ul className="hidden items-center gap-7 md:flex">
           <li className="cursor-pointer">
             <Settings />
           </li>
