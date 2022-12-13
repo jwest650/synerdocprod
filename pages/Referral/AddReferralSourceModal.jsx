@@ -100,13 +100,13 @@ const AddReferralSourceModal = ({ openAddReferral, setOpenAddReferral }) => {
               <div className='mx-auto flex justify-center p-5'>
                 <div>
                   <button
-                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-save'
                     onClick={() => setOpenAddReferral(false)}
                   >
                     Save
                   </button>
                   <button
-                    className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-cancel ml-3'
                     onClick={() => setOpenAddReferral(false)}
                   >
                     Cancel

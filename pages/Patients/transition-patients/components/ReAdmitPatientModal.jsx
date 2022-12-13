@@ -43,7 +43,7 @@ const ReAdmitPatientModal = ({ openReAdmit, setOpenReAdmit }) => {
                 <Checkbox size='sm'>Include Allergies</Checkbox>
                 <div className='my-3 flex justify-end'>
                   <button
-                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-save'
                     onClick={() => setOpenReAdmit(false)}
                   >
                     Continue

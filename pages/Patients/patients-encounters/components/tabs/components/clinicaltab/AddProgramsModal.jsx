@@ -74,13 +74,13 @@ const AddProgramsModal = ({ openAddPrograms, setOpenAddPrograms }) => {
                 <div className='flex justify-end'>
                   <div className='my-3 ml-auto '>
                     <button
-                      className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                      className='btn-save'
                       onClick={() => setOpenAddPrograms(false)}
                     >
                       Save
                     </button>
                     <button
-                      className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                      className='btn-cancel ml-3'
                       onClick={() => setOpenAddPrograms(false)}
                     >
                       Cancel

@@ -1,21 +1,21 @@
-import { AiOutlineInfoCircle, AiOutlineLineChart } from 'react-icons/ai';
-import { BiChalkboard } from 'react-icons/bi';
-import { BsBuilding, BsCalendar4Event, BsDot } from 'react-icons/bs';
-import { CiStethoscope } from 'react-icons/ci';
-import { FaHome } from 'react-icons/fa';
-import { RxDashboard } from 'react-icons/rx';
-import { GiWhiteBook } from 'react-icons/gi';
-import { IoIosPeople } from 'react-icons/io';
+import { AiOutlineInfoCircle, AiOutlineLineChart } from 'react-icons/ai'
+import { BiChalkboard } from 'react-icons/bi'
+import { BsBuilding, BsCalendar4Event, BsDot } from 'react-icons/bs'
+import { CiStethoscope } from 'react-icons/ci'
+import { FaHome } from 'react-icons/fa'
+import { RiDashboardLine } from 'react-icons/ri'
+import { GiWhiteBook } from 'react-icons/gi'
+import { IoIosPeople } from 'react-icons/io'
 import {
   MdAttachMoney,
   MdLibraryBooks,
   MdOutlineMedicalServices,
   MdOutlinePayments,
-} from 'react-icons/md';
-import { RiToolsFill } from 'react-icons/ri';
-import { SlCalculator } from 'react-icons/sl';
-import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb';
-import { VscServerProcess } from 'react-icons/vsc';
+} from 'react-icons/md'
+import { RiToolsFill } from 'react-icons/ri'
+import { SlCalculator } from 'react-icons/sl'
+import { TbNurse, TbPresentationAnalytics } from 'react-icons/tb'
+import { VscServerProcess } from 'react-icons/vsc'
 
 export const menuOptions = [
   {
@@ -459,7 +459,7 @@ export const menuOptions = [
 
   {
     name: 'Dashboard',
-    icon: <RxDashboard />,
+    icon: <RiDashboardLine />,
     options: [
       {
         title: 'Charts',
@@ -605,4 +605,4 @@ export const menuOptions = [
       },
     ],
   },
-];
+]

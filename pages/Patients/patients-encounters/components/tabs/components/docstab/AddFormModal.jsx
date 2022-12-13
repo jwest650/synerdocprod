@@ -39,14 +39,9 @@ const AddFormModal = ({ openAddForm, setOpenAddForm }) => {
               </div>
 
               <div className='ml-3 mt-5 flex justify-end'>
-                <Link
-                  href={'/Patients/patients-encounters/Form'}
-                  className='btn-primary'
-                >
-                  continue
-                </Link>
+                <button className='btn-save'>continue</button>
                 <button
-                  className='btn-primary ml-3'
+                  className='btn-cancel ml-3'
                   onClick={() => setOpenAddForm(false)}
                 >
                   cancel

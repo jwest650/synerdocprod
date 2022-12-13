@@ -245,19 +245,19 @@ const AddFacilitySourceModal = ({
                   <div className='my-3 flex items-end justify-end'>
                     <div>
                       <button
-                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-save'
                         onClick={() => setOpenFacilitySource(false)}
                       >
                         Save
                       </button>
                       <button
-                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-save ml-3'
                         onClick={() => setOpenFacilitySource(false)}
                       >
                         Continue
                       </button>
                       <button
-                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-cancel ml-3'
                         onClick={() => setOpenFacilitySource(false)}
                       >
                         Cancel

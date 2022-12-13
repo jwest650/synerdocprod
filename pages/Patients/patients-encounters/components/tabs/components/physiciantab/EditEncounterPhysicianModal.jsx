@@ -55,13 +55,13 @@ const EditEncounterPhysicianModal = ({
                   <div>
                     <div>
                       <button
-                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-save'
                         onClick={() => setOpenEditEncounterPhysician(false)}
                       >
                         Save
                       </button>
                       <button
-                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-cancel ml-3'
                         onClick={() => setOpenEditEncounterPhysician(false)}
                       >
                         Cancel

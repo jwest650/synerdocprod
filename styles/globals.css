@@ -420,6 +420,14 @@ body {
 }
 /* CALENDAR END */
 
+/* PATIENTS */
+.btn-save {
+  background-color: #0141cf;
+  @apply rounded  px-4 py-1 text-white shadow;
+}
+.btn-cancel {
+  @apply rounded bg-gray-500 px-4 py-1 text-white shadow;
+}
 /* ar */
 @layer base {
   .ar {

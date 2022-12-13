@@ -57,8 +57,6 @@ const ContactsTab = () => {
               <button className='text-orange-500'>[Edit]</button>
               <br />
               <button className='text-orange-500'>[Delete]</button>
-              <br />
-              <button className='text-orange-500'>[Edit]</button>
             </aside>
             <aside className='w-full border-l-2 p-1 capitalize'>
               <section>
