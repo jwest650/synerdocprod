@@ -83,16 +83,14 @@ const AddDMEModal = ({ openAddDME, setOpenAddDME }) => {
               <div className='flex justify-center'>
                 <div className='my-3 '>
                   <button
-                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-save'
                     onClick={() => setOpenAddDME(false)}
                   >
                     save/close
                   </button>
-                  <button className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'>
-                    save/Add More
-                  </button>
+                  <button className='btn-save ml-3'>save/Add More</button>
                   <button
-                    className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-cancel ml-3'
                     onClick={() => setOpenAddDME(false)}
                   >
                     Cancel

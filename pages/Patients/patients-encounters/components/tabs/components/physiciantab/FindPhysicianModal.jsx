@@ -80,21 +80,19 @@ const FindPhysicianModal = ({ openFindPhysician, setOpenFindPhysician }) => {
                   <div>
                     <div>
                       <button
-                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-save'
                         onClick={() => setOpenFindPhysician(false)}
                       >
                         Save
                       </button>
                       <button
-                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-cancel ml-3'
                         onClick={() => setOpenFindPhysician(false)}
                       >
                         Cancel
                       </button>
                     </div>
-                    <button className='my-2 rounded bg-secondary-color px-4 py-1 text-white shadow'>
-                      add physician
-                    </button>
+                    <button className='btn-save my-2'>add physician</button>
                   </div>
                 </div>
               </section>

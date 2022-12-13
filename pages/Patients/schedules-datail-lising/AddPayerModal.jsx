@@ -149,13 +149,13 @@ const AddPayerModal = ({ openAddPayer, setOpenAddPayer }) => {
                 <button
                   type='submit'
                   onClick={() => setOpenAddPayer(false)}
-                  className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                  className='btn-save'
                 >
                   Save
                 </button>
                 <button
                   onClick={() => setOpenAddPayer(false)}
-                  className='rounded bg-gray-500 px-4 py-1 text-white shadow'
+                  className='btn-cancel'
                 >
                   Cancel
                 </button>

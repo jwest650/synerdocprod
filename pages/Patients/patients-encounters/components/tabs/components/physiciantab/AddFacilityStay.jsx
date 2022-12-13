@@ -85,13 +85,13 @@ const AddFacilityStay = ({ openAddFacilityStay, setOpenAddFacilityStay }) => {
                   <div>
                     <div>
                       <button
-                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-save'
                         onClick={() => setOpenAddFacilityStay(false)}
                       >
                         Save
                       </button>
                       <button
-                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='ml-3 btn-cancel'
                         onClick={() => setOpenAddFacilityStay(false)}
                       >
                         Cancel

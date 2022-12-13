@@ -106,13 +106,13 @@ const AddServiceFacilityModal = ({
               <div>
                 <div className='flex items-center justify-center py-3'>
                   <button
-                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-save'
                     onClick={() => setOpenAddServiceFacility(false)}
                   >
                     Save
                   </button>
                   <button
-                    className='my-2 ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-cancel my-2 ml-3'
                     onClick={() => setOpenAddServiceFacility(false)}
                   >
                     Cancel

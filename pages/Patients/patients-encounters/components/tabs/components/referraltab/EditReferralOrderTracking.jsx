@@ -71,14 +71,14 @@ const EditReferralOrderTracking = ({
               <div className='flex justify-center'>
                 <div className='my-3 '>
                   <button
-                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-save'
                     onClick={() => setOpenEditOrderTracking(false)}
                   >
                     save
                   </button>
 
                   <button
-                    className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='ml-3 btn-cancel'
                     onClick={() => setOpenEditOrderTracking(false)}
                   >
                     Cancel

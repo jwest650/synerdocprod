@@ -30,10 +30,7 @@ const PrintModal = ({ openPrint, setOpenPrint }) => {
                 <Checkbox className='my-2'>Side Effects</Checkbox>
                 <Checkbox className='my-2'>Pharmacology</Checkbox>
               </section>
-              <button
-                className='btn-primary'
-                onClick={() => setOpenPrint(false)}
-              >
+              <button className='btn-save' onClick={() => setOpenPrint(false)}>
                 Export
               </button>
             </ModalBody>

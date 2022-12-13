@@ -51,13 +51,13 @@ const SelectPatientModal = ({
 
               <div className='ml-3 mt-12 flex justify-end'>
                 <button
-                  className='btn-primary ml-3'
+                  className='btn-save ml-3'
                   onClick={() => setOpenSelectPatient(false)}
                 >
                   Save
                 </button>
                 <button
-                  className='btn-primary ml-3'
+                  className='btn-cancel ml-3'
                   onClick={() => setOpenSelectPatient(false)}
                 >
                   Close

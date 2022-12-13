@@ -151,9 +151,7 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   </div>
 
                   <div className='my-3 flex items-end justify-end'>
-                    <button className='rounded bg-secondary-color px-4 py-1 text-white shadow'>
-                      add contact
-                    </button>
+                    <button className=' btn-save'>add contact</button>
                   </div>
                 </div>
 
@@ -193,19 +191,19 @@ const AddContactInfoModal = ({ openAddContactInfo, setOpenAddContactInfo }) => {
                   <div className='my-3 flex items-end justify-end'>
                     <div>
                       <button
-                        className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-save'
                         onClick={() => setOpenAddContactInfo(false)}
                       >
                         Save
                       </button>
                       <button
-                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-cancel ml-3'
                         onClick={() => setOpenAddContactInfo(false)}
                       >
                         Continue
                       </button>
                       <button
-                        className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                        className='btn-cancel ml-cancel'
                         onClick={() => setOpenAddContactInfo(false)}
                       >
                         Cancel

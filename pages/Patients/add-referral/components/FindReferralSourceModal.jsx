@@ -109,13 +109,13 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
               <div className='ml-auto'>
                 <div className='flex justify-end py-3'>
                   <button
-                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-save'
                     onClick={() => setOpenFindReferral(false)}
                   >
                     Save
                   </button>
                   <button
-                    className='ml-3 rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-cancel ml-3'
                     onClick={() => setOpenFindReferral(false)}
                   >
                     Cancel
@@ -125,7 +125,7 @@ const FindReferralSourceModal = ({ openFindReferral, setOpenFindReferral }) => {
                 <div className='flex justify-end'>
                   <button
                     onClick={() => setOpenAddReferral(true)}
-                    className='rounded bg-secondary-color px-4 py-1 text-white shadow'
+                    className='btn-save'
                   >
                     add referral source
                   </button>
