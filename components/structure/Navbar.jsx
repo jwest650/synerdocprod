@@ -44,7 +44,7 @@ const Navbar = () => {
 
         <MenuDrawer />
         <ul className="hidden items-center gap-7 md:flex">
-          <li className="cursor-pointer">
+          <li className="cursor-pointer text-lg">
             <Settings />
           </li>
 
