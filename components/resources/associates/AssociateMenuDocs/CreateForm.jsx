@@ -29,7 +29,7 @@ const CreateForm = ({ setShowForm, setFormType }) => {
       <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">Add Form</h1>
               <p className="verdana11 text-primary-gray">Select a form Type</p>

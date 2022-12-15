@@ -25,13 +25,13 @@ const EditAssociate = () => {
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana16 font-semibold">Edit Associate</h1>
               <div className="verdana12 mt-10 flex h-full w-full flex-col items-center justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
                 <div className="w-full pb-5 md:col-span-3">
                   <div className="flex items-center gap-2 border-b-2 pb-2">
-                    <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
+                    <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-primary-blue text-white">
                       1
                     </div>
                     <h2 className="verdana14 font-semibold">Personal</h2>
@@ -136,7 +136,7 @@ const EditAssociate = () => {
                 </div>
                 <div className="ml-4 w-full pl-4 pb-5 md:col-span-3 md:border-l-2">
                   <div className="mr-5 flex items-center gap-2 border-b-2 pb-2">
-                    <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
+                    <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-primary-blue text-white">
                       2
                     </div>
                     <h2 className=" verdana14 font-semibold">Employment</h2>
@@ -231,7 +231,7 @@ const EditAssociate = () => {
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
-                  className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
                 >
                   Save
                 </button>

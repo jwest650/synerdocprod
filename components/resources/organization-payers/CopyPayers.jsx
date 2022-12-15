@@ -129,7 +129,7 @@ const CopyPayers = () => {
               <div className="mt-10 flex w-full justify-end gap-3">
                 <button
                   type="submit"
-                  className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
                 >
                   Add
                 </button>

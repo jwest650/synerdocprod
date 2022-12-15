@@ -5,7 +5,7 @@ import SearchIcon from '../../../../assets/images/search.png'
 
 const TableAction = () => {
   return (
-    <span className='flex h-full w-full items-center justify-center  text-lg text-[#0141CF]'>
+    <span className='flex h-full w-full items-center justify-center  text-lg text-primary-blue'>
       <span className='table-action-anim px-1 text-xl '>
         <Image src={SearchIcon} alt='icon' width={16} height={16} />
       </span>

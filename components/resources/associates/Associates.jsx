@@ -21,28 +21,14 @@ const Associates = () => {
           <CreateAssociate />
         </div>
         <div className="verdana12 flex items-center gap-3">
-          <Select
-            css={{
-              backgroundColor: '#c6d8ffe1',
-              border: 'none',
-              height: '22px',
-            }}
-            className="shadow outline-none"
-            size="xs"
-          >
-            <option value="option1" className="text-gray-800">
-              Associate List XLS
-            </option>
-            <option value="option2" className="text-gray-800">
-              Associate List PDF
-            </option>
-            <option value="option3" className="text-gray-800">
-              Associate Caseload XLS
-            </option>
-            <option value="option3" className="text-gray-800">
-              Associate Caseload PDF
-            </option>
-          </Select>
+          <TableSelect
+            options={[
+              'Associate List XLS',
+              'Associate List PDF',
+              'Associate Caseload XLS',
+              'Associate Caseload PDF',
+            ]}
+          />
           <button className="btn-primary">Export</button>
           <input
             placeholder="Enter first or last name"

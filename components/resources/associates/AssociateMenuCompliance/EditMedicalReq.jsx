@@ -25,7 +25,7 @@ const EditMedicalReq = () => {
       <Modal isOpen={isOpen} size="3xl" onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <h1 className="verdana18 font-semibold">
               Compliance - Medical Requirements
             </h1>
@@ -93,7 +93,7 @@ const EditMedicalReq = () => {
               <button
                 type="submit"
                 onClick={onClose}
-                className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+                className="rounded bg-primary-blue px-4 py-1 text-white shadow"
               >
                 Save
               </button>

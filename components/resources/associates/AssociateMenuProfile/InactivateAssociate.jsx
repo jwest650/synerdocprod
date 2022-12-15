@@ -24,7 +24,7 @@ const InactivateAssociate = () => {
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">Inactivate Associate</h1>
 
@@ -100,7 +100,7 @@ const InactivateAssociate = () => {
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
-                  className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
                 >
                   Save
                 </button>

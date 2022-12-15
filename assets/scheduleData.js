@@ -5,7 +5,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-10',
     EndTime: '2022-11-10',
-    color: '#000',
+    CategoryColor: '#000',
     IsReadonly: true,
   },
   {
@@ -14,7 +14,7 @@ export const scheduleData = [
     Location: 'Newyork City',
     StartTime: '2022-11-11',
     EndTime: '2022-11-11',
-    color: '#357cd2',
+    CategoryColor: '#87b6ac',
   },
   {
     Id: 3,
@@ -22,7 +22,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-12',
     EndTime: '2022-11-12',
-    color: '#7fa900',
+    CategoryColor: '#7fa900',
   },
   {
     Id: 4,
@@ -30,7 +30,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-13',
     EndTime: '2022-11-13',
-    color: '#ea7a57',
+    CategoryColor: '#ea7a57',
   },
   {
     Id: 5,
@@ -38,7 +38,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-14',
     EndTime: '2022-11-14',
-    color: 'white',
+    CategoryColor: 'white',
   },
   {
     Id: 6,
@@ -46,7 +46,7 @@ export const scheduleData = [
     Location: 'Bermuda',
     StartTime: '2022-11-14',
     EndTime: '2022-11-14',
-    color: 'black',
+    CategoryColor: 'black',
   },
   {
     Id: 7,
@@ -54,7 +54,7 @@ export const scheduleData = [
     Location: 'Himalayas',
     StartTime: '2022-11-04',
     EndTime: '2022-11-04',
-    color: '#1aaa55',
+    CategoryColor: '#1aaa55',
   },
   {
     Id: 8,
@@ -62,7 +62,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-16',
     EndTime: '2022-11-16',
-    color: '#357cd2',
+    CategoryColor: '#357cd2',
   },
   {
     Id: 9,
@@ -70,7 +70,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-18',
     EndTime: '2022-11-18',
-    color: '#7fa900',
+    CategoryColor: '#7fa900',
   },
   {
     Id: 10,
@@ -78,7 +78,7 @@ export const scheduleData = [
     Location: 'Africa',
     StartTime: '2022-11-20',
     EndTime: '2022-11-20',
-    color: '#ea7a57',
+    CategoryColor: '#ea7a57',
   },
   {
     Id: 11,
@@ -86,7 +86,7 @@ export const scheduleData = [
     Location: 'London',
     StartTime: '2022-11-21',
     EndTime: '2022-11-21',
-    color: '#00bdae',
+    CategoryColor: '#00bdae',
   },
   {
     Id: 12,
@@ -94,7 +94,7 @@ export const scheduleData = [
     Location: 'Sweden',
     StartTime: '2022-11-08',
     EndTime: '2022-11-08',
-    color: '#f57f17',
+    CategoryColor: '#f57f17',
   },
   {
     Id: 13,
@@ -102,7 +102,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-06',
     EndTime: '2022-11-06',
-    color: '#1aaa55',
+    CategoryColor: '#1aaa55',
   },
   {
     Id: 14,
@@ -110,7 +110,7 @@ export const scheduleData = [
     Location: 'Research Center of USA',
     StartTime: '2022-11-05',
     EndTime: '2022-11-05',
-    color: '#357cd2',
+    CategoryColor: '#357cd2',
   },
   {
     Id: 15,
@@ -118,7 +118,7 @@ export const scheduleData = [
     Location: 'California',
     StartTime: '2022-11-19',
     EndTime: '2022-11-19',
-    color: '#7fa900',
+    CategoryColor: '#7fa900',
   },
   {
     Id: 16,
@@ -126,7 +126,7 @@ export const scheduleData = [
     Location: 'Alaska',
     StartTime: '2022-11-22',
     EndTime: '2022-11-22',
-    color: '#ea7a57',
+    CategoryColor: '#ea7a57',
   },
   {
     Id: 17,
@@ -134,7 +134,7 @@ export const scheduleData = [
     Location: 'Research Center of USA',
     StartTime: '2022-11-11',
     EndTime: '2022-11-11',
-    color: '#00bdae',
+    CategoryColor: '#00bdae',
   },
   {
     Id: 18,
@@ -142,7 +142,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-11',
     EndTime: '2022-11-11',
-    color: '#f57f17',
+    CategoryColor: '#f57f17',
   },
   {
     Id: 19,
@@ -150,7 +150,7 @@ export const scheduleData = [
     Location: 'San Fransisco',
     StartTime: '2022-11-14',
     EndTime: '2022-11-14',
-    color: '#7fa900',
+    CategoryColor: '#7fa900',
   },
   {
     Id: 20,
@@ -158,7 +158,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-14',
     EndTime: '2022-11-14',
-    color: '#ea7a57',
+    CategoryColor: '#ea7a57',
   },
   {
     Id: 21,
@@ -166,7 +166,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-10',
     EndTime: '2022-11-10',
-    color: '#ea7a57',
+    CategoryColor: '#ea7a57',
   },
   {
     Id: 22,
@@ -174,7 +174,7 @@ export const scheduleData = [
     Location: 'Research Center of USA',
     StartTime: '2022-11-12',
     EndTime: '2022-11-12',
-    color: '#00bdae',
+    CategoryColor: '#00bdae',
   },
   {
     Id: 23,
@@ -182,7 +182,7 @@ export const scheduleData = [
     Location: 'Greenland',
     StartTime: '2022-11-15',
     EndTime: '2022-11-15',
-    color: '#ea7a57',
+    CategoryColor: '#ea7a57',
   },
   {
     Id: 24,
@@ -190,6 +190,6 @@ export const scheduleData = [
     Location: 'California',
     StartTime: '2022-11-16',
     EndTime: '2022-11-16',
-    color: '#7fa900',
+    CategoryColor: '#7fa900',
   },
 ];
