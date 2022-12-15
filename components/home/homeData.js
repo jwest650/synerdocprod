@@ -304,3 +304,41 @@ export const uploadSeviceNotes = [
     attached: false,
   },
 ];
+
+export const availabilityPopup = [
+  {
+    day: 'SUN',
+    time: '7:00 AM to 7:00 PM',
+    type: 'Standard',
+  },
+  {
+    day: 'MON',
+    time: '7:00 AM to 7:00 PM',
+    type: 'Standard',
+  },
+  {
+    day: 'TUE',
+    time: '7:00 AM to 7:00 PM',
+    type: 'Standard',
+  },
+  {
+    day: 'WED',
+    time: '7:00 AM to 7:00 PM',
+    type: 'Standard',
+  },
+  {
+    day: 'THU',
+    time: '7:00 AM to 7:00 PM',
+    type: 'Standard',
+  },
+  {
+    day: 'FRI',
+    time: '7:00 AM to 7:00 PM',
+    type: 'Standard',
+  },
+  {
+    day: 'SAT',
+    time: '7:00 AM to 7:00 PM',
+    type: 'Standard',
+  },
+];

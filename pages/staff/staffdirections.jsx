@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import CreateNewLocation from '../../components/home/staff/CreateNewLocation';
+import CreateNewLocation from '../../components/home/otheractionscard/staff/CreateNewLocation';
 import CalendarComp from '../../components/structure/CalendarComp';
 import TableSelect from '../../components/structure/TableSelect';
 

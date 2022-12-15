@@ -1,37 +1,75 @@
+import { Tooltip } from '@chakra-ui/react';
+import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import { BsSquare } from 'react-icons/bs';
 import { FcPlanner } from 'react-icons/fc';
 import TableSelect from '../structure/TableSelect';
+import AvailabilityPopup from './AvailabilityPopup';
 
 const SchedulerNav = () => {
+  const [showTable, setShowTable] = useState(false);
   return (
-    <div className="whitespace-nowrap rounded border p-5">
-      <div className="flex items-center justify-between gap-4">
+    <div className="whitespace-nowrap rounded border-[1px] p-5">
+      <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <h2 className="verdana14 font-semibold">Calendar For :</h2>
           <TableSelect options={['<-select->', 'Guest Guest']} />
         </div>
-        <div className="flex items-center gap-3">
-          <span className="flex items-center gap-2">
+        <div className=" flex scale-90 items-center gap-4">
+          <div
+            onMouseOver={() => setShowTable(true)}
+            onMouseLeave={() => setShowTable(false)}
+            className=" flex items-center gap-2"
+          >
             <FcPlanner className="scale-150 text-base" />
             <h3 className="verdana14 font-semibold">Availability</h3>
-          </span>
-          <button className="btn-primary flex items-center gap-1">
-            <BiPlus />
-            Manage Overrides
-          </button>
-          <button className="btn-primary flex items-center gap-1">
-            <BiPlus />
-            Reassign
-          </button>
-          <button className="btn-primary flex items-center gap-1">
-            <BiPlus />
-            Associate Productivity
-          </button>
-          <button className="btn-primary flex items-center gap-1">
-            <BiPlus />
-            Create Overrides
-          </button>
+            {showTable && <AvailabilityPopup />}
+          </div>
+          <Tooltip
+            hasArrow
+            label={`Create Extra Availability/Unavailability`}
+            fontSize="11px"
+            color="white"
+          >
+            <button className="btn-primary flex items-center gap-1">
+              <BiPlus />
+              Manage Overrides
+            </button>
+          </Tooltip>
+          <Tooltip
+            hasArrow
+            label={`Create Extra Availability/Unavailability`}
+            fontSize="11px"
+            color="white"
+          >
+            <button className="btn-primary flex items-center gap-1">
+              <BiPlus />
+              Reassign
+            </button>
+          </Tooltip>
+
+          <Tooltip
+            hasArrow
+            label={`Create Extra Availability/Unavailability`}
+            fontSize="11px"
+            color="white"
+          >
+            <button className="btn-primary flex items-center gap-1">
+              <BiPlus />
+              Associate Productivity
+            </button>
+          </Tooltip>
+          <Tooltip
+            hasArrow
+            label={`Create Extra Availability/Unavailability`}
+            fontSize="11px"
+            color="white"
+          >
+            <button className="btn-primary flex items-center gap-1">
+              <BiPlus />
+              Create Overrides
+            </button>
+          </Tooltip>
         </div>
       </div>
       <ul className="mt-3 flex flex-wrap items-center gap-8">

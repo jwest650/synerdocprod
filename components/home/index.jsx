@@ -67,8 +67,10 @@ const HomePage = () => {
         />
         <OtherActionsCard />
       </div>
-      <div className="col-span-3 space-y-4">
-        <SchedulerNav />
+      <div className="relative col-span-3 pt-28">
+        <div className="absolute top-0 z-10">
+          <SchedulerNav />
+        </div>
         <ScheduleComp eventsData={events} setEventsData={setEvents} />
       </div>
     </div>
