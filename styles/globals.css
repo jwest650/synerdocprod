@@ -82,8 +82,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
 }
+
+.shadow-primary {
+  @apply shadow shadow-secondary-blue;
+}
+
 .card-primary {
-  @apply rounded bg-secondary-blue p-3 shadow-md;
+  @apply rounded bg-secondary-blue p-3;
 }
 
 .btn-primary {
@@ -264,7 +269,7 @@ body {
 /* SHEDULER */
 
 .schedule {
-  @apply rounded-lg shadow-md;
+  @apply rounded-lg;
 }
 
 /* Services */

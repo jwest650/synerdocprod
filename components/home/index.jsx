@@ -11,7 +11,7 @@ import SchedulerNav from './SchedulerNav';
 const HomePage = () => {
   const [events, setEvents] = useState(scheduleData);
   return (
-    <div className="verdana11 mt-4 grid w-full grid-cols-4 gap-4">
+    <div className="verdana11 mt-4 grid w-full grid-cols-4 gap-4 px-4">
       <div className="col-span-1 space-y-4">
         <div className="card-primary h-32 space-y-4">
           <h2 className="verdana14 font-semibold">Annoucements</h2>
