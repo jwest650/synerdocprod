@@ -21,26 +21,26 @@ const EditPopover = () => {
               <SiVercel />
             </span>
             <div className=" absolute top-8 left-10 z-10 w-fit rounded-lg border-x border-b bg-white py-1 shadow-xl ">
-              <h2 className="verdana13 mb-1 px-2 font-semibold tracking-wider text-primary-orange">
+              <h2 className="verdana12 mb-1 px-2 font-semibold tracking-wider text-primary-orange">
                 Missing Fields
               </h2>
-              <div className="verdana-12 mt-3 flex w-48 flex-col  gap-1">
-                <p className="border-b px-2 py-[2px]  text-secondary-color">
+              <div className="verdana-11 mt-1.5 flex w-48 flex-col">
+                <p className="border-b  px-2 py-[1px] text-secondary-color  hover:bg-texiary-blue">
                   Missing Phone
                 </p>
-                <p className="border-b px-2 py-[2px]  text-secondary-color">
+                <p className="border-b  px-2 py-[1px] text-secondary-color  hover:bg-texiary-blue">
                   Missing Patients Address
                 </p>
-                <p className="border-b px-2 py-[2px]  text-secondary-color">
+                <p className="border-b  px-2 py-[1px] text-secondary-color  hover:bg-texiary-blue">
                   Missing Gender
                 </p>
-                <p className="border-b px-2 py-[2px] text-secondary-color ">
+                <p className="border-b  px-2 py-[1px] text-secondary-color hover:bg-texiary-blue ">
                   Missing Race
                 </p>
-                <p className="border-b px-2 py-[2px] text-secondary-color ">
+                <p className="border-b  px-2 py-[1px] text-secondary-color hover:bg-texiary-blue ">
                   Missing Birth Date
                 </p>
-                <p className="px-2 py-[2px] text-secondary-color ">
+                <p className="px-2  py-[1px] text-secondary-color hover:bg-texiary-blue ">
                   Missing Age
                 </p>
               </div>

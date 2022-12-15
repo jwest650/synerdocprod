@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { useState } from 'react';
-import SearchIcon from '../../../assets/images/search.png';
+import SearchIcon from '../../../../assets/images/search.png';
 import ResourceTable from './ResourceTable';
 
 const FindResource = ({ resourceType, resourceName, setResourceName }) => {

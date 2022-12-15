@@ -4,11 +4,10 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
-import { BiPlus } from 'react-icons/bi';
 import { BsDot } from 'react-icons/bs';
 import { FcCancel, FcOk } from 'react-icons/fc';
-import DeletePopup from '../structure/DeletePopup';
-import { uploadSeviceNotes } from './homeData';
+import DeletePopup from '../../structure/DeletePopup';
+import { uploadSeviceNotes } from '../homeData';
 
 const UploadSeviceNotes = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

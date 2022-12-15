@@ -38,7 +38,7 @@ export const scheduleData = [
     Location: 'Space Center USA',
     StartTime: '2022-11-14',
     EndTime: '2022-11-14',
-    CategoryColor: 'white',
+    CategoryColor: '#fff',
   },
   {
     Id: 6,
@@ -46,7 +46,7 @@ export const scheduleData = [
     Location: 'Bermuda',
     StartTime: '2022-11-14',
     EndTime: '2022-11-14',
-    CategoryColor: 'black',
+    CategoryColor: '#000',
   },
   {
     Id: 7,

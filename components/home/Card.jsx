@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import { MdOutlineArrowDropDown } from 'react-icons/md';
+import { useEffect, useState } from 'react';
 import TableSelect from '../structure/TableSelect';
 import { patients } from './homeData';
 

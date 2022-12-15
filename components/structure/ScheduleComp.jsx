@@ -25,7 +25,9 @@ const ScheduleComp = ({ setEventsData, eventsData }) => {
   };
 
   const handleRendered = (args) => {
-    args.element.style.backgroundColor = args.data.CategoryColor;
+    args.element.style.backgroundColor = args?.data?.CategoryColor
+      ? args?.data?.CategoryColor
+      : '#000';
   };
 
   return (

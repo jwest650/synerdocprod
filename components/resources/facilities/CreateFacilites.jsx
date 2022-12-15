@@ -31,7 +31,7 @@ const CreateFacilities = () => {
               <h1 className="verdana18 font-semibold">Create Facility</h1>
               <p className="verdana12 text-gray-400">Create Facility details</p>
 
-              <div className="verdana13 mt-10">
+              <div className="verdana12 mt-10">
                 <div className="flex w-full flex-col items-center gap-3.5">
                   <div className="flex w-full items-center justify-center gap-3 ">
                     <p className="flex w-[40%]  justify-end">

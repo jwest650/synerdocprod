@@ -2,8 +2,6 @@ import Link from 'next/link';
 import { BsBook } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 import { IoSaveOutline } from 'react-icons/io5';
-import React, { useContext } from 'react';
-import GeneralContext from '../../context/GeneralContext';
 import { useRouter } from 'next/router';
 
 const ContentOptions = () => {
