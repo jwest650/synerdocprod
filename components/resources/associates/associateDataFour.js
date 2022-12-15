@@ -150,3 +150,21 @@ export const overallForm = {
     'Definitely unsatisfactory',
   ],
 };
+
+export const administrative = [
+  'Aministrative',
+  'Collector',
+  'Contractor',
+  'Field Staff - Full Time',
+  'Field Staff - Part Time',
+  'Salesperson',
+  'Volunteer',
+];
+
+export const statusDetails = [
+  'Active',
+  'Inactive',
+  'Suspended',
+  'Pending',
+  'Terminated',
+];
