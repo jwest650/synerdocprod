@@ -28,7 +28,7 @@ const CreateRole = () => {
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">Create Role</h1>
+              <h1 className="verdana16 font-semibold">Create Role</h1>
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"

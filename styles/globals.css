@@ -239,7 +239,7 @@ body {
   }
 }
 .moreInfo-anim {
-  animation: moreInfo 0.1s forwards ease-in;
+  animation: moreInfo 35ms forwards ease-in;
 }
 
 @keyframes moreInfo {
@@ -269,7 +269,7 @@ body {
 /* SHEDULER */
 
 .schedule {
-  @apply rounded-lg;
+  @apply rounded;
 }
 
 /* Services */

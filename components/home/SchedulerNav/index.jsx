@@ -3,8 +3,11 @@ import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import { BsSquare } from 'react-icons/bs';
 import { FcPlanner } from 'react-icons/fc';
-import TableSelect from '../structure/TableSelect';
+import TableSelect from '../../structure/TableSelect';
+import AssociateProductivity from './AssociateProductivity';
 import AvailabilityPopup from './AvailabilityPopup';
+import ManageOverrides from './ManageOverrides';
+import Reassign from './Reassign';
 
 const SchedulerNav = () => {
   const [showTable, setShowTable] = useState(false);
@@ -32,44 +35,14 @@ const SchedulerNav = () => {
             color="white"
           >
             <button className="btn-primary flex items-center gap-1">
-              <BiPlus />
-              Manage Overrides
-            </button>
-          </Tooltip>
-          <Tooltip
-            hasArrow
-            label={`Create Extra Availability/Unavailability`}
-            fontSize="11px"
-            color="white"
-          >
-            <button className="btn-primary flex items-center gap-1">
-              <BiPlus />
-              Reassign
-            </button>
-          </Tooltip>
-
-          <Tooltip
-            hasArrow
-            label={`Create Extra Availability/Unavailability`}
-            fontSize="11px"
-            color="white"
-          >
-            <button className="btn-primary flex items-center gap-1">
-              <BiPlus />
-              Associate Productivity
-            </button>
-          </Tooltip>
-          <Tooltip
-            hasArrow
-            label={`Create Extra Availability/Unavailability`}
-            fontSize="11px"
-            color="white"
-          >
-            <button className="btn-primary flex items-center gap-1">
-              <BiPlus />
+              <BiPlus className="scale-150" />
               Create Overrides
             </button>
           </Tooltip>
+
+          <ManageOverrides />
+          <Reassign />
+          <AssociateProductivity />
         </div>
       </div>
       <ul className="mt-3 flex flex-wrap items-center gap-8">

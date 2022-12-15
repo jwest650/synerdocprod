@@ -1,5 +1,5 @@
 import { SiVercel } from 'react-icons/si';
-import { availabilityPopup } from './homeData';
+import { availabilityPopup } from '../homeData';
 
 const AvailabilityPopup = () => {
   return (
