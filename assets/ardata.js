@@ -350,7 +350,7 @@ export const era = [
 ];
 
 export const collectorData = {
-    agency: ["Louisiana"],
+    agency: ["Check All", "Sinam Care, LLC"],
     level: [
         "All Payer Categories",
         "Single Payer Category",
@@ -358,7 +358,8 @@ export const collectorData = {
         "Patient Encounter",
         "Team",
     ],
-    asign: ["Bailey Derbie"],
+    encounter: ["jay"],
+    assign: ["Bailey Derbie"],
     payerCate: ["Medicare", "Insurance"],
     payer: ["Aetna"],
 };

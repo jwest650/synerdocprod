@@ -4,8 +4,8 @@ import { ar } from "../../../assets/ardata";
 import { FcEmptyTrash, FcEditImage } from "react-icons/fc";
 import { BsPlus } from "react-icons/bs";
 import { Input, Select, useDisclosure } from "@chakra-ui/react";
-import CreateCollectorModal from "../../../components/ar/CreateCollectorModal";
 import Actions from "../../../components/ar/Actions";
+import CreateCollectorModal from "../../../components/ar/modals/CreateCollectorModal";
 
 const ARCollectionAssignments = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();

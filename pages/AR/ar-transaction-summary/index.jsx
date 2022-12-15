@@ -2,6 +2,7 @@ import { Button, Input, Select } from "@chakra-ui/react";
 import React from "react";
 import { FcCalendar, FcSearch } from "react-icons/fc";
 import { summary } from "../../../assets/ardata";
+import DateCalender from "../../../components/ar/DateCalender";
 
 const ARTransactionSummary = () => {
     return (
@@ -46,7 +47,7 @@ const ARTransactionSummary = () => {
                             <label htmlFor="revenue" className="pr-2 font-bold">
                                 revenue date from:
                             </label>
-                            <Input
+                            {/* <Input
                                 className="input-shadow"
                                 id="revenue"
                                 w={130}
@@ -56,7 +57,9 @@ const ARTransactionSummary = () => {
                             />
                             <label htmlFor="revenue">
                                 <FcCalendar className="text-xl" />
-                            </label>
+                            </label> */}
+
+                            <DateCalender />
                         </div>
 
                         <div className="flex items-center">
