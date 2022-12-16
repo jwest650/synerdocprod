@@ -33,21 +33,16 @@ const AssociateUploadPic = ({ setAssociateImage }) => {
         <BsCloudUpload className="scale-125" />
         <span>Upload Picture</span>
       </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      <Modal isOpen={isOpen} size={'lg'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h2 className="verdana18 font-semibold tracking-wider">
-                Upload File
-              </h2>
+              <h2 className="verdana16 font-semibold">Upload File</h2>
               <div className="mt-10 flex w-full justify-center">
-                <Input
+                <input
                   onChange={onImageChange}
-                  className="w-40"
-                  w="fit-content"
-                  p="1"
-                  h="fit-content"
+                  className="input-primary w-48"
                   type="file"
                 />
               </div>

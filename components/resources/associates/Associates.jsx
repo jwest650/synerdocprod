@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { associateTableData } from './associateData';
 import { administrative, statusDetails } from './associateDataFour';
 import { FcLock, FcUnlock } from 'react-icons/fc';
+import UniversityList from './UniversityList';
 
 const Associates = () => {
   const [associateName, setAssociateName] = useState('All');
@@ -31,6 +32,7 @@ const Associates = () => {
         <div className="flex items-center gap-8">
           <h2 className="verdana16 font-semibold tracking-wider">Associates</h2>
           <CreateAssociate />
+          <UniversityList />
         </div>
         <div className="verdana12 flex items-center gap-3">
           <TableSelect
@@ -137,6 +139,14 @@ const Associates = () => {
               </td>
             </tr>
           ))}
+          <tr>
+            <td className="td-primary" colSpan={7}>
+              <div className="flex items-center gap-2">
+                Displaying page 1 of 1, rows 1 to 2 of 2 | Rows per page:
+                <TableSelect options={[25, 50, 100, 150, 200, 250, 500]} />
+              </div>
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>

@@ -1,5 +1,6 @@
 import CalendarComp from '../../structure/CalendarComp';
 import TableSelect from '../../structure/TableSelect';
+import { classification } from './associateDataFour';
 import { employmentDiscipline } from './associateDatatwo';
 
 const EmploymentDetails = ({
@@ -18,16 +19,7 @@ const EmploymentDetails = ({
         <div className=" flex w-[65%] items-center">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
-            options={[
-              '<--select-->',
-              'Administrative',
-              'Collector',
-              'Contractor',
-              'Field Staff - Full Time',
-              'Field Staff - Part Time',
-              'Salesperson',
-              'Volunteer',
-            ]}
+            options={['<--select-->', ...classification]}
           />
         </div>
       </div>
@@ -80,7 +72,7 @@ const EmploymentDetails = ({
         <div className=" flex w-[65%] ">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
-            options={['Sinam Care']}
+            options={['<--select-->', 'Sinam Care, LLC']}
           />
         </div>
       </div>
@@ -102,6 +94,22 @@ const EmploymentDetails = ({
             placeholder="9977423432"
             className="input-primary"
           />
+        </div>
+      </div>
+      <div className="flex w-full items-center justify-center gap-3 ">
+        <label htmlFor="" className="flex w-[35%] justify-end">
+          Evv Vendor ID:
+        </label>
+        <div className=" flex w-[65%] ">
+          <input type="text" placeholder="" className="input-primary" />
+        </div>
+      </div>
+      <div className="flex w-full items-center justify-center gap-3 ">
+        <label htmlFor="" className="flex w-[35%] justify-end">
+          Evv Admin Email:
+        </label>
+        <div className=" flex w-[65%] ">
+          <input type="text" placeholder="" className="input-primary" />
         </div>
       </div>
     </div>

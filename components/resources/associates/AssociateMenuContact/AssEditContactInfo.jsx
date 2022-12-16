@@ -5,32 +5,29 @@ import {
   Tooltip,
   useDisclosure,
 } from '@chakra-ui/react';
-import { BiPlus } from 'react-icons/bi';
 import TableSelect from '../../../structure/TableSelect';
 import { statesAbbreviation } from '../associateDatatwo';
 
-const AssociateCreateContactInfo = ({ setShowContactInfo }) => {
+const AssEditContactInfo = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleForm = (e) => {
     e.preventDefault();
     onClose();
-    setShowContactInfo(true);
   };
   return (
     <>
       <Tooltip
         hasArrow
-        label={`Create Contact Info`}
+        label={`Edit Contact Info`}
         fontSize="11px"
         color="white"
       >
         <span
           onClick={onOpen}
-          className="btn-primary flex cursor-pointer items-center gap-1"
+          className="cursor-pointer text-primary-orange underline"
         >
-          <BiPlus className="scale-150" />
-          <span>Create Contact Info</span>
+          [Edit]
         </span>
       </Tooltip>
       <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
@@ -39,7 +36,7 @@ const AssociateCreateContactInfo = ({ setShowContactInfo }) => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana16 font-semibold">
-                Create Address/Phone Info
+                Edit Address/Phone Info
               </h1>
               <p>
                 Select an address type and enter address details. Then add
@@ -182,10 +179,7 @@ const AssociateCreateContactInfo = ({ setShowContactInfo }) => {
                   Save
                 </button>
                 <button
-                  onClick={() => {
-                    setShowContactInfo(true);
-                    onClose();
-                  }}
+                  onClick={onClose}
                   className="rounded bg-gray-500 px-4 py-1 text-white shadow"
                 >
                   Cancel
@@ -199,4 +193,4 @@ const AssociateCreateContactInfo = ({ setShowContactInfo }) => {
   );
 };
 
-export default AssociateCreateContactInfo;
+export default AssEditContactInfo;

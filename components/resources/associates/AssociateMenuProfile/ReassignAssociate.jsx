@@ -2,6 +2,7 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
+  Tooltip,
   useDisclosure,
 } from '@chakra-ui/react';
 import TableSelect from '../../../structure/TableSelect';
@@ -15,12 +16,14 @@ const ReassignAssociate = () => {
   };
   return (
     <>
-      <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer text-secondary-color underline">
-          [Reassign]
-        </p>
-      </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      <Tooltip hasArrow label={`Reassign`} fontSize="11px" color="white">
+        <span onClick={onOpen}>
+          <p className="mr-2 cursor-pointer text-secondary-color underline">
+            [Reassign]
+          </p>
+        </span>
+      </Tooltip>
+      <Modal isOpen={isOpen} size={'4xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
@@ -37,7 +40,7 @@ const ReassignAssociate = () => {
                       {' '}
                       <TableSelect
                         styles={{ width: '100%' }}
-                        options={['Other Leave', 'Option2']}
+                        options={['<--select-->', 'Gerard Myriam']}
                       />
                     </div>
                   </div>
@@ -63,11 +66,11 @@ const ReassignAssociate = () => {
                     />{' '}
                   </div>
                 </div>
-                <div className="verdana18  w-full border-b border-dashed border-black font-semibold">
+                <div className="verdana16  w-full border-b border-dashed border-black font-semibold">
                   Schedules to Reassign{' '}
                 </div>
                 <div className="w-full overflow-auto px-2 py-4">
-                  <table className=" mx-auto mt-4 w-full px-3">
+                  <table className=" mx-auto w-full px-3">
                     <thead className="thead-primary">
                       <tr>
                         <th className="th-first">
@@ -84,47 +87,47 @@ const ReassignAssociate = () => {
                     </thead>
                     <tbody>
                       <tr className="w-full bg-[#e6ebf85d]">
-                        <td className="td-primary w-10 px-4">
+                        <td className="td-primary w-9 px-4">
                           <input type="checkbox" />
                         </td>
                         <td className="td-primary w-60 px-2">Bailey Derbie </td>
                         <td className="td-primary w-72 px-4">Smith Jimmy </td>
                         <td className="td-primary w-60 px-4">11/11/22 </td>
                         <td className="td-primary">
-                          <input type="text" className="input-primary mx-3" />
+                          <input type="text" className="input-primary w-24" />
                         </td>
                         <td className="td-primary">
-                          <input type="text" className="input-primary mx-3" />
+                          <input type="text" className="input-primary w-24" />
                         </td>
                         <td className="td-primary w-80"></td>
                       </tr>
                       <tr className="w-full bg-[#e6ebf85d]">
-                        <td className="td-primary w-10 px-4">
+                        <td className="td-primary w-9 px-4">
                           <input type="checkbox" />
                         </td>
                         <td className="td-primary w-60 px-2">Bailey Derbie </td>
                         <td className="td-primary w-72 px-4">Smith Jimmy </td>
                         <td className="td-primary w-40 px-4">11/11/22 </td>
                         <td className="td-primary">
-                          <input type="text" className="input-primary mx-3" />
+                          <input type="text" className="input-primary w-24" />
                         </td>
                         <td className="td-primary">
-                          <input type="text" className="input-primary mx-3" />
+                          <input type="text" className="input-primary w-24" />
                         </td>
                         <td className="td-primary w-80"></td>
                       </tr>
                       <tr className="w-full bg-[#e6ebf85d]">
-                        <td className="td-primary w-10 px-4">
+                        <td className="td-primary w-9 px-4">
                           <input type="checkbox" />
                         </td>
                         <td className="td-primary w-60 px-2">Bailey Derbie </td>
                         <td className="td-primary w-72 px-4">Smith Jimmy </td>
                         <td className="td-primary w-40 px-4">11/11/22 </td>
                         <td className="td-primary">
-                          <input type="text" className="input-primary mx-3" />
+                          <input type="text" className="input-primary w-24" />
                         </td>
                         <td className="td-primary">
-                          <input type="text" className="input-primary mx-3" />
+                          <input type="text" className="input-primary w-24" />
                         </td>
                         <td className="td-primary w-80"></td>
                       </tr>

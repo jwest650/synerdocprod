@@ -3,6 +3,7 @@ import {
   ModalContent,
   ModalOverlay,
   Select,
+  Tooltip,
   useDisclosure,
 } from '@chakra-ui/react';
 import TableSelect from '../../../structure/TableSelect';
@@ -16,21 +17,23 @@ const TerminateAssociate = () => {
   };
   return (
     <>
-      <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer py-[5px] text-secondary-color underline">
-          [Terminate]
-        </p>
-      </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      <Tooltip hasArrow label={`Terminate`} fontSize="11px" color="white">
+        <span onClick={onOpen}>
+          <p className="mr-2 cursor-pointer py-[5px] text-secondary-color underline">
+            [Terminate]
+          </p>
+        </span>
+      </Tooltip>
+      <Modal isOpen={isOpen} size={'3xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">Terminate Associate</h1>
+              <h1 className="verdana16 font-semibold">Terminate Associate</h1>
 
               <div className="">
                 <div className="mt-5 flex w-[85%] flex-col items-center justify-center px-3">
-                  <div className="my-2 flex items-center">
+                  <div className="my-1.5 flex items-center">
                     <p className="w-[150px] text-right font-medium">
                       {' '}
                       <span className="text-primary-orange">*</span>Reason:{' '}
@@ -43,7 +46,7 @@ const TerminateAssociate = () => {
                     </div>
                   </div>
 
-                  <div className="my-2 flex items-center">
+                  <div className="my-1.5 flex items-center">
                     <p className="w-[150px] text-right font-medium">
                       Eligible for Rehire:
                     </p>{' '}
@@ -51,7 +54,7 @@ const TerminateAssociate = () => {
                       <input type="checkbox" className="input-primary" />{' '}
                     </div>
                   </div>
-                  <div className="my-2 flex items-center">
+                  <div className="my-1.5 flex items-center">
                     <p className="w-[150px] text-right font-medium">
                       {' '}
                       <span className="text-primary-orange">*</span> Terminate
@@ -64,7 +67,7 @@ const TerminateAssociate = () => {
                     />{' '}
                   </div>
                 </div>
-                <p className="my-9 font-semibold">
+                <p className="my-6 font-semibold">
                   All future scheduled services assigned to this Associate will
                   be unassigned.
                 </p>
@@ -88,18 +91,18 @@ const TerminateAssociate = () => {
                   </thead>
                   <tbody>
                     <tr className="w-full bg-[#e6ebf85d]">
-                      <td className="td-primary w-10">
+                      <td className="td-primary w-8">
                         <input type="checkbox" />
                       </td>
                       <td className="td-primary w-10">11/11/22</td>
                       <td className="td-primary w-72 ">
-                        Hospice MSW - Initial Assessment Visit{' '}
+                        RN Initial Assessment Visit{' '}
                       </td>
                       <td className="td-primary">
-                        <input type="text" className="input-primary mx-3" />
+                        <input type="text" className="input-primary w-24" />
                       </td>
                       <td className="td-primary">
-                        <input type="text" className="input-primary mx-3" />
+                        <input type="text" className="input-primary w-24" />
                       </td>
                     </tr>
                   </tbody>
