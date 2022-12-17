@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { useState } from 'react';
-import SearchIcon from '../../../assets/images/search.png';
+import SearchIcon from '../../../../assets/images/search.png';
 import ResourceTable from './ResourceTable';
 
 const FindResource = ({ resourceType, resourceName, setResourceName }) => {
@@ -26,7 +26,7 @@ const FindResource = ({ resourceType, resourceName, setResourceName }) => {
       <Modal isOpen={isOpen} size={showTable ? '2xl' : 'xs'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <h1 className="verdana18 font-semibold">Find {resourceType}</h1>
             <p className="verdana11 text-primary-gray">
               Select for a {resourceType}

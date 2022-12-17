@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import InputDropdown from '../../components/home/staff/InputDropdown';
 import CalendarComp from '../../components/structure/CalendarComp';
 import SearchIcon from '../../assets/images/search.png';
 import { useState } from 'react';
-import FindResource from '../../components/home/staff/FindResource';
 import Link from 'next/link';
+import InputDropdown from '../../components/home/otheractionscard/staff/InputDropdown';
+import FindResource from '../../components/home/otheractionscard/staff/FindResource';
 
 const PayonlyDetail = () => {
   const [serviceDate, setServiceDate] = useState('');

@@ -33,7 +33,7 @@ const CreatePayRate = () => {
       <Modal isOpen={isOpen} size={`${show2 ? '4xl' : 'lg'}`} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10">
             <h1 className="verdana16 font-semibold">Create Payroll</h1>
 
             <div className="mt-7 ">

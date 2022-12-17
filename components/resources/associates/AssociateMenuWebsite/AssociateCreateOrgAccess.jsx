@@ -63,7 +63,7 @@ const AssociateCreateOrgAccess = ({
             <div className="mt-8 flex w-full justify-end gap-3">
               <button
                 onClick={handlesave}
-                className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+                className="rounded bg-primary-blue px-4 py-1 text-white shadow"
               >
                 Save
               </button>

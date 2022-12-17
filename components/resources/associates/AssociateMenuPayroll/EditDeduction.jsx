@@ -24,7 +24,7 @@ const EditDeduction = () => {
       <Modal isOpen={isOpen} size={'lg'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10">
             <h1 className="verdana16 font-semibold">Edit Payroll Deduction</h1>
             <p className="verdana11 text-primary-gray">
               Select a deduction type and enter amount/percentage details

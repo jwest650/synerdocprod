@@ -21,7 +21,7 @@ const CreateSkills = ({ option, category }) => {
       <Modal isOpen={isOpen} size="xs" onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10">
             <h1 className="verdana16 font-semibold">Create Skills</h1>
 
             <table className="mx-auto mt-4 w-full overflow-auto px-3 shadow-md">

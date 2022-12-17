@@ -35,7 +35,7 @@ export const associateTableData = [
     classification: 'Administrative',
     discipline: 'Registered Nurse',
     hireDate: new Date().toLocaleDateString(),
-    status: 'Active',
+    status: 'Terminated',
   },
   {
     name: 'Joshua Nartey',
@@ -43,7 +43,7 @@ export const associateTableData = [
     classification: 'Field Staff - Full time',
     discipline: 'Nurse Practitioner',
     hireDate: new Date().toLocaleDateString(),
-    status: 'Active',
+    status: 'Inactive',
   },
   {
     name: 'Nicholas Dazie',
@@ -51,7 +51,7 @@ export const associateTableData = [
     classification: 'Field Staff - Full time',
     discipline: 'Medical Director',
     hireDate: new Date().toLocaleDateString(),
-    status: 'Active',
+    status: 'Pending',
   },
   {
     name: 'Jay West',
@@ -59,7 +59,7 @@ export const associateTableData = [
     classification: 'FieldStaff - Part Time',
     discipline: 'Certified Occupational Therapy Assistant',
     hireDate: new Date().toLocaleDateString(),
-    status: 'Active',
+    status: 'Suspended',
   },
 ];
 

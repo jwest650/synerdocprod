@@ -27,10 +27,10 @@ const ActivePopup = ({ setActionType, noteId }) => {
         <ModalOverlay />
         <ModalContent>
           {/* <div className="rounded border border-black"> */}
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10">
             {/* <div className="h-full rounded border border-black "> */}
             <h1 className="verdana16 font-semibold">Edit Note</h1>
-            <div className="verdana11 flex-col mt-2 flex">
+            <div className="verdana11 mt-2 flex flex-col">
               <li className="flex items-center gap-1">
                 <BsDot className="scale-125 text-primary-orange" />{' '}
                 <p>

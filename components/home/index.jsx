@@ -1,19 +1,17 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
-import { BsDot } from 'react-icons/bs';
 import { scheduleData } from '../../assets/scheduleData';
 import CreateAssociate from '../resources/associates/CreateAssociate';
-import CreateReferral from '../resources/referral-sources/CreateReferral';
 import ScheduleComp from '../structure/ScheduleComp';
 import Card from './Card';
+import OtherActionsCard from './otheractionscard';
 import SchedulerNav from './SchedulerNav';
-import UploadSeviceNotes from './UploadSeviceNotes';
 
 const HomePage = () => {
   const [events, setEvents] = useState(scheduleData);
   return (
-    <div className="verdana11 mt-4 grid w-full grid-cols-4 gap-4">
+    <div className="verdana11 mt-4 grid w-full grid-cols-4 gap-4 px-4">
       <div className="col-span-1 space-y-4">
         <div className="card-primary h-32 space-y-4">
           <h2 className="verdana14 font-semibold">Annoucements</h2>
@@ -67,35 +65,12 @@ const HomePage = () => {
           ]}
           title="Associates"
         />
-        <ul className="card-primary space-y-1">
-          <li className="verdana14 mb-4 font-semibold">Other Actions</li>
-          <li>
-            <CreateReferral
-              key={1}
-              action={
-                <span className="flex cursor-pointer items-center gap-2 text-primary-orange underline">
-                  <BsDot className="scale-150 text-base text-black" />
-                  Create Referral Source
-                </span>
-              }
-            />
-          </li>
-          <li className="flex items-center gap-2 text-primary-orange underline">
-            <BsDot className="scale-150 text-base text-black" />
-            <Link href="/staff/staffdirections">Directions/Mapping</Link>
-          </li>
-          <li>
-            <UploadSeviceNotes />
-          </li>
-          <li className="flex items-center gap-2 text-primary-orange underline">
-            <BsDot className="scale-150 text-base text-black" />
-            <Link href="/staff/payonlydetail">Add Pay Only</Link>
-          </li>
-          {/* {/* 'Educational Documents' */}
-        </ul>
+        <OtherActionsCard />
       </div>
-      <div className="col-span-3 space-y-4">
-        <SchedulerNav />
+      <div className="relative col-span-3 pt-28">
+        <div className="absolute top-0 z-10">
+          <SchedulerNav />
+        </div>
         <ScheduleComp eventsData={events} setEventsData={setEvents} />
       </div>
     </div>

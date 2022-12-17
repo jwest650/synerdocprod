@@ -16,14 +16,16 @@ const EachReferralSourcesPageDetails = ({ children }) => {
             key={index}
           >
             <li
-              className={`-mx-[1px] flex skew-x-[12deg] cursor-pointer items-center gap-1 rounded-t-lg border-2 border-gray-300 py-[1px] px-4 text-center italic ${
+              className={`-mx-[1px] flex skew-x-[12deg] cursor-pointer items-center gap-1 rounded-t-lg border-2 py-[1px] px-4 text-center italic ${
                 currentMenu === menu.url &&
                 'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1 not-italic '
               }    ${
                 currentMenu === undefined &&
                 menu.url === 'contactinfo' &&
                 'skew-x-[0deg] border-r-0 border-b-0 bg-white pt-1.5 not-italic '
-              }    ${index === 0 && ' skew-x-[1deg] border-r-0 not-italic'}   `}
+              }    ${
+                index === 0 && 'skew-x-[1deg] border-l border-r-0 not-italic'
+              }   `}
             >
               <span
                 className={`${currentMenu === menu.url && '-skew-x-[0deg]'}   ${
@@ -38,9 +40,7 @@ const EachReferralSourcesPageDetails = ({ children }) => {
         ))}
         <li className="flex-auto border border-gray-300" />
       </ul>
-      <div className="verdana11 -mt-[1px]  w-full border-x bg-white ">
-        {children}
-      </div>
+      <div className="-mt-[1px] h-full w-full bg-white p-5">{children}</div>
     </div>
   );
 };

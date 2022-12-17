@@ -1,5 +1,5 @@
-import TableSelect from '../../structure/TableSelect';
-import { states } from '../homeData';
+import TableSelect from '../../../structure/TableSelect';
+import { states } from '../../homeData';
 
 const CreateNewLocation = ({ setNewLocation }) => {
   return (

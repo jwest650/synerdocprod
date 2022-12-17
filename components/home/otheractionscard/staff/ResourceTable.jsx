@@ -1,4 +1,4 @@
-import { patients } from '../homeData';
+import { patients } from '../../homeData';
 
 const ResourceTable = ({ onClose, setShowTable }) => {
   return (

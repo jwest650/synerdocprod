@@ -5,7 +5,7 @@ import { HiBell } from 'react-icons/hi';
 const Bell = ({ hide, setHide }) => {
   return (
     <div className="relative flex w-full cursor-pointer justify-center bg-[#f6f8fc] text-[50px]">
-      <HiBell className="-mt-[18px] rotate-180 text-[#0141CF]" />
+      <HiBell className="-mt-[18px] rotate-180 text-primary-blue" />
       {hide ? (
         <span
           onClick={() => setHide(false)}

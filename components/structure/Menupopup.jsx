@@ -22,7 +22,7 @@ const Menupopup = ({ menu, index }) => {
     >
       <span className="mb-1 scale-[1.6]">{menu.icon}</span>
       <span
-        className={`border-b-2 border-[#0141CF] font-semibold hover:border-b-gray-200 ${
+        className={`border-b-2 border-primary-blue font-semibold hover:border-b-gray-200 ${
           currentPath && menu.name === currentPath && 'border-gray-200'
         }  `}
       >
@@ -45,7 +45,7 @@ const Menupopup = ({ menu, index }) => {
                 key={i}
               >
                 <li
-                  className={`flex w-full items-center gap-2 font-medium hover:w-full hover:bg-blue-100/80 ${
+                  className={`flex w-full items-center gap-2 font-medium hover:w-full hover:bg-secondary-blue ${
                     index === menu.options.length - 1
                       ? 'border-none'
                       : 'border-b'

@@ -1,4 +1,4 @@
-import { Select } from '@chakra-ui/react';
+import { employmentDiscipline } from './associateDatatwo';
 import TableAction from '../TableAction';
 import CreateAssociate from './CreateAssociate';
 import Link from 'next/link';
@@ -6,12 +6,25 @@ import MoreAssociateInfo from './MoreAssociateInfo';
 import TableSelect from '../../structure/TableSelect';
 import { useState } from 'react';
 import { associateTableData } from './associateData';
+import { administrative, statusDetails } from './associateDataFour';
+import { FcLock, FcUnlock } from 'react-icons/fc';
+import UniversityList from './UniversityList';
 
 const Associates = () => {
   const [associateName, setAssociateName] = useState('All');
   const [associateClassification, setAssociateClassification] = useState('All');
   const [associateDiscipline, setAssociateDiscipline] = useState('All');
   const [associateStatus, setAssociateStatus] = useState('All');
+  const [isLocked, setIsLocked] = useState(false);
+
+  const handleStatusColor = (status) => {
+    if (status === 'Active') return 'text-green-600';
+    if (status === 'Inactive') return 'text-yellow-600';
+    if (status === 'Suspended') return 'text-gray-600';
+    if (status === 'Pending') return 'text-blue-600';
+    if (status === 'Terminated') return 'text-red-600';
+    return '';
+  };
 
   return (
     <section className="mx-5 mt-10">
@@ -19,30 +32,17 @@ const Associates = () => {
         <div className="flex items-center gap-8">
           <h2 className="verdana16 font-semibold tracking-wider">Associates</h2>
           <CreateAssociate />
+          <UniversityList />
         </div>
         <div className="verdana12 flex items-center gap-3">
-          <Select
-            css={{
-              backgroundColor: '#c6d8ffe1',
-              border: 'none',
-              height: '22px',
-            }}
-            className="shadow outline-none"
-            size="xs"
-          >
-            <option value="option1" className="text-gray-800">
-              Associate List XLS
-            </option>
-            <option value="option2" className="text-gray-800">
-              Associate List PDF
-            </option>
-            <option value="option3" className="text-gray-800">
-              Associate Caseload XLS
-            </option>
-            <option value="option3" className="text-gray-800">
-              Associate Caseload PDF
-            </option>
-          </Select>
+          <TableSelect
+            options={[
+              'Associate List XLS',
+              'Associate List PDF',
+              'Associate Caseload XLS',
+              'Associate Caseload PDF',
+            ]}
+          />
           <button className="btn-primary">Export</button>
           <input
             placeholder="Enter first or last name"
@@ -70,41 +70,45 @@ const Associates = () => {
             <td className="w-full border border-primary-gray">
               <TableSelect
                 setSelectedOption={setAssociateName}
-                options={[
-                  'All',
-                  'Florida Branch',
-                  'California Branch',
-                  'New York Branch',
-                ]}
+                options={['All', 'Sinam Care, LLC']}
               />
             </td>
             <td className=" w-full border border-primary-gray">
               <TableSelect
                 setSelectedOption={setAssociateClassification}
-                options={['All', 'Aministrative', 'Field Staff - Full Time']}
+                options={['All', ...administrative]}
               />
             </td>
             <td className=" w-full border border-primary-gray">
               <TableSelect
                 setSelectedOption={setAssociateDiscipline}
-                options={['All', 'Registered Nurse', 'Nurse Practitioner']}
+                options={['All', ...employmentDiscipline]}
               />
             </td>
             <td></td>
             <td className=" w-full border border-primary-gray">
               <TableSelect
                 setSelectedOption={setAssociateStatus}
-                options={[
-                  'All',
-                  'Active',
-                  'Inactive',
-                  'Pending',
-                  'Suspended',
-                  'Terminated',
-                ]}
+                options={['All', ...statusDetails]}
               />
             </td>
-            <td></td>
+            <td className="td-ptimary">
+              {isLocked ? (
+                <i
+                  className="mx-4 flex cursor-pointer justify-center"
+                  onClick={() => setIsLocked(false)}
+                >
+                  <FcUnlock className="scale-150 text-base" />
+                </i>
+              ) : (
+                <i
+                  className="mx-4 flex cursor-pointer justify-center"
+                  onClick={() => setIsLocked(true)}
+                >
+                  <FcLock className="scale-150 text-base" />
+                </i>
+              )}
+            </td>
           </tr>
           {associateTableData.map((associate, i) => (
             <tr key={i} className={`border even:bg-[#eeeeee]`}>
@@ -124,17 +128,25 @@ const Associates = () => {
               </td>
               <td className="td-primary min-w-[120px]">{associate.hireDate}</td>
               <td
-                className={`td-primary min-w-[100px] font-semibold  ${
-                  associate.status === 'Active' && 'text-green-600'
-                }`}
+                className={`td-primary min-w-[100px] font-semibold ${handleStatusColor(
+                  associate.status
+                )}`}
               >
                 {associate.status}
               </td>
               <td className="td-primary min-w-[120px]">
-                <TableAction />
+                <TableAction associateUrl={associate.url} />
               </td>
             </tr>
           ))}
+          <tr>
+            <td className="td-primary" colSpan={7}>
+              <div className="flex items-center gap-2">
+                Displaying page 1 of 1, rows 1 to 2 of 2 | Rows per page:
+                <TableSelect options={[25, 50, 100, 150, 200, 250, 500]} />
+              </div>
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>

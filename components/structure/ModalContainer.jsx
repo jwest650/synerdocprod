@@ -19,7 +19,7 @@ const ModalContainer = ({ openButton, size, children }) => {
       <Modal isOpen={isOpen} size={size ? size : 'lg'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="verdana11 w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4">
+          <div className="verdana11 w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4">
             {children}
           </div>
         </ModalContent>

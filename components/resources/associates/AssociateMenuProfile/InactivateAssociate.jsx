@@ -3,6 +3,7 @@ import {
   ModalContent,
   ModalOverlay,
   Select,
+  Tooltip,
   useDisclosure,
 } from '@chakra-ui/react';
 import TableSelect from '../../../structure/TableSelect';
@@ -16,17 +17,19 @@ const InactivateAssociate = () => {
   };
   return (
     <>
-      <span onClick={onOpen}>
-        <p className="mr-2 cursor-pointer pt-[5px] text-secondary-color underline">
-          [Inactivate]
-        </p>
-      </span>
-      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+      <Tooltip hasArrow label={`Inactivate`} fontSize="11px" color="white">
+        <span onClick={onOpen}>
+          <p className="mr-2 cursor-pointer pt-[5px] text-secondary-color underline">
+            [Inactivate]
+          </p>
+        </span>
+      </Tooltip>
+      <Modal isOpen={isOpen} size={'3xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
-              <h1 className="verdana18 font-semibold">Inactivate Associate</h1>
+              <h1 className="verdana16 font-semibold">Inactivate Associate</h1>
 
               <div className="">
                 <div className="mt-10 flex w-[85%] flex-col items-center justify-center px-3">
@@ -39,11 +42,20 @@ const InactivateAssociate = () => {
                       {' '}
                       <TableSelect
                         styles={{ width: '100%' }}
-                        options={['Other Leave', 'Option2']}
+                        options={[
+                          '<--select-->',
+                          'Child/Family Care Responsibility',
+                          'Maternity Leave',
+                          'Medical Leave',
+                          'Military Duty',
+                          'Other Leave',
+                          'Return to School',
+                          'Workers Comp',
+                        ]}
                       />
                     </div>
                   </div>
-                  <div className="my-2 flex justify-center">
+                  <div className="my-2 mr-24 flex justify-center">
                     <p className="w-[150px] text-right">
                       {' '}
                       <span className="text-primary-orange">*</span>Inactivation
@@ -56,7 +68,7 @@ const InactivateAssociate = () => {
                     />{' '}
                   </div>
                 </div>
-                <p className="my-9 font-semibold">
+                <p className="my-7 font-semibold">
                   All future scheduled services assigned to this Associate will
                   be unassigned.
                 </p>
@@ -80,18 +92,18 @@ const InactivateAssociate = () => {
                   </thead>
                   <tbody>
                     <tr className="w-full bg-[#e6ebf85d]">
-                      <td className="td-primary w-10">
+                      <td className="td-primary w-8">
                         <input type="checkbox" />
                       </td>
                       <td className="td-primary w-10">11/11/22</td>
                       <td className="td-primary w-72">
-                        Hospice MSW - Initial Assessment Visit{' '}
+                        RN Initial Assessment Visit{' '}
                       </td>
                       <td className="td-primary">
-                        <input type="text" className="input-primary mx-3 " />
+                        <input type="text" className="input-primary w-24" />
                       </td>
                       <td className="td-primary">
-                        <input type="text" className="input-primary mx-3" />
+                        <input type="text" className="input-primary w-24" />
                       </td>
                     </tr>
                   </tbody>
@@ -100,7 +112,7 @@ const InactivateAssociate = () => {
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
-                  className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
                 >
                   Save
                 </button>
