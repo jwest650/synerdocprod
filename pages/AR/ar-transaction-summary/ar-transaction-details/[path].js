@@ -28,7 +28,7 @@ const ArTransactionDetails = () => {
                         <div className="space-y-2">
                             <p>payer category</p>
                             <p>11/04-22-11/04-22</p>
-                            <p>""</p>
+                            <p></p>
                             <p>$0.00</p>
                         </div>
                     </article>
