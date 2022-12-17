@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://cdn.syncfusion.com/ej2/tailwind.css");
+/* xfonts.pro */
+/* lato */
+/* new montreal */
+
+@font-face {
+    src: url(../assets/fonts/NeueMontreal-Regular.ttf);
+    font-family: "Neue Montreal";
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CUSTOM STYLES */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: 'Neue Montreal'; */
+    /* font-family: 'Jost', sans-serif; */
+    /* color: #9ca3af; */
+}
+
+body {
+    font-size: 11px;
+}
+
+.container-primary {
+    @apply verdana11 mt-5 min-h-screen w-full rounded border border-gray-200/50 p-5 shadow-lg;
+}
+
+.w-signature {
+    width: 100%;
+    height: 130px;
+}
+
+.arial12 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.verdana9 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9px;
+}
+.verdana10 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+.verdana11 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+.verdana12 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.verdana13 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+.verdana14 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.verdana15 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.verdana16 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.verdana17 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+.verdana18 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.card-primary {
+    @apply rounded bg-secondary-blue p-3 shadow-md;
+}
+
+.btn-primary {
+    @apply verdana11 rounded bg-orange-600 px-2 py-[2px] font-medium text-white shadow;
+}
+.btn-secondary {
+    @apply verdana13 rounded bg-orange-600 px-3 py-[4px] font-medium text-white shadow;
+}
+.btn-modalcancel {
+    @apply verdana13 rounded bg-primary-gray px-3 py-[4px] font-medium text-white shadow;
+}
+.btn-cancel {
+    @apply verdana11 rounded bg-primary-gray px-2 py-[2px] font-medium text-white shadow;
+}
+.input-primary {
+    @apply verdana11 rounded border border-secondary-blue px-1.5 py-[2px] text-black shadow outline-none;
+}
+.input-date {
+    @apply verdana11 w-[97px] rounded border border-secondary-blue py-[2px] px-3 text-black shadow outline-none;
+}
+.thead-primary {
+    @apply verdana11 border-b bg-primary-blue tracking-wider text-white;
+}
+.th-first {
+    @apply border border-primary-gray  border-t-primary-blue border-l-primary-blue py-[2px] pl-2 text-left;
+}
+.th-middle {
+    @apply border border-primary-gray  border-t-primary-blue py-[2px] pl-[8px] text-left;
+}
+.th-last {
+    @apply border border-primary-gray  border-t-primary-blue border-r-primary-blue py-[2px] pl-2 text-left;
+}
+.td-primary {
+    @apply verdana11 h-[28px] max-h-[28px] cursor-pointer border border-primary-gray px-2;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #90b3ffe1;
+    border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-gray-300;
+}
+
+.missingfield::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+    @apply rounded-full;
+}
+
+.missingfield::-webkit-scrollbar-thumb {
+    background-color: #90b3ffe1;
+    border-radius: 40px;
+    @apply rounded-full;
+}
+.missingfield::-webkit-scrollbar-track {
+    @apply rounded-full bg-gray-300;
+}
+
+.menu-anim::-webkit-scrollbar {
+    width: 3px;
+    height: 4px;
+    @apply rounded-full;
+}
+.cal-primary::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-anim::-webkit-scrollbar-thumb {
+    background-color: #90b3ffe1;
+    border-radius: 40px;
+    @apply rounded-full;
+}
+.menu-anim::-webkit-scrollbar-track {
+    @apply rounded-full bg-gray-300;
+}
+
+.custom
+    .e-list-item.e-level-1
+    .e-text-content.e-icon-wrapper
+    .e-checkbox-wrapper {
+    display: none;
+}
+
+.date-anim {
+    animation: dateAnim 0.5s forwards ease-in-out;
+}
+
+@keyframes dateAnim {
+    0% {
+        height: 0rem;
+    }
+
+    100% {
+        height: 265px;
+    }
+}
+
+.menu-anim {
+    animation: menuAnim 0.4s forwards ease-in-out;
+}
+
+@keyframes menuAnim {
+    0% {
+        height: 0rem;
+    }
+
+    99% {
+        height: 11rem;
+    }
+
+    100% {
+        height: fit-content;
+        max-height: 12.5rem;
+    }
+}
+.bezier-nav2 {
+    animation: bezz2 0.8s forwards ease-in-out;
+}
+
+@keyframes bezz2 {
+    0% {
+        width: 70px;
+    }
+    99% {
+        width: 250px;
+    }
+    100% {
+        width: 250px;
+    }
+}
+
+.bezier-nav1 {
+    animation: bezz1 2s forwards ease-in-out;
+}
+
+@keyframes bezz1 {
+    0% {
+        width: 250px;
+    }
+    50% {
+        width: 150px;
+    }
+    100% {
+        width: 70px;
+    }
+}
+.moreInfo-anim {
+    animation: moreInfo 35ms forwards ease-in;
+}
+
+@keyframes moreInfo {
+    0% {
+        @apply scale-75;
+    }
+    90% {
+        @apply scale-105;
+    }
+    100% {
+        @apply scale-100;
+    }
+}
+.card-dropdown {
+    animation: cardDropdown 0.4s forwards ease-in-out;
+}
+
+@keyframes cardDropdown {
+    0% {
+        @apply h-2;
+    }
+    100% {
+        @apply h-24;
+    }
+}
+
+/* SHEDULER */
+
+.schedule {
+    @apply rounded-lg shadow-md;
+}
+
+/* Services */
+.e-schedule .e-schedule-toolbar .e-tbar-btn .e-tbar-btn-text {
+    cursor: pointer;
+    font-size: 13px;
+    text-transform: none;
+}
+
+/* Calendar */
+.e-schedule
+    .e-schedule-toolbar
+    .e-toolbar-items
+    .e-toolbar-item.e-date-range
+    .e-tbar-btn
+    .e-tbar-btn-text {
+    font-size: 12px;
+    text-transform: initial;
+}
+
+/* Today */
+.e-toolbar
+    .e-toolbar-items.e-tbar-pos
+    .e-toolbar-right:last-child
+    > div:nth-child(1) {
+    right: 0;
+    display: none;
+}
+
+/* Bar */
+.e-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
+    height: 24px;
+    display: none;
+    vertical-align: middle;
+}
+
+/* Days of the week */
+.e-schedule .e-month-view .e-date-header-wrap table td,
+.e-schedule .e-month-agenda-view .e-date-header-wrap table td {
+    background-color: #fff;
+    border-color: #e5e7eb;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    color: #374151;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Cells */
+.e-schedule .e-month-view .e-work-cells,
+.e-schedule .e-month-agenda-view .e-work-cells {
+    background-color: #f9fafb;
+    border-color: #e5e7eb;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    color: #111827;
+    font-size: 11px;
+    padding: 0;
+}
+
+/* Cells Height */
+
+/* .e-schedule .e-month-view .e-content-table {
+  height: 70%;
+} */
+.e-schedule .e-month-view .e-work-cells {
+    height: 75px;
+    vertical-align: top;
+    width: 36px;
+}
+/*each event */
+.e-schedule .e-month-view .e-appointment .e-appointment-details .e-subject {
+    -ms-flex: auto;
+    flex: auto;
+    font-size: 11px;
+    font-weight: 500;
+    overflow: hidden;
+    padding: 1px 2px;
+    text-overflow: ellipsis;
+}
+
+/* Add event small */
+
+/* Header */
+.e-quick-popup-wrapper
+    .e-cell-popup
+    .e-popup-content
+    .e-popup-table
+    .e-subject {
+    font-size: 14px;
+    height: 40px;
+    height: 30px;
+    line-height: 22px;
+    padding: 2px 10px;
+}
+
+/* body */
+.e-quick-popup-wrapper .e-cell-popup .e-date-time-details,
+.e-quick-popup-wrapper .e-cell-popup .e-location-details,
+.e-quick-popup-wrapper .e-cell-popup .e-time-zone-details,
+.e-quick-popup-wrapper .e-cell-popup .e-description-details,
+.e-quick-popup-wrapper .e-cell-popup .e-resource-details,
+.e-quick-popup-wrapper .e-event-popup .e-date-time-details,
+.e-quick-popup-wrapper .e-event-popup .e-location-details,
+.e-quick-popup-wrapper .e-event-popup .e-time-zone-details,
+.e-quick-popup-wrapper .e-event-popup .e-description-details,
+.e-quick-popup-wrapper .e-event-popup .e-resource-details {
+    color: #111827;
+    cursor: default;
+    font-size: 12px;
+}
+
+/* foooter */
+.e-schedule .e-text-ellipsis {
+    overflow: hidden;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+
+/* SHEDULER END*/
+
+/* CALENDAR */
+
+.e-calendar .e-header .e-title,
+.e-bigger.e-small .e-calendar .e-header .e-title {
+    cursor: pointer;
+    display: inline-block;
+    /* float: left; */
+    font-size: 11px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.e-calendar .e-content span.e-day,
+.e-bigger.e-small .e-calendar .e-content span.e-day {
+    border: none;
+    font-size: 11px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+}
+
+.e-calendar th,
+.e-bigger.e-small .e-calendar th {
+    cursor: default;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+}
+/* CALENDAR END */
+
+/* PATIENTS */
+.btn-save {
+    background-color: #0141cf;
+    @apply rounded  px-4 py-1 text-white shadow;
+}
+.btn-cancel {
+    @apply rounded bg-gray-500 px-4 py-1 text-white shadow;
+}
+/* ar */
+@layer base {
+    .ar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ar td {
+        @apply verdana11 h-[28px] max-h-[28px] cursor-pointer border border-primary-gray px-2;
+    }
+    .ar td:first-child {
+        border-left: 0;
+    }
+    .ar th {
+        @apply verdana11 border border-primary-gray  bg-primary-blue tracking-wider text-white;
+    }
+    .ar tr {
+        @apply even:bg-gray-100;
+    }
+
+    .ar hr {
+        border-color: black;
+    }
+    .calender th,
+    .calender td,
+    .calender tr {
+        @apply border-none bg-white text-black;
+    }
+}
+@layer utilities {
+    .active {
+        @apply border-2 border-dotted bg-blue-400;
+    }
+    .head {
+        @apply verdana16 font-semibold capitalize tracking-wider;
+    }
+    .bodytext {
+        @apply text-[black];
+    }
+    .background {
+        @apply bg-white;
+    }
+    .modal-btn {
+        @apply rounded bg-[#0141CF] px-4 py-1 text-white shadow;
+    }
+    .modal-cancel {
+        @apply rounded bg-gray-500 px-4 py-1 text-white shadow;
+    }
+    .btn {
+        @apply verdana13 rounded bg-orange-600 px-3 py-[4px] text-xs font-medium capitalize text-white shadow;
+        /* @apply verdana12 rounded bg-orange-600 px-2 py-[2px] font-medium text-white; */
+    }
+    .create-btn {
+        @apply verdana11 rounded bg-orange-600 px-2 py-[2px] font-medium capitalize text-white shadow;
+    }
+    .input-shadow {
+        @apply verdana11 rounded border border-secondary-blue px-3 py-[2px] text-black shadow outline-none;
+    }
+    .darkmode {
+        @apply dark:text-white;
+    }
+}
+
+.table-action-anim {
+    animation: table-icon-anim 0.3s forwards ease-in-out;
+}
+
+@keyframes table-icon-anim {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
