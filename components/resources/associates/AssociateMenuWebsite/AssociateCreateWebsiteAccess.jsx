@@ -30,7 +30,11 @@ const AssociateCreateWebsiteAccess = ({ setEditUserRole }) => {
       <Modal isOpen={isOpen} size={'2xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
+<<<<<<< HEAD
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+=======
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana16 font-bold">Create Website Access </h1>
               <p className="verdana11 mt-2 max-w-2xl space-y-2 text-gray-500">

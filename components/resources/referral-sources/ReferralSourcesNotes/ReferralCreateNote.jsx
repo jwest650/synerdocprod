@@ -34,7 +34,11 @@ const ReferralCreateNote = ({ setDocument }) => {
       <Modal isOpen={isOpen} size={'xl'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
+<<<<<<< HEAD
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
+=======
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">Create Note</h1>
               <div className="mt-7 w-full space-y-3 pl-5">
@@ -72,7 +76,11 @@ const ReferralCreateNote = ({ setDocument }) => {
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
+<<<<<<< HEAD
                   className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+=======
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                 >
                   Save
                 </button>

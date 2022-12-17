@@ -1,10 +1,19 @@
 import Image from 'next/image';
+<<<<<<< HEAD
 import InputDropdown from '../../components/home/staff/InputDropdown';
 import CalendarComp from '../../components/structure/CalendarComp';
 import SearchIcon from '../../assets/images/search.png';
 import { useState } from 'react';
 import FindResource from '../../components/home/staff/FindResource';
 import Link from 'next/link';
+=======
+import CalendarComp from '../../components/structure/CalendarComp';
+import SearchIcon from '../../assets/images/search.png';
+import { useState } from 'react';
+import Link from 'next/link';
+import InputDropdown from '../../components/home/otheractionscard/staff/InputDropdown';
+import FindResource from '../../components/home/otheractionscard/staff/FindResource';
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 
 const PayonlyDetail = () => {
   const [serviceDate, setServiceDate] = useState('');

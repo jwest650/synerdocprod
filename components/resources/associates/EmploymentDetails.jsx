@@ -1,5 +1,9 @@
 import CalendarComp from '../../structure/CalendarComp';
 import TableSelect from '../../structure/TableSelect';
+<<<<<<< HEAD
+=======
+import { classification } from './associateDataFour';
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 import { employmentDiscipline } from './associateDatatwo';
 
 const EmploymentDetails = ({
@@ -18,6 +22,7 @@ const EmploymentDetails = ({
         <div className=" flex w-[65%] items-center">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
+<<<<<<< HEAD
             options={[
               '<--select-->',
               'Administrative',
@@ -28,6 +33,9 @@ const EmploymentDetails = ({
               'Salesperson',
               'Volunteer',
             ]}
+=======
+            options={['<--select-->', ...classification]}
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
           />
         </div>
       </div>
@@ -80,7 +88,11 @@ const EmploymentDetails = ({
         <div className=" flex w-[65%] ">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
+<<<<<<< HEAD
             options={['Sinam Care']}
+=======
+            options={['<--select-->', 'Sinam Care, LLC']}
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
           />
         </div>
       </div>
@@ -104,6 +116,25 @@ const EmploymentDetails = ({
           />
         </div>
       </div>
+<<<<<<< HEAD
+=======
+      <div className="flex w-full items-center justify-center gap-3 ">
+        <label htmlFor="" className="flex w-[35%] justify-end">
+          Evv Vendor ID:
+        </label>
+        <div className=" flex w-[65%] ">
+          <input type="text" placeholder="" className="input-primary" />
+        </div>
+      </div>
+      <div className="flex w-full items-center justify-center gap-3 ">
+        <label htmlFor="" className="flex w-[35%] justify-end">
+          Evv Admin Email:
+        </label>
+        <div className=" flex w-[65%] ">
+          <input type="text" placeholder="" className="input-primary" />
+        </div>
+      </div>
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
     </div>
   );
 };

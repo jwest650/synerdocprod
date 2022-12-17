@@ -22,7 +22,11 @@ const DeletePopup = ({ toDelete, setAction, deleteIcon }) => {
     <>
       <span onClick={onOpen} className="cursor-pointer">
         {deleteIcon ? (
+<<<<<<< HEAD
           <FcEmptyTrash className="scale-150" />
+=======
+          <FcEmptyTrash className="scale-110" />
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
         ) : (
           <span className="verdana10 text-primary-orange underline">
             [Delete]
@@ -32,7 +36,11 @@ const DeletePopup = ({ toDelete, setAction, deleteIcon }) => {
       <Modal isOpen={isOpen} size={'md'} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
+<<<<<<< HEAD
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10">
+=======
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
             <h1 className="verdana12 font-semibold">
               Are you sure you want to delete this {toDelete}?
             </h1>

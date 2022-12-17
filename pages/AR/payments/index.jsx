@@ -7,7 +7,11 @@ import { AiFillPlusCircle } from "react-icons/ai";
 import { CiEdit } from "react-icons/ci";
 import Actions from "../../../components/ar/Actions";
 import { useState } from "react";
+<<<<<<< HEAD
 import DateCalender from "../../../components/ar/DateCalender";
+=======
+
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 const Payments = () => {
     const [data, setdata] = useState([...payment]);
     const setRows = (e) => {

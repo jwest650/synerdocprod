@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { FiBell } from 'react-icons/fi';
+=======
+import { FiBell, FiSettings } from 'react-icons/fi';
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 import { GoMail } from 'react-icons/go';
 import Link from 'next/link';
 import Settings from './Settings';
@@ -13,8 +17,13 @@ const Navbar = () => {
   const currentPath = router.asPath;
 
   return (
+<<<<<<< HEAD
     <div className="sticky top-0 z-[1000] bg-[#0141CF] px-4">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-[#3374ff83] py-[6px] text-white">
+=======
+    <div className="sticky top-0 z-[1000] bg-primary-blue px-4">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between border-b-2 border-secondary-blue py-[6px] text-white">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
         <div className="flex items-center">
           <Link href="/">
             <h1 className="cursor-pointer text-2xl font-semibold">
@@ -27,7 +36,11 @@ const Navbar = () => {
             <li className="flex cursor-pointer items-center gap-2 py-3">
               <FaHome className="mb-1 scale-125" />
               <span
+<<<<<<< HEAD
                 className={`border-b-2 border-[#0141CF] font-semibold hover:border-b-gray-200 ${
+=======
+                className={`border-b-2 border-primary-blue font-semibold hover:border-b-gray-200 ${
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                   currentPath && currentPath === '/' && 'border-gray-200'
                 }`}
               >
@@ -45,7 +58,12 @@ const Navbar = () => {
         <MenuDrawer />
         <ul className="hidden items-center gap-7 md:flex">
           <li className="cursor-pointer text-lg">
+<<<<<<< HEAD
             <Settings />
+=======
+            {/* <Settings /> */}
+            <FiSettings />
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
           </li>
 
           <li className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded text-[12px]">
@@ -66,7 +84,11 @@ const Navbar = () => {
           </li>
           <li
             // className="cursor-pointer"
+<<<<<<< HEAD
             className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded bg-blue-300 text-[13px] font-semibold"
+=======
+            className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded bg-secondary-blue text-[13px] font-semibold"
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
           >
             FAX
             {/* 

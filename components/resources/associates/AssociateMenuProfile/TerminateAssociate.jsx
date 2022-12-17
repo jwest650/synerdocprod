@@ -3,6 +3,10 @@ import {
   ModalContent,
   ModalOverlay,
   Select,
+<<<<<<< HEAD
+=======
+  Tooltip,
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
   useDisclosure,
 } from '@chakra-ui/react';
 import TableSelect from '../../../structure/TableSelect';
@@ -16,6 +20,7 @@ const TerminateAssociate = () => {
   };
   return (
     <>
+<<<<<<< HEAD
       <span onClick={onOpen}>
         <p className="mr-2 cursor-pointer py-[5px] text-secondary-color underline">
           [Terminate]
@@ -31,6 +36,25 @@ const TerminateAssociate = () => {
               <div className="">
                 <div className="mt-5 flex w-[85%] flex-col items-center justify-center px-3">
                   <div className="my-2 flex items-center">
+=======
+      <Tooltip hasArrow label={`Terminate`} fontSize="11px" color="white">
+        <span onClick={onOpen}>
+          <p className="mr-2 cursor-pointer py-[5px] text-secondary-color underline">
+            [Terminate]
+          </p>
+        </span>
+      </Tooltip>
+      <Modal isOpen={isOpen} size={'3xl'} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
+            <form action="" onSubmit={handleForm}>
+              <h1 className="verdana16 font-semibold">Terminate Associate</h1>
+
+              <div className="">
+                <div className="mt-5 flex w-[85%] flex-col items-center justify-center px-3">
+                  <div className="my-1.5 flex items-center">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                     <p className="w-[150px] text-right font-medium">
                       {' '}
                       <span className="text-primary-orange">*</span>Reason:{' '}
@@ -43,7 +67,11 @@ const TerminateAssociate = () => {
                     </div>
                   </div>
 
+<<<<<<< HEAD
                   <div className="my-2 flex items-center">
+=======
+                  <div className="my-1.5 flex items-center">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                     <p className="w-[150px] text-right font-medium">
                       Eligible for Rehire:
                     </p>{' '}
@@ -51,7 +79,11 @@ const TerminateAssociate = () => {
                       <input type="checkbox" className="input-primary" />{' '}
                     </div>
                   </div>
+<<<<<<< HEAD
                   <div className="my-2 flex items-center">
+=======
+                  <div className="my-1.5 flex items-center">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                     <p className="w-[150px] text-right font-medium">
                       {' '}
                       <span className="text-primary-orange">*</span> Terminate
@@ -64,7 +96,11 @@ const TerminateAssociate = () => {
                     />{' '}
                   </div>
                 </div>
+<<<<<<< HEAD
                 <p className="my-9 font-semibold">
+=======
+                <p className="my-6 font-semibold">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                   All future scheduled services assigned to this Associate will
                   be unassigned.
                 </p>
@@ -88,11 +124,16 @@ const TerminateAssociate = () => {
                   </thead>
                   <tbody>
                     <tr className="w-full bg-[#e6ebf85d]">
+<<<<<<< HEAD
                       <td className="td-primary w-10">
+=======
+                      <td className="td-primary w-8">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                         <input type="checkbox" />
                       </td>
                       <td className="td-primary w-10">11/11/22</td>
                       <td className="td-primary w-72 ">
+<<<<<<< HEAD
                         Hospice MSW - Initial Assessment Visit{' '}
                       </td>
                       <td className="td-primary">
@@ -100,6 +141,15 @@ const TerminateAssociate = () => {
                       </td>
                       <td className="td-primary">
                         <input type="text" className="input-primary mx-3" />
+=======
+                        RN Initial Assessment Visit{' '}
+                      </td>
+                      <td className="td-primary">
+                        <input type="text" className="input-primary w-24" />
+                      </td>
+                      <td className="td-primary">
+                        <input type="text" className="input-primary w-24" />
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                       </td>
                     </tr>
                   </tbody>
@@ -108,7 +158,11 @@ const TerminateAssociate = () => {
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
+<<<<<<< HEAD
                   className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+=======
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                 >
                   Save
                 </button>

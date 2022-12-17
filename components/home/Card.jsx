@@ -1,8 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+<<<<<<< HEAD
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { MdOutlineArrowDropDown } from 'react-icons/md';
+=======
+import { useEffect, useState } from 'react';
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 import TableSelect from '../structure/TableSelect';
 import { patients } from './homeData';
 

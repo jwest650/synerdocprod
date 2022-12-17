@@ -16,10 +16,17 @@ const MoreAssociateInfo = () => {
       </div>
       {showInfo && (
         <div className="verdana10 absolute z-10 ml-5">
+<<<<<<< HEAD
           <span className=" absolute -top-[8px] left-1 text-[#c6d8ffe1]">
             <SiVercel />
           </span>
           <div className="moreInfo-anim relative w-72 rounded border-[4px] border-t-[10px] border-[#c6d8ffe1] bg-white">
+=======
+          <span className=" absolute -top-[8px] left-1 text-secondary-blue">
+            <SiVercel />
+          </span>
+          <div className="moreInfo-anim relative w-72 rounded border-[4px] border-t-[10px] border-secondary-blue bg-white">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
             <div className="grid grid-cols-6">
               <span className="col-span-3 px-1">
                 222 Bert Kouns Loop, Shreveport, LA 71115

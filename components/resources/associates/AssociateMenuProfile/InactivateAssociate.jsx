@@ -3,6 +3,10 @@ import {
   ModalContent,
   ModalOverlay,
   Select,
+<<<<<<< HEAD
+=======
+  Tooltip,
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
   useDisclosure,
 } from '@chakra-ui/react';
 import TableSelect from '../../../structure/TableSelect';
@@ -16,6 +20,7 @@ const InactivateAssociate = () => {
   };
   return (
     <>
+<<<<<<< HEAD
       <span onClick={onOpen}>
         <p className="mr-2 cursor-pointer pt-[5px] text-secondary-color underline">
           [Inactivate]
@@ -27,6 +32,21 @@ const InactivateAssociate = () => {
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10 ">
             <form action="" onSubmit={handleForm}>
               <h1 className="verdana18 font-semibold">Inactivate Associate</h1>
+=======
+      <Tooltip hasArrow label={`Inactivate`} fontSize="11px" color="white">
+        <span onClick={onOpen}>
+          <p className="mr-2 cursor-pointer pt-[5px] text-secondary-color underline">
+            [Inactivate]
+          </p>
+        </span>
+      </Tooltip>
+      <Modal isOpen={isOpen} size={'3xl'} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10 ">
+            <form action="" onSubmit={handleForm}>
+              <h1 className="verdana16 font-semibold">Inactivate Associate</h1>
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 
               <div className="">
                 <div className="mt-10 flex w-[85%] flex-col items-center justify-center px-3">
@@ -39,11 +59,28 @@ const InactivateAssociate = () => {
                       {' '}
                       <TableSelect
                         styles={{ width: '100%' }}
+<<<<<<< HEAD
                         options={['Other Leave', 'Option2']}
                       />
                     </div>
                   </div>
                   <div className="my-2 flex justify-center">
+=======
+                        options={[
+                          '<--select-->',
+                          'Child/Family Care Responsibility',
+                          'Maternity Leave',
+                          'Medical Leave',
+                          'Military Duty',
+                          'Other Leave',
+                          'Return to School',
+                          'Workers Comp',
+                        ]}
+                      />
+                    </div>
+                  </div>
+                  <div className="my-2 mr-24 flex justify-center">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                     <p className="w-[150px] text-right">
                       {' '}
                       <span className="text-primary-orange">*</span>Inactivation
@@ -56,7 +93,11 @@ const InactivateAssociate = () => {
                     />{' '}
                   </div>
                 </div>
+<<<<<<< HEAD
                 <p className="my-9 font-semibold">
+=======
+                <p className="my-7 font-semibold">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                   All future scheduled services assigned to this Associate will
                   be unassigned.
                 </p>
@@ -80,11 +121,16 @@ const InactivateAssociate = () => {
                   </thead>
                   <tbody>
                     <tr className="w-full bg-[#e6ebf85d]">
+<<<<<<< HEAD
                       <td className="td-primary w-10">
+=======
+                      <td className="td-primary w-8">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                         <input type="checkbox" />
                       </td>
                       <td className="td-primary w-10">11/11/22</td>
                       <td className="td-primary w-72">
+<<<<<<< HEAD
                         Hospice MSW - Initial Assessment Visit{' '}
                       </td>
                       <td className="td-primary">
@@ -92,6 +138,15 @@ const InactivateAssociate = () => {
                       </td>
                       <td className="td-primary">
                         <input type="text" className="input-primary mx-3" />
+=======
+                        RN Initial Assessment Visit{' '}
+                      </td>
+                      <td className="td-primary">
+                        <input type="text" className="input-primary w-24" />
+                      </td>
+                      <td className="td-primary">
+                        <input type="text" className="input-primary w-24" />
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                       </td>
                     </tr>
                   </tbody>
@@ -100,7 +155,11 @@ const InactivateAssociate = () => {
               <div className="mt-8 flex w-full justify-end gap-3">
                 <button
                   type="submit"
+<<<<<<< HEAD
                   className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+=======
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                 >
                   Save
                 </button>

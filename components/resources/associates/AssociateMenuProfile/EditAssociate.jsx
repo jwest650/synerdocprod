@@ -2,6 +2,7 @@ import {
   Modal,
   ModalContent,
   ModalOverlay,
+<<<<<<< HEAD
   Select,
   useDisclosure,
 } from '@chakra-ui/react';
@@ -10,6 +11,20 @@ import TableSelect from '../../../structure/TableSelect';
 
 const EditAssociate = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+=======
+  Tooltip,
+  useDisclosure,
+} from '@chakra-ui/react';
+import { useState } from 'react';
+import EmploymentDetails from '../EmploymentDetails';
+import PersonalDetails from '../PersonalDetails';
+
+const EditAssociate = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [birthDate, setBirthDate] = useState('');
+  const [hireDate, setHireDate] = useState('');
+  const [startDate, setStartDate] = useState('');
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 
   const handleForm = (e) => {
     e.preventDefault();
@@ -17,6 +32,7 @@ const EditAssociate = () => {
   };
   return (
     <>
+<<<<<<< HEAD
       <span onClick={onOpen}>
         <p className="verdana10 mr-2  cursor-pointer text-secondary-color underline">
           [Edit]
@@ -32,10 +48,36 @@ const EditAssociate = () => {
                 <div className="w-full pb-5 md:col-span-3">
                   <div className="flex items-center gap-2 border-b-2 pb-2">
                     <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
+=======
+      <Tooltip hasArrow label={`Edit`} fontSize="11px" color="white">
+        <span
+          onClick={onOpen}
+          className="verdana9 cursor-pointer text-primary-orange underline"
+        >
+          [Edit]
+        </span>
+      </Tooltip>
+
+      <Modal isOpen={isOpen} size={'5xl'} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent
+        //  backgroundColor="transparent"
+        >
+          {/* <div className="w-full rounded border border-black  shadow"> */}
+          <div className="w-full rounded border-[2px] border-t-[20px]  border-secondary-blue p-4 pb-10  ">
+            {/* <div className="w-full rounded border border-black bg-white shadow-xl"> */}
+            <form action="" onSubmit={handleForm}>
+              <h1 className="verdana16 font-semibold">Edit Associate</h1>
+              <div className="verdana12 mt-7 flex h-full w-full flex-col items-start justify-center gap-12 text-sm md:grid md:grid-cols-6 md:gap-0">
+                <div className="w-full pb-5 md:col-span-3">
+                  <div className="flex items-center gap-2 border-b-2 pb-2">
+                    <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-primary-blue text-white">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                       1
                     </div>
                     <h2 className="verdana14 font-semibold">Personal</h2>
                   </div>
+<<<<<<< HEAD
                   <div className="mt-5 grid grid-cols-12">
                     <div className="col-span-5 mx-5 space-y-[19px]">
                       <div className="flex items-center justify-end">
@@ -137,10 +179,21 @@ const EditAssociate = () => {
                 <div className="ml-4 w-full pl-4 pb-5 md:col-span-3 md:border-l-2">
                   <div className="mr-5 flex items-center gap-2 border-b-2 pb-2">
                     <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-[#0141CF] text-white">
+=======
+                  <PersonalDetails
+                    setBirthDate={setBirthDate}
+                    birthDate={birthDate}
+                  />
+                </div>
+                <div className="ml-4 w-full pl-4 pb-5 md:col-span-3 md:border-l-2">
+                  <div className="mr-5 flex items-center gap-2 border-b-2 pb-2">
+                    <div className="inline-flex h-5 min-w-[20px] max-w-[20px] items-center justify-center rounded-full bg-primary-blue text-white">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                       2
                     </div>
                     <h2 className=" verdana14 font-semibold">Employment</h2>
                   </div>
+<<<<<<< HEAD
                   <div className="mt-5 mr-5 grid grid-cols-12">
                     <div className="col-span-5 mx-5 space-y-[19px]">
                       <div className="flex items-center justify-end">
@@ -232,6 +285,20 @@ const EditAssociate = () => {
                 <button
                   type="submit"
                   className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+=======
+                  <EmploymentDetails
+                    setHireDate={setHireDate}
+                    hireDate={hireDate}
+                    setStartDate={setStartDate}
+                    startDate={startDate}
+                  />
+                </div>
+              </div>
+              <div className="mt-8 flex w-full justify-end gap-3">
+                <button
+                  type="submit"
+                  className="rounded bg-primary-blue px-4 py-1 text-white shadow"
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                 >
                   Save
                 </button>
@@ -243,7 +310,10 @@ const EditAssociate = () => {
                 </button>
               </div>
             </form>
+<<<<<<< HEAD
             {/* </ModalBody> */}
+=======
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
           </div>
         </ModalContent>
       </Modal>

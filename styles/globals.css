@@ -82,8 +82,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
 }
+<<<<<<< HEAD
 .card-primary {
     @apply rounded bg-secondary-blue p-3 shadow-md;
+=======
+
+.shadow-primary {
+    @apply shadow shadow-secondary-blue;
+}
+
+.card-primary {
+    @apply rounded bg-secondary-blue p-3;
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 }
 
 .btn-primary {
@@ -125,7 +135,11 @@ body {
     height: 4px;
 }
 ::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
     background-color: #90b3ffe1;
+=======
+    @apply bg-secondary-blue;
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
     border-radius: 40px;
 }
 ::-webkit-scrollbar-track {
@@ -139,9 +153,14 @@ body {
 }
 
 .missingfield::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
     background-color: #90b3ffe1;
     border-radius: 40px;
     @apply rounded-full;
+=======
+    border-radius: 40px;
+    @apply rounded-full bg-secondary-blue;
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 }
 .missingfield::-webkit-scrollbar-track {
     @apply rounded-full bg-gray-300;
@@ -157,9 +176,14 @@ body {
 }
 
 .menu-anim::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
     background-color: #90b3ffe1;
     border-radius: 40px;
     @apply rounded-full;
+=======
+    border-radius: 40px;
+    @apply rounded-full bg-secondary-blue;
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 }
 .menu-anim::-webkit-scrollbar-track {
     @apply rounded-full bg-gray-300;
@@ -244,7 +268,11 @@ body {
         @apply scale-75;
     }
     90% {
+<<<<<<< HEAD
         @apply scale-105;
+=======
+        @apply scale-[1.03];
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
     }
     100% {
         @apply scale-100;
@@ -266,7 +294,11 @@ body {
 /* SHEDULER */
 
 .schedule {
+<<<<<<< HEAD
     @apply rounded-lg shadow-md;
+=======
+    @apply rounded;
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 }
 
 /* Services */
@@ -328,6 +360,16 @@ body {
     padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+.e-schedule .e-month-view .e-work-cells {
+    height: 75px;
+    vertical-align: top;
+    width: 36px;
+    padding-left: 2px;
+}
+
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 /* Cells Height */
 
 /* .e-schedule .e-month-view .e-content-table {
@@ -422,8 +464,7 @@ body {
 
 /* PATIENTS */
 .btn-save {
-    background-color: #0141cf;
-    @apply rounded  px-4 py-1 text-white shadow;
+    @apply rounded bg-primary-blue px-4 py-1 text-white shadow;
 }
 .btn-cancel {
     @apply rounded bg-gray-500 px-4 py-1 text-white shadow;
@@ -437,12 +478,16 @@ body {
 
     .ar td {
         @apply verdana11 h-[28px] max-h-[28px] cursor-pointer border border-primary-gray px-2;
+        /* padding: 2px 5px;
+        border: 1px solid #a0a0a0; */
     }
     .ar td:first-child {
         border-left: 0;
     }
+
     .ar th {
         @apply verdana11 border border-primary-gray  bg-primary-blue tracking-wider text-white;
+        /* @apply bg-primary-blue text-left text-[12px] text-white first:border-l-0   last:border-r-0; */
     }
     .ar tr {
         @apply even:bg-gray-100;
@@ -471,7 +516,7 @@ body {
         @apply bg-white;
     }
     .modal-btn {
-        @apply rounded bg-[#0141CF] px-4 py-1 text-white shadow;
+        @apply rounded bg-primary-blue px-4 py-1 text-white shadow;
     }
     .modal-cancel {
         @apply rounded bg-gray-500 px-4 py-1 text-white shadow;

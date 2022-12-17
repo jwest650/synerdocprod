@@ -1,18 +1,28 @@
 import { Button, Input, Select } from "@chakra-ui/react";
+<<<<<<< HEAD
 import Link from "next/link";
 import { useRouter } from "next/router";
+=======
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 import React from "react";
 import { FcCalendar, FcSearch } from "react-icons/fc";
 import { summary } from "../../../assets/ardata";
 import DateCalender from "../../../components/ar/DateCalender";
 
 const ARTransactionSummary = () => {
+<<<<<<< HEAD
     const router = useRouter();
 
     return (
         <div className="ar  bodytext h-full space-y-4 p-5">
             <section className="flex items-center justify-between capitalize">
                 <h1 className="head">A/R Transaction Summary</h1>
+=======
+    return (
+        <div className="ar  bodytext h-full space-y-4 p-5">
+            <section className="flex items-center justify-between capitalize">
+                <h1 className="head">A/R TransactionSummary</h1>
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                 <div className="flex items-center space-x-3">
                     <div className="space-x-2">
                         <label htmlFor="" className="w-fit font-bold">
@@ -51,6 +61,20 @@ const ARTransactionSummary = () => {
                             <label htmlFor="revenue" className="pr-2 font-bold">
                                 revenue date from:
                             </label>
+<<<<<<< HEAD
+=======
+                            {/* <Input
+                                className="input-shadow"
+                                id="revenue"
+                                w={130}
+                                type="date"
+                                size="xs"
+                                placeholder="11/04/2022"
+                            />
+                            <label htmlFor="revenue">
+                                <FcCalendar className="text-xl" />
+                            </label> */}
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 
                             <DateCalender />
                         </div>
@@ -59,14 +83,42 @@ const ARTransactionSummary = () => {
                             <label htmlFor="" className="pr-2 font-bold">
                                 to:
                             </label>
+<<<<<<< HEAD
                             <DateCalender />
+=======
+                            <Input
+                                className="input-shadow"
+                                id="revenue-to"
+                                w={130}
+                                type="date"
+                                size="xs"
+                                placeholder="default placeholder"
+                            />
+                            <label htmlFor="revenue-to">
+                                <FcCalendar className="text-xl" />
+                            </label>
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                         </div>
                     </div>
                     <div className="flex items-center ">
                         <label htmlFor="" className="pr-2 font-bold">
                             extend remit payment through date:
                         </label>
+<<<<<<< HEAD
                         <DateCalender />
+=======
+                        <Input
+                            className="input-shadow"
+                            id="extend"
+                            w={130}
+                            type="date"
+                            size="xs"
+                            placeholder="default placeholder"
+                        />
+                        <label htmlFor="extend">
+                            <FcCalendar className="text-xl" />
+                        </label>
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                     </div>
                 </aside>
                 <aside className="space-y-2 capitalize">
@@ -129,6 +181,7 @@ const ARTransactionSummary = () => {
                                 <td>{value.payment}</td>
                                 <td>{value.ending}</td>
                                 <td>{value.dso}</td>
+<<<<<<< HEAD
                                 <td className="text-center">
                                     <Link
                                         href={`${router.asPath}/ar-transaction-details/revenue`}
@@ -140,6 +193,10 @@ const ARTransactionSummary = () => {
                                     >
                                         <FcSearch className="mx-auto inline-block text-xl" />
                                     </Link>
+=======
+                                <td>
+                                    <FcSearch className="mx-auto text-xl" />
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
                                 </td>
                             </tr>
                         ))}

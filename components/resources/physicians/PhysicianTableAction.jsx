@@ -7,7 +7,11 @@ const PhysicianTableAction = ({ physicianName, physicianUrl }) => {
   const [showOthers, setShowOthers] = useState(false);
 
   return (
+<<<<<<< HEAD
     <span className="flex h-[27px] w-full items-center justify-center  text-lg text-[#0141CF]">
+=======
+    <span className="flex h-[27px] w-full items-center justify-center  text-lg text-primary-blue">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
       {showOthers && (
         <span
           onMouseOver={() => setShowOthers((current) => (current = true))}

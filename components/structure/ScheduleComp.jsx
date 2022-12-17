@@ -6,6 +6,11 @@ import {
   Inject,
   Resize,
   DragAndDrop,
+<<<<<<< HEAD
+=======
+  ResourcesDirective,
+  ResourceDirective,
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
   ViewsDirective,
   ViewDirective,
   ScheduleComponent,
@@ -21,6 +26,16 @@ const ScheduleComp = ({ setEventsData, eventsData }) => {
       setEventsData && setEventsData(newEvents);
     }, 100);
   };
+<<<<<<< HEAD
+=======
+
+  const handleRendered = (args) => {
+    args.element.style.backgroundColor = args?.data?.CategoryColor
+      ? args?.data?.CategoryColor
+      : '#000';
+  };
+
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
   return (
     <ScheduleComponent
       cssClass="schedule"
@@ -30,6 +45,10 @@ const ScheduleComp = ({ setEventsData, eventsData }) => {
       currentView="Month"
       activeCellsData={(e) => console.log(e)}
       actionComplete={handleSave}
+<<<<<<< HEAD
+=======
+      eventRendered={handleRendered}
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
       eventSettings={{ dataSource: eventsData }}
     >
       <ViewsDirective>

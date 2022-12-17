@@ -1,5 +1,9 @@
 import CalendarComp from '../../structure/CalendarComp';
 import TableSelect from '../../structure/TableSelect';
+<<<<<<< HEAD
+=======
+import { race } from './associateDataFour';
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 
 const PersonalDetails = ({ setBirthDate, birthDate }) => {
   return (
@@ -70,6 +74,7 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
         <div className=" flex w-[65%] ">
           <TableSelect
             styles={{ width: 'fit-content', height: '25px' }}
+<<<<<<< HEAD
             options={[
               '<--select-->',
               'American Indian / Alaskan Native',
@@ -80,6 +85,9 @@ const PersonalDetails = ({ setBirthDate, birthDate }) => {
               'White',
               'Other',
             ]}
+=======
+            options={['<--select-->', ...race]}
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
           />
         </div>
       </div>

@@ -13,11 +13,19 @@ const TableSelect = ({ setSelectedOption, options, styles }) => {
       icon={<MdOutlineArrowDropDown />}
       iconColor="gray"
       width="fit-content"
+<<<<<<< HEAD
       borderColor="#c6d8ffe1"
       borderRadius="4px"
       outline="none"
       backgroundColor="c6d8ffe1"
       fontSize="11px"
+=======
+      borderColor="#e8f8f4cc"
+      borderRadius="2px"
+      backgroundColor="#87b6accc"
+      fontSize="11px"
+      focusBorderColor="#87b6accc"
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
       height="23px"
       fontFamily="Arial"
       className="cursor-pointer shadow outline-none"

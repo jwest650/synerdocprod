@@ -150,3 +150,67 @@ export const overallForm = {
     'Definitely unsatisfactory',
   ],
 };
+<<<<<<< HEAD
+=======
+
+export const administrative = [
+  'Aministrative',
+  'Collector',
+  'Contractor',
+  'Field Staff - Full Time',
+  'Field Staff - Part Time',
+  'Salesperson',
+  'Volunteer',
+];
+
+export const statusDetails = [
+  'Active',
+  'Inactive',
+  'Suspended',
+  'Pending',
+  'Terminated',
+];
+
+export const universityList = [
+  'Listing',
+  'Profile',
+  'Contacts',
+  'Website',
+  'Notes',
+  'Availability',
+  'Compliance',
+  'Payroll',
+  'Pay Rates',
+  'Documents',
+  'Evv',
+];
+
+export const race = [
+  'American Indian / Alaskan Native',
+  'Asian',
+  'Black or African-American',
+  'Hispanic or Latino',
+  'Native Hawaiian or Pacific Islander',
+  'White',
+  'Other',
+];
+
+export const classification = [
+  'Administrative',
+  'Collector',
+  'Contractor',
+  'Field Staff - Full Time',
+  'Field Staff - Part Time',
+  'Salesperson',
+  'Volunteer',
+];
+
+export const agencyAssignment = [
+  { id: 1, name: 'Sinam Care, LL, (Home)', hasChild: true, expanded: true },
+  {
+    id: 2,
+    pid: 1,
+    name: 'Teams',
+  },
+];
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7

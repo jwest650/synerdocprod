@@ -27,7 +27,11 @@ const ReferralActivePopup = ({ setActionType, noteId }) => {
         <ModalOverlay />
         <ModalContent>
           {/* <div className="rounded border border-black"> */}
+<<<<<<< HEAD
           <div className="w-full rounded border-[2px] border-t-[20px] border-[#c6d8ffe1] p-4 pb-10">
+=======
+          <div className="w-full rounded border-[2px] border-t-[20px] border-secondary-blue p-4 pb-10">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
             {/* <div className="h-full rounded border border-black "> */}
             <h1 className="verdana16 font-semibold">Edit Note</h1>
             <div className="verdana11 mt-2 flex flex-col">

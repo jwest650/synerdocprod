@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Avatar } from '@chakra-ui/react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -10,10 +11,19 @@ import EditAssociateAgencies from './EditAssociateAgencies';
 import InactivateAssociate from './InactivateAssociate';
 import ReassignAssociate from './ReassignAssociate';
 import TerminateAssociate from './TerminateAssociate';
+=======
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import EditAssociateAgencies from './EditAssociateAgencies';
+import ProfilePersonal from './ProfilePersonal';
+import ProfileEncounter from './ProfileEncounter';
+import ProfileAGAssignment from './ProfileAGAssignment';
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 
 const AssociateMenuProfile = () => {
   const router = useRouter();
   const associateUrl = router.asPath.split('/')[3];
+<<<<<<< HEAD
   const [associateImage, setAssociateImage] = useState('');
   // console.log(associateImage.split(':')[0]);
 
@@ -217,6 +227,27 @@ const AssociateMenuProfile = () => {
         </div>
       </div>
     </div>
+=======
+  const [showInit, setShowInit] = useState(true);
+
+  return (
+    <>
+      {showInit ? (
+        <>
+          <section className=" mt-4 flex flex-col justify-between md:flex-row">
+            <ProfilePersonal associateUrl={associateUrl} />
+            <ProfileEncounter />
+          </section>
+          <ProfileAGAssignment setShowInit={setShowInit} />
+        </>
+      ) : (
+        <EditAssociateAgencies
+          associateUrl={associateUrl}
+          setShowInit={setShowInit}
+        />
+      )}
+    </>
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
   );
 };
 

@@ -51,7 +51,11 @@ const PhysicianEditUserRole = ({ setEditUserRole }) => {
                     from: 'physicianedituserrole',
                   }))
                 }
+<<<<<<< HEAD
                 className="rounded bg-[#0141CF] px-4 py-1 text-white shadow"
+=======
+                className="rounded bg-primary-blue px-4 py-1 text-white shadow"
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
               >
                 Save
               </button>

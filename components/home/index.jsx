@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
+<<<<<<< HEAD
 import { BsDot } from 'react-icons/bs';
 import { scheduleData } from '../../assets/scheduleData';
 import CreateAssociate from '../resources/associates/CreateAssociate';
@@ -9,11 +10,23 @@ import ScheduleComp from '../structure/ScheduleComp';
 import Card from './Card';
 import SchedulerNav from './SchedulerNav';
 import UploadSeviceNotes from './UploadSeviceNotes';
+=======
+import { scheduleData } from '../../assets/scheduleData';
+import CreateAssociate from '../resources/associates/CreateAssociate';
+import ScheduleComp from '../structure/ScheduleComp';
+import Card from './Card';
+import OtherActionsCard from './otheractionscard';
+import SchedulerNav from './SchedulerNav';
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
 
 const HomePage = () => {
   const [events, setEvents] = useState(scheduleData);
   return (
+<<<<<<< HEAD
     <div className="verdana11 mt-4 grid w-full grid-cols-4 gap-4">
+=======
+    <div className="verdana11 mt-4 grid w-full grid-cols-4 gap-4 px-4">
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
       <div className="col-span-1 space-y-4">
         <div className="card-primary h-32 space-y-4">
           <h2 className="verdana14 font-semibold">Annoucements</h2>
@@ -67,6 +80,7 @@ const HomePage = () => {
           ]}
           title="Associates"
         />
+<<<<<<< HEAD
         <ul className="card-primary space-y-1">
           <li className="verdana14 mb-4 font-semibold">Other Actions</li>
           <li>
@@ -96,6 +110,14 @@ const HomePage = () => {
       </div>
       <div className="col-span-3 space-y-4">
         <SchedulerNav />
+=======
+        <OtherActionsCard />
+      </div>
+      <div className="relative col-span-3 pt-28">
+        <div className="absolute top-0 z-10">
+          <SchedulerNav />
+        </div>
+>>>>>>> 87ab3bc16b20d778d9923f15c916dce8f0f498d7
         <ScheduleComp eventsData={events} setEventsData={setEvents} />
       </div>
     </div>
