@@ -1,4 +1,5 @@
 import { Input, Select } from "@chakra-ui/react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { VscGoToFile } from "react-icons/vsc";
@@ -131,7 +132,11 @@ const InvoiceErrors = () => {
                                 <td>{value.name}</td>
                                 <td>{value.payer}</td>
                                 <td className="text-orange-500">
-                                    {value.invoice}
+                                    <Link
+                                        href={"invoices/invoice-detail/errors"}
+                                    >
+                                        {value.invoice}
+                                    </Link>
                                 </td>
                                 <td></td>
                                 <td>{value.cate}</td>

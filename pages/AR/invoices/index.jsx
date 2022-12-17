@@ -4,9 +4,9 @@ import { FcCalendar, FcSearch } from "react-icons/fc";
 import { VscGoToFile } from "react-icons/vsc";
 import { TbFileExport } from "react-icons/tb";
 import { invoice } from "../../../assets/ardata";
-import Actions from "./../../../components/ar/Actions";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import DateCalender from "../../../components/ar/DateCalender";
 
 const Invoices = () => {
     const router = useRouter();
@@ -146,57 +146,23 @@ const Invoices = () => {
                         <label htmlFor="date-from" className="font-bold">
                             date from:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="date-from"
-                        />
-                        <label htmlFor="date-from">
-                            <FcCalendar className="text-xl" />
-                        </label>{" "}
+                        <DateCalender />
+
                         <label htmlFor="date-to" className="font-bold">
                             to:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="date-to"
-                        />
-                        <label htmlFor="date-to">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
                     </div>
                     <div className="flex">
                         <label htmlFor="note-from" className="font-bold">
                             note from:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="note-from"
-                        />
-                        <label htmlFor="note-from">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
+
                         <label htmlFor="note-to" className="font-bold">
                             to:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="note-to"
-                        />
-                        <label htmlFor="note-to">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
                     </div>
                 </aside>
                 <aside className="space-y-2">
@@ -234,29 +200,12 @@ const Invoices = () => {
                         <label htmlFor="inv" className="font-bold">
                             inv dates from:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="inv"
-                        />
-                        <label htmlFor="inv">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
+
                         <label htmlFor="inv-to" className="font-bold">
                             to:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="inv-to"
-                        />
-                        <label htmlFor="inv-to">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
                     </div>
                     <div className="flex items-center space-x-2">
                         <label htmlFor="" className="font-bold">

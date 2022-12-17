@@ -1,7 +1,7 @@
 import { Input, Select, useDisclosure } from "@chakra-ui/react";
 import React from "react";
-import { FcCalendar } from "react-icons/fc";
 import AddNoteModal from "../../../../../components/ar/AddNoteModal";
+import DateCalender from "../../../../../components/ar/DateCalender";
 
 const Notes = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -31,37 +31,17 @@ const Notes = () => {
                         <label htmlFor="from" className="font-bold">
                             from:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            id="from"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            placeholder="default placeholder"
-                        />
-                        <label htmlFor="from">
-                            <FcCalendar className="text-xl" />
-                        </label>{" "}
+                        <DateCalender />
                         <label htmlFor="to" className="font-bold">
                             to:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            id="to"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            placeholder="default placeholder"
-                        />
-                        <label htmlFor="to">
-                            <FcCalendar className="text-xl" />
-                        </label>{" "}
+                        <DateCalender />
                     </div>
                 </aside>
                 <aside className="flex items-center space-x-3">
-                    <div>
+                    <div className="font-bold">
                         {" "}
-                        <input type="checkbox" id="check" />
+                        <input type="checkbox" id="check" />{" "}
                         <label htmlFor="check">show inactive</label>
                     </div>
                     <Input

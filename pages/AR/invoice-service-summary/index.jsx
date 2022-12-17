@@ -2,6 +2,7 @@ import React from "react";
 import { Input, Select } from "@chakra-ui/react";
 import { FcCalendar } from "react-icons/fc";
 import Filters from "./Filters";
+import DateCalender from "../../../components/ar/DateCalender";
 
 const InvoiceServiceSummary = () => {
     return (
@@ -48,29 +49,12 @@ const InvoiceServiceSummary = () => {
                             <span className="text-orange-500">*</span> date
                             range:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="range"
-                        />
-                        <label htmlFor="range">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
+
                         <label htmlFor="range-to" className="font-bold">
                             to:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="range-to"
-                        />
-                        <label htmlFor="range-to">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
                     </div>
                     <div>
                         {" "}

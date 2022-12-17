@@ -17,6 +17,7 @@ import { useState } from "react";
 import Details from "./Details";
 import Detailstwo from "./Detailstwo";
 const CreateCollectorModal = ({ isOpen, onClose }) => {
+    const [showBtn, setshowBtn] = useState(false);
     const [level, setlevel] = useState("");
     const [option, setoption] = useState({
         assign: false,
@@ -34,6 +35,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                 encounter: false,
                 team: false,
             });
+            setshowBtn(true);
         }
         if (level.toLowerCase() == "single payer category") {
             setoption({
@@ -43,6 +45,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                 assign: true,
                 payerCate: true,
             });
+            setshowBtn(true);
         }
         if (level.toLowerCase() == "payer") {
             setoption({
@@ -52,6 +55,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                 assign: true,
                 payerCate: true,
             });
+            setshowBtn(true);
         }
         if (level.toLowerCase() == "patient encounter") {
             setoption({
@@ -61,6 +65,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                 assign: true,
                 encounter: true,
             });
+            setshowBtn(true);
         }
         if (level.toLowerCase() == "team") {
             setoption({
@@ -71,13 +76,33 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                 assign: true,
                 team: true,
             });
+            setshowBtn(true);
         }
+    };
+
+    const handleReset = () => {
+        setoption({
+            assign: false,
+            payer: false,
+            payerCate: false,
+            encounter: false,
+            team: false,
+        });
+        setshowBtn(false);
+        onClose();
     };
 
     const HandleLevelChange = (e) => {
         setlevel(e.target.value);
+        setoption({
+            assign: false,
+            payer: false,
+            payerCate: false,
+            encounter: false,
+            team: false,
+        });
+        setshowBtn(false);
     };
-    console.log(level);
     return (
         <>
             <Modal isOpen={isOpen} onClose={onClose} size={"xl"}>
@@ -114,7 +139,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                         placeholder="Select Agency"
                                         className="input-shadow"
                                         size="xs"
-                                        w={130}
+                                        w={300}
                                     >
                                         {collectorData.agency.map((val, i) => {
                                             return (
@@ -131,7 +156,7 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
                                         placeholder="Select Level"
                                         className="input-shadow"
                                         size="xs"
-                                        w={130}
+                                        w={300}
                                         onChange={HandleLevelChange}
                                     >
                                         {collectorData.level.map((val, i) => {
@@ -152,23 +177,35 @@ const CreateCollectorModal = ({ isOpen, onClose }) => {
 
                         <ModalFooter className="space-x-2 ">
                             <>
+                                {!showBtn ? (
+                                    <button
+                                        className="modal-btn"
+                                        onClick={handleCategory}
+                                    >
+                                        Continue
+                                    </button>
+                                ) : (
+                                    <>
+                                        <button
+                                            className="modal-btn"
+                                            onClick={handleReset}
+                                        >
+                                            Save/Add More
+                                        </button>{" "}
+                                        <button
+                                            className="modal-btn"
+                                            onClick={handleReset}
+                                        >
+                                            Save/Close
+                                        </button>
+                                    </>
+                                )}
+
                                 <button
                                     className="modal-cancel"
-                                    onClick={() => {
-                                        setoption({
-                                            payer: false,
-                                            single: false,
-                                        });
-                                        onClose();
-                                    }}
+                                    onClick={handleReset}
                                 >
                                     Cancel
-                                </button>
-                                <button
-                                    className="modal-btn"
-                                    onClick={handleCategory}
-                                >
-                                    Continue
                                 </button>
                             </>
                         </ModalFooter>

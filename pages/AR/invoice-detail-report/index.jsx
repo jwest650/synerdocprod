@@ -1,7 +1,6 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
-import { FcCalendar } from "react-icons/fc";
-
+import DateCalender from "../../../components/ar/DateCalender";
 import { invoiceDetail } from "../../../assets/ardata";
 
 const InvoiceDetailReport = () => {
@@ -58,29 +57,13 @@ const InvoiceDetailReport = () => {
                         <label htmlFor="inv-from" className="font-bold">
                             invoice dates from:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="inv-from"
-                        />
-                        <label htmlFor="inv-from">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
+
                         <label htmlFor="inv-to" className="font-bold">
                             to:
                         </label>
-                        <Input
-                            className="input-shadow"
-                            w={130}
-                            type="date"
-                            size="xs"
-                            id="inv-to"
-                        />
-                        <label htmlFor="inv-to">
-                            <FcCalendar className="text-xl" />
-                        </label>
+                        <DateCalender />
+
                         <div className="space-x-1">
                             <Input
                                 className="input-shadow"

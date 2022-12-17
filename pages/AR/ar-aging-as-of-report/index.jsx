@@ -1,6 +1,7 @@
 import { Input, Select } from "@chakra-ui/react";
 import React from "react";
 import { FcCalendar } from "react-icons/fc";
+import DateCalender from "../../../components/ar/DateCalender";
 
 const ArAgingAsOfReport = () => {
     return (
@@ -11,17 +12,7 @@ const ArAgingAsOfReport = () => {
                     <label htmlFor="" className="font-bold">
                         ar as of date:
                     </label>
-                    <Input
-                        className="input-shadow"
-                        id="date"
-                        w={130}
-                        type="date"
-                        size="xs"
-                        placeholder="default placeholder"
-                    />
-                    <label htmlFor="date">
-                        <FcCalendar className="text-xl" />
-                    </label>
+                    <DateCalender />
                 </div>
                 <div className="flex space-x-2">
                     <Select

@@ -2,7 +2,7 @@ import { useDisclosure } from "@chakra-ui/react";
 import React from "react";
 import { VscNote } from "react-icons/vsc";
 import AdjustTrasaction from "../../../../../components/ar/AdjustTrasaction";
-import { useState } from "react";
+import OtherServices from "../../../../../components/ar/modals/OtherServices";
 import Tooltip from "../../../../../components/ar/Tooltip";
 
 const Services = () => {
@@ -10,7 +10,7 @@ const Services = () => {
     return (
         <div className="space-y-3 p-5">
             <AdjustTrasaction isOpen={isOpen} onClose={onClose} />
-            <h1 className="text-orange-500 underline">view other services</h1>
+            <OtherServices />
             <section>
                 <h1 className="head mb-2">A/R invoice services detail</h1>
                 <table className="w-full">

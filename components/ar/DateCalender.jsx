@@ -11,7 +11,7 @@ const DateCalender = () => {
     };
     return (
         <div
-            className=""
+            className="mr-2"
             onMouseOver={() => setShowCal(true)}
             onMouseLeave={() => setShowCal(false)}
         >
@@ -37,6 +37,7 @@ const DateCalender = () => {
                     onChange={handleChange}
                     value={date}
                     showTodayButton={false}
+                    cssClass="calender"
                 />
                 <div className="-mt-1 flex items-center justify-end rounded-b bg-[#c6d8ff] p-1 px-3">
                     <span

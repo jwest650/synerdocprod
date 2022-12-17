@@ -1,24 +1,22 @@
 import React from "react";
 import { ImBook } from "react-icons/im";
-import { TbFileExport } from "react-icons/tb";
-import { VscError, VscGoToFile } from "react-icons/vsc";
-import { BsFileEarmarkPlus } from "react-icons/bs";
+import { VscError } from "react-icons/vsc";
+import { AiOutlineFileAdd } from "react-icons/ai";
 import { FaUserGraduate } from "react-icons/fa";
 import { CgNotes } from "react-icons/cg";
 import { CiMail } from "react-icons/ci";
 import { HiOutlineQrcode } from "react-icons/hi";
-import { BiErrorCircle } from "react-icons/bi";
-import { useState } from "react";
 import Services from "./tabs/Services";
 import ArTransaction from "./tabs/ArTransaction";
 import Notes from "./tabs/Notes";
 import Payer from "./tabs/Payer";
 import Errors from "./tabs/Errors";
 import { useRouter } from "next/router";
+import PayerInvoice from "../../../../components/ar/modals/PayerInvoice";
+import GrossAdjustment from "../../../../components/ar/modals/GrossAdjustment";
 
 const InvoiceDetail = () => {
     const router = useRouter();
-    console.log(router.query);
     const changeTab = (val) => {
         router.push(`${val}`);
     };
@@ -53,13 +51,11 @@ const InvoiceDetail = () => {
                     <h1 className="head ">carter, melinda</h1>
                 </div>
                 <div className="flex items-center space-x-24">
-                    <p className="text-orange-500">[Payer Review/Release]</p>
-                    <div className=" ">
+                    <PayerInvoice />
+                    <div className="flex items-center ">
                         {" "}
-                        <BsFileEarmarkPlus className=" inline " />
-                        <label className="text-orange-500 underline" htmlFor="">
-                            gross adj
-                        </label>
+                        <AiOutlineFileAdd className=" inline-block text-lg" />
+                        <GrossAdjustment />
                     </div>
                 </div>
 

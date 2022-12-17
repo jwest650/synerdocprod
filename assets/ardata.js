@@ -358,6 +358,7 @@ export const collectorData = {
         "Patient Encounter",
         "Team",
     ],
+    team: ["joe"],
     encounter: ["jay"],
     assign: ["Bailey Derbie"],
     payerCate: ["Medicare", "Insurance"],

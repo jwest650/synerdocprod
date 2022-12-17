@@ -437,16 +437,12 @@ body {
 
     .ar td {
         @apply verdana11 h-[28px] max-h-[28px] cursor-pointer border border-primary-gray px-2;
-        /* padding: 2px 5px;
-        border: 1px solid #a0a0a0; */
     }
     .ar td:first-child {
         border-left: 0;
     }
-
     .ar th {
         @apply verdana11 border border-primary-gray  bg-primary-blue tracking-wider text-white;
-        /* @apply bg-primary-blue text-left text-[12px] text-white first:border-l-0   last:border-r-0; */
     }
     .ar tr {
         @apply even:bg-gray-100;
@@ -454,6 +450,11 @@ body {
 
     .ar hr {
         border-color: black;
+    }
+    .calender th,
+    .calender td,
+    .calender tr {
+        @apply border-none bg-white text-black;
     }
 }
 @layer utilities {

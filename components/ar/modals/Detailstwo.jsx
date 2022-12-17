@@ -7,10 +7,10 @@ const Detailstwo = ({ option, collectorData }) => {
             {option.assign && (
                 <div>
                     <Select
-                        placeholder="Select Level"
+                        placeholder="Select Associate"
                         className="input-shadow"
                         size="xs"
-                        w={130}
+                        w={300}
                     >
                         {collectorData.assign.map((val, i) => {
                             return (
@@ -25,10 +25,10 @@ const Detailstwo = ({ option, collectorData }) => {
             {option.payer && (
                 <div>
                     <Select
-                        placeholder="Select Level"
+                        placeholder="Select Payer"
                         className="input-shadow"
                         size="xs"
-                        w={130}
+                        w={300}
                     >
                         {collectorData.payer.map((val, i) => {
                             return (
@@ -43,10 +43,10 @@ const Detailstwo = ({ option, collectorData }) => {
             {option.payerCate && (
                 <div>
                     <Select
-                        placeholder="Select Level"
+                        placeholder="Select Payer Category"
                         className="input-shadow"
                         size="xs"
-                        w={130}
+                        w={300}
                     >
                         {collectorData.payerCate.map((val, i) => {
                             return (
@@ -61,10 +61,10 @@ const Detailstwo = ({ option, collectorData }) => {
             {option.encounter && (
                 <div>
                     <Select
-                        placeholder="Select Level"
+                        placeholder="Select Encounter"
                         className="input-shadow"
                         size="xs"
-                        w={130}
+                        w={300}
                     >
                         {collectorData.encounter.map((val, i) => {
                             return (
@@ -79,10 +79,10 @@ const Detailstwo = ({ option, collectorData }) => {
             {option.team && (
                 <div>
                     <Select
-                        placeholder="Select Level"
+                        placeholder="Select Team"
                         className="input-shadow"
                         size="xs"
-                        w={130}
+                        w={300}
                     >
                         {collectorData.team.map((val, i) => {
                             return (
